@@ -166,3 +166,19 @@ do volume 176 da CMP, tese de Lester, impressão em PDF da página da Scholarped
 | D2 | Gourdon 2004 | não baixado | fica para quando a H1 for retomada |
 
 **Aplicado em 17/09/2026 (aprovado pelo usuário):** K7 M2, M3 → `V/derivacao`; K7 N4 → `C/conferido`; K5a N4 → `P/conferido` (matriz §0.6). K5b aguarda análise própria; K7 M1 e M4 continuam PC.
+
+## 11. Quinto lote enviado pelo usuário (17/09/2026, conferido após o commit 43bf2a6)
+
+| Arquivo | Identificação | Consequência |
+|---|---|---|
+| `braun_haake_2010_arXiv_1001.3339v2.pdf` | Braun & Haake, *Level statistics in arithmetical and pseudo-arithmetical chaos* | **Útil, com nuance para T6.** Resumo: em bilhares de curvatura negativa constante com comprimentos de órbitas muito degenerados, a estatística é Poisson **ou** Wigner–Dyson **conforme a condição de contorno** (Dirichlet/Neumann), com a mesma dinâmica clássica; o fator decisivo são os índices de Maslov dentro dos multipletos. Consequência: E-T6-ARIT (K5a N4 = P) continua válido, mas "aritmético ⇒ Poisson" não é incondicional para bilhares; o protocolo do controle aritmético (11.6) precisa fixar a condição de contorno e o setor de simetria antes do cálculo |
+| `kieburg_2026_arXiv_2604.12141v2.pdf` | Kieburg, *Quantum chaotic systems: a random-matrix approach* (revisão) | **Útil como secundária de método** para os controles: classificação de simetria (GOE/GUE/GSE) e unfolding. Não altera códigos |
+| `9906032v1.pdf` | outra versão arXiv do artigo de Alt et al. (bytes diferentes, mesmo conteúdo) | duplicata; apagada |
+| `1102.4822v1.pdf` | Anderson, Bender & Morone, órbitas periódicas com energia complexa | sem pendência correspondente; apagado |
+| `2402.01455v1.pdf` | Walker, autocorrelações de números de classe de Hurwitz | sem pendência correspondente; apagado |
+| `9403001v1.pdf` | Kennel, Abarbanel & Sidorowich, erros de predição e expoentes de Lyapunov locais | sem relação; apagado |
+| `BLZ2015.pdf` | Bruggeman, Lewis & Zagier, *Period functions for Maass wave forms and cohomology* (AMS Memoirs), cópia licenciada a uma instituição | sem pendência correspondente e com restrição de redistribuição; apagado |
+
+**Nenhum código da matriz alterado.** K7 M1 e K7 M4 continuam pendentes: nenhum arquivo do lote trata da identificação
+Friedrichs = Dirichlet com espectro discreto nem da genericidade dos comprimentos em bilhares. Dados de controle (B1, B2)
+continuam não obtidos.
