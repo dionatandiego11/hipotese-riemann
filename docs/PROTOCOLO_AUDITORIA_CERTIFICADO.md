@@ -100,7 +100,7 @@ for d in DECLARACAO_CERT DECLARACAO_CERT_CORRECAO1 DECLARACAO_CERT_CORRECAO2 DEC
 
 ### 2.3 Limitação: anterioridade das declarações
 
-**O projeto não está sob controle de versão (git) e não tem carimbo de tempo externo.**
+**Não há carimbo de tempo externo anterior às declarações.** O projeto só foi posto sob git e arquivado no Zenodo em 17/09/2026, depois de todas as declarações e execuções; o histórico git e o DOI atestam o estado **a partir dessa data**, não a ordem em que as declarações foram escritas.
 - Os scripts verificam o hash de cada declaração ao rodar. Isso prova que o conteúdo da declaração não mudou desde a
   execução.
 - **Não prova** que a declaração foi escrita antes do código ou do cálculo.
