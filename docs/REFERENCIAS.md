@@ -201,3 +201,8 @@ Leitura do texto (não só registro). Páginas usadas na matriz seguem estas ver
   *Multiplicative Number Theory*, cap. 17; Montgomery–Vaughan, *Multiplicative Number Theory I*, cap. 12). Capítulos
   **não conferidos**. Rota B do Lema de Cauda Projetada.
 - **Estado de acesso:** consolidado em [ETAPA11_PENDENCIAS_FONTES.md](ETAPA11_PENDENCIAS_FONTES.md) §4.
+
+## Busca preliminar para o manuscrito (17/09/2026)
+
+Registro separado, com níveis de conferência (lido / resumo / só metadados) e trabalhos próximos (Büthe 2018; Balanzario
+et al. 2023): [BUSCA_BIBLIOGRAFICA_MANUSCRITO.md](BUSCA_BIBLIOGRAFICA_MANUSCRITO.md). Não autoriza afirmação de novidade.

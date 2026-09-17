@@ -5,8 +5,10 @@ spectroscopy of Riemann zeta zeros. For the primary estimator of the frozen M4 p
 band fit), cut (d₁, Δ) = (8, 2) and 30 blocks of 3,000 zeros (indices 10,001–100,000), interval-arithmetic bounds show
 that the recorded per-line ratio `fit_ratio_to_theory` satisfies |r̂_k − 1| ≤ 10⁻⁶ on all 461 eligible lines, linking the
 windowed transform to the von Mangoldt prime-power coefficients through the Guinand–Weil explicit formula. This holds
-**conditionally on RH** (bibliographic dependencies F5, J1) and on the table-fidelity hypothesis **H-tab** (declared
-accuracy 3·10⁻⁹ of the zero table), within a declared computational trust base. The numerical-fidelity part (N) is
+**conditionally on RH** and on the table-fidelity hypothesis **H-tab** (declared accuracy 3·10⁻⁹ of the zero table),
+within a declared computational trust base. The explicit formula is taken from Connes' Theorem 6 (read); Jensen's
+formula is now checked in Titchmarsh, *The Theory of Functions* (1939), §3.61 (J1 resolved, 17/09/2026); Weil's original
+1952 statement (F5) is still a pending bibliographic check, not an additional hypothesis. The numerical-fidelity part (N) is
 unconditional. The cut was chosen after an exploratory evaluation. This is **not** a proof of RH; the full C2 criterion,
 S1/S3a/S3c and H1 remain open; the independent audit has **not** yet been carried out. Documentation is in Portuguese.
 

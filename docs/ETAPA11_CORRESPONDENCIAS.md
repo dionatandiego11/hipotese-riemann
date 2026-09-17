@@ -151,7 +151,7 @@ mecanismo.
 **Pendências que afetam a tabela** (11.3b):
 - L-EF1 (C09): parcialmente resolvida em 11.3b (termo primo derivado; termo arquimediano B; classe de funções-teste PC);
 - integrais locais de Connes (C02): avaliação p-ádica derivada em 11.3b §3;
-- fonte primária para o caso de corpos de funções (C11, C19);
+- fonte primária para o caso de corpos de funções (C11; **C19 conferida em 17/09/2026**, ver §7);
 - as demais da matriz §0.3.
 
 ## 6. Ajustes 11.4-1 (auditoria de 14/09/2026)
@@ -164,3 +164,11 @@ mecanismo.
 | 4 | C16 | Estatutos separados: produto de Euler convergente para ℜs > 1 (DLMF 25.2.11, HTML arquivado com SHA-256), uso direto na linha crítica exige outro tratamento; expressão dinâmica semiclássica |
 
 Esses ajustes não alteram as demais linhas nem os códigos da matriz, exceto a redação da condição de K3a.
+
+## 7. Atualização de 17/09/2026 (fontes lidas)
+
+| Linha | Ajuste |
+|---|---|
+| C19 | `conferencia`: PC → **conferido**. Milne, *Lectures on Étale Cohomology* v2.21 (SHA-256 `ac4f122f…`), Teorema 27.6 (PDF p. 155): Z(X₀, t) = P₁⋯P_{2d−1}/(P₀⋯P_{2d}), P_r(X, t) = det(1 − Ft \| H^r(X, ℚ_ℓ)), F o mapa de Frobenius de X; Observação 27.7: P₀ = 1 − t, P_{2d} = 1 − q^d t; Teorema 27.15 (PDF p. 158): autovalores de F em H^r com valor absoluto q^{r/2}. Deligne, *La conjecture de Weil I* (SHA-256 `8392b345…`), p. 279: (1.15) Frobenius geométrico F := φ⁻¹ e (1.15.1) F* = F. A forma de P₁ e a convenção "Frobenius geométrico" da linha ficam confirmadas; zeros em T = α_j^{−1} e \|α_j\| = q^{1/2} ⇔ ℜs = ½ seguem de forma elementar |
+| C11 | sem alteração (`conferido-secundaria`): o sinal de Lefschetz em H¹ não foi reconferido nas fontes novas |
+

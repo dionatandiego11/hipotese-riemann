@@ -9,13 +9,13 @@ K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N1,NA
 K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N2,NA,NA,não,,exige regularização concreta
 K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N3,NA,NA,não,,exige regularização concreta
 K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N4,NA,NA,não,,exige regularização concreta
-K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M1,S,PC,não,,alegado no resumo; texto não obtido
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M1,P,conferido,não,E-K2a-M1,"rebaixado de S: extensões auto-adjuntas afirmadas a partir de condição de hermiticidade (eq. 2.22, p. 5), ""first guessed from numerical explorations""; sem prova de igualdade de domínios; operador definido sem usar os zeros"
 K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M2,L,NA,não,,
-K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M3,P,PC,não,,dois termos da densidade (resumo)
-K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M4,L,NA,não,,exclusão 1D retirada
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M3,P,conferido,não,E-K2a-M3,"contagem: dois primeiros termos coincidem (eqs. 5.6-5.7, pp. 12-13); termo 7/8 ausente e correção −(8π/t)log(t/2π); identificação E=t/2π, η=1/2π escolhida para casar o termo dominante (eq. 5.3)"
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M4,L,NA,não,,"exclusão 1D retirada; os autores registram (p. 13) uma única órbita primitiva por energia, contra a família indexada por primos com períodos log p; enunciado clássico, mantido L como em K1 M4"
 K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M5,L,NA,não,,
 K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M6,L,NA,não,,
-K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N1,P,PC,não,,densidade média (resumo)
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N1,P,conferido,não,E-K2a-M3,densidade média: primeira correção discrepante e de sinal oposto (p. 12); flutuações não tratadas; N1 não avaliado numericamente
 K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N2,L,NA,não,,exclusão 1D retirada
 K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N3,L,NA,não,,exclusão 1D retirada
 K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N4,L,NA,não,,
@@ -55,10 +55,10 @@ K3a,Connes: realização com δ>1 (Teorema 1),M3,L,NA,não,,
 K3a,Connes: realização com δ>1 (Teorema 1),M4,P,conferido,não,E-K3a-M4,lado geométrico formal
 K3a,Connes: realização com δ>1 (Teorema 1),M5,L,NA,não,,
 K3a,Connes: realização com δ>1 (Teorema 1),M6,C,conferido,não,E-K3a-M2,"exige m_ρ<(1+δ)/2 para o δ fixado; limite uniforme esperado, não provado, só permitiria escolher δ"
-K3a,Connes: realização com δ>1 (Teorema 1),N1,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
-K3a,Connes: realização com δ>1 (Teorema 1),N2,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
-K3a,Connes: realização com δ>1 (Teorema 1),N3,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
-K3a,Connes: realização com δ>1 (Teorema 1),N4,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
+K3a,Connes: realização com δ>1 (Teorema 1),N1,C,conferido,não,E-K3a-M2; E-K3a-N-ZEROS,"condição documentada na faixa: zeros 1-100.000 críticos e simples (van de Lune-te Riele-Winter 1986, p. 667; Platt-Trudgian arXiv v1, Teor. 1); com m_ρ=1, m_ρ<(1+δ)/2 vale para todo δ>1; resta a correspondência índice da tabela ↔ zero (H-tab; F7 parcial); mantido C (promoção a S não decidida); não discriminante"
+K3a,Connes: realização com δ>1 (Teorema 1),N2,C,conferido,não,E-K3a-M2; E-K3a-N-ZEROS,"condição documentada na faixa: zeros 1-100.000 críticos e simples (van de Lune-te Riele-Winter 1986, p. 667; Platt-Trudgian arXiv v1, Teor. 1); com m_ρ=1, m_ρ<(1+δ)/2 vale para todo δ>1; resta a correspondência índice da tabela ↔ zero (H-tab; F7 parcial); mantido C (promoção a S não decidida); não discriminante"
+K3a,Connes: realização com δ>1 (Teorema 1),N3,C,conferido,não,E-K3a-M2; E-K3a-N-ZEROS,"condição documentada na faixa: zeros 1-100.000 críticos e simples (van de Lune-te Riele-Winter 1986, p. 667; Platt-Trudgian arXiv v1, Teor. 1); com m_ρ=1, m_ρ<(1+δ)/2 vale para todo δ>1; resta a correspondência índice da tabela ↔ zero (H-tab; F7 parcial); mantido C (promoção a S não decidida); não discriminante"
+K3a,Connes: realização com δ>1 (Teorema 1),N4,C,conferido,não,E-K3a-M2; E-K3a-N-ZEROS,"condição documentada na faixa: zeros 1-100.000 críticos e simples (van de Lune-te Riele-Winter 1986, p. 667; Platt-Trudgian arXiv v1, Teor. 1); com m_ρ=1, m_ρ<(1+δ)/2 vale para todo δ>1; resta a correspondência índice da tabela ↔ zero (H-tab; F7 parcial); mantido C (promoção a S não decidida); não discriminante"
 K3b,Connes: absorção e fórmula de traço global,M1,L,NA,não,,
 K3b,Connes: absorção e fórmula de traço global,M2,L,NA,não,,
 K3b,Connes: absorção e fórmula de traço global,M3,P,conferido,não,E-K3b-M3,contagem semiclássica com sinal negativo
@@ -69,30 +69,30 @@ K3b,Connes: absorção e fórmula de traço global,N1,L,conferido,não,E-K3b-obj
 K3b,Connes: absorção e fórmula de traço global,N2,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
 K3b,Connes: absorção e fórmula de traço global,N3,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
 K3b,Connes: absorção e fórmula de traço global,N4,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
-K4,de Branges / sistemas canônicos,M1,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
-K4,de Branges / sistemas canônicos,M2,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
-K4,de Branges / sistemas canônicos,M3,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
+K4,de Branges / sistemas canônicos,M1,C,conferido,não,E-K4-TEOR1,"H(E_χ) com E_χ(z)=ξ_χ(½−iz)+ξ′_χ(½−iz) é espaço de de Branges se e só se RH vale para L(s,χ) (Teor. 1(i), p. 9); construído a partir de ξ (não da lista de zeros); extensões auto-adjuntas de M_z descritas na p. 7"
+K4,de Branges / sistemas canônicos,M2,C,conferido,não,E-K4-TEOR1,"sob RH, M_z(A) tem espectro discreto simples nos zeros de A(z)=ξ(½−iz) de multiplicidade maior que a de B (p. 7), isto é, nas ordenadas; igualdade com multiplicidades exige também zeros simples (Teor. 1(ii), p. 9)"
+K4,de Branges / sistemas canônicos,M3,C,conferido,não,E-K4-TEOR1,decorre de M2 sob RH (contagem dos zeros); não enunciado separadamente no texto
 K4,de Branges / sistemas canônicos,M4,L,NA,não,E-K4-pos,Conrey-Li: positividade de de Branges falha para ζ (conferido)
 K4,de Branges / sistemas canônicos,M5,L,NA,não,,
-K4,de Branges / sistemas canônicos,M6,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
-K4,de Branges / sistemas canônicos,N1,C,PC,não,,condicional a RH; enunciado não conferido
-K4,de Branges / sistemas canônicos,N2,C,PC,não,,condicional a RH; enunciado não conferido
-K4,de Branges / sistemas canônicos,N3,C,PC,não,,condicional a RH; enunciado não conferido
-K4,de Branges / sistemas canônicos,N4,C,PC,não,,condicional a RH; enunciado não conferido
+K4,de Branges / sistemas canônicos,M6,C,conferido,não,E-K4-TEOR1,"espectro simples (p. 7): multiplicidades só coincidem se todos os zeros forem simples; caso estrito ⇔ RH e zeros simples (Teor. 1(ii), p. 9)"
+K4,de Branges / sistemas canônicos,N1,C,conferido,não,E-K4-TEOR1,"condicional à existência global da construção (RH); na faixa 1-100.000 criticidade e simplicidade estão documentadas (E-K3a-N-ZEROS), mas a construção exige RH para todos os zeros; não discriminante"
+K4,de Branges / sistemas canônicos,N2,C,conferido,não,E-K4-TEOR1,"condicional à existência global da construção (RH); na faixa 1-100.000 criticidade e simplicidade estão documentadas (E-K3a-N-ZEROS), mas a construção exige RH para todos os zeros; não discriminante"
+K4,de Branges / sistemas canônicos,N3,C,conferido,não,E-K4-TEOR1,"condicional à existência global da construção (RH); na faixa 1-100.000 criticidade e simplicidade estão documentadas (E-K3a-N-ZEROS), mas a construção exige RH para todos os zeros; não discriminante"
+K4,de Branges / sistemas canônicos,N4,C,conferido,não,E-K4-TEOR1,"condicional à existência global da construção (RH); na faixa 1-100.000 criticidade e simplicidade estão documentadas (E-K3a-N-ZEROS), mas a construção exige RH para todos os zeros; não discriminante"
 K5a,Laplaciano em superfície hiperbólica compacta,M1,S,conferido,sim,E-K5-M1,fonte secundária rigorosa
 K5a,Laplaciano em superfície hiperbólica compacta,M2,V,derivacao,sim,E-K5-M2,"escopo: global, identificações afins"
 K5a,Laplaciano em superfície hiperbólica compacta,M3,V,derivacao,sim,E-K5-M3,"escopo: assintótico global, identificações afins; não vale como violação numérica em faixa finita"
-K5a,Laplaciano em superfície hiperbólica compacta,M4,PC,PC,não,E-K5-TF,sinal/normalização vs Weil dependem de L-EF1
+K5a,Laplaciano em superfície hiperbólica compacta,M4,V,derivacao,sim,E-K5-TF; E-K5-M4-SINAL,"massas pontuais de Weil negativas (−2Λ(n)n^{−1/2}) contra massas de Selberg positivas; escopo: superfície compacta, identificação espectro = zeros (a>0, b=0)"
 K5a,Laplaciano em superfície hiperbólica compacta,M5,S,conferido,sim,E-K5-M5,
 K5a,Laplaciano em superfície hiperbólica compacta,M6,L,NA,não,,
-K5a,Laplaciano em superfície hiperbólica compacta,N1,PC,NA,não,E-K5-N1,V retirado: falta estimativa quantitativa com erro controlado na faixa ou experimento
+K5a,Laplaciano em superfície hiperbólica compacta,N1,L,NA,não,E-K5-N1,não decidível no nível da classe sem constantes explícitas no resto de Weyl; decidir apenas para sistema concreto (11.6); incompatibilidade assintótica registrada em M2/M3 (docs/ETAPA11_PENDENCIAS_DERIVACAO.md §5)
 K5a,Laplaciano em superfície hiperbólica compacta,N2,L,NA,não,,controle deve prever comprimentos e coincidências acidentais
-K5a,Laplaciano em superfície hiperbólica compacta,N3,PC,PC,não,E-K5-TF,depende de L-EF1
-K5a,Laplaciano em superfície hiperbólica compacta,N4,PC,PC,não,,T6; página não conferida
-K5b,"Superfície cofinita / PSL(2,Z)",M1,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
-K5b,"Superfície cofinita / PSL(2,Z)",M2,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
-K5b,"Superfície cofinita / PSL(2,Z)",M3,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
-K5b,"Superfície cofinita / PSL(2,Z)",M4,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
+K5a,Laplaciano em superfície hiperbólica compacta,N3,V,derivacao,sim,E-K5-TF; E-K5-N3-SINAL,sinal previsto das linhas positivo (ℓ/(2 sinh)) contra sinal medido negativo; escopo: espectro exato de superfície compacta; não usa a tolerância numérica
+K5a,Laplaciano em superfície hiperbólica compacta,N4,P,conferido,não,E-T6-ARIT,"T6: estatística próxima de Poisson em superfícies de grupos aritméticos, por observação numérica e derivação semiclássica (Bogomolny, notas; BLS 1996); heurístico; não se aplica a superfície compacta não aritmética"
+K5b,"Superfície cofinita / PSL(2,Z)",M1,S,conferido,sim,E-K5b-M1,"L²(Γ\ℍ), −Δ auto-adjunto e definido sem os zeros (Iwaniec, notas, p. 6; secundária)"
+K5b,"Superfície cofinita / PSL(2,Z)",M2,V,elementar,sim,E-K5b-M2,"espectro contínuo [¼,∞) (Iwaniec p. 6) não é enumerável; escopo: operador em todo L²(Γ\ℍ), não a restrição cuspidal"
+K5b,"Superfície cofinita / PSL(2,Z)",M3,V,derivacao,sim,E-K5b-M3,"escopo: assintótico global, identificações afins; Weyl N_Γ(T) ~ (vol/4π)T² (Iwaniec p. 9); não vale como violação numérica em faixa finita"
+K5b,"Superfície cofinita / PSL(2,Z)",M4,P,conferido,não,E-K5b-M4,estrutura parcial: hiperbólicos em log NP irracional; espalhamento com Λ(n)/n em ±2 log n; igualdade com a fórmula explícita nem demonstrada nem refutada
 K5b,"Superfície cofinita / PSL(2,Z)",M5,L,NA,não,,
 K5b,"Superfície cofinita / PSL(2,Z)",M6,L,NA,não,,
 K5b,"Superfície cofinita / PSL(2,Z)",N1,L,NA,não,,
@@ -110,17 +110,17 @@ K6,Hamiltoniano caótico / Gutzwiller,N2,L,NA,não,,
 K6,Hamiltoniano caótico / Gutzwiller,N3,P,conferido,não,E-K6-M4,
 K6,Hamiltoniano caótico / Gutzwiller,N4,C,conferido,não,E-K6-N4,T5 conjectural
 K7,Bilhares quânticos (controle dinâmico),M1,S,PC,não,,"auto-adjunticidade do laplaciano de Dirichlet: padrão, não conferida"
-K7,Bilhares quânticos (controle dinâmico),M2,V,PC,não,,alegada via Weyl global; não conferida
-K7,Bilhares quânticos (controle dinâmico),M3,V,PC,não,,Weyl global; escopo assintótico; não conferida
+K7,Bilhares quânticos (controle dinâmico),M2,V,derivacao,sim,E-K7-M2,"escopo: global, identificações afins"
+K7,Bilhares quânticos (controle dinâmico),M3,V,derivacao,sim,E-K7-M3,"escopo: assintótico global, identificações afins; Weyl de bilhares (Bäcker, eq. 49, secundária); não vale como violação numérica em faixa finita"
 K7,Bilhares quânticos (controle dinâmico),M4,V,PC,não,,comprimentos genéricos; não conferida
 K7,Bilhares quânticos (controle dinâmico),M5,NA,NA,não,,
 K7,Bilhares quânticos (controle dinâmico),M6,L,NA,não,,
-K7,Bilhares quânticos (controle dinâmico),N1,PC,NA,não,,diferença assintótica não implica violação na faixa finita
+K7,Bilhares quânticos (controle dinâmico),N1,L,NA,não,,não decidível no nível da classe sem constantes explícitas no resto de Weyl; decidir apenas para sistema concreto (11.6); incompatibilidade assintótica registrada em M2/M3 (docs/ETAPA11_PENDENCIAS_DERIVACAO.md §5)
 K7,Bilhares quânticos (controle dinâmico),N2,L,NA,não,,
 K7,Bilhares quânticos (controle dinâmico),N3,L,NA,não,,
-K7,Bilhares quânticos (controle dinâmico),N4,C,PC,não,,T5
-K8,Schrödinger 1D / potencial de Wu-Sprung,M1,PC,PC,não,,V se a construção usa os zeros; texto não lido
-K8,Schrödinger 1D / potencial de Wu-Sprung,M2,P,PC,não,,primeiros 500 zeros (descrição secundária)
+K7,Bilhares quânticos (controle dinâmico),N4,C,conferido,não,E-T5-BGS,"T5 (conjectura BGS, não provada): enunciado original para sistemas com reversão temporal cujo análogo clássico é K-sistema → GOE; GUE é extensão; não impor GUE sem quebra de reversão temporal"
+K8,Schrödinger 1D / potencial de Wu-Sprung,M1,V,conferido,sim,E-K8-M1,"potencial ajustado aos primeiros N zeros por mínimos quadrados, F=Σ(e_n−E_n)² (Wu-Sprung p. 2596, eqs. 9-11): operador não definido sem usar os zeros"
+K8,Schrödinger 1D / potencial de Wu-Sprung,M2,P,conferido,não,E-K8-M1,"ajuste aos primeiros 500 zeros, desvio médio < 4·10⁻⁶; precisão de Numerov nos últimos níveis só 3·10⁻⁴ (p. 2596)"
 K8,Schrödinger 1D / potencial de Wu-Sprung,M3,L,NA,não,,
 K8,Schrödinger 1D / potencial de Wu-Sprung,M4,L,NA,não,,exclusão 1D retirada
 K8,Schrödinger 1D / potencial de Wu-Sprung,M5,L,NA,não,,
@@ -129,13 +129,13 @@ K8,Schrödinger 1D / potencial de Wu-Sprung,N1,L,NA,não,,500 zeros não cobrem 
 K8,Schrödinger 1D / potencial de Wu-Sprung,N2,L,NA,não,,500 zeros não cobrem 100.000
 K8,Schrödinger 1D / potencial de Wu-Sprung,N3,L,NA,não,,500 zeros não cobrem 100.000
 K8,Schrödinger 1D / potencial de Wu-Sprung,N4,L,NA,não,,500 zeros não cobrem 100.000
-K9,ΨDO elíptico em variedade compacta,M1,S,PC,não,,hipótese da classe; fonte não lida
-K9,ΨDO elíptico em variedade compacta,M2,V,PC,não,,alegada via Weyl de Hörmander; não conferida
-K9,ΨDO elíptico em variedade compacta,M3,V,PC,não,,Weyl polinomial; escopo assintótico; não conferida
+K9,ΨDO elíptico em variedade compacta,M1,S,conferido,sim,E-K9-M1,"hipótese da classe com fonte: extensão auto-adjunta (Friedrichs) de operador elíptico formalmente positivo (Hörmander p. 193); em variedade compacta, fecho auto-adjunto semilimitado de ΨDO elíptico de ordem 1, domínio H(1) (p. 205)"
+K9,ΨDO elíptico em variedade compacta,M2,V,derivacao,sim,E-K9-M2,"escopo: global, identificações afins"
+K9,ΨDO elíptico em variedade compacta,M3,V,derivacao,sim,E-K9-M3,"escopo: assintótico global, identificações afins; Weyl com resto de Hörmander (Teor. 4.4 e 5.1); não vale como violação numérica em faixa finita"
 K9,ΨDO elíptico em variedade compacta,M4,L,NA,não,,
 K9,ΨDO elíptico em variedade compacta,M5,NA,NA,não,,
 K9,ΨDO elíptico em variedade compacta,M6,L,NA,não,,
-K9,ΨDO elíptico em variedade compacta,N1,PC,NA,não,,diferença assintótica não implica violação na faixa finita
+K9,ΨDO elíptico em variedade compacta,N1,L,NA,não,,não decidível no nível da classe sem constantes explícitas no resto de Weyl; decidir apenas para sistema concreto (11.6); incompatibilidade assintótica registrada em M2/M3 (docs/ETAPA11_PENDENCIAS_DERIVACAO.md §5)
 K9,ΨDO elíptico em variedade compacta,N2,L,NA,não,,
 K9,ΨDO elíptico em variedade compacta,N3,L,NA,não,,
 K9,ΨDO elíptico em variedade compacta,N4,L,NA,não,,
