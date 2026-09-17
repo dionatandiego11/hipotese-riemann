@@ -107,6 +107,7 @@ Nenhuma dessas mudanças seleciona candidatos nem congela testes (§0.3 e plano 
 | K7 N4 | `C` / `PC` | `C` / `conferido` | E-T5-BGS | conjectura BGS (Scholarpedia); enunciado original GOE |
 | K5a N4 | `PC` / `PC` | **`P` / `conferido`** | E-T6-ARIT | Poisson em superfícies aritméticas, heurístico/numérico (Bogomolny; BLS 1996) |
 | K5a M4, N3 | `PC` / `PC` | `V` / `derivacao`, sustentam decisão | E-K5-M4-SINAL, E-K5-N3-SINAL | argumento de sinal das massas pontuais (Weil negativo, Selberg positivo) |
+| K7 M1 | `S` / `PC` | `S` / `conferido`, sustenta decisão | E-K7-M1 | Pankrashkin, Ex. 2.10, Def. 2.13, Props. 3.23 e 3.30 |
 | K5a N1, K7 N1, K9 N1 | `PC` | `L` | — | não decidível no nível da classe (resto de Weyl sem constante explícita; classe infinita) |
 | K5b M1 | `PC` / `PC` | `S` / `conferido`, sustenta decisão | E-K5b-M1 | Iwaniec p. 6 (secundária) |
 | K5b M2 | `PC` / `PC` | `V` / `elementar`, sustenta decisão | E-K5b-M2 | espectro contínuo [¼,∞) não é enumerável |
@@ -114,7 +115,7 @@ Nenhuma dessas mudanças seleciona candidatos nem congela testes (§0.3 e plano 
 | K5b M4 | `PC` / `PC` | `P` / `conferido` | E-K5b-M4 | estrutura parcial; igualdade nem demonstrada nem refutada |
 | K4 M1, M2, M3, M6, N1–N4 | `C` / `PC` | `C` / `conferido` | E-K4-TEOR1 | Lagarias, Teorema 1 (p. 9) e p. 7: de Branges ⇔ RH; estrita ⇔ RH e zeros simples; espectro simples. Situação inalterada |
 
-`sustenta_decisao = sim`: 16 entradas após K2a (K2a M1 era S/PC, portanto já não sustentava); **19 após K9** (M1, M2, M3); **21 após K7** (M2, M3); **24 após K5b** (M1, M2, M3); **26 após K5a** (M4, N3).
+`sustenta_decisao = sim`: 16 entradas após K2a (K2a M1 era S/PC, portanto já não sustentava); **19 após K9** (M1, M2, M3); **21 após K7** (M2, M3); **24 após K5b** (M1, M2, M3); **26 após K5a** (M4, N3); **27 após K7 M1**.
 
 ### 0.3 Entradas PC e pendências (11.3b)
 
@@ -327,7 +328,7 @@ Nenhuma dessas mudanças seleciona candidatos nem congela testes (§0.3 e plano 
 | Campo | Conteúdo |
 |---|---|
 | Operador | Laplaciano de Dirichlet ou Neumann em domínio plano limitado |
-| Códigos | M1: S alegado, `conferencia=PC` (Hörmander dá a extensão de Friedrichs, mas não escreve a identificação com o laplaciano de Dirichlet nem o espectro discreto). M2, M3: **V/derivacao** (E-K7-M2, E-K7-M3; Weyl de bilhares N̄(E) ~ (A/4π)E contra (E/2π)log E; escopo assintótico). M4: V alegado, PC (comprimentos genéricos; Bogomolny & Schmit, nlin/0312057, mostram degenerescência também em modelos não aritméticos). N1: **L** desde 17/09/2026 (antes PC; não decidível no nível da classe, só para sistema concreto na 11.6). N2, N3: L. N4: **C/conferido** (E-T5-BGS; conjectura BGS, enunciado original GOE). M5: NA |
+| Códigos | M1: **S/conferido** desde 17/09/2026 (E-K7-M1; Pankrashkin, notas 2020: Friedrichs = Dirichlet, resolvente compacto e espectro discreto em domínio limitado). M2, M3: **V/derivacao** (E-K7-M2, E-K7-M3; Weyl de bilhares N̄(E) ~ (A/4π)E contra (E/2π)log E; escopo assintótico). M4: V alegado, PC (comprimentos genéricos; Bogomolny & Schmit, nlin/0312057, mostram degenerescência também em modelos não aritméticos). N1: **L** desde 17/09/2026 (antes PC; não decidível no nível da classe, só para sistema concreto na 11.6). N2, N3: L. N4: **C/conferido** (E-T5-BGS; conjectura BGS, enunciado original GOE). M5: NA |
 | Função | Controle de validação do instrumento, não candidato. Mesmo desenho do controle de Selberg revisado: prever comprimentos, amplitudes, tolerâncias e coincidências acidentais |
 
 ## K8 — Schrödinger 1D e potencial inverso (Wu–Sprung)

@@ -109,7 +109,7 @@ K6,Hamiltoniano caótico / Gutzwiller,N1,L,NA,não,,
 K6,Hamiltoniano caótico / Gutzwiller,N2,L,NA,não,,
 K6,Hamiltoniano caótico / Gutzwiller,N3,P,conferido,não,E-K6-M4,
 K6,Hamiltoniano caótico / Gutzwiller,N4,C,conferido,não,E-K6-N4,T5 conjectural
-K7,Bilhares quânticos (controle dinâmico),M1,S,PC,não,,"auto-adjunticidade do laplaciano de Dirichlet: padrão, não conferida"
+K7,Bilhares quânticos (controle dinâmico),M1,S,conferido,sim,E-K7-M1,"laplaciano de Dirichlet = extensão de Friedrichs de −Δ em C_c^∞(Ω), resolvente compacto e espectro discreto para Ω limitado (Pankrashkin, notas 2020: Ex. 2.10, Def. 2.13, Teor. 3.24, Props. 3.23 e 3.30)"
 K7,Bilhares quânticos (controle dinâmico),M2,V,derivacao,sim,E-K7-M2,"escopo: global, identificações afins"
 K7,Bilhares quânticos (controle dinâmico),M3,V,derivacao,sim,E-K7-M3,"escopo: assintótico global, identificações afins; Weyl de bilhares (Bäcker, eq. 49, secundária); não vale como violação numérica em faixa finita"
 K7,Bilhares quânticos (controle dinâmico),M4,V,PC,não,,comprimentos genéricos; não conferida
