@@ -1,6 +1,10 @@
 # Protocolo de auditoria independente — cadeia certificada da Cauda Projetada (Etapa 11.3b)
 
 **Versão:** 1.0 (17/09/2026). **Destinatário:** auditor independente, sem participação na produção do certificado.
+**Cópia de referência:** Zenodo [doi:10.5281/zenodo.22811040](https://doi.org/10.5281/zenodo.22811040) (arquivo
+`hipotese-riemann-v1-certified-computer-assisted-verification-package.zip`, MD5 `37b3fec0fb1c8c4f26a0c092b1f87c5a`,
+commit `e436709`). Conferido pelo autor em 17/09/2026: manifesto 59/59, 8 declarações, `data/raw/zeros1`. O auditor deve
+partir dessa cópia, não de commits posteriores do repositório.
 **Estado do objeto auditado:** vigente e congelado. Manifesto `results/etapa11_r5/MANIFESTO_CERT.csv`, SHA-256
 `2a2cd3bdc4547c090b29c932ee61142e81ca0f06d0eab5a017fec09c38578d19`, 59 entradas.
 

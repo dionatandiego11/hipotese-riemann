@@ -10,6 +10,11 @@ accuracy 3·10⁻⁹ of the zero table), within a declared computational trust b
 unconditional. The cut was chosen after an exploratory evaluation. This is **not** a proof of RH; the full C2 criterion,
 S1/S3a/S3c and H1 remain open; the independent audit has **not** yet been carried out. Documentation is in Portuguese.
 
+**Arquivo permanente (Zenodo):** [doi:10.5281/zenodo.22811040](https://doi.org/10.5281/zenodo.22811040) — cópia imutável
+da versão `v1-certified-computer-assisted-verification-package` (commit `e436709`). DOI conceitual, para todas as versões:
+[10.5281/zenodo.22811039](https://doi.org/10.5281/zenodo.22811039). Para reproduzir os resultados exatamente como
+certificados, use a cópia do DOI de versão; commits posteriores (como o que acrescentou este DOI) não fazem parte dela.
+
 ## Estado do certificado (17/09/2026)
 
 - Derivações e resultados: [docs/ETAPA11_3B_H1_CAUDA_PROJETADA.md](docs/ETAPA11_3B_H1_CAUDA_PROJETADA.md) §II.17–§II.24.

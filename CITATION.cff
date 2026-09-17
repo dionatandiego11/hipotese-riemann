@@ -6,8 +6,16 @@ authors:
     given-names: "Dionatan"
 license: MIT
 repository-code: "https://github.com/dionatandiego11/hipotese-riemann"
-version: "0.1.0"
+version: "v1-certified-computer-assisted-verification-package"
 date-released: "2026-09-17"
+doi: "10.5281/zenodo.22811040"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22811040"
+    description: "DOI desta versão (arquivo imutável do commit e436709)"
+  - type: doi
+    value: "10.5281/zenodo.22811039"
+    description: "DOI conceitual (todas as versões; resolve para a mais recente)"
 abstract: >-
   Pacote de reprodução para a certificação computacional condicional (sob RH e sob a hipótese de fidelidade da tabela
   H-tab) da espectroscopia inversa com janela dos zeros da zeta. Não é prova de RH; auditoria independente pendente.
