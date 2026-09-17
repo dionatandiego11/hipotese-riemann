@@ -1,0 +1,28 @@
+{
+ "declaracao_sha256": "b7a7980c6275630f1a63c8af40edd28365d06fe7d1243d0ac59886cb2c50f9ac",
+ "adendo1_sha256": "0a693179d2ef34c857babce2a15d3694cc9c9e5cd8b46aa6b3056d93e33e6c8f",
+ "adendo2_sha256": "75eee9402ec292cc70f4052ed1b01c3ba7832e86d548b515b7fa4088b8a1c16c",
+ "execucao": 3,
+ "celulas": {
+  "delta": 0.00390625,
+  "n": 512,
+  "N": 3269017,
+  "n_primos": 234855,
+  "crivo_conferido": true,
+  "n_potencias": 197912,
+  "bordas_ambiguas": 0
+ },
+ "rho_max": 8.611700614258391e-13,
+ "vmin_min": 2579.3920597297924,
+ "pares": 1410,
+ "certificados": 1178,
+ "elegiveis": 461,
+ "elegiveis_certificados": 461,
+ "max_total_elegiveis": 6.45224355e-07,
+ "max_total_todos": 5.447496125e-06,
+ "max_a_l1_dif_rel": 3.949773841327442e-11,
+ "max_razao_Sabs_cert_float": 23.056766053360917,
+ "max_razao_total_cert_hibrido": 1.0160747889277857,
+ "nao_certificados_elegiveis": [],
+ "tempo_total_s": 343.90620708465576
+}

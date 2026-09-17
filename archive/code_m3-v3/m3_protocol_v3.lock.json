@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-09-13T13:07:56.578028+00:00",
+  "config_path": "configs/m3_protocol_v3.toml",
+  "config_sha256": "029e453d897d3c3e8d059f703eed9b3ced001c33d828e01b062f6d9b0d56100a",
+  "modules_sha256": {
+    "arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+    "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+    "inverse_spectroscopy.py": "db4822dcc8d698d9f2de7afbfa5b6f9aa31f68e819ac70375ecdecd1a49b01e6",
+    "periods.py": "97dcafd78ad08c9d45230e3b9aa839380da2d84a3f1e7f8e52e27864d409efaa",
+    "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247"
+  },
+  "combined_sha256": "7e6210fb3d25dadf16dadeb16c08598383f7e6ba6e914687698208a9201b6c82",
+  "note": "m3-v3 Hann congelado após pilot/dev/val v3; todos os blocos já consultados em v1/v2 (PROTOCOLO §8.4)"
+}

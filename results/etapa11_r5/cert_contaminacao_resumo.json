@@ -1,0 +1,25 @@
+{
+ "declaracao_sha256": "1d46bcedeaf42f4e0c17020733f765fc94af3e8f37f33d971540f571dac3f587",
+ "cert_calculo_sha256": "95bec52820df9a8fa9830a6283576e6a3afacb6962f2cf38b546a93d4222aeb2",
+ "regime1_termos": 51,
+ "regime2": {
+  "N6": 403,
+  "N13": 442413,
+  "crivo_conferido": true,
+  "n_termos": 37210,
+  "n_primos": 37049,
+  "n_potencias_r2": 161,
+  "nao_atribuidos": 0,
+  "atribuidos_duas_celulas": 0,
+  "bordas_ambiguas": 0,
+  "expoente_primeira_borda": "6",
+  "expoente_ultima_borda": "13"
+ },
+ "parada_bit_a_bit": [],
+ "tempo_s": 1213.5585978031158,
+ "pares": 1410,
+ "certificados": 1093,
+ "elegiveis": 461,
+ "elegiveis_certificados": 461,
+ "max_total_elegiveis": 6.6090905e-07
+}

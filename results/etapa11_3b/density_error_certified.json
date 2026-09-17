@@ -1,0 +1,182 @@
+[
+ {
+  "versao": "m4-v1",
+  "bloco": "b01",
+  "cota_sup_arredondada_para_cima": "0.000003220602544",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b02",
+  "cota_sup_arredondada_para_cima": "0.000001991474073",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b03",
+  "cota_sup_arredondada_para_cima": "0.000001358347408",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b04",
+  "cota_sup_arredondada_para_cima": "0.000000988735923",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b05",
+  "cota_sup_arredondada_para_cima": "0.000000753812743",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b06",
+  "cota_sup_arredondada_para_cima": "0.000000594872801",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b07",
+  "cota_sup_arredondada_para_cima": "0.000000481748957",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b08",
+  "cota_sup_arredondada_para_cima": "0.000000398667854",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b09",
+  "cota_sup_arredondada_para_cima": "0.000000335729832",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v1",
+  "bloco": "b10",
+  "cota_sup_arredondada_para_cima": "0.000000286812995",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c01",
+  "cota_sup_arredondada_para_cima": "0.000000248038601",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c02",
+  "cota_sup_arredondada_para_cima": "0.000000216709709",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c03",
+  "cota_sup_arredondada_para_cima": "0.000000191071075",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c04",
+  "cota_sup_arredondada_para_cima": "0.000000169781224",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c05",
+  "cota_sup_arredondada_para_cima": "0.000000151908578",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c06",
+  "cota_sup_arredondada_para_cima": "0.000000136813664",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c07",
+  "cota_sup_arredondada_para_cima": "0.000000123830510",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c08",
+  "cota_sup_arredondada_para_cima": "0.000000112683953",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c09",
+  "cota_sup_arredondada_para_cima": "0.000000102992554",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v2",
+  "bloco": "c10",
+  "cota_sup_arredondada_para_cima": "0.000000094528751",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d01",
+  "cota_sup_arredondada_para_cima": "0.000000087063758",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d02",
+  "cota_sup_arredondada_para_cima": "0.000000080474529",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d03",
+  "cota_sup_arredondada_para_cima": "0.000000074620599",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d04",
+  "cota_sup_arredondada_para_cima": "0.000000069368337",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d05",
+  "cota_sup_arredondada_para_cima": "0.000000064687955",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d06",
+  "cota_sup_arredondada_para_cima": "0.000000060471912",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d07",
+  "cota_sup_arredondada_para_cima": "0.000000056657579",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d08",
+  "cota_sup_arredondada_para_cima": "0.000000053198370",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d09",
+  "cota_sup_arredondada_para_cima": "0.000000050067300",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ },
+ {
+  "versao": "m4-v3",
+  "bloco": "d10",
+  "cota_sup_arredondada_para_cima": "0.000000047177417",
+  "C_sup_arredondado_para_cima": "0.249524558791954"
+ }
+]

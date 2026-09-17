@@ -1,0 +1,11 @@
+# Conjunto de dados para o M4 (segunda faixa (m4-v2)). Os zeros 70.001–100.000 NÃO são processados.
+profile = "data_first70000"
+dataset_id = "odlyzko_zeros1_first70000"
+max_zeros = 70000
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+zeros_source_url = "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1"
+raw_filename = "zeros1"
+processed_csv = "zeros_70k.csv"
+validation_sample_size = 20
+validation_dps = 40

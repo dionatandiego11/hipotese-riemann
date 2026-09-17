@@ -1,0 +1,52 @@
+{
+ "declaracao_sha256": "b7a7980c6275630f1a63c8af40edd28365d06fe7d1243d0ac59886cb2c50f9ac",
+ "adendo1_sha256": "0a693179d2ef34c857babce2a15d3694cc9c9e5cd8b46aa6b3056d93e33e6c8f",
+ "adendo2_sha256": "75eee9402ec292cc70f4052ed1b01c3ba7832e86d548b515b7fa4088b8a1c16c",
+ "adendo3_sha256": "a8253e9ca18a90da70c3e7452e4db0113dbd38011fbf48d34524a67f4ae0c5fb",
+ "execucao": 4,
+ "c1_sup": {
+  "fracao_exata_sup": "5073087604928147986514589564823/2535301200456458802993406410752",
+  "decimal15": "2.000980240144558",
+  "decimal6": "2.000982"
+ },
+ "c2_sup": {
+  "fracao_exata_sup": "6246106425398266510255250913437/633825300114114700748351602688",
+  "decimal15": "9.854618337692911",
+  "decimal6": "9.854620"
+ },
+ "c12_info": {
+  "lacunas": 0,
+  "primeiro_inf_le_1/100": true,
+  "ultimo_sup_ge_99/100": true,
+  "malha_c1_sup": "5073087604928147986514589564823/2535301200456458802993406410752",
+  "malha_c2_sup": "6246106425398266510255250913437/633825300114114700748351602688",
+  "ponta_c1_sup": "4839825495008457544380783519869/1725436586697640946858688965569256363112777243042596638790631055949824",
+  "ponta_c2_sup": "5908986255287830129194592198305/210624583337114373395836055367340864637790190801098222508621955072"
+ },
+ "diagnostico_strings_antigas": {
+  "c1_novo_le_2.000982": true,
+  "c2_novo_le_9.854620": true
+ },
+ "celulas": {
+  "delta": 0.00390625,
+  "n": 512,
+  "N": 3269017,
+  "n_primos": 234855,
+  "crivo_conferido": true,
+  "n_potencias": 197912,
+  "bordas_ambiguas": 0
+ },
+ "rho_max": 8.611700614258391e-13,
+ "vmin_min": 2579.3920597297924,
+ "pares": 1410,
+ "certificados": 1178,
+ "elegiveis": 461,
+ "elegiveis_certificados": 461,
+ "max_total_elegiveis": 6.45224274e-07,
+ "max_total_todos": 5.447495439e-06,
+ "max_a_l1_dif_rel": 3.949773841327442e-11,
+ "max_razao_Sabs_cert_float": 23.056766053360917,
+ "max_razao_total_cert_hibrido": 1.0160746620505978,
+ "nao_certificados_elegiveis": [],
+ "tempo_total_s": 401.10787200927734
+}

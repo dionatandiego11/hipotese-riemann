@@ -1,0 +1,67 @@
+# Protocolo M3 v2 (Etapas 7-9). Parâmetros escolhidos com os blocos piloto e desenvolvimento.
+# Este arquivo é congelado por hash (docs/PROTOCOLO.md) ANTES de abrir o bloco reservado.
+protocol_version = "m3-v2"
+seed = 20260912
+zeros_csv = "data/processed/zeros_10k.csv"
+
+# Instrumento (Etapa 7)
+t_min = 0.5
+t_max = 5.0
+window = "hann"
+points_per_fwhm = 8.0
+density = "rvm"                 # alternativa theta registrada como diagnóstico
+
+# Detector e nulos (Etapa 8)
+primary_null = "shuffle"        # permutação de espaçamentos unfolded, reconstruída em energia
+candidate_z = 3.0
+noise_smooth_window = 0.05      # média móvel de sigma_nulo(t), em unidades de t
+alpha = 0.05
+null_sigma_realizations = 200
+null_max_realizations = 999
+gue_sigma_realizations = 100
+gue_max_realizations = 199
+gue_retained_fraction = 0.6
+
+# Calibração sintética
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+# Comparação aritmética (Etapa 9)
+targeted_fit_half_width_fwhm = 0.5
+phase_control_realizations = 999
+declared_table_error = 3e-9
+precision_perturbations = 20
+
+[[blocks]]
+name = "pilot"
+first_index = 1
+last_index = 1000
+role = "diagnóstico de baixa altura"
+
+[[blocks]]
+name = "dev"
+first_index = 1001
+last_index = 4000
+role = "desenvolvimento"
+
+[[blocks]]
+name = "val"
+first_index = 4001
+last_index = 7000
+role = "validação"
+
+[[blocks]]
+name = "holdout"
+first_index = 7001
+last_index = 10000
+role = "teste reservado"
+
+[[blocks]]
+name = "full"
+first_index = 1
+last_index = 10000
+role = "descritivo; contém o teste reservado (análise aninhada)"

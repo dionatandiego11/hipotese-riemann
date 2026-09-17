@@ -1,0 +1,18 @@
+{
+ "declaracao_sha256": "6a69c0d7e8b1cf268ff35374eed70f8e0529f1fa4e838bdc38b702ab4c418f9d",
+ "cert_calculo_sha256": "95bec52820df9a8fa9830a6283576e6a3afacb6962f2cf38b546a93d4222aeb2",
+ "cert_contaminacao_sha256": "4baff93389cea085c690567fadc8c20c87ab951d4e88a214988457e953885945",
+ "C_inf": "10121918615177676871058870844287/40564819207303340847894502572032",
+ "C_sup": "5060959307588838435529435422145/20282409603651670423947251286016",
+ "C_sup_decimal15": "0.249524558791954",
+ "blocos_janela_igual_AB": 15,
+ "D_max_sup": "0.000003220602541",
+ "pares": 1410,
+ "certificados": 1089,
+ "elegiveis": 461,
+ "elegiveis_certificados": 461,
+ "max_total_elegiveis_sup": 6.62126197e-07,
+ "max_extra_elegiveis_sup": 5.0443623e-08,
+ "perdidos_frente_contaminacao": 4,
+ "tempo_s": 0.6855573654174805
+}

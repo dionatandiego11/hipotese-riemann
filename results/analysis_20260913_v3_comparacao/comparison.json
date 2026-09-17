@@ -1,0 +1,443 @@
+{
+  "runs": {
+    "v2_hann": {
+      "pilot": "run_20260913_023918_m3_pilot-dev-val",
+      "dev": "run_20260913_023918_m3_pilot-dev-val",
+      "val": "run_20260913_023918_m3_pilot-dev-val",
+      "holdout": "run_20260913_024706_m3_holdout-full",
+      "full": "run_20260913_024706_m3_holdout-full"
+    },
+    "v3_hann": {
+      "pilot": "run_20260913_130157_m3_pilot-dev-val",
+      "dev": "run_20260913_130157_m3_pilot-dev-val",
+      "val": "run_20260913_130157_m3_pilot-dev-val",
+      "holdout": "run_20260913_130758_m3_holdout-full",
+      "full": "run_20260913_130758_m3_holdout-full"
+    },
+    "v3_blackman_harris": {
+      "pilot": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+      "dev": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+      "val": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+      "holdout": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+      "full": "run_20260913_132814_m3_pilot-dev-val-holdout-full"
+    }
+  },
+  "blocks": {
+    "pilot": {
+      "v2_hann": {
+        "run": "run_20260913_023918_m3_pilot-dev-val",
+        "threshold": 3.2587754373239903,
+        "threshold_bootstrap_95": [
+          3.2186139902214754,
+          3.287456680989191
+        ],
+        "n_detected": 18,
+        "n_candidates_in_threshold_band": 0,
+        "candidate_periods_in_band": [],
+        "median_abs_ratio_minus_1_detected": 1.5530809971409099e-10,
+        "max_abs_ratio_minus_1_detected": 1.4734893305501373e-09
+      },
+      "v3_hann": {
+        "run": "run_20260913_130157_m3_pilot-dev-val",
+        "threshold": 3.213463641805281,
+        "threshold_bootstrap_95": [
+          3.1640981997287803,
+          3.2754308810291852
+        ],
+        "n_detected": 18,
+        "n_candidates_in_threshold_band": 0,
+        "candidate_periods_in_band": [],
+        "median_abs_ratio_minus_1_detected": 2.1952872852892824e-10,
+        "max_abs_ratio_minus_1_detected": 1.516188063988011e-09
+      },
+      "v3_blackman_harris": {
+        "run": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+        "threshold": 3.1436859861027107,
+        "threshold_bootstrap_95": [
+          3.108745072492908,
+          3.192616178088799
+        ],
+        "n_detected": 14,
+        "n_candidates_in_threshold_band": 2,
+        "candidate_periods_in_band": [
+          2.1972243416043136,
+          3.7135724597504574
+        ],
+        "median_abs_ratio_minus_1_detected": 7.461560369570464e-08,
+        "max_abs_ratio_minus_1_detected": 1.6611557041024128e-07
+      },
+      "differences": {
+        "v2_hann_not_v3_hann": [],
+        "v3_hann_not_v2_hann": [],
+        "hann_v3_not_bh": [
+          [
+            "3",
+            "2"
+          ],
+          [
+            "43",
+            "1"
+          ],
+          [
+            "47",
+            "1"
+          ],
+          [
+            "53",
+            "1"
+          ]
+        ],
+        "bh_not_hann_v3": [],
+        "detected_in_all_three": 14,
+        "detected_in_any": 18
+      }
+    },
+    "dev": {
+      "v2_hann": {
+        "run": "run_20260913_023918_m3_pilot-dev-val",
+        "threshold": 3.310934375280884,
+        "threshold_bootstrap_95": [
+          3.269244327721339,
+          3.3516958470804017
+        ],
+        "n_detected": 38,
+        "n_candidates_in_threshold_band": 0,
+        "candidate_periods_in_band": [],
+        "median_abs_ratio_minus_1_detected": 5.507964084827677e-10,
+        "max_abs_ratio_minus_1_detected": 3.854441981143708e-07
+      },
+      "v3_hann": {
+        "run": "run_20260913_130157_m3_pilot-dev-val",
+        "threshold": 3.3364451571189115,
+        "threshold_bootstrap_95": [
+          3.2930294007144405,
+          3.3737763528854483
+        ],
+        "n_detected": 37,
+        "n_candidates_in_threshold_band": 2,
+        "candidate_periods_in_band": [
+          4.91997929527388,
+          4.934475533953531
+        ],
+        "median_abs_ratio_minus_1_detected": 5.399531932681612e-10,
+        "max_abs_ratio_minus_1_detected": 5.9126328055825184e-08
+      },
+      "v3_blackman_harris": {
+        "run": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+        "threshold": 3.2783918398148595,
+        "threshold_bootstrap_95": [
+          3.242516313370186,
+          3.315218299156029
+        ],
+        "n_detected": 29,
+        "n_candidates_in_threshold_band": 4,
+        "candidate_periods_in_band": [
+          2.0794417619623093,
+          3.218876051553683,
+          4.634728779249332,
+          4.672828650620272
+        ],
+        "median_abs_ratio_minus_1_detected": 3.287360850201537e-08,
+        "max_abs_ratio_minus_1_detected": 9.573196768641878e-08
+      },
+      "differences": {
+        "v2_hann_not_v3_hann": [
+          [
+            "139",
+            "1"
+          ]
+        ],
+        "v3_hann_not_v2_hann": [],
+        "hann_v3_not_bh": [
+          [
+            "107",
+            "1"
+          ],
+          [
+            "109",
+            "1"
+          ],
+          [
+            "113",
+            "1"
+          ],
+          [
+            "127",
+            "1"
+          ],
+          [
+            "131",
+            "1"
+          ],
+          [
+            "137",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "5",
+            "2"
+          ]
+        ],
+        "bh_not_hann_v3": [],
+        "detected_in_all_three": 29,
+        "detected_in_any": 38
+      }
+    },
+    "val": {
+      "v2_hann": {
+        "run": "run_20260913_023918_m3_pilot-dev-val",
+        "threshold": 3.3419441323656196,
+        "threshold_bootstrap_95": [
+          3.2983082762782594,
+          3.3778733964995378
+        ],
+        "n_detected": 36,
+        "n_candidates_in_threshold_band": 1,
+        "candidate_periods_in_band": [
+          4.919978633411911
+        ],
+        "median_abs_ratio_minus_1_detected": 3.8660247225763555e-10,
+        "max_abs_ratio_minus_1_detected": 2.572083479535081e-08
+      },
+      "v3_hann": {
+        "run": "run_20260913_130157_m3_pilot-dev-val",
+        "threshold": 3.364585380491643,
+        "threshold_bootstrap_95": [
+          3.3203198636167937,
+          3.4008589836265486
+        ],
+        "n_detected": 35,
+        "n_candidates_in_threshold_band": 1,
+        "candidate_periods_in_band": [
+          4.875197507660981
+        ],
+        "median_abs_ratio_minus_1_detected": 3.850137986205482e-10,
+        "max_abs_ratio_minus_1_detected": 2.572372514997312e-08
+      },
+      "v3_blackman_harris": {
+        "run": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+        "threshold": 3.3189689487228664,
+        "threshold_bootstrap_95": [
+          3.2289176401909945,
+          3.3937122357832066
+        ],
+        "n_detected": 27,
+        "n_candidates_in_threshold_band": 2,
+        "candidate_periods_in_band": [
+          4.574711249181706,
+          4.615120535170823
+        ],
+        "median_abs_ratio_minus_1_detected": 3.915464352743925e-08,
+        "max_abs_ratio_minus_1_detected": 1.1265699995099965e-07
+      },
+      "differences": {
+        "v2_hann_not_v3_hann": [
+          [
+            "131",
+            "1"
+          ]
+        ],
+        "v3_hann_not_v2_hann": [],
+        "hann_v3_not_bh": [
+          [
+            "101",
+            "1"
+          ],
+          [
+            "103",
+            "1"
+          ],
+          [
+            "107",
+            "1"
+          ],
+          [
+            "109",
+            "1"
+          ],
+          [
+            "113",
+            "1"
+          ],
+          [
+            "127",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "5",
+            "2"
+          ]
+        ],
+        "bh_not_hann_v3": [],
+        "detected_in_all_three": 27,
+        "detected_in_any": 36
+      }
+    },
+    "holdout": {
+      "v2_hann": {
+        "run": "run_20260913_024706_m3_holdout-full",
+        "threshold": 3.2914600519367188,
+        "threshold_bootstrap_95": [
+          3.2648067049471483,
+          3.3405656808294655
+        ],
+        "n_detected": 36,
+        "n_candidates_in_threshold_band": 3,
+        "candidate_periods_in_band": [
+          2.0794419502702595,
+          4.844188479589223,
+          4.875196593448627
+        ],
+        "median_abs_ratio_minus_1_detected": 5.170615047234151e-10,
+        "max_abs_ratio_minus_1_detected": 8.972231146930909e-08
+      },
+      "v3_hann": {
+        "run": "run_20260913_130758_m3_holdout-full",
+        "threshold": 3.314294684824378,
+        "threshold_bootstrap_95": [
+          3.2735974962845638,
+          3.3950498737399926
+        ],
+        "n_detected": 35,
+        "n_candidates_in_threshold_band": 3,
+        "candidate_periods_in_band": [
+          2.0794419502702595,
+          4.844188479589223,
+          4.875196593448627
+        ],
+        "median_abs_ratio_minus_1_detected": 5.078385489909465e-10,
+        "max_abs_ratio_minus_1_detected": 7.841363836025295e-08
+      },
+      "v3_blackman_harris": {
+        "run": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+        "threshold": 3.2493999140004575,
+        "threshold_bootstrap_95": [
+          3.218696241828017,
+          3.323026540722442
+        ],
+        "n_detected": 29,
+        "n_candidates_in_threshold_band": 3,
+        "candidate_periods_in_band": [
+          4.574710766566813,
+          4.615120777393366,
+          4.63472874013945
+        ],
+        "median_abs_ratio_minus_1_detected": 3.6961287142034394e-08,
+        "max_abs_ratio_minus_1_detected": 2.509467798006426e-07
+      },
+      "differences": {
+        "v2_hann_not_v3_hann": [
+          [
+            "131",
+            "1"
+          ]
+        ],
+        "v3_hann_not_v2_hann": [],
+        "hann_v3_not_bh": [
+          [
+            "107",
+            "1"
+          ],
+          [
+            "109",
+            "1"
+          ],
+          [
+            "113",
+            "1"
+          ],
+          [
+            "127",
+            "1"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "5",
+            "2"
+          ]
+        ],
+        "bh_not_hann_v3": [],
+        "detected_in_all_three": 29,
+        "detected_in_any": 36
+      }
+    },
+    "full": {
+      "v2_hann": {
+        "run": "run_20260913_024706_m3_holdout-full",
+        "threshold": 3.504744607141092,
+        "threshold_bootstrap_95": [
+          3.4759466565927735,
+          3.5509108194078327
+        ],
+        "n_detected": 41,
+        "n_candidates_in_threshold_band": 0,
+        "candidate_periods_in_band": [],
+        "median_abs_ratio_minus_1_detected": 1.8970980342203347e-10,
+        "max_abs_ratio_minus_1_detected": 8.188814293319524e-09
+      },
+      "v3_hann": {
+        "run": "run_20260913_130758_m3_holdout-full",
+        "threshold": 3.512327453964383,
+        "threshold_bootstrap_95": [
+          3.4759398066359717,
+          3.547998070671035
+        ],
+        "n_detected": 41,
+        "n_candidates_in_threshold_band": 0,
+        "candidate_periods_in_band": [],
+        "median_abs_ratio_minus_1_detected": 1.897618728818884e-10,
+        "max_abs_ratio_minus_1_detected": 8.188825173505165e-09
+      },
+      "v3_blackman_harris": {
+        "run": "run_20260913_132814_m3_pilot-dev-val-holdout-full",
+        "threshold": 3.465796024894217,
+        "threshold_bootstrap_95": [
+          3.42866110571762,
+          3.496682155694001
+        ],
+        "n_detected": 41,
+        "n_candidates_in_threshold_band": 0,
+        "candidate_periods_in_band": [],
+        "median_abs_ratio_minus_1_detected": 1.646291991619364e-08,
+        "max_abs_ratio_minus_1_detected": 7.95977055378927e-08
+      },
+      "differences": {
+        "v2_hann_not_v3_hann": [],
+        "v3_hann_not_v2_hann": [],
+        "hann_v3_not_bh": [],
+        "bh_not_hann_v3": [],
+        "detected_in_all_three": 41,
+        "detected_in_any": 41
+      }
+    }
+  },
+  "coefficient_agreement_between_windows": {
+    "dev": {
+      "median_abs_ratio_difference_hann_vs_bh_all47": 5.5274791743720186e-08,
+      "max": 5.316718569847723e-07
+    },
+    "val": {
+      "median_abs_ratio_difference_hann_vs_bh_all47": 5.0587146027680774e-08,
+      "max": 4.1042034359950463e-07
+    },
+    "holdout": {
+      "median_abs_ratio_difference_hann_vs_bh_all47": 6.253452389248793e-08,
+      "max": 6.810092453291006e-07
+    },
+    "full": {
+      "median_abs_ratio_difference_hann_vs_bh_all47": 1.8513438670986204e-08,
+      "max": 5.292858931138511e-07
+    }
+  }
+}

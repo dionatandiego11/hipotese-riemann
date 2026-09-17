@@ -1,0 +1,12 @@
+[2026-09-13 13:09:10] [INFO] [riemann_spectra.cli] === run_20260913_160910_m2_m4_v1_m2: 40000 zeros ===
+[2026-09-13 13:16:15] [INFO] [riemann_spectra.spectral_pipeline] [M2 b01] var(s)=0.1582 p_GUE(cdf,r2,K)=(0.001,0.465,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 13:22:56] [INFO] [riemann_spectra.spectral_pipeline] [M2 b02] var(s)=0.1587 p_GUE(cdf,r2,K)=(0.001,0.001,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 13:29:43] [INFO] [riemann_spectra.spectral_pipeline] [M2 b03] var(s)=0.1594 p_GUE(cdf,r2,K)=(0.001,0.270,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 13:36:10] [INFO] [riemann_spectra.spectral_pipeline] [M2 b04] var(s)=0.1605 p_GUE(cdf,r2,K)=(0.001,0.230,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 13:42:31] [INFO] [riemann_spectra.spectral_pipeline] [M2 b05] var(s)=0.1597 p_GUE(cdf,r2,K)=(0.001,0.092,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 13:49:27] [INFO] [riemann_spectra.spectral_pipeline] [M2 b06] var(s)=0.1595 p_GUE(cdf,r2,K)=(0.001,0.042,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 13:56:50] [INFO] [riemann_spectra.spectral_pipeline] [M2 b07] var(s)=0.1624 p_GUE(cdf,r2,K)=(0.001,0.044,0.003) p_Poisson(cdf)=0.001
+[2026-09-13 14:04:52] [INFO] [riemann_spectra.spectral_pipeline] [M2 b08] var(s)=0.1606 p_GUE(cdf,r2,K)=(0.001,0.075,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 14:13:27] [INFO] [riemann_spectra.spectral_pipeline] [M2 b09] var(s)=0.1596 p_GUE(cdf,r2,K)=(0.001,0.177,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 14:19:49] [INFO] [riemann_spectra.spectral_pipeline] [M2 b10] var(s)=0.1616 p_GUE(cdf,r2,K)=(0.001,0.106,0.001) p_Poisson(cdf)=0.001
+[2026-09-13 14:19:49] [INFO] [riemann_spectra.reporting] Relatório e métricas salvos em results/run_20260913_160910_m2_m4_v1_m2.

@@ -1,0 +1,130 @@
+# Protocolo M4 v1 — ROBUSTEZ com Blackman-Harris (orçamento 999/999 pré-registrado); não seleciona resultados.
+# Pré-registro: docs/PROTOCOLO.md §9. Faixa: zeros 10.001–40.000 em 10 blocos contíguos de 3.000.
+# Zeros 40.001–100.000 reservados para confirmação posterior (não processados).
+protocol_version = "m4-v1-robustez-blackman-harris"
+seed = 20260914
+dataset_id = "odlyzko_zeros1_first40000"
+processed_csv = "zeros_40k.csv"
+max_zeros = 40000
+lock_scope = "package"
+
+# Instrumento
+t_min = 0.5
+t_max = 5.0
+window = "blackman_harris"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+# Detector e nulos
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+threshold_confidence = 0.95
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 999
+shuffle_score_realizations = 999
+gue_sigma_realizations = 100
+gue_threshold_realizations = 199
+gue_score_realizations = 0
+gue_retained_fraction = 0.6
+
+# Calibração sintética
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+# Comparação aritmética
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 3e-9
+precision_perturbations = 20
+
+[criteria]
+alpha_family = 0.05
+# C1 — recuperação de frequências (detecção sem catálogo)
+recovery_min = 0.95
+clear_margin = 1.5
+max_blocks_with_unmatched = 2
+# C2 — concordância de coeficientes (medição direcionada, estimador primário)
+ratio_tolerance = 1e-6
+coefficient_fraction_min = 0.95
+q_min = 0.9
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true
+
+[[blocks]]
+name = "b01"
+first_index = 10001
+last_index = 13000
+requires_lock = true
+
+[[blocks]]
+name = "b02"
+first_index = 13001
+last_index = 16000
+requires_lock = true
+
+[[blocks]]
+name = "b03"
+first_index = 16001
+last_index = 19000
+requires_lock = true
+
+[[blocks]]
+name = "b04"
+first_index = 19001
+last_index = 22000
+requires_lock = true
+
+[[blocks]]
+name = "b05"
+first_index = 22001
+last_index = 25000
+requires_lock = true
+
+[[blocks]]
+name = "b06"
+first_index = 25001
+last_index = 28000
+requires_lock = true
+
+[[blocks]]
+name = "b07"
+first_index = 28001
+last_index = 31000
+requires_lock = true
+
+[[blocks]]
+name = "b08"
+first_index = 31001
+last_index = 34000
+requires_lock = true
+
+[[blocks]]
+name = "b09"
+first_index = 34001
+last_index = 37000
+requires_lock = true
+
+[[blocks]]
+name = "b10"
+first_index = 37001
+last_index = 40000
+requires_lock = true

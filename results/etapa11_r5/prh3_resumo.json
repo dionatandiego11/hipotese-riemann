@@ -1,0 +1,376 @@
+{
+ "conferencias": {
+  "dev_zeros_tab_menos_rec": [
+   0.0,
+   1.999982400828146e-12
+  ],
+  "dev_B_tab_menos_rec": [
+   0.0,
+   1.9999442538523333e-12
+  ],
+  "tol": 3e-12,
+  "Zp_le_Z": true,
+  "conferencia1_ok": true,
+  "conferencia2_ok": true
+ },
+ "tau": 1e-06,
+ "combinacoes": {
+  "d1=1,Delta=0.5": {
+   "J": [
+    7
+   ],
+   "razao_Zp_Z": [
+    0.06927682370681053,
+    0.07027286005627187
+   ],
+   "orcamento2": {
+    "max": 0.0019927148576270796,
+    "min": 5.412324003879419e-05,
+    "mediana": 0.00018750197605876508
+   },
+   "orcamento2_elegiveis": {
+    "max": 0.0002376613375769723,
+    "mediana": 0.0001365085738109667
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 2.7820465e-08,
+   "zeros_fracao_min": 0.9999659684431768
+  },
+  "d1=1,Delta=1": {
+   "J": [
+    6
+   ],
+   "razao_Zp_Z": [
+    0.08641048984291638,
+    0.08744687773787461
+   ],
+   "orcamento2": {
+    "max": 0.0015973864660401532,
+    "min": 4.3287924624337416e-05,
+    "mediana": 0.00015024389594565094
+   },
+   "orcamento2_elegiveis": {
+    "max": 0.00019051888281805334,
+    "mediana": 0.0001094376531445056
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 2.7644423e-08,
+   "zeros_fracao_min": 0.9999584336378305
+  },
+  "d1=1,Delta=2": {
+   "J": [
+    5
+   ],
+   "razao_Zp_Z": [
+    0.09670255758107664,
+    0.09781276473451184
+   ],
+   "orcamento2": {
+    "max": 0.0014467128314236528,
+    "min": 3.918508688123922e-05,
+    "mediana": 0.00013606110503565705
+   },
+   "orcamento2_elegiveis": {
+    "max": 0.00017254941081812505,
+    "mediana": 9.911703299616547e-05
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 2.7538154e-08,
+   "zeros_fracao_min": 0.9999547570973818
+  },
+  "d1=2,Delta=0.5": {
+   "J": [
+    4
+   ],
+   "razao_Zp_Z": [
+    0.11917443519560772,
+    0.12036077486608548
+   ],
+   "orcamento2": {
+    "max": 0.00030417721727173065,
+    "min": 8.226611535169335e-06,
+    "mediana": 2.860052674357728e-05
+   },
+   "orcamento2_elegiveis": {
+    "max": 3.62800016780403e-05,
+    "mediana": 2.084107240386315e-05
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 4.297005e-09,
+   "zeros_fracao_min": 0.9999618568405608
+  },
+  "d1=2,Delta=1": {
+   "J": [
+    4
+   ],
+   "razao_Zp_Z": [
+    0.14073070564002887,
+    0.14176411902863695
+   ],
+   "orcamento2": {
+    "max": 0.00024925671985923684,
+    "min": 6.724253514876693e-06,
+    "mediana": 2.3416583320561214e-05
+   },
+   "orcamento2_elegiveis": {
+    "max": 2.9730602698622795e-05,
+    "mediana": 1.706570137633057e-05
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 4.261866e-09,
+   "zeros_fracao_min": 0.9999538692522468
+  },
+  "d1=2,Delta=2": {
+   "J": [
+    3
+   ],
+   "razao_Zp_Z": [
+    0.18088595164157673,
+    0.18193551290795662
+   ],
+   "orcamento2": {
+    "max": 0.00020422762790839834,
+    "min": 5.500747567700327e-06,
+    "mediana": 1.9178244094553352e-05
+   },
+   "orcamento2_elegiveis": {
+    "max": 2.436023793479857e-05,
+    "mediana": 1.397368428756172e-05
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 4.230936e-09,
+   "zeros_fracao_min": 0.9999473713730471
+  },
+  "d1=4,Delta=0.5": {
+   "J": [
+    3
+   ],
+   "razao_Zp_Z": [
+    0.19630065561958668,
+    0.19719314340366256
+   ],
+   "orcamento2": {
+    "max": 4.612129147702278e-05,
+    "min": 1.2406871834798804e-06,
+    "mediana": 4.330573228925226e-06
+   },
+   "orcamento2_elegiveis": {
+    "max": 5.50144328411721e-06,
+    "mediana": 3.154262256261856e-06
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 4.46362e-10,
+   "zeros_fracao_min": 0.9999689673205268
+  },
+  "d1=4,Delta=1": {
+   "J": [
+    3
+   ],
+   "razao_Zp_Z": [
+    0.2348772931766323,
+    0.23538763109408548
+   ],
+   "orcamento2": {
+    "max": 3.887811169864018e-05,
+    "min": 1.0432999001056533e-06,
+    "mediana": 3.6496461103041216e-06
+   },
+   "orcamento2_elegiveis": {
+    "max": 4.637623361993405e-06,
+    "mediana": 2.6590837930961917e-06
+   },
+   "n_le_tau": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 4.42285e-10,
+   "zeros_fracao_min": 0.9999614028869857
+  },
+  "d1=4,Delta=2": {
+   "J": [
+    2
+   ],
+   "razao_Zp_Z": [
+    0.3012823605431256,
+    0.301895667027657
+   ],
+   "orcamento2": {
+    "max": 3.5169830607620384e-05,
+    "min": 9.434065911852871e-07,
+    "mediana": 3.3014159936743366e-06
+   },
+   "orcamento2_elegiveis": {
+    "max": 4.1953058966043424e-06,
+    "mediana": 2.405482261121357e-06
+   },
+   "n_le_tau": {
+    "todas": 1,
+    "elegiveis": 1
+   },
+   "n_le_tau_anterior": {
+    "todas": 0,
+    "elegiveis": 0
+   },
+   "polos_rel_max": 4.3955e-10,
+   "zeros_fracao_min": 0.9999578730965355
+  },
+  "d1=8,Delta=0.5": {
+   "J": [
+    2
+   ],
+   "razao_Zp_Z": [
+    0.3185927026186909,
+    0.31896034877313967
+   ],
+   "orcamento2": {
+    "max": 7.961627748698425e-06,
+    "min": 2.133622871665085e-07,
+    "mediana": 7.472964631657259e-07
+   },
+   "orcamento2_elegiveis": {
+    "max": 9.497326061642656e-07,
+    "mediana": 5.445601388547732e-07
+   },
+   "n_le_tau": {
+    "todas": 1044,
+    "elegiveis": 461
+   },
+   "n_le_tau_anterior": {
+    "todas": 26,
+    "elegiveis": 25
+   },
+   "polos_rel_max": 1.94159e-10,
+   "zeros_fracao_min": 0.9999338296313718
+  },
+  "d1=8,Delta=1": {
+   "J": [
+    2
+   ],
+   "razao_Zp_Z": [
+    0.382166683032252,
+    0.3826592526445439
+   ],
+   "orcamento2": {
+    "max": 6.242582886657792e-06,
+    "min": 1.6681416330947882e-07,
+    "mediana": 5.857870399491448e-07
+   },
+   "orcamento2_elegiveis": {
+    "max": 7.447004445704156e-07,
+    "mediana": 4.270156903308829e-07
+   },
+   "n_le_tau": {
+    "todas": 1146,
+    "elegiveis": 461
+   },
+   "n_le_tau_anterior": {
+    "todas": 221,
+    "elegiveis": 163
+   },
+   "polos_rel_max": 2.09494e-10,
+   "zeros_fracao_min": 0.9999084489743102
+  },
+  "d1=8,Delta=2": {
+   "J": [
+    2
+   ],
+   "razao_Zp_Z": [
+    0.44817609941137615,
+    0.4494836125671097
+   ],
+   "orcamento2": {
+    "max": 5.383066382037904e-06,
+    "min": 1.435426929068559e-07,
+    "mediana": 5.048636296537266e-07
+   },
+   "orcamento2_elegiveis": {
+    "max": 6.421866033762809e-07,
+    "mediana": 3.680189046591404e-07
+   },
+   "n_le_tau": {
+    "todas": 1180,
+    "elegiveis": 461
+   },
+   "n_le_tau_anterior": {
+    "todas": 559,
+    "elegiveis": 361
+   },
+   "polos_rel_max": 2.50615e-10,
+   "zeros_fracao_min": 0.9998686106047145
+  }
+ },
+ "minimo_sobre_grade": {
+  "todas": {
+   "n": 1410,
+   "n_le_tau": 1180,
+   "max": 5.383066382037904e-06
+  },
+  "elegiveis": {
+   "n": 461,
+   "n_le_tau": 461,
+   "max": 6.421866033762809e-07,
+   "mediana": 3.680189046591404e-07,
+   "por_versao_le_tau": {
+    "m4-v1": 160,
+    "m4-v2": 151,
+    "m4-v3": 150
+   }
+  },
+  "combinacoes_no_minimo": {
+   "8,2": 1410
+  }
+ }
+}

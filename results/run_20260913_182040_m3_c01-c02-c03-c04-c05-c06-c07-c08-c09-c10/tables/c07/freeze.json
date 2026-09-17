@@ -1,0 +1,14 @@
+{
+  "blind_peaks_csv": "results/run_20260913_182040_m3_c01-c02-c03-c04-c05-c06-c07-c08-c09-c10/tables/c07/blind_peaks.csv",
+  "blind_peaks_sha256": "d3e332cc528afd6f9136b304d6c2349848615a3403249e2edc5cce181429bbd5",
+  "nulls_npz_sha256": "d4fe065c3ce6ba26a032fd99c0efef114ab052095bc7d9556600c1a43e702592",
+  "frozen_before_arithmetic": true,
+  "decision_statistic": "z na malha (id\u00eantica para zeros, controles e sint\u00e9ticos)",
+  "n_candidates": 32,
+  "decision_rule": "detected se z > limite superior do IC do quantil; inconclusivo dentro do IC; n\u00e3o detectado abaixo",
+  "n_detected_primary": 26,
+  "n_inconclusive_primary": 1,
+  "n_detected_secondary": 19,
+  "n_inconclusive_secondary": 3,
+  "n_candidates_whose_decision_would_change_with_refined_z": 0
+}

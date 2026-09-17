@@ -1,0 +1,9 @@
+{
+  "blind_peaks_csv": "results/run_20260913_023918_m3_pilot-dev-val/tables/pilot/blind_peaks.csv",
+  "blind_peaks_sha256": "c138ed7d573be039a48e708355b4e38cf8a464c64baff39a43655a008051113e",
+  "nulls_npz_sha256": "6a3cacf81e21e1ec88f5670603b94f74660ff913812db6270bb2c0d47784a2a4",
+  "frozen_before_arithmetic": true,
+  "n_candidates": 20,
+  "n_detected_primary": 18,
+  "n_detected_secondary": 17
+}

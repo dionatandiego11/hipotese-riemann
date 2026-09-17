@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Odlyzko Riemann Zeta Zeros (zeros1)",
+  "source_url": "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1",
+  "retrieval_timestamp_utc": "2026-09-13T21:29:58.665613+00:00",
+  "declared_accuracy": "3e-9",
+  "raw_file": {
+    "path": "data/raw/zeros1",
+    "size_bytes": 1800000,
+    "sha256": "3436c916a7878261ac183fd7b9448c9a4736b8bbccf1356874a6ce1788541632"
+  },
+  "processed_file": {
+    "path": "data/processed/zeros_100k.csv",
+    "size_bytes": 2478085,
+    "sha256": "1af728cf4a1e23c5faacd8f6f0a7547715c8e1103cd4456c28ccc4297d192100"
+  },
+  "statistics": {
+    "total_records_loaded": 100000,
+    "gamma_min": 14.134725142,
+    "gamma_max": 74920.827498994,
+    "min_spacing": 0.014701476000482216,
+    "max_spacing": 6.887314496999998,
+    "strictly_increasing": true,
+    "all_finite": true
+  },
+  "dataset_id": "odlyzko_zeros1_first100000"
+}

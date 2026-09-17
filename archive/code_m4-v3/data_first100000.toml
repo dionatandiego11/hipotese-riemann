@@ -1,0 +1,11 @@
+# Conjunto de dados para o M4, faixa final (m4-v3): zeros 1–100.000.
+profile = "data_first100000"
+dataset_id = "odlyzko_zeros1_first100000"
+max_zeros = 100000
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+zeros_source_url = "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1"
+raw_filename = "zeros1"
+processed_csv = "zeros_100k.csv"
+validation_sample_size = 20
+validation_dps = 40

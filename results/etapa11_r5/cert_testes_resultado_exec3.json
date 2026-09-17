@@ -1,0 +1,36 @@
+{
+ "T1": {
+  "casos": 6114,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T2": {
+  "falhas": []
+ },
+ "T3": {
+  "casos": 6052,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T4": {
+  "falhas": []
+ },
+ "T5": {
+  "acima_decide_nao": true,
+  "abaixo_decide_sim": true
+ },
+ "T6": {
+  "linhas_suspeitas": []
+ },
+ "T7": {
+  "casos": 22311,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T8": {
+  "casos": 10000,
+  "n_falhas": 0
+ },
+ "todos_passaram": true,
+ "script_sha256": "ca87480a1a7017b54607f5e744c52e709dfd3387e7a70fab916680d8eaf5c866"
+}

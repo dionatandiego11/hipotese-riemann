@@ -1,0 +1,1564 @@
+# Relatório de execução — M2
+
+**ID:** `run_20260914_012016_m2_m4_v3_m2`
+**Data UTC:** `2026-09-14T02:16:25.064689+00:00`
+**Perfil:** `m4_v3_m2`
+**Zeros analisados:** `100000`
+
+## Resumo
+
+Execução M2 com 100000 zeros em 3368.5 s (pico de memória 220 MB).
+
+## Afirmações sustentadas por esta execução
+
+- B: hashes de dados conferem com o manifesto de odlyzko_zeros1_first100000; 100000 ordenadas finitas e estritamente crescentes; validação mpmath do mesmo arquivo (20 índices, máx. |erro| = 2.74e-09, critério abs_error <= declared_source_error).
+- B: controles verificados — permutar a ordem dos níveis altera R2 em 0.0e+00 e K_c em 0.0e+00; inversão de Nbar com erro 3.6e-12; GUE denso e tridiagonal (N=400, 30 matrizes) com variâncias de espaçamento 0.1760 e 0.1767 e distância sup entre CDFs 0.007.
+- Secundária CUE/d01 (N_eff=2.09, fora do domínio validado): distância RMS da CDF ao limite 0.0076, à predição corrigida 0.0055 (ruído amostral GUE 0.0029); Var(s) medida 0.1613, limite 0.1800, corrigida 0.1513.
+- B/d01 (zeros 70001–73000): média de espaçamento 1.0000 e variância 0.1613 antes de renormalização (envelope GUE 95% da variância 0.1708–0.1906); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.300, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d02 (N_eff=2.10, fora do domínio validado): distância RMS da CDF ao limite 0.0070, à predição corrigida 0.0056 (ruído amostral GUE 0.0029); Var(s) medida 0.1627, limite 0.1800, corrigida 0.1515.
+- B/d02 (zeros 73001–76000): média de espaçamento 1.0000 e variância 0.1627 antes de renormalização (envelope GUE 95% da variância 0.1707–0.1899); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.852, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d03 (N_eff=2.11, fora do domínio validado): distância RMS da CDF ao limite 0.0077, à predição corrigida 0.0048 (ruído amostral GUE 0.0029); Var(s) medida 0.1628, limite 0.1800, corrigida 0.1517.
+- B/d03 (zeros 76001–79000): média de espaçamento 1.0001 e variância 0.1628 antes de renormalização (envelope GUE 95% da variância 0.1701–0.1897); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.200, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d04 (N_eff=2.12, fora do domínio validado): distância RMS da CDF ao limite 0.0073, à predição corrigida 0.0050 (ruído amostral GUE 0.0030); Var(s) medida 0.1632, limite 0.1800, corrigida 0.1519.
+- B/d04 (zeros 79001–82000): média de espaçamento 0.9998 e variância 0.1632 antes de renormalização (envelope GUE 95% da variância 0.1704–0.1896); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.941, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d05 (N_eff=2.12, fora do domínio validado): distância RMS da CDF ao limite 0.0076, à predição corrigida 0.0052 (ruído amostral GUE 0.0029); Var(s) medida 0.1621, limite 0.1800, corrigida 0.1520.
+- B/d05 (zeros 82001–85000): média de espaçamento 0.9999 e variância 0.1621 antes de renormalização (envelope GUE 95% da variância 0.1709–0.1899); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.390, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d06 (N_eff=2.13, fora do domínio validado): distância RMS da CDF ao limite 0.0073, à predição corrigida 0.0052 (ruído amostral GUE 0.0029); Var(s) medida 0.1634, limite 0.1800, corrigida 0.1522.
+- B/d06 (zeros 85001–88000): média de espaçamento 1.0000 e variância 0.1634 antes de renormalização (envelope GUE 95% da variância 0.1706–0.1897); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.715, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d07 (N_eff=2.14, fora do domínio validado): distância RMS da CDF ao limite 0.0079, à predição corrigida 0.0050 (ruído amostral GUE 0.0030); Var(s) medida 0.1638, limite 0.1800, corrigida 0.1523.
+- B/d07 (zeros 88001–91000): média de espaçamento 1.0000 e variância 0.1638 antes de renormalização (envelope GUE 95% da variância 0.1708–0.1898); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.626, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d08 (N_eff=2.14, fora do domínio validado): distância RMS da CDF ao limite 0.0076, à predição corrigida 0.0054 (ruído amostral GUE 0.0030); Var(s) medida 0.1622, limite 0.1800, corrigida 0.1524.
+- B/d08 (zeros 91001–94000): média de espaçamento 1.0000 e variância 0.1622 antes de renormalização (envelope GUE 95% da variância 0.1708–0.1901); p do envelope GUE (CDF, R2, K_c) = 0.002, 0.051, 0.043; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d09 (N_eff=2.15, fora do domínio validado): distância RMS da CDF ao limite 0.0070, à predição corrigida 0.0052 (ruído amostral GUE 0.0028); Var(s) medida 0.1629, limite 0.1800, corrigida 0.1526.
+- B/d09 (zeros 94001–97000): média de espaçamento 1.0003 e variância 0.1629 antes de renormalização (envelope GUE 95% da variância 0.1714–0.1892); p do envelope GUE (CDF, R2, K_c) = 0.001, 0.776, 0.001; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- Secundária CUE/d10 (N_eff=2.16, fora do domínio validado): distância RMS da CDF ao limite 0.0070, à predição corrigida 0.0047 (ruído amostral GUE 0.0029); Var(s) medida 0.1638, limite 0.1800, corrigida 0.1527.
+- B/d10 (zeros 97001–100000): média de espaçamento 0.9999 e variância 0.1638 antes de renormalização (envelope GUE 95% da variância 0.1714–0.1899); p do envelope GUE (CDF, R2, K_c) = 0.002, 0.775, 0.002; p do envelope Poisson (CDF) = 0.001 (B=999/999).
+- C3/gue_cdf: 10 de 10 blocos rejeitados após Holm entre blocos (menor p ajustado atingível 0.010).
+- C3/gue_r2: 0 de 10 blocos rejeitados após Holm entre blocos (menor p ajustado atingível 0.510).
+- C3/gue_k_connected: 10 de 10 blocos rejeitados após Holm entre blocos (menor p ajustado atingível 0.010).
+- C3/poisson_cdf: 10 de 10 blocos rejeitados após Holm entre blocos (menor p ajustado atingível 0.010).
+- C3/poisson_r2: 10 de 10 blocos rejeitados após Holm entre blocos (menor p ajustado atingível 0.010).
+- C3/poisson_k_connected: 10 de 10 blocos rejeitados após Holm entre blocos (menor p ajustado atingível 0.010).
+
+## Limitações
+
+- A validação por amostra não certifica completude da tabela nem localização rigorosa de todos os zeros.
+- Blocos contíguos de um espectro determinístico não são amostras independentes.
+- Envelopes GUE usam uma matriz por realização (níveis centrais), sem concatenação de matrizes.
+- Valores-p do envelope medem incompatibilidade com o ensemble finito do mesmo tamanho, não com o limite assintótico.
+
+## Métricas
+
+```json
+{
+  "data": {
+    "dataset_id": "odlyzko_zeros1_first100000",
+    "raw_sha256_matches_manifest": true,
+    "processed_sha256_matches_manifest": true,
+    "validation_matches_processed_file": true,
+    "zeros_used": 100000,
+    "zeros_in_validated_file": 100000,
+    "strictly_increasing": true,
+    "all_finite": true,
+    "mpmath_sample_size": 20,
+    "mpmath_max_abs_error": 2.73939804174006e-09,
+    "mpmath_tolerance_rule": "abs_error <= declared_source_error",
+    "mpmath_all_within_tolerance": true
+  },
+  "m1_checks_index_range": [
+    1,
+    10000
+  ],
+  "unfolding_inverse_max_abs_error": 3.637978807091713e-12,
+  "permutation_invariance": {
+    "r2_max_abs_diff": 0.0,
+    "sff_max_abs_diff": 0.0
+  },
+  "control_poisson": {
+    "fixed_count": {
+      "n": 20000,
+      "density": 0.9999570336202082,
+      "spacing_var": 1.0005953256725817
+    },
+    "random_count": {
+      "n": 19956,
+      "density": 0.9978,
+      "spacing_var": 1.0067050285318033
+    },
+    "convention": "comparações com zeros usam contagem fixa (mesmo n que o bloco)"
+  },
+  "control_gue_dense_vs_tridiagonal": {
+    "matrix_dim": 400,
+    "realizations": 30,
+    "bulk_interval": "[-0.5, 0.5] do semicírculo",
+    "dense_mean": 1.0001906288057871,
+    "dense_var": 0.17604445321105888,
+    "tridiagonal_mean": 0.999424402864562,
+    "tridiagonal_var": 0.17670501981011577,
+    "cdf_sup_distance": 0.006659610726117926,
+    "n_spacings_each": 7272
+  },
+  "blocks": {
+    "d01": {
+      "indices": [
+        70001,
+        73000
+      ],
+      "gamma_range": [
+        54512.241266402,
+        56585.923346771
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 1.0000242538451447,
+      "spacing_variance": 0.16128235925983042,
+      "spacing_skewness": 0.49607866616712554,
+      "spacing_kurtosis": 0.1512914128474856,
+      "ks_distance_wigner_surmise": 0.020851569207890303,
+      "wasserstein_wigner_surmise": 0.017026163683867734,
+      "ks_distance_poisson": 0.30155553602187635,
+      "wasserstein_poisson": 0.4254039448143656,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.2166856322437525e-07,
+        "spacing_variance_theta": 0.16128235925965415,
+        "max_abs_spacing_difference": 7.275957614183426e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.0021707650018365473,
+        "1-2": 0.0038923433062223274,
+        "2-5": 0.0028135293786977103
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.08,
+      "sff_fraction_tau_outside_gue_95_band": 0.25,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.006824011937020802,
+            "distance_null_median": 0.0026176915387121098,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.05352917223545192,
+            "distance_null_median": 0.0506699941533961,
+            "p_value_mc": 0.3,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.402976650667133,
+            "distance_null_median": 0.25379149964389985,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17084434402191664,
+            0.1906281572838313
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11635383092021022,
+            "distance_null_median": 0.003721289668906686,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2723044413748125,
+            "distance_null_median": 0.05751800675992382,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5711817802813554,
+            "distance_null_median": 0.31501292686737464,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9320894328996815,
+            1.071567973838267
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 55550.181064038,
+        "N_eff_range_in_block": [
+          2.0871407465218166,
+          2.0957336793908135
+        ],
+        "N_eff": 2.091481865193723,
+        "alpha": 1.1619867144398168,
+        "rms_cdf_distance_to_limit": 0.0076057668554776105,
+        "rms_cdf_distance_to_cue_corrected": 0.005526945274734592,
+        "ratio_cue_over_limit": 0.7266782403084222,
+        "sampling_noise_rms_gue_ensemble": 0.0029078713201971824,
+        "sup_cdf_distance_to_limit": 0.02084378621266278,
+        "sup_cdf_distance_to_cue_corrected": 0.020042201008119098,
+        "spacing_variance_measured": 0.16128235925983042,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15133727112522255,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d02": {
+      "indices": [
+        73001,
+        76000
+      ],
+      "gamma_range": [
+        56586.415036512,
+        58651.792785413
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 1.0000302784384618,
+      "spacing_variance": 0.16267786959208835,
+      "spacing_skewness": 0.4671296761721082,
+      "spacing_kurtosis": 0.10071882206533989,
+      "ks_distance_wigner_surmise": 0.018022258229338423,
+      "wasserstein_wigner_surmise": 0.016376467064005376,
+      "ks_distance_poisson": 0.29760379236346335,
+      "wasserstein_poisson": 0.42257537248441995,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.1721567716449499e-07,
+        "spacing_variance_theta": 0.16267786959181663,
+        "max_abs_spacing_difference": 7.275957614183426e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.00229724748652708,
+        "1-2": 0.003234286405112177,
+        "2-5": 0.0015655722697468816
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.06,
+      "sff_fraction_tau_outside_gue_95_band": 0.2,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.006250809316615564,
+            "distance_null_median": 0.0025829715992624486,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.044968961764645175,
+            "distance_null_median": 0.05095356477168591,
+            "p_value_mc": 0.852,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.3526193823959919,
+            "distance_null_median": 0.25497454279018283,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.1706657894110427,
+            0.1898993292975169
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11598181103183404,
+            "distance_null_median": 0.0036641694232548436,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2702310647244164,
+            "distance_null_median": 0.057109008488368494,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5257132806963074,
+            "distance_null_median": 0.3129351027828929,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.92762131208279,
+            1.080560232390455
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 57620.058300263496,
+        "N_eff_range_in_block": [
+          2.0957356792828135,
+          2.103986652781778
+        ],
+        "N_eff": 2.0999019501534217,
+        "alpha": 1.1613371879712948,
+        "rms_cdf_distance_to_limit": 0.006956642668274734,
+        "rms_cdf_distance_to_cue_corrected": 0.005643876410778343,
+        "ratio_cue_over_limit": 0.8112931308829233,
+        "sampling_noise_rms_gue_ensemble": 0.0028896569962817394,
+        "sup_cdf_distance_to_limit": 0.018889839044119394,
+        "sup_cdf_distance_to_cue_corrected": 0.015313446822846077,
+        "spacing_variance_measured": 0.16267786959208835,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.1515188864313186,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d03": {
+      "indices": [
+        76001,
+        79000
+      ],
+      "gamma_range": [
+        58652.564653319,
+        60710.110100317
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 1.0000781906533995,
+      "spacing_variance": 0.16282065224875442,
+      "spacing_skewness": 0.47742376447697205,
+      "spacing_kurtosis": 0.1685369382126658,
+      "ks_distance_wigner_surmise": 0.021490425548477105,
+      "wasserstein_wigner_surmise": 0.017185839610504555,
+      "ks_distance_poisson": 0.2951018265799497,
+      "wasserstein_poisson": 0.42493017632421204,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.130829332396388e-07,
+        "spacing_variance_theta": 0.16282065224847805,
+        "max_abs_spacing_difference": 7.275957614183426e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.0030949632440004115,
+        "1-2": 0.004698036884984228,
+        "2-5": 0.00257700602995359
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.12,
+      "sff_fraction_tau_outside_gue_95_band": 0.27,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.00684569393242156,
+            "distance_null_median": 0.002639575871738578,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.055589195317624164,
+            "distance_null_median": 0.05068198369638553,
+            "p_value_mc": 0.2,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.3999960351535228,
+            "distance_null_median": 0.255882774713927,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17009252346998094,
+            0.18971423209261087
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.1161334881419888,
+            "distance_null_median": 0.0037587637386891468,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.27173100741178186,
+            "distance_null_median": 0.057022307374838044,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5579093471916596,
+            "distance_null_median": 0.3135449954782905,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9317874467304408,
+            1.0718278389472724
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 59682.0822288495,
+        "N_eff_range_in_block": [
+          2.1039896816789114,
+          2.1119252786171434
+        ],
+        "N_eff": 2.1079945522888077,
+        "alpha": 1.1607178136610168,
+        "rms_cdf_distance_to_limit": 0.007730998321277002,
+        "rms_cdf_distance_to_cue_corrected": 0.0048269817803013445,
+        "ratio_cue_over_limit": 0.6243672006779102,
+        "sampling_noise_rms_gue_ensemble": 0.0029324204372324363,
+        "sup_cdf_distance_to_limit": 0.0208883184682416,
+        "sup_cdf_distance_to_cue_corrected": 0.012551937044006478,
+        "spacing_variance_measured": 0.16282065224875442,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.1516923127502664,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d04": {
+      "indices": [
+        79001,
+        82000
+      ],
+      "gamma_range": [
+        60710.852649635,
+        62760.17669892
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9997628525924191,
+      "spacing_variance": 0.1631953192976453,
+      "spacing_skewness": 0.4622294910971762,
+      "spacing_kurtosis": 0.12571210796781296,
+      "ks_distance_wigner_surmise": 0.020443203509926622,
+      "wasserstein_wigner_surmise": 0.016205816726931683,
+      "ks_distance_poisson": 0.2994770550708752,
+      "wasserstein_poisson": 0.42344820085090595,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.0924122761934996e-07,
+        "spacing_variance_theta": 0.1631953192976745,
+        "max_abs_spacing_difference": 8.731149137020111e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.0013514613315133536,
+        "1-2": 0.0022709509123539037,
+        "2-5": 0.001824084774666276
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.02,
+      "sff_fraction_tau_outside_gue_95_band": 0.29,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.006610451011208105,
+            "distance_null_median": 0.002664106301106448,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.042622890227198666,
+            "distance_null_median": 0.05099188573262044,
+            "p_value_mc": 0.941,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.4010200918019698,
+            "distance_null_median": 0.2567754003096236,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17041708681568785,
+            0.18959510775571708
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.1159464537885203,
+            "distance_null_median": 0.0036935938022927897,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2685848730260516,
+            "distance_null_median": 0.0573638220346431,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5572597101155757,
+            "distance_null_median": 0.31268884846169065,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9215252728261544,
+            1.0725158229706537
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 61736.193986101,
+        "N_eff_range_in_block": [
+          2.111928093674948,
+          2.119568934248449
+        ],
+        "N_eff": 2.115782752887783,
+        "alpha": 1.1601262110633908,
+        "rms_cdf_distance_to_limit": 0.0073056458518822075,
+        "rms_cdf_distance_to_cue_corrected": 0.004985602915608459,
+        "ratio_cue_over_limit": 0.6824315079992526,
+        "sampling_noise_rms_gue_ensemble": 0.002981048639883299,
+        "sup_cdf_distance_to_limit": 0.021555207431229267,
+        "sup_cdf_distance_to_cue_corrected": 0.014609966847121236,
+        "spacing_variance_measured": 0.1631953192976453,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15185729645133283,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d05": {
+      "indices": [
+        82001,
+        85000
+      ],
+      "gamma_range": [
+        62761.14797975,
+        64803.458949504
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9998769673140545,
+      "spacing_variance": 0.1621458056625304,
+      "spacing_skewness": 0.47760039736686394,
+      "spacing_kurtosis": 0.13276829449332528,
+      "ks_distance_wigner_surmise": 0.025042570069875814,
+      "wasserstein_wigner_surmise": 0.01789313834281361,
+      "ks_distance_poisson": 0.3018134396792219,
+      "wasserstein_poisson": 0.42334707109203784,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.0570511221885681e-07,
+        "spacing_variance_theta": 0.16214580566234832,
+        "max_abs_spacing_difference": 8.731149137020111e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.004576548448067942,
+        "1-2": 0.003332820212726952,
+        "2-5": 0.0019640965783216248
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.1,
+      "sff_fraction_tau_outside_gue_95_band": 0.25,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.0068182570373729314,
+            "distance_null_median": 0.0026016602064196153,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.052509871538503235,
+            "distance_null_median": 0.05083258727323321,
+            "p_value_mc": 0.39,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.44027687373624064,
+            "distance_null_median": 0.25636003859310635,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.1709107626604404,
+            0.18991213642411475
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11612844681850662,
+            "distance_null_median": 0.003719757839061052,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2711484086537297,
+            "distance_null_median": 0.05731531700089962,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5860092954554318,
+            "distance_null_median": 0.3158206791114352,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9325456772695638,
+            1.0682367991408908
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 63783.243494572496,
+        "N_eff_range_in_block": [
+          2.119572496158836,
+          2.1269427843670226
+        ],
+        "N_eff": 2.123290533188695,
+        "alpha": 1.1595600179803953,
+        "rms_cdf_distance_to_limit": 0.007635201866522236,
+        "rms_cdf_distance_to_cue_corrected": 0.005210393054659575,
+        "ratio_cue_over_limit": 0.6824171967876026,
+        "sampling_noise_rms_gue_ensemble": 0.0029120385604012484,
+        "sup_cdf_distance_to_limit": 0.024599876406747462,
+        "sup_cdf_distance_to_cue_corrected": 0.014256508086808228,
+        "spacing_variance_measured": 0.1621458056625304,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15201525608873756,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d06": {
+      "indices": [
+        85001,
+        88000
+      ],
+      "gamma_range": [
+        64804.248520192,
+        66839.777771405
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9999575210984336,
+      "spacing_variance": 0.1633795937289089,
+      "spacing_skewness": 0.4651149088552098,
+      "spacing_kurtosis": 0.14223095397750507,
+      "ks_distance_wigner_surmise": 0.018076177604160693,
+      "wasserstein_wigner_surmise": 0.017259860740320564,
+      "ks_distance_poisson": 0.298016505446983,
+      "wasserstein_poisson": 0.4236603747326619,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.0235817171633244e-07,
+        "spacing_variance_theta": 0.16337959372884056,
+        "max_abs_spacing_difference": 7.275957614183426e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.001593069461928268,
+        "1-2": 0.0035339033940174234,
+        "2-5": 0.0020083297121437607
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.06,
+      "sff_fraction_tau_outside_gue_95_band": 0.26,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.00654939338304771,
+            "distance_null_median": 0.002628864717996364,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.047681582895341634,
+            "distance_null_median": 0.05120497083980325,
+            "p_value_mc": 0.715,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.3716842360355681,
+            "distance_null_median": 0.2581258357195366,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17056219084346375,
+            0.18969875123048144
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11590756160811844,
+            "distance_null_median": 0.0037659698153237574,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.269925413453052,
+            "distance_null_median": 0.05715241311475564,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5394884704988012,
+            "distance_null_median": 0.3141044330057819,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9276270777657449,
+            1.0672444515340773
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 65823.03384242501,
+        "N_eff_range_in_block": [
+          2.1269455886115054,
+          2.134063728054289
+        ],
+        "N_eff": 2.1305357442747535,
+        "alpha": 1.159017409852712,
+        "rms_cdf_distance_to_limit": 0.007279607818942522,
+        "rms_cdf_distance_to_cue_corrected": 0.005217515138661607,
+        "ratio_cue_over_limit": 0.7167302509188652,
+        "sampling_noise_rms_gue_ensemble": 0.0029303028571797374,
+        "sup_cdf_distance_to_limit": 0.018369752644157217,
+        "sup_cdf_distance_to_cue_corrected": 0.015182290751575594,
+        "spacing_variance_measured": 0.1633795937289089,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15216583868336464,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d07": {
+      "indices": [
+        88001,
+        91000
+      ],
+      "gamma_range": [
+        66840.412489159,
+        68869.276510952
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9999584484439101,
+      "spacing_variance": 0.16376388261043265,
+      "spacing_skewness": 0.48030212391908184,
+      "spacing_kurtosis": 0.18601616942883803,
+      "ks_distance_wigner_surmise": 0.028062399242099356,
+      "wasserstein_wigner_surmise": 0.017560459606663307,
+      "ks_distance_poisson": 0.293277983706965,
+      "wasserstein_poisson": 0.4234121578526898,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 9.922950994223356e-08,
+        "spacing_variance_theta": 0.16376388261005614,
+        "max_abs_spacing_difference": 7.275957614183426e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.003029823115765102,
+        "1-2": 0.0017607421609896847,
+        "2-5": 0.0024111635800172647
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.04,
+      "sff_fraction_tau_outside_gue_95_band": 0.26,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.007085237030657697,
+            "distance_null_median": 0.00266140651842635,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.04892163525110795,
+            "distance_null_median": 0.050723456405514185,
+            "p_value_mc": 0.626,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.4122686648538658,
+            "distance_null_median": 0.2566546840610937,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17077546004801622,
+            0.1897685009492335
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11604873326952578,
+            "distance_null_median": 0.003711777416678274,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.26995377477622884,
+            "distance_null_median": 0.05747887001072784,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.574297292242587,
+            "distance_null_median": 0.3125893611193722,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9296101194704924,
+            1.0743539086498752
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 67855.8637696625,
+        "N_eff_range_in_block": [
+          2.1340659136472184,
+          2.140948158660576
+        ],
+        "N_eff": 2.1375362168046617,
+        "alpha": 1.158496624754102,
+        "rms_cdf_distance_to_limit": 0.007899255902574216,
+        "rms_cdf_distance_to_cue_corrected": 0.0049582951320673195,
+        "ratio_cue_over_limit": 0.6276914171689901,
+        "sampling_noise_rms_gue_ensemble": 0.0029671688528455638,
+        "sup_cdf_distance_to_limit": 0.029831782265301754,
+        "sup_cdf_distance_to_cue_corrected": 0.011218531828079525,
+        "spacing_variance_measured": 0.16376388261043265,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.1523105414676057,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d08": {
+      "indices": [
+        91001,
+        94000
+      ],
+      "gamma_range": [
+        68870.288423966,
+        70892.743177492
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9999585631318725,
+      "spacing_variance": 0.1621828123931974,
+      "spacing_skewness": 0.46866070054769265,
+      "spacing_kurtosis": 0.10460678854970329,
+      "ks_distance_wigner_surmise": 0.02197036050332446,
+      "wasserstein_wigner_surmise": 0.017438467900152712,
+      "ks_distance_poisson": 0.2994705444779582,
+      "wasserstein_poisson": 0.422812355048845,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 9.630457498133183e-08,
+        "spacing_variance_theta": 0.16218281239291676,
+        "max_abs_spacing_difference": 8.731149137020111e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.003144705710358772,
+        "1-2": 0.00466041188277791,
+        "2-5": 0.0033987185610196116
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.12,
+      "sff_fraction_tau_outside_gue_95_band": 0.25,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.006828923001528495,
+            "distance_null_median": 0.002632506196834338,
+            "p_value_mc": 0.002,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.0602401777104727,
+            "distance_null_median": 0.05049614577212466,
+            "p_value_mc": 0.051,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.2965741938794526,
+            "distance_null_median": 0.2560405093645826,
+            "p_value_mc": 0.043,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.1708163784095218,
+            0.19009464585483246
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.1161346395388857,
+            "distance_null_median": 0.0037206218273903857,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2727398582363714,
+            "distance_null_median": 0.0576897171654588,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5145296164760792,
+            "distance_null_median": 0.3129056710808229,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9284967581671268,
+            1.075730793518957
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 69882.276511576,
+        "N_eff_range_in_block": [
+          2.140951540400153,
+          2.14761304763477
+        ],
+        "N_eff": 2.144308899278647,
+        "alpha": 1.1579960218265017,
+        "rms_cdf_distance_to_limit": 0.007593791066464687,
+        "rms_cdf_distance_to_cue_corrected": 0.005396205853600986,
+        "ratio_cue_over_limit": 0.7106076275170956,
+        "sampling_noise_rms_gue_ensemble": 0.002950117519470069,
+        "sup_cdf_distance_to_limit": 0.022599209517784463,
+        "sup_cdf_distance_to_cue_corrected": 0.01684941899526171,
+        "spacing_variance_measured": 0.1621828123931974,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15244939870464225,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d09": {
+      "indices": [
+        94001,
+        97000
+      ],
+      "gamma_range": [
+        70893.252072046,
+        72910.134841896
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 1.000254185500087,
+      "spacing_variance": 0.16288748455985805,
+      "spacing_skewness": 0.46669289693632604,
+      "spacing_kurtosis": 0.09393887572221882,
+      "ks_distance_wigner_surmise": 0.020223041339559045,
+      "wasserstein_wigner_surmise": 0.016608544100537883,
+      "ks_distance_poisson": 0.2997297693740961,
+      "wasserstein_poisson": 0.4233495396255823,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 9.355426300317049e-08,
+        "spacing_variance_theta": 0.16288748455971752,
+        "max_abs_spacing_difference": 8.731149137020111e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.002932768442305397,
+        "1-2": 0.0024426434336950794,
+        "2-5": 0.0018152409895164478
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.04,
+      "sff_fraction_tau_outside_gue_95_band": 0.3,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.0063781950066146426,
+            "distance_null_median": 0.0025471165929755553,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.04688015560998022,
+            "distance_null_median": 0.05070018649554764,
+            "p_value_mc": 0.776,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.35786451611854836,
+            "distance_null_median": 0.25618462556381183,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17139275879112323,
+            0.1891812997530242
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11594500360148179,
+            "distance_null_median": 0.003692313816043952,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.269520370959414,
+            "distance_null_median": 0.05700375066867318,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5561282961004681,
+            "distance_null_median": 0.31151439932494646,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9287809615066238,
+            1.0639004140571664
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 71902.644457146,
+        "N_eff_range_in_block": [
+          2.1476146997873498,
+          2.154071178233615
+        ],
+        "N_eff": 2.1508686223700058,
+        "alpha": 1.1575141652677428,
+        "rms_cdf_distance_to_limit": 0.0070296762419398895,
+        "rms_cdf_distance_to_cue_corrected": 0.005165068041783993,
+        "ratio_cue_over_limit": 0.7347519094789287,
+        "sampling_noise_rms_gue_ensemble": 0.0028372560081060378,
+        "sup_cdf_distance_to_limit": 0.021451200658809233,
+        "sup_cdf_distance_to_cue_corrected": 0.01582671139010125,
+        "spacing_variance_measured": 0.16288748455985805,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15258303880627222,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    },
+    "d10": {
+      "indices": [
+        97001,
+        100000
+      ],
+      "gamma_range": [
+        72910.657134155,
+        74920.827498994
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9998725396776929,
+      "spacing_variance": 0.16380563854097854,
+      "spacing_skewness": 0.4793052262300977,
+      "spacing_kurtosis": 0.19342121956718072,
+      "ks_distance_wigner_surmise": 0.01847646068520742,
+      "wasserstein_wigner_surmise": 0.01586171530006725,
+      "ks_distance_poisson": 0.2979225530238979,
+      "wasserstein_poisson": 0.4236966690157261,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 9.099312592297792e-08,
+        "spacing_variance_theta": 0.1638056385402189,
+        "max_abs_spacing_difference": 8.731149137020111e-11
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.0023846036369791056,
+        "1-2": 0.0021675615805377213,
+        "2-5": 0.0020478803012996447
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.02,
+      "sff_fraction_tau_outside_gue_95_band": 0.28,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.0064887657666035025,
+            "distance_null_median": 0.002646626135032323,
+            "p_value_mc": 0.002,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.046387408906003506,
+            "distance_null_median": 0.050675029851097016,
+            "p_value_mc": 0.775,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.34055035654575866,
+            "distance_null_median": 0.2564759994378795,
+            "p_value_mc": 0.002,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17138174728187305,
+            0.18991345021355552
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11585818887883893,
+            "distance_null_median": 0.003656440301185279,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2689233198231971,
+            "distance_null_median": 0.057116182952565334,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5471607612493059,
+            "distance_null_median": 0.31307187892442395,
+            "p_value_mc": 0.001,
+            "B": 999,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9304577102850455,
+            1.0678471363685103
+          ]
+        }
+      },
+      "cue_secondary": {
+        "E_median": 73916.594725476,
+        "N_eff_range_in_block": [
+          2.154072826964685,
+          2.160332452912574
+        ],
+        "N_eff": 2.157226573950023,
+        "alpha": 1.1570499268571686,
+        "rms_cdf_distance_to_limit": 0.0070265927022213825,
+        "rms_cdf_distance_to_cue_corrected": 0.004677066272056959,
+        "ratio_cue_over_limit": 0.6656236486538283,
+        "sampling_noise_rms_gue_ensemble": 0.002947698325021866,
+        "sup_cdf_distance_to_limit": 0.01706209817721349,
+        "sup_cdf_distance_to_cue_corrected": 0.013464602526945701,
+        "spacing_variance_measured": 0.16380563854097854,
+        "spacing_variance_limit": 0.17999376244101595,
+        "spacing_variance_cue_corrected": 0.15271151891673584,
+        "domain_warning": "N_eff fora do domínio validado na fonte (7,7 e 11,3); O(N_eff^-4) não desprezível."
+      }
+    }
+  },
+  "cue_secondary_domain": {
+    "reference": "Bogomolny, Bohigas, Leboeuf & Monastra (2006), eqs. 18-24",
+    "richardson_change_pdf_max": 0.0004068597311288613,
+    "expansion_error_by_N": [
+      {
+        "N": 2,
+        "sup_abs_error_pdf_truncated": 0.06364207354358943,
+        "sup_abs_error_cdf_truncated": 0.015238792152018066,
+        "sup_abs_correction_cdf": 0.035958075467978766,
+        "sup_abs_error_pdf_limit_only": 0.16505548860983277
+      },
+      {
+        "N": 3,
+        "sup_abs_error_pdf_truncated": 0.00808462887949124,
+        "sup_abs_error_cdf_truncated": 0.002243026858985475,
+        "sup_abs_correction_cdf": 0.01598136687465723,
+        "sup_abs_error_pdf_limit_only": 0.05863628149433553
+      },
+      {
+        "N": 4,
+        "sup_abs_error_pdf_truncated": 0.0023674586369302197,
+        "sup_abs_error_cdf_truncated": 0.0006514880345617202,
+        "sup_abs_correction_cdf": 0.008989518866994691,
+        "sup_abs_error_pdf_limit_only": 0.03098418686984372
+      },
+      {
+        "N": 6,
+        "sup_abs_error_pdf_truncated": 0.00044422121936416037,
+        "sup_abs_error_cdf_truncated": 0.00012153472069076354,
+        "sup_abs_correction_cdf": 0.003995341718664307,
+        "sup_abs_error_pdf_limit_only": 0.013205729068136773
+      },
+      {
+        "N": 8,
+        "sup_abs_error_pdf_truncated": 0.00013814956480229235,
+        "sup_abs_error_cdf_truncated": 3.771938387686635e-05,
+        "sup_abs_correction_cdf": 0.002247379716748673,
+        "sup_abs_error_pdf_limit_only": 0.007323671475112814
+      },
+      {
+        "N": 12,
+        "sup_abs_error_pdf_truncated": 2.6963377047883874e-05,
+        "sup_abs_error_cdf_truncated": 7.350497515989929e-06,
+        "sup_abs_correction_cdf": 0.0009988354296660768,
+        "sup_abs_error_pdf_limit_only": 0.0032226469597629315
+      },
+      {
+        "N": 16,
+        "sup_abs_error_pdf_truncated": 8.497529165873985e-06,
+        "sup_abs_error_cdf_truncated": 2.31491142921314e-06,
+        "sup_abs_correction_cdf": 0.0005618449291871682,
+        "sup_abs_error_pdf_limit_only": 0.001806469755033513
+      }
+    ],
+    "validated_in_source_at_N_eff": [
+      7.74,
+      11.3
+    ],
+    "note": "Análise secundária; não altera decisões. Para N_eff ~ 2 o termo O(N^-4) é comparável à correção."
+  },
+  "family_holm": {
+    "gue_cdf": {
+      "d01": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d02": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d03": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d04": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d05": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d06": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d07": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d08": {
+        "p": 0.002,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d09": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d10": {
+        "p": 0.002,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "n_rejected": 10,
+      "min_attainable_p_holm": 0.01
+    },
+    "gue_r2": {
+      "d01": {
+        "p": 0.3,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d02": {
+        "p": 0.852,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d03": {
+        "p": 0.2,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d04": {
+        "p": 0.941,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d05": {
+        "p": 0.39,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d06": {
+        "p": 0.715,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d07": {
+        "p": 0.626,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d08": {
+        "p": 0.051,
+        "p_holm": 0.51,
+        "verdict": "não rejeitado"
+      },
+      "d09": {
+        "p": 0.776,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "d10": {
+        "p": 0.775,
+        "p_holm": 1.0,
+        "verdict": "não rejeitado"
+      },
+      "n_rejected": 0,
+      "min_attainable_p_holm": 0.51
+    },
+    "gue_k_connected": {
+      "d01": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d02": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d03": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d04": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d05": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d06": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d07": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d08": {
+        "p": 0.043,
+        "p_holm": 0.043,
+        "verdict": "rejeitado"
+      },
+      "d09": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d10": {
+        "p": 0.002,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "n_rejected": 10,
+      "min_attainable_p_holm": 0.01
+    },
+    "poisson_cdf": {
+      "d01": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d02": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d03": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d04": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d05": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d06": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d07": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d08": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d09": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d10": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "n_rejected": 10,
+      "min_attainable_p_holm": 0.01
+    },
+    "poisson_r2": {
+      "d01": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d02": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d03": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d04": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d05": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d06": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d07": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d08": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d09": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d10": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "n_rejected": 10,
+      "min_attainable_p_holm": 0.01
+    },
+    "poisson_k_connected": {
+      "d01": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d02": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d03": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d04": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d05": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d06": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d07": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d08": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d09": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "d10": {
+        "p": 0.001,
+        "p_holm": 0.01,
+        "verdict": "rejeitado"
+      },
+      "n_rejected": 10,
+      "min_attainable_p_holm": 0.01
+    }
+  },
+  "settings": {
+    "B_gue": 999,
+    "B_poisson": 999,
+    "gue_retained_fraction": 0.6,
+    "sff_blocks": 10,
+    "s_bins": 50,
+    "s_max": 5.0
+  },
+  "performance": {
+    "duration_seconds": 3368.4738267779976,
+    "peak_memory_mb": 219.92578125,
+    "peak_memory_largest_child_mb": 100.05859375,
+    "memory_note": "RSS máximo do processo principal e do maior processo filho; o pico agregado dos processos simultâneos não é medido."
+  }
+}
+```

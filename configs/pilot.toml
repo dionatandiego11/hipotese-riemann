@@ -1,0 +1,50 @@
+# Configuração do perfil Piloto (M1 - Fundação e Testes Rápidos)
+profile = "pilot"
+seed = 20260912
+max_zeros = 1000
+
+# Caminhos de dados
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+zeros_source_url = "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1"
+raw_filename = "zeros1"
+processed_filename = "zeros_10k.parquet"
+processed_csv = "zeros_10k.csv"
+dataset_id = "odlyzko_zeros1_first10000"
+
+# Verificação independente
+validation_sample_size = 20
+validation_dps = 40
+
+# Parâmetros espectrais e de unfolding
+s_min = 0.0
+s_max = 5.0
+s_bins = 50
+
+# Parâmetros de transformada de Fourier e detecção de períodos
+window_type = "hann"
+t_min = 0.5
+t_max = 5.0
+dt_oversampling = 5.0
+alpha = 0.05
+
+# Controles e Monte Carlo
+null_realizations = 19
+gue_matrix_dim = 1000
+gue_bulk_fraction = 0.5
+
+# Limites operacionais de memória e blocos
+max_block_mb = 128
+max_process_gb = 2.0
+
+# M2 com envelopes (adicionado na revisão de 13/09/2026)
+m2_gue_realizations = 19
+m2_poisson_realizations = 19
+gue_retained_fraction = 0.6
+sff_blocks = 4
+sff_tau_points = 50
+
+[[m2_blocks]]
+name = "pilot"
+first_index = 1
+last_index = 1000

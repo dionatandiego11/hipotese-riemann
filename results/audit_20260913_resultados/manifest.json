@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-09-13T03:16:42.596825+00:00",
+  "command": ".venv/bin/python results/audit_20260913_resultados/run_audit.py",
+  "duration_seconds": 19.308971502999157,
+  "python": "3.12.3",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "audit_script_sha256": "54da7fc7dfba0085f2dd7269653b9f4b68cdd1e75f036b5bc06111f221804d8a",
+  "input_processed_sha256": "703218b412e10f83ac34ae65d5fe93cf67cfb19fb531b0acaf32388871878593",
+  "scope": "Auditoria limitada dos primeiros 10.000 zeros; não é nova execução completa de M2/M3.",
+  "code_sha256": {
+    "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+    "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+    "arithmetic.py": "85e3f4a8c6ea593ff0f1bb674da65552f10ac3e0fc1da72b84f8ba8363934ac6",
+    "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+    "cli.py": "920854ebce990a032e1df33a69cfa9b5247f0a670b7804c7ad9ddc5ea88f1823",
+    "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+    "data.py": "1eb474e7e8bfe1a64d65077671bda3591c8c9c8c3e56daad62d6e40d055611ef",
+    "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+    "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+    "inverse_spectroscopy.py": "2a88c21c1635ac13cc09ba5bf915421c18167aaa2f57d3efc7e7137c5b0af09f",
+    "m3_report.py": "e2b4471786ba399fc5b86deef1eba2dd28ae2d6fb07045279e76750c2180570a",
+    "periods.py": "be05a5ec6d0cd9b821570b3e09b8c83d7be09c62770a2f9fc70f2ad5c90ce54d",
+    "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+    "spectral_pipeline.py": "b745182e9052b2fecc70d775393637f8728626a676592bce480c18c88aa1ec61",
+    "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+    "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+    "utils.py": "c863d30cbea12656ab5910506b38fdf5abb01fbf08d0e10a6070b381ef337023"
+  },
+  "artifacts_sha256": {
+    "metrics.json": "876f8900f2978ae6babebca1e26e5c2b722015328e163f7d0278b29f83c09494",
+    "coefficients_independent.csv": "c9e540024c126335c9c6d79f822b9043100fc113f11c5bfd313c958e3d449767"
+  }
+}

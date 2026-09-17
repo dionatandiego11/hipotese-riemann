@@ -1,0 +1,232 @@
+{
+ "registered_before": "m4-v3",
+ "rule": "falhas pr\u00e9-registradas permanecem falhas; diagn\u00f3stico e compara\u00e7\u00f5es posteriores n\u00e3o as reclassificam",
+ "checks": {
+  "D1": {
+   "baixo_b01": {
+    "preregistered_pass": false,
+    "value": {
+     "n_t": [
+      7217,
+      7217
+     ],
+     "dt_rel": 2.499995765958829e-10,
+     "fwhm_rel": 2.499995765958829e-10,
+     "W0_rel": 0.0
+    }
+   },
+   "intermediario_b05": {
+    "preregistered_pass": false,
+    "value": {
+     "n_t": [
+      6662,
+      6662
+     ],
+     "dt_rel": -1.2006917682327867e-10,
+     "fwhm_rel": -1.2006917682327867e-10,
+     "W0_rel": 0.0
+    }
+   },
+   "alto_c10": {
+    "preregistered_pass": true,
+    "value": {
+     "n_t": [
+      5967,
+      5967
+     ],
+     "dt_rel": -8.147016394843831e-11,
+     "fwhm_rel": -8.147016394843831e-11,
+     "W0_rel": 0.0
+    }
+   }
+  },
+  "D2": {
+   "baixo_b01": {
+    "preregistered_pass": false,
+    "value": {
+     "max_abs": 4.089322803804371e-10,
+     "median_abs": 3.3878284764502904e-12
+    }
+   },
+   "intermediario_b05": {
+    "preregistered_pass": false,
+    "value": {
+     "max_abs": 3.195981303771671e-09,
+     "median_abs": 5.408528909666354e-12
+    }
+   },
+   "alto_c10": {
+    "preregistered_pass": false,
+    "value": {
+     "max_abs": 5.481018344697918e-09,
+     "median_abs": 1.1482840917249784e-11
+    }
+   }
+  },
+  "D3": {
+   "baixo_b01": {
+    "preregistered_pass": false,
+    "value": {
+     "max_abs": 2.8809554046075838e-05,
+     "median_abs": 7.442396903792197e-09,
+     "max_abs_F": 147.28819016921778
+    }
+   },
+   "intermediario_b05": {
+    "preregistered_pass": false,
+    "value": {
+     "max_abs": 1.1771247071060623e-05,
+     "median_abs": 3.665834555249537e-09,
+     "max_abs_F": 135.43980121492845
+    }
+   },
+   "alto_c10": {
+    "preregistered_pass": false,
+    "value": {
+     "max_abs": 6.413689941148709e-06,
+     "median_abs": 2.9036577777447577e-09,
+     "max_abs_F": 121.84628260496265
+    }
+   }
+  },
+  "D8": {
+   "baixo_b01": {
+    "preregistered_pass": false,
+    "value": {
+     "P0_max_abs": 1.2555956274695745e-11,
+     "P1_max_abs": 6.758072383187634e-08,
+     "pred_cdf_max_abs": 3.919103131019841e-05,
+     "rms_limit_diff": 2.7606771035859623e-12,
+     "rms_corrected_diff": 6.153802969633554e-06,
+     "argmax_pred_s": 0.7000000000000001,
+     "var_corrected": [
+      0.14129295886261273,
+      0.14129551531285156
+     ]
+    }
+   },
+   "intermediario_b05": {
+    "preregistered_pass": false,
+    "value": {
+     "P0_max_abs": 1.2555956274695745e-11,
+     "P1_max_abs": 6.758072383187634e-08,
+     "pred_cdf_max_abs": 3.232748018716647e-05,
+     "rms_limit_diff": 2.8517778416503603e-12,
+     "rms_corrected_diff": 5.242984139024534e-06,
+     "argmax_pred_s": 0.75,
+     "var_corrected": [
+      0.1457310948152819,
+      0.14573277054703615
+     ]
+    }
+   },
+   "alto_c10": {
+    "preregistered_pass": false,
+    "value": {
+     "P0_max_abs": 1.2555956274695745e-11,
+     "P1_max_abs": 6.758072383187634e-08,
+     "pred_cdf_max_abs": 2.7193904514499767e-05,
+     "rms_limit_diff": 2.3487028294466583e-12,
+     "rms_corrected_diff": 3.986061410892958e-06,
+     "argmax_pred_s": 0.7000000000000001,
+     "var_corrected": [
+      0.1511464853701604,
+      0.15114723346058723
+     ]
+    }
+   }
+  }
+ },
+ "diagnostics_post_hoc": {
+  "baixo_b01": {
+   "W_at_2pi_over_L_over_W0": 0.5,
+   "fwhm_rel_error_reference": -2.499995765958829e-10,
+   "fwhm_rel_error_independent": 0.0,
+   "grid_max_abs_shift": 1.124879744907048e-09,
+   "same_input_data": true,
+   "F_same_grid_max_abs": 6.448360231235603e-10,
+   "F_same_grid_median_abs": 1.180836332084813e-11,
+   "smooth_same_grid_max_abs": 4.098487611340885e-10,
+   "smooth_same_grid_median_abs": 3.362909616207672e-12,
+   "relative_change_F_at_peaks_due_to_grid_shift_max": 6.432510879506026e-08,
+   "cue_pred_diff_same_interpolation": 1.905243757110348e-08,
+   "cue_linear_interpolation_error_in_reference": 3.919103131019841e-05,
+   "secondary_gue_null": {
+    "gue_ci_ref": [
+     3.1673612930500594,
+     3.4608334015439333
+    ],
+    "gue_ci_ind": [
+     3.2116397805981536,
+     3.6000361611253804
+    ],
+    "overlap": true,
+    "gue_sigma_median_rel": 0.015652409471148987,
+    "gue_sigma_p99": 0.061654680265863016,
+    "ks_p": 0.7908399305903222
+   }
+  },
+  "intermediario_b05": {
+   "W_at_2pi_over_L_over_W0": 0.5,
+   "fwhm_rel_error_reference": 1.200690658009762e-10,
+   "fwhm_rel_error_independent": 0.0,
+   "grid_max_abs_shift": 5.40291367201462e-10,
+   "same_input_data": true,
+   "F_same_grid_max_abs": 3.1951043510621475e-09,
+   "F_same_grid_median_abs": 1.3040669461960177e-11,
+   "smooth_same_grid_max_abs": 3.19273629866283e-09,
+   "smooth_same_grid_median_abs": 5.391460390742502e-12,
+   "relative_change_F_at_peaks_due_to_grid_shift_max": 3.105428603156213e-08,
+   "cue_pred_diff_same_interpolation": 1.644463522085866e-08,
+   "cue_linear_interpolation_error_in_reference": 3.232748018716647e-05,
+   "secondary_gue_null": {
+    "gue_ci_ref": [
+     3.227144086874026,
+     3.5412261271158973
+    ],
+    "gue_ci_ind": [
+     3.145288836540525,
+     3.4891885329317507
+    ],
+    "overlap": true,
+    "gue_sigma_median_rel": 0.015812345629420577,
+    "gue_sigma_p99": 0.05091644230090143,
+    "ks_p": 0.6252652985101868
+   }
+  },
+  "alto_c10": {
+   "W_at_2pi_over_L_over_W0": 0.5,
+   "fwhm_rel_error_reference": 8.146994190383339e-11,
+   "fwhm_rel_error_independent": -1.1102230246251565e-16,
+   "grid_max_abs_shift": 3.665885373038691e-10,
+   "same_input_data": true,
+   "F_same_grid_max_abs": 5.473679776252825e-09,
+   "F_same_grid_median_abs": 1.853822916070369e-11,
+   "smooth_same_grid_max_abs": 5.473290790035453e-09,
+   "smooth_same_grid_median_abs": 1.1315909750082626e-11,
+   "relative_change_F_at_peaks_due_to_grid_shift_max": 1.717105369003491e-08,
+   "cue_pred_diff_same_interpolation": 1.340551005248244e-08,
+   "cue_linear_interpolation_error_in_reference": 2.7193904514499767e-05,
+   "secondary_gue_null": {
+    "gue_ci_ref": [
+     3.248174997996329,
+     3.435741825239494
+    ],
+    "gue_ci_ind": [
+     3.331144949593929,
+     3.6384479554403093
+    ],
+    "overlap": true,
+    "gue_sigma_median_rel": 0.01575690333388191,
+    "gue_sigma_p99": 0.059136466130545795,
+    "ks_p": 0.9972289641781885
+   }
+  }
+ },
+ "status": {
+  "D1": "falha explicada; corrigida em m4-v3",
+  "D2": "falha de condi\u00e7\u00e3o do plano",
+  "D3": "falha explicada; compara\u00e7\u00e3o em mesmas coordenadas em m4-v3",
+  "D8": "falha explicada; corrigida em m4-v3"
+ }
+}

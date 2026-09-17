@@ -1,0 +1,20 @@
+/home/dionatandiego11/Downloads/hipotese-riemann/results/audit_20260913_resultados/run_audit.py:49: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  sine, se = quad(amplitude, -L / 2, L / 2, weight="sin", wvar=t, epsabs=1e-11, epsrel=1e-11, limit=300)
+/home/dionatandiego11/Downloads/hipotese-riemann/results/audit_20260913_resultados/run_audit.py:48: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  cosine, ce = quad(amplitude, -L / 2, L / 2, weight="cos", wvar=t, epsabs=1e-11, epsrel=1e-11, limit=300)
+Traceback (most recent call last):
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/audit_20260913_resultados/run_audit.py", line 197, in <module>
+    main()
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/audit_20260913_resultados/run_audit.py", line 101, in main
+    C, qe, cond = independent_fit(g, T)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/audit_20260913_resultados/run_audit.py", line 71, in independent_fit
+    M = np.row_stack((D.real, D.imag))
+        ^^^^^^^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/.venv/lib/python3.12/site-packages/numpy/__init__.py", line 769, in __getattr__
+    raise AttributeError(f"module {__name__!r} has no attribute {attr!r}")
+AttributeError: module 'numpy' has no attribute 'row_stack'

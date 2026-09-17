@@ -1,0 +1,123 @@
+{
+ "desvios_de_redacao_fixados_antes": [
+  "(a) compara\u00e7\u00e3o de cert_contaminacao_testes_resultado.json pelo conte\u00fado sem campos de tempo; byte a byte s\u00f3 registrada",
+  "(b) T20: a_l1_sup n\u00e3o existe na tabela da contamina\u00e7\u00e3o; substitu\u00eddo por ida-e-volta, mesmas chaves e parada bit a bit limpa"
+ ],
+ "hashes_inicio": {
+  "cert_calculo.py": "95bec52820df9a8fa9830a6283576e6a3afacb6962f2cf38b546a93d4222aeb2",
+  "cert_contaminacao.py": "4baff93389cea085c690567fadc8c20c87ab951d4e88a214988457e953885945",
+  "DECLARACAO_CERT_DENSIDADE.md": "6a69c0d7e8b1cf268ff35374eed70f8e0529f1fa4e838bdc38b702ab4c418f9d",
+  "cert_testes_resultado.json": "13a6508c26d8073eb874450a655ce8355f77d97d73ccff9ebeacec7e12cb04f8",
+  "cert_contaminacao_testes_resultado.json": "13e8a4170367f94bd53331d8a983ce245dc304f6ee5a6779c5a083f592f8b89a"
+ },
+ "T1_T15": {
+  "exit": 0,
+  "todos_passaram": true,
+  "T1_T9_todos_passaram": true,
+  "T1_T9_resultado_exec4_regenerado_identico": true,
+  "oks": {
+   "T10": true,
+   "T11": true,
+   "T12": true,
+   "T13_diagnostico": true,
+   "reconstrucao_bit_a_bit_3_blocos": true,
+   "T14": true,
+   "T15": true
+  },
+  "conteudo_sem_tempos_identico_ao_vigente": true,
+  "byte_a_byte_identico (esperado falso por tempos)": false,
+  "arquivo_vigente_restaurado": true,
+  "segundos": 359.29297733306885
+ },
+ "T16": {
+  "C_inf": 0.24952455879195226,
+  "C_sup": 0.24952455879195226,
+  "C_sup_fracao": "5060959307588838435529435422145/20282409603651670423947251286016",
+  "C_sup_lt_0.24953": true,
+  "sqrt2_le_99_70": true,
+  "cota_elementar": 0.2613095238095238,
+  "C_sup_le_cota_elementar": true,
+  "C_inf_gt_0.2495": true,
+  "ok": true
+ },
+ "T17_diagnostico": {
+  "pontos": 2020,
+  "violacoes": 0,
+  "max_|Delta|E2_sobre_Csup": 0.026623122376480526,
+  "ok": true
+ },
+ "T18": {
+  "blocos": 30,
+  "A_star_positivo": true,
+  "B_star_menos_A_star_igual_L": true,
+  "blocos_janela_igual_AB (diagn\u00f3stico)": 15,
+  "blocos_janela_diferente": [
+   "m4-v1/b04",
+   "m4-v1/b07",
+   "m4-v1/b10",
+   "m4-v2/c03",
+   "m4-v2/c05",
+   "m4-v2/c06",
+   "m4-v2/c08",
+   "m4-v2/c10",
+   "m4-v3/d01",
+   "m4-v3/d02",
+   "m4-v3/d03",
+   "m4-v3/d04",
+   "m4-v3/d05",
+   "m4-v3/d06",
+   "m4-v3/d07"
+  ],
+  "max_|A*\u2212A|": 7.275957614183426e-12,
+  "max_|B*\u2212B|": 7.275957614183426e-12,
+  "ok": true
+ },
+ "T19": {
+  "casos": {
+   "igual": {
+    "esperado": true,
+    "obtido": true,
+    "total_menos_tau": "0"
+   },
+   "acima_1e-25": {
+    "esperado": false,
+    "obtido": false,
+    "total_menos_tau": "1/10000000000000000000000000"
+   },
+   "abaixo_1e-25": {
+    "esperado": true,
+    "obtido": true,
+    "total_menos_tau": "-1/10000000000000000000000000"
+   }
+  },
+  "ok": true
+ },
+ "T20": {
+  "pares": 1410,
+  "mesmas_chaves": true,
+  "total_sup_menor_que_soma_exata": 0,
+  "a_l1_sup_ida_e_volta_falhas": 0,
+  "parada_bit_a_bit_contaminacao": [],
+  "ok": true
+ },
+ "T21_diagnostico": {
+  "D_novo_sobre_antigo_min": 0.9999999597460951,
+  "D_novo_sobre_antigo_max": 0.999999998501637,
+  "D_max_novo": 3.2206025391700534e-06,
+  "D_min_novo": 4.717741510092474e-08,
+  "nota": "antigo usava [A\u22121e\u22126, B+1e\u22126] de metrics.json; n\u00e3o entra na decis\u00e3o"
+ },
+ "hashes_fim": {
+  "cert_calculo.py": "95bec52820df9a8fa9830a6283576e6a3afacb6962f2cf38b546a93d4222aeb2",
+  "cert_contaminacao.py": "4baff93389cea085c690567fadc8c20c87ab951d4e88a214988457e953885945",
+  "DECLARACAO_CERT_DENSIDADE.md": "6a69c0d7e8b1cf268ff35374eed70f8e0529f1fa4e838bdc38b702ab4c418f9d",
+  "cert_testes_resultado.json": "13a6508c26d8073eb874450a655ce8355f77d97d73ccff9ebeacec7e12cb04f8",
+  "cert_contaminacao_testes_resultado.json": "13e8a4170367f94bd53331d8a983ce245dc304f6ee5a6779c5a083f592f8b89a"
+ },
+ "hashes_intocados": true,
+ "nenhuma_saida_de_execucao_criada": true,
+ "todos_passaram": true,
+ "script_sha256": "598871cf3efbf2bd6641b18ac5a8a4590b9cba119427bee13f349aff3fa9afe7",
+ "testes_sha256": "2c583bbb5b4b2eeff9c66ccd9f422bcd84ff8c88c9802852149ef21db700f8d9",
+ "segundos_total": 362.203976392746
+}

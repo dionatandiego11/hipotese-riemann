@@ -1,0 +1,171 @@
+classe,modelo,requisito,situacao,conferencia,sustenta_decisao,ids_evidencia,observacao
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),M1,S,conferido,sim,E-K1-M1,Bellissard p. 2
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),M2,V,derivacao,sim,E-K1-M2,espectro a.c. ℝ; escopo: operador não regularizado
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),M3,P,conferido,não,E-K1-M3,semiclássico com corte (BK SIAM p. 261)
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),M4,L,NA,não,,ausência de órbitas clássicas não é teorema sobre traço regularizado
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),M5,L,NA,não,,
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),M6,NA,NA,não,,
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N1,NA,NA,não,,exige regularização concreta
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N2,NA,NA,não,,exige regularização concreta
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N3,NA,NA,não,,exige regularização concreta
+K1,Berry-Keating: gerador de dilatações (x̂p̂+p̂x̂)/2 em L²(ℝ₊),N4,NA,NA,não,,exige regularização concreta
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M1,S,PC,não,,alegado no resumo; texto não obtido
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M2,L,NA,não,,
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M3,P,PC,não,,dois termos da densidade (resumo)
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M4,L,NA,não,,exclusão 1D retirada
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M5,L,NA,não,,
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),M6,L,NA,não,,
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N1,P,PC,não,,densidade média (resumo)
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N2,L,NA,não,,exclusão 1D retirada
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N3,L,NA,não,,exclusão 1D retirada
+K2a,Berry-Keating 2011 (x+1/x)(p+1/p),N4,L,NA,não,,
+K2b,Sierra 2008 xp com interação,M1,L,NA,não,,"construção usa ζ (Riemann-Siegel); critério ""sem zeros"" a definir"
+K2b,Sierra 2008 xp com interação,M2,P,conferido,não,E-K2b-M2,"suposições adicionais; arXiv p. 4, 30-31"
+K2b,Sierra 2008 xp com interação,M3,P,conferido,não,E-K2b-esp,"zeros médios como estados ligados/ressonâncias, p. 25"
+K2b,Sierra 2008 xp com interação,M4,L,NA,não,,
+K2b,Sierra 2008 xp com interação,M5,L,NA,não,,
+K2b,Sierra 2008 xp com interação,M6,L,NA,não,,
+K2b,Sierra 2008 xp com interação,N1,L,NA,não,,
+K2b,Sierra 2008 xp com interação,N2,L,NA,não,,
+K2b,Sierra 2008 xp com interação,N3,L,NA,não,,
+K2b,Sierra 2008 xp com interação,N4,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,M1,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,M2,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,M3,P,conferido,não,E-K2c-M3,limite do nível de Landau mais baixo; objeto de absorção
+K2c,Sierra-Townsend 2008 níveis de Landau,M4,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,M5,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,M6,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,N1,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,N2,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,N3,L,NA,não,,
+K2c,Sierra-Townsend 2008 níveis de Landau,N4,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,M1,L,conferido,não,E-K2d-M1,contestado com réplica; contestação não é refutação
+K2d,Bender-Brody-Müller 2017,M2,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,M3,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,M4,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,M5,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,M6,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,N1,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,N2,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,N3,L,NA,não,,
+K2d,Bender-Brody-Müller 2017,N4,L,NA,não,,
+K3a,Connes: realização com δ>1 (Teorema 1),M1,P,conferido,não,E-K3a-M4,definido sem L-funções; auto-adjunticidade não afirmada; W não unitária
+K3a,Connes: realização com δ>1 (Teorema 1),M2,C,conferido,não,E-K3a-M2,só zeros críticos; multiplicidade espectral = maior n<(1+δ)/2 com n≤m_ρ; igualdade total exige RH e m_ρ<(1+δ)/2 para o δ fixado
+K3a,Connes: realização com δ>1 (Teorema 1),M3,L,NA,não,,
+K3a,Connes: realização com δ>1 (Teorema 1),M4,P,conferido,não,E-K3a-M4,lado geométrico formal
+K3a,Connes: realização com δ>1 (Teorema 1),M5,L,NA,não,,
+K3a,Connes: realização com δ>1 (Teorema 1),M6,C,conferido,não,E-K3a-M2,"exige m_ρ<(1+δ)/2 para o δ fixado; limite uniforme esperado, não provado, só permitiria escolher δ"
+K3a,Connes: realização com δ>1 (Teorema 1),N1,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
+K3a,Connes: realização com δ>1 (Teorema 1),N2,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
+K3a,Connes: realização com δ>1 (Teorema 1),N3,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
+K3a,Connes: realização com δ>1 (Teorema 1),N4,C,PC,não,E-K3a-M2,condicional a criticidade dos zeros 1-100.000 e m_ρ<(1+δ)/2 para o δ fixado; citação da verificação computacional pendente; não discriminante
+K3b,Connes: absorção e fórmula de traço global,M1,L,NA,não,,
+K3b,Connes: absorção e fórmula de traço global,M2,L,NA,não,,
+K3b,Connes: absorção e fórmula de traço global,M3,P,conferido,não,E-K3b-M3,contagem semiclássica com sinal negativo
+K3b,Connes: absorção e fórmula de traço global,M4,C,conferido,não,E-K3b-M4,Teorema 5 em característica positiva; análogo para ℚ (p. 45-47)
+K3b,Connes: absorção e fórmula de traço global,M5,L,NA,não,,
+K3b,Connes: absorção e fórmula de traço global,M6,L,NA,não,,
+K3b,Connes: absorção e fórmula de traço global,N1,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
+K3b,Connes: absorção e fórmula de traço global,N2,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
+K3b,Connes: absorção e fórmula de traço global,N3,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
+K3b,Connes: absorção e fórmula de traço global,N4,L,conferido,não,E-K3b-obj,espectro de absorção; tradução para N não especificada
+K4,de Branges / sistemas canônicos,M1,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
+K4,de Branges / sistemas canônicos,M2,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
+K4,de Branges / sistemas canônicos,M3,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
+K4,de Branges / sistemas canônicos,M4,L,NA,não,E-K4-pos,Conrey-Li: positividade de de Branges falha para ζ (conferido)
+K4,de Branges / sistemas canônicos,M5,L,NA,não,,
+K4,de Branges / sistemas canônicos,M6,C,PC,não,,condicional a RH (resumo de Lagarias); enunciado não conferido
+K4,de Branges / sistemas canônicos,N1,C,PC,não,,condicional a RH; enunciado não conferido
+K4,de Branges / sistemas canônicos,N2,C,PC,não,,condicional a RH; enunciado não conferido
+K4,de Branges / sistemas canônicos,N3,C,PC,não,,condicional a RH; enunciado não conferido
+K4,de Branges / sistemas canônicos,N4,C,PC,não,,condicional a RH; enunciado não conferido
+K5a,Laplaciano em superfície hiperbólica compacta,M1,S,conferido,sim,E-K5-M1,fonte secundária rigorosa
+K5a,Laplaciano em superfície hiperbólica compacta,M2,V,derivacao,sim,E-K5-M2,"escopo: global, identificações afins"
+K5a,Laplaciano em superfície hiperbólica compacta,M3,V,derivacao,sim,E-K5-M3,"escopo: assintótico global, identificações afins; não vale como violação numérica em faixa finita"
+K5a,Laplaciano em superfície hiperbólica compacta,M4,PC,PC,não,E-K5-TF,sinal/normalização vs Weil dependem de L-EF1
+K5a,Laplaciano em superfície hiperbólica compacta,M5,S,conferido,sim,E-K5-M5,
+K5a,Laplaciano em superfície hiperbólica compacta,M6,L,NA,não,,
+K5a,Laplaciano em superfície hiperbólica compacta,N1,PC,NA,não,E-K5-N1,V retirado: falta estimativa quantitativa com erro controlado na faixa ou experimento
+K5a,Laplaciano em superfície hiperbólica compacta,N2,L,NA,não,,controle deve prever comprimentos e coincidências acidentais
+K5a,Laplaciano em superfície hiperbólica compacta,N3,PC,PC,não,E-K5-TF,depende de L-EF1
+K5a,Laplaciano em superfície hiperbólica compacta,N4,PC,PC,não,,T6; página não conferida
+K5b,"Superfície cofinita / PSL(2,Z)",M1,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
+K5b,"Superfície cofinita / PSL(2,Z)",M2,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
+K5b,"Superfície cofinita / PSL(2,Z)",M3,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
+K5b,"Superfície cofinita / PSL(2,Z)",M4,PC,PC,não,,"termos parabólicos, espalhamento com ξ não conferidos"
+K5b,"Superfície cofinita / PSL(2,Z)",M5,L,NA,não,,
+K5b,"Superfície cofinita / PSL(2,Z)",M6,L,NA,não,,
+K5b,"Superfície cofinita / PSL(2,Z)",N1,L,NA,não,,
+K5b,"Superfície cofinita / PSL(2,Z)",N2,L,NA,não,,
+K5b,"Superfície cofinita / PSL(2,Z)",N3,L,NA,não,,
+K5b,"Superfície cofinita / PSL(2,Z)",N4,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,M1,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,M2,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,M3,P,conferido,não,E-K6-M4,BK SIAM p. 241-243
+K6,Hamiltoniano caótico / Gutzwiller,M4,P,conferido,não,E-K6-M4,discordâncias de sinal e exatidão
+K6,Hamiltoniano caótico / Gutzwiller,M5,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,M6,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,N1,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,N2,L,NA,não,,
+K6,Hamiltoniano caótico / Gutzwiller,N3,P,conferido,não,E-K6-M4,
+K6,Hamiltoniano caótico / Gutzwiller,N4,C,conferido,não,E-K6-N4,T5 conjectural
+K7,Bilhares quânticos (controle dinâmico),M1,S,PC,não,,"auto-adjunticidade do laplaciano de Dirichlet: padrão, não conferida"
+K7,Bilhares quânticos (controle dinâmico),M2,V,PC,não,,alegada via Weyl global; não conferida
+K7,Bilhares quânticos (controle dinâmico),M3,V,PC,não,,Weyl global; escopo assintótico; não conferida
+K7,Bilhares quânticos (controle dinâmico),M4,V,PC,não,,comprimentos genéricos; não conferida
+K7,Bilhares quânticos (controle dinâmico),M5,NA,NA,não,,
+K7,Bilhares quânticos (controle dinâmico),M6,L,NA,não,,
+K7,Bilhares quânticos (controle dinâmico),N1,PC,NA,não,,diferença assintótica não implica violação na faixa finita
+K7,Bilhares quânticos (controle dinâmico),N2,L,NA,não,,
+K7,Bilhares quânticos (controle dinâmico),N3,L,NA,não,,
+K7,Bilhares quânticos (controle dinâmico),N4,C,PC,não,,T5
+K8,Schrödinger 1D / potencial de Wu-Sprung,M1,PC,PC,não,,V se a construção usa os zeros; texto não lido
+K8,Schrödinger 1D / potencial de Wu-Sprung,M2,P,PC,não,,primeiros 500 zeros (descrição secundária)
+K8,Schrödinger 1D / potencial de Wu-Sprung,M3,L,NA,não,,
+K8,Schrödinger 1D / potencial de Wu-Sprung,M4,L,NA,não,,exclusão 1D retirada
+K8,Schrödinger 1D / potencial de Wu-Sprung,M5,L,NA,não,,
+K8,Schrödinger 1D / potencial de Wu-Sprung,M6,L,NA,não,,
+K8,Schrödinger 1D / potencial de Wu-Sprung,N1,L,NA,não,,500 zeros não cobrem 100.000
+K8,Schrödinger 1D / potencial de Wu-Sprung,N2,L,NA,não,,500 zeros não cobrem 100.000
+K8,Schrödinger 1D / potencial de Wu-Sprung,N3,L,NA,não,,500 zeros não cobrem 100.000
+K8,Schrödinger 1D / potencial de Wu-Sprung,N4,L,NA,não,,500 zeros não cobrem 100.000
+K9,ΨDO elíptico em variedade compacta,M1,S,PC,não,,hipótese da classe; fonte não lida
+K9,ΨDO elíptico em variedade compacta,M2,V,PC,não,,alegada via Weyl de Hörmander; não conferida
+K9,ΨDO elíptico em variedade compacta,M3,V,PC,não,,Weyl polinomial; escopo assintótico; não conferida
+K9,ΨDO elíptico em variedade compacta,M4,L,NA,não,,
+K9,ΨDO elíptico em variedade compacta,M5,NA,NA,não,,
+K9,ΨDO elíptico em variedade compacta,M6,L,NA,não,,
+K9,ΨDO elíptico em variedade compacta,N1,PC,NA,não,,diferença assintótica não implica violação na faixa finita
+K9,ΨDO elíptico em variedade compacta,N2,L,NA,não,,
+K9,ΨDO elíptico em variedade compacta,N3,L,NA,não,,
+K9,ΨDO elíptico em variedade compacta,N4,L,NA,não,,
+K10,Operadores integrais (classe ampla),M1,L,NA,não,,
+K10,Operadores integrais (classe ampla),M2,L,NA,não,,
+K10,Operadores integrais (classe ampla),M3,L,NA,não,,
+K10,Operadores integrais (classe ampla),M4,L,NA,não,,
+K10,Operadores integrais (classe ampla),M5,L,NA,não,,
+K10,Operadores integrais (classe ampla),M6,L,NA,não,,
+K10,Operadores integrais (classe ampla),N1,L,NA,não,,
+K10,Operadores integrais (classe ampla),N2,L,NA,não,,
+K10,Operadores integrais (classe ampla),N3,L,NA,não,,
+K10,Operadores integrais (classe ampla),N4,L,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),M1,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),M2,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),M3,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),M4,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),M5,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),M6,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),N1,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),N2,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),N3,NA,NA,não,,
+K11,Modelos estatísticos RMT (não operadores),N4,NA,NA,não,,N4 não refuta universalidade GUE assintótica
+K12,Controle de ajuste diag(γ₁..γ_N),M1,V,elementar,sim,E-K12-M1,
+K12,Controle de ajuste diag(γ₁..γ_N),M2,V,elementar,sim,E-K12-M2,N finito
+K12,Controle de ajuste diag(γ₁..γ_N),M3,V,elementar,sim,E-K12-M2,N finito
+K12,Controle de ajuste diag(γ₁..γ_N),M4,V,elementar,sim,E-K12-M2,N finito
+K12,Controle de ajuste diag(γ₁..γ_N),M5,S,elementar,sim,E-K12-M5,
+K12,Controle de ajuste diag(γ₁..γ_N),M6,L,NA,não,,
+K12,Controle de ajuste diag(γ₁..γ_N),N1,S,elementar,sim,E-K12-N,só com N≥100.000 níveis inseridos com a precisão do dado; sem valor explicativo
+K12,Controle de ajuste diag(γ₁..γ_N),N2,S,elementar,sim,E-K12-N,só com N≥100.000 níveis inseridos com a precisão do dado; sem valor explicativo
+K12,Controle de ajuste diag(γ₁..γ_N),N3,S,elementar,sim,E-K12-N,só com N≥100.000 níveis inseridos com a precisão do dado; sem valor explicativo
+K12,Controle de ajuste diag(γ₁..γ_N),N4,S,elementar,sim,E-K12-N,só com N≥100.000 níveis inseridos com a precisão do dado; sem valor explicativo

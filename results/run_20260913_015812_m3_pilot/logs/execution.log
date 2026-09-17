@@ -1,0 +1,16 @@
+[2026-09-12 22:58:12] [INFO] [riemann_spectra.cli] === Iniciando execução: run_20260913_015812_m3_pilot (Marco: M3, Perfil: pilot) ===
+[2026-09-12 22:58:12] [INFO] [riemann_spectra.cli] Utilizando 1000 zeros para a análise (14.1347 até 1419.4225).
+[2026-09-12 22:58:12] [INFO] [riemann_spectra.cli] Executando verificações do Marco M1 (Fundação e Controles)...
+[2026-09-12 22:58:12] [INFO] [riemann_spectra.cli] Executando análises do Marco M2 (Estatística Espectral)...
+[2026-09-12 22:58:13] [INFO] [riemann_spectra.reporting] Gráfico de espaçamentos salvo em results/run_20260913_015812_m3_pilot/figures/spacing_distribution.png.
+[2026-09-12 22:58:14] [INFO] [riemann_spectra.reporting] Gráfico de correlação de pares salvo em results/run_20260913_015812_m3_pilot/figures/pair_correlation.png.
+[2026-09-12 22:58:15] [INFO] [riemann_spectra.reporting] Gráfico do spectral form factor salvo em results/run_20260913_015812_m3_pilot/figures/spectral_form_factor.png.
+[2026-09-12 22:58:15] [INFO] [riemann_spectra.cli] Executando análises do Marco M3 (Espectroscopia Inversa)...
+[2026-09-12 22:58:16] [INFO] [riemann_spectra.cli] Calculando transformada oscilatória em 5033 pontos de período...
+[2026-09-12 22:58:17] [INFO] [riemann_spectra.cli] Detecção cega encontrou 164 picos espectrais.
+[2026-09-12 22:58:17] [INFO] [riemann_spectra.cli] Arquivo blind_peaks.csv congelado. SHA-256: 21a00e32a1c1e38821f93eb951e84a7bb9e3a79039eebf206b3316898ea2c784
+[2026-09-12 22:58:17] [INFO] [riemann_spectra.cli] Executando calibração com 19 realizações de controle nulo (shuffled spacings)...
+[2026-09-12 22:58:21] [INFO] [riemann_spectra.cli] Controle nulo concluído: 5/19
+[2026-09-12 22:58:25] [INFO] [riemann_spectra.cli] Controle nulo concluído: 10/19
+[2026-09-12 22:58:29] [INFO] [riemann_spectra.cli] Controle nulo concluído: 15/19
+[2026-09-12 22:58:31] [INFO] [riemann_spectra.cli] Controle nulo concluído: 19/19

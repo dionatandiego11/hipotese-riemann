@@ -1,0 +1,40 @@
+{
+  "run_id": "run_20260913_015559_m2_main",
+  "milestone": "M2",
+  "profile": "main",
+  "n_zeros": 10000,
+  "gamma_min": 14.134725142,
+  "gamma_max": 9877.782654004,
+  "inversion_max_error": 7.105427357601002e-15,
+  "control_gue": {
+    "matrix_dim": 2000,
+    "bulk_levels": 631,
+    "mean_spacing": 0.9963733017121301,
+    "variance_spacing": 0.13979278885456012
+  },
+  "control_poisson": {
+    "n_levels": 1000,
+    "mean_spacing": 0.9962749120661717,
+    "variance_spacing": 0.9362392451372911
+  },
+  "spacing_statistics": {
+    "mean": 1.000023001412775,
+    "variance": 0.15415454008488474,
+    "std": 0.39262519033409554,
+    "skewness": 0.49351621351882824,
+    "kurtosis": 0.08288856809999912,
+    "ks_distance_wigner": 0.027448655032917102,
+    "ks_distance_poisson": 0.3066845582517176,
+    "wasserstein_distance_wigner": 0.024881025593120366,
+    "wasserstein_distance_poisson": 0.4301691904463508,
+    "prefers_gue_over_poisson": true
+  },
+  "pair_correlation": {
+    "mse_gue": 0.0022614002706177676,
+    "mse_poisson": 0.07578309152403212,
+    "prefers_gue_over_poisson": true
+  },
+  "timing_duration_seconds": 3.623348344000078,
+  "peak_memory_bytes": 210661376,
+  "peak_memory_mb": 200.90234375
+}

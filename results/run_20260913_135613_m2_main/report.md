@@ -1,0 +1,528 @@
+# Relatório de execução — M2
+
+**ID:** `run_20260913_135613_m2_main`
+**Data UTC:** `2026-09-13T14:12:48.001725+00:00`
+**Perfil:** `main`
+**Zeros analisados:** `10000`
+
+## Resumo
+
+Execução M2 com 10000 zeros em 994.7 s (pico de memória 185 MB).
+
+## Afirmações sustentadas por esta execução
+
+- B: hashes de dados conferem com o manifesto de odlyzko_zeros1_first10000; 10000 ordenadas finitas e estritamente crescentes; validação mpmath do mesmo arquivo (20 índices, máx. |erro| = 2.50e-09, critério abs_error <= declared_source_error).
+- B: controles verificados — permutar a ordem dos níveis altera R2 em 0.0e+00 e K_c em 0.0e+00; inversão de Nbar com erro 3.6e-12; GUE denso e tridiagonal (N=400, 30 matrizes) com variâncias de espaçamento 0.1803 e 0.1774 e distância sup entre CDFs 0.008.
+- B/pilot (zeros 1–1000): média de espaçamento 1.0000 e variância 0.1445 antes de renormalização (envelope GUE 95% da variância 0.1639–0.1943); p do envelope GUE (CDF, R2, K_c) = 0.005, 0.865, 0.005; p do envelope Poisson (CDF) = 0.005 (B=199/199).
+- B/dev (zeros 1001–4000): média de espaçamento 1.0001 e variância 0.1530 antes de renormalização (envelope GUE 95% da variância 0.1708–0.1891); p do envelope GUE (CDF, R2, K_c) = 0.005, 0.405, 0.005; p do envelope Poisson (CDF) = 0.005 (B=199/199).
+- B/val (zeros 4001–7000): média de espaçamento 0.9998 e variância 0.1560 antes de renormalização (envelope GUE 95% da variância 0.1695–0.1885); p do envelope GUE (CDF, R2, K_c) = 0.005, 0.255, 0.005; p do envelope Poisson (CDF) = 0.005 (B=199/199).
+- B/holdout (zeros 7001–10000): média de espaçamento 1.0000 e variância 0.1569 antes de renormalização (envelope GUE 95% da variância 0.1704–0.1895); p do envelope GUE (CDF, R2, K_c) = 0.005, 0.095, 0.005; p do envelope Poisson (CDF) = 0.005 (B=199/199).
+- B/full (zeros 1–10000): média de espaçamento 1.0000 e variância 0.1542 antes de renormalização (envelope GUE 95% da variância 0.1757–0.1853); p do envelope GUE (CDF, R2, K_c) = 0.005, 0.025, 0.005; p do envelope Poisson (CDF) = 0.005 (B=199/199).
+
+## Limitações
+
+- A validação por amostra não certifica completude da tabela nem localização rigorosa de todos os zeros.
+- Blocos contíguos de um espectro determinístico não são amostras independentes.
+- Envelopes GUE usam uma matriz por realização (níveis centrais), sem concatenação de matrizes.
+- Valores-p do envelope medem incompatibilidade com o ensemble finito do mesmo tamanho, não com o limite assintótico.
+
+## Métricas
+
+```json
+{
+  "data": {
+    "dataset_id": "odlyzko_zeros1_first10000",
+    "raw_sha256_matches_manifest": true,
+    "processed_sha256_matches_manifest": true,
+    "validation_matches_processed_file": true,
+    "zeros_used": 10000,
+    "zeros_in_validated_file": 10000,
+    "strictly_increasing": true,
+    "all_finite": true,
+    "mpmath_sample_size": 20,
+    "mpmath_max_abs_error": 2.497472451068461e-09,
+    "mpmath_tolerance_rule": "abs_error <= declared_source_error",
+    "mpmath_all_within_tolerance": true
+  },
+  "unfolding_inverse_max_abs_error": 3.637978807091713e-12,
+  "permutation_invariance": {
+    "r2_max_abs_diff": 0.0,
+    "sff_max_abs_diff": 0.0
+  },
+  "control_poisson": {
+    "fixed_count": {
+      "n": 20000,
+      "density": 1.0000912399744535,
+      "spacing_var": 1.0014987943341276
+    },
+    "random_count": {
+      "n": 20063,
+      "density": 1.00315,
+      "spacing_var": 0.9918271104690419
+    },
+    "convention": "comparações com zeros usam contagem fixa (mesmo n que o bloco)"
+  },
+  "control_gue_dense_vs_tridiagonal": {
+    "matrix_dim": 400,
+    "realizations": 30,
+    "bulk_interval": "[-0.5, 0.5] do semicírculo",
+    "dense_mean": 0.998403039868035,
+    "dense_var": 0.18025712351673115,
+    "tridiagonal_mean": 0.9988337832020802,
+    "tridiagonal_var": 0.1774342894829203,
+    "cdf_sup_distance": 0.008451893289252665,
+    "n_spacings_each": 7280
+  },
+  "blocks": {
+    "pilot": {
+      "indices": [
+        1,
+        1000
+      ],
+      "gamma_range": [
+        14.134725142,
+        1419.422480946
+      ],
+      "n_levels": 1000,
+      "spacing_mean_before_renormalization": 0.9999684946254795,
+      "spacing_variance": 0.14449714345674547,
+      "spacing_skewness": 0.46669911749137505,
+      "spacing_kurtosis": -0.10472601372172363,
+      "ks_distance_wigner_surmise": 0.04224553234051044,
+      "wasserstein_wigner_surmise": 0.03436134922774014,
+      "ks_distance_poisson": 0.3214233457170086,
+      "wasserstein_poisson": 0.43513802170355065,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 0.00046929778798210364,
+        "spacing_variance_theta": 0.14449705969906565,
+        "max_abs_spacing_difference": 0.0001538035713353203
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.015617177755012654,
+        "1-2": 0.012409513527349793,
+        "2-5": 0.01394739744122155
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.04,
+      "sff_fraction_tau_outside_gue_95_band": 0.11,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.012613049315079965,
+            "distance_null_median": 0.004504722947192763,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.11844583598933224,
+            "distance_null_median": 0.13042802608952297,
+            "p_value_mc": 0.865,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.35105784075559016,
+            "distance_null_median": 0.25669478575616816,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.16393042900849503,
+            0.1942922375977631
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.12167126271351354,
+            "distance_null_median": 0.006426120048803193,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.29979992907146896,
+            "distance_null_median": 0.14229075649449827,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5566719891095078,
+            "distance_null_median": 0.31135838402801297,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.910869382392837,
+            1.1225454329660782
+          ]
+        }
+      }
+    },
+    "dev": {
+      "indices": [
+        1001,
+        4000
+      ],
+      "gamma_range": [
+        1420.416526324,
+        4506.311496729
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 1.0000852162492493,
+      "spacing_variance": 0.153024256609011,
+      "spacing_skewness": 0.5010430285330244,
+      "spacing_kurtosis": 0.08966749446995026,
+      "ks_distance_wigner_surmise": 0.030837235754562764,
+      "wasserstein_wigner_surmise": 0.02659830198765937,
+      "ks_distance_poisson": 0.3056303441837558,
+      "wasserstein_poisson": 0.43103665136917324,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 4.668670158025634e-06,
+        "spacing_variance_theta": 0.15302425628549168,
+        "max_abs_spacing_difference": 7.469452611985616e-09
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.006202862391915037,
+        "1-2": 0.00522892068392837,
+        "2-5": 0.006291134075271908
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.08,
+      "sff_fraction_tau_outside_gue_95_band": 0.18,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.010033859132549273,
+            "distance_null_median": 0.0026280366093281377,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.0771600231447107,
+            "distance_null_median": 0.07492436070670247,
+            "p_value_mc": 0.405,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5554598094013202,
+            "distance_null_median": 0.2578417501624285,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17080143724487415,
+            0.18909403885909865
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11904441145932916,
+            "distance_null_median": 0.003733395105883259,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2832133695846685,
+            "distance_null_median": 0.08131254901485419,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.7028744605520514,
+            "distance_null_median": 0.3126483033737866,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9332440067143808,
+            1.0706839577434684
+          ]
+        }
+      }
+    },
+    "val": {
+      "indices": [
+        4001,
+        7000
+      ],
+      "gamma_range": [
+        4507.745182883,
+        7264.74824809
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9997816024582927,
+      "spacing_variance": 0.15595922045959465,
+      "spacing_skewness": 0.4927288595254728,
+      "spacing_kurtosis": 0.10238093935307857,
+      "ks_distance_wigner_surmise": 0.030635658683582256,
+      "wasserstein_wigner_surmise": 0.023615786323518757,
+      "ks_distance_poisson": 0.31102288287701507,
+      "wasserstein_poisson": 0.4293180965761887,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 1.4711249605170451e-06,
+        "spacing_variance_theta": 0.15595922040160065,
+        "max_abs_spacing_difference": 6.402842700481415e-10
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.0068704398323751635,
+        "1-2": 0.005749848719719132,
+        "2-5": 0.006234650494418912
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.1,
+      "sff_fraction_tau_outside_gue_95_band": 0.25,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.009082879327907196,
+            "distance_null_median": 0.0025482615485570848,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.07935064430126326,
+            "distance_null_median": 0.07513014333488158,
+            "p_value_mc": 0.255,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.6976963059639669,
+            "distance_null_median": 0.25774860335435695,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.16947376040128115,
+            0.18846962181693844
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11800342385261667,
+            "distance_null_median": 0.0036023775727739827,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.28198243214606905,
+            "distance_null_median": 0.08147211309629487,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.803851631322776,
+            "distance_null_median": 0.3158250906181388,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9356459474942208,
+            1.0795417131097556
+          ]
+        }
+      }
+    },
+    "holdout": {
+      "indices": [
+        7001,
+        10000
+      ],
+      "gamma_range": [
+        7265.962856286,
+        9877.782654004
+      ],
+      "n_levels": 3000,
+      "spacing_mean_before_renormalization": 0.9999798286747086,
+      "spacing_variance": 0.1568691002441484,
+      "spacing_skewness": 0.495187235492297,
+      "spacing_kurtosis": 0.10123584702447896,
+      "ks_distance_wigner_surmise": 0.02417536106004506,
+      "wasserstein_wigner_surmise": 0.021691665318721045,
+      "ks_distance_poisson": 0.3048530267170649,
+      "wasserstein_poisson": 0.42850327437764363,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 9.126742952503264e-07,
+        "spacing_variance_theta": 0.15686910021887449,
+        "max_abs_spacing_difference": 2.6193447411060333e-10
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.0036686880739494783,
+        "1-2": 0.005615699561911573,
+        "2-5": 0.008030126784038732
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.11,
+      "sff_fraction_tau_outside_gue_95_band": 0.23,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.00836593205393574,
+            "distance_null_median": 0.0026619901282742215,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.08255790005272844,
+            "distance_null_median": 0.0748167440294003,
+            "p_value_mc": 0.095,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.5368236355783929,
+            "distance_null_median": 0.2587755550279448,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.1703767607764966,
+            0.1894700430103823
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11753358697751426,
+            "distance_null_median": 0.003749058000509046,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2809536204789553,
+            "distance_null_median": 0.0815428997414459,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 0.6943081380564129,
+            "distance_null_median": 0.3147839706150268,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9318169558316318,
+            1.0624593236096567
+          ]
+        }
+      }
+    },
+    "full": {
+      "indices": [
+        1,
+        10000
+      ],
+      "gamma_range": [
+        14.134725142,
+        9877.782654004
+      ],
+      "n_levels": 10000,
+      "spacing_mean_before_renormalization": 1.000023001412775,
+      "spacing_variance": 0.15415454008488474,
+      "spacing_skewness": 0.49351621351882824,
+      "spacing_kurtosis": 0.08288856809999912,
+      "ks_distance_wigner_surmise": 0.027448655032917102,
+      "wasserstein_wigner_surmise": 0.024881025593120366,
+      "ks_distance_poisson": 0.3066845582517176,
+      "wasserstein_poisson": 0.4301691904463508,
+      "theta_vs_rvm_unfolding": {
+        "max_abs_x_difference": 0.00046929778798210364,
+        "spacing_variance_theta": 0.1541545316073269,
+        "max_abs_spacing_difference": 0.0001538035713353203
+      },
+      "r2_band_mse_vs_montgomery": {
+        "0-1": 0.003878959011139239,
+        "1-2": 0.0019782781330999573,
+        "2-5": 0.001824139251213198
+      },
+      "r2_fraction_bins_outside_gue_95_band": 0.15,
+      "sff_fraction_tau_outside_gue_95_band": 0.15,
+      "envelope_tests": {
+        "gue": {
+          "cdf": {
+            "distance_obs": 0.009276980444474026,
+            "distance_null_median": 0.0013955866148446837,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.047518453131891306,
+            "distance_null_median": 0.04082653626875356,
+            "p_value_mc": 0.025,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 1.5148963223724219,
+            "distance_null_median": 0.25622547425228864,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.17568056396630952,
+            0.18530560045693384
+          ]
+        },
+        "poisson": {
+          "cdf": {
+            "distance_obs": 0.11851606689664697,
+            "distance_null_median": 0.0020428192546739386,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "r2": {
+            "distance_obs": 0.2754408733294943,
+            "distance_null_median": 0.044413830294028324,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "k_connected": {
+            "distance_obs": 1.5725962274007075,
+            "distance_null_median": 0.3091447601693695,
+            "p_value_mc": 0.005,
+            "B": 199,
+            "method": "posto simétrico leave-one-out sobre observação + nulos"
+          },
+          "spacing_var_ensemble_q025_q975": [
+            0.9647304113337681,
+            1.0426524625100086
+          ]
+        }
+      }
+    }
+  },
+  "settings": {
+    "B_gue": 199,
+    "B_poisson": 199,
+    "gue_retained_fraction": 0.6,
+    "sff_blocks": 10,
+    "s_bins": 100,
+    "s_max": 5.0
+  },
+  "performance": {
+    "duration_seconds": 994.6852818899997,
+    "peak_memory_mb": 184.71875,
+    "peak_memory_largest_child_mb": 104.8515625,
+    "memory_note": "RSS máximo do processo principal e do maior processo filho; o pico agregado dos processos simultâneos não é medido."
+  }
+}
+```

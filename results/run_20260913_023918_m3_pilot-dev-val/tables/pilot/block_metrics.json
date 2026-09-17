@@ -1,0 +1,188 @@
+{
+  "block": {
+    "name": "pilot",
+    "first_index": 1,
+    "last_index": 1000,
+    "role": "diagn\u00f3stico de baixa altura"
+  },
+  "instrument": {
+    "A": 14.134725142,
+    "B": 1419.422480946,
+    "E_c": 716.778603044,
+    "L": 1405.287755804,
+    "t_min": 0.5,
+    "t_max": 4.999046682244965,
+    "dt": 0.0011177755732285628,
+    "n_t": 4026,
+    "density": "rvm",
+    "quadrature": {
+      "panel_length": 0.5,
+      "order": 8
+    },
+    "window": "hann",
+    "response": {
+      "gain_W0": 702.643877902,
+      "fwhm": 0.008942204585828502,
+      "fwhm_in_units_2pi_over_L": 2.0,
+      "first_null_offset": 0.008942204585828502,
+      "sidelobe_level_db": -31.46730805642537,
+      "reference_resolution_2pi_over_L": 0.004471102292914251
+    }
+  },
+  "instrument_diagnostics": {
+    "n_t": 4026,
+    "dt": 0.0011177755732285628,
+    "points_per_fwhm": 8.0,
+    "max_abs_F": 81.60986780908917,
+    "nufft_vs_direct_max_abs_error": 1.7492686434672856e-10,
+    "quadrature_halving_max_abs_change": 1.7891211396877552e-11,
+    "density_rvm_vs_theta_max_abs_change": 2.092605835323215e-09,
+    "quadrature_nodes": 22488
+  },
+  "synthetic_calibration": {
+    "n_isolated_lines": 33,
+    "matching_tolerance": 0.0014194758081459379,
+    "matching_tolerance_fwhm": 0.15873890990992376,
+    "matching_tolerance_quantile": 0.99,
+    "recovery_curve": [
+      {
+        "z_true_low": 1.6293877186619952,
+        "z_true_high": 2.4440815779929927,
+        "n": 12,
+        "recovery_rate": 0.08333333333333333,
+        "median_abs_error_detected": 0.0004901906592817973
+      },
+      {
+        "z_true_low": 2.4440815779929927,
+        "z_true_high": 3.2587754373239903,
+        "n": 16,
+        "recovery_rate": 0.1875,
+        "median_abs_error_detected": 0.0006393962216315607
+      },
+      {
+        "z_true_low": 3.2587754373239903,
+        "z_true_high": 4.073469296654988,
+        "n": 4,
+        "recovery_rate": 0.75,
+        "median_abs_error_detected": 0.0002501023911739564
+      },
+      {
+        "z_true_low": 4.073469296654988,
+        "z_true_high": 4.8881631559859855,
+        "n": 1,
+        "recovery_rate": 1.0,
+        "median_abs_error_detected": 0.0006949204565050993
+      }
+    ],
+    "pair_resolution_curve": [],
+    "resolution_separation_fwhm": 2.0,
+    "resolution_separation": 0.017884409171657005
+  },
+  "freeze": {
+    "blind_peaks_csv": "results/run_20260913_023918_m3_pilot-dev-val/tables/pilot/blind_peaks.csv",
+    "blind_peaks_sha256": "c138ed7d573be039a48e708355b4e38cf8a464c64baff39a43655a008051113e",
+    "nulls_npz_sha256": "6a3cacf81e21e1ec88f5670603b94f74660ff913812db6270bb2c0d47784a2a4",
+    "frozen_before_arithmetic": true,
+    "n_candidates": 20,
+    "n_detected_primary": 18,
+    "n_detected_secondary": 17
+  },
+  "null_summary": {
+    "shuffle": {
+      "B_max": 999,
+      "threshold_z": 3.2587754373239903,
+      "null_max_quantiles": [
+        2.458103049249042,
+        2.7499795147952293,
+        3.2577270821257107
+      ],
+      "sigma_at_t": {
+        "0.7": 7.841856030289833,
+        "1.0": 8.221081743957626,
+        "2.0": 10.335771792806476,
+        "3.0": 14.685821672365389,
+        "4.0": 18.606331589958742,
+        "4.9": 20.612044985976553
+      }
+    },
+    "gue": {
+      "B_max": 199,
+      "threshold_z": 3.292902476670626,
+      "null_max_quantiles": [
+        2.4644176415192485,
+        2.7829837308559697,
+        3.2663831729022745
+      ],
+      "sigma_at_t": {
+        "0.7": 7.562917786728586,
+        "1.0": 9.068053370001705,
+        "2.0": 13.387902650529536,
+        "3.0": 15.815988653431829,
+        "4.0": 18.751328858631503,
+        "4.9": 19.493203835679836
+      }
+    }
+  },
+  "zeros_background": {
+    "median_abs_F_over_sigma_primary": 0.0022942008572489764,
+    "median_abs_F_over_sigma_secondary": 0.0021347175449412514,
+    "note": "Mediana ao longo de toda a malha, incluindo linhas; mede o fundo entre linhas."
+  },
+  "arithmetic": {
+    "catalog_size": 47,
+    "catalog_primitive": 34,
+    "catalog_repetitions": 13,
+    "catalog_resolved": 42,
+    "matching_tolerance": 0.0014194758081459379,
+    "detected_peaks_primary": 18,
+    "matched_S": 18,
+    "unmatched_detections": 0,
+    "null_S_mean": 0.002002002002002002,
+    "null_S_max": 1,
+    "null_detections_mean": 0.04904904904904905,
+    "p_value_global_mc": 0.001,
+    "p_value_floor": 0.001,
+    "B_null": 999,
+    "predicted_detectable": 18,
+    "recovery_among_predicted_detectable": 1.0,
+    "detected_but_predicted_undetectable": 0,
+    "missed_predicted_detectable": [],
+    "targeted_fit": {
+      "lines_resolved_and_detectable": 18,
+      "ratio_to_theory_median": 1.0000000000801772,
+      "ratio_to_theory_iqr": [
+        0.9999999999190264,
+        1.0000000001562404
+      ],
+      "abs_phase_error_median_rad": 2.7410117045247866e-10,
+      "primitive_ratio_median": 1.0000000001051494,
+      "repetition_ratio_median": 0.9999999998164413,
+      "fit_residual_rms": 0.0008422963954468219,
+      "design_condition_number": 1.4306077289306698
+    },
+    "phase_coherence": {
+      "n_lines": 18,
+      "R_observed": 0.9999999985296207,
+      "R_null_mean": 0.20300379206756433,
+      "R_null_q95": 0.39182144444786565,
+      "p_value_mc": 0.001,
+      "B": 999,
+      "note": "Controle de fase preserva |F|; n\u00e3o testa exist\u00eancia de picos de pot\u00eancia."
+    },
+    "precision_sensitivity": {
+      "perturbation_half_width": 3e-09,
+      "realizations": 20,
+      "median_abs_ratio_change_selected_lines": 7.025310333474977e-10,
+      "max_abs_ratio_change_selected_lines": 4.061676217581578e-09,
+      "median_abs_ratio_deviation_observed": 1.5530809971409099e-10,
+      "note": "An\u00e1lise de sensibilidade; n\u00e3o \u00e9 um modelo do erro real da tabela."
+    }
+  },
+  "timings_seconds": {
+    "instrument": 0.5375802290000138,
+    "null_shuffle": 2.791085644999839,
+    "null_gue": 9.716128179000407,
+    "synthetic": 2.519022904999474,
+    "arithmetic": 43.96773634600049
+  }
+}

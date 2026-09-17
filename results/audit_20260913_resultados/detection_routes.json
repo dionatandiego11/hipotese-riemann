@@ -1,0 +1,31 @@
+{
+  "command": ".venv/bin/python results/audit_20260913_resultados/check_detection_routes.py",
+  "script_sha256": "c4d9f338685a553d5f735c1f720ad8d69bfef70ce7dd0551db515258953240d2",
+  "note": "Diagnóstico com limiar salvo; não fornece valores-p recalibrados.",
+  "results": {
+    "holdout": {
+      "grid_route_detections": 35,
+      "recorded_refined_route_detections": 36,
+      "detections_changed": [
+        {
+          "prime": 131,
+          "repetition": 1,
+          "period": 4.875197323201151,
+          "grid_route_z": 3.289247108733191,
+          "refined_route_z": 3.294655717296641,
+          "threshold": 3.2914600519367188,
+          "original_adjusted_p": 0.049
+        }
+      ],
+      "N_eff_at_energy_center_using_2006_formula": 1.661362851288719,
+      "input_nulls_sha256": "cb3fa3823b4665594ecbc3f7903e9c252cc4de6b825ab3158239677c69f7eb0a"
+    },
+    "full": {
+      "grid_route_detections": 41,
+      "recorded_refined_route_detections": 41,
+      "detections_changed": [],
+      "N_eff_at_energy_center_using_2006_formula": 1.53479553106643,
+      "input_nulls_sha256": "786b010717c7adfaef354eb93b7683246e0690341767cf4491f0bcc570c6ef77"
+    }
+  }
+}

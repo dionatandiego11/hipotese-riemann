@@ -1,0 +1,2750 @@
+{
+ "declaracao_sha256": "e8d681cbafc49da2da24db60441ff533cc19945f00c63df70bb2097330b5b93c",
+ "K": 47,
+ "U_list": [
+  5.5,
+  6.0,
+  7.0,
+  8.0,
+  10.0
+ ],
+ "n_linhas_extra_por_U": {
+  "5.5": 21,
+  "6.0": 51,
+  "7.0": 162,
+  "8.0": 418,
+  "10.0": 2485
+ },
+ "blocos": [
+  {
+   "versao": "m4-v1",
+   "bloco": "b01",
+   "L": 2519.123430304,
+   "E_c": 11138.216487535,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1514.7590962246227,
+   "sigma_min": 1499.7712298435645,
+   "cond": 1.009993435053839,
+   "tol_posto": 2.845470959758136e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.609823385706477e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0019487303962585996,
+    "max": 0.0027353864962549757
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0006634774401852552,
+    "max": 0.0006635336776355886
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.003876478699749712,
+    "max": 0.003940151701969886
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.98707151270425e-06,
+    "max": 0.00011568496289842484
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 6.33746923066433e-07,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 3.647520934964688e-10,
+     "max_rel_complexo": 9.26624068341739e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001797488255591214
+    },
+    "6.0": {
+     "max_rel_ratio": 6.332902671279282e-07,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 3.5001363052543423e-10,
+     "max_rel_complexo": 9.271164485836749e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0017983159693473905
+    },
+    "7.0": {
+     "max_rel_ratio": 6.335619125288802e-07,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 3.8220567500824465e-10,
+     "max_rel_complexo": 9.273511574295063e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0017988210527869642
+    },
+    "8.0": {
+     "max_rel_ratio": 6.336394210694407e-07,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 4.308406983108344e-10,
+     "max_rel_complexo": 9.27423933473138e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0017989816286388435
+    },
+    "10.0": {
+     "max_rel_ratio": 6.335944408431718e-07,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 3.992597976100046e-10,
+     "max_rel_complexo": 9.27405741796784e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0017988900050962884
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b02",
+   "L": 2453.822208231999,
+   "E_c": 13625.603018078,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1476.3019838524892,
+   "sigma_min": 1460.066435747769,
+   "cond": 1.0111197324362882,
+   "tol_posto": 2.773229375783628e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.604228440844963e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002067491058025448,
+    "max": 0.002815813328817793
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.000681144644992573,
+    "max": 0.0006811916643570188
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.0039796397511078375,
+    "max": 0.004042143275214894
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 8.407364595395468e-06,
+    "max": 0.00010325675949263454
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 6.554998650696699e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.2356100937969655e-10,
+     "max_rel_complexo": 7.392812207643661e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.00101276243989903
+    },
+    "6.0": {
+     "max_rel_ratio": 6.567872467846401e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.282218889843892e-10,
+     "max_rel_complexo": 7.409575627259338e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0010115644005089575
+    },
+    "7.0": {
+     "max_rel_ratio": 6.567031455525839e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.966945293085415e-10,
+     "max_rel_complexo": 7.408312992975272e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001012223783363592
+    },
+    "8.0": {
+     "max_rel_ratio": 6.566631583221223e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.9084296520922235e-10,
+     "max_rel_complexo": 7.408568777835791e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0010123347383015685
+    },
+    "10.0": {
+     "max_rel_ratio": 6.566780162620637e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 4.0392440121545774e-10,
+     "max_rel_complexo": 7.408542865709594e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0010124299490862684
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b03",
+   "L": 2402.0062275519995,
+   "E_c": 16054.314514361,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1445.3423093169615,
+   "sigma_min": 1429.0243878606784,
+   "cond": 1.0114189244038807,
+   "tol_posto": 2.715071708974447e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 4.996003610813204e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002112701574022541,
+    "max": 0.0028747911300615213
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0006958399167605237,
+    "max": 0.0006958863032216204
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004065488335576345,
+    "max": 0.004131136179962232
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.86194328500464e-06,
+    "max": 0.00010363745326265579
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 4.045648744207439e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 8.91110470769972e-11,
+     "max_rel_complexo": 5.925653742351195e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007772311777066941
+    },
+    "6.0": {
+     "max_rel_ratio": 4.0404582599945517e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.4902555046022608e-10,
+     "max_rel_complexo": 5.929740553343309e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007771724851260618
+    },
+    "7.0": {
+     "max_rel_ratio": 4.03719943274151e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 9.399290563533436e-11,
+     "max_rel_complexo": 5.92301760768208e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007764565551572115
+    },
+    "8.0": {
+     "max_rel_ratio": 4.0381110631650064e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.1009854447679965e-10,
+     "max_rel_complexo": 5.923036671089936e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007764860027124334
+    },
+    "10.0": {
+     "max_rel_ratio": 4.0376020061001253e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 9.947791042126686e-11,
+     "max_rel_complexo": 5.92251402870532e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007764212701923222
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b04",
+   "L": 2359.917344559999,
+   "E_c": 18436.346404427997,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1419.8390035727025,
+   "sigma_min": 1404.1992915924102,
+   "cond": 1.0111378150337595,
+   "tol_posto": 2.667163816522114e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 5.323027456573293e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002101175849018183,
+    "max": 0.0029279648523406875
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007082396895783486,
+    "max": 0.0007082973638391862
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004137995984393434,
+    "max": 0.004210814017899358
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 9.255322408507495e-06,
+    "max": 0.0001072878084548322
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 6.919719112782468e-08,
+     "linha_max_ratio": [
+      5,
+      3
+     ],
+     "mediana_rel_ratio": 1.999469899526303e-10,
+     "max_rel_complexo": 3.95671128303997e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0009385158147964877
+    },
+    "6.0": {
+     "max_rel_ratio": 6.409448720107193e-08,
+     "linha_max_ratio": [
+      5,
+      3
+     ],
+     "mediana_rel_ratio": 1.8580585173577885e-10,
+     "max_rel_complexo": 3.954353244695214e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0009386739065834507
+    },
+    "7.0": {
+     "max_rel_ratio": 6.369648615844522e-08,
+     "linha_max_ratio": [
+      5,
+      3
+     ],
+     "mediana_rel_ratio": 2.390355950938871e-10,
+     "max_rel_complexo": 3.9538410908901905e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0009388591977834574
+    },
+    "8.0": {
+     "max_rel_ratio": 6.322319818728949e-08,
+     "linha_max_ratio": [
+      5,
+      3
+     ],
+     "mediana_rel_ratio": 1.9669696914649056e-10,
+     "max_rel_complexo": 3.9542357891764996e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0009388443367664327
+    },
+    "10.0": {
+     "max_rel_ratio": 6.332264130383107e-08,
+     "linha_max_ratio": [
+      5,
+      3
+     ],
+     "mediana_rel_ratio": 1.9938301062369553e-10,
+     "max_rel_complexo": 3.954310804010252e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.000938852235230992
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b05",
+   "L": 2325.2104665399966,
+   "E_c": 20779.987196864,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1398.5348105109306,
+   "sigma_min": 1384.0422639201213,
+   "cond": 1.0104711734378407,
+   "tol_posto": 2.627143946148374e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 7.494005416219807e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0021786454446119734,
+    "max": 0.0030240995173726553
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.000718788938088416,
+    "max": 0.0007188696498955154
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004199761099962894,
+    "max": 0.00427751323182594
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.900333298822946e-06,
+    "max": 8.843646507381754e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 3.6693273828368737e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.5191472991184353e-10,
+     "max_rel_complexo": 7.772421390251585e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007691832252956997
+    },
+    "6.0": {
+     "max_rel_ratio": 3.6567388207147504e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.025031315161959e-10,
+     "max_rel_complexo": 7.75779659081668e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007676280097370117
+    },
+    "7.0": {
+     "max_rel_ratio": 3.656351493699945e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 4.838008064670228e-10,
+     "max_rel_complexo": 7.750934978684833e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007669008604174037
+    },
+    "8.0": {
+     "max_rel_ratio": 3.6550079593137494e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 4.086082884140083e-10,
+     "max_rel_complexo": 7.751537355417342e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007669565171487788
+    },
+    "10.0": {
+     "max_rel_ratio": 3.655072336846165e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 4.217243965344133e-10,
+     "max_rel_complexo": 7.751249521989885e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007669255022087874
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b06",
+   "L": 2295.722556159002,
+   "E_c": 23090.5223793775,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1380.2212333674217,
+   "sigma_min": 1367.1707035577217,
+   "cond": 1.0095456476471734,
+   "tol_posto": 2.592741939874885e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 6.637758845677593e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0022129119018680365,
+    "max": 0.003007771154090632
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007279890149232335,
+    "max": 0.0007281033283046968
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.0042537058922065725,
+    "max": 0.004334929804089294
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.775609761614422e-06,
+    "max": 9.039820050755972e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 3.433303972824571e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.2148482242495904e-10,
+     "max_rel_complexo": 5.688937965612e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007589102275552979
+    },
+    "6.0": {
+     "max_rel_ratio": 3.424051341720482e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.2648259204005974e-10,
+     "max_rel_complexo": 5.666655876363259e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007564760989105227
+    },
+    "7.0": {
+     "max_rel_ratio": 3.4027589289998135e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 5.939515650803636e-10,
+     "max_rel_complexo": 5.65547913012913e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007551778233740536
+    },
+    "8.0": {
+     "max_rel_ratio": 3.3986526283054053e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 5.835526116423454e-10,
+     "max_rel_complexo": 5.655414928880533e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.000755176434419868
+    },
+    "10.0": {
+     "max_rel_ratio": 3.399981138597482e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.014186237802393e-10,
+     "max_rel_complexo": 5.65523506361294e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0007551551380455778
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b07",
+   "L": 2268.8117847950016,
+   "E_c": 25374.2875080785,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1363.3260877943892,
+   "sigma_min": 1351.999806530282,
+   "cond": 1.0083774281692943,
+   "tol_posto": 2.5610044535585645e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 6.358892725486277e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0021862295211306382,
+    "max": 0.003065082529708595
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007365797978662546,
+    "max": 0.0007367394885958966
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.0043041598839189815,
+    "max": 0.004387950974534644
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.362509309575432e-06,
+    "max": 9.861931361830495e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 4.3269466676705973e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.575517295620406e-10,
+     "max_rel_complexo": 6.042678352141278e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.00119718037425891
+    },
+    "6.0": {
+     "max_rel_ratio": 4.3141748812342427e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.8213831592332533e-10,
+     "max_rel_complexo": 5.980715912874822e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0011993753047446517
+    },
+    "7.0": {
+     "max_rel_ratio": 4.2866700816003156e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.616350702997544e-10,
+     "max_rel_complexo": 5.980143722697759e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0011998493890060871
+    },
+    "8.0": {
+     "max_rel_ratio": 4.287885908159016e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.4166739190943715e-10,
+     "max_rel_complexo": 5.978400261920466e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0011999687824853656
+    },
+    "10.0": {
+     "max_rel_ratio": 4.2882326435941316e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.3768135404464927e-10,
+     "max_rel_complexo": 5.977586770615109e-07,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0011999939222131501
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b08",
+   "L": 2245.668934068999,
+   "E_c": 27632.7844241545,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1348.6508165024295,
+   "sigma_min": 1339.1406593493477,
+   "cond": 1.0071016865081988,
+   "tol_posto": 2.5334369952135904e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.32817140391843e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.002281558441911325,
+    "max": 0.0030748142135492767
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007441194487036894,
+    "max": 0.0007443319933066715
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004348516589351599,
+    "max": 0.004436690445509196
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.395439727726024e-06,
+    "max": 8.585888951613301e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.6290137254761902e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.8085410213211717e-10,
+     "max_rel_complexo": 1.9009967661506874e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0020454871057706426
+    },
+    "6.0": {
+     "max_rel_ratio": 1.6326130431622081e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.100589842667091e-10,
+     "max_rel_complexo": 1.9034929275286484e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002045173771223665
+    },
+    "7.0": {
+     "max_rel_ratio": 1.6322391152299838e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.941638959342828e-10,
+     "max_rel_complexo": 1.9034872949007115e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0020449728293557043
+    },
+    "8.0": {
+     "max_rel_ratio": 1.6322840470082112e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.6401063285463372e-10,
+     "max_rel_complexo": 1.9034633657282277e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002044922131118841
+    },
+    "10.0": {
+     "max_rel_ratio": 1.632299600454874e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.6135540768931162e-10,
+     "max_rel_complexo": 1.903474233685278e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002044924202829192
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b09",
+   "L": 2225.336033143998,
+   "E_c": 29869.728126208,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1335.642253375042,
+   "sigma_min": 1327.9961343795776,
+   "cond": 1.0057576364851668,
+   "tol_posto": 2.5090004437517643e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 7.035395639668972e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0022055152135907314,
+    "max": 0.003153332435434051
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007508615032257904,
+    "max": 0.0007511329566009607
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004388249054528096,
+    "max": 0.004480468472561264
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.184446622483553e-06,
+    "max": 8.423342745330737e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 8.779775689310038e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.948372577274244e-10,
+     "max_rel_complexo": 1.97039263111313e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0024723337708177262
+    },
+    "6.0": {
+     "max_rel_ratio": 9.037940589515538e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.538419690545461e-10,
+     "max_rel_complexo": 1.97230714594236e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0024745144305015074
+    },
+    "7.0": {
+     "max_rel_ratio": 8.990299201455811e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.6804571745302076e-10,
+     "max_rel_complexo": 1.9721710155454294e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0024742847866883987
+    },
+    "8.0": {
+     "max_rel_ratio": 8.984650615648689e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.197876650873155e-10,
+     "max_rel_complexo": 1.9721537639452287e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002474256262232975
+    },
+    "10.0": {
+     "max_rel_ratio": 8.982061767470373e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.1786010704153296e-10,
+     "max_rel_complexo": 1.9721705059809997e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0024742719425575794
+    }
+   }
+  },
+  {
+   "versao": "m4-v1",
+   "bloco": "b10",
+   "L": 2206.824139444998,
+   "E_c": 32086.6000753325,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1323.702754181388,
+   "sigma_min": 1317.9815268882232,
+   "cond": 1.004340900973531,
+   "tol_posto": 2.4865721260646325e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.673190081127057e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002223258467421507,
+    "max": 0.0031306677434030468
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007570971188031665,
+    "max": 0.0007574338182009785
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004425059795317522,
+    "max": 0.0045233620877253855
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.615715007835154e-06,
+    "max": 0.00010021420216019509
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 7.053609350218819e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.093956168433954e-10,
+     "max_rel_complexo": 1.4436138068189637e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001595440946717004
+    },
+    "6.0": {
+     "max_rel_ratio": 6.936529749682459e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.3050070038288065e-10,
+     "max_rel_complexo": 1.4411061040766971e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015932021948623853
+    },
+    "7.0": {
+     "max_rel_ratio": 6.922869976131539e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.7973100957842255e-10,
+     "max_rel_complexo": 1.4405944770590797e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015926553261734044
+    },
+    "8.0": {
+     "max_rel_ratio": 6.923481393019855e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.940538622363293e-10,
+     "max_rel_complexo": 1.440560067759281e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001592604254301246
+    },
+    "10.0": {
+     "max_rel_ratio": 6.914780910539472e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.6807797850577523e-10,
+     "max_rel_complexo": 1.440480906510225e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015925393512539372
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c01",
+   "L": 2190.138300437,
+   "E_c": 34285.8741172775,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1312.8614868518089,
+   "sigma_min": 1309.0669330834285,
+   "cond": 1.002898670551125,
+   "tol_posto": 2.46620683403227e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.582067810090848e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0022402903695784293,
+    "max": 0.003196618241022021
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007627983011068943,
+    "max": 0.0007632044212688631
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004458772673958463,
+    "max": 0.004562925213910643
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.100702260790737e-06,
+    "max": 0.00010059576512605898
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 8.345158328336804e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.3031815269690382e-10,
+     "max_rel_complexo": 1.163644794071868e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001584376337504912
+    },
+    "6.0": {
+     "max_rel_ratio": 8.222304921219905e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.2062223375974643e-10,
+     "max_rel_complexo": 1.1356596464370645e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001577468250912772
+    },
+    "7.0": {
+     "max_rel_ratio": 8.262295172241993e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.422152591849933e-10,
+     "max_rel_complexo": 1.1384632994024236e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001578231707831597
+    },
+    "8.0": {
+     "max_rel_ratio": 8.26246889574386e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.4995687797218593e-10,
+     "max_rel_complexo": 1.1386041935974357e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015781647251471057
+    },
+    "10.0": {
+     "max_rel_ratio": 8.265935248544157e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.541562544733642e-10,
+     "max_rel_complexo": 1.1392364001140785e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015782050314503842
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c02",
+   "L": 2174.4283332339983,
+   "E_c": 36468.614408453,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1302.5858117054281,
+   "sigma_min": 1300.132572551383,
+   "cond": 1.0018869146161233,
+   "tol_posto": 2.4469040054215623e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 5.421087095392775e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0022643330828399583,
+    "max": 0.003175852562538414
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007682368742947859,
+    "max": 0.0007687184758085757
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.0044909867371229805,
+    "max": 0.0046008307337231024
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.002909569230758e-06,
+    "max": 9.326029437421786e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 8.954936473106669e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.4048960475221203e-10,
+     "max_rel_complexo": 1.8032451773572785e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0018966192448475441
+    },
+    "6.0": {
+     "max_rel_ratio": 8.908522447582171e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.1896784559639496e-10,
+     "max_rel_complexo": 1.7945281398716027e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0018928080913736683
+    },
+    "7.0": {
+     "max_rel_ratio": 8.913350131079217e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.1643146145241634e-10,
+     "max_rel_complexo": 1.7947256338823058e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0018941808337174376
+    },
+    "8.0": {
+     "max_rel_ratio": 8.912180971259798e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.4250823010213585e-10,
+     "max_rel_complexo": 1.7947200324363482e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0018943650534788074
+    },
+    "10.0": {
+     "max_rel_ratio": 8.91132552851836e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.4276186375271802e-10,
+     "max_rel_complexo": 1.7946699128548247e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0018943414557656606
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c03",
+   "L": 2160.1463870399966,
+   "E_c": 38636.630124239,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1293.3386918106214,
+   "sigma_min": 1291.5741079324469,
+   "cond": 1.0013662273557027,
+   "tol_posto": 2.4295333151331496e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.98516121899044e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002277301670679304,
+    "max": 0.0032132897347374716
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007732414359107997,
+    "max": 0.0007738009072115402
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004520679209244629,
+    "max": 0.0046387020223064256
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.069050020315473e-06,
+    "max": 8.95066708634265e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 9.607674441123772e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.922216580395608e-10,
+     "max_rel_complexo": 1.2381541913415252e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015873104721442009
+    },
+    "6.0": {
+     "max_rel_ratio": 9.425056666973644e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.1375473492966414e-10,
+     "max_rel_complexo": 1.211574762924754e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015829333746676276
+    },
+    "7.0": {
+     "max_rel_ratio": 9.402293727256641e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.3714892952486803e-10,
+     "max_rel_complexo": 1.2082883170795366e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015830393746973028
+    },
+    "8.0": {
+     "max_rel_ratio": 9.386966611953497e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.93456626580421e-10,
+     "max_rel_complexo": 1.2061930247127228e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001582955819652418
+    },
+    "10.0": {
+     "max_rel_ratio": 9.389880520400342e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.407232136518178e-10,
+     "max_rel_complexo": 1.2064004911544014e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015829122103113485
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c04",
+   "L": 2146.6535467840004,
+   "E_c": 40790.451615925,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1286.38202262285,
+   "sigma_min": 1283.4964769212477,
+   "cond": 1.0022481913690358,
+   "tol_posto": 2.416465230445766e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.8596235662471372e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0023957921306421584,
+    "max": 0.0032864835221372325
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007780229139632744,
+    "max": 0.0007786646506259601
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.0045490940421073454,
+    "max": 0.004674880591676268
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.933885260196241e-06,
+    "max": 8.77013745780336e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.8428298067519078e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.071366270694741e-10,
+     "max_rel_complexo": 1.861818059380305e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001854633858260206
+    },
+    "6.0": {
+     "max_rel_ratio": 1.8430639012009073e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.4223736171740734e-10,
+     "max_rel_complexo": 1.8621304289227018e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018550152520696744
+    },
+    "7.0": {
+     "max_rel_ratio": 1.8432233849592302e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 1.9031155375095393e-10,
+     "max_rel_complexo": 1.8622626429755318e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018551017100907306
+    },
+    "8.0": {
+     "max_rel_ratio": 1.8432358195173997e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.366281718903015e-10,
+     "max_rel_complexo": 1.8622439358385757e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018550525957955707
+    },
+    "10.0": {
+     "max_rel_ratio": 1.8432506487660328e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.3552307931300375e-10,
+     "max_rel_complexo": 1.8622693678540833e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001855086081622698
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c05",
+   "L": 2133.987569413999,
+   "E_c": 42931.545559859005,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1279.9265981957856,
+   "sigma_min": 1275.7612897361992,
+   "cond": 1.0032649591213476,
+   "tol_posto": 2.404338732716914e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 7.494005416219807e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0022932200532482915,
+    "max": 0.0032362592700608947
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.000782559150920785,
+    "max": 0.0007832863030717471
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004576094542165274,
+    "max": 0.004709152329494655
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.677710056594372e-06,
+    "max": 9.411719393947835e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.24653638126522e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.698412620163598e-10,
+     "max_rel_complexo": 1.8204037226479638e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001769530894520504
+    },
+    "6.0": {
+     "max_rel_ratio": 1.271391798901863e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.122726488813049e-10,
+     "max_rel_complexo": 1.8248528797113715e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001772637351279543
+    },
+    "7.0": {
+     "max_rel_ratio": 1.268491620255705e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.232367234580452e-10,
+     "max_rel_complexo": 1.8245139119881548e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0017723398292783684
+    },
+    "8.0": {
+     "max_rel_ratio": 1.2697088671415525e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.061839764890689e-10,
+     "max_rel_complexo": 1.8246592346801353e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0017725152226248093
+    },
+    "10.0": {
+     "max_rel_ratio": 1.2693704444877339e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.9239027847246616e-10,
+     "max_rel_complexo": 1.8246279020112387e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0017724510465446808
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c06",
+   "L": 2122.937795484999,
+   "E_c": 45060.7469159055,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1274.3547501022845,
+   "sigma_min": 1268.3716430349364,
+   "cond": 1.0047171561270731,
+   "tol_posto": 2.3938720307959577e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 9.43689570931383e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002335365823993496,
+    "max": 0.0032533010731202474
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007865547523831869,
+    "max": 0.0007873632651356075
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004599912798850256,
+    "max": 0.004739334766364915
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.474636540170997e-06,
+    "max": 7.875124839091243e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 5.261471973876336e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 4.850937175563468e-10,
+     "max_rel_complexo": 1.2623636003700927e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002215970009316479
+    },
+    "6.0": {
+     "max_rel_ratio": 5.279672430487668e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.921224188199618e-10,
+     "max_rel_complexo": 1.2673638586204702e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002221423013471271
+    },
+    "7.0": {
+     "max_rel_ratio": 5.28743026368773e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.460027522525215e-10,
+     "max_rel_complexo": 1.2672230845185294e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002221049366045387
+    },
+    "8.0": {
+     "max_rel_ratio": 5.28700093289316e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 4.922725131344468e-10,
+     "max_rel_complexo": 1.2669713765567895e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0022210282607327395
+    },
+    "10.0": {
+     "max_rel_ratio": 5.286623924678527e-07,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.048543787414151e-10,
+     "max_rel_complexo": 1.266937563507044e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0022210323852818246
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c07",
+   "L": 2111.4322225270007,
+   "E_c": 47178.5936991165,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1268.6135415710733,
+   "sigma_min": 1260.6321852495064,
+   "cond": 1.0063312331820142,
+   "tol_posto": 2.383087185740269e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.604228440844963e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002350660248274171,
+    "max": 0.003272962552331394
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007907534008725927,
+    "max": 0.0007916537486752966
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004624978611579546,
+    "max": 0.004771771164470105
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.01775283976114e-06,
+    "max": 9.150508826589527e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.2432407719417723e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.709051272493152e-10,
+     "max_rel_complexo": 1.8644830257531072e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.00218485384703568
+    },
+    "6.0": {
+     "max_rel_ratio": 1.2492475828671081e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.071862451904682e-10,
+     "max_rel_complexo": 1.8683425065054741e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002189574680233517
+    },
+    "7.0": {
+     "max_rel_ratio": 1.2572630637493793e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.08559983599401e-10,
+     "max_rel_complexo": 1.8675064325758367e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0021888141073900204
+    },
+    "8.0": {
+     "max_rel_ratio": 1.2574189426699102e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.373235980939403e-10,
+     "max_rel_complexo": 1.8676223170777816e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002189017180385293
+    },
+    "10.0": {
+     "max_rel_ratio": 1.2578591239655846e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.560615280225409e-10,
+     "max_rel_complexo": 1.8675206038292448e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0021888986735384337
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c08",
+   "L": 2101.3722542079995,
+   "E_c": 49285.667303951996,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1263.6452241760805,
+   "sigma_min": 1253.831654834972,
+   "cond": 1.0078268636010792,
+   "tol_posto": 2.3737542146417305e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.925176365196255e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002352530782929,
+    "max": 0.003363484627648585
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007944568018862925,
+    "max": 0.0007954436586303563
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.00464711997853107,
+    "max": 0.00480190484018984
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.798039321952112e-06,
+    "max": 8.802798110478485e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.1081610247263478e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.238300981731737e-10,
+     "max_rel_complexo": 1.2377677854783449e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001853733674758343
+    },
+    "6.0": {
+     "max_rel_ratio": 1.1042365993893392e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 6.011590952168712e-10,
+     "max_rel_complexo": 1.2332088573658028e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001854593183925393
+    },
+    "7.0": {
+     "max_rel_ratio": 1.1030330067893218e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.23722073692622e-10,
+     "max_rel_complexo": 1.2323866055383376e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001853480867977836
+    },
+    "8.0": {
+     "max_rel_ratio": 1.103088996724432e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.33360692902448e-10,
+     "max_rel_complexo": 1.2323874164209721e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018536320771905816
+    },
+    "10.0": {
+     "max_rel_ratio": 1.1030884133713402e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 5.045857932066589e-10,
+     "max_rel_complexo": 1.2323841103486163e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018536960199735846
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c09",
+   "L": 2091.670405205994,
+   "E_c": 51382.607575513,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1258.900157295756,
+   "sigma_min": 1247.2444564908562,
+   "cond": 1.0093451614430848,
+   "tol_posto": 2.364840619045093e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 6.581308011301688e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002353493812492677,
+    "max": 0.003311816289148551
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0007980571913838056,
+    "max": 0.0007991331855780373
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004668674749385755,
+    "max": 0.004831336764627398
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.888495745910382e-06,
+    "max": 9.75705035776534e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.307754278776186e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.902349172657911e-10,
+     "max_rel_complexo": 1.7530349197522008e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002360901608040726
+    },
+    "6.0": {
+     "max_rel_ratio": 1.3145833120305503e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.473627666262297e-10,
+     "max_rel_complexo": 1.7468992066902379e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0023588624047914436
+    },
+    "7.0": {
+     "max_rel_ratio": 1.3161073802389114e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.658022186128543e-10,
+     "max_rel_complexo": 1.7445066294032768e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0023584459310182185
+    },
+    "8.0": {
+     "max_rel_ratio": 1.3169458750328906e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.935826107109191e-10,
+     "max_rel_complexo": 1.7453593484112002e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002358564221883022
+    },
+    "10.0": {
+     "max_rel_ratio": 1.3169042906036532e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.757645079498736e-10,
+     "max_rel_complexo": 1.7453386154354629e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002358562739375519
+    }
+   }
+  },
+  {
+   "versao": "m4-v2",
+   "bloco": "c10",
+   "L": 2082.683808087,
+   "E_c": 53470.316535134494,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1254.5462070929211,
+   "sigma_min": 1241.1179449881135,
+   "cond": 1.010819489121911,
+   "tol_posto": 2.35666173509366e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.3958898193918426e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0023905888889567467,
+    "max": 0.0033859330044950144
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008014176425142882,
+    "max": 0.0008025813749889231
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004688819779814055,
+    "max": 0.004858826843654964
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.7944518258871326e-06,
+    "max": 9.526373906983097e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.1183948814582142e-06,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 3.0879171082437714e-10,
+     "max_rel_complexo": 2.116432538545637e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018829575633799592
+    },
+    "6.0": {
+     "max_rel_ratio": 1.1188480173053342e-06,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 5.546226451757214e-10,
+     "max_rel_complexo": 2.118093334950979e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018810594972084342
+    },
+    "7.0": {
+     "max_rel_ratio": 1.1179538612487936e-06,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 4.452747955852371e-10,
+     "max_rel_complexo": 2.1174789165546916e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0018804103110068827
+    },
+    "8.0": {
+     "max_rel_ratio": 1.1177974094586206e-06,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 4.012533818905748e-10,
+     "max_rel_complexo": 2.1173490897256837e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001880329972370298
+    },
+    "10.0": {
+     "max_rel_ratio": 1.1177543329436928e-06,
+     "linha_max_ratio": [
+      137,
+      1
+     ],
+     "mediana_rel_ratio": 3.936547300196644e-10,
+     "max_rel_complexo": 2.1172705871850383e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.001880272470153534
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d01",
+   "L": 2073.682080368999,
+   "E_c": 55549.0823065865,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1250.2253431701108,
+   "sigma_min": 1234.9571838406641,
+   "cond": 1.0123633106711953,
+   "tol_posto": 2.348545003631827e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.2490009027033011e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0023901338447520582,
+    "max": 0.0034476467713179127
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008048085706265771,
+    "max": 0.0008060653317460934
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.0047091736370299345,
+    "max": 0.004886879040610469
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.65650062881389e-06,
+    "max": 9.019584849689862e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.4441691818040462e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.011897368887062e-10,
+     "max_rel_complexo": 1.6533156741299546e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0026163464424823683
+    },
+    "6.0": {
+     "max_rel_ratio": 1.495389501571964e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 9.112997550017364e-10,
+     "max_rel_complexo": 1.6924614967175229e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0026131987466955146
+    },
+    "7.0": {
+     "max_rel_ratio": 1.492327427363193e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 8.548001979676082e-10,
+     "max_rel_complexo": 1.6920968406534815e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002612746114060732
+    },
+    "8.0": {
+     "max_rel_ratio": 1.491599793133436e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 8.591670583162257e-10,
+     "max_rel_complexo": 1.6919680090940685e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0026124248640091263
+    },
+    "10.0": {
+     "max_rel_ratio": 1.4916968389022428e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 8.64715006792464e-10,
+     "max_rel_complexo": 1.6918699967664533e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002612381487591473
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d02",
+   "L": 2065.3777489010026,
+   "E_c": 57619.1039109625,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1246.2755989397863,
+   "sigma_min": 1229.2525394276538,
+   "cond": 1.0138483012775052,
+   "tol_posto": 2.341125419531707e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.604228440844963e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0024732316461774494,
+    "max": 0.0034560729825398834
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008079590298501904,
+    "max": 0.0008093063048245389
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004728107975295997,
+    "max": 0.004914266500787613
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.64270958061659e-06,
+    "max": 8.476135435641794e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.7829508878880841e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 6.624856164544472e-10,
+     "max_rel_complexo": 1.9972650600887977e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.0022389256943283445
+    },
+    "6.0": {
+     "max_rel_ratio": 1.7816575584935824e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 9.0555978445806e-10,
+     "max_rel_complexo": 1.999078093824786e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.00223735373492091
+    },
+    "7.0": {
+     "max_rel_ratio": 1.7818170203780161e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 9.641599127575333e-10,
+     "max_rel_complexo": 1.9994841437647546e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.002237707222079096
+    },
+    "8.0": {
+     "max_rel_ratio": 1.7816720999442011e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 9.099662814835543e-10,
+     "max_rel_complexo": 1.9992869738695417e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.0022377694029103033
+    },
+    "10.0": {
+     "max_rel_ratio": 1.7816871271438154e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 8.991536573836884e-10,
+     "max_rel_complexo": 1.9992683482295222e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.0022377696289302834
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d03",
+   "L": 2057.545446997996,
+   "E_c": 59681.337376818,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1242.5827511883845,
+   "sigma_min": 1223.85357365471,
+   "cond": 1.0153034463736905,
+   "tol_posto": 2.334188414788437e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 8.881784197001252e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002387077017336852,
+    "max": 0.0034574872338896724
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008109501551712613,
+    "max": 0.000812387029671447
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004746106080037392,
+    "max": 0.004940535336868255
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.642750957269859e-06,
+    "max": 9.037404345902021e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.6294630893947932e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 7.325984258308176e-10,
+     "max_rel_complexo": 2.0390594996569107e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0019208489894366949
+    },
+    "6.0": {
+     "max_rel_ratio": 1.6583795437603782e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 9.637975287188088e-10,
+     "max_rel_complexo": 2.0437311553806452e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0019257475075214227
+    },
+    "7.0": {
+     "max_rel_ratio": 1.6638709906832514e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.0004477047425496e-09,
+     "max_rel_complexo": 2.0442763455954257e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0019264030748610153
+    },
+    "8.0": {
+     "max_rel_ratio": 1.6618670792353217e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 9.533397866642083e-10,
+     "max_rel_complexo": 2.0440672982722006e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0019261697055426652
+    },
+    "10.0": {
+     "max_rel_ratio": 1.6622719654203484e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 9.681240171117608e-10,
+     "max_rel_complexo": 2.044121065459281e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0019262166441444794
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d04",
+   "L": 2049.3240492849945,
+   "E_c": 61735.514674277496,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1238.7406697158715,
+   "sigma_min": 1218.167037348757,
+   "cond": 1.0168890076125285,
+   "tol_posto": 2.3269710748943845e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.8155515384797465e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0024109050310281233,
+    "max": 0.003511847706252009
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008141106877480004,
+    "max": 0.0008156461320738687
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004765146349528645,
+    "max": 0.004969032346257833
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.949868593173843e-06,
+    "max": 8.112229429392721e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.9301165404630473e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.6747646367512726e-10,
+     "max_rel_complexo": 2.692993997535276e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.002566232404128357
+    },
+    "6.0": {
+     "max_rel_ratio": 1.9358903194139527e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.6128542712466787e-10,
+     "max_rel_complexo": 2.720406598274937e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.002571103769263878
+    },
+    "7.0": {
+     "max_rel_ratio": 1.9356997682508488e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 2.703175971088746e-10,
+     "max_rel_complexo": 2.723955089182163e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.0025715483546311035
+    },
+    "8.0": {
+     "max_rel_ratio": 1.9359484338407003e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.217189700492574e-10,
+     "max_rel_complexo": 2.7254358328648322e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.0025717602124012352
+    },
+    "10.0": {
+     "max_rel_ratio": 1.9359205600605607e-06,
+     "linha_max_ratio": [
+      139,
+      1
+     ],
+     "mediana_rel_ratio": 3.3411911431530566e-10,
+     "max_rel_complexo": 2.7255362769921363e-06,
+     "n_linhas_rel_ratio_acima_tau": 3,
+     "sup_rho_lin": 0.0025717698140328726
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d05",
+   "L": 2042.3109697539985,
+   "E_c": 63782.303464626995,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1235.4912667451079,
+   "sigma_min": 1213.3006312190619,
+   "cond": 1.0182894782670227,
+   "tol_posto": 2.3208670799998137e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 9.125821855185726e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002401915645661045,
+    "max": 0.003501440615441385
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008168237147951803,
+    "max": 0.0008184469744160961
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004781509375023736,
+    "max": 0.004993599479632639
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.221068674174706e-06,
+    "max": 8.957698278925578e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.328657249775701e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.4891123195928976e-10,
+     "max_rel_complexo": 1.7717134828744414e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0017667710295621649
+    },
+    "6.0": {
+     "max_rel_ratio": 1.3516989790896984e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.251838173805694e-10,
+     "max_rel_complexo": 1.8195496597823371e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.001767618145037171
+    },
+    "7.0": {
+     "max_rel_ratio": 1.350829557769339e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.181257822988578e-10,
+     "max_rel_complexo": 1.8144707304068484e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0017682648775743577
+    },
+    "8.0": {
+     "max_rel_ratio": 1.352231020732356e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.872444317492177e-10,
+     "max_rel_complexo": 1.8140364255332892e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.001768297234384009
+    },
+    "10.0": {
+     "max_rel_ratio": 1.3516576079940639e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.467496016733371e-10,
+     "max_rel_complexo": 1.813553208307446e-06,
+     "n_linhas_rel_ratio_acima_tau": 2,
+     "sup_rho_lin": 0.0017682953484986009
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d06",
+   "L": 2035.5292512130036,
+   "E_c": 65822.0131457985,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1232.3738186427593,
+   "sigma_min": 1208.5811132767456,
+   "cond": 1.019686477891009,
+   "tol_posto": 2.3150109619768918e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 7.077671781985373e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0024013352253199386,
+    "max": 0.003543407445857591
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008194622667581663,
+    "max": 0.0008211737724039366
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.00479743985092256,
+    "max": 0.005017613593052574
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.503633558338387e-06,
+    "max": 7.464814630586369e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 9.454345145820726e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.485879314021083e-10,
+     "max_rel_complexo": 1.1712143164105532e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015365648020202545
+    },
+    "6.0": {
+     "max_rel_ratio": 9.644708525780032e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.32730976116268e-10,
+     "max_rel_complexo": 1.1690622568594293e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015323077456565251
+    },
+    "7.0": {
+     "max_rel_ratio": 9.61155297773918e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 7.454615314707771e-10,
+     "max_rel_complexo": 1.1662029934364353e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015320198073881868
+    },
+    "8.0": {
+     "max_rel_ratio": 9.60970423721384e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.270620837187907e-10,
+     "max_rel_complexo": 1.1664881205996797e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0015323499048179373
+    },
+    "10.0": {
+     "max_rel_ratio": 9.61120324767867e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.163960660041254e-10,
+     "max_rel_complexo": 1.1664706215461165e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.001532360860265078
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d07",
+   "L": 2028.8640217929933,
+   "E_c": 67854.84450005551,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1229.3338450514302,
+   "sigma_min": 1203.9296156297285,
+   "cond": 1.021101091867745,
+   "tol_posto": 2.3093003796182066e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.3770344226171535e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.002422898333085013,
+    "max": 0.003406467921350358
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.000822070020689737,
+    "max": 0.0008238714946287521
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004813200352915981,
+    "max": 0.005041532892011459
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.823065844665295e-06,
+    "max": 9.345919905405388e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 4.4747881852423873e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.7433745231434194e-10,
+     "max_rel_complexo": 2.588416589268799e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002853569762799609
+    },
+    "6.0": {
+     "max_rel_ratio": 4.571944578534401e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.1633570278669737e-10,
+     "max_rel_complexo": 2.5889611297404936e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0028540136215470875
+    },
+    "7.0": {
+     "max_rel_ratio": 4.61056146677978e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.5186535751090802e-10,
+     "max_rel_complexo": 2.5883462648552627e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.00285333796271731
+    },
+    "8.0": {
+     "max_rel_ratio": 4.5919460830269136e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.981212264419428e-10,
+     "max_rel_complexo": 2.588348301699087e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0028533538900387327
+    },
+    "10.0": {
+     "max_rel_ratio": 4.594193329383131e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.9936043001641716e-10,
+     "max_rel_complexo": 2.588286067201283e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002853291988399181
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d08",
+   "L": 2022.4547535259917,
+   "E_c": 69881.515800729,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1226.4331668517598,
+   "sigma_min": 1199.4445838616568,
+   "cond": 1.0225009002943781,
+   "tol_posto": 2.3038514632846869e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 7.616802834879723e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.002465659942754243,
+    "max": 0.003416262764959532
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008245913301920311,
+    "max": 0.0008264823878807694
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004828453702412501,
+    "max": 0.005064836613143766
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 6.757179162069241e-06,
+    "max": 8.18843249097316e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 9.055322472525234e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.126481869806306e-10,
+     "max_rel_complexo": 2.150553008989378e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0022207777134063238
+    },
+    "6.0": {
+     "max_rel_ratio": 8.997662034839375e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.916981521223105e-10,
+     "max_rel_complexo": 2.165585827774129e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0022226364757416115
+    },
+    "7.0": {
+     "max_rel_ratio": 9.051069085239388e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.926639097287159e-10,
+     "max_rel_complexo": 2.1688620821034223e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002223404974547939
+    },
+    "8.0": {
+     "max_rel_ratio": 9.055325234304895e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 5.27789379355283e-10,
+     "max_rel_complexo": 2.170139602280369e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.0022235682041142485
+    },
+    "10.0": {
+     "max_rel_ratio": 9.049719802530833e-07,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 5.571470131009075e-10,
+     "max_rel_complexo": 2.170317498569823e-06,
+     "n_linhas_rel_ratio_acima_tau": 0,
+     "sup_rho_lin": 0.002223574001249712
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d09",
+   "L": 2016.8827698499954,
+   "E_c": 71901.693456971,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1223.9295228644692,
+   "sigma_min": 1195.5358000019294,
+   "cond": 1.0237497888917204,
+   "tol_posto": 2.2991483746700258e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 9.169433864464597e-16,
+   "norma_linha_ratio_l1": {
+    "min": 0.0024291040083475905,
+    "max": 0.003425337769817234
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008267942720435229,
+    "max": 0.0008287656868353432
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004841793115161272,
+    "max": 0.005085326152477837
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 7.382163762066986e-06,
+    "max": 8.234280247110567e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 1.698457134679979e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.5403601474919793e-10,
+     "max_rel_complexo": 1.8881915138222202e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0019282129153152926
+    },
+    "6.0": {
+     "max_rel_ratio": 1.6898676509404296e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 2.8700377474946747e-10,
+     "max_rel_complexo": 1.8801366232209951e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0019269113576843324
+    },
+    "7.0": {
+     "max_rel_ratio": 1.694356527082136e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 1.6681501810902877e-10,
+     "max_rel_complexo": 1.8836886371051776e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0019273570928555648
+    },
+    "8.0": {
+     "max_rel_ratio": 1.6921439851482408e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.2271943932364414e-10,
+     "max_rel_complexo": 1.8818735392630065e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0019271155105601843
+    },
+    "10.0": {
+     "max_rel_ratio": 1.6919691196933949e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 3.955047462391955e-10,
+     "max_rel_complexo": 1.881862530479327e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0019271102719546213
+    }
+   }
+  },
+  {
+   "versao": "m4-v3",
+   "bloco": "d10",
+   "L": 2010.1703648389957,
+   "E_c": 73915.7423165745,
+   "J": 423,
+   "dim_M": [
+    846,
+    94
+   ],
+   "sigma_max": 1220.9359707773128,
+   "sigma_min": 1190.8151091534924,
+   "cond": 1.0252943226805649,
+   "tol_posto": 2.2935249949842677e-10,
+   "posto": 94,
+   "posto_completo": true,
+   "exatidao_Mp_M_theta": 1.5886295456378311e-15,
+   "norma_linha_ratio_l1": {
+    "min": 0.0024886263724428143,
+    "max": 0.0034354234179422806
+   },
+   "norma_linha_ratio_l2": {
+    "min": 0.0008294618073068898,
+    "max": 0.0008315331195953334
+   },
+   "norma_linha_complexa_l1": {
+    "min": 0.004857960951032787,
+    "max": 0.005110246871494627
+   },
+   "escala_suficiente_linf_ratio": {
+    "min_sobre_k_de_tau|c_k|/||row||_1": 5.978047161082284e-06,
+    "max": 8.552631573788654e-05
+   },
+   "contaminacao": {
+    "5.5": {
+     "max_rel_ratio": 2.7985007184136717e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.993113280772575e-10,
+     "max_rel_complexo": 2.989729057807635e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0029294908105312488
+    },
+    "6.0": {
+     "max_rel_ratio": 2.7749625362036366e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 6.389934277771914e-10,
+     "max_rel_complexo": 2.9600554242519333e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0029238986103850475
+    },
+    "7.0": {
+     "max_rel_ratio": 2.767350761316592e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.178572616674594e-10,
+     "max_rel_complexo": 2.954949979550969e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.00292342679105584
+    },
+    "8.0": {
+     "max_rel_ratio": 2.7692936080183086e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.2076476362375363e-10,
+     "max_rel_complexo": 2.9568274781463564e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.002923586371049952
+    },
+    "10.0": {
+     "max_rel_ratio": 2.7695129761802727e-06,
+     "linha_max_ratio": [
+      2,
+      7
+     ],
+     "mediana_rel_ratio": 4.165743102336144e-10,
+     "max_rel_complexo": 2.9570973978089946e-06,
+     "n_linhas_rel_ratio_acima_tau": 1,
+     "sup_rho_lin": 0.0029236289297309885
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+[2026-09-12 23:39:18] [INFO] [riemann_spectra.cli] === run_20260913_023918_m3_pilot-dev-val: blocos ['pilot', 'dev', 'val'], workers=4 ===
+[2026-09-12 23:39:18] [INFO] [riemann_spectra.inverse_spectroscopy] [pilot] n=1000 L=1405.3 FWHM=8.942e-03 n_t=4026; NUFFT-direto=1.75e-10
+[2026-09-12 23:39:21] [INFO] [riemann_spectra.inverse_spectroscopy] [pilot] nulo shuffle: B_sigma=200 B_max=999 limiar z=3.259 (2.8 s)
+[2026-09-12 23:39:31] [INFO] [riemann_spectra.inverse_spectroscopy] [pilot] nulo gue: B_sigma=100 B_max=199 limiar z=3.293 (9.7 s)
+[2026-09-12 23:39:33] [INFO] [riemann_spectra.inverse_spectroscopy] [pilot] sintético: tolerância=1.419e-03 (0.159 FWHM), separação resolvida=2.00 FWHM
+[2026-09-12 23:39:33] [INFO] [riemann_spectra.inverse_spectroscopy] [pilot] congelado: 18 detecções (shuffle), SHA-256 c138ed7d573be039…
+[2026-09-12 23:40:18] [INFO] [riemann_spectra.inverse_spectroscopy] [dev] n=3000 L=3085.9 FWHM=4.072e-03 n_t=8841; NUFFT-direto=1.06e-10
+[2026-09-12 23:40:34] [INFO] [riemann_spectra.inverse_spectroscopy] [dev] nulo shuffle: B_sigma=200 B_max=999 limiar z=3.311 (15.5 s)
+[2026-09-12 23:41:52] [INFO] [riemann_spectra.inverse_spectroscopy] [dev] nulo gue: B_sigma=100 B_max=199 limiar z=3.351 (78.1 s)
+[2026-09-12 23:42:18] [INFO] [riemann_spectra.inverse_spectroscopy] [dev] sintético: tolerância=4.539e-04 (0.111 FWHM), separação resolvida=1.00 FWHM
+[2026-09-12 23:42:19] [INFO] [riemann_spectra.inverse_spectroscopy] [dev] congelado: 38 detecções (shuffle), SHA-256 e7337234209ed31d…
+[2026-09-12 23:43:29] [INFO] [riemann_spectra.inverse_spectroscopy] [val] n=3000 L=2757.0 FWHM=4.558e-03 n_t=7899; NUFFT-direto=1.04e-10
+[2026-09-12 23:43:42] [INFO] [riemann_spectra.inverse_spectroscopy] [val] nulo shuffle: B_sigma=200 B_max=999 limiar z=3.342 (13.0 s)
+[2026-09-12 23:44:42] [INFO] [riemann_spectra.inverse_spectroscopy] [val] nulo gue: B_sigma=100 B_max=199 limiar z=3.351 (59.5 s)
+[2026-09-12 23:45:07] [INFO] [riemann_spectra.inverse_spectroscopy] [val] sintético: tolerância=6.076e-04 (0.133 FWHM), separação resolvida=1.25 FWHM
+[2026-09-12 23:45:07] [INFO] [riemann_spectra.inverse_spectroscopy] [val] congelado: 36 detecções (shuffle), SHA-256 7fe9f48c266a66b0…
+[2026-09-12 23:46:03] [INFO] [riemann_spectra.m3_report] Relatório M3 salvo em results/run_20260913_023918_m3_pilot-dev-val/report.md
+[2026-09-12 23:46:03] [INFO] [riemann_spectra.cli] Execução run_20260913_023918_m3_pilot-dev-val concluída em 397.5 s.

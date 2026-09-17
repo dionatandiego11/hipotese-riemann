@@ -1,0 +1,9 @@
+{
+  "blind_peaks_csv": "results/run_20260913_024706_m3_holdout-full/tables/full/blind_peaks.csv",
+  "blind_peaks_sha256": "876996181f4af3cb4c503b657e535256f384e94512e9fa589c6e6ce90b198932",
+  "nulls_npz_sha256": "786b010717c7adfaef354eb93b7683246e0690341767cf4491f0bcc570c6ef77",
+  "frozen_before_arithmetic": true,
+  "n_candidates": 42,
+  "n_detected_primary": 41,
+  "n_detected_secondary": 40
+}

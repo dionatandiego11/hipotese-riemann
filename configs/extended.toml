@@ -1,0 +1,31 @@
+# Configuração do perfil Estendido (M4: até 100.000 zeros)
+profile = "extended"
+seed = 20260912
+max_zeros = 100000
+
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+zeros_source_url = "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1"
+raw_filename = "zeros1"
+processed_csv = "zeros_100k.csv"
+dataset_id = "odlyzko_zeros1_first100000"
+
+validation_sample_size = 50
+validation_dps = 40
+
+s_min = 0.0
+s_max = 5.0
+s_bins = 200
+
+window_type = "hann"
+t_min = 0.5
+t_max = 5.0
+dt_oversampling = 10.0
+alpha = 0.05
+
+null_realizations = 999
+gue_matrix_dim = 5000
+gue_bulk_fraction = 0.5
+
+max_block_mb = 128
+max_process_gb = 2.0

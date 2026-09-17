@@ -1,0 +1,4 @@
+# Preservação estrita de bytes: nenhuma conversão de fim de linha.
+# O certificado depende de SHA-256 exatos (results/etapa11_r5/MANIFESTO_CERT.csv) e muitos CSVs
+# gravados pelo módulo csv do Python usam CRLF. Qualquer normalização quebraria os hashes.
+* -text

@@ -1,0 +1,20 @@
+# Ambiente e caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Temporários de execução
+*.bak
+.*.bak
+nohup.out
+/cert_*_log.txt
+
+# Arquivos internos de trabalho (decisão do autor, 17/09/2026)
+/prompt.txt
+/AGENTS.md
+
+# Cópias de terceiros: só para verificação local, não redistribuíveis
+# (ver archive/fontes_etapa11/README.md; URLs, versões e SHA-256 ficam em MANIFESTO.csv)
+archive/fontes_etapa11/*.pdf
+archive/fontes_etapa11/*.html

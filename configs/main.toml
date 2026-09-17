@@ -1,0 +1,77 @@
+# Configuração do perfil Principal (M1-M3: 10.000 zeros)
+profile = "main"
+seed = 20260912
+max_zeros = 10000
+
+# Caminhos de dados
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+zeros_source_url = "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1"
+raw_filename = "zeros1"
+processed_filename = "zeros_10k.parquet"
+processed_csv = "zeros_10k.csv"
+dataset_id = "odlyzko_zeros1_first10000"
+
+# Verificação independente
+validation_sample_size = 20
+validation_dps = 40
+
+# Blocos contíguos definidos no protocolo
+# pilot: 1..1000
+# dev: 1001..4000
+# val: 4001..7000
+# holdout: 7001..10000
+
+# Parâmetros espectrais e de unfolding
+s_min = 0.0
+s_max = 5.0
+s_bins = 100
+
+# Parâmetros de transformada de Fourier e detecção de períodos
+window_type = "hann"
+t_min = 0.5
+t_max = 5.0
+dt_oversampling = 5.0
+alpha = 0.05
+
+# Controles e Monte Carlo
+null_realizations = 29
+gue_matrix_dim = 2000
+gue_bulk_fraction = 0.5
+
+# Limites operacionais de memória e blocos
+max_block_mb = 128
+max_process_gb = 2.0
+
+# M2 com envelopes (adicionado na revisão de 13/09/2026)
+m2_gue_realizations = 199
+m2_poisson_realizations = 199
+gue_retained_fraction = 0.6
+sff_blocks = 10
+sff_tau_points = 100
+
+# Blocos do M2 (declarados explicitamente; revisão de 13/09/2026)
+[[m2_blocks]]
+name = "pilot"
+first_index = 1
+last_index = 1000
+
+[[m2_blocks]]
+name = "dev"
+first_index = 1001
+last_index = 4000
+
+[[m2_blocks]]
+name = "val"
+first_index = 4001
+last_index = 7000
+
+[[m2_blocks]]
+name = "holdout"
+first_index = 7001
+last_index = 10000
+
+[[m2_blocks]]
+name = "full"
+first_index = 1
+last_index = 10000

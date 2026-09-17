@@ -1,0 +1,56 @@
+{
+ "T1": {
+  "casos": 6114,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T2": {
+  "falhas": []
+ },
+ "T3": {
+  "casos": 6052,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T4": {
+  "falhas": []
+ },
+ "T5": {
+  "acima_decide_nao": true,
+  "abaixo_decide_sim": true
+ },
+ "T6": {
+  "linhas_suspeitas": []
+ },
+ "T7": {
+  "casos": 22311,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T8": {
+  "casos": 10000,
+  "n_falhas": 0
+ },
+ "T9": {
+  "a_cobertura": {
+   "lacunas": 0,
+   "primeiro_inf_le_1/100": true,
+   "ultimo_sup_ge_99/100": true,
+   "malha_c1_sup": "5073087604928147986514589564823/2535301200456458802993406410752",
+   "malha_c2_sup": "6246106425398266510255250913437/633825300114114700748351602688",
+   "ponta_c1_sup": "4839825495008457544380783519869/1725436586697640946858688965569256363112777243042596638790631055949824",
+   "ponta_c2_sup": "5908986255287830129194592198305/210624583337114373395836055367340864637790190801098222508621955072"
+  },
+  "b_pontos": 9998,
+  "b_falhas": [],
+  "b_n_falhas": 0,
+  "b_max_amostral_c1": 2.0,
+  "b_max_amostral_c2": 9.841040904424704,
+  "b_c1_sup": 2.000980240144557,
+  "b_c2_sup": 9.85461833769291,
+  "c_so_intervalar": true,
+  "d_sem_heranca": true
+ },
+ "todos_passaram": true,
+ "script_sha256": "95bec52820df9a8fa9830a6283576e6a3afacb6962f2cf38b546a93d4222aeb2"
+}

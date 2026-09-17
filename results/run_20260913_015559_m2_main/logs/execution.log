@@ -1,0 +1,9 @@
+[2026-09-12 22:55:59] [INFO] [riemann_spectra.cli] === Iniciando execução: run_20260913_015559_m2_main (Marco: M2, Perfil: main) ===
+[2026-09-12 22:55:59] [INFO] [riemann_spectra.cli] Utilizando 10000 zeros para a análise (14.1347 até 9877.7827).
+[2026-09-12 22:55:59] [INFO] [riemann_spectra.cli] Executando verificações do Marco M1 (Fundação e Controles)...
+[2026-09-12 22:55:59] [INFO] [riemann_spectra.cli] Executando análises do Marco M2 (Estatística Espectral)...
+[2026-09-12 22:56:00] [INFO] [riemann_spectra.reporting] Gráfico de espaçamentos salvo em results/run_20260913_015559_m2_main/figures/spacing_distribution.png.
+[2026-09-12 22:56:02] [INFO] [riemann_spectra.reporting] Gráfico de correlação de pares salvo em results/run_20260913_015559_m2_main/figures/pair_correlation.png.
+[2026-09-12 22:56:03] [INFO] [riemann_spectra.reporting] Gráfico do spectral form factor salvo em results/run_20260913_015559_m2_main/figures/spectral_form_factor.png.
+[2026-09-12 22:56:03] [INFO] [riemann_spectra.reporting] Relatório e métricas salvos em results/run_20260913_015559_m2_main.
+[2026-09-12 22:56:03] [INFO] [riemann_spectra.cli] Execução run_20260913_015559_m2_main finalizada com sucesso. Relatório disponível em results/run_20260913_015559_m2_main/report.md.

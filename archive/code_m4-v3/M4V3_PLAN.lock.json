@@ -1,0 +1,19 @@
+{
+  "frozen_at_utc": "2026-09-13T22:08:47.047552+00:00",
+  "files": {
+    "independent/M4V3_PLAN.md": "72c9bb9478a4b015adb39374c6d2b266c8127e7b3b1ed2c079787155a0542aa3",
+    "independent/SPEC_REVIEW.md": "2bd395cee0c9a5190c6cf3b42d43e27b4fb6c910f29c1e61fc3789119cec331a",
+    "independent/COMPARISON_PLAN.md": "5b186c67062d265328e3a095e389d6c1b6e2168be8195def974d55ce307a5e2d",
+    "results/m4_v3_joint/run_independent_m4v3.py": "549cd0f3e27898884b1f5a79ad16e89c0560f29a0eddfec442ec7b5cbaf241ec",
+    "results/m4_v3_joint/compare_m4v3.py": "15cd8cca10aa284e1ccd4377a5756760cc57a0c759e786412cb5032ad653a764",
+    "configs/m4_v3.toml": "6bd825dcfb4a6c0f01b493a0e967fa4a96ddceeacb3c8ae519d9cd840fac5451",
+    "configs/m4_v3_bh.toml": "11da83a019a45e6cee333b9a817a228bc5ff38fbff8c15f0830074603365193c",
+    "configs/m4_v3_m2.toml": "6fedb2fa96bc9218bac0276d2383a171020f3ad4cbc374caee91947908c2c9ca",
+    "independent/riemann_indep/core.py": "64bfb6b8f0e7b6945a5d232cdec0488c7e8150c71f94e50e9665d66556696809",
+    "independent/riemann_indep/pipeline.py": "c0daebe655de6dc41668dd466cc10c2be5d768e2814155c1073a9a3df0606e7e",
+    "independent/riemann_indep/spectral.py": "8127d3d706ae0ac1a67b7a114c51b01b0454e73edfa9d59432ddd95951b1009d",
+    "independent/riemann_indep/stats.py": "163a3d25e88054f38b9759f7ee40021460e15c787ffd9036ebc9977bbc4a0e75"
+  },
+  "primary_package_combined_sha256": "69b5744ce8f7beba8aa4150fe968ba69299ee899d642aa9d365e8c99b3bf821a",
+  "note": "Congelado antes de qualquer an\u00e1lise dos zeros 70.001\u2013100.000; acessos anteriores s\u00f3 de aquisi\u00e7\u00e3o/auditoria."
+}

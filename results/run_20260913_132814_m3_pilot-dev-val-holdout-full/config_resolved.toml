@@ -1,0 +1,93 @@
+# Protocolo M3 v3, variante de robustez com janela Blackman-Harris de 4 termos (exploratória). Substitui m3-v2 (preservado em configs/m3_protocol.toml + lock e archive/code_m3-v2).
+# Correções: estatística de decisão idêntica para zeros/nulos/sintéticos (z na malha); conjuntos nulos
+# independentes para sigma, limiar e escore global; janela e densidade propagadas ao instrumento;
+# estimador direcionado primário com lóbulo conjugado e variantes de sensibilidade declaradas.
+# Os 10.000 primeiros zeros já foram consultados: TODOS os blocos abaixo são exploratórios/validação.
+protocol_version = "m3-v3-blackman-harris"
+seed = 20260913
+dataset_id = "odlyzko_zeros1_first10000"
+processed_csv = "zeros_10k.csv"
+
+# Instrumento (Etapa 7)
+t_min = 0.5
+t_max = 5.0
+window = "blackman_harris"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+# Detector e nulos (Etapa 8)
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 999
+shuffle_score_realizations = 999
+gue_sigma_realizations = 100
+gue_threshold_realizations = 199
+gue_score_realizations = 0
+gue_retained_fraction = 0.6
+
+# Calibração sintética
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+# Comparação aritmética (Etapa 9)
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 3e-9
+precision_perturbations = 20
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true
+
+[[blocks]]
+name = "pilot"
+first_index = 1
+last_index = 1000
+role = "diagnóstico de baixa altura (já consultado)"
+requires_lock = false
+
+[[blocks]]
+name = "dev"
+first_index = 1001
+last_index = 4000
+role = "desenvolvimento (já consultado)"
+requires_lock = false
+
+[[blocks]]
+name = "val"
+first_index = 4001
+last_index = 7000
+role = "validação (já consultado)"
+requires_lock = false
+
+[[blocks]]
+name = "holdout"
+first_index = 7001
+last_index = 10000
+role = "reservado histórico (já consultado por v1 e v2): validação com protocolo congelado"
+requires_lock = true
+
+[[blocks]]
+name = "full"
+first_index = 1
+last_index = 10000
+role = "descritivo aninhado"
+requires_lock = true

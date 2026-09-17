@@ -1,0 +1,13 @@
+[2026-09-12 23:47:06] [INFO] [riemann_spectra.cli] === run_20260913_024706_m3_holdout-full: blocos ['holdout', 'full'], workers=4 ===
+[2026-09-12 23:47:07] [INFO] [riemann_spectra.inverse_spectroscopy] [holdout] n=3000 L=2611.8 FWHM=4.811e-03 n_t=7483; NUFFT-direto=1.54e-10
+[2026-09-12 23:47:19] [INFO] [riemann_spectra.inverse_spectroscopy] [holdout] nulo shuffle: B_sigma=200 B_max=999 limiar z=3.291 (11.9 s)
+[2026-09-12 23:48:17] [INFO] [riemann_spectra.inverse_spectroscopy] [holdout] nulo gue: B_sigma=100 B_max=199 limiar z=3.368 (57.7 s)
+[2026-09-12 23:48:40] [INFO] [riemann_spectra.inverse_spectroscopy] [holdout] sintético: tolerância=6.211e-04 (0.129 FWHM), separação resolvida=1.25 FWHM
+[2026-09-12 23:48:40] [INFO] [riemann_spectra.inverse_spectroscopy] [holdout] congelado: 36 detecções (shuffle), SHA-256 4c7317f1f19d51eb…
+[2026-09-12 23:49:30] [INFO] [riemann_spectra.inverse_spectroscopy] [full] n=10000 L=9863.6 FWHM=1.274e-03 n_t=28258; NUFFT-direto=6.75e-10
+[2026-09-12 23:50:03] [INFO] [riemann_spectra.inverse_spectroscopy] [full] nulo shuffle: B_sigma=200 B_max=999 limiar z=3.505 (32.7 s)
+[2026-09-13 00:00:16] [INFO] [riemann_spectra.inverse_spectroscopy] [full] nulo gue: B_sigma=100 B_max=199 limiar z=3.515 (613.3 s)
+[2026-09-13 00:03:10] [INFO] [riemann_spectra.inverse_spectroscopy] [full] sintético: tolerância=1.758e-04 (0.138 FWHM), separação resolvida=2.00 FWHM
+[2026-09-13 00:03:10] [INFO] [riemann_spectra.inverse_spectroscopy] [full] congelado: 41 detecções (shuffle), SHA-256 876996181f4af3cb…
+[2026-09-13 00:05:22] [INFO] [riemann_spectra.m3_report] Relatório M3 salvo em results/run_20260913_024706_m3_holdout-full/report.md
+[2026-09-13 00:05:22] [INFO] [riemann_spectra.cli] Execução run_20260913_024706_m3_holdout-full concluída em 1090.6 s.

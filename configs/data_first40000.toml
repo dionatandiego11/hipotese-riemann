@@ -1,0 +1,11 @@
+# Conjunto de dados para o M4 (primeira faixa). Os zeros 40.001–100.000 NÃO são processados.
+profile = "data_first40000"
+dataset_id = "odlyzko_zeros1_first40000"
+max_zeros = 40000
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+zeros_source_url = "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1"
+raw_filename = "zeros1"
+processed_csv = "zeros_40k.csv"
+validation_sample_size = 20
+validation_dps = 40

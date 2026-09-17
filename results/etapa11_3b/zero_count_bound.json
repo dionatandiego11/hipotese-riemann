@@ -1,0 +1,26 @@
+{
+ "A": {
+  "afirmacao": "para T>=5: N(T+1)-N(T-1) <= log(4 M_R)/log(4/3) <= 3 log(T+8)/log(4/3) <= 10.5 log(T+8)",
+  "4M_R <= (T+8)^3 conferido nos T amostrados": true,
+  "nota": "4M_R \u2264 (T+8)^3 para todo T\u22655 segue de os termos serem \u2264 polin\u00f4mio de grau 3 com coeficiente l\u00edder 4\u221a3/216 < 1 (ver doc); amostras s\u00f3 ilustram",
+  "3/log(4/3): sup arredondado para cima": "10.428178490348"
+ },
+ "B": {
+  "M_R: sup arredondado para cima": "21009.747187497103",
+  "|f(s0)|: inf arredondado para baixo": "0.673145600890",
+  "N(5): sup arredondado para cima": "31.800316676639",
+  "N(5) <= 31": true
+ },
+ "C": {
+  "afirmacao": "para T>=5: N(T) <= 31 + 5.25 T log(T+9)",
+  "T>=7e4 => N(T) <= T^2": true
+ },
+ "D": {
+  "Sigma_{t>0} 1/(1+t^2): intervalo": "[50.289090790523821033424082311069436, 50.289090790523821033424082312710267]",
+  "Sigma_{t>0}: sup arredondado para cima": "50.289090790525",
+  "cauda_analitica_k>=260: sup arredondado para cima": "0.000000000000000000000000000000000000000000000000000000000000000000000000002066339280735841",
+  "Z1_total: intervalo": "[100.57818158104764206684816462213887, 100.57818158104764206684816462542053]",
+  "Z1_total: sup arredondado para cima": "100.578181581049",
+  "Z1_total <= 101": true
+ }
+}

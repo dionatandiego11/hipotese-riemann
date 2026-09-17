@@ -1,0 +1,75 @@
+# Protocolo M4 v2 — conclusão C3 (compatibilidade estatística local) e análise SECUNDÁRIA CUE.
+# Pré-registro: docs/PROTOCOLO.md §10 (replicação de m4-v1; alterados só blocos, sementes e dados).
+profile = "m4_v2_m2"
+seed = 20260917
+dataset_id = "odlyzko_zeros1_first70000"
+processed_csv = "zeros_70k.csv"
+max_zeros = 70000
+lock_scope = "package"
+requires_lock = true
+raw_data_dir = "data/raw"
+processed_data_dir = "data/processed"
+raw_filename = "zeros1"
+m1_check_max_index = 10000
+
+s_max = 5.0
+s_bins = 50
+m2_gue_realizations = 999
+m2_poisson_realizations = 999
+gue_retained_fraction = 0.6
+sff_blocks = 10
+sff_tau_points = 100
+cue_secondary = true
+
+[criteria]
+alpha_family = 0.05
+
+[[m2_blocks]]
+name = "c01"
+first_index = 40001
+last_index = 43000
+
+[[m2_blocks]]
+name = "c02"
+first_index = 43001
+last_index = 46000
+
+[[m2_blocks]]
+name = "c03"
+first_index = 46001
+last_index = 49000
+
+[[m2_blocks]]
+name = "c04"
+first_index = 49001
+last_index = 52000
+
+[[m2_blocks]]
+name = "c05"
+first_index = 52001
+last_index = 55000
+
+[[m2_blocks]]
+name = "c06"
+first_index = 55001
+last_index = 58000
+
+[[m2_blocks]]
+name = "c07"
+first_index = 58001
+last_index = 61000
+
+[[m2_blocks]]
+name = "c08"
+first_index = 61001
+last_index = 64000
+
+[[m2_blocks]]
+name = "c09"
+first_index = 64001
+last_index = 67000
+
+[[m2_blocks]]
+name = "c10"
+first_index = 67001
+last_index = 70000

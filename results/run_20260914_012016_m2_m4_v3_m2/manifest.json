@@ -1,0 +1,180 @@
+{
+  "run_id": "run_20260914_012016_m2_m4_v3_m2",
+  "command": "/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/__main__.py run --config configs/m4_v3_m2.toml --milestone M2 --workers 4",
+  "config_path": "configs/m4_v3_m2.toml",
+  "config_sha256": "6fedb2fa96bc9218bac0276d2383a171020f3ad4cbc374caee91947908c2c9ca",
+  "config": {
+    "profile": "m4_v3_m2",
+    "seed": 20260919,
+    "dataset_id": "odlyzko_zeros1_first100000",
+    "processed_csv": "zeros_100k.csv",
+    "max_zeros": 100000,
+    "lock_scope": "package",
+    "requires_lock": true,
+    "raw_data_dir": "data/raw",
+    "processed_data_dir": "data/processed",
+    "raw_filename": "zeros1",
+    "m1_check_max_index": 10000,
+    "s_max": 5.0,
+    "s_bins": 50,
+    "m2_gue_realizations": 999,
+    "m2_poisson_realizations": 999,
+    "gue_retained_fraction": 0.6,
+    "sff_blocks": 10,
+    "sff_tau_points": 100,
+    "cue_secondary": true,
+    "criteria": {
+      "alpha_family": 0.05
+    },
+    "m2_blocks": [
+      {
+        "name": "d01",
+        "first_index": 70001,
+        "last_index": 73000
+      },
+      {
+        "name": "d02",
+        "first_index": 73001,
+        "last_index": 76000
+      },
+      {
+        "name": "d03",
+        "first_index": 76001,
+        "last_index": 79000
+      },
+      {
+        "name": "d04",
+        "first_index": 79001,
+        "last_index": 82000
+      },
+      {
+        "name": "d05",
+        "first_index": 82001,
+        "last_index": 85000
+      },
+      {
+        "name": "d06",
+        "first_index": 85001,
+        "last_index": 88000
+      },
+      {
+        "name": "d07",
+        "first_index": 88001,
+        "last_index": 91000
+      },
+      {
+        "name": "d08",
+        "first_index": 91001,
+        "last_index": 94000
+      },
+      {
+        "name": "d09",
+        "first_index": 94001,
+        "last_index": 97000
+      },
+      {
+        "name": "d10",
+        "first_index": 97001,
+        "last_index": 100000
+      }
+    ]
+  },
+  "data_file": "data/processed/zeros_100k.csv",
+  "data_sha256": "1af728cf4a1e23c5faacd8f6f0a7547715c8e1103cd4456c28ccc4297d192100",
+  "zeros_count": 100000,
+  "code": {
+    "modules": {
+      "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+      "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+      "arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+      "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+      "cli.py": "c4111b905161f92a80d34e08fd31eb21376aaa8588451aa4e0e169180d8a52fd",
+      "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+      "cue.py": "b4750ca2787c4daa09f5fdfb5e7441c061f554d8ae626f83e070ca9e471c5f28",
+      "data.py": "66ad625b51e4eef00791f10293d4c93adbe36dbb7678f0b8c2e0c553c6524c06",
+      "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+      "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+      "inverse_spectroscopy.py": "0edceddeecf8c6472fdd89e4a18edd16bf6e07ab3127cbd8292039a5aab9ffd2",
+      "m3_report.py": "ead812ee9d95ceece66b45babb5cab6ad949d784d6630d0b4d05fd11c749af59",
+      "periods.py": "8968b51fa1ab4f6067a07f882e6474f36c23e88e9c14c39c4bb08540485994e3",
+      "replication.py": "14aa290965c7a196a0853b213b94772ee7b7fd28a3dfbe98809af350b2563c58",
+      "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+      "spectral_pipeline.py": "e6304c058811f0ddbcea7a2fab236dcb22809cf72d013bfad0de00a31aa27f59",
+      "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+      "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+      "utils.py": "d145c6cc1c17eae7f5e4a27b9e9ca309497c782a7b2008c6a158e4e32c559138"
+    },
+    "combined_sha256": "69b5744ce8f7beba8aa4150fe968ba69299ee899d642aa9d365e8c99b3bf821a"
+  },
+  "metadata": {
+    "timestamp_utc": "2026-09-14T02:16:25.064689+00:00",
+    "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 4,
+    "libraries": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "mpmath": "1.4.1",
+      "matplotlib": "3.11.2"
+    },
+    "numpy_build_dependencies": {
+      "blas": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.34.106.0",
+        "detection method": "pkgconfig",
+        "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas"
+      },
+      "lapack": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.34.106.0",
+        "detection method": "pkgconfig",
+        "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas"
+      }
+    }
+  },
+  "profile": "m4_v3_m2",
+  "performance": {
+    "duration_seconds": 3368.4738267779976,
+    "peak_memory_mb": 219.92578125,
+    "peak_memory_largest_child_mb": 100.05859375,
+    "memory_note": "RSS máximo do processo principal e do maior processo filho; o pico agregado dos processos simultâneos não é medido."
+  },
+  "protocol_lock": {
+    "frozen_at_utc": "2026-09-13T22:08:46.960829+00:00",
+    "config_path": "configs/m4_v3_m2.toml",
+    "config_sha256": "6fedb2fa96bc9218bac0276d2383a171020f3ad4cbc374caee91947908c2c9ca",
+    "lock_scope": "package",
+    "modules_sha256": {
+      "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+      "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+      "arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+      "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+      "cli.py": "c4111b905161f92a80d34e08fd31eb21376aaa8588451aa4e0e169180d8a52fd",
+      "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+      "cue.py": "b4750ca2787c4daa09f5fdfb5e7441c061f554d8ae626f83e070ca9e471c5f28",
+      "data.py": "66ad625b51e4eef00791f10293d4c93adbe36dbb7678f0b8c2e0c553c6524c06",
+      "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+      "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+      "inverse_spectroscopy.py": "0edceddeecf8c6472fdd89e4a18edd16bf6e07ab3127cbd8292039a5aab9ffd2",
+      "m3_report.py": "ead812ee9d95ceece66b45babb5cab6ad949d784d6630d0b4d05fd11c749af59",
+      "periods.py": "8968b51fa1ab4f6067a07f882e6474f36c23e88e9c14c39c4bb08540485994e3",
+      "replication.py": "14aa290965c7a196a0853b213b94772ee7b7fd28a3dfbe98809af350b2563c58",
+      "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+      "spectral_pipeline.py": "e6304c058811f0ddbcea7a2fab236dcb22809cf72d013bfad0de00a31aa27f59",
+      "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+      "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+      "utils.py": "d145c6cc1c17eae7f5e4a27b9e9ca309497c782a7b2008c6a158e4e32c559138"
+    },
+    "combined_sha256": "69b5744ce8f7beba8aa4150fe968ba69299ee899d642aa9d365e8c99b3bf821a",
+    "note": "m4-v3 congelado conforme PROTOCOLO §11 e independent/M4V3_PLAN.md antes de qualquer análise dos zeros 70.001–100.000"
+  }
+}

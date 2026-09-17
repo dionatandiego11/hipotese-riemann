@@ -1,0 +1,2 @@
+nohup: ignorando entrada
+python3: can't open file '/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_r5/results/etapa11_r5/cert_ordenadas.py': [Errno 2] No such file or directory

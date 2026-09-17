@@ -1,0 +1,18 @@
+{
+ "declaracao_sha256": "a3382442d9d8105e83a1e659c16f557b1f2c6f89a4ba297f89b2919f2ef91250",
+ "bases": {
+  "cert_calculo.py": "95bec52820df9a8fa9830a6283576e6a3afacb6962f2cf38b546a93d4222aeb2",
+  "cert_contaminacao.py": "4baff93389cea085c690567fadc8c20c87ab951d4e88a214988457e953885945",
+  "cert_densidade.py": "598871cf3efbf2bd6641b18ac5a8a4590b9cba119427bee13f349aff3fa9afe7"
+ },
+ "tabela_bruta_sha256": "3436c916a7878261ac183fd7b9448c9a4736b8bbccf1356874a6ce1788541632",
+ "parada_bit_a_bit": [],
+ "tempo_s": 7117.892665863037,
+ "pares": 1410,
+ "certificados": 1024,
+ "elegiveis": 461,
+ "elegiveis_certificados": 461,
+ "max_total_elegiveis_sup": 7.31323657e-07,
+ "max_lin_elegiveis_sup": 1.25143652e-07,
+ "perdidos_elegiveis_frente_densidade": 0
+}

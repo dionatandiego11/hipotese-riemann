@@ -1,0 +1,202 @@
+{
+  "block": {
+    "name": "full",
+    "first_index": 1,
+    "last_index": 10000,
+    "role": "descritivo; cont\u00e9m o teste reservado (an\u00e1lise aninhada)"
+  },
+  "instrument": {
+    "A": 14.134725142,
+    "B": 9877.782654004,
+    "E_c": 4945.958689573,
+    "L": 9863.647928862001,
+    "t_min": 0.5,
+    "t_max": 4.999957028936386,
+    "dt": 0.0001592510538605084,
+    "n_t": 28258,
+    "density": "rvm",
+    "quadrature": {
+      "panel_length": 0.5,
+      "order": 8
+    },
+    "window": "hann",
+    "response": {
+      "gain_W0": 4931.823964431001,
+      "fwhm": 0.0012740084308840672,
+      "fwhm_in_units_2pi_over_L": 2.0000000009999996,
+      "first_null_offset": 0.001274008430247063,
+      "sidelobe_level_db": -31.46730805642538,
+      "reference_resolution_2pi_over_L": 0.0006370042151235316
+    }
+  },
+  "instrument_diagnostics": {
+    "n_t": 28258,
+    "dt": 0.0001592510538605084,
+    "points_per_fwhm": 8.0,
+    "max_abs_F": 572.8394145997374,
+    "nufft_vs_direct_max_abs_error": 6.745947859321422e-10,
+    "quadrature_halving_max_abs_change": 9.928598465651046e-10,
+    "density_rvm_vs_theta_max_abs_change": 4.240525366187377e-11,
+    "quadrature_nodes": 157824
+  },
+  "synthetic_calibration": {
+    "n_isolated_lines": 63,
+    "matching_tolerance": 0.0001758334496641467,
+    "matching_tolerance_fwhm": 0.1380159231302193,
+    "matching_tolerance_quantile": 0.99,
+    "recovery_curve": [
+      {
+        "z_true_low": 1.752372303570546,
+        "z_true_high": 2.6285584553558192,
+        "n": 12,
+        "recovery_rate": 0.0,
+        "median_abs_error_detected": null
+      },
+      {
+        "z_true_low": 2.6285584553558192,
+        "z_true_high": 3.504744607141092,
+        "n": 16,
+        "recovery_rate": 0.25,
+        "median_abs_error_detected": 8.592674898100228e-05
+      },
+      {
+        "z_true_low": 3.504744607141092,
+        "z_true_high": 4.3809307589263655,
+        "n": 12,
+        "recovery_rate": 0.75,
+        "median_abs_error_detected": 7.5224119490791e-05
+      },
+      {
+        "z_true_low": 4.3809307589263655,
+        "z_true_high": 5.2571169107116384,
+        "n": 8,
+        "recovery_rate": 1.0,
+        "median_abs_error_detected": 6.600848340965193e-05
+      },
+      {
+        "z_true_low": 5.2571169107116384,
+        "z_true_high": 7.009489214282184,
+        "n": 8,
+        "recovery_rate": 1.0,
+        "median_abs_error_detected": 2.2672563230408116e-05
+      },
+      {
+        "z_true_low": 7.009489214282184,
+        "z_true_high": 10.514233821423277,
+        "n": 7,
+        "recovery_rate": 1.0,
+        "median_abs_error_detected": 2.5890623637447874e-05
+      }
+    ],
+    "pair_resolution_curve": [],
+    "resolution_separation_fwhm": 2.0,
+    "resolution_separation": 0.0025480168617681345
+  },
+  "freeze": {
+    "blind_peaks_csv": "results/run_20260913_024706_m3_holdout-full/tables/full/blind_peaks.csv",
+    "blind_peaks_sha256": "876996181f4af3cb4c503b657e535256f384e94512e9fa589c6e6ce90b198932",
+    "nulls_npz_sha256": "786b010717c7adfaef354eb93b7683246e0690341767cf4491f0bcc570c6ef77",
+    "frozen_before_arithmetic": true,
+    "n_candidates": 42,
+    "n_detected_primary": 41,
+    "n_detected_secondary": 40
+  },
+  "null_summary": {
+    "shuffle": {
+      "B_max": 999,
+      "threshold_z": 3.504744607141092,
+      "null_max_quantiles": [
+        2.866942229896258,
+        3.107643829937843,
+        3.5043247598665683
+      ],
+      "sigma_at_t": {
+        "0.7": 24.950236573996744,
+        "1.0": 25.60413022150827,
+        "2.0": 28.63304030766197,
+        "3.0": 34.671424746575376,
+        "4.0": 44.12190110659449,
+        "4.9": 53.255989030234
+      }
+    },
+    "gue": {
+      "B_max": 199,
+      "threshold_z": 3.5148515649357854,
+      "null_max_quantiles": [
+        2.855484309731292,
+        3.118210691873607,
+        3.476783448137997
+      ],
+      "sigma_at_t": {
+        "0.7": 20.466601444708825,
+        "1.0": 24.400785065581285,
+        "2.0": 34.251599293502395,
+        "3.0": 42.11741973451853,
+        "4.0": 48.227793071172336,
+        "4.9": 53.58604508914317
+      }
+    }
+  },
+  "zeros_background": {
+    "median_abs_F_over_sigma_primary": 1.7811993858551307e-05,
+    "median_abs_F_over_sigma_secondary": 1.597744753055963e-05,
+    "note": "Mediana ao longo de toda a malha, incluindo linhas; mede o fundo entre linhas."
+  },
+  "arithmetic": {
+    "catalog_size": 47,
+    "catalog_primitive": 34,
+    "catalog_repetitions": 13,
+    "catalog_resolved": 47,
+    "matching_tolerance": 0.0001758334496641467,
+    "detected_peaks_primary": 41,
+    "matched_S": 41,
+    "unmatched_detections": 0,
+    "null_S_mean": 0.0,
+    "null_S_max": 0,
+    "null_detections_mean": 0.05105105105105105,
+    "p_value_global_mc": 0.001,
+    "p_value_floor": 0.001,
+    "B_null": 999,
+    "predicted_detectable": 41,
+    "recovery_among_predicted_detectable": 1.0,
+    "detected_but_predicted_undetectable": 0,
+    "missed_predicted_detectable": [],
+    "targeted_fit": {
+      "lines_resolved_and_detectable": 41,
+      "ratio_to_theory_median": 1.0000000001316989,
+      "ratio_to_theory_iqr": [
+        0.9999999999373512,
+        1.0000000003111007
+      ],
+      "abs_phase_error_median_rad": 1.0679721738474693e-10,
+      "primitive_ratio_median": 1.0000000001325202,
+      "repetition_ratio_median": 0.9999999999806324,
+      "fit_residual_rms": 1.577566671950426e-05,
+      "design_condition_number": 1.0000041726836322
+    },
+    "phase_coherence": {
+      "n_lines": 41,
+      "R_observed": 0.9999999999933195,
+      "R_null_mean": 0.13829623586773962,
+      "R_null_q95": 0.27543599438741023,
+      "p_value_mc": 0.001,
+      "B": 999,
+      "note": "Controle de fase preserva |F|; n\u00e3o testa exist\u00eancia de picos de pot\u00eancia."
+    },
+    "precision_sensitivity": {
+      "perturbation_half_width": 3e-09,
+      "realizations": 20,
+      "median_abs_ratio_change_selected_lines": 4.778129558680178e-10,
+      "max_abs_ratio_change_selected_lines": 3.937688508592885e-09,
+      "median_abs_ratio_deviation_observed": 1.8970980342203347e-10,
+      "note": "An\u00e1lise de sensibilidade; n\u00e3o \u00e9 um modelo do erro real da tabela."
+    }
+  },
+  "timings_seconds": {
+    "instrument": 1.961302887999409,
+    "null_shuffle": 32.67860414400002,
+    "null_gue": 613.3443710270003,
+    "synthetic": 173.09163331800028,
+    "arithmetic": 126.49568192900006
+  }
+}

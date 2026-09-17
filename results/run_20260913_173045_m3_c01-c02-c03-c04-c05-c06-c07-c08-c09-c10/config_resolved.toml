@@ -1,0 +1,130 @@
+# Protocolo M4 v2 — análise PRIMÁRIA (janela Hann, estimador com lóbulo conjugado).
+# Pré-registro: docs/PROTOCOLO.md §10 (replicação de m4-v1). Faixa: zeros 40.001–70.000 em 10 blocos contíguos de 3.000.
+# Zeros 70.001–100.000 reservados (não processados). Único conteúdo alterado em relação a m4-v1: blocos, sementes, dados.
+protocol_version = "m4-v2"
+seed = 20260916
+dataset_id = "odlyzko_zeros1_first70000"
+processed_csv = "zeros_70k.csv"
+max_zeros = 70000
+lock_scope = "package"
+
+# Instrumento
+t_min = 0.5
+t_max = 5.0
+window = "hann"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+# Detector e nulos
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+threshold_confidence = 0.95
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 9999
+shuffle_score_realizations = 9999
+gue_sigma_realizations = 100
+gue_threshold_realizations = 199
+gue_score_realizations = 0
+gue_retained_fraction = 0.6
+
+# Calibração sintética
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+# Comparação aritmética
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 3e-9
+precision_perturbations = 20
+
+[criteria]
+alpha_family = 0.05
+# C1 — recuperação de frequências (detecção sem catálogo)
+recovery_min = 0.95
+clear_margin = 1.5
+max_blocks_with_unmatched = 2
+# C2 — concordância de coeficientes (medição direcionada, estimador primário)
+ratio_tolerance = 1e-6
+coefficient_fraction_min = 0.95
+q_min = 0.9
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true
+
+[[blocks]]
+name = "c01"
+first_index = 40001
+last_index = 43000
+requires_lock = true
+
+[[blocks]]
+name = "c02"
+first_index = 43001
+last_index = 46000
+requires_lock = true
+
+[[blocks]]
+name = "c03"
+first_index = 46001
+last_index = 49000
+requires_lock = true
+
+[[blocks]]
+name = "c04"
+first_index = 49001
+last_index = 52000
+requires_lock = true
+
+[[blocks]]
+name = "c05"
+first_index = 52001
+last_index = 55000
+requires_lock = true
+
+[[blocks]]
+name = "c06"
+first_index = 55001
+last_index = 58000
+requires_lock = true
+
+[[blocks]]
+name = "c07"
+first_index = 58001
+last_index = 61000
+requires_lock = true
+
+[[blocks]]
+name = "c08"
+first_index = 61001
+last_index = 64000
+requires_lock = true
+
+[[blocks]]
+name = "c09"
+first_index = 64001
+last_index = 67000
+requires_lock = true
+
+[[blocks]]
+name = "c10"
+first_index = 67001
+last_index = 70000
+requires_lock = true

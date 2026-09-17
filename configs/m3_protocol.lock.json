@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-09-13T02:46:54.225011+00:00",
+  "config_path": "configs/m3_protocol.toml",
+  "config_sha256": "c77536530efb7d1a1075d39216700eb4841ae3128e04a1c236ad412e6ab1e95a",
+  "modules_sha256": {
+    "arithmetic.py": "85e3f4a8c6ea593ff0f1bb674da65552f10ac3e0fc1da72b84f8ba8363934ac6",
+    "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+    "inverse_spectroscopy.py": "2a88c21c1635ac13cc09ba5bf915421c18167aaa2f57d3efc7e7137c5b0af09f",
+    "periods.py": "be05a5ec6d0cd9b821570b3e09b8c83d7be09c62770a2f9fc70f2ad5c90ce54d",
+    "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247"
+  },
+  "combined_sha256": "720d907374fb9142c6cc93df6f8f1145fff0b8b46d4b5ebc7378f58dfd9feec1",
+  "note": "m3-v2 congelado após pilot/dev/val (run_20260913_023918_m3_pilot-dev-val); holdout já tocado por execuções v1 defeituosas (ver PROTOCOLO §7.3)"
+}

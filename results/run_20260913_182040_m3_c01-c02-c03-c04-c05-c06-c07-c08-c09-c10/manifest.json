@@ -1,0 +1,256 @@
+{
+  "run_id": "run_20260913_182040_m3_c01-c02-c03-c04-c05-c06-c07-c08-c09-c10",
+  "command": "/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/__main__.py m3 --config configs/m4_v2_bh.toml --blocks c01,c02,c03,c04,c05,c06,c07,c08,c09,c10 --workers 4",
+  "config_path": "configs/m4_v2_bh.toml",
+  "config_sha256": "b2f8dd1077bf89d7e550fe0c2233e0c7169e968585a4a36d3e546ee0dbbde557",
+  "config": {
+    "protocol_version": "m4-v2-robustez-blackman-harris",
+    "seed": 20260916,
+    "dataset_id": "odlyzko_zeros1_first70000",
+    "processed_csv": "zeros_70k.csv",
+    "max_zeros": 70000,
+    "lock_scope": "package",
+    "t_min": 0.5,
+    "t_max": 5.0,
+    "window": "blackman_harris",
+    "density": "rvm",
+    "points_per_fwhm": 8.0,
+    "quadrature_panel_length": 0.5,
+    "quadrature_order": 8,
+    "primary_null": "shuffle",
+    "candidate_z": 3.0,
+    "noise_smooth_window": 0.05,
+    "alpha": 0.05,
+    "threshold_confidence": 0.95,
+    "shuffle_sigma_realizations": 200,
+    "shuffle_threshold_realizations": 999,
+    "shuffle_score_realizations": 999,
+    "gue_sigma_realizations": 100,
+    "gue_threshold_realizations": 199,
+    "gue_score_realizations": 0,
+    "gue_retained_fraction": 0.6,
+    "synthetic_realizations": 40,
+    "synthetic_lines_per_realization": 12,
+    "synthetic_pair_separations_fwhm": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "matching_tolerance_quantile": 0.99,
+    "recovery_curve_z_edges": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "resolution_recovery_target": 0.9,
+    "targeted_fit_half_width_fwhm": 0.5,
+    "targeted_fit_primary": "band_conjugate",
+    "phase_control_realizations": 999,
+    "declared_table_error": 3e-09,
+    "precision_perturbations": 20,
+    "criteria": {
+      "alpha_family": 0.05,
+      "recovery_min": 0.95,
+      "clear_margin": 1.5,
+      "max_blocks_with_unmatched": 2,
+      "ratio_tolerance": 1e-06,
+      "coefficient_fraction_min": 0.95,
+      "q_min": 0.9
+    },
+    "targeted_fit_variants": {
+      "band_conjugate": {
+        "sampling": "band",
+        "include_conjugate": true
+      },
+      "band_no_conjugate": {
+        "sampling": "band",
+        "include_conjugate": false
+      },
+      "centers_conjugate": {
+        "sampling": "centers",
+        "include_conjugate": true
+      }
+    },
+    "blocks": [
+      {
+        "name": "c01",
+        "first_index": 40001,
+        "last_index": 43000,
+        "requires_lock": true
+      },
+      {
+        "name": "c02",
+        "first_index": 43001,
+        "last_index": 46000,
+        "requires_lock": true
+      },
+      {
+        "name": "c03",
+        "first_index": 46001,
+        "last_index": 49000,
+        "requires_lock": true
+      },
+      {
+        "name": "c04",
+        "first_index": 49001,
+        "last_index": 52000,
+        "requires_lock": true
+      },
+      {
+        "name": "c05",
+        "first_index": 52001,
+        "last_index": 55000,
+        "requires_lock": true
+      },
+      {
+        "name": "c06",
+        "first_index": 55001,
+        "last_index": 58000,
+        "requires_lock": true
+      },
+      {
+        "name": "c07",
+        "first_index": 58001,
+        "last_index": 61000,
+        "requires_lock": true
+      },
+      {
+        "name": "c08",
+        "first_index": 61001,
+        "last_index": 64000,
+        "requires_lock": true
+      },
+      {
+        "name": "c09",
+        "first_index": 64001,
+        "last_index": 67000,
+        "requires_lock": true
+      },
+      {
+        "name": "c10",
+        "first_index": 67001,
+        "last_index": 70000,
+        "requires_lock": true
+      }
+    ]
+  },
+  "data_file": "data/processed/zeros_70k.csv",
+  "data_sha256": "77cac857a201d45a8f66b0e4889635055e84b67792328748d5b230519a1c4439",
+  "zeros_count": 70000,
+  "code": {
+    "modules": {
+      "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+      "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+      "arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+      "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+      "cli.py": "c4111b905161f92a80d34e08fd31eb21376aaa8588451aa4e0e169180d8a52fd",
+      "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+      "cue.py": "f64da736b433c71827eb299675d20608305a3a092dfb53b19abab9460ad64c79",
+      "data.py": "66ad625b51e4eef00791f10293d4c93adbe36dbb7678f0b8c2e0c553c6524c06",
+      "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+      "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+      "inverse_spectroscopy.py": "0edceddeecf8c6472fdd89e4a18edd16bf6e07ab3127cbd8292039a5aab9ffd2",
+      "m3_report.py": "ead812ee9d95ceece66b45babb5cab6ad949d784d6630d0b4d05fd11c749af59",
+      "periods.py": "cfd8e30fbdbf284cb183823b1f0a130b4975cc2ed5da957c3ba57d4cfe387713",
+      "replication.py": "14aa290965c7a196a0853b213b94772ee7b7fd28a3dfbe98809af350b2563c58",
+      "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+      "spectral_pipeline.py": "e6304c058811f0ddbcea7a2fab236dcb22809cf72d013bfad0de00a31aa27f59",
+      "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+      "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+      "utils.py": "d145c6cc1c17eae7f5e4a27b9e9ca309497c782a7b2008c6a158e4e32c559138"
+    },
+    "combined_sha256": "5885b75ea98233afc180b7c635b2fc4ae88e8aa633bb116790e52bb8bdcfb64b"
+  },
+  "metadata": {
+    "timestamp_utc": "2026-09-13T18:46:48.282643+00:00",
+    "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 4,
+    "libraries": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "mpmath": "1.4.1",
+      "matplotlib": "3.11.2"
+    },
+    "numpy_build_dependencies": {
+      "blas": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.34.106.0",
+        "detection method": "pkgconfig",
+        "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas"
+      },
+      "lapack": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.34.106.0",
+        "detection method": "pkgconfig",
+        "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas"
+      }
+    }
+  },
+  "profile": "m4-v2-robustez-blackman-harris",
+  "performance": {
+    "duration_seconds": 1567.3076158389995,
+    "peak_memory_mb": 176.62109375,
+    "peak_memory_largest_child_mb": 136.64453125,
+    "memory_note": "RSS máximo do processo principal e do maior processo filho; o pico agregado dos processos simultâneos não é medido."
+  },
+  "protocol_lock": {
+    "frozen_at_utc": "2026-09-13T17:30:29.894127+00:00",
+    "config_path": "configs/m4_v2_bh.toml",
+    "config_sha256": "b2f8dd1077bf89d7e550fe0c2233e0c7169e968585a4a36d3e546ee0dbbde557",
+    "lock_scope": "package",
+    "modules_sha256": {
+      "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+      "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+      "arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+      "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+      "cli.py": "c4111b905161f92a80d34e08fd31eb21376aaa8588451aa4e0e169180d8a52fd",
+      "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+      "cue.py": "f64da736b433c71827eb299675d20608305a3a092dfb53b19abab9460ad64c79",
+      "data.py": "66ad625b51e4eef00791f10293d4c93adbe36dbb7678f0b8c2e0c553c6524c06",
+      "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+      "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+      "inverse_spectroscopy.py": "0edceddeecf8c6472fdd89e4a18edd16bf6e07ab3127cbd8292039a5aab9ffd2",
+      "m3_report.py": "ead812ee9d95ceece66b45babb5cab6ad949d784d6630d0b4d05fd11c749af59",
+      "periods.py": "cfd8e30fbdbf284cb183823b1f0a130b4975cc2ed5da957c3ba57d4cfe387713",
+      "replication.py": "14aa290965c7a196a0853b213b94772ee7b7fd28a3dfbe98809af350b2563c58",
+      "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+      "spectral_pipeline.py": "e6304c058811f0ddbcea7a2fab236dcb22809cf72d013bfad0de00a31aa27f59",
+      "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+      "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+      "utils.py": "d145c6cc1c17eae7f5e4a27b9e9ca309497c782a7b2008c6a158e4e32c559138"
+    },
+    "combined_sha256": "5885b75ea98233afc180b7c635b2fc4ae88e8aa633bb116790e52bb8bdcfb64b",
+    "note": "m4-v2 (replicação de m4-v1) congelado conforme PROTOCOLO §10 antes de qualquer análise de zeros > 40.000"
+  },
+  "blocks": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10"
+  ]
+}

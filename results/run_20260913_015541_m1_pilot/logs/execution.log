@@ -1,0 +1,5 @@
+[2026-09-12 22:55:41] [INFO] [riemann_spectra.cli] === Iniciando execução: run_20260913_015541_m1_pilot (Marco: M1, Perfil: pilot) ===
+[2026-09-12 22:55:41] [INFO] [riemann_spectra.cli] Utilizando 1000 zeros para a análise (14.1347 até 1419.4225).
+[2026-09-12 22:55:41] [INFO] [riemann_spectra.cli] Executando verificações do Marco M1 (Fundação e Controles)...
+[2026-09-12 22:55:41] [INFO] [riemann_spectra.reporting] Relatório e métricas salvos em results/run_20260913_015541_m1_pilot.
+[2026-09-12 22:55:41] [INFO] [riemann_spectra.cli] Execução run_20260913_015541_m1_pilot finalizada com sucesso. Relatório disponível em results/run_20260913_015541_m1_pilot/report.md.

@@ -1,0 +1,130 @@
+# Protocolo M4 v3 — análise PRIMÁRIA (janela Hann, estimador com lóbulo conjugado).
+# Pré-registro: docs/PROTOCOLO.md §11 (m4-v3, faixa final). Zeros 70.001–100.000 em 10 blocos contíguos de 3.000.
+# Implementação PRIMÁRIA: src/riemann_spectra (versão m4-v3). Alterados em relação a m4-v2: blocos, sementes, dados, versão do código (§11.2).
+protocol_version = "m4-v3"
+seed = 20260918
+dataset_id = "odlyzko_zeros1_first100000"
+processed_csv = "zeros_100k.csv"
+max_zeros = 100000
+lock_scope = "package"
+
+# Instrumento
+t_min = 0.5
+t_max = 5.0
+window = "hann"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+# Detector e nulos
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+threshold_confidence = 0.95
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 9999
+shuffle_score_realizations = 9999
+gue_sigma_realizations = 100
+gue_threshold_realizations = 199
+gue_score_realizations = 0
+gue_retained_fraction = 0.6
+
+# Calibração sintética
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+# Comparação aritmética
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 3e-9
+precision_perturbations = 20
+
+[criteria]
+alpha_family = 0.05
+# C1 — recuperação de frequências (detecção sem catálogo)
+recovery_min = 0.95
+clear_margin = 1.5
+max_blocks_with_unmatched = 2
+# C2 — concordância de coeficientes (medição direcionada, estimador primário)
+ratio_tolerance = 1e-6
+coefficient_fraction_min = 0.95
+q_min = 0.9
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true
+
+[[blocks]]
+name = "d01"
+first_index = 70001
+last_index = 73000
+requires_lock = true
+
+[[blocks]]
+name = "d02"
+first_index = 73001
+last_index = 76000
+requires_lock = true
+
+[[blocks]]
+name = "d03"
+first_index = 76001
+last_index = 79000
+requires_lock = true
+
+[[blocks]]
+name = "d04"
+first_index = 79001
+last_index = 82000
+requires_lock = true
+
+[[blocks]]
+name = "d05"
+first_index = 82001
+last_index = 85000
+requires_lock = true
+
+[[blocks]]
+name = "d06"
+first_index = 85001
+last_index = 88000
+requires_lock = true
+
+[[blocks]]
+name = "d07"
+first_index = 88001
+last_index = 91000
+requires_lock = true
+
+[[blocks]]
+name = "d08"
+first_index = 91001
+last_index = 94000
+requires_lock = true
+
+[[blocks]]
+name = "d09"
+first_index = 94001
+last_index = 97000
+requires_lock = true
+
+[[blocks]]
+name = "d10"
+first_index = 97001
+last_index = 100000
+requires_lock = true

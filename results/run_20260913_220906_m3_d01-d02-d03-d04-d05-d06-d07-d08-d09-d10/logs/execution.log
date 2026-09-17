@@ -1,0 +1,53 @@
+[2026-09-13 19:09:06] [INFO] [riemann_spectra.cli] === run_20260913_220906_m3_d01-d02-d03-d04-d05-d06-d07-d08-d09-d10: blocos ['d01', 'd02', 'd03', 'd04', 'd05', 'd06', 'd07', 'd08', 'd09', 'd10'], workers=4 ===
+[2026-09-13 19:09:07] [INFO] [riemann_spectra.inverse_spectroscopy] [d01] janela=hann densidade=rvm n=3000 L=2073.7 FWHM=6.060e-03 n_t=5941; NUFFT-direto=1.50e-10
+[2026-09-13 19:11:51] [INFO] [riemann_spectra.inverse_spectroscopy] [d01] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2796, faixa inconclusiva [3.2642, 3.2965] (164.3 s)
+[2026-09-13 19:13:18] [INFO] [riemann_spectra.inverse_spectroscopy] [d01] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.2831, faixa inconclusiva [3.2114, 3.5114] (86.6 s)
+[2026-09-13 19:14:34] [INFO] [riemann_spectra.inverse_spectroscopy] [d01] sintético: 221 linhas; tolerância=8.280e-04 (0.137 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 19:14:34] [INFO] [riemann_spectra.inverse_spectroscopy] [d01] congelado: 32 detecções, 1 inconclusivas (shuffle); decisões que mudariam com z refinado: 0; SHA-256 95580bc56b28e7e3…
+[2026-09-13 19:15:13] [INFO] [riemann_spectra.inverse_spectroscopy] [d02] janela=hann densidade=rvm n=3000 L=2065.4 FWHM=6.084e-03 n_t=5917; NUFFT-direto=6.09e-10
+[2026-09-13 19:18:51] [INFO] [riemann_spectra.inverse_spectroscopy] [d02] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2859, faixa inconclusiva [3.2692, 3.2998] (217.8 s)
+[2026-09-13 19:19:59] [INFO] [riemann_spectra.inverse_spectroscopy] [d02] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3641, faixa inconclusiva [3.2252, 3.4553] (68.6 s)
+[2026-09-13 19:21:18] [INFO] [riemann_spectra.inverse_spectroscopy] [d02] sintético: 210 linhas; tolerância=7.488e-04 (0.123 FWHM); separação resolvida=1.50 FWHM
+[2026-09-13 19:21:18] [INFO] [riemann_spectra.inverse_spectroscopy] [d02] congelado: 32 detecções, 0 inconclusivas (shuffle); decisões que mudariam com z refinado: 1; SHA-256 94ff2a4ce7873a85…
+[2026-09-13 19:22:04] [INFO] [riemann_spectra.inverse_spectroscopy] [d03] janela=hann densidade=rvm n=3000 L=2057.5 FWHM=6.107e-03 n_t=5895; NUFFT-direto=2.26e-10
+[2026-09-13 19:26:08] [INFO] [riemann_spectra.inverse_spectroscopy] [d03] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2754, faixa inconclusiva [3.2634, 3.2918] (244.1 s)
+[2026-09-13 19:27:23] [INFO] [riemann_spectra.inverse_spectroscopy] [d03] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3487, faixa inconclusiva [3.2823, 3.5835] (75.2 s)
+[2026-09-13 19:30:38] [INFO] [riemann_spectra.inverse_spectroscopy] [d03] sintético: 198 linhas; tolerância=6.562e-04 (0.107 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 19:30:39] [INFO] [riemann_spectra.inverse_spectroscopy] [d03] congelado: 32 detecções, 0 inconclusivas (shuffle); decisões que mudariam com z refinado: 0; SHA-256 fb10cf04ceeb41b3…
+[2026-09-13 19:31:50] [INFO] [riemann_spectra.inverse_spectroscopy] [d04] janela=hann densidade=rvm n=3000 L=2049.3 FWHM=6.132e-03 n_t=5871; NUFFT-direto=7.57e-11
+[2026-09-13 19:38:54] [INFO] [riemann_spectra.inverse_spectroscopy] [d04] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2739, faixa inconclusiva [3.2601, 3.2870] (424.0 s)
+[2026-09-13 19:40:28] [INFO] [riemann_spectra.inverse_spectroscopy] [d04] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3374, faixa inconclusiva [3.2738, 3.5484] (93.7 s)
+[2026-09-13 19:41:44] [INFO] [riemann_spectra.inverse_spectroscopy] [d04] sintético: 219 linhas; tolerância=6.732e-04 (0.110 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 19:41:44] [INFO] [riemann_spectra.inverse_spectroscopy] [d04] congelado: 32 detecções, 1 inconclusivas (shuffle); decisões que mudariam com z refinado: 1; SHA-256 4be89e96d0754576…
+[2026-09-13 19:42:22] [INFO] [riemann_spectra.inverse_spectroscopy] [d05] janela=hann densidade=rvm n=3000 L=2042.3 FWHM=6.153e-03 n_t=5851; NUFFT-direto=2.88e-10
+[2026-09-13 19:45:11] [INFO] [riemann_spectra.inverse_spectroscopy] [d05] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2886, faixa inconclusiva [3.2742, 3.3045] (168.9 s)
+[2026-09-13 19:46:12] [INFO] [riemann_spectra.inverse_spectroscopy] [d05] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.2348, faixa inconclusiva [3.1934, 3.4243] (61.7 s)
+[2026-09-13 19:47:25] [INFO] [riemann_spectra.inverse_spectroscopy] [d05] sintético: 222 linhas; tolerância=8.930e-04 (0.145 FWHM); separação resolvida=1.00 FWHM
+[2026-09-13 19:47:25] [INFO] [riemann_spectra.inverse_spectroscopy] [d05] congelado: 33 detecções, 0 inconclusivas (shuffle); decisões que mudariam com z refinado: 1; SHA-256 65855a92891aa7af…
+[2026-09-13 19:48:11] [INFO] [riemann_spectra.inverse_spectroscopy] [d06] janela=hann densidade=rvm n=3000 L=2035.5 FWHM=6.174e-03 n_t=5832; NUFFT-direto=5.85e-11
+[2026-09-13 19:51:27] [INFO] [riemann_spectra.inverse_spectroscopy] [d06] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2818, faixa inconclusiva [3.2695, 3.2985] (196.4 s)
+[2026-09-13 19:52:32] [INFO] [riemann_spectra.inverse_spectroscopy] [d06] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3203, faixa inconclusiva [3.2163, 3.6414] (64.2 s)
+[2026-09-13 19:53:39] [INFO] [riemann_spectra.inverse_spectroscopy] [d06] sintético: 222 linhas; tolerância=7.171e-04 (0.116 FWHM); separação resolvida=1.00 FWHM
+[2026-09-13 19:53:40] [INFO] [riemann_spectra.inverse_spectroscopy] [d06] congelado: 32 detecções, 1 inconclusivas (shuffle); decisões que mudariam com z refinado: 2; SHA-256 37cd40254729da70…
+[2026-09-13 19:54:44] [INFO] [riemann_spectra.inverse_spectroscopy] [d07] janela=hann densidade=rvm n=3000 L=2028.9 FWHM=6.194e-03 n_t=5813; NUFFT-direto=9.81e-11
+[2026-09-13 19:58:23] [INFO] [riemann_spectra.inverse_spectroscopy] [d07] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2809, faixa inconclusiva [3.2685, 3.2958] (219.9 s)
+[2026-09-13 19:59:20] [INFO] [riemann_spectra.inverse_spectroscopy] [d07] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3254, faixa inconclusiva [3.1700, 3.6118] (56.6 s)
+[2026-09-13 20:00:40] [INFO] [riemann_spectra.inverse_spectroscopy] [d07] sintético: 224 linhas; tolerância=8.192e-04 (0.132 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 20:00:40] [INFO] [riemann_spectra.inverse_spectroscopy] [d07] congelado: 33 detecções, 1 inconclusivas (shuffle); decisões que mudariam com z refinado: 0; SHA-256 9d2408c00d781c09…
+[2026-09-13 20:01:25] [INFO] [riemann_spectra.inverse_spectroscopy] [d08] janela=hann densidade=rvm n=3000 L=2022.5 FWHM=6.213e-03 n_t=5794; NUFFT-direto=3.50e-10
+[2026-09-13 20:04:41] [INFO] [riemann_spectra.inverse_spectroscopy] [d08] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2702, faixa inconclusiva [3.2560, 3.2884] (195.3 s)
+[2026-09-13 20:05:46] [INFO] [riemann_spectra.inverse_spectroscopy] [d08] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3054, faixa inconclusiva [3.2005, 3.5873] (65.2 s)
+[2026-09-13 20:07:22] [INFO] [riemann_spectra.inverse_spectroscopy] [d08] sintético: 215 linhas; tolerância=8.149e-04 (0.131 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 20:07:23] [INFO] [riemann_spectra.inverse_spectroscopy] [d08] congelado: 32 detecções, 1 inconclusivas (shuffle); decisões que mudariam com z refinado: 1; SHA-256 cd6fc83f0ff1f1d7…
+[2026-09-13 20:08:01] [INFO] [riemann_spectra.inverse_spectroscopy] [d09] janela=hann densidade=rvm n=3000 L=2016.9 FWHM=6.231e-03 n_t=5778; NUFFT-direto=1.37e-10
+[2026-09-13 20:12:17] [INFO] [riemann_spectra.inverse_spectroscopy] [d09] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2811, faixa inconclusiva [3.2695, 3.2947] (256.0 s)
+[2026-09-13 20:13:25] [INFO] [riemann_spectra.inverse_spectroscopy] [d09] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.3127, faixa inconclusiva [3.2134, 3.5765] (68.3 s)
+[2026-09-13 20:15:00] [INFO] [riemann_spectra.inverse_spectroscopy] [d09] sintético: 208 linhas; tolerância=7.889e-04 (0.127 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 20:15:00] [INFO] [riemann_spectra.inverse_spectroscopy] [d09] congelado: 33 detecções, 0 inconclusivas (shuffle); decisões que mudariam com z refinado: 0; SHA-256 3d5560c52c779b7b…
+[2026-09-13 20:15:43] [INFO] [riemann_spectra.inverse_spectroscopy] [d10] janela=hann densidade=rvm n=3000 L=2010.2 FWHM=6.251e-03 n_t=5759; NUFFT-direto=8.79e-11
+[2026-09-13 20:18:36] [INFO] [riemann_spectra.inverse_spectroscopy] [d10] nulo shuffle: B_sigma=200 B_limiar=9999 B_escore=9999 limiar z=3.2763, faixa inconclusiva [3.2604, 3.2905] (173.2 s)
+[2026-09-13 20:19:35] [INFO] [riemann_spectra.inverse_spectroscopy] [d10] nulo gue: B_sigma=100 B_limiar=199 B_escore=0 limiar z=3.2571, faixa inconclusiva [3.2102, 3.4138] (58.9 s)
+[2026-09-13 20:20:40] [INFO] [riemann_spectra.inverse_spectroscopy] [d10] sintético: 218 linhas; tolerância=7.162e-04 (0.115 FWHM); separação resolvida=1.25 FWHM
+[2026-09-13 20:20:40] [INFO] [riemann_spectra.inverse_spectroscopy] [d10] congelado: 32 detecções, 0 inconclusivas (shuffle); decisões que mudariam com z refinado: 0; SHA-256 1784ede4bcd06754…
+[2026-09-13 20:21:48] [INFO] [riemann_spectra.m3_report] Relatório M3 salvo em results/run_20260913_220906_m3_d01-d02-d03-d04-d05-d06-d07-d08-d09-d10/report.md
+[2026-09-13 20:21:48] [INFO] [riemann_spectra.cli] Execução run_20260913_220906_m3_d01-d02-d03-d04-d05-d06-d07-d08-d09-d10 concluída em 4334.6 s.

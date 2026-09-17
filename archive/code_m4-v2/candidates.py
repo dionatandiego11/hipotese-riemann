@@ -1,0 +1,80 @@
+"""
+riemann_spectra.candidates
+Classes de operadores candidatos (Berry-Keating, bilhares, Selberg) e função de custo multifatorial.
+"""
+
+from typing import Any, Dict, List
+
+
+def get_operator_classes_matrix() -> List[Dict[str, Any]]:
+    """
+    Retorna a matriz comparativa das classes de operadores hipotéticos
+    conforme exigido na Etapa 11 do plano de implementação.
+    """
+    return [
+        {
+            "classe": "Berry-Keating (xp simetrizado)",
+            "operador_proposto": "H = (xp + px)/2",
+            "dominio_condicoes_contorno": "Aberto / semi-eixo; requer truncamento de fase ou condições assintóticas",
+            "espectro_discreto": "Não evidente sem condições de contorno artificiais",
+            "reproduz_densidade_media": "Sim (volume de espaço de fase semiclássico ~ (E/2pi)log(E/2pi))",
+            "estatistica_gue": "Possível sob quebra de simetria de reversão temporal",
+            "periodos_log_p": "Não naturalmente presentes sem potencial adicional periódico ou caótico",
+            "status_matematico": "Conjectura / modelo semiclássico aberto",
+        },
+        {
+            "classe": "Sistemas hiperbólicos / Curvatura negativa",
+            "operador_proposto": "Laplaciano de Beltrami-Laplace em superfícies de Riemann compactas",
+            "dominio_condicoes_contorno": "Variedade hiperbólica compacta sem bordo ou bordo suave",
+            "espectro_discreto": "Sim, autovalores positivos do Laplaciano",
+            "reproduz_densidade_media": "Não diretamente: lei de Weyl dá N(E) ~ Area * E / (4pi), linear em vez de E*log(E)",
+            "estatistica_gue": "GOE para sistemas com reversão temporal; GUE sob fluxo magnético",
+            "periodos_log_p": "Comprimentos de geodésicas fechadas; para grupos aritméticos podem envolver primos",
+            "status_matematico": "Fórmula de Selberg bem estabelecida para geodésicas, mas densidade média difere",
+        },
+        {
+            "classe": "Bilhares quânticos caóticos",
+            "operador_proposto": "-Delta em domínio plano D com condições de Dirichlet/Neumann",
+            "dominio_condicoes_contorno": "Domínio compacto com fronteira dispersiva (ex: Sinai, Estádio de Bunimovich)",
+            "espectro_discreto": "Sim, discreto",
+            "reproduz_densidade_media": "Não: lei de Weyl é N(E) ~ Area * E / (4pi) (constante em E para dN/dE)",
+            "estatistica_gue": "GOE na ausência de campo magnético; GUE com fluxo de Aharonov-Bohm",
+            "periodos_log_p": "Órbitas periódicas geométricas, não log(p) genéricos",
+            "status_matematico": "Modelo físico padrão de caos quântico, geometricamente incompatível com d_bar da zeta",
+        },
+        {
+            "classe": "Operadores diferenciais 1D com potenciais singulares",
+            "operador_proposto": "-d^2/dx^2 + V(x)",
+            "dominio_condicoes_contorno": "Reta real ou semi-reta",
+            "espectro_discreto": "Sim se V(x) -> inf",
+            "reproduz_densidade_media": "Requer inversão de Bohr-Sommerfeld: int sqrt(E - V(x)) dx ~ N_bar(E)",
+            "estatistica_gue": "Geralmente Poisson para 1D regular (sem caos); repulsão exige termos não-locais",
+            "periodos_log_p": "Incompatível com dinâmicas 1D integráveis regulares",
+            "status_matematico": "Excluído para sistemas 1D regulares integráveis",
+        },
+    ]
+
+
+def compute_multifactor_cost(
+    observed_metrics: Dict[str, float],
+    candidate_metrics: Dict[str, float],
+    weights: Dict[str, float] | None = None,
+) -> float:
+    """
+    Função de custo multifatorial penalizando discrepâncias nos níveis e estatísticas:
+    L(theta) = sum_k w_k * (obs_k - cand_k)^2.
+    """
+    if weights is None:
+        weights = {
+            "mean_spacing": 1.0,
+            "var_spacing": 2.0,
+            "ks_wigner": 5.0,
+            "mse_pair_corr": 5.0,
+        }
+
+    total_cost = 0.0
+    for key, w in weights.items():
+        if key in observed_metrics and key in candidate_metrics:
+            diff = observed_metrics[key] - candidate_metrics[key]
+            total_cost += w * (diff**2)
+    return float(total_cost)

@@ -1,0 +1,29 @@
+{
+  "frozen_at_utc": "2026-09-13T17:30:30.202651+00:00",
+  "config_path": "configs/m4_v2_m2.toml",
+  "config_sha256": "b134b29bcb5414e63bce78ebb2e7495396aafb7619d80570770078ab7ee17dd1",
+  "lock_scope": "package",
+  "modules_sha256": {
+    "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+    "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+    "arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+    "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+    "cli.py": "c4111b905161f92a80d34e08fd31eb21376aaa8588451aa4e0e169180d8a52fd",
+    "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+    "cue.py": "f64da736b433c71827eb299675d20608305a3a092dfb53b19abab9460ad64c79",
+    "data.py": "66ad625b51e4eef00791f10293d4c93adbe36dbb7678f0b8c2e0c553c6524c06",
+    "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+    "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+    "inverse_spectroscopy.py": "0edceddeecf8c6472fdd89e4a18edd16bf6e07ab3127cbd8292039a5aab9ffd2",
+    "m3_report.py": "ead812ee9d95ceece66b45babb5cab6ad949d784d6630d0b4d05fd11c749af59",
+    "periods.py": "cfd8e30fbdbf284cb183823b1f0a130b4975cc2ed5da957c3ba57d4cfe387713",
+    "replication.py": "14aa290965c7a196a0853b213b94772ee7b7fd28a3dfbe98809af350b2563c58",
+    "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+    "spectral_pipeline.py": "e6304c058811f0ddbcea7a2fab236dcb22809cf72d013bfad0de00a31aa27f59",
+    "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+    "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+    "utils.py": "d145c6cc1c17eae7f5e4a27b9e9ca309497c782a7b2008c6a158e4e32c559138"
+  },
+  "combined_sha256": "5885b75ea98233afc180b7c635b2fc4ae88e8aa633bb116790e52bb8bdcfb64b",
+  "note": "m4-v2 (replicação de m4-v1) congelado conforme PROTOCOLO §10 antes de qualquer análise de zeros > 40.000"
+}

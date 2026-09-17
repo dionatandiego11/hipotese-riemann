@@ -1,0 +1,102 @@
+{
+  "run_id": "run_20260913_023024_m2_main",
+  "command": "/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/__main__.py run --config configs/main.toml --milestone M2 --workers 4",
+  "config_path": "configs/main.toml",
+  "config_sha256": "c12889b4dfa5cc48ab280136a244ecead1742fc9279d51153c4f2760cd09add7",
+  "config": {
+    "profile": "main",
+    "seed": 20260912,
+    "max_zeros": 10000,
+    "raw_data_dir": "data/raw",
+    "processed_data_dir": "data/processed",
+    "zeros_source_url": "https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1",
+    "raw_filename": "zeros1",
+    "processed_filename": "zeros_10k.parquet",
+    "processed_csv": "zeros_10k.csv",
+    "validation_sample_size": 20,
+    "validation_dps": 40,
+    "s_min": 0.0,
+    "s_max": 5.0,
+    "s_bins": 100,
+    "window_type": "hann",
+    "t_min": 0.5,
+    "t_max": 5.0,
+    "dt_oversampling": 5.0,
+    "alpha": 0.05,
+    "null_realizations": 29,
+    "gue_matrix_dim": 2000,
+    "gue_bulk_fraction": 0.5,
+    "max_block_mb": 128,
+    "max_process_gb": 2.0,
+    "m2_gue_realizations": 99,
+    "m2_poisson_realizations": 99,
+    "gue_retained_fraction": 0.6,
+    "sff_blocks": 10,
+    "sff_tau_points": 100
+  },
+  "data_file": "data/processed/zeros_10k.csv",
+  "data_sha256": "703218b412e10f83ac34ae65d5fe93cf67cfb19fb531b0acaf32388871878593",
+  "zeros_count": 10000,
+  "code": {
+    "modules": {
+      "__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+      "__main__.py": "7e841b4929971623b5316907c4a13b2243f12123fa5b981cace6c460838e2c1e",
+      "arithmetic.py": "85e3f4a8c6ea593ff0f1bb674da65552f10ac3e0fc1da72b84f8ba8363934ac6",
+      "candidates.py": "f8a2f52c4b67ece9aac9ff34d1a3bf8cc83c896f857ffe99f288084f6186ad4c",
+      "cli.py": "920854ebce990a032e1df33a69cfa9b5247f0a670b7804c7ad9ddc5ea88f1823",
+      "controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+      "data.py": "1eb474e7e8bfe1a64d65077671bda3591c8c9c8c3e56daad62d6e40d055611ef",
+      "form_factor.py": "e5b39786cee1fef0f47cdaa9cbcdbbe49f1f6610baab06663b2bb660cef7bbec",
+      "inference.py": "a6a9614083a73e866ab084045f76d73c402c788b24d39ed9f043ecec7912426c",
+      "inverse_spectroscopy.py": "2a88c21c1635ac13cc09ba5bf915421c18167aaa2f57d3efc7e7137c5b0af09f",
+      "m3_report.py": "e2b4471786ba399fc5b86deef1eba2dd28ae2d6fb07045279e76750c2180570a",
+      "periods.py": "92beffdf3439d643d8b51ed71f0cb334ecd8546cbf1798570e83af8eaaf7601c",
+      "reporting.py": "f254a9809c8cd3d07f162fd3661e7d748b2fa3afda42d97874e07a2a142bd591",
+      "spectral_pipeline.py": "b745182e9052b2fecc70d775393637f8728626a676592bce480c18c88aa1ec61",
+      "statistics.py": "165e83075fccc7dcbeeb368cc8751df3843f3df3a891af5c24c8119cf7e75e5d",
+      "unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+      "utils.py": "c863d30cbea12656ab5910506b38fdf5abb01fbf08d0e10a6070b381ef337023"
+    },
+    "combined_sha256": "7f170d4d50d3a84479ecb1d77ff81a9435e969ee7e209b384e27ff64cf2bfcad"
+  },
+  "metadata": {
+    "timestamp_utc": "2026-09-13T02:38:25.358438+00:00",
+    "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 4,
+    "libraries": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "mpmath": "1.4.1",
+      "matplotlib": "3.11.2"
+    },
+    "numpy_build_dependencies": {
+      "blas": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.34.106.0",
+        "detection method": "pkgconfig",
+        "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas"
+      },
+      "lapack": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.34.106.0",
+        "detection method": "pkgconfig",
+        "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas"
+      }
+    }
+  },
+  "profile": "main",
+  "performance": {
+    "duration_seconds": 481.0300286669999,
+    "peak_memory_mb": 200.47265625
+  }
+}

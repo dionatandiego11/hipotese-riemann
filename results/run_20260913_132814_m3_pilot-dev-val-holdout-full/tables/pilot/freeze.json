@@ -1,0 +1,11 @@
+{
+  "blind_peaks_csv": "results/run_20260913_132814_m3_pilot-dev-val-holdout-full/tables/pilot/blind_peaks.csv",
+  "blind_peaks_sha256": "e137ec95a08f3f827436f2d625e516d82066b6e7c57731ca6a0ffa1b160a0b29",
+  "nulls_npz_sha256": "3a1faa93d608311193faa83783dc4cdd3ab8467a57b514c13147c60b1d630cf9",
+  "frozen_before_arithmetic": true,
+  "decision_statistic": "z na malha (id\u00eantica para zeros, controles e sint\u00e9ticos)",
+  "n_candidates": 17,
+  "n_detected_primary": 14,
+  "n_detected_secondary": 12,
+  "n_candidates_whose_decision_would_change_with_refined_z": 0
+}

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se usar este software ou os dados de certificação, cite conforme abaixo."
+title: "hipotese-riemann: espectroscopia inversa dos zeros da zeta e certificação condicional da fórmula explícita"
+authors:
+  - family-names: "Resende"
+    given-names: "Dionatan"
+license: MIT
+repository-code: "https://github.com/dionatandiego11/hipotese-riemann"
+version: "0.1.0"
+date-released: "2026-09-17"
+abstract: >-
+  Pacote de reprodução para a certificação computacional condicional (sob RH e sob a hipótese de fidelidade da tabela
+  H-tab) da espectroscopia inversa com janela dos zeros da zeta. Não é prova de RH; auditoria independente pendente.
+keywords:
+  - Riemann zeta zeros
+  - explicit formula
+  - interval arithmetic
+  - reproducibility

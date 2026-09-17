@@ -1,0 +1,27 @@
+{
+ "T1": {
+  "casos": 6114,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T2": {
+  "falhas": []
+ },
+ "T3": {
+  "casos": 6052,
+  "falhas": [],
+  "n_falhas": 0
+ },
+ "T4": {
+  "falhas": []
+ },
+ "T5": {
+  "acima_decide_nao": true,
+  "abaixo_decide_sim": true
+ },
+ "T6": {
+  "linhas_suspeitas": []
+ },
+ "todos_passaram": true,
+ "script_sha256": "cad037a7d86492f02a1be4b25078c1ae297220fec14342c0b5cfb8400515463e"
+}
