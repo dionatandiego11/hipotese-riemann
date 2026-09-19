@@ -1,0 +1,13 @@
+{
+  "n_forms": 2202,
+  "all_level_1_weight_0": true,
+  "strictly_increasing": true,
+  "n_odd": 1092,
+  "n_even": 1110,
+  "first_odd_R": 9.533695261353557,
+  "first_odd_ok": true,
+  "R_max": 184.92395029187048,
+  "sha256": "f4ca1d21465ee2907352c38f79eec4ab8091e2caf9444fc38181a0378df929c6",
+  "sha256_matches_declaration": true,
+  "passed": true
+}

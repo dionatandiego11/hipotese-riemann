@@ -128,7 +128,14 @@ L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal tro
   - `ADENDO_MAASS_1.md` (`4efb9020…`) corrige P2 e P3 da declaração;
   - catálogo `G1_CATALOGO_GEODESICAS.md` (`8705bd7f…`): 22 linhas em t ≤ 5; dois algoritmos concordam em todos os
     discriminantes.
-  - **Próximo:** código do instrumento em R e execução nos blocos H, h1 e h2 (minutos de CPU).
+  - adendos 2 a 4 (`3a40cf7a…`, `0968e75b…`, `5ac738d2…`): calibração sintética compatível com a FWHM; **lacuna de ~88
+    formas ímpares no LMFDB** em R ∈ (99,58; 110,17) e nenhuma ímpar acima de 177,98 (§22 das pendências de fontes);
+    blocos por segmento sem lacuna, S2 (primário) e S1;
+  - **resultado (`RELATORIO_MAASS_v1.md`, `execucao_v3/`): NÃO PASSA pelos critérios declarados.** Nenhuma linha é
+    "claramente detectável" contra o nulo shuffle, então os conjuntos elegíveis ficam vazios;
+  - **observação exploratória (C):** o ajuste dirigido reproduz os coeficientes de G1 com razão 1 ± 10⁻⁶ a 10⁻⁴ até
+    T ≈ 4,2, incluindo sinais e **cosh** (H_sinh dá razão 0,45); o nulo superestima o ruído real em ~10⁵;
+  - **Próximo (a decidir):** protocolo confirmatório v2 com critério de concordância do ajuste e dados novos (T1).
 - **Controle dinâmico `ctrl-estadio-v1`:**
   - declaração `DECLARACAO_ESTADIO.md` (`c7ce5d5b…`);
   - derivação `D1E_DERIVACAO_ESTADIO.md` (`c0c28ed9…`): linha "bouncing ball" exata e C̄_bb operacional;

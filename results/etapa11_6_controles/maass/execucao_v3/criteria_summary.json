@@ -1,0 +1,106 @@
+{
+  "protocol_version": "ctrl-maass-v1",
+  "data_checks": {
+    "n_forms": 2202,
+    "all_level_1_weight_0": true,
+    "strictly_increasing": true,
+    "n_odd": 1092,
+    "n_even": 1110,
+    "first_odd_R": 9.533695261353557,
+    "first_odd_ok": true,
+    "R_max": 184.92395029187048,
+    "sha256": "f4ca1d21465ee2907352c38f79eec4ab8091e2caf9444fc38181a0378df929c6",
+    "sha256_matches_declaration": true,
+    "odd_gaps": [
+      {
+        "after_index": 341,
+        "R_left": 99.57906934336255,
+        "R_right": 110.17011492529369,
+        "mean_spacings": 87.88720520181955
+      }
+    ],
+    "passed": true
+  },
+  "blocks": {
+    "S2": {
+      "M_C1": false,
+      "recovery_clear": null,
+      "n_clear": 0,
+      "unmatched_fraction": 0.0,
+      "M_C2s": false,
+      "sign_violations": [],
+      "n_eligible": 0,
+      "M_C2a_plus": false,
+      "amplitude_plus": {
+        "n_eligible": 0,
+        "fraction_within": null,
+        "passes": false
+      },
+      "M_C2a_minus": false,
+      "amplitude_minus": {
+        "n_eligible": 0,
+        "fraction_within": null,
+        "passes": false
+      },
+      "M_C2a_minus_descriptive_cosh_vs_sinh": [],
+      "M_C4": true,
+      "M_C4s": true,
+      "absence": {
+        "zeta_log_n": {
+          "n_lines": 3,
+          "n_detected": 0,
+          "detected": [],
+          "fraction": 0.0
+        },
+        "scattering_2log_n": {
+          "n_lines": 2,
+          "n_detected": 0,
+          "detected": [],
+          "fraction": 0.0
+        }
+      },
+      "passes": false
+    },
+    "S1": {
+      "M_C1": false,
+      "recovery_clear": null,
+      "n_clear": 0,
+      "unmatched_fraction": 0.0,
+      "M_C2s": false,
+      "sign_violations": [],
+      "n_eligible": 0,
+      "M_C2a_plus": false,
+      "amplitude_plus": {
+        "n_eligible": 0,
+        "fraction_within": null,
+        "passes": false
+      },
+      "M_C2a_minus": false,
+      "amplitude_minus": {
+        "n_eligible": 0,
+        "fraction_within": null,
+        "passes": false
+      },
+      "M_C2a_minus_descriptive_cosh_vs_sinh": [],
+      "M_C4": true,
+      "M_C4s": true,
+      "absence": {
+        "zeta_log_n": {
+          "n_lines": 5,
+          "n_detected": 0,
+          "detected": [],
+          "fraction": 0.0
+        },
+        "scattering_2log_n": {
+          "n_lines": 2,
+          "n_detected": 0,
+          "detected": [],
+          "fraction": 0.0
+        }
+      },
+      "passes": false
+    }
+  },
+  "primary_block": "S2",
+  "passes": false
+}

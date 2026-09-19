@@ -474,3 +474,27 @@ declarada; agora ela tem **previsão com fonte**: H_cosh.
 `houches.pdf` e `0312061v1.pdf` (cópias repetidas das notas de Bogomolny, §§19 e 21), `P_00_83.pdf` (Damour &
 Henneaux, §21) e `0804.1551v1.pdf` (Dietz et al., §§17–18). Os hashes continuam nas seções citadas. Nenhum constava do
 manifesto.
+
+## 22. LMFDB, Maass de nível 1: lacunas de formas ímpares apesar da declaração de completude (19/09/2026) — rótulo C
+
+**Achado ao preparar `ctrl-maass-v1`** (ADENDO_MAASS_3.md): no arquivo `Mass-Forms/lmfdb_maass_rigor_0919_1121.txt`
+(`f4ca1d21…`), a sequência das formas **ímpares** tem uma lacuna entre R = 99,5791 e R = 110,1701, de **87,9
+espaçamentos médios locais** (12/R). Além disso, não há formas ímpares acima de R = 177,9845, enquanto as pares vão até
+184,9240. Nenhum outro espaçamento, ímpar ou par, passa de 8 espaçamentos médios.
+
+**Conferido no site (espelho beta, 19/09/2026):**
+- a busca `level=1&spectral_parameter=99.5-110.3` devolve 79 formas, as mesmas do arquivo (4 ímpares e 75 pares), com a
+  frase "The results below are complete, since the LMFDB contains all Maass forms with level 1 and spectral parameter at
+  most 184.9239";
+- a busca `spectral_parameter=178-185&symmetry=1` devolve "No matches". O filtro `symmetry=1` não foi conferido na
+  documentação do site; a contagem do arquivo confirma que não há ímpares nessa faixa.
+
+**Leitura:** pela densidade de Weyl do setor ímpar (≈ R/12), seriam esperadas ~90 formas ímpares em (99,58; 110,17) e
+~100 em (177,98; 184,92). A lei de Weyl dá só a média, então isto **não demonstra** a falta, mas uma lacuna de 88
+espaçamentos médios é implausível numa sequência completa. **Hipótese mais provável:** a base de dados não contém
+parte das formas ímpares nessas faixas, e a declaração de completude vale para o conjunto das duas paridades, ou foi
+feita sem conferir cada paridade. Isso **não foi confirmado** com os mantenedores.
+
+**Uso no projeto:** `ctrl-maass-v1` passa a usar só os segmentos sem lacuna (S2: índices 342–1.092; S1: 1–341), pelo
+adendo 3. **Ação possível (decisão do usuário):** comunicar aos mantenedores do LMFDB, com a busca, as contagens e a
+estimativa de Weyl.

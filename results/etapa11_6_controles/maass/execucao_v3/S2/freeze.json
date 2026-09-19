@@ -1,0 +1,7 @@
+{
+  "blind_peaks_sha256": "7e4b5b15e12db30beb74d7cfbcbb5716d22d64458278540afe2d25a5a1293087",
+  "nulls_npz_sha256": "46e41cbe5be55ba04ee10ee9da15a0d5a90bf3cf99d29dc8847b4ee7daa62264",
+  "frozen_before_arithmetic": true,
+  "n_candidates": 0,
+  "n_detected_primary": 0
+}

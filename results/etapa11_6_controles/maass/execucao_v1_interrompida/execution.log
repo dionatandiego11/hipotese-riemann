@@ -1,0 +1,4 @@
+2026-09-19 14:46:57,347 INFO [H] nulo shuffle: limiar z=2.8789 (266.1 s)
+2026-09-19 14:47:00,835 INFO [H] nulo poisson: limiar z=2.9316 (3.5 s)
+2026-09-19 14:48:06,721 INFO [h1] nulo shuffle: limiar z=2.8354 (54.7 s)
+2026-09-19 14:48:07,321 INFO [h1] nulo poisson: limiar z=2.8417 (0.6 s)

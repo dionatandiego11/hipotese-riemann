@@ -1,0 +1,76 @@
+# ctrl-maass-v1 — parâmetros do instrumento.
+# Declaração: results/etapa11_6_controles/DECLARACAO_MAASS.md (SHA-256 5db97004…), §5; ADENDO_MAASS_1.md (4efb9020…).
+# Cópia dos parâmetros numéricos de configs/m4_v3.toml, EXCETO: variável R, densidade suave ajustada (declaração §5),
+# catálogo G1, nulo de Poisson no lugar do GUE (e fundo de Poisson nas linhas sintéticas), semente 20260922,
+# declared_table_error = 1e-20, critérios M-C* (declaração §5 + adendo 1) e blocos S2/S1 (adendo 3).
+# A chave `density` abaixo é mantida só por fidelidade à cópia; o instrumento usa a densidade ajustada.
+protocol_version = "ctrl-maass-v1"
+
+t_min = 0.5
+t_max = 5.0
+window = "hann"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+threshold_confidence = 0.95
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 9999
+shuffle_score_realizations = 9999
+poisson_sigma_realizations = 100
+poisson_threshold_realizations = 199
+poisson_score_realizations = 0
+
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 1e-20
+precision_perturbations = 20
+
+seed = 20260922
+# ADENDO_MAASS_3: blocos por segmento sem lacuna (lacuna de formas ímpares em R ∈ (99,58; 110,17) no LMFDB)
+primary_block = "S2"
+smooth_fit_max_rms = 2.0
+blocks = [
+  { name = "S2", first_index = 342, last_index = 1092 },
+  { name = "S1", first_index = 1, last_index = 341 },
+]
+
+[criteria]
+# chaves de m4-v3 usadas por arithmetic_comparison
+alpha_family = 0.05
+clear_margin = 1.5
+ratio_tolerance = 1e-6
+coefficient_fraction_min = 0.95
+q_min = 0.9
+recovery_min_m4 = 0.95
+# critérios M-C* (declaração §5; adendo 1)
+recovery_min = 0.9
+unmatched_fraction_max = 0.10
+amplitude_z = 3.0
+amplitude_fraction_min = 0.9
+absence_fraction_max = 0.05
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true

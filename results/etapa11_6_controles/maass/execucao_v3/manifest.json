@@ -1,0 +1,12 @@
+{
+  "protocol_version": "ctrl-maass-v1",
+  "config_sha256": "3d93e7b607c9af189d7b4dfd19007bf4c9dd339436ebd105cf9256cab1e0f6ff",
+  "data_sha256": "f4ca1d21465ee2907352c38f79eec4ab8091e2caf9444fc38181a0378df929c6",
+  "g1_lines_sha256": "9f7ecadb9df6162de475b4536f0eada74cbc6694c46f12a7f70c4ac2aa0d27d8",
+  "script_sha256": {
+    "catalogo_g1.py": "e3b368100a126fe7849bc018adfb4015e484d29e0e0ee86131088ce1f65ab6c8",
+    "instrumento_maass.py": "fb8ac9f1c32973a3841470b5b9f2da057daaba43825168babad94a0ad54e6513",
+    "test_maass.py": "87e9370a9c8e3018e956eb4985f45f95019f1ac99f2f436e3baa97f5c5925fb0"
+  },
+  "seconds": 130.06474790599896
+}
