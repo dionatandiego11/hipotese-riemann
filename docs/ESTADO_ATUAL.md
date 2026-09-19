@@ -56,7 +56,7 @@ operadores candidatos (programa de Hilbert–Pólya). **O projeto não tenta pro
 | 0–9 (M1–M3) | validadas |
 | 10 (M4, zeros 10.001–100.000) | validada (m4-v1, m4-v2, m4-v3; R2 de m4-v3 acionada e investigada). Restos: implementação independente completa, densidade θ na cadeia completa, inversão harmônica |
 | 11.1–11.2 | matriz de operadores madura: **27 entradas sustentam decisão**; resta **1 pendência de conferência (K7 M4)** |
-| 11.3b | **encerrada em 17/09/2026** com itens abertos registrados (H1, S1, S3a, S3c, C2 completo, H-tab, F5, auditoria) |
+| 11.3b | **encerrada em 17/09/2026** com itens abertos registrados (H1, S1, S3a, S3c, C2 completo, H-tab, F5, auditoria); F5 conferido depois, em 19/09, numa transcrição |
 | 11.4 | entrega documental preliminar (correspondências; C19 conferida) |
 | 11.5 | **não iniciada** (protocolo dos testes discriminantes). Quase todas as classes caíram por derivação; pode restar pouco para testar numericamente |
 | 11.6 | **em execução**: K12 declarado (sem cálculo novo); controle Dirichlet declarado e com derivação D1 escrita; controles dinâmico (bilhar) e aritmético (triângulo modular) pendentes |
@@ -85,18 +85,35 @@ L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal tro
 - Declaração: `results/etapa11_6_controles/DECLARACAO_DIRICHLET.md` (SHA-256 `e6cb8ab8…`).
 - Derivação D1 (feita, confere P1 e P2, sem adendo): `results/etapa11_6_controles/D1_DERIVACAO_DIRICHLET.md`
   (SHA-256 `f07972a4…`).
-- **Passo seguinte (3):** código novo e testes, sem tocar o código congelado:
-  1. cálculo dos zeros de L(s, χ) por troca de sinal de Z_χ(t) = e^{iθ_χ(t)}L(½ + it, χ), com
-     θ_χ(t) = arg Γ(¼ + κ/2 + it/2) + (t/2) log(q/π), L via zeta de Hurwitz em `mpmath` (≥ 30 dígitos), passo ≤ 1/8 do
-     espaçamento médio, refinamento até 10⁻¹⁰; saída com 9 casas e manifesto;
-  2. verificações V1–V4 da declaração (completude via N(T, χ) = θ_χ(T)/π + S − S(0) com tolerância 3; estabilidade com
-     passo reduzido; segunda avaliação com `mpmath.dirichlet` e 60 dígitos; Z_χ real);
-  3. caminho novo no instrumento: densidade d̄_χ(E) = (1/2π) log(qE/2π), coeficientes do catálogo multiplicados por χ(n),
-     linhas com χ(n) = 0 marcadas como ausentes previstas; mesmos parâmetros de `configs/m4_v3.toml` salvo os listados na
-     declaração (sementes 20260919 e 20260920, `declared_table_error` = 10⁻⁹);
-  4. testes sem rede, incluindo um sintético com linhas de sinais conhecidos.
-- **Depois:** piloto de 500 zeros por caractere (usuário roda; registrar custo) → 12.000 zeros por caractere → execução
-  nos 8 blocos (e01–e04, f01–f04) → relatório com os critérios D-C1, D-C1z, D-C2, D-C2s, D-C2z.
+- **Passo 3 (feito em 19/09/2026):** código e testes em `results/etapa11_6_controles/dirichlet/`, fora do pacote
+  congelado (o lock `package` de m4-v3 cobre todos os módulos de `src/riemann_spectra`):
+  - `dirichlet_zeros.py`: zeros por troca de sinal de Z_χ (Hurwitz em mpmath, 30 dígitos, passo ≤ 1/8 do espaçamento,
+    refinamento Illinois até 10⁻¹⁰) e verificações V1–V4; grava zeros com 9 casas e manifesto JSON;
+  - `instrumento_chi.py`: instrumento m4-v3 com d̄_χ, unfolding por N̄_χ nos nulos e nas linhas sintéticas, catálogo com
+    c_χ(n) e critérios D-C1, D-C1z, D-C2, D-C2s, D-C2z; reaproveita as funções do pacote sem editá-las;
+  - `ctrl_dirichlet_v1.toml`: parâmetros de m4-v3 com as trocas declaradas; `test_dirichlet.py`: 19 testes (incluindo
+    reprodução do termo suave congelado com q = 1 e recuperação diferencial de linhas com sinais conhecidos).
+  - Custo observado no desenvolvimento: ~0,7 s por avaliação de L(½ + it, χ) em t ≈ 9.000 (mpmath). A extrapolação para
+    12.000 zeros por caractere é da ordem de dezenas de horas; o piloto mede o custo real, e uma troca de método exigiria
+    adendo antes da execução completa.
+- **Passo 4 (feito em 19/09/2026): piloto** de 500 zeros por caractere, rodado pelo usuário. V1–V3 aprovados; V4 falhou
+  por defeito de desenho (o último ponto de teste caía sobre o último zero, onde |Z| ≈ 0). **Adendo 1**
+  (`ADENDO_DIRICHLET_1.md`, SHA-256 `6ee78368…`, gravado antes da correção): pontos médios entre zeros. Com ele, V4 foi
+  refeita sem recalcular os zeros e os dois pilotos ficaram **aprovados**. Registro e custo em
+  `results/etapa11_6_controles/dados_piloto/REGISTRO_PILOTO.md`: ~20–35 h para χ₋₄ e ~35–55 h para χ₅ nos 12.000 zeros,
+  em estimativa, e sem ponto de retomada.
+- **Adendo 2 (operacional, 19/09/2026; `ADENDO_DIRICHLET_2.md`, SHA-256 `61995046…`):**
+  - salvamento e retomada determinísticos (`progresso_<carater>_<n>.json`, trava por PID, SIGINT/SIGTERM);
+  - aceitação estrita do refinamento: Illinois ≤ 100 iterações, depois bisseção, e erro se não convergir. Antes, um
+    intervalo não convergido era aceito em silêncio;
+  - testes T1–T4 aprovados: 31 testes, incluindo um processo real terminado por SIGTERM e retomado com arquivo final
+    idêntico bit a bit;
+  - os 1.000 zeros dos pilotos têm troca de sinal em ±6·10⁻¹⁰ (`verificacao_refinamento_*.json`);
+  - benchmark em `dados_piloto/BENCHMARK.md`: ~53 h (χ₋₄) e ~108 h (χ₅) em paralelo, ±30%;
+  - versões anteriores do script preservadas em `dirichlet/versoes/`.
+- **Próximo (5):** cálculo completo, rodado pelo usuário, com os comandos de `dados_piloto/BENCHMARK.md` (retomável).
+  Depois: execução do instrumento nos 8 blocos (e01–e04, f01–f04) e relatório com os critérios D-C1, D-C1z, D-C2,
+  D-C2s e D-C2z.
 
 ## 6. Outras pendências
 
@@ -104,12 +121,19 @@ L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal tro
   a comparar). Aguarda o usuário.
 - **Controle aritmético (triângulo modular):** lado geométrico calculável exatamente (contagem de classes de SL(2,ℤ) por
   traço; a verificação de 17/09 mostrou que números de classe estreitos h⁺(t² − 4) **não** são a multiplicidade de
-  geodésicas: é preciso somar ordens de condutor f com f² ∣ t² − 4 e separar potências). Falta tabela publicada de
-  autovalores de Maass **com paridade**.
-- **Controle dinâmico (bilhar de estádio):** falta tabela longa de níveis com setor de simetria; dados gerados por outro
-  assistente foram avaliados e descartados (precisão insuficiente; §12 das pendências de fontes).
-- **Externas:** auditoria independente do certificado; texto original de Weil (1952); procedência/licença completas de
-  `zeros1`.
+  geodésicas: é preciso somar ordens de condutor f com f² ∣ t² − 4 e separar potências). Lado espectral obtido em
+  19/09: 2.202 autovalores de Maass de nível 1 do LMFDB, com paridade (código 1 = ímpar, 0 = par, conferido nas páginas
+  do LMFDB), licença CC BY-SA 4.0 (§13 das pendências de fontes). Falta: decidir se o arquivo é versionado, conferir
+  completude e redigir a declaração prévia.
+- **Controle dinâmico (bilhar de estádio):** dados gerados por outro assistente foram avaliados e descartados (precisão
+  insuficiente; §12 das pendências de fontes). Os níveis serão calculados com o `vergini` de Barnett, compilado pelo
+  usuário e com teste de funcionamento em k = 100 aprovado (§14). Declaração prévia `ctrl-estadio-v1` gravada em
+  19/09: [DECLARACAO_ESTADIO.md](../results/etapa11_6_controles/DECLARACAO_ESTADIO.md), SHA-256 `c7ce5d5b…`; setor
+  ímpar-ímpar, k ∈ [85,5; 304,1], 4 blocos de 3.000 níveis. **Próximo:** derivação D1-E e catálogo de órbitas O1, os
+  dois antes de calcular qualquer nível.
+- **Externas:** auditoria independente do certificado; procedência/licença completas de `zeros1`. Weil (1952), F5, foi
+  conferido em 19/09 numa transcrição LaTeX (Vella-Chemla, 2020): as condições (A) e (B) cobrem as gaussianas e h_ε
+  (§16 das pendências de fontes). Conferir o fac-símile continua desejável, mas não bloqueia nada.
 - **Limpeza:** `docs/PLANO_COLLATZ.md` e `docs/RELATORIO_CONSOLIDADO.md` ainda mencionam `AGENTS.md`/`prompt.txt`, que
   não estão no repositório público.
 

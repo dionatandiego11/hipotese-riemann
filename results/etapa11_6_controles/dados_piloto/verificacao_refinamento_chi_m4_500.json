@@ -1,0 +1,15 @@
+{
+  "protocol": "ctrl-dirichlet-v1",
+  "addendum": "ADENDO_DIRICHLET_2.md",
+  "addendum_sha256": "619950467fb0a7e3b47998b93b203dcea23e8db69f19db4b288283199aef8811",
+  "source_manifest": "manifest_chi_m4_500.json",
+  "zeros_file": "zeros_chi_m4_500.txt",
+  "zeros_sha256": "aab502181e703002c42860ad13d0adf28d98fb31f41e6b4ae2aca4c3ebd8123d",
+  "half_width": 6e-10,
+  "n_checked": 500,
+  "n_failed": 0,
+  "failed": [],
+  "passed": true,
+  "seconds": 56.8301754160002,
+  "script_sha256": "65056bc2d2ad18495f3f0f95d6f78b4c8a9fdea5bd6314fadee36b33b010d4e6"
+}

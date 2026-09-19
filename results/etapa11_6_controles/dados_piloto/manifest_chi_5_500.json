@@ -1,0 +1,435 @@
+{
+  "protocol": "ctrl-dirichlet-v1",
+  "declaration_sha256": "e6cb8ab84e1d9665f8c8fcb3c8a450b840dbaec8167b7267b180fe410232edff",
+  "d1_sha256": "f07972a49422716256401da58c3756e4807e1f2ed26daef3ee50be98bc8ea11d",
+  "character": {
+    "name": "chi_5",
+    "q": 5,
+    "kappa": 0,
+    "values": [
+      0,
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "n_zeros": 500,
+  "gamma_first": 6.648453344709887,
+  "gamma_last": 606.4413631816151,
+  "method": {
+    "L": "Hurwitz (mpmath.zeta(s, a/q))",
+    "dps": 30,
+    "step_fraction": 0.125,
+    "refine": "Illinois",
+    "refine_tol": 1e-10
+  },
+  "gap_rescans": [],
+  "stats": {
+    "evaluations": 12803,
+    "refinements": 500,
+    "gap_rescans": 0,
+    "seconds": 1582.586029289001
+  },
+  "checks": {
+    "V1": {
+      "tolerance": 3.0,
+      "edges": [
+        {
+          "n_found": 500,
+          "T": 606.4413641816151,
+          "theta_over_pi": 499.75876318257,
+          "difference": 0.2412368174299786,
+          "ok": true
+        }
+      ],
+      "passed": true,
+      "note": "N(T,χ) = θ_χ(T)/π + S(T,χ) − S(0,χ); S não é estimado (convenção B da declaração)."
+    },
+    "V2": {
+      "indices": [
+        1,
+        500
+      ],
+      "n_reference": 500,
+      "n_recomputed": 500,
+      "same_count": true,
+      "max_abs_difference": 9.328005035058595e-11,
+      "passed": true,
+      "evaluations": 16746,
+      "seconds": 2087.1219505949994
+    },
+    "V3": {
+      "seed": 20260917,
+      "sample": [
+        {
+          "index": 13,
+          "gamma": 34.728812978864994,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 22,
+          "gamma": 51.08775192678979,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 27,
+          "gamma": 58.386117485388816,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 30,
+          "gamma": 63.70954306094738,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 39,
+          "gamma": 78.07217086434935,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 40,
+          "gamma": 79.78606249012728,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 56,
+          "gamma": 102.6052879410031,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 68,
+          "gamma": 119.561491625847,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 69,
+          "gamma": 120.28173419188775,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 73,
+          "gamma": 126.3986993784013,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 75,
+          "gamma": 129.04830009430205,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 79,
+          "gamma": 134.92496389408194,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 83,
+          "gamma": 139.410599595188,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 89,
+          "gamma": 147.87972910314028,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 95,
+          "gamma": 155.24207999908666,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 96,
+          "gamma": 156.49972854397777,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 109,
+          "gamma": 173.55943502655361,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 114,
+          "gamma": 180.2429351355492,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 123,
+          "gamma": 190.9702222761507,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 127,
+          "gamma": 196.54076456242404,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 136,
+          "gamma": 207.45768007899687,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 161,
+          "gamma": 237.75024598597543,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 167,
+          "gamma": 245.0931465421428,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 183,
+          "gamma": 263.93903286530406,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 214,
+          "gamma": 299.7667030226206,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 223,
+          "gamma": 310.2324663615501,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 233,
+          "gamma": 321.2139948417815,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 241,
+          "gamma": 330.71170620635905,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 255,
+          "gamma": 346.1757594870363,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 259,
+          "gamma": 350.86268320046486,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 271,
+          "gamma": 364.34765979061206,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 285,
+          "gamma": 379.52091688120674,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 286,
+          "gamma": 381.08344640167604,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 296,
+          "gamma": 391.4081961348489,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 313,
+          "gamma": 410.29906369230673,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 314,
+          "gamma": 410.91464197615187,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 336,
+          "gamma": 435.08453918139855,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 384,
+          "gamma": 486.35194518125917,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 395,
+          "gamma": 497.5998510946704,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 397,
+          "gamma": 499.5208925560495,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 424,
+          "gamma": 527.6213080977935,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 427,
+          "gamma": 531.487187486714,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 429,
+          "gamma": 533.0704870503332,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 450,
+          "gamma": 554.8438427659363,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 454,
+          "gamma": 559.1817167412972,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 466,
+          "gamma": 571.3688390739748,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 471,
+          "gamma": 577.15991780729,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 486,
+          "gamma": 591.5265666873738,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 487,
+          "gamma": 592.985449353852,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 497,
+          "gamma": 603.2788236792939,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        }
+      ],
+      "passed": true,
+      "note": "mpmath.dirichlet também usa somas de Hurwitz: confere implementação e precisão, não método independente."
+    },
+    "V4": {
+      "rel_tol": 1e-20,
+      "points": [
+        {
+          "t": 10.0,
+          "imag_over_abs": 1.0100941278436704e-30,
+          "ok": true
+        },
+        {
+          "t": 76.27126257573501,
+          "imag_over_abs": 8.217146789384773e-30,
+          "ok": true
+        },
+        {
+          "t": 142.54252515147002,
+          "imag_over_abs": 5.227526829055641e-29,
+          "ok": true
+        },
+        {
+          "t": 208.813787727205,
+          "imag_over_abs": 6.823170331603036e-30,
+          "ok": true
+        },
+        {
+          "t": 275.08505030294003,
+          "imag_over_abs": 7.880766341413114e-27,
+          "ok": true
+        },
+        {
+          "t": 341.35631287867506,
+          "imag_over_abs": 1.4459066059120439e-30,
+          "ok": true
+        },
+        {
+          "t": 407.62757545441,
+          "imag_over_abs": 3.176066207051998e-30,
+          "ok": true
+        },
+        {
+          "t": 473.89883803014504,
+          "imag_over_abs": 1.0997338249291832e-28,
+          "ok": true
+        },
+        {
+          "t": 540.1701006058801,
+          "imag_over_abs": 1.597229800482032e-29,
+          "ok": true
+        },
+        {
+          "t": 606.4413631816151,
+          "imag_over_abs": 1.953737744120629e-19,
+          "ok": false
+        }
+      ],
+      "passed": false
+    }
+  },
+  "all_checks_passed": false,
+  "output_file": "zeros_chi_5_500.txt",
+  "output_sha256": "aa201a076b902edfee7281985b088baadc8d01f528eec8b34040f46cb249e48b",
+  "versions": {
+    "python": "3.12.3",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.3"
+  },
+  "script_sha256": "0f16b4c573923772ff4839e97e423e626738cea5df7b31bfda09b707b12833a6"
+}

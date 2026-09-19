@@ -1,0 +1,89 @@
+{
+  "protocol": "ctrl-dirichlet-v1",
+  "addendum": "ADENDO_DIRICHLET_1.md",
+  "addendum_sha256": "6ee78368f371165aa117ffc2e4b6502e2975696d79b5d4509275a14bec7f6586",
+  "source_manifest": "manifest_chi_m4_500.json",
+  "source_manifest_sha256": "40a16c195acd0e0b5adefadc43d5a65de2553f5ca98dc6a8f81952d608899567",
+  "zeros_file": "zeros_chi_m4_500.txt",
+  "zeros_sha256": "aab502181e703002c42860ad13d0adf28d98fb31f41e6b4ae2aca4c3ebd8123d",
+  "V4_original_rule_passed": false,
+  "V4": {
+    "rule": "adendo-1 (pontos médios entre zeros consecutivos)",
+    "rel_tol": 1e-20,
+    "points": [
+      {
+        "t": 8.1323596045,
+        "abs_Z": 2.25874509328605,
+        "imag_over_abs": 3.110058402529737e-32,
+        "ok": true
+      },
+      {
+        "t": 77.7531507585,
+        "abs_Z": 3.358438585220644,
+        "imag_over_abs": 7.147714278675656e-30,
+        "ok": true
+      },
+      {
+        "t": 147.2282680485,
+        "abs_Z": 2.078480971743683,
+        "imag_over_abs": 7.061648569257875e-31,
+        "ok": true
+      },
+      {
+        "t": 216.248616824,
+        "abs_Z": 0.9204710836404745,
+        "imag_over_abs": 1.6706143478643776e-29,
+        "ok": true
+      },
+      {
+        "t": 285.50291456549996,
+        "abs_Z": 1.6603181829617848,
+        "imag_over_abs": 2.2589337922122477e-29,
+        "ok": true
+      },
+      {
+        "t": 353.997535534,
+        "abs_Z": 0.5261271553260222,
+        "imag_over_abs": 4.444679666349911e-30,
+        "ok": true
+      },
+      {
+        "t": 422.5988138175,
+        "abs_Z": 0.0494031190100081,
+        "imag_over_abs": 8.728948753867163e-29,
+        "ok": true
+      },
+      {
+        "t": 491.05378432550003,
+        "abs_Z": 0.6787198659029505,
+        "imag_over_abs": 5.040172734817316e-29,
+        "ok": true
+      },
+      {
+        "t": 560.3068033315001,
+        "abs_Z": 1.3545762113332995,
+        "imag_over_abs": 8.990817392610636e-29,
+        "ok": true
+      },
+      {
+        "t": 628.159141864,
+        "abs_Z": 2.8188724145713073,
+        "imag_over_abs": 1.0780630508817432e-28,
+        "ok": true
+      }
+    ],
+    "passed": true
+  },
+  "V1_V3_from_source": {
+    "V1": true,
+    "V2": true,
+    "V3": true
+  },
+  "all_checks_passed_with_addendum": true,
+  "versions": {
+    "python": "3.12.3",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.3"
+  },
+  "script_sha256": "7b2de8e2d63fc72599aa677c63b5d709fdfa6edfc13ab698141718e905afb35e"
+}

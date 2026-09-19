@@ -1,0 +1,80 @@
+# ctrl-dirichlet-v1 — parâmetros do instrumento.
+# Declaração: results/etapa11_6_controles/DECLARACAO_DIRICHLET.md (SHA-256 e6cb8ab8…), §5.
+# Cópia dos parâmetros numéricos de configs/m4_v3.toml, EXCETO: dados, blocos, sementes, densidade (d̄_χ, P2),
+# coeficientes do catálogo (c_χ, P1) e declared_table_error = 1e-9 (meta de precisão do §4).
+# A chave `density` abaixo é mantida só por fidelidade à cópia; o instrumento usa d̄_χ (ChiTransform).
+protocol_version = "ctrl-dirichlet-v1"
+
+t_min = 0.5
+t_max = 5.0
+window = "hann"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+threshold_confidence = 0.95
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 9999
+shuffle_score_realizations = 9999
+gue_sigma_realizations = 100
+gue_threshold_realizations = 199
+gue_score_realizations = 0
+gue_retained_fraction = 0.6
+
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 1e-9
+precision_perturbations = 20
+
+[criteria]
+alpha_family = 0.05
+recovery_min = 0.95
+clear_margin = 1.5
+max_blocks_with_unmatched = 2
+ratio_tolerance = 1e-6
+coefficient_fraction_min = 0.95
+q_min = 0.9
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true
+
+
+[characters.chi_m4]
+seed = 20260919
+blocks = [
+  { name = "e01", first_index = 1, last_index = 3000 },
+  { name = "e02", first_index = 3001, last_index = 6000 },
+  { name = "e03", first_index = 6001, last_index = 9000 },
+  { name = "e04", first_index = 9001, last_index = 12000 },
+]
+
+[characters.chi_5]
+seed = 20260920
+blocks = [
+  { name = "f01", first_index = 1, last_index = 3000 },
+  { name = "f02", first_index = 3001, last_index = 6000 },
+  { name = "f03", first_index = 6001, last_index = 9000 },
+  { name = "f04", first_index = 9001, last_index = 12000 },
+]

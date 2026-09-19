@@ -15,7 +15,7 @@ estas justificativas.
 | F2 | Simplicidade dos zeros usados (índices ≤ 100.000) | identificar a soma com multiplicidade com a tabela; D_t = ½Σ k_t | L-EF2a(a2), L-EF2b; K3a M6 e N | **conferido em 17/09/2026** (§5): simplicidade dos primeiros 1.500.000.001 zeros lida | depende de F1 ou de outra verificação publicada (não identificada nesta sessão) | sim (Math. Comp. 46, p. 667) |
 | F3 | Cota explícita de contagem, por exemplo \|S(T)\| ≤ a log T + b log log T + c (Trudgian 2014, J. Number Theory; arXiv:1208.5846), da qual sai N(T) ≤ T² para T ≥ 7·10⁴ | cauda de zeros distantes | L-EF2b R_longe; E_z2 da checagem gaussiana | **conferido em 17/09/2026** (§5): Teorema 1 lido; continua não usado (Z1 §4 basta) | arXiv recusado; ScienceDirect e UNSW recusados; ANU openresearch recusado (WebFetch) | sim (arXiv v2, p. 1) |
 | F4 | N(T) = θ(T)/π + 1 + S(T) contando todos os zeros por Im ρ, sem supor ordenadas reais (Titchmarsh, *The Theory of the Riemann Zeta-Function*, cap. 9) | identidade de Stieltjes incondicional | L-EF2a(a1); plano M3 | **conferido em 17/09/2026** (§7): Titchmarsh 1986, §9.3, p. 212 | DLMF §25.10 arquivada **não** contém a fórmula; BK SIAM p. 239 contém, "for the t_n (assumed real)" | sim (p. 212) |
-| F5 | Classe de funções-teste da fórmula explícita: Weil (1952) ou enunciado moderno (por exemplo, Carneiro–Chandee–Milinovich, arXiv:1309.1526, Lema 5) | hipóteses de h e g em L-EF1; admissibilidade de h_ε | L-EF1; L-EF2b | `bloqueado` para Weil 1952; **enunciado moderno sob RH lido** em 17/09/2026 (§5) | arXiv recusado; fonte de Weil não localizada em servidor acessível | parcial: Carneiro–Chandee–Milinovich, Lema 5 (arXiv v1, pp. 6–7), só sob RH |
+| F5 | Classe de funções-teste da fórmula explícita: Weil (1952) ou enunciado moderno (por exemplo, Carneiro–Chandee–Milinovich, arXiv:1309.1526, Lema 5) | hipóteses de h e g em L-EF1; admissibilidade de h_ε | L-EF1; L-EF2b | **Weil 1952 lido em transcrição em 19/09/2026 (§16)**; enunciado moderno sob RH lido em 17/09/2026 (§5) | cópia da transcrição enviada pelo usuário | sim, na transcrição (condições (A) e (B), p. 6; fórmula (11), pp. 8–9); conferência contra o fac-símile do original continua desejável |
 | F6 | Convenção de Frobenius e P₁(T) = det(I − TF \| H¹): Milne, *Lectures on Étale Cohomology*; Deligne, *La conjecture de Weil I* (Publ. IHÉS 43, Numdam) | normalização de C19; C11 | correspondências C11, C19 | **conferido em 17/09/2026** (§5): Milne Teor. 27.6 e mapa de Frobenius; Deligne (1.15) | jmilne.org recusado (curl, WebFetch); Numdam recusado | sim (Milne LEC v2.21, PDF p. 155; Deligne PMIHÉS 43, p. 279) |
 | F8 | Z1: Σ_ρ 1/(1 + (Im ρ)²) < ∞ | convergência dominada da soma sobre zeros na extensão para 𝒜 | [ETAPA11_3B_ADMISSIBILIDADE.md](ETAPA11_3B_ADMISSIBILIDADE.md) §2 | **resolvida por derivação** ([ETAPA11_3B_Z1_CONTAGEM.md](ETAPA11_3B_Z1_CONTAGEM.md): N(T) ≤ 31 + 5,25·T·log(T+9) via DLMF 25.2.1, 25.2.10 e Jensen) | — | derivação; pendência bibliográfica J1 |
 | F9 | Gonek (1993), *An explicit formula of Landau and its applications to the theory of the zeta-function*, Contemp. Math. 143 | rota R2 de H1 | [ETAPA11_3B_H1_FORMULACAO.md](ETAPA11_3B_H1_FORMULACAO.md) §6 | `bloqueado` (acesso) | não tentada individualmente; hosts de editoras e arXiv recusados nesta sessão | não |
@@ -202,3 +202,201 @@ foi **apagada pelo usuário** após esta avaliação; nenhum desses dados foi in
 - **B1 e B2:** continuam sem dados utilizáveis. A contagem exata de classes por traço (feita aqui para t ≤ 30, por
   ciclos de Zagier) é um ponto de partida para o lado geométrico do controle aritmético, mas exige declaração prévia,
   código registrado e separação entre elementos primitivos e potências antes de qualquer uso.
+
+## 13. Dados de autovalores de Maass do LMFDB (19/09/2026) — registro de procedência
+
+**Arquivo:** `Mass-Forms/lmfdb_maass_rigor_0919_1121.txt` (obtido pelo usuário; SHA-256 `f4ca1d21…`, 283.876 bytes; ainda
+fora do git). Cabeçalho do próprio arquivo: "Maass forms downloaded from the LMFDB on 19 September 2026", consulta
+`{'level': 1}` em https://www.lmfdb.org/ModularForm/GL2/Q/Maass/?level=1, **2.202 formas**. Campos: rótulo, nível, peso,
+caractere, parâmetro espectral R (λ = ¼ + R²), simetria, Fricke; definições no fim do arquivo.
+
+**Conferências feitas (classe B):**
+- 2.202 linhas de dados; todas com nível 1, peso 0 e caractere trivial; R crescente, sem repetição; 93 ou mais dígitos
+  por valor; R de 9,5336952614 a 184,9239502919.
+- Simetria: 1.110 com valor 0 e 1.092 com valor 1. A definição no arquivo diz "par se f(−z̄) = f(z), ímpar se
+  f(−z̄) = −f(z)", mas não diz qual código é qual. **Mapeamento conferido (19/09/2026, classe B):** 1 = ímpar e 0 = par.
+  As páginas individuais do LMFDB (espelho https://beta.lmfdb.org, lidas nesta data) dão "Symmetry: odd" para 1.0.1.1.1
+  (R = 9,53369526…, código 1 no arquivo) e 1.0.1.2.1 (R = 12,17300832…, código 1), e "Symmetry: even" para 1.0.1.3.1
+  (R = 13,77975135…, código 0). Os R das páginas coincidem com os do arquivo em todos os dígitos exibidos. SHA-256 das
+  páginas salvas (HTML, só como registro de conferência; não versionadas): `2df60072…`, `7af79c20…`, `78fae3a8…`.
+- Completude: não verificada. A contagem sobe para ~0,78 de T²/12 em T = 184, o que é compatível em ordem de grandeza
+  com um segundo termo negativo do tipo T log T na lei de Weyl de PSL(2,ℤ) (Iwaniec, notas, p. 9), mas isso **não** é
+  prova de completude.
+- **Licença de redistribuição do LMFDB (conferida em 19/09/2026, https://beta.lmfdb.org/license, SHA-256 da página
+  `21e14d60…`):** "The database underpinning the LMFDB is licensed under the Creative Commons Attribution-ShareAlike 4.0
+  International License (CC-BY-SA)"; o código do site é GPL v2. Consequência: o arquivo **pode** ser redistribuído no
+  repositório, desde que mantenha atribuição, indicação da licença CC BY-SA 4.0 e que o próprio arquivo (e derivados
+  diretos dos dados) continue sob CC BY-SA 4.0. O código do projeto continua MIT; a licença dos dados vale só para os
+  dados. Citação pedida pela página https://beta.lmfdb.org/citation (SHA-256 `4f402911…`): "The LMFDB Collaboration,
+  *The L-functions and modular forms database*, https://www.lmfdb.org, <ano>, [Online; accessed <data>]". A decisão de
+  versionar é do usuário.
+
+**Referência indicada pelo usuário, conferida no arXiv:** a citação "H. Then (2005), *Arithmetic quantum chaos for the
+modular group*, Math. Proc. Camb. Phil. Soc. 138, 183–202, arXiv:math-ph/0305047" **mistura dois trabalhos**:
+- arXiv:math-ph/0305047 é H. Then, *Maass cusp forms for large eigenvalues*, Math. Comp. 74 (2005) 363–381 (resumo: dois
+  autovalores acima de R = 40.000; sem tabela dos primeiros autovalores);
+- arXiv:math-ph/0305048 é H. Then, *Arithmetic quantum chaos of Maass waveforms*, em *Frontiers in Number Theory, Physics,
+  and Geometry I* (2006) 183–212 (resumo: espaço hiperbólico **tridimensional**).
+A "tabela canônica dos primeiros 5.000 autovalores" não foi localizada nesses resumos.
+
+**Uso:** estes dados cobrem o lado espectral do controle aritmético (item B2), com paridade. Nenhum uso antes de uma
+declaração prévia do controle, que deve fixar setor de simetria, faixa, unfolding (lei de Weyl de PSL(2,ℤ) com fonte) e
+a predição geométrica (comprimentos e multiplicidades por traço, calculados exatamente).
+
+## 14. Níveis do estádio (item B1) — conferência das indicações (19/09/2026)
+
+| Indicação | Conferido | Resultado |
+|---|---|---|
+| Setores de simetria do estádio (C₂ᵥ): par-par = Neumann nos eixos de corte e Dirichlet na fronteira externa; ímpar-ímpar = Dirichlet em todas as bordas do quarto de estádio | argumento elementar: função par em relação a um eixo tem derivada normal nula nele; ímpar anula-se nele | **correto** |
+| MPSpack (github.com/ahbarnett/mpspack) | página do repositório | código **MATLAB** (GPL v3), "legacy code; barely supported", versão 1.41 (31/05/2023); **sem tabelas de autovalores**; não há MATLAB/Octave nesta máquina |
+| Página de A. Bäcker (physik.tu-dresden.de/~baecker) | páginas "home" e "computing" | redireciona para a nova página; menciona código em Python só para mapas quânticos; **nenhuma tabela nem código de bilhares** encontrado |
+| Pacote `vergini` de A. Barnett | https://users.flatironinstitute.org/~ahb/software/ (a URL indicada, `.../software.html`, dá 404); `README.vergini` lido; `vergini.tar.gz` baixado (SHA-256 `1da91d3b…`, 61.635 bytes; fora do repositório) | **útil**: código **C++** (g++, BLAS, LAPACK, GSL, OpenMP opcional) do método de escala de Vergini–Saraceno, com o quarto de estádio embutido (`-l qust:2`, "quarter of the 2x4 stadium") e base plano-onda + evanescente de simetria ímpar-ímpar (`-s vepwoo:…`); calcula autovalores numa janela estreita de k por chamada; o README não declara licença e diz que o erro é estimado pela "tension", **sem análise de erro** para o método de escala |
+| Alt et al. 1999, PRE 60, 2851 | versão arXiv chao-dyn/9906032 já registrada (§10) | compara 955 ressonâncias experimentais com cálculo numérico; **não** traz tabela longa de níveis |
+
+**Conclusão:** não há tabela pública de níveis do estádio obtida até agora; o caminho viável é **calcular** os níveis do setor
+ímpar-ímpar com `vergini`. Pré-requisitos: bibliotecas de desenvolvimento (GSL, LAPACK/BLAS) instaladas pelo usuário, compilação
+local, piloto de convergência (base e discretização) e **declaração prévia** do controle B1 (setor, faixa de k, critério de
+completude pela lei de Weyl com os termos de área e perímetro, tolerância de precisão, predição dos comprimentos de órbitas
+periódicas) antes de produzir dados para o instrumento. O código não entra no repositório (licença não declarada); só URL e
+hash.
+
+**Compilação e teste de funcionamento (19/09/2026, executados pelo usuário; classe B, sem valor de critério):** `vergini`
+compilado em `~/vergini_build/vergini` (fora do repositório) com o Makefile original (`linux-gnu-openmp`; só avisos
+`-Wwrite-strings`). Teste com o exemplo do README em k = 100: `verg -l qust:2 -s vepwoo:1.3:10:1.5 -u -4 5 -b 10 -k 100
+-V 0.2 -o teste100`. Resultado: 11 estados em [99,8; 100,2], todos mantidos como não espúrios. O programa informa área
+1,7854, "perim" 2,5708 (só a fronteira externa, 1 + π/2; os eixos entram pela base ímpar-ímpar) e espaçamento de Weyl de
+primeira ordem 0,0352. Estimativa independente, com Dirichlet em todo o contorno do quarto (P = 4 + π/2): densidade
+≈ A·k/(2π) − P/(4π) ≈ 27,97 por unidade de k, ou seja **≈ 11,2 níveis na janela**, compatível com os 11 encontrados.
+"Tension" de 6·10⁻⁹ a 5·10⁻⁸ no centro da janela, subindo para 1,5·10⁻⁵ e 2,1·10⁻⁵ nas bordas. Se a tension for de fato
+≈ (erro em k)², como diz o README, que não traz análise de erro, os erros iriam de ~10⁻⁴ no centro (~0,3% do espaçamento)
+a ~4,5·10⁻³ nas bordas (~13% do espaçamento). Consequência para a declaração do B1: usar janelas sobrepostas e aproveitar
+só a parte central de cada uma, fixar um limite de tension e fazer um piloto de convergência (variando `-b` e o
+parâmetro η da base) antes de qualquer dado para o instrumento.
+
+## 15. Página "Weil's Explicit Formula" (researchai.dev), indicada pelo usuário (19/09/2026) — avaliação
+
+**Página:** https://www.researchai.dev/resources/Weil%27s%20Explicit%20Formula/ (HTML lido em 19/09/2026, SHA-256
+`9c051f93…`, não arquivado). É parte de um painel de pesquisa automatizada ("NGUYEN-RH-1", com seções "Conversations",
+"Lean Proofs" e "Graveyard"), sem autor humano identificado nem referência de página para os enunciados. **Não é fonte**
+pelas regras do projeto: é texto secundário com indício de geração por IA e não contém o texto de Weil. A própria página
+diz, sobre Weil 1952: "No public scan; accessible via the Collected Works". **F5 continua pendente.**
+
+**Pistas bibliográficas (dados a conferir na fonte antes de qualquer uso):**
+- K. Barner (1981), *On A. Weil's explicit formula*, J. reine angew. Math. 323, 139–152, que a página diz trazer as
+  condições mínimas de regularidade da função-teste. EuDML (https://eudml.org/doc/152356) respondeu 403 nesta sessão.
+  Se lido, pode servir a F5 como enunciado **incondicional** moderno; o que temos hoje (Carneiro–Chandee–Milinovich,
+  Lema 5) é só sob RH;
+- A. P. Guinand (1948), *A summation formula in the theory of prime numbers*, Proc. London Math. Soc. (2) 50, 107–119,
+  doi:10.1112/plms/s2-50.2.107;
+- A. Weil (1972), *Sur les formules explicites de la théorie des nombres*, Izv. Akad. Nauk SSSR Ser. Mat. 36, 3–18;
+- Iwaniec & Kowalski, *Analytic Number Theory* (AMS, 2004), cap. 5, que a página diz ser o "Theorem 5.12".
+
+**Observação:** a forma da fórmula na §1 da página, com f̂(ξ) = ∫f e^{iξx}, polos f̂(±1/2i) e termo arquimediano
+Re ψ(¼ + it/2) − log π, é compatível na estrutura com o Teorema 6 de Connes já conferido. A página não é usada para
+nada.
+
+## 16. Weil (1952), *Sur les "formules explicites"…*: transcrição conferida (19/09/2026) — F5
+
+**Arquivo:** `archive/fontes_etapa11/transc-Weil-1952.pdf` (enviado pelo usuário; SHA-256 `1edd4a83…`, 301.266 bytes,
+11 páginas; não versionado). É uma **transcrição em LaTeX** feita por Denise Vella-Chemla (dezembro de 2020), **não** um
+fac-símile. Não marca as páginas originais (Comm. Sém. Math. Univ. Lund, volume dedicado a M. Riesz, 1952, pp. 252–265),
+então as referências abaixo usam a paginação da transcrição. Há erros de digitação visíveis ("diserète", "δx" no lugar
+de δ_χ, "[γ| < T"), que não mudam o conteúdo matemático lido. **Classe B de fonte:** leitura do texto de Weil, com a
+ressalva da transcrição.
+
+**O que o texto diz (lido):**
+- p. 4: Φ(s) = ∫ F(x)e^{(s−½)x} dx. As hipóteses preliminares são F(x)e^{(½+a′)|x|} ∈ L¹ e Φ(s) = o((log|t|)⁻²) na faixa
+  −a ≤ σ ≤ 1 + a.
+- p. 6, hipóteses definitivas:
+  - **(A)** F contínua e continuamente diferenciável, exceto num número finito de pontos com descontinuidade de primeira
+    espécie de F e F′, onde F vale a média dos limites laterais;
+  - **(B)** existe b > 0 com F(x) e F′(x) = O(e^{−(½+b)|x|}).
+- pp. 8–9, fórmula (11), "le résultat définitif": sob (A) e (B), a soma Σ Φ(ω) sobre os zeros ω = β + iγ de L(s) com
+  0 ≤ β ≤ 1 e |γ| < T tem limite quando T → ∞, igual a:
+  - δ_χ∫F(x)(e^{x/2} + e^{−x/2})dx;
+  - mais F(0) log A;
+  - menos a soma sobre p e n de (log Np/Np^{n/2})[χ(p)ⁿF(log Npⁿ) + χ(p)⁻ⁿF(log Np⁻ⁿ)];
+  - menos Σ_λ PF∫F(x)e^{iφ_λx}K_{η_λ,f_λ}(x)dx.
+- **O enunciado não supõe RH.** A soma é simétrica em |γ| < T, e os zeros são contados sem supor β = ½.
+- p. 9, lema: RH para L(s) equivale à positividade de (11) para todo F = F₀ ∗ F₀(−x), com F₀ satisfazendo (A) e (B).
+
+**Consequência para F5 e L-EF1 (classe B, comparação feita nesta data):** com Φ(½ + ir) = ∫F(x)e^{irx}dx = h(r),
+a função F de Weil é a g do projeto.
+- **Gaussianas da checagem de L-EF1** (g = soma de gaussianas deslocadas): g e g′ decaem mais rápido que qualquer
+  exponencial, e g é C^∞. Portanto **(A) e (B) valem** e o teorema de Weil se aplica diretamente.
+- **h_ε = k_t ∗ φ_ε com ε > 0 (L-EF2b):** g_{h_ε}(u) = g_{k_t}(u)e^{−ε²u²/2}, com g_{k_t} inteira e derivadas limitadas
+  (ETAPA11_3B_ADMISSIBILIDADE, tabela da §6). Então g e g′ = O(e^{−cu²}), **(A) e (B) valem** e o teorema de Weil se
+  aplica diretamente.
+- **Classe 𝒜 do projeto:** (A1) dá só integrabilidade de e^{|x|/2}g^{(j)}, e não a cota pontual de g′ exigida em (B).
+  Portanto 𝒜 **não** está contida, em geral, na classe (A)+(B) de Weil. Isso não afeta o projeto: a admissibilidade de
+  𝒜 foi derivada a partir do Teorema 6 de Connes (conferido), e as funções efetivamente usadas estão nas duas classes.
+- **Janela de Hann sem suavização:** continua fora, como já registrado.
+- **Não feito:** a identificação termo a termo das constantes de (11), com k = ℚ e χ = χ₀ (em que A = (2π)⁻¹,
+  K_{1,0}(x) = e^{x/2}/|eˣ − e⁻ˣ| e δ_χ = 1), com o termo arquimediano de Connes usado em L-EF1. Se for necessária, é
+  uma derivação a registrar à parte; F5 pede a **classe** de funções-teste, e essa ficou conferida.
+
+**Situação de F5:** conferida na transcrição. Ler o fac-símile do original (ou das *Œuvres Scientifiques* II) continua
+**desejável** para eliminar a ressalva da transcrição, mas deixa de bloquear qualquer item.
+
+## 17. Contribuição "bouncing ball" (Sieber et al. 1993) — pistas conferidas (19/09/2026)
+
+**Original:** M. Sieber, U. Smilansky, S. C. Creagh & R. G. Littlejohn, *Non-generic spectral statistics in the quantized
+stadium billiard*, J. Phys. A 26 (1993) 6217–6230, doi:10.1088/0305-4470/26/22/022. Atrás de paywall (IOP); **não lido**.
+Continua desejável por acesso institucional.
+
+**Resumo de pistas trazido pelo usuário (gerado por outro assistente), conferido na fonte:**
+- "arXiv:0804.1551 (Dietz et al.) segue Sieber et al. para a contagem bouncing ball no estádio 2D": **incorreto.**
+  - O artigo (B. Dietz, B. Moessner, T. Papenbrock, U. Reif & A. Richter, *Bouncing ball orbits and symmetry breaking
+    effects in a three-dimensional chaotic billiard*, PRE 77, 046221 (2008); PDF SHA-256 `1be2d025…`, não arquivado)
+    diz "We follow Ref. [15]", e a ref. [15] é **H. Alt et al., Phys. Rev. E 54, 2303 (1996)**, não Sieber et al.
+  - A fórmula, eq. (4), é para o bilhar **tridimensional** (dois quartos de cilindro), não para o estádio 2D.
+  - Não usado.
+- "*On the number of bouncing ball modes in billiards*, página em people.maths.bris.ac.uk": **não localizado.** A busca no
+  arXiv por título achou só trabalhos relacionados, entre eles S. Löck, A. Bäcker & R. Ketzmerick, *Coupling of
+  bouncing-ball modes to the chaotic sea and their counting function*, PRE 85, 016210 (2012), arXiv:1110.6307v2 (PDF
+  SHA-256 `ddcc7e06…`, não arquivado). Esse artigo trata da contagem N_bb(E) ∼ E^δ de **modos**, não da amplitude da
+  linha no traço; fica como referência futura.
+
+**Fonte útil encontrada nesta conferência (classe A secundária, lida):** G. Tanner, *How chaotic is the stadium
+billiard? A semiclassical analysis*, arXiv:chao-dyn/9610013v1 (1996); arquivo
+`tanner_1996_arXiv_chao-dyn-9610013v1.pdf`, SHA-256 `f7b3db4d…`, no manifesto. Na §2 (PDF pp. 3–4), "following Ref.
+[22, 23]", sendo [22] Sieber et al. 1993 e [23] Alonso & Gaspard, J. Phys. A 27, 1599 (1994), para o **quarto de
+estádio**, com a = comprimento do retângulo e b = raio:
+- eq. (3): traço da função de Green da parte bouncing ball, com Σ H₀⁽¹⁾(2bkn);
+- eq. (4)–(5): traço integrado Ig_bb(k) = B_bb(k²) − iπN̄_bb(k) − i(a/2)√(k/πb) Σ_{n≥1} n^{−3/2} e^{2ikbn − 3iπ/4}, na forma
+  assintótica das funções de Hankel;
+- eq. (8): N̄_bb(k) = ab k²/4π − 2a k/4π.
+
+**Consequências para `ctrl-estadio-v1` (classe B, comparação feita nesta data):**
+1. Com N = −(1/π) Im Ig, a parte oscilante é N_osc^bb(k) = (a/2π)√(k/πb) Σ n^{−3/2} cos(2kbn − 3π/4). Com b = 1, o
+   prefator coincide com o da eq. (53) de Bäcker, a√k/(2π^{3/2}), e a fase é **2kbn = 2kn**, com o raio b e não o
+   comprimento a. Isso confirma a leitura da declaração (P1): o "2an√E" extraído da eq. (53) de Bäcker não vale em geral
+   e coincide com a forma correta só porque a = b = 1 no nosso bilhar.
+2. As condições de contorno não aparecem escritas no texto de Tanner. O termo −2a k/4π da eq. (8) corresponde a Dirichlet
+   nas duas paredes paralelas do retângulo (y = 0 e y = b), que é o caso do setor ímpar-ímpar. Isso é **inferência**, a
+   registrar na derivação D1-E.
+3. A fórmula é **assintótica** e vale só para a família (Tanner, §2: "The bouncing ball part does, however, not
+   contribute to individual eigenvalues"; §§3–4 tratam das órbitas instáveis próximas da família, que Gutzwiller não
+   descreve). Isso sustenta tratar a tolerância de 10% de E-C2bb como convenção, não como cota.
+
+## 18. Sexto lote enviado pelo usuário (19/09/2026, 10:20–10:40) — conferência
+
+Cinco PDFs em `archive/fontes_etapa11/`. Os quatro úteis estão no manifesto; os arquivos não entram no git.
+
+| Arquivo | Obra | Conferido | Uso |
+|---|---|---|---|
+| `CM_1986__58_2_209_0.pdf` (`98150bde…`) | J.-F. Mestre, *Formules explicites et minorations de conducteurs de variétés algébriques*, Compositio Math. 58 (1986) 209–232 (Numdam) | §I.2, pp. 212–213 (lidas na imagem da página, porque as fórmulas não saem no texto extraído) | **útil (F5).** Enunciado **incondicional** da fórmula explícita para funções L com equação funcional, incluindo as de Dirichlet. Hipóteses: (i) F(x)e^{(½+c+ε)x} somável; (ii) F(x)e^{(½+c+ε)x} de variação limitada, com valor médio nos saltos; (iii) (F(x) − F(0))/x de variação limitada. Σ_ρ Φ(ρ) entendido como lim_{T→∞} Σ_{\|Im ρ\|<T}. "La démonstration est calquée sur celle de [10]" |
+| `RLIN_2000_9_11_3_183_0.pdf` (`20bd544f…`) | E. Bombieri, *Remarks on Weil's quadratic functional in the theory of prime numbers, I*, Rend. Mat. Acc. Lincei (9) 11 (2000) 183–233 (BDIM) | §2, p. 186 | **útil (constantes).** Fórmula explícita de Guinand–Weil para ζ, para f ∈ C_c^∞((0, ∞)) em forma de Mellin, com constantes explícitas (log 4π + γ) e a forma alternativa com Γ′/Γ e log π. A classe é estreita (suporte compacto), mas serve para conferir constantes do termo arquimediano, se essa derivação for feita |
+| `1112.5665v1.pdf` (`58162089…`) | A. Barnett & A. Hassell, *Fast computation of high frequency Dirichlet eigenmodes via the spectral flow of the interior Neumann-to-Dirichlet map*, arXiv:1112.5665v1 | introdução, p. 3; §7, pp. 31–32 | **útil (B1).** Sobre o método de escala de Vergini–Saraceno, que é o do `vergini`: o erro absoluto em k é empiricamente O(ε³), com ε a distância ao centro da janela ("not the O(ε⁴) claimed in [61]"), e "the error analysis of the scaling method … is very primitive, and certainly no rigorous results exist" (p. 3). Com base plana, o método parece exigir domínio convexo (p. 31); o quarto de estádio é convexo |
+| `a71915.pdf` (`33213269…`) | A. Bäcker, R. Schubert & P. Stifter, *On the number of bouncing ball modes in billiards*, J. Phys. A 30 (1997) 6783–6795 | resumo; p. 6789 | **contexto.** Conta os **modos** bouncing ball, N_bb(E) ∼ αE^δ com δ = 3/4 no estádio (p. 6789, atribuído a [7]). Não dá a amplitude da linha no traço; **não** é usado na D1-E |
+| `0804.1551v1.pdf` (`1be2d025…`) | Dietz et al. 2008 (bilhar 3D) | já avaliado na §17 | **não ajuda** (3D; ref. [15] = Alt et al. 1996). Fora do manifesto; pode ser apagado |
+
+**Consequências:**
+1. **F5 e L-EF1:** Mestre (1986) dá um segundo enunciado incondicional publicado, com hipóteses de variação limitada,
+   mais fracas que (A) e (B) de Weil. As gaussianas e h_ε (ε > 0) satisfazem (i)–(iii) com c = 0: g e g′ decaem mais
+   rápido que qualquer exponencial, e (g(x) − g(0))/x é suave com derivada integrável. A classe 𝒜 do projeto cumpre (i)
+   e (iii), mas (ii) exigiria e^{(½+ε)|x|}g′ ∈ L¹, e (A1) dá só e^{|x|/2}g′ ∈ L¹. É a mesma conclusão da §16: as funções
+   usadas estão cobertas, e 𝒜 continua justificada pelo Teorema 6 de Connes.
+2. **`ctrl-estadio-v1`:** Barnett & Hassell dão apoio de fonte ao desenho da declaração (§4): aproveitar só o miolo
+   |k − K0| ≤ 0,1 de janelas de meia-largura 0,2 reduz o erro empírico em cerca de (0,2/0,1)³ = 8 vezes em relação às bordas.
+   O limite de tension e o piloto E2 continuam sendo convenções empíricas, porque não há cota rigorosa.

@@ -8,7 +8,8 @@ windowed transform to the von Mangoldt prime-power coefficients through the Guin
 **conditionally on RH** and on the table-fidelity hypothesis **H-tab** (declared accuracy 3·10⁻⁹ of the zero table),
 within a declared computational trust base. The explicit formula is taken from Connes' Theorem 6 (read); Jensen's
 formula is now checked in Titchmarsh, *The Theory of Functions* (1939), §3.61 (J1 resolved, 17/09/2026); Weil's original
-1952 statement (F5) is still a pending bibliographic check, not an additional hypothesis. The numerical-fidelity part (N) is
+1952 statement (F5) was checked on 19/09/2026 in a LaTeX transcription (D. Vella-Chemla, 2020); its conditions (A)–(B)
+cover the test functions actually used; a check against a facsimile of the original remains desirable. The numerical-fidelity part (N) is
 unconditional. The cut was chosen after an exploratory evaluation. This is **not** a proof of RH; the full C2 criterion,
 S1/S3a/S3c and H1 remain open; the independent audit has **not** yet been carried out. Documentation is in Portuguese.
 
