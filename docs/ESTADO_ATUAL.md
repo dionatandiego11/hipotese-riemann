@@ -1,0 +1,122 @@
+# Estado atual do projeto — ponto de retomada (19/09/2026)
+
+Documento de entrada para quem retoma o trabalho (pessoa ou agente). Resume onde o projeto está, o que está congelado,
+quais regras seguir e qual é a próxima tarefa. Os detalhes ficam nos documentos citados; em caso de conflito, eles
+prevalecem sobre este resumo.
+
+## 1. O que é o projeto (em uma linha)
+
+Espectroscopia inversa dos zeros da função zeta: medir, com protocolos pré-registrados e controles, que informação
+aritmética (linhas em log p com coeficientes −Λ(n)/(π√n)) é recuperável de listas finitas de zeros, e avaliar classes de
+operadores candidatos (programa de Hilbert–Pólya). **O projeto não tenta provar RH e não afirma nada a favor dela.**
+
+## 2. Regras de trabalho (obrigatórias)
+
+- **Declaração prévia antes de código ou cálculo:** todo experimento, controle ou derivação que decide algo é escrito
+  antes, com SHA-256 registrado em arquivo `.sha256` ao lado (modelo: `results/etapa11_r5/DECLARACAO_*.md`,
+  `results/etapa11_6_controles/`). Protocolos não mudam depois de ver dados; mudanças só por adendo com causa.
+- **Resultados negativos e falhas são registrados**, nunca apagados (execuções invalidadas ficam preservadas).
+- **Rótulos:** A (matemática conhecida, com hipóteses), B (reprodução numérica), C (achado experimental cuja novidade
+  ainda não foi investigada), D (conjectura). Separar sempre o que é condicional (RH, H-tab, conjecturas) do que não é.
+- **Sem afirmação de novidade** sem busca bibliográfica (a feita até agora é preliminar:
+  [BUSCA_BIBLIOGRAFICA_MANUSCRITO.md](BUSCA_BIBLIOGRAFICA_MANUSCRITO.md)).
+- **Fontes:** só vale o que foi lido na fonte, com página. Resumo de busca ou texto gerado por IA não é fonte.
+  Cada fonte baixada vai para `archive/fontes_etapa11/` e é registrada em `archive/fontes_etapa11/MANIFESTO.csv`
+  (URL, versão, data, páginas, SHA-256). Os PDFs/HTML **não** entram no git (`.gitignore`); só o manifesto.
+- **Código e artefatos congelados de m3/m4 e do certificado não são editados** (locks em `configs/*.lock.json`; manifesto
+  de 59 hashes em `results/etapa11_r5/MANIFESTO_CERT.csv`). Código novo vai em caminho novo.
+- **Execuções longas são rodadas pelo usuário:** o agente entrega os comandos (sempre com `.venv/bin/python3`, a partir da
+  raiz do repositório) e o usuário decide quando rodar.
+- **Formato de arquivos:** o repositório usa `* -text` (`.gitattributes`); vários CSVs usam **CRLF** (por exemplo
+  `docs/etapa11_*.csv`, `archive/fontes_etapa11/MANIFESTO.csv`). Editar preservando os bytes de fim de linha.
+- **Documentação em português.** Commits só quando o usuário pedir; não commitar direto na `main` (usar branch; o usuário
+  integra e faz o push).
+- Instruções de agente adicionais podem existir num `AGENTS.md` local (fora do repositório público).
+
+## 3. Onde cada coisa está
+
+| Assunto | Documento |
+|---|---|
+| Plano geral (etapas 0–13, marcos M1–M5) | [../PLANO_IMPLEMENTACAO.md](../PLANO_IMPLEMENTACAO.md) |
+| Tabela de estado por etapa e log | [ANDAMENTO.md](ANDAMENTO.md) |
+| Protocolos pré-registrados m3/m4 | [PROTOCOLO.md](PROTOCOLO.md); configs em `configs/` |
+| Resultados M1–M4 consolidados | [RELATORIO_CONSOLIDADO.md](RELATORIO_CONSOLIDADO.md) |
+| Plano da Etapa 11 (tipos M, N, T; códigos S/V/C/P/L/PC) | [ETAPA11_PLANO.md](ETAPA11_PLANO.md) |
+| Matriz de operadores (classes K1–K12) | [ETAPA11_MATRIZ_OPERADORES.md](ETAPA11_MATRIZ_OPERADORES.md), `etapa11_matriz_operadores.csv`, `etapa11_evidencias.csv` |
+| Fontes pendentes e lidas | [ETAPA11_PENDENCIAS_FONTES.md](ETAPA11_PENDENCIAS_FONTES.md) (§§5–12 registram as rodadas de 17/09) |
+| Certificado condicional (11.3b) | [ETAPA11_3B_H1_CAUDA_PROJETADA.md](ETAPA11_3B_H1_CAUDA_PROJETADA.md) §§II.17–II.24; `results/etapa11_r5/`; auditoria: [PROTOCOLO_AUDITORIA_CERTIFICADO.md](PROTOCOLO_AUDITORIA_CERTIFICADO.md) |
+| Encerramento da 11.3b | [ETAPA11_3B_ENCERRAMENTO.md](ETAPA11_3B_ENCERRAMENTO.md) |
+| Controles da 11.6 | `results/etapa11_6_controles/` |
+| Frente Collatz (não iniciada) | [PLANO_COLLATZ.md](PLANO_COLLATZ.md) |
+
+## 4. Estado por etapa
+
+| Etapa | Estado |
+|---|---|
+| 0–9 (M1–M3) | validadas |
+| 10 (M4, zeros 10.001–100.000) | validada (m4-v1, m4-v2, m4-v3; R2 de m4-v3 acionada e investigada). Restos: implementação independente completa, densidade θ na cadeia completa, inversão harmônica |
+| 11.1–11.2 | matriz de operadores madura: **27 entradas sustentam decisão**; resta **1 pendência de conferência (K7 M4)** |
+| 11.3b | **encerrada em 17/09/2026** com itens abertos registrados (H1, S1, S3a, S3c, C2 completo, H-tab, F5, auditoria) |
+| 11.4 | entrega documental preliminar (correspondências; C19 conferida) |
+| 11.5 | **não iniciada** (protocolo dos testes discriminantes). Quase todas as classes caíram por derivação; pode restar pouco para testar numericamente |
+| 11.6 | **em execução**: K12 declarado (sem cálculo novo); controle Dirichlet declarado e com derivação D1 escrita; controles dinâmico (bilhar) e aritmético (triângulo modular) pendentes |
+| 12, 13 | pendentes |
+| Collatz CL0–CL5 | pendente |
+
+**Resultados centrais já registrados (não refazer):**
+- M3/M4: recuperação de linhas em log p sem catálogo (C1) e concordância de coeficientes (C2, máximo entre elegíveis
+  ≤ 2,6·10⁻⁹) nos 30 blocos (classe B).
+- Estatística local (C3, classe B), com Holm entre blocos: CDF de espaçamentos e K_c **rejeitam** tanto Poisson quanto o
+  **GUE finito usado como controle** (3.000 níveis centrais de GUE tridiagonal, unfolding pelo semicírculo) em todos os
+  blocos; R₂ é rejeitado em só 1 dos 30 blocos (b02, m4-v1); Var(s) fica abaixo do envelope desse GUE e cresce lentamente com a
+  altura. Isso é uma restrição ao **procedimento de comparação** e **não** implica incompatibilidade com a
+  universalidade GUE assintótica (plano da Etapa 11, §2.2, N4; [RELATORIO_CONSOLIDADO.md](RELATORIO_CONSOLIDADO.md) §3.3).
+- Certificado (11.3b), corte (8, 2), 461 linhas elegíveis: **(N)** fidelidade numérica do valor registrado,
+  incondicional na base de confiança; **(T)** |r̂ − 1| ≤ 10⁻⁶ **sob RH e H-tab**. Sem auditoria independente.
+  Publicado no GitHub e no Zenodo (doi:10.5281/zenodo.22811040).
+- Matriz: K1, K5a, K5b, K7, K8, K9 com incompatibilidades demonstradas ou derivadas (escopo registrado em cada
+  evidência); K3a e K4 condicionais (C); K12 é o controle de ajuste.
+
+## 5. Próxima tarefa (em andamento)
+
+**Controle `ctrl-dirichlet-v1`** (11.6), com resposta conhecida: aplicar o instrumento m4-v3 a zeros de L(s, χ₋₄) e
+L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal trocado onde χ(n) = −1, ausentes onde χ(n) = 0).
+
+- Declaração: `results/etapa11_6_controles/DECLARACAO_DIRICHLET.md` (SHA-256 `e6cb8ab8…`).
+- Derivação D1 (feita, confere P1 e P2, sem adendo): `results/etapa11_6_controles/D1_DERIVACAO_DIRICHLET.md`
+  (SHA-256 `f07972a4…`).
+- **Passo seguinte (3):** código novo e testes, sem tocar o código congelado:
+  1. cálculo dos zeros de L(s, χ) por troca de sinal de Z_χ(t) = e^{iθ_χ(t)}L(½ + it, χ), com
+     θ_χ(t) = arg Γ(¼ + κ/2 + it/2) + (t/2) log(q/π), L via zeta de Hurwitz em `mpmath` (≥ 30 dígitos), passo ≤ 1/8 do
+     espaçamento médio, refinamento até 10⁻¹⁰; saída com 9 casas e manifesto;
+  2. verificações V1–V4 da declaração (completude via N(T, χ) = θ_χ(T)/π + S − S(0) com tolerância 3; estabilidade com
+     passo reduzido; segunda avaliação com `mpmath.dirichlet` e 60 dígitos; Z_χ real);
+  3. caminho novo no instrumento: densidade d̄_χ(E) = (1/2π) log(qE/2π), coeficientes do catálogo multiplicados por χ(n),
+     linhas com χ(n) = 0 marcadas como ausentes previstas; mesmos parâmetros de `configs/m4_v3.toml` salvo os listados na
+     declaração (sementes 20260919 e 20260920, `declared_table_error` = 10⁻⁹);
+  4. testes sem rede, incluindo um sintético com linhas de sinais conhecidos.
+- **Depois:** piloto de 500 zeros por caractere (usuário roda; registrar custo) → 12.000 zeros por caractere → execução
+  nos 8 blocos (e01–e04, f01–f04) → relatório com os critérios D-C1, D-C1z, D-C2, D-C2s, D-C2z.
+
+## 6. Outras pendências
+
+- **Decisão possível:** reclassificar K7 M4 como L (a fórmula de traço de bilhares é semiclássica; não há igualdade exata
+  a comparar). Aguarda o usuário.
+- **Controle aritmético (triângulo modular):** lado geométrico calculável exatamente (contagem de classes de SL(2,ℤ) por
+  traço; a verificação de 17/09 mostrou que números de classe estreitos h⁺(t² − 4) **não** são a multiplicidade de
+  geodésicas: é preciso somar ordens de condutor f com f² ∣ t² − 4 e separar potências). Falta tabela publicada de
+  autovalores de Maass **com paridade**.
+- **Controle dinâmico (bilhar de estádio):** falta tabela longa de níveis com setor de simetria; dados gerados por outro
+  assistente foram avaliados e descartados (precisão insuficiente; §12 das pendências de fontes).
+- **Externas:** auditoria independente do certificado; texto original de Weil (1952); procedência/licença completas de
+  `zeros1`.
+- **Limpeza:** `docs/PLANO_COLLATZ.md` e `docs/RELATORIO_CONSOLIDADO.md` ainda mencionam `AGENTS.md`/`prompt.txt`, que
+  não estão no repositório público.
+
+## 7. Ambiente e estado do git
+
+- Python do projeto: `.venv/bin/python3` (mpmath 1.4.1, numpy 2.5.3). Não há TeX no sistema.
+- `main` sincronizada com `origin/main` em `e78f96a` (19/09/2026). Mudanças posteriores a esse commit, se houver, estão
+  listadas em `git status`.
+- Fora do git por decisão: `paper/` (rascunho de manuscrito, **não será publicado**), `hyperref/`,
+  `archive/fontes_etapa11/odlyzko_zeros6_primeiros_2001052.txt` (36 MB), PDFs/HTML de fontes.
