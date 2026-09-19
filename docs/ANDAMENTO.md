@@ -382,3 +382,13 @@ Registro anterior (14/09/2026):
    - inversão harmônica;
    - corrigir S4 numa versão futura do plano: centrar em (B+1−u)/(B+1), incluir a variabilidade do limiar estimado e calibrar a regra conjunta sem pressupor independência entre blocos sem justificativa.
 3. Confirmações adicionais exigiriam dados novos (tabelas de maior altura); os 100.000 zeros já foram consumidos.
+
+
+### 19/09/2026 — caderno de hipóteses e revisão de escopo
+
+- **Estado:** entrega documental `validado`; experimentos propostos `não executado`.
+- Criada a pasta [hipoteses](../hipoteses/README.md): balanço do projeto, seis perguntas candidatas, bibliografia parcial, sequência de trabalho e revisão do estudo de poder recebido nesta sessão.
+- Prioridades propostas: previsão transferível de erros espectrais (P-R1) e simetrias/filtros aritméticos em Collatz (P-C1, ligado a CL0–CL5). Não há achado novo reivindicado nem protocolo experimental congelado nessa pasta.
+- O registro espectral v2 permanece vigente. Registradas ressalvas sobre sinal/ruído versus poder, dependência estatística e o expoente bibliográfico de H-002; nenhum protocolo existente foi alterado.
+- Executado: leitura documental, busca web dirigida, aquisição de fontes, conferência de hashes e links locais. Sem novos zeros, simulações ou commits; código científico congelado preservado.
+- Próximo: resolver a interpretação do poder antes da produção do estádio, concluir a triagem bibliográfica de P-R1 e preparar CL0. Ver [plano](../hipoteses/PLANO.md).

@@ -2,7 +2,7 @@
 
 **Criado em 19/09/2026.** Documento vivo: índice e situação de cada hipótese. As regras estão fixadas em
 [results/registro_hipoteses/PROTOCOLO_REGISTRO_v1.md](../results/registro_hipoteses/PROTOCOLO_REGISTRO_v1.md)
-(SHA-256 `2f6404b7…`) e prevalecem sobre este resumo. Dados em [registro_hipoteses.csv](registro_hipoteses.csv), com
+(v1, SHA-256 `2f6404b7…`) e [PROTOCOLO_REGISTRO_v2.md](../results/registro_hipoteses/PROTOCOLO_REGISTRO_v2.md) (v2, que acrescenta a análise de poder prévia obrigatória) e prevalecem sobre este resumo. Dados em [registro_hipoteses.csv](registro_hipoteses.csv), com
 uma linha por hipótese.
 
 **Resumo das regras:**
@@ -21,8 +21,8 @@ uma linha por hipótese.
 | ID | Hipótese | Fonte | Rótulo | Estado |
 |---|---|---|---|---|
 | H-001 | Correções de altura finita na estatística local dos zeros: CUE de tamanho N_eff | Bogomolny, Bohigas, Leboeuf & Monastra 2006 | D (argumento heurístico) | triada |
-| H-002 | Número de zeros necessário para resolver Λ(μ): ordem μ log²μ | Balanzario, Cárdenas Romero & Chacón Serna 2023 | A (suficiência, sob RH) e D (necessidade) | triada |
-| H-003 | Classes de operadores que sobraram da matriz (K3a, K4, condicionais) | matriz da Etapa 11 | C | proposta |
+| H-002 | Número de zeros suficiente para decidir se μ é primo: ordem μ log^{3/2} μ (sob RH) | Balanzario, Cárdenas Romero & Chacón Serna 2023 | A (suficiência, sob RH) e D (necessidade) | triada |
+| H-003 | Classes de operadores que sobraram da matriz (K3a, K4, condicionais) | matriz da Etapa 11 | — | proposta |
 | F-001 | Órbitas de Collatz quase limitadas | Tao 2019/2022 | A | encerrada (fora do domínio) |
 | F-002 | Zetas dinâmicas e operadores de transferência | Ruelle | — | encerrada (fora do domínio) |
 | F-003 | Mapa de conjugação 3x+1 | Bernstein & Lagarias | — | proposta (fonte não obtida) |
@@ -53,13 +53,14 @@ uma linha por hipótese.
 
 - **Fonte (lida em parte):** arXiv:2311.04347v1 (`hipoteses_20260919/landau_suave.pdf`, `6b5bbd00…`).
   - Resumo, p. 1: sob RH, "to determine whether a natural number μ is a prime number, it is sufficient to know the
-    location of a number of non trivial zeros … of order μ log² μ", e o argumento de Heisenberg sustenta "the
+    location of a number of non trivial zeros … of order μ log^{3/2} μ", e o argumento de Heisenberg sustenta "the
     conjecture that this number of zeros cannot be essentially diminished".
   - Teorema 2, p. 3; Corolário 1, p. 5; discussão, p. 6.
 - **No nosso instrumento:** é uma **lei de resolução**. Para separar a linha em log μ das vizinhas log(μ ± 1), a janela
   precisa de largura L ≳ c·μ na variável E. Com densidade (1/2π)log(E/2π), isso dá da ordem de μ log μ zeros; a forma
   exata depende da janela e da altura. O teste mede o número mínimo de zeros com que o instrumento separa Λ(μ), para
-  μ ≤ 148 (t ≤ 5), e compara com μ log²μ.
+  μ ≤ 148 (t ≤ 5). O expoente da fonte vale para a tarefa e a suavização do artigo e **não** se transporta
+  automaticamente para a janela de Hann (ver P-R4 em `hipoteses/CANDIDATAS.md`).
 - **Ressalvas:** a suficiência é teorema sob RH, e a necessidade é conjectura. Para o nosso instrumento, a resolução
   (FWHM = 4π/L para Hann) já é conhecida. O resultado seria sobretudo uma **caracterização do instrumento**, útil e
   modesta.
@@ -83,3 +84,11 @@ pode ser testado numericamente. Fica `proposta` até a triagem da 11.5.
 
 A discutir com o usuário. Critério de entrada: a hipótese precisa prever algo **mensurável pelo instrumento** e ainda
 **não** ter sido testada da mesma forma na literatura; se já foi, entra como reprodução (B).
+
+## Revisões
+
+- **19/09/2026 (revisão do usuário, `hipoteses/REVISAO_PODER_E_REGISTRO.md` §4, conferida pelo agente na imagem da p. 1
+  da fonte):** H-002 dizia "μ log² μ"; o resumo de Balanzario et al. diz **μ log^{3/2} μ**. O erro veio da extração de
+  texto do PDF, que perdeu a fração do expoente. Corrigido na tabela, na triagem e no CSV. H-003 estava com rótulo "C";
+  uma classe ainda a triar não é achado, e o rótulo passou a "—". O teste de BH e a dependência entre valores-p (§5 da
+  revisão) serão tratados por adendo ao protocolo antes do primeiro teste confirmatório.

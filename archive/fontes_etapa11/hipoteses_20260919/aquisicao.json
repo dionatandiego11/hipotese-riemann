@@ -50,5 +50,21 @@
     "bytes": 1774306,
     "baixado_em": "2026-09-19T14:36:13.500072+00:00",
     "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/monks_yazinski.pdf",
+    "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+    "sha256": "3fcf49c2e0a24a65c6ed11cd25d34964e4949e26e6a381181c5e6d6ae31ed7e1",
+    "bytes": 172339,
+    "baixado_em": "2026-09-19T18:55:03.608970+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/benjamini_yekutieli.pdf",
+    "url": "https://www.math.tau.ac.il/~ybenja/depApr27.pdf",
+    "sha256": "2000a025b9c14dac8a697dda240caf0811066fad36ea51f1dbc1192891947d1b",
+    "bytes": 273851,
+    "baixado_em": "2026-09-19T18:55:11.246939+00:00",
+    "status": "obtido"
   }
 ]

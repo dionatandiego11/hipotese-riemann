@@ -141,6 +141,10 @@ L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal tro
   - derivação `D1E_DERIVACAO_ESTADIO.md` (`c0c28ed9…`): linha "bouncing ball" exata e C̄_bb operacional;
   - catálogo de órbitas `O1_CATALOGO_ORBITAS.md` (`0f7cb16e…`): 6 comprimentos em t ≤ 5;
   - `vergini` compilado pelo usuário e com teste de funcionamento em k = 100 aprovado.
+  - **análise de poder** (`ANALISE_PODER_11_6.md`, `21d2edae…`; método validado em ζ d01 e no Maass): a linha "bouncing
+    ball" fica abaixo do limiar nos blocos g01–g04 (z 1,55–2,17 contra ~2,65). **`ADENDO_ESTADIO_1.md`** (`a1496aca…`)
+    move E-C1, E-C1o e E-C4 para um bloco único G (~12.000 níveis, z ≈ 3,8 contra limiar ≈ 3,0) e corrige a calibração
+    sintética. O Dirichlet não precisa de mudança (13–16 linhas elegíveis por bloco);
   - **Próximo:** código do instrumento em k e comandos de convergência e produção para o usuário.
 - **Externas:** auditoria independente do certificado; procedência/licença completas de `zeros1`. Weil (1952), F5, foi
   conferido em 19/09 numa transcrição LaTeX (Vella-Chemla, 2020): as condições (A) e (B) cobrem as gaussianas e h_ε
