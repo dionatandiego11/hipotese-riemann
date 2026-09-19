@@ -41,6 +41,9 @@ dependem dos bytes exatos).
   obtida de <https://www-users.cse.umn.edu/~odlyzko/zeta_tables/zeros1> e redistribuída aqui só para reprodução, com
   atribuição (`data/raw/zeros1`, SHA-256 `3436c916…`; manifestos em `data/raw/`). A página de origem não declara licença
   de redistribuição; esse ponto está registrado como pendência.
+- **Autovalores de formas de Maass de nível 1** (controle `ctrl-maass-v1`): arquivo do **LMFDB**
+  (https://www.lmfdb.org), baixado em 19/09/2026, em `data/raw/lmfdb/` (SHA-256 `f4ca1d21…`), redistribuído sob
+  **CC BY-SA 4.0** com atribuição (ver `data/raw/lmfdb/LEIA-ME.md`). Esses dados continuam sob CC BY-SA 4.0.
 - **Fontes bibliográficas consultadas** (PDFs do arXiv, SIAM Review, páginas da DLMF): **não** são redistribuídas.
   [archive/fontes_etapa11/MANIFESTO.csv](archive/fontes_etapa11/MANIFESTO.csv) registra URL, versão, data e SHA-256 de cada
   uma, para conferência dos mesmos bytes.

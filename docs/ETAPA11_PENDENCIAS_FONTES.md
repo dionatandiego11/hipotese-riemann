@@ -205,8 +205,9 @@ foi **apagada pelo usuário** após esta avaliação; nenhum desses dados foi in
 
 ## 13. Dados de autovalores de Maass do LMFDB (19/09/2026) — registro de procedência
 
-**Arquivo:** `Mass-Forms/lmfdb_maass_rigor_0919_1121.txt` (obtido pelo usuário; SHA-256 `f4ca1d21…`, 283.876 bytes; ainda
-fora do git). Cabeçalho do próprio arquivo: "Maass forms downloaded from the LMFDB on 19 September 2026", consulta
+**Arquivo:** `Mass-Forms/lmfdb_maass_rigor_0919_1121.txt` (obtido pelo usuário; SHA-256 `f4ca1d21…`, 283.876 bytes).
+**Versionado em 19/09/2026** em `data/raw/lmfdb/`, com LEIA-ME de licença (CC BY-SA 4.0) e atribuição; o caminho antigo
+ficou como link simbólico. Cabeçalho do próprio arquivo: "Maass forms downloaded from the LMFDB on 19 September 2026", consulta
 `{'level': 1}` em https://www.lmfdb.org/ModularForm/GL2/Q/Maass/?level=1, **2.202 formas**. Campos: rótulo, nível, peso,
 caractere, parâmetro espectral R (λ = ¼ + R²), simetria, Fricke; definições no fim do arquivo.
 
