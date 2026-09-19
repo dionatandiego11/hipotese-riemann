@@ -1,0 +1,54 @@
+[
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/bernstein_lagarias.pdf",
+    "url": "https://websites.umich.edu/~lagarias/doc/bernstein.pdf",
+    "status": "falha",
+    "erro": "HTTP Error 403: Forbidden"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/ruelle.pdf",
+    "url": "https://www.ihes.fr/~ruelle/PUBLICATIONS/137zeta.pdf",
+    "sha256": "ebf2be2e185834ecb88dd071dd216e23ab859e8d5325218dc31c0383a3d5f381",
+    "bytes": 208692,
+    "baixado_em": "2026-09-19T14:35:56.456127+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/landau_suave.pdf",
+    "url": "https://arxiv.org/pdf/2311.04347",
+    "sha256": "6b5bbd00cad4c4f2deb84c3aa53de52d9278a6a3045758ebff762e881928e1d6",
+    "bytes": 517723,
+    "baixado_em": "2026-09-19T14:35:55.541533+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/cue_altura.pdf",
+    "url": "https://arxiv.org/pdf/math/0602270",
+    "sha256": "38baa479453564421afb5d2e51e2676e93b7d4c3b6173d3b956bc5482e33ccea",
+    "bytes": 471238,
+    "baixado_em": "2026-09-19T14:35:55.694953+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/tao_collatz.pdf",
+    "url": "https://terrytao.wordpress.com/wp-content/uploads/2020/04/collatz-1.pdf",
+    "sha256": "593fd589a88e8573707ea3339ccbdcacd17d1a3c0c645915faeb6ffc75e4727f",
+    "bytes": 359350,
+    "baixado_em": "2026-09-19T14:35:55.216111+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "bernstein_lagarias_editor.pdf",
+    "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6975BB4A8C46CF6842217043AAF9EC13/S0008414X0004606Xa.pdf/div-class-title-the-3-span-class-italic-x-span-1-conjugacy-map-div.pdf",
+    "status": "falha",
+    "erro": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260919/tao_artigo.pdf",
+    "url": "https://arxiv.org/pdf/1909.03562",
+    "sha256": "62cf49d4d8e8e681c7a4738ebaf56f3dbb7b67de95f37ccbac6e428ef3fc394e",
+    "bytes": 1774306,
+    "baixado_em": "2026-09-19T14:36:13.500072+00:00",
+    "status": "obtido"
+  }
+]

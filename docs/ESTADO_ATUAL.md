@@ -111,7 +111,9 @@ L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal tro
   - os 1.000 zeros dos pilotos têm troca de sinal em ±6·10⁻¹⁰ (`verificacao_refinamento_*.json`);
   - benchmark em `dados_piloto/BENCHMARK.md`: ~53 h (χ₋₄) e ~108 h (χ₅) em paralelo, ±30%;
   - versões anteriores do script preservadas em `dirichlet/versoes/`.
-- **Próximo (5):** cálculo completo, rodado pelo usuário, com os comandos de `dados_piloto/BENCHMARK.md` (retomável).
+- **Passo 5 (em execução desde 19/09/2026, 13:42):** cálculo completo dos 12.000 zeros por caractere em
+  `results/etapa11_6_controles/dados/`, retomável (se parar, rode de novo os comandos de `dados_piloto/BENCHMARK.md`).
+  Estimativa: ~2 dias para χ₋₄ e ~4,5 dias para χ₅.
   Depois: execução do instrumento nos 8 blocos (e01–e04, f01–f04) e relatório com os critérios D-C1, D-C1z, D-C2,
   D-C2s e D-C2z.
 
@@ -119,18 +121,20 @@ L(s, χ₅) e verificar linhas com coeficiente −Λ(n)χ(n)/(π√n) (sinal tro
 
 - **Decisão possível:** reclassificar K7 M4 como L (a fórmula de traço de bilhares é semiclássica; não há igualdade exata
   a comparar). Aguarda o usuário.
-- **Controle aritmético (triângulo modular):** lado geométrico calculável exatamente (contagem de classes de SL(2,ℤ) por
-  traço; a verificação de 17/09 mostrou que números de classe estreitos h⁺(t² − 4) **não** são a multiplicidade de
-  geodésicas: é preciso somar ordens de condutor f com f² ∣ t² − 4 e separar potências). Lado espectral obtido em
-  19/09: 2.202 autovalores de Maass de nível 1 do LMFDB, com paridade (código 1 = ímpar, 0 = par, conferido nas páginas
-  do LMFDB), licença CC BY-SA 4.0 (§13 das pendências de fontes). Falta: decidir se o arquivo é versionado, conferir
-  completude e redigir a declaração prévia.
-- **Controle dinâmico (bilhar de estádio):** dados gerados por outro assistente foram avaliados e descartados (precisão
-  insuficiente; §12 das pendências de fontes). Os níveis serão calculados com o `vergini` de Barnett, compilado pelo
-  usuário e com teste de funcionamento em k = 100 aprovado (§14). Declaração prévia `ctrl-estadio-v1` gravada em
-  19/09: [DECLARACAO_ESTADIO.md](../results/etapa11_6_controles/DECLARACAO_ESTADIO.md), SHA-256 `c7ce5d5b…`; setor
-  ímpar-ímpar, k ∈ [85,5; 304,1], 4 blocos de 3.000 níveis. **Próximo:** derivação D1-E e catálogo de órbitas O1, os
-  dois antes de calcular qualquer nível.
+- **Controle aritmético `ctrl-maass-v1` (19/09):**
+  - declaração `DECLARACAO_MAASS.md` (`5db97004…`): setor ímpar, 1.092 formas do LMFDB, fórmula de traço exata;
+  - derivação `D1M_DERIVACAO_MAASS.md` (`773a077b…`), a partir de Bolte & Grosche (2.31) e Bolte & Steiner (13), lidos
+    na fonte: normalização por classes de PSL(2,ℤ) e **cosh** para as reflexões com deslizamento;
+  - `ADENDO_MAASS_1.md` (`4efb9020…`) corrige P2 e P3 da declaração;
+  - catálogo `G1_CATALOGO_GEODESICAS.md` (`8705bd7f…`): 22 linhas em t ≤ 5; dois algoritmos concordam em todos os
+    discriminantes.
+  - **Próximo:** código do instrumento em R e execução nos blocos H, h1 e h2 (minutos de CPU).
+- **Controle dinâmico `ctrl-estadio-v1`:**
+  - declaração `DECLARACAO_ESTADIO.md` (`c7ce5d5b…`);
+  - derivação `D1E_DERIVACAO_ESTADIO.md` (`c0c28ed9…`): linha "bouncing ball" exata e C̄_bb operacional;
+  - catálogo de órbitas `O1_CATALOGO_ORBITAS.md` (`0f7cb16e…`): 6 comprimentos em t ≤ 5;
+  - `vergini` compilado pelo usuário e com teste de funcionamento em k = 100 aprovado.
+  - **Próximo:** código do instrumento em k e comandos de convergência e produção para o usuário.
 - **Externas:** auditoria independente do certificado; procedência/licença completas de `zeros1`. Weil (1952), F5, foi
   conferido em 19/09 numa transcrição LaTeX (Vella-Chemla, 2020): as condições (A) e (B) cobrem as gaussianas e h_ε
   (§16 das pendências de fontes). Conferir o fac-símile continua desejável, mas não bloqueia nada.

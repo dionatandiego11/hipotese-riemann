@@ -1,0 +1,7 @@
+id,titulo,fonte,rotulo,dominio,estado,previsao_no_instrumento,dados_teste,ja_testada_na_literatura,declaracao,resultado,observacoes
+H-001,Correções de altura finita: CUE de tamanho N_eff,"Bogomolny, Bohigas, Leboeuf & Monastra, arXiv:math/0602270v1, p. 1, eqs. (18)-(19) p. 5, eq. (24) p. 7",D,dentro,triada,p(s) = p0(s) + N_eff^-2 p1(alpha s); N_eff = log(E/2pi)/sqrt(12 Lambda),T0 (exploratório; 30 blocos M3/M4); T1 a definir,"sim (Odlyzko, E ~ 1e15 e 1e22)",,,"explica o resultado negativo C3; N_eff ~ 1,7-2,2 nas alturas de T0"
+H-002,Zeros necessários para resolver Lambda(mu): ordem mu log^2 mu,"Balanzario, Cárdenas Romero & Chacón Serna, arXiv:2311.04347v1, resumo p. 1, Teor. 2 p. 3, Cor. 1 p. 5","A (suficiência, sob RH); D (necessidade)",dentro,triada,"número mínimo de zeros para separar a linha log mu das vizinhas, mu <= 148",T0 (exploratório); T1 a definir,não identificado (triagem preliminar),,,sobretudo caracterização da resolução do instrumento
+H-003,Classes de operadores restantes da matriz (11.5),docs/ETAPA11_MATRIZ_OPERADORES.md,C,a triar,proposta,a definir na 11.5,T1,,,,
+F-001,Quase todas as órbitas de Collatz atingem valores quase limitados,"Tao, arXiv:1909.03562v7; slides 2020",A,fora,encerrada (fora do domínio),,,,,,contexto para docs/PLANO_COLLATZ.md
+F-002,Zetas dinâmicas e operadores de transferência,"Ruelle, 137zeta.pdf (IHÉS)",,fora,encerrada (fora do domínio),,,,,,contexto para CL; só a p. 1 lida
+F-003,Mapa de conjugação 3x+1,Bernstein & Lagarias (Canad. J. Math.),,a triar,proposta (fonte não obtida),,,,,,download falhou: 403/429

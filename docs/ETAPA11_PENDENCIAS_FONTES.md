@@ -400,3 +400,77 @@ Cinco PDFs em `archive/fontes_etapa11/`. Os quatro úteis estão no manifesto; o
 2. **`ctrl-estadio-v1`:** Barnett & Hassell dão apoio de fonte ao desenho da declaração (§4): aproveitar só o miolo
    |k − K0| ≤ 0,1 de janelas de meia-largura 0,2 reduz o erro empírico em cerca de (0,2/0,1)³ = 8 vezes em relação às bordas.
    O limite de tension e o piloto E2 continuam sendo convenções empíricas, porque não há cota rigorosa.
+
+## 19. `houches.pdf` (enviado pelo usuário, 19/09/2026) — cópia repetida; releitura para a questão sinh × cosh
+
+`archive/fontes_etapa11/houches.pdf` tem o **mesmo SHA-256** (`ab4531e6…`) que
+`bogomolny_2003_quantum_arithmetical_chaos_HAL-00000984v1.pdf`, já arquivado: E. Bogomolny, *Quantum and Arithmetical
+Chaos* (notas de Les Houches, 103 pp.). Não é fonte nova; a cópia repetida pode ser apagada.
+
+**Releitura dirigida ao ponto aberto de `ctrl-maass-v1`** (amplitude das órbitas com det = −1: sinh ou cosh):
+- **p. 38 (lido):** na dedução da fórmula de Gutzwiller em duas dimensões, a contribuição de uma órbita tem amplitude
+  T_p/(πħ|m₁₁ + m₂₂ − 2|^{1/2}), e a forma geral é 1/|det(M_p^n − 1)|^{1/2}, com M a matriz de monodromia (det M = 1).
+  É a mesma estrutura de BK (2.9), p. 241.
+- **Consequência (derivação, não citação):**
+  - se a monodromia tem autovalores e^{±l} (órbita comum, traço > 2), então |Tr M − 2| = 4 sinh²(l/2);
+  - se tem autovalores −e^{±l} (traço < −2, "inversa hiperbólica"), então |Tr M − 2| = 4 cosh²(l/2).
+
+  A fonte dá a fórmula geral. **Falta com fonte** o passo "órbita com número ímpar de reflexões no triângulo modular ⇒
+  monodromia inversa hiperbólica", que é o argumento geométrico de H_cosh (inversão da orientação transversal). Esse
+  passo fica para a derivação D1-M.
+- **Nas pp. 94–97 (triângulos de Hecke) não há** fórmula de traço com os termos de reflexão.
+- **Situação:** H_cosh ganha apoio de fonte na parte geral (p. 38) e continua dependendo de um passo derivado. A fonte
+  direta (Venkov; Bogomolny–Georgeot–Giannoni–Schmit 1997) continua pendente. A declaração `ctrl-maass-v1` não muda.
+
+## 20. Amplitude das órbitas com reflexão (sinh × cosh) — resolvida com fontes lidas (19/09/2026)
+
+**Origem:** o usuário trouxe um resumo gerado por outro assistente afirmando H_cosh, com citações de Bolte & Steiner
+(1993, eq. 13) e de "Venkov, Teorema 2.2, p. 137". Conferido na fonte:
+
+| Afirmação do resumo | Conferido |
+|---|---|
+| Bolte & Steiner, CMP 156 (1993) 1–16 | **existe** (Crossref, doi:10.1007/BF02096730). Preprint DESY 90-082 obtido do INSPIRE e **lido na imagem**: Teorema, eq. (13), p. 6 |
+| forma do termo de reflexão | **confere**: −Σ_{ρ_p} Σ_{k≥0} l(ρ_p²)/(4 cosh[(k + ½) l(ρ_p²)/2]) · g((k + ½) l(ρ_p²)), com Dirichlet |
+| "Venkov (1990), Teorema 2.2, p. 137" | **atribuição trocada:** o "Theorem 2.2 [55]" é de **Bolte & Grosche** (preprint DESY 92-118, pp. 8–9, eq. (2.31)), que o atribuem a Venkov [55]. Venkov não foi lido |
+| BLS "desprezando a diferença entre 2 cosh L e e^L", p. 13 | a frase existe ("Neglecting the difference between 2 cosh L and e^L"), mas está na **p. 12** do preprint, na §2 (grupo modular sem reflexões). A leitura de que a §6 (pp. 33–34) usa a mesma aproximação é **plausível, mas não está escrita** |
+| "a medição será comprovação empírica de alta precisão" | **exagero:** só com os dados se sabe se o ruído do bloco permite distinguir as hipóteses (declaração §5) |
+
+**O que as fontes lidas estabelecem:**
+- **Bolte & Steiner, eq. (13), p. 6:** para superfícies de Riemann compactas com bordo e condição de Dirichlet, as
+  classes hiperbólicas contribuem com +l(γ) g(k l(γ))/(4 sinh(k l(γ)/2)), e as reflexões com deslizamento primitivas ρ_p
+  (e suas potências ímpares) com **−l(ρ_p²) g((k + ½) l(ρ_p²))/(4 cosh[(k + ½) l(ρ_p²)/2])**, com k ≥ 0. Observação 2 na
+  mesma página: para Neumann, o sinal muda.
+- **Bolte & Grosche, Theorem 2.2 [55], eq. (2.31), pp. 8–9:** a mesma estrutura, para superfícies com bordo
+  **arbitrárias**, incluindo classes elípticas (cantos) e parabólicas (cúspides). O termo de reflexão é
+  −Σ_{ρ_p, tr ρ ≠ 0} Σ_{k≥1} l_{ρ²} g[(k − ½) l_{ρ²}] / (4 cosh ½(k − ½) l_{ρ²}); o termo de área é A(F̂)/(8π)∫ p tanh(πp) h(p) dp;
+  e os termos elípticos, parabólicos e de reflexões puras (tr ρ = 0) **não** são linhas em t > 0, só termos suaves ou em
+  g(0). Isso **confirma a suposição P1** de `ctrl-maass-v1` sobre os "corner and horn" terms.
+- **H_cosh está confirmada por fonte lida.** Para a reflexão primitiva de comprimento de translação l_ρ = ½ l(ρ²), o
+  peso é l(ρ²)/(4 cosh(l_ρ/2)) = l_ρ/(2 cosh(l_ρ/2)), igual à derivação pela monodromia (§19).
+
+**Consequência que a declaração não previa (normalização):** nas duas fontes, as somas correm sobre classes de
+conjugação no grupo **Γ̂ da superfície dobrada**, que no caso modular é PSL(2,ℤ), com peso **1/4** (4 sinh, 4 cosh), e
+não sobre classes de PGL(2,ℤ) com peso 1/2 (2 sinh), como na leitura de BLS usada em P2 e P3 de `ctrl-maass-v1`:
+- uma classe de PGL(2,ℤ) que se divide em duas classes de PSL(2,ℤ) (órbita e imagem espelhada distintas) contribui
+  2 × 1/4 = 1/2, igual a BLS;
+- uma classe **autoespelhada** (uma só classe em PSL(2,ℤ)) contribui **1/4**, metade do que P2 previa.
+
+O §4 da declaração já prevê isso ("se a derivação contradisser P2, prevalece a derivação, com adendo antes de qualquer
+cálculo"). A **D1-M** vai escrever a normalização a partir de Bolte & Grosche (2.31), e um **adendo** a
+`ctrl-maass-v1` vai corrigir P2 e P3 (contagem por classes de PSL(2,ℤ) para δ = +1 e por classes de Γ̂ das reflexões
+para δ = −1, com pesos 1/4), antes de calcular G1. A comparação sinh × cosh (M-C2a−) continua descritiva, como foi
+declarada; agora ela tem **previsão com fonte**: H_cosh.
+
+## 21. Sétimo lote enviado pelo usuário (19/09/2026, ~13:10) — conferência
+
+| Arquivo | Obra | Conferido | Uso |
+|---|---|---|---|
+| `0812.4382v1.pdf` (`12cf4929…`) | L. A. Forte, *Arithmetical chaos and quantum cosmology*, arXiv:0812.4382v1 | p. 16; pp. 18–19 | **útil em parte (secundária).** p. 16: "the spectrum of Δ on PSL(2, ℤ) is purely discrete on the space of odd functions, but on the even space there is a continuous spectrum given by the interval [¼, ∞)". Dá apoio de fonte ao argumento elementar do §3 de `ctrl-maass-v1` (setor ímpar sem espectro contínuo). **Não usado:** a lista das pp. 18–19 ("E₁ = 91,12, E₂ = 148,43, E₃ = 190,13, E₄ = 206,16. They are respectively even, odd, odd, even and odd") tem 5 rótulos para 4 valores e chama de par o primeiro autovalor (R = 9,5326), que o LMFDB dá como **ímpar** (conferido nas páginas, §13). Além disso, E₄ corresponde a R = 14,3496, contra 14,3585 no LMFDB. As paridades do LMFDB, conferidas diretamente, prevalecem |
+| `ArithmeticQuantumChaos.pdf` (`5453881a…`) | J. Marklof, *Arithmetic quantum chaos* (verbete para a Encyclopedia of Mathematical Physics, versão do autor) | p. 4, eqs. (23)–(26) | **útil (secundária).** Na superfície modular, 2 cosh(ℓ/2) = \|tr γ\| e os comprimentos distintos são {2 arcosh(n/2) : n ≥ 3}. Confere a parte δ = +1 de P1 |
+| `0312061v1.pdf` (`030adc71…`) | Bogomolny, *Quantum and Arithmetical Chaos*, arXiv:nlin/0312061v1 | comparação de texto | **repetida:** mesmo texto que a cópia do HAL e `houches.pdf`, com diferenças só de formatação. Pode ser apagada |
+| `P_00_83.pdf` (`8c6d8da7…`) | T. Damour & M. Henneaux, *E10, BE10 and arithmetical chaos in superstring cosmology*, IHES/P/00/83, hep-th/0012172 | resumo e busca | **não ajuda** nos controles: bilhares cosmológicos em dimensão 9, sem fórmula de traço nem espectro. Pode ser apagado |
+
+**Limpeza (19/09/2026, a pedido do usuário):** foram apagadas as cópias locais dos textos avaliados como sem uso:
+`houches.pdf` e `0312061v1.pdf` (cópias repetidas das notas de Bogomolny, §§19 e 21), `P_00_83.pdf` (Damour &
+Henneaux, §21) e `0804.1551v1.pdf` (Dietz et al., §§17–18). Os hashes continuam nas seções citadas. Nenhum constava do
+manifesto.

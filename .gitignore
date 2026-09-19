@@ -18,3 +18,5 @@ nohup.out
 # (ver archive/fontes_etapa11/README.md; URLs, versões e SHA-256 ficam em MANIFESTO.csv)
 archive/fontes_etapa11/*.pdf
 archive/fontes_etapa11/*.html
+archive/fontes_etapa11/**/*.pdf
+archive/fontes_etapa11/**/*.html
