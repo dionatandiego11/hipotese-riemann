@@ -69,6 +69,22 @@ Candidato: distribuições de primeira passagem e de escape em aproximações ab
 
 B6 é contexto: seu resultado de densidade logarítmica não é um modelo pronto para uma simulação uniforme finita. Um padrão empírico deve superar mudanças de fronteira, amostragem e truncamento. Falha nessas verificações encerra a interpretação espectral, mesmo com figuras convincentes. Prioridade posterior a P-C1.
 
+## P-R5 — funções L de curvas elípticas como terceiro tipo de espectro (proposta futura; não iniciar agora)
+
+**Origem:** leitura de contexto de B10. **Pergunta:** o mecanismo de H-004 (vazamento de linhas conhecidas no estimador)
+prevê os erros do estimador também numa função L de grau 2, L(E, s), cuja fórmula explícita tem os coeficientes a_p da
+curva no lugar de Λ(n)χ(n) e, quando o posto analítico é positivo, um zero em s = ½ que altera o termo de baixa
+frequência?
+
+- **Por que depois de H-004:** só faz sentido se H-004 sustentar o desempenho nos blocos reservados. Se falhar, a
+  extensão perde o objeto.
+- **Obstáculo prático:** o instrumento precisa de milhares de zeros por bloco. O LMFDB lista só os primeiros zeros de
+  cada curva, e calcular milhares exige software de funções L (por exemplo, PARI/GP), que não está instalado. Custo
+  a estimar antes de qualquer declaração.
+- **Cuidados:** derivar a fórmula explícita de grau 2 com fonte lida (normalização, fator gama e termos em p | N) antes do
+  código; tratar o zero central como linha conhecida, não como ruído; aplicar a §9 do protocolo v2 (poder prévio).
+- **Novidade:** não estabelecida. Há literatura extensa sobre zeros de L(E, s) e sua estatística (a triar).
+
 ## Propostas que não iniciar agora
 
 - **Provar RH a partir de zeros na linha:** esses dados não testam zeros excluídos por construção.

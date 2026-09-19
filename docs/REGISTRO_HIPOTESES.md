@@ -23,7 +23,7 @@ uma linha por hipótese.
 | H-001 | Correções de altura finita na estatística local dos zeros: CUE de tamanho N_eff | Bogomolny, Bohigas, Leboeuf & Monastra 2006 | D (argumento heurístico) | triada |
 | H-002 | Número de zeros suficiente para decidir se μ é primo: ordem μ log^{3/2} μ (sob RH) | Balanzario, Cárdenas Romero & Chacón Serna 2023 | A (suficiência, sob RH) e D (necessidade) | triada |
 | H-003 | Classes de operadores que sobraram da matriz (K3a, K4, condicionais) | matriz da Etapa 11 | — | proposta |
-| **H-004** | **P-R1: o mecanismo de vazamento prevê sinal e tamanho dos erros do estimador em L(s, χ)** | `hipoteses/CANDIDATAS.md` P-R1; desenvolvimento em Maass e ζ (T0) | — (resultado seria B) | **declarada (T1-prospectivo)**, `results/registro_hipoteses/H-004/DECLARACAO.md` (`82382c59…`) |
+| **H-004** | **P-R1: o mecanismo de vazamento prevê sinal e tamanho dos erros do estimador em L(s, χ)** | `hipoteses/CANDIDATAS.md` P-R1; desenvolvimento em Maass e ζ (T0) | — (resultado seria B) | **declarada (T1-prospectivo)**, `results/registro_hipoteses/H-004/DECLARACAO.md` (`82382c59…`) + `ADENDO_H004_1.md` |
 | F-001 | Órbitas de Collatz quase limitadas | Tao 2019/2022 | A | encerrada (fora do domínio) |
 | F-002 | Zetas dinâmicas e operadores de transferência | Ruelle | — | encerrada (fora do domínio) |
 | F-003 | Mapa de conjugação 3x+1 | Bernstein & Lagarias | — | proposta (fonte não obtida) |
