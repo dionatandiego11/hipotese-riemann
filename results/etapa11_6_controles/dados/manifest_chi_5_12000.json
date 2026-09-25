@@ -1,0 +1,477 @@
+{
+  "protocol": "ctrl-dirichlet-v1",
+  "declaration_sha256": "e6cb8ab84e1d9665f8c8fcb3c8a450b840dbaec8167b7267b180fe410232edff",
+  "d1_sha256": "f07972a49422716256401da58c3756e4807e1f2ed26daef3ee50be98bc8ea11d",
+  "addenda": {
+    "ADENDO_DIRICHLET_1.md": "6ee78368f371165aa117ffc2e4b6502e2975696d79b5d4509275a14bec7f6586",
+    "ADENDO_DIRICHLET_2.md": "619950467fb0a7e3b47998b93b203dcea23e8db69f19db4b288283199aef8811"
+  },
+  "character": {
+    "name": "chi_5",
+    "q": 5,
+    "kappa": 0,
+    "values": [
+      0,
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "n_zeros": 12000,
+  "gamma_first": 6.648453344709887,
+  "gamma_last": 9510.050469888152,
+  "method": {
+    "L": "Hurwitz (mpmath.zeta(s, a/q))",
+    "dps": 30,
+    "step_fraction": 0.125,
+    "refine": "Illinois (≤ 100) + bisseção (≤ 100), aceitação estrita",
+    "refine_tol": 1e-10
+  },
+  "gap_rescans": [],
+  "stats": {
+    "evaluations": 295351,
+    "refinements": 12000,
+    "gap_rescans": 0,
+    "seconds": 273408.546835825,
+    "max_refine_iterations": 27,
+    "bisection_fallbacks": 0
+  },
+  "checks": {
+    "V1": {
+      "tolerance": 3.0,
+      "edges": [
+        {
+          "n_found": 3000,
+          "T": 2808.591602284585,
+          "theta_over_pi": 3000.1469778992237,
+          "difference": -0.146977899223657,
+          "ok": true
+        },
+        {
+          "n_found": 6000,
+          "T": 5151.2275712545215,
+          "theta_over_pi": 5999.940374070099,
+          "difference": 0.05962592990090343,
+          "ok": true
+        },
+        {
+          "n_found": 9000,
+          "T": 7368.166745257768,
+          "theta_over_pi": 9001.936715673193,
+          "difference": -1.9367156731932482,
+          "ok": true
+        },
+        {
+          "n_found": 12000,
+          "T": 9510.050470888153,
+          "theta_over_pi": 12005.017888593737,
+          "difference": -5.017888593736643,
+          "ok": false
+        }
+      ],
+      "passed": false,
+      "note": "N(T,χ) = θ_χ(T)/π + S(T,χ) − S(0,χ); S não é estimado (convenção B da declaração)."
+    },
+    "V2": {
+      "indices": [
+        9001,
+        12000
+      ],
+      "n_reference": 3000,
+      "n_recomputed": 3002,
+      "same_count": false,
+      "max_abs_difference": null,
+      "passed": false,
+      "evaluations": 96708,
+      "seconds": 117564.083630943
+    },
+    "V3": {
+      "seed": 20260917,
+      "sample": [
+        {
+          "index": 310,
+          "gamma": 406.90136473497535,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 523,
+          "gamma": 629.4795024001817,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 540,
+          "gamma": 646.2825329019865,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 669,
+          "gamma": 774.1808322397825,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 775,
+          "gamma": 877.310742816183,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 930,
+          "gamma": 1023.8461741829915,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1045,
+          "gamma": 1131.3323024429073,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1383,
+          "gamma": 1437.5249117910066,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1755,
+          "gamma": 1765.1197792159692,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1762,
+          "gamma": 1770.5546430277336,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1841,
+          "gamma": 1839.2900943818984,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1934,
+          "gamma": 1919.2661213260044,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1954,
+          "gamma": 1936.459567204905,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2112,
+          "gamma": 2070.3913724714266,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2165,
+          "gamma": 2115.6888761047658,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2398,
+          "gamma": 2311.62901833873,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2433,
+          "gamma": 2340.5367288451043,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2688,
+          "gamma": 2552.4128788951757,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2994,
+          "gamma": 2802.970593830026,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3046,
+          "gamma": 2845.4910488063883,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3048,
+          "gamma": 2847.054800134947,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3332,
+          "gamma": 3076.707502802373,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3871,
+          "gamma": 3506.9692287928556,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 4057,
+          "gamma": 3654.3524232018553,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 4294,
+          "gamma": 3840.428200875528,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 4787,
+          "gamma": 4224.008823624896,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 5380,
+          "gamma": 4679.247890865143,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 5599,
+          "gamma": 4847.11569636444,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 5892,
+          "gamma": 5068.874064669306,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6181,
+          "gamma": 5286.930996911427,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6250,
+          "gamma": 5339.562242913977,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6281,
+          "gamma": 5362.883386145213,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6759,
+          "gamma": 5721.634272581563,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7323,
+          "gamma": 6140.927326115103,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7426,
+          "gamma": 6216.953243666015,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7477,
+          "gamma": 6254.83454380512,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7494,
+          "gamma": 6267.165361230858,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7806,
+          "gamma": 6496.961601272059,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 8096,
+          "gamma": 6709.496603548903,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 8301,
+          "gamma": 6859.314680183519,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 9606,
+          "gamma": 7805.097267758712,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 9932,
+          "gamma": 8039.534391238967,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 9971,
+          "gamma": 8067.422479427914,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 10241,
+          "gamma": 8260.222800210391,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 10517,
+          "gamma": 8457.591403257404,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 10889,
+          "gamma": 8722.216058372356,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11263,
+          "gamma": 8987.237633877903,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11468,
+          "gamma": 9134.17918610244,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11567,
+          "gamma": 9205.479882595919,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11836,
+          "gamma": 9394.668795469075,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        }
+      ],
+      "passed": true,
+      "note": "mpmath.dirichlet também usa somas de Hurwitz: confere implementação e precisão, não método independente."
+    },
+    "V4": {
+      "rule": "adendo-1 (pontos médios entre zeros consecutivos)",
+      "rel_tol": 1e-20,
+      "points": [
+        {
+          "t": 10.895145029496764,
+          "abs_Z": 1.1408003973500966,
+          "imag_over_abs": 1.7381974434477045e-30,
+          "ok": true
+        },
+        {
+          "t": 1065.7210908693464,
+          "abs_Z": 3.3718010503903586,
+          "imag_over_abs": 5.973393330219146e-29,
+          "ok": true
+        },
+        {
+          "t": 2121.2529329971885,
+          "abs_Z": 0.7739765842088606,
+          "imag_over_abs": 2.6000559322689904e-28,
+          "ok": true
+        },
+        {
+          "t": 3176.9671950379984,
+          "abs_Z": 7.061062457616007,
+          "imag_over_abs": 4.424421728915536e-28,
+          "ok": true
+        },
+        {
+          "t": 4232.343632471242,
+          "abs_Z": 1.0522013170328834,
+          "imag_over_abs": 1.3674054280060289e-27,
+          "ok": true
+        },
+        {
+          "t": 5287.652688064437,
+          "abs_Z": 9.208806011482933,
+          "imag_over_abs": 1.026441937412153e-27,
+          "ok": true
+        },
+        {
+          "t": 6343.657712076855,
+          "abs_Z": 2.5734088727355284,
+          "imag_over_abs": 1.936633180979705e-27,
+          "ok": true
+        },
+        {
+          "t": 7399.313339914069,
+          "abs_Z": 4.189979060728626,
+          "imag_over_abs": 3.005722545938065e-28,
+          "ok": true
+        },
+        {
+          "t": 8454.240499632737,
+          "abs_Z": 1.5289125559601546,
+          "imag_over_abs": 1.9714572207981673e-27,
+          "ok": true
+        },
+        {
+          "t": 9509.91368768761,
+          "abs_Z": 0.16712270218040515,
+          "imag_over_abs": 2.1251536684234912e-27,
+          "ok": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "all_checks_passed": false,
+  "output_file": "zeros_chi_5_12000.txt",
+  "output_sha256": "c3727302ba8d6bd19dee30b98a575f77e9773feab6330da4f3320b33dbba52d9",
+  "resumes": 2,
+  "checkpoint_file": "progresso_chi_5_12000.json",
+  "started": "2026-09-19T13:42:07-0300",
+  "finished": "2026-09-24T13:51:54-0300",
+  "versions": {
+    "python": "3.12.3",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.3"
+  },
+  "script_sha256": "65056bc2d2ad18495f3f0f95d6f78b4c8a9fdea5bd6314fadee36b33b010d4e6"
+}

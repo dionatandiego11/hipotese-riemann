@@ -392,3 +392,38 @@ Registro anterior (14/09/2026):
 - O registro espectral v2 permanece vigente. Registradas ressalvas sobre sinal/ruído versus poder, dependência estatística e o expoente bibliográfico de H-002; nenhum protocolo existente foi alterado.
 - Executado: leitura documental, busca web dirigida, aquisição de fontes, conferência de hashes e links locais. Sem novos zeros, simulações ou commits; código científico congelado preservado.
 - Próximo: resolver a interpretação do poder antes da produção do estádio, concluir a triagem bibliográfica de P-R1 e preparar CL0. Ver [plano](../hipoteses/PLANO.md).
+
+### 22–25/09/2026 — `ctrl-dirichlet-v1`: zeros calculados, V1/V2 reprovadas, passe de completude D3
+
+- **Estado:** χ₋₄ `validado` depois do passe D3 (falta a V2′); χ₅ `em execução` (passe D3 rodando); o resultado
+  original das duas execuções é `inconclusivo` por falha de completude e fica preservado como está.
+- **Execuções do script congelado** `dirichlet/dirichlet_zeros.py` (`65056bc2…`), 12.000 zeros por caractere:
+  χ₋₄ terminou 22/09 08:41 (142.714 s, 295.458 avaliações, 1 retomada); χ₅ terminou 24/09 13:51 (273.409 s,
+  295.351 avaliações, 2 retomadas, sendo uma por reinício da máquina em 22/09 ~21:00).
+  Nos dois, **V3 e V4 passaram e V1 e V2 reprovaram**: `all_checks_passed: false` nos dois manifestos.
+- **Diagnóstico** (`dirichlet/completude/DIAGNOSTICO_V1V2.md`, `2fdacab5…`): a varredura com passo d̄/8 perde **pares**
+  de zeros separados por menos de um passo. Em χ₋₄, sete pares (14 zeros), com separações de 0,0247 a 0,0896 contra
+  passo local de 0,0914 a 0,1005; S = N − θ/π mostra platôs planos com degraus de exatamente −2. Descartados salto de
+  ramo em θ (Stirling, ≤ 3·10⁻²⁰) e falha de refinamento (`bisection_fallbacks: 0`). Rótulo B.
+- **Adendo:** [ADENDO_DIRICHLET_3.md](../results/etapa11_6_controles/ADENDO_DIRICHLET_3.md) (`02340a5c…`), gravado
+  antes do código e da execução do passe; fixa Etapas A/B/C, o certificado D3-C1, as re-verificações V1′–V4′, o custo
+  e três previsões falsificáveis (§8).
+- **Código novo:** `dirichlet/completude/completude_d3.py` e `test_completude_d3.py` (5 testes, 243 s, todos passaram).
+  O script congelado é importado, nunca editado.
+- **Passe D3 em χ₋₄** (23/09 04:30; 23.096 s; 47.373 avaliações): Etapa A varreu 802 intervalos acima de 1,6 d̄ com
+  passo d̄/32 e recuperou **14 zeros**; Etapa C não foi necessária. Certificado D3-C1 fecha (medianas +0,498 → +0,500,
+  dispersão 0,04); V1′ com diferenças −0,087, +0,335, +0,067, +0,201 (tolerância 3,0); V3′ e V4′ passaram.
+  Dado de trabalho: `zeros_chi_m4_12000_completo.txt` (`81fdfc0a…`), 11.986 zeros originais + 14 recuperados,
+  γ_último 9.749,443063 (era 9.758,910852). **Nenhum zero original foi alterado** (previsão §8.2 confirmada);
+  previsão §8.3 confirmada.
+- **χ₅:** déficit medido pelo certificado na lista original = **6 zeros** (3 pares), dentro da previsão §8.1 (5 a 30).
+  Limitação registrada: a regra de localização de degraus do D3-C1 (|m_{j+1} − m_j| ≥ 1,5) só apontou 2 das 3 regiões,
+  porque um degrau no meio de uma janela se divide entre duas medianas. Isso **não** produz falso positivo — a
+  condição de nível continua reprovando a lista —, mas tornaria a Etapa C incompleta se ela fosse necessária.
+- **Desvio operacional registrado:** o §7 do adendo previa interromper χ₅ com SIGTERM antes de a V2 do script congelado
+  avançar; não havia ninguém na máquina quando a varredura terminou e a V2 rodou inteira (117.564 s), acusando 3.002
+  contra 3.000 no bloco alto. Nada científico muda: a V2′ do §5 é exigida de todo modo.
+- **Em execução (25/09 14:45):** passe D3 de χ₅ (790 intervalos) e V2′ de χ₋₄ (varredura com passo d̄/16 no bloco
+  9001–12000, mais o passe de completude na lista recomputada).
+- **Próximo:** V2′ de χ₅; depois o instrumento do controle nos 8 blocos das listas corrigidas e, só então,
+  `preditor_pr1_v2.py` da H-004.

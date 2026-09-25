@@ -1,0 +1,476 @@
+{
+  "protocol": "ctrl-dirichlet-v1",
+  "declaration_sha256": "e6cb8ab84e1d9665f8c8fcb3c8a450b840dbaec8167b7267b180fe410232edff",
+  "d1_sha256": "f07972a49422716256401da58c3756e4807e1f2ed26daef3ee50be98bc8ea11d",
+  "addenda": {
+    "ADENDO_DIRICHLET_1.md": "6ee78368f371165aa117ffc2e4b6502e2975696d79b5d4509275a14bec7f6586",
+    "ADENDO_DIRICHLET_2.md": "619950467fb0a7e3b47998b93b203dcea23e8db69f19db4b288283199aef8811"
+  },
+  "character": {
+    "name": "chi_m4",
+    "q": 4,
+    "kappa": 1,
+    "values": [
+      0,
+      1,
+      0,
+      -1
+    ]
+  },
+  "n_zeros": 12000,
+  "gamma_first": 6.020948904732563,
+  "gamma_last": 9758.910852434921,
+  "method": {
+    "L": "Hurwitz (mpmath.zeta(s, a/q))",
+    "dps": 30,
+    "step_fraction": 0.125,
+    "refine": "Illinois (≤ 100) + bisseção (≤ 100), aceitação estrita",
+    "refine_tol": 1e-10
+  },
+  "gap_rescans": [],
+  "stats": {
+    "evaluations": 295458,
+    "refinements": 12000,
+    "gap_rescans": 0,
+    "seconds": 142713.56274069098,
+    "max_refine_iterations": 27,
+    "bisection_fallbacks": 0
+  },
+  "checks": {
+    "V1": {
+      "tolerance": 3.0,
+      "edges": [
+        {
+          "n_found": 3000,
+          "T": 2891.855465792714,
+          "theta_over_pi": 3000.087288233796,
+          "difference": -0.08728823379578898,
+          "ok": true
+        },
+        {
+          "n_found": 6000,
+          "T": 5295.874996297944,
+          "theta_over_pi": 6003.935094122595,
+          "difference": -3.935094122594819,
+          "ok": false
+        },
+        {
+          "n_found": 9000,
+          "T": 7569.6521828578825,
+          "theta_over_pi": 9012.021917268576,
+          "difference": -12.021917268575635,
+          "ok": false
+        },
+        {
+          "n_found": 12000,
+          "T": 9758.910853434922,
+          "theta_over_pi": 12012.95947961648,
+          "difference": -12.959479616480166,
+          "ok": false
+        }
+      ],
+      "passed": false,
+      "note": "N(T,χ) = θ_χ(T)/π + S(T,χ) − S(0,χ); S não é estimado (convenção B da declaração)."
+    },
+    "V2": {
+      "indices": [
+        9001,
+        12000
+      ],
+      "n_reference": 3000,
+      "n_recomputed": 3002,
+      "same_count": false,
+      "max_abs_difference": null,
+      "passed": false,
+      "evaluations": 95824,
+      "seconds": 60749.376956452
+    },
+    "V3": {
+      "seed": 20260917,
+      "sample": [
+        {
+          "index": 310,
+          "gamma": 422.687254605145,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 523,
+          "gamma": 652.8398136975663,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 540,
+          "gamma": 670.1636136572989,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 669,
+          "gamma": 801.6675391277126,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 775,
+          "gamma": 907.6541323113831,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 930,
+          "gamma": 1059.0459852593563,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1045,
+          "gamma": 1169.0398117697287,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1383,
+          "gamma": 1484.9192124202093,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1755,
+          "gamma": 1820.5401751010927,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1762,
+          "gamma": 1826.221890392801,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1841,
+          "gamma": 1897.0344893426206,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1934,
+          "gamma": 1978.7390586393694,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1954,
+          "gamma": 1996.4269936711237,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2112,
+          "gamma": 2134.2237669569467,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2165,
+          "gamma": 2180.4133016551214,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2398,
+          "gamma": 2382.087928200187,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2433,
+          "gamma": 2411.7372176668987,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2688,
+          "gamma": 2629.1092311006378,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 2994,
+          "gamma": 2886.683004054995,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3046,
+          "gamma": 2929.4942355584494,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3048,
+          "gamma": 2931.541431629874,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3332,
+          "gamma": 3167.6034809880093,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 3871,
+          "gamma": 3608.481824678004,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 4057,
+          "gamma": 3758.6572013418927,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 4294,
+          "gamma": 3951.6209098449344,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 4787,
+          "gamma": 4344.538756578237,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 5380,
+          "gamma": 4813.3639946519925,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 5599,
+          "gamma": 4984.039829917956,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 5892,
+          "gamma": 5211.82211376478,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6181,
+          "gamma": 5434.906541454831,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6250,
+          "gamma": 5488.738396740537,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6281,
+          "gamma": 5512.585749085489,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 6759,
+          "gamma": 5878.762485922745,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7323,
+          "gamma": 6307.627786179294,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7426,
+          "gamma": 6385.633721436328,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7477,
+          "gamma": 6425.533928450732,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7494,
+          "gamma": 6438.528729717561,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 7806,
+          "gamma": 6673.762505805682,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 8096,
+          "gamma": 6892.6969002797605,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 8301,
+          "gamma": 7046.117214887474,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 9606,
+          "gamma": 8017.043257741401,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 9932,
+          "gamma": 8255.966451994193,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 9971,
+          "gamma": 8285.289995479467,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 10241,
+          "gamma": 8482.270975944019,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 10517,
+          "gamma": 8685.244137103713,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 10889,
+          "gamma": 8956.305137083766,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11263,
+          "gamma": 9227.201872443173,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11468,
+          "gamma": 9375.744671708413,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11567,
+          "gamma": 9447.120127071963,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 11836,
+          "gamma": 9641.133473729878,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        }
+      ],
+      "passed": true,
+      "note": "mpmath.dirichlet também usa somas de Hurwitz: confere implementação e precisão, não método independente."
+    },
+    "V4": {
+      "rule": "adendo-1 (pontos médios entre zeros consecutivos)",
+      "rel_tol": 1e-20,
+      "points": [
+        {
+          "t": 8.132359604432425,
+          "abs_Z": 2.258745093271156,
+          "imag_over_abs": 2.4272960314138177e-31,
+          "ok": true
+        },
+        {
+          "t": 1093.1571054029973,
+          "abs_Z": 3.7019758974751085,
+          "imag_over_abs": 2.843604996711105e-28,
+          "ok": true
+        },
+        {
+          "t": 2176.175341243018,
+          "abs_Z": 2.8647261518753293,
+          "imag_over_abs": 2.1431187454275886e-28,
+          "ok": true
+        },
+        {
+          "t": 3259.9048187112444,
+          "abs_Z": 3.6144068508699347,
+          "imag_over_abs": 1.4927291093123242e-27,
+          "ok": true
+        },
+        {
+          "t": 4343.124405153347,
+          "abs_Z": 3.428152351783767,
+          "imag_over_abs": 6.62023430648239e-28,
+          "ok": true
+        },
+        {
+          "t": 5425.6816885995595,
+          "abs_Z": 4.104854188549704,
+          "imag_over_abs": 1.50139108351061e-27,
+          "ok": true
+        },
+        {
+          "t": 6509.127963316629,
+          "abs_Z": 1.5911421395801355,
+          "imag_over_abs": 1.4793012201625624e-27,
+          "ok": true
+        },
+        {
+          "t": 7592.584789134183,
+          "abs_Z": 4.288694148186497,
+          "imag_over_abs": 2.3424883658123768e-27,
+          "ok": true
+        },
+        {
+          "t": 8675.749348792435,
+          "abs_Z": 0.9160210753929359,
+          "imag_over_abs": 4.2151767497224315e-27,
+          "ok": true
+        },
+        {
+          "t": 9758.616258167885,
+          "abs_Z": 1.2216291711774208,
+          "imag_over_abs": 4.0315596089087904e-27,
+          "ok": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "all_checks_passed": false,
+  "output_file": "zeros_chi_m4_12000.txt",
+  "output_sha256": "698e7dbaabc4185d97d1bc407970740ef7e1f14eec686af4800aa4202b18d8b4",
+  "resumes": 1,
+  "checkpoint_file": "progresso_chi_m4_12000.json",
+  "started": "2026-09-19T13:42:07-0300",
+  "finished": "2026-09-22T08:41:34-0300",
+  "versions": {
+    "python": "3.12.3",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.3"
+  },
+  "script_sha256": "65056bc2d2ad18495f3f0f95d6f78b4c8a9fdea5bd6314fadee36b33b010d4e6"
+}

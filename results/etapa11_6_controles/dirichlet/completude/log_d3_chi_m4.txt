@@ -1,0 +1,195 @@
+[A] 802 intervalos acima de 1.6 d̄; passo d̄/32
+[A] 22/802 intervalos; 0 zeros recuperados; 122 s
+[A] 35/802 intervalos; 0 zeros recuperados; 242 s
+[A] 46/802 intervalos; 0 zeros recuperados; 372 s
+[A] 55/802 intervalos; 0 zeros recuperados; 493 s
+[A] 66/802 intervalos; 0 zeros recuperados; 618 s
+[A] 74/802 intervalos; 0 zeros recuperados; 751 s
+[A] 81/802 intervalos; 0 zeros recuperados; 887 s
+[A] 87/802 intervalos; 0 zeros recuperados; 1014 s
+[A] 96/802 intervalos; 0 zeros recuperados; 1136 s
+[A] 107/802 intervalos; 0 zeros recuperados; 1261 s
+[A] 118/802 intervalos; 0 zeros recuperados; 1385 s
+[A] 129/802 intervalos; 0 zeros recuperados; 1514 s
+[A] 136/802 intervalos; 0 zeros recuperados; 1638 s
+[A] 143/802 intervalos; 0 zeros recuperados; 1763 s
+[A] 150/802 intervalos; 0 zeros recuperados; 1897 s
+[A] 156/802 intervalos; 0 zeros recuperados; 2033 s
+[A] 164/802 intervalos; 0 zeros recuperados; 2167 s
+[A] 168/802 intervalos; 0 zeros recuperados; 2292 s
+[A] 172/802 intervalos; 0 zeros recuperados; 2445 s
+[A] 175/802 intervalos; 0 zeros recuperados; 2568 s
+[A] 179/802 intervalos; 0 zeros recuperados; 2709 s
+[A] 182/802 intervalos; 0 zeros recuperados; 2837 s
+[A] 186/802 intervalos; 0 zeros recuperados; 2960 s
+[A] 191/802 intervalos; 0 zeros recuperados; 3110 s
+[A] 195/802 intervalos; 0 zeros recuperados; 3235 s
+[A] 199/802 intervalos; 0 zeros recuperados; 3395 s
+[A] 202/802 intervalos; 0 zeros recuperados; 3532 s
+[A] 205/802 intervalos; 0 zeros recuperados; 3653 s
+[A] 208/802 intervalos; 0 zeros recuperados; 3774 s
+[A] 213/802 intervalos; 0 zeros recuperados; 3925 s
+[A] 217/802 intervalos; 0 zeros recuperados; 4070 s
+[A] 222/802 intervalos; 0 zeros recuperados; 4205 s
+[A] 227/802 intervalos; 0 zeros recuperados; 4355 s
+[A] 231/802 intervalos; 0 zeros recuperados; 4498 s
+[A] 235/802 intervalos; 0 zeros recuperados; 4635 s
+[A] 242/802 intervalos; 0 zeros recuperados; 4775 s
+[A] 247/802 intervalos; 0 zeros recuperados; 4914 s
+[A] 251/802 intervalos; 0 zeros recuperados; 5057 s
+[A] 255/802 intervalos; 0 zeros recuperados; 5198 s
+[A] 260/802 intervalos; 0 zeros recuperados; 5339 s
+[A] 264/802 intervalos; 0 zeros recuperados; 5496 s
+[A] 267/802 intervalos; 0 zeros recuperados; 5641 s
+[A] 271/802 intervalos; 0 zeros recuperados; 5799 s
+[A] i=4223: 2 zero(s) em [3893.196189, 3895.098109]
+        3893.887460453
+        3893.977078497
+[A] 275/802 intervalos; 2 zeros recuperados; 5924 s
+[A] 282/802 intervalos; 2 zeros recuperados; 6054 s
+[A] 289/802 intervalos; 2 zeros recuperados; 6180 s
+[A] 296/802 intervalos; 2 zeros recuperados; 6315 s
+[A] 303/802 intervalos; 2 zeros recuperados; 6452 s
+[A] 309/802 intervalos; 2 zeros recuperados; 6572 s
+[A] 316/802 intervalos; 2 zeros recuperados; 6706 s
+[A] 323/802 intervalos; 2 zeros recuperados; 6837 s
+[A] 330/802 intervalos; 2 zeros recuperados; 6965 s
+[A] 337/802 intervalos; 2 zeros recuperados; 7097 s
+[A] 344/802 intervalos; 2 zeros recuperados; 7230 s
+[A] 351/802 intervalos; 2 zeros recuperados; 7360 s
+[A] i=5354: 2 zero(s) em [4791.294411, 4793.337366]
+        4792.399221931
+        4792.482772594
+[A] 357/802 intervalos; 4 zeros recuperados; 7499 s
+[A] 364/802 intervalos; 4 zeros recuperados; 7634 s
+[A] 370/802 intervalos; 4 zeros recuperados; 7755 s
+[A] 376/802 intervalos; 4 zeros recuperados; 7876 s
+[A] 383/802 intervalos; 4 zeros recuperados; 8008 s
+[A] 390/802 intervalos; 4 zeros recuperados; 8138 s
+[A] 395/802 intervalos; 4 zeros recuperados; 8263 s
+[A] 399/802 intervalos; 4 zeros recuperados; 8404 s
+[A] 403/802 intervalos; 4 zeros recuperados; 8547 s
+[A] 407/802 intervalos; 4 zeros recuperados; 8694 s
+[A] 411/802 intervalos; 4 zeros recuperados; 8838 s
+[A] 415/802 intervalos; 4 zeros recuperados; 8983 s
+[A] 419/802 intervalos; 4 zeros recuperados; 9117 s
+[A] 423/802 intervalos; 4 zeros recuperados; 9261 s
+[A] 427/802 intervalos; 4 zeros recuperados; 9407 s
+[A] 431/802 intervalos; 4 zeros recuperados; 9541 s
+[A] 435/802 intervalos; 4 zeros recuperados; 9687 s
+[A] 439/802 intervalos; 4 zeros recuperados; 9835 s
+[A] 443/802 intervalos; 4 zeros recuperados; 9970 s
+[A] 447/802 intervalos; 4 zeros recuperados; 10107 s
+[A] 451/802 intervalos; 4 zeros recuperados; 10249 s
+[A] 455/802 intervalos; 4 zeros recuperados; 10394 s
+[A] 459/802 intervalos; 4 zeros recuperados; 10546 s
+[A] 463/802 intervalos; 4 zeros recuperados; 10683 s
+[A] 467/802 intervalos; 4 zeros recuperados; 10826 s
+[A] 471/802 intervalos; 4 zeros recuperados; 10965 s
+[A] 475/802 intervalos; 4 zeros recuperados; 11106 s
+[A] 479/802 intervalos; 4 zeros recuperados; 11250 s
+[A] 483/802 intervalos; 4 zeros recuperados; 11388 s
+[A] i=7434: 2 zero(s) em [6391.888321, 6393.824753]
+        6392.876192802
+        6392.936474859
+[A] 487/802 intervalos; 6 zeros recuperados; 11561 s
+[A] 491/802 intervalos; 6 zeros recuperados; 11697 s
+[A] 495/802 intervalos; 6 zeros recuperados; 11837 s
+[A] 499/802 intervalos; 6 zeros recuperados; 11979 s
+[A] 503/802 intervalos; 6 zeros recuperados; 12124 s
+[A] 507/802 intervalos; 6 zeros recuperados; 12278 s
+[A] 511/802 intervalos; 6 zeros recuperados; 12425 s
+[A] 515/802 intervalos; 6 zeros recuperados; 12564 s
+[A] 519/802 intervalos; 6 zeros recuperados; 12715 s
+[A] i=7955: 2 zero(s) em [6785.648943, 6787.673398]
+        6786.913692583
+        6786.966386183
+[A] 522/802 intervalos; 8 zeros recuperados; 12858 s
+[A] 526/802 intervalos; 8 zeros recuperados; 12993 s
+[A] 530/802 intervalos; 8 zeros recuperados; 13134 s
+[A] 534/802 intervalos; 8 zeros recuperados; 13273 s
+[A] 538/802 intervalos; 8 zeros recuperados; 13413 s
+[A] 542/802 intervalos; 8 zeros recuperados; 13549 s
+[A] 546/802 intervalos; 8 zeros recuperados; 13695 s
+[A] 550/802 intervalos; 8 zeros recuperados; 13830 s
+[A] 554/802 intervalos; 8 zeros recuperados; 13976 s
+[A] 558/802 intervalos; 8 zeros recuperados; 14125 s
+[A] 562/802 intervalos; 8 zeros recuperados; 14272 s
+[A] 566/802 intervalos; 8 zeros recuperados; 14405 s
+[A] 570/802 intervalos; 8 zeros recuperados; 14544 s
+[A] 574/802 intervalos; 8 zeros recuperados; 14686 s
+[A] 578/802 intervalos; 8 zeros recuperados; 14829 s
+[A] 582/802 intervalos; 8 zeros recuperados; 14972 s
+[A] 586/802 intervalos; 8 zeros recuperados; 15117 s
+[A] i=8929: 2 zero(s) em [7513.644674, 7516.178408]
+        7514.668864274
+        7514.735641828
+[A] 589/802 intervalos; 10 zeros recuperados; 15271 s
+[A] i=8998: 2 zero(s) em [7566.241688, 7568.412164]
+        7567.429286797
+        7567.453983401
+[A] 592/802 intervalos; 12 zeros recuperados; 15425 s
+[A] 596/802 intervalos; 12 zeros recuperados; 15566 s
+[A] 600/802 intervalos; 12 zeros recuperados; 15707 s
+[A] 604/802 intervalos; 12 zeros recuperados; 15845 s
+[A] 608/802 intervalos; 12 zeros recuperados; 15987 s
+[A] 612/802 intervalos; 12 zeros recuperados; 16128 s
+[A] 616/802 intervalos; 12 zeros recuperados; 16273 s
+[A] 620/802 intervalos; 12 zeros recuperados; 16413 s
+[A] 624/802 intervalos; 12 zeros recuperados; 16552 s
+[A] 628/802 intervalos; 12 zeros recuperados; 16699 s
+[A] 632/802 intervalos; 12 zeros recuperados; 16839 s
+[A] 636/802 intervalos; 12 zeros recuperados; 16985 s
+[A] 640/802 intervalos; 12 zeros recuperados; 17122 s
+[A] 644/802 intervalos; 12 zeros recuperados; 17257 s
+[A] 648/802 intervalos; 12 zeros recuperados; 17397 s
+[A] 652/802 intervalos; 12 zeros recuperados; 17531 s
+[A] 656/802 intervalos; 12 zeros recuperados; 17668 s
+[A] 660/802 intervalos; 12 zeros recuperados; 17814 s
+[A] 664/802 intervalos; 12 zeros recuperados; 17962 s
+[A] 668/802 intervalos; 12 zeros recuperados; 18106 s
+[A] 672/802 intervalos; 12 zeros recuperados; 18256 s
+[A] 676/802 intervalos; 12 zeros recuperados; 18407 s
+[A] 680/802 intervalos; 12 zeros recuperados; 18547 s
+[A] 684/802 intervalos; 12 zeros recuperados; 18688 s
+[A] i=10256: 2 zero(s) em [8493.129069, 8495.622305]
+        8494.446640266
+        8494.514232087
+[A] 686/802 intervalos; 14 zeros recuperados; 18814 s
+[A] 690/802 intervalos; 14 zeros recuperados; 18957 s
+[A] 694/802 intervalos; 14 zeros recuperados; 19106 s
+[A] 698/802 intervalos; 14 zeros recuperados; 19250 s
+[A] 702/802 intervalos; 14 zeros recuperados; 19399 s
+[A] 706/802 intervalos; 14 zeros recuperados; 19545 s
+[A] 710/802 intervalos; 14 zeros recuperados; 19693 s
+[A] 714/802 intervalos; 14 zeros recuperados; 19834 s
+[A] 718/802 intervalos; 14 zeros recuperados; 19971 s
+[A] 722/802 intervalos; 14 zeros recuperados; 20120 s
+[A] 726/802 intervalos; 14 zeros recuperados; 20262 s
+[A] 730/802 intervalos; 14 zeros recuperados; 20412 s
+[A] 734/802 intervalos; 14 zeros recuperados; 20556 s
+[A] 738/802 intervalos; 14 zeros recuperados; 20695 s
+[A] 742/802 intervalos; 14 zeros recuperados; 20831 s
+[A] 746/802 intervalos; 14 zeros recuperados; 20969 s
+[A] 750/802 intervalos; 14 zeros recuperados; 21114 s
+[A] 754/802 intervalos; 14 zeros recuperados; 21259 s
+[A] 758/802 intervalos; 14 zeros recuperados; 21401 s
+[A] 762/802 intervalos; 14 zeros recuperados; 21543 s
+[A] 766/802 intervalos; 14 zeros recuperados; 21688 s
+[A] 770/802 intervalos; 14 zeros recuperados; 21822 s
+[A] 774/802 intervalos; 14 zeros recuperados; 21969 s
+[A] 778/802 intervalos; 14 zeros recuperados; 22117 s
+[A] 782/802 intervalos; 14 zeros recuperados; 22259 s
+[A] 785/802 intervalos; 14 zeros recuperados; 22380 s
+[A] 789/802 intervalos; 14 zeros recuperados; 22519 s
+[A] 793/802 intervalos; 14 zeros recuperados; 22670 s
+[A] 797/802 intervalos; 14 zeros recuperados; 22819 s
+[A] 801/802 intervalos; 14 zeros recuperados; 22958 s
+[A] 802/802 intervalos; 14 zeros recuperados; 22990 s
+[B] certificado depois da Etapa A: passed=True medianas +0.498 → +0.500
+{
+  "n_recuperados_a": 14,
+  "n_recuperados_c": 0,
+  "n_corrigida": 12014,
+  "passou": true
+}

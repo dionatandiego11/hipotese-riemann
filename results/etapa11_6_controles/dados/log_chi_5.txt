@@ -1,0 +1,31 @@
+nohup: ignorando entrada
+Traceback (most recent call last):
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/dirichlet/dirichlet_zeros.py", line 733, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/dirichlet/dirichlet_zeros.py", line 719, in main
+    m = run(CHARACTERS[args.carater], args.n, args.saida, every_zeros=args.salvar_a_cada,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/dirichlet/dirichlet_zeros.py", line 544, in run
+    with RunLock(out_dir / f".lock_{ch.name}_{n}"):
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/dirichlet/dirichlet_zeros.py", line 463, in __enter__
+    raise RuntimeError(f"outra execução (PID {pid}) está usando {self.path.name}")
+RuntimeError: outra execução (PID 61299) está usando .lock_chi_5_12000
+
+# [nota do agente, 19/09/2026 13:45] a tentativa duplicada acima foi recusada pela trava (Adendo 2, M2.5); a execução válida é a do PID que detém .lock_chi_5_12000.
+Interrompido (sinal 15). Progresso gravado em results/etapa11_6_controles/dados/progresso_chi_5_12000.json; rode o mesmo comando para retomar.
+Interrompido (sinal 15). Progresso gravado em results/etapa11_6_controles/dados/progresso_chi_5_12000.json; rode o mesmo comando para retomar.
+{
+  "n_zeros": 12000,
+  "gamma_last": 9510.050469888152,
+  "all_checks_passed": false,
+  "checks": {
+    "V1": false,
+    "V2": false,
+    "V3": true,
+    "V4": true
+  },
+  "resumes": 2,
+  "evaluations": 295351,
+  "seconds_this_session": 144602.8
+}
