@@ -20,3 +20,8 @@ archive/fontes_etapa11/*.pdf
 archive/fontes_etapa11/*.html
 archive/fontes_etapa11/**/*.pdf
 archive/fontes_etapa11/**/*.html
+
+# Estado de execução retomável (regenerável; o registro fica nos manifestos)
+results/etapa11_6_controles/dados/progresso_*.json
+results/etapa11_6_controles/dirichlet/completude/progresso_*.json
+results/etapa11_6_controles/estadio/_poder_tmp/

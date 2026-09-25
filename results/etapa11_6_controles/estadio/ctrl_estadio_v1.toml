@@ -1,0 +1,75 @@
+# ctrl-estadio-v1 — parâmetros do instrumento.
+# Declaração: results/etapa11_6_controles/DECLARACAO_ESTADIO.md (SHA-256 c7ce5d5b…); adendos 1 (a1496aca…),
+# 2 (ea251f00…) e 3. Cópia dos parâmetros numéricos de configs/m4_v3.toml, EXCETO: variável k, densidade de Weyl do
+# quarto de estádio, catálogo O1, nulo GOE no lugar do GUE (e fundo GOE nas linhas sintéticas), semente 20260921,
+# declared_table_error = 1e-3 (meta de precisão dos níveis, declaração §4), blocos G e g01–g04 e critérios E-C*.
+protocol_version = "ctrl-estadio-v1"
+
+t_min = 0.5
+t_max = 5.0
+window = "hann"
+density = "rvm"
+points_per_fwhm = 8.0
+quadrature_panel_length = 0.5
+quadrature_order = 8
+
+primary_null = "shuffle"
+candidate_z = 3.0
+noise_smooth_window = 0.05
+alpha = 0.05
+threshold_confidence = 0.95
+shuffle_sigma_realizations = 200
+shuffle_threshold_realizations = 9999
+shuffle_score_realizations = 9999
+goe_sigma_realizations = 100
+goe_threshold_realizations = 199
+goe_score_realizations = 0
+goe_retained_fraction = 0.6
+
+synthetic_realizations = 40
+synthetic_lines_per_realization = 12
+synthetic_pair_separations_fwhm = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+matching_tolerance_quantile = 0.99
+recovery_curve_z_edges = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0]
+resolution_recovery_target = 0.9
+
+targeted_fit_half_width_fwhm = 0.5
+targeted_fit_primary = "band_conjugate"
+phase_control_realizations = 999
+declared_table_error = 1e-3
+precision_perturbations = 20
+
+seed = 20260921
+primary_block = "G"
+blocks = [
+  { name = "G",   k_min = 85.4699,  k_max = 304.0528 },
+  { name = "g01", k_min = 85.4699,  k_max = 169.3579, for_e_c2bb = true },
+  { name = "g02", k_min = 169.3579, k_max = 223.5316, for_e_c2bb = true },
+  { name = "g03", k_min = 223.5316, k_max = 266.8648, for_e_c2bb = true },
+  { name = "g04", k_min = 266.8648, k_max = 304.0528, for_e_c2bb = true },
+]
+
+[criteria]
+# chaves de m4-v3 usadas por arithmetic_comparison
+alpha_family = 0.05
+clear_margin = 1.5
+ratio_tolerance = 1e-6
+coefficient_fraction_min = 0.95
+q_min = 0.9
+recovery_min = 0.95
+# critérios E-C* (declaração §5; adendos 1 e 3)
+unmatched_fraction_max = 0.10
+absence_fraction_max = 0.05
+bb_ratio_tolerance = 0.10
+
+[targeted_fit_variants.band_conjugate]
+sampling = "band"
+include_conjugate = true
+
+[targeted_fit_variants.band_no_conjugate]
+sampling = "band"
+include_conjugate = false
+
+[targeted_fit_variants.centers_conjugate]
+sampling = "centers"
+include_conjugate = true
