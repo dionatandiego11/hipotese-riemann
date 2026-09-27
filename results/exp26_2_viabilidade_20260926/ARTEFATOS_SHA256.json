@@ -1,0 +1,20 @@
+{
+  "ADENDO_TECNICO_1.md": "c338853a1ba39756d74217d04fe101c3c230c6f1dd6e0cbbe21c49095b2e7d33",
+  "ADENDO_TECNICO_1.sha256": "c23c61f22c4aa6633bf7777c0b960b81e134e6448cfb34e43c48d3d726535f51",
+  "DECLARACAO.md": "904bc658892cd6e22790bfb18f154d0adc24aa295ee19f0991f170117f7146f2",
+  "DECLARACAO.sha256": "d125eb3e8754aad0685d652a353530dc633d72fb5c2927641301c2d4b5b88e7a",
+  "RELATORIO.md": "e0a6e904933ce88bdf2f6cb77440542e82ac29fb363216b87578083d5f2e17d5",
+  "checkpoint.json": "b5a2c5594d064948bfc7b684624b314203f347809c237cd48c5ac5458aa13402",
+  "correlacao_bins_avaliacao.npy": "c3c2255c934ccf7e57e05580d2c39b6b253560248cad00c025d5e03b843e30e6",
+  "declaracao_registro.json": "4319676ff2147179a77cf7f7d83d1c606efc3bd6b45e299782578a8be41235e0",
+  "execucao.log": "034ca13f2b1a8e3a6e65ba84a7b658c25db36b2cc1c0f27703a9945f567f5ffc",
+  "executar.py": "0b5932ec7d7cd856fb2a4a98725fe17f89f38d525829a1d244bbd90571fa68a2",
+  "lock.json": "c0dc75fe9894326d4078f4abe7cba93a88623cdc3cbaa0f9e22d89b4fafcedaf",
+  "pais.json": "fc5f18232935b5c30787c2bfdacd899dfb2f95cce7c7086f68b45f46b6b6177b",
+  "resumo.json": "90c0a7f5155d6994fcc9036ee857e366e28a7281b6f5276da27d1909a72cb739",
+  "sinteticos_resumos.npz": "f13f4be32c242764f3ad7b4a84996e734cf3bb61f149e79ebc7364e371df8f4c",
+  "tentativa1_importacao/execucao.log": "783e12a6efaa08a7059f7d902e405c241d98215987d70912090dc65535d880b7",
+  "tentativa1_importacao/executar.py": "0f4d5ac2da523298b7c50707e61fa8840efcc7cbf43c4d4300e540c289d09d76",
+  "tentativa1_importacao/lock.json": "25703157c98407cc5251ce695dc3785a6869d3115b5d857bcd11693df6e31cec",
+  "tentativa1_importacao/loss_viability.py": "550bd807d7d5cca8966598ee721c4e33e0bac18b1a5f713368a491b074d0ed51"
+}

@@ -1,0 +1,55 @@
+{
+  "completed_parents": 120,
+  "cpu_seconds": 113.16913,
+  "wall_seconds": 113.84815387695562,
+  "checks": [
+    {
+      "k": 2,
+      "mechanism": 0,
+      "identity_error": 9.623378482981337e-16,
+      "direct_error": 3.1086244689504383e-15
+    },
+    {
+      "k": 2,
+      "mechanism": 1,
+      "identity_error": 1.3167093283750209e-15,
+      "direct_error": 1.9984014443252818e-15
+    },
+    {
+      "k": 6,
+      "mechanism": 0,
+      "identity_error": 1.1632405108596977e-15,
+      "direct_error": 2.220446049250313e-15
+    },
+    {
+      "k": 6,
+      "mechanism": 1,
+      "identity_error": 1.1852498149611534e-15,
+      "direct_error": 2.220446049250313e-15
+    },
+    {
+      "k": 12,
+      "mechanism": 0,
+      "identity_error": 1.4888264232570947e-15,
+      "direct_error": 2.4424906541753444e-15
+    },
+    {
+      "k": 12,
+      "mechanism": 1,
+      "identity_error": 1.1368943980683e-15,
+      "direct_error": 1.7763568394002505e-15
+    },
+    {
+      "k": 30,
+      "mechanism": 0,
+      "identity_error": 8.257283745649602e-16,
+      "direct_error": 5.10702591327572e-15
+    },
+    {
+      "k": 30,
+      "mechanism": 1,
+      "identity_error": 9.67135442911382e-16,
+      "direct_error": 4.884981308350689e-15
+    }
+  ]
+}

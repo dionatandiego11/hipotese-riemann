@@ -2,11 +2,15 @@
 
 **Adicionado:** 14/09/2026. **Estado:** pendente. Este documento é um plano de trabalho; ainda não é um protocolo experimental congelado nem um relatório de execução.
 
+## Prioridade de trabalho — atualização de 25/09/2026
+
+Por solicitação do usuário, a próxima frente é a [revisão dirigida de dependências aritméticas e transientes](../hipoteses/PLANO_COLLATZ_DEPENDENCIAS_TRANSIENTES.md). Ela fixa um alvo matemático sobre a dispersão das árvores inversas antes de qualquer enumeração extensa. A CL0 documental está entregue, com [errata separada](../results/collatz_cl0/ERRATA_CL0_1.md); CL1 permanece não executada. A ordem documental C-D1–C-D3 precede a decisão de implementar os pilotos abaixo. O roteiro CL0–CL5 é preservado como arquitetura; seu prompt de implementação no fim não é a tarefa atual. O destino vigente de código eventual é `collatz/`, conforme o desvio já registrado na CL0.
+
 ## Objetivo e escopo
 
 Estudar o caminho regra aritmética → órbitas → estrutura espectral em sistemas cuja regra é conhecida. Usar esse laboratório para avaliar o que uma reconstrução inversa consegue identificar e o que perde. A pergunta central é: **que informação aritmética adicional distingue sistemas com a mesma dinâmica simbólica?**
 
-A frente complementa as etapas 11–13 do [plano principal](../PLANO_IMPLEMENTACAO.md). Não condiciona a conclusão de M4/M5. Não propõe demonstrar Collatz ou Riemann, nem identifica uma dinâmica de Collatz com a dinâmica dos zeros. Nenhuma etapa requer ler ordenadas da zeta ou modificar os protocolos m3/m4.
+A frente complementa as etapas 11–13 do [plano principal](../PLANO_IMPLEMENTACAO.md). Não condiciona a conclusão de M4/M5. A ampliação de 25/09/2026 passa a investigar também uma ligação direta, conforme o [roteiro Collatz–Riemann](../hipoteses/PLANO_PONTE_DIRETA_COLLATZ_RIEMANN.md). Nenhuma identificação ou demonstração das conjecturas está estabelecida. Nenhuma etapa requer ler ordenadas da zeta ou modificar os protocolos m3/m4.
 
 ## Convenções e referências matemáticas
 
@@ -46,6 +50,8 @@ O último mantém a restrição aritmética de integridade. Não aplicar automat
 Preparar configuração versionada para o piloto, testes e manifesto. Congelar regras, tolerâncias e hashes antes das comparações experimentais; registrar que os casos de validação já têm resposta conhecida. Uma ampliação posterior exige configuração própria.
 
 **Entregáveis:** especificação, protocolo inicial e configuração. **Critério:** cada observável identifica mapa, espaço, medida quando necessária, normalização e significado; nenhuma aproximação finita é apresentada como o sistema infinito.
+
+**Executado em 25/09/2026** (entrega documental, sem experimento): [results/collatz_cl0](../results/collatz_cl0/README.md) — `ESPECIFICACAO_CL0_v1.md` (`5556a070…`), `PROTOCOLO_CL0_v1.md` (`29ca9d5b…`) e `collatz_cl1_v1.toml` (`7d00d0ef…`), congelados. Desvio registrado: o código novo irá para o pacote `collatz/` na raiz, não para `src/riemann_spectra/collatz/`, porque o código científico de m3/m4 está congelado e sob lock.
 
 ### CL1 — Zeta exata e controle simbólico
 

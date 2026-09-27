@@ -1,0 +1,22 @@
+{
+ "Q1": {
+  "blocos_sucesso": 9,
+  "blocos_berry_gt3": 0,
+  "veredito": "sucesso"
+ },
+ "chi_m4": {
+  "delta_chi2": 164.12690320709893,
+  "rms_correto": 0.47768875530948596,
+  "rms_todos": 3.5975451884688394,
+  "rms_gue": 15.218762563886338,
+  "veredito": "conjunto correto preferido"
+ },
+ "chi_5": {
+  "delta_chi2": 6.906382212559093,
+  "rms_correto": 0.39477082795160773,
+  "rms_todos": 1.16200003485929,
+  "rms_gue": 12.28779933718513,
+  "veredito": "inconclusivo"
+ },
+ "segundos": 3.5
+}

@@ -1,0 +1,12 @@
+{
+  "arquivo": "archive/fontes_etapa11/ponte_collatz_20260925/meinardus_2001.pdf",
+  "origem_local": "/home/dionatandiego11/.local/share/torbrowser/tbb/x86_64/tor-browser/Browser/Downloads/261_2001.pdf",
+  "url_informada_pelo_usuario": "https://madoc.bib.uni-mannheim.de/1608/1/261_2001.pdf",
+  "metodo": "download pelo usuario via Tor; copia local pelo agente",
+  "recebido_em": "2026-09-26T11:02:05.545663+00:00",
+  "baixado_em": "nao registrado pelo agente",
+  "sha256": "08ebcc736ad2c72dad634394cdd9402f90f21a31af0fb77d6709bd8bf2ce297e",
+  "bytes": 645872,
+  "original_preservado": true,
+  "leitura": "capa conferida por extracao de texto: titulo, autor e Nr.261/2001; 15 paginas; conteudo matematico ainda nao analisado"
+}

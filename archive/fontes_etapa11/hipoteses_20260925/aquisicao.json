@@ -1,0 +1,34 @@
+[
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260925/koopman_collatz.pdf",
+    "url": "https://arxiv.org/pdf/2010.12987",
+    "sha256": "4754a246f5949eeb6375a99b1bd022b98887fc156f6fae2e0ce66395eec86308",
+    "bytes": 554824,
+    "baixado_em": "2026-09-25T19:38:58.191438+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260925/grosswald_schnitzer.pdf",
+    "url": "https://msp.org/pjm/1978/74-2/pjm-v74-n2-p09-s.pdf",
+    "sha256": "a311d5b72621d65bf64fe7bdd2bab90126a3a69eed8fc39912a2822e7c8b3717",
+    "bytes": 1089382,
+    "baixado_em": "2026-09-25T19:39:00.940347+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260925/missing_levels.pdf",
+    "url": "https://arxiv.org/pdf/nucl-th/0403006",
+    "sha256": "c4ba67df7d9abaf3983d424f270da052a9cc76fd93839f442ac6897c93ab4d33",
+    "bytes": 114669,
+    "baixado_em": "2026-09-25T19:38:58.031113+00:00",
+    "status": "obtido"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/hipoteses_20260925/super_resolution.pdf",
+    "url": "https://arxiv.org/pdf/1203.5871",
+    "sha256": "454ae7adfe5949f77a7f227e2f1b06f3b06d93ca6698358cdb33e1bb07e7f7dd",
+    "bytes": 1636526,
+    "baixado_em": "2026-09-25T19:38:58.311764+00:00",
+    "status": "obtido"
+  }
+]

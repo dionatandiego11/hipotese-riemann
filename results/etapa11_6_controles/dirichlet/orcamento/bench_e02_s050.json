@@ -1,0 +1,55 @@
+{
+  "carater": "chi_m4",
+  "bloco": "e02",
+  "indices": [
+    3001,
+    6000
+  ],
+  "n_niveis": 3000,
+  "A": 2892.618248034818,
+  "B": 5292.83111031438,
+  "fonte_dos_niveis": "substitutos GUE a partir de N̄_χ⁻¹ nos índices do bloco; nenhum zero real lido",
+  "escala": 0.5,
+  "realizacoes_declaradas": {
+    "shuffle_sigma_realizations": 200,
+    "shuffle_threshold_realizations": 9999,
+    "shuffle_score_realizations": 9999,
+    "gue_sigma_realizations": 100,
+    "gue_threshold_realizations": 199,
+    "gue_score_realizations": 0,
+    "synthetic_realizations": 40,
+    "phase_control_realizations": 999,
+    "precision_perturbations": 20
+  },
+  "realizacoes_usadas": {
+    "shuffle_sigma_realizations": 100,
+    "shuffle_threshold_realizations": 5000,
+    "shuffle_score_realizations": 5000,
+    "gue_sigma_realizations": 50,
+    "gue_threshold_realizations": 100,
+    "gue_score_realizations": 0,
+    "synthetic_realizations": 20,
+    "phase_control_realizations": 500,
+    "precision_perturbations": 10
+  },
+  "segundos_por_etapa": {
+    "instrument": 1.0909350580186583,
+    "null_shuffle": 169.67755510701681,
+    "null_gue": 111.18290834999061,
+    "synthetic": 28.49311987598776,
+    "arithmetic": 36.770005931990454
+  },
+  "segundos_cpu_total": 287.992265,
+  "segundos_parede_total": 347.25395248201676,
+  "segundos_gerar_niveis": 0.9837429669860285,
+  "grade": {
+    "n_pontos": null,
+    "fwhm": 0.00523552340371365
+  },
+  "n_picos_candidatos": 0,
+  "omp_num_threads": "1",
+  "script_sha256": "d3d75290704acacb9018b496971d51e4bd318bca638457ad00cefa43c594be8c",
+  "instrumento_sha256": "7b3ea0564fc3f7566b563c8e091969ae7c64fad8d7006cc279313ded20a3bc01",
+  "config_sha256": "b51f78a1afb3b07f8405111ced067126c3d623a3fa391923e82fe60231d93e1f",
+  "quando": "2026-09-25T15:49:54-0300"
+}

@@ -1,0 +1,12 @@
+[V2'] varredura com passo d̄/16: 3000 zeros
+[A] 210 intervalos acima de 1.6 d̄; passo d̄/32
+{
+  "V2": {
+    "n_reference": 3000,
+    "n_recomputed": 3000,
+    "same_count": true,
+    "max_abs_difference": 5.802576197311282e-10,
+    "passed": true
+  },
+  "passou": true
+}

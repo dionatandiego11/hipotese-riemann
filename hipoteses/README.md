@@ -32,3 +32,31 @@ Os candidatos continuam **pendentes, sem resultado**. Os rótulos A/B/C/D classi
 Priorizar **P-R1, previsão transferível dos erros**, aproveitando o trabalho existente; preparar **P-C1, simetrias e filtros aritméticos de Collatz**, como frente pequena e independente. P-R2, identificação sem rótulo, é uma segunda opção depois de resolver o vazamento de informação. Não abrir simultaneamente uma busca de Hamiltonianos, de padrões em Collatz e de anomalias estatísticas sem alvos definidos.
 
 Os dias de geração de zeros de Dirichlet sustentam primeiro o controle declarado. Não compram automaticamente uma confirmação nova: depois da análise dos controles, esses dados são T0 segundo o protocolo v2. Uma confirmação posterior precisará de reserva adequada, definida antes do acesso.
+
+## Atualização de 25/09/2026
+
+- [Rodada bibliográfica](RODADA_BIBLIOGRAFICA_20260925.md): quatro fontes primárias arquivadas, leitura parcial e limites.
+- [Novas perguntas e refinamento Collatz](PERGUNTAS_20260925.md): P-R5, P-R6 e P-C2a, ainda propostas.
+- [Errata da CL0](../results/collatz_cl0/ERRATA_CL0_1.md): distinguir periodicidade binária de periodicidade sob Collatz.
+
+P-R1 já originou H-004, com reserva e adendos próprios; a regra prospectiva vigente é a desses documentos. A recomendação inicial acima é histórica, não substitui essa declaração. Nenhum dado reservado foi consultado nesta atualização.
+
+## Frente complementar escolhida — 25/09/2026
+
+[Plano de dependências aritméticas e transientes de Collatz](PLANO_COLLATZ_DEPENDENCIAS_TRANSIENTES.md): revisão dirigida → alvo sobre dispersão das árvores inversas → formulação separada de transientes → decisão sobre piloto. Nenhuma enumeração nesta entrega.
+
+## Ampliação solicitada: ponte direta Collatz–Riemann
+
+[Roteiro específico](PLANO_PONTE_DIRETA_COLLATZ_RIEMANN.md): séries de Dirichlet e antecedente de Meinardus como primeira leitura; séries de órbitas/árvores como candidata; determinantes como rota de alto risco. A busca direta integra agora o objetivo, sem substituir a necessidade de identidade demonstrável nem afirmar que exista uma ligação entre as conjecturas.
+
+## Direção experimental — 26/09/2026
+
+[Hipóteses e escolhas de pesquisa](DIRECAO_EXPERIMENTAL_20260926.md): inversão do vazamento, perdas seletivas, identificação aritmética e contagens de ramos de Collatz. EXP26-* são propostas, não testes congelados. A ponte direta exige um mecanismo sensível aos zeros antes de procurar coincidências.
+
+### Prioridade revista após revisão do usuário
+
+EXP26-2 passa a principal após H-004. A [ficha prévia](FICHA_EXP26_2_PREVIA.md) está escrita, ainda sem congelamento ou execução. EXP26-1 depende de condicionamento e comparação com ajuste conjunto; EXP26-4 requer busca de antecedentes e benchmark. Ver revisão explícita em `DIRECAO_EXPERIMENTAL_20260926.md`.
+
+### Conta sintética EXP26-2 concluída
+
+[Relatório](../results/exp26_2_viabilidade_20260926/RELATORIO.md): sem critério de avanço satisfeito; parar B1 em k=6/30, inconclusivo em k=2/12. Não altera as prioridades mais recentes do ANDAMENTO (H-004 adiada; VN-1).

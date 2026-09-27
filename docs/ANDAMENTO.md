@@ -427,3 +427,206 @@ Registro anterior (14/09/2026):
   9001–12000, mais o passe de completude na lista recomputada).
 - **Próximo:** V2′ de χ₅; depois o instrumento do controle nos 8 blocos das listas corrigidas e, só então,
   `preditor_pr1_v2.py` da H-004.
+
+### 25/09/2026 — mudança de direção: custo de CPU passa a exigir previsão; estádio encerrado por prioridade
+
+- **Estado:** regra `validado` (documental); estádio `encerrado por prioridade`; diagnóstico do estádio `em execução`
+  com classificação limitada.
+- **Regra nova:** [ADENDO_REGISTRO_v2_2.md](../results/registro_hipoteses/ADENDO_REGISTRO_v2_2.md) (`0b505348…`) —
+  "nenhuma produção longa sem ganho científico discriminante, viabilidade demonstrada e custo limitado". Longa = acima
+  de 4 horas-CPU acumuladas; estudo de viabilidade tem exceção com teto, réplicas e regra de parada declarados; poder
+  só decide por intervalo de Wilson, nunca por frequência pontual.
+- **Errata 1** (`b56b0470…`): o estudo de poder do estádio em execução estima **marginais**, com G, g01 e g04 gerados
+  como espectros independentes, e não estima o critério conjunto; reclassificado como **diagnóstico preliminar**, que
+  não autoriza produção. Teto real passou a ser `RLIMIT_CPU` (86.400 s no PID 206589, `NLWP = 1` conferido), porque
+  `timeout` mede parede e `nice` não é orçamento. Extensão sequencial de 40 para 60 réplicas **revogada** (não preserva
+  cobertura de 95%). Sementes derivadas de `hash((name, cond))` variam entre processos e não são gravadas: a execução
+  **não é reproduzível** e carrega essa limitação.
+- **Errata 2** (`9deef4f6…`), da segunda revisão do usuário: (i) marginal abaixo do alvo **não** reprova — reprovar
+  exige o limite **superior** de Wilson abaixo do alvo, e encerrar por orçamento ou prioridade é outra coisa, que não
+  se relata como insuficiência demonstrada; (ii) a cota P(conjunto) ≤ min(marginais) exige marginais do **mesmo**
+  experimento, e não foi demonstrado que sub-blocos independentes representem os que seriam extraídos de G, logo o
+  diagnóstico não estabelece cota para o desenho conjunto nem para o estádio real; (iii) "amplitude não prevista" ≠
+  "amplitude prevista igual a zero" — `ratio_to_theory` e `phase_error_rad` dessas linhas saem como **não aplicável**,
+  com motivo, e os brutos e avisos ficam preservados; (iv) descartada a minha proposta de usar marginais ≥ 0,9 para
+  rebaixar E-C2bb a descritivo, que seria escolher uma versão mais fácil do controle a partir do diagnóstico.
+- **Decisão:** produção do estádio bloqueada e desenho atual **encerrado por prioridade**, não por insuficiência
+  demonstrada. Sem desenho conjunto e sem produção reduzida nesta rodada. O diagnóstico termina dentro do teto, é
+  relatado com a classificação limitada e tem o custo de CPU medido.
+- **Fila:** fechar a V2′ de χ₋₄ → H-004 quando as dependências dela estiverem satisfeitas (declaração §5: verificações
+  do controle, instrumento nos 8 blocos, depois o preditor) → P-R1, bibliografia e CL0.
+- **CL0 delegado** à outra sessão local (`hipotese-riemann-6c`), por pedido do usuário, com o escopo, as regras de
+  rótulo e pré-registro, os limites de arquivo (nada em `src/riemann_spectra`, nada nas pastas com processos rodando) e
+  o estado de F-001 a F-003.
+
+### 25/09/2026 — CL0: especificação, protocolo e configuração do laboratório Collatz
+
+- **Estado:** CL0 `validado` como entrega **documental**; CL1 `não executado`; CL2–CL5 `pendente`. Nenhum experimento
+  foi executado e nenhuma afirmação de novidade é feita.
+- **Entregues** em [results/collatz_cl0](../results/collatz_cl0/README.md), os três congelados com hash:
+  `ESPECIFICACAO_CL0_v1.md` (`5556a070…`), `PROTOCOLO_CL0_v1.md` (`29ca9d5b…`) e a configuração
+  `collatz_cl1_v1.toml` (`7d00d0ef…`).
+- **Especificação:** separa Σ₂, ℤ₂, Q_ímpar, ℤ e ℕ_{>0}, com invariância e medida de cada um; fixa a convenção T-tempo
+  (ciclo {1,2} com período 2) e a conversão para C-tempo; dá ficha de \(\mathcal L_g\), \(P\), \(U\) e \(\mathcal L_+\)
+  com espaço, medida, norma e domínio antes de qualquer palavra sobre espectro; e lista nove observáveis (O1–O9) com
+  mapa, espaço, medida, normalização, significado e rótulo máximo sustentável.
+- **Fatos A com página:** conjugação Φ∘S∘Φ⁻¹ = T e vetor de paridades (Bernstein–Lagarias, pp. 1–2); Aut(S) = ℤ/2ℤ com
+  V(x) = −1−x (p. 2); Conjectura de Periodicidade e sua equivalência com a autoconjugação (p. 3; Monks–Yazinski,
+  Teorema 2.1, p. 3). Registrada a correção do usuário: Ω(3) = −4/9 (Monks–Yazinski, Exemplo 2, p. 3), logo Ω **não**
+  leva positivos em negativos embora V leve.
+- **Derivações próprias** (Anexo A, elementares e a reverificar como B em CL1/CL4): F_n = 2ⁿ e ζ_T = (1−2z)⁻¹; a
+  fórmula exata do ciclo x = b/(2ⁿ−3ᵏ) com conferência das palavras de comprimento 1 e 2; contração de razão
+  exatamente 1/2 dos dois ramos inversos em ℤ₂, com P**1** = **1** reverificando a conservação de Haar; e
+  \(\|\mathcal L_+\|_{\ell^1}=1\), \(\|\mathcal L_+\|_{\ell^2}=\sqrt2\), \(\|\mathcal L_+\|_{\ell^\infty}=2\).
+- **Pré-registro:** oito verificações com **resposta conhecida antes da execução** (F_n, c_n de Lyndon, Möbius nos dois
+  sentidos, coeficientes da zeta, soma ponderada (a+b)ⁿ, Fix(T) = {0,−1}, Fix(T²) = {0,−1,1,2}, ciclo positivo {1,2}).
+  Reproduzi-las é B e só B. **Divulgado no próprio protocolo:** esses valores foram conferidos por cálculo de rascunho
+  no diretório temporário da sessão antes de serem congelados — segundos de CPU, sem artefato em `results/`, sem
+  manifesto; isso não é o piloto de CL1.
+- **Custo:** aplicado o adendo 2 do registro v2 (`0b505348…`, erratas `b56b0470…` e `9deef4f6…`). CL0 é texto e não é
+  produção; CL1 recebe teto de segurança de 0,5 hora-CPU com `OMP_NUM_THREADS=1` e parada por orçamento; CL2 em diante
+  é exponencial no período e exige configuração nova, benchmark e, acima de 4 horas-CPU, os quatro requisitos do §3.
+- **Desvio registrado:** o plano propunha `src/riemann_spectra/collatz/`; como o código de m3/m4 está congelado e sob
+  lock, o pacote novo será `collatz/` na raiz. Nada em `src/riemann_spectra/`, em `configs/*.lock.json` ou nas pastas
+  das três execuções em andamento da 11.6 foi tocado.
+- **Fonte nova:** o PDF de Bernstein & Lagarias, cujo download falhou em 19/09 (403/429), foi obtido em 25/09 —
+  `archive/fontes_etapa11/collatz_cl0_20260925/bernstein_lagarias.pdf` (`476b0149…`, 16 pp., cópia do autor), com
+  `aquisicao.json` próprio e linha no `MANIFESTO.csv`. O registro da falha de 19/09 foi preservado. F-003 segue
+  `proposta`: a triagem não muda, só o estado da fonte.
+- **Executado nesta entrega:** leitura de fontes (pp. 1–3 e 15 de Bernstein–Lagarias; pp. 2–3 de Monks–Yazinski),
+  redação, conferência de hashes citados e validação sintática da configuração. Sem commit.
+- **Próximo:** CL1 — criar o pacote `collatz/` com testes de invariantes e executar o piloto de períodos 1–12 sob a
+  configuração congelada. Não iniciado aqui.
+
+### 25/09/2026 (tarde) — orçamento medido do instrumento e identidade dos dados da H-004
+
+- **Orçamento** (`dirichlet/orcamento/ORCAMENTO_INSTRUMENTO.md`, `2e67b472…`, com
+  `ORCAMENTO_INSTRUMENTO_ANEXO1.md`, `54339d77…`): medido **só com níveis sintéticos** (bordas dos blocos por N̄_χ⁻¹
+  nos índices, substitutos GUE, nenhum bloco reservado aberto). Custos por bloco de 3.000 zeros: nulo shuffle 341 s
+  (e02) a 453 s (f04), nulo GUE 226 s, calibração sintética 58 s, aritmética 67 s (valor conservador), instrumento
+  ~1 s. **Oito blocos: 1,55 a 1,8 hora-CPU**, 1,3 a 2,4 h com margem de ±30% — abaixo do limiar de 4 horas-CPU que
+  define produção longa. Retomada por bloco, sem checkpoint interno (perda máxima de ~14 min de CPU).
+- **Decomposição da aritmética, medida variando uma contagem por vez** (anexo 1): base 4,16 s; controle de fase
+  **0,000204 s por realização** (999 realizações = 0,20 s, 0,5% da etapa); precisão **1,948 s por perturbação**
+  (20 = 38,96 s); rms 0,069 s. Threads = 1 conferido no processo; CPU por `getrusage` incluindo filhos; razão
+  CPU/parede 0,87–0,89 por contenção. Custo do próprio exercício: ≈ 0,18 hora-CPU.
+- **Caminho dirigido mais barato descartado:** construção + aritmética nos 6 blocos reservados custaria ≈ 0,15 h-CPU
+  contra 1,55–1,8 h do controle completo. A economia não paga adendo, verificação de equivalência e código novo.
+  Recomendação registrada: executar o controle como declarado.
+- **Identidade dos dados** (`results/registro_hipoteses/H-004/ADENDO_H004_2.md`, `a5d071be…`): conjunto de dados = lista
+  corrigida pelo D3 (`zeros_chi_m4_12000_completo.txt`, `81fdfc0a…`; manifesto `851a6c95…`), com o vínculo à execução
+  reprovada preservado. **Valores inalterados, contagem igual (12.000), indexação mudou a partir do índice 4223**:
+  bordas 6.000, 9.000 e 12.000 correspondem aos índices originais 5.996, 8.990 e 11.986; e01 é idêntico; e02 ganha 4
+  recuperados, e03 ganha 6, e04 ganha 4 e o topo recua para 9.749,443063. Reserva **não** reduzida. Registrado o acesso
+  já ocorrido aos blocos reservados pelo passe D3 (larguras, θ e certificado; nenhuma observável do instrumento).
+- **Carregador:** `preditor_pr1_v2.py` preservado; `preditor_pr1_v3.py` difere só na pré-condição e nos caminhos, exige
+  as cinco verificações do manifesto D3 e o SHA-256 do arquivo analisado, e só roda depois de um teste de equivalência
+  que mostre `blocks` idêntico ao de v2 nas entradas em que v2 roda. χ₅ entra por complemento hasheado.
+- **CL0** encerrada como entrega documental (outra sessão), com a divulgação do rascunho preservada; **CL1 não
+  executada** nesta rodada.
+- **Sequência acordada:** orçamento fechado → validação dos dados corrigidos (V2′ em curso; passe de χ₅ em curso) →
+  complemento de identidade de χ₅ → controle completo nos 8 blocos → H-004, sem ajuste entre as duas análises.
+
+### 25/09/2026 — pesquisa bibliográfica e perguntas além da calibração
+
+- Entrega documental em `hipoteses/RODADA_BIBLIOGRAFICA_20260925.md` e `PERGUNTAS_20260925.md`: quatro fontes primárias obtidas e parcialmente lidas, com hashes e proveniência. Propostas P-R5/P-R6/P-C2a **pendentes**, sem alegação de novidade.
+- `results/collatz_cl0/ERRATA_CL0_1.md` separa Q_odd como pontos eventualmente periódicos do shift da inclusão Φ(Q_odd)⊆Q_odd para Collatz; a igualdade não é assumida. Textos congelados preservados.
+- Verificações desta entrega: hashes dos PDFs, manifesto e congelamento CL0; links locais dos documentos novos. Sem simulação, CL1, leitura de dados reservados ou interferência nas validações. H-004 mantém a sequência autorizada. Sem commit.
+- Próximo trabalho documental: especificar P-R5, aprofundar antecedentes e formular limites de identificabilidade; Collatz requer confronto com literatura de operadores antes de promover proposta a teste.
+
+### 25/09/2026 — plano complementar de dependências e transientes de Collatz
+
+- Criado `hipoteses/PLANO_COLLATZ_DEPENDENCIAS_TRANSIENTES.md`, a pedido do usuário: alvo principal sobre variância normalizada das árvores inversas e dependências entre palavras; alvo secundário sobre sobrevivência finita antes de chegada/saída. São formulações propostas, não teoremas demonstrados nem lacunas estabelecidas.
+- C-D0 **validado** como entrega documental; C-D1–C-D3 **pendentes**; C-D4–C-D5 **não executados**. A leitura de fontes próximas deve anteceder qualquer piloto. Atualizados os vínculos no plano Collatz e no índice de hipóteses.
+- Nenhuma enumeração, experimento, acesso a dados reservados ou mudança na CL0 congelada. Próximo: revisão dos momentos/dependências nas fontes primárias e do estado posterior em Wirsching/citações. H-004 e as validações mantêm a sequência própria. Sem commit.
+
+### 25/09/2026 — ampliação para investigar ponte direta Collatz–Riemann
+
+- A pedido do usuário, criado `hipoteses/PLANO_PONTE_DIRETA_COLLATZ_RIEMANN.md`. Prioridade: conferir Meinardus (2001), cujo resumo institucional relaciona Collatz a um núcleo de séries de Dirichlet gerado por ζ. Fonte completa **não conferida**: acesso ao PDF bloqueado por 403/antibot; falha arquivada. Isso não é evidência sobre zeros ou RH.
+- Separados os alvos de relação funcional, relação com zeros e consequência para localização. Rotas alternativas: séries de órbitas e operador/traço/determinante; todas **pendentes** de derivação. Documentos de planejamento anteriores vinculados ao novo escopo.
+- Nenhum cálculo científico, enumeração, acesso reservado ou alteração de protocolo congelado. Próximo: obtenção/leitura do antecedente e ficha de um primeiro passo não tautológico. Sem commit.
+
+### 25/09/2026 — P1 da ponte direta: leitura de Meinardus (2001)
+
+- PDF obtido pelo usuário via Tor (pasta de downloads do Tor Browser), copiado somente-leitura para `archive/fontes_etapa11/ponte_collatz_20260925/meinardus_2001_mannheim261.pdf` (SHA-256 `08ebcc73…`, 15 pp.). Proveniência em `aquisicao_tor_usuario.json` (a falha 403 anterior foi preservada); linha nova no `MANIFESTO.csv`; B18 em `hipoteses/BIBLIOGRAFIA.md`.
+- Nota `hipoteses/leituras/B18_MEINARDUS_2001.md`: texto inteiro lido; Teors. 1–5 conferidos nas imagens. **P1 (Meinardus): validado.** Resultado negativo para o nível 2: ζ é o gerador trivial (a sequência constante é invariante sob qualquer τ, e Tζ = (1−2^{−s})ζ é identidade). Os zeros de ζ não codificam Collatz nessa construção (A). A obstrução multiplicativa (τ não respeita o produto de Euler) fica como heurística (D).
+- Pontos de atenção registrados: índice n=1 em (8) é erro tipográfico por n=0; a troca soma–integral de Perron não foi auditada.
+- Citações posteriores: busca breve com três candidatas **não lidas**; pendente. Sem cálculo, enumeração ou alteração de protocolo congelado. Sem commit.
+- Próximo: ficha P2, com uma propriedade que mude ao trocar τ e interaja com a estrutura multiplicativa; primeira pergunta concreta: a limitação de D ↦ D_τ no H² de séries de Dirichlet.
+- Varredura bibliográfica Collatz–Riemann registrada em B18 §5: **nenhuma ligação com ζ ou com seus zeros além do gerador trivial**. As bibliografias anotadas de Lagarias não mencionam zeta; a série de Siegel usa Perron sem ζ; Bell–Lagarias (2015) mostram fronteiras naturais, o que restringe a rota 2. Siegel I.5 e Bell–Lagarias ficam **pendentes** de leitura integral.
+
+### 26/09/2026 — leitura de Bell–Lagarias (2015) e Siegel (Parte I.5)
+
+- PDFs do arXiv arquivados somente leitura em `archive/fontes_etapa11/ponte_collatz_20260925/`, com duas linhas novas no `MANIFESTO.csv`. Notas `hipoteses/leituras/B19_BELL_LAGARIAS_2015.md` e `B20_SIEGEL_2021_PARTE_I5.md`; entradas B19/B20 na bibliografia.
+- **Retificação de B18 §5:** a fronteira natural de Bell–Lagarias **não** obstrui a rota 2 em séries de Dirichlet. Contraexemplo (A): m ≡ 0 (mod 3). A continuação depende da distribuição de O⁻(m), via Mellin em t → 0⁺.
+- **Siegel:** ζ entra como série da constante x; seus zeros não têm papel. Erro encontrado: (2.25), (2.26) e os resíduos do Cor. 2 estão errados como impressos. Derivei formas corrigidas e as conferi numericamente: impressas falham; corrigidas batem a ≤1e-12 em q=3,5,7. A confirmação independente vem da Prop. 1 do autor (polo duplo em s=1 independente de x). Comandos: `python3 hipoteses/leituras/verificacoes/siegel_2111_07883_original.py` (31 s) e `…_corrigida.py` (112 s); log ao lado. O Teor. 3 não é afetado.
+- Conclusão: nenhuma das três fontes com série de Dirichlet de Collatz (Meinardus, Siegel e a leitura de Mellin de Bell–Lagarias) liga Collatz aos zeros de ζ. Em todas, ζ aparece como série da constante. Candidata a P2 (D): densidade e termo de erro de O⁻(5)/O⁻(16), ainda sem mecanismo para os zeros. Sem commit.
+
+### 26/09/2026 08:00 — situação das execuções (consulta do usuário)
+
+- **V2′ de χ₋₄** (PID 201421, `completude_d3.py --carater chi_m4 --v2`): `em execução` há 17 h 12 min (16 h 51 min de CPU, sem `RLIMIT_CPU`). A varredura com passo d̄/16 está em t ≈ 9.524 do bloco alto [≈7.561, ≈9.749], com 2.688 zeros recomputados, 86.436 avaliações e 0 re-varreduras de lacuna, ou seja, ≈ 90% do bloco. Estimativa de término: ~2 h. O log de stdout está vazio; o progresso sai só pelo checkpoint `progresso_d3_v2_chi_m4.json`. Autorizada pela fila de 25/09, depois da regra de custo (acima de 4 h-CPU, portanto execução longa).
+- **Passe D3 de χ₅:** **terminou 26/09 04:42** (Etapa A: 790 intervalos, 50.018 s; 6 zeros recuperados em 3 intervalos; Etapa C: 0; lista corrigida com 12.006 zeros; certificado B `passed=True`, medianas +0,492 → +0,495). χ₅ passa a `validado` após D3, e falta a V2′. Registro anterior "χ₅ em execução" desatualizado.
+- **Diagnóstico de poder do estádio:** **terminou com erro** em 25/09 22:01, depois de 24.069 s. Completou G (com e sem sinal) e g01/com_sinal (40/40 réplicas); abortou em g04 com `ValueError: FWHM 0.3381 grande demais para a calibração sintética` (`instrumento_estadio.py:419`). JSON parcial preservado em `estadio/estudo_poder_estadio.json`. Estado: `inconclusivo` (execução parcial). O estádio já estava encerrado por prioridade; não se propõe nova execução.
+
+### 26/09/2026 — recebimento do PDF de Meinardus
+
+- Localizado `261_2001.pdf` no download interno do Tor do usuário e copiado ao acervo como `ponte_collatz_20260925/meinardus_2001.pdf`. Original preservado; nenhuma permissão alterada. PDF de 15 páginas, não criptografado; capa confere título, autor e Nr.261/2001. SHA-256 de origem e cópia coincidem (`08ebcc736ad2…`). Recebimento e manifesto registrados; tentativas anteriores preservadas.
+- Obtenção concluída; leitura matemática **pendente**. Nenhum processo científico ou dado reservado consultado nesta entrega.
+
+### 26/09/2026 — propostas baseadas no acervo e nos resultados disponíveis
+
+- Criado `hipoteses/DIRECAO_EXPERIMENTAL_20260926.md`: EXP26-1 (inversão do vazamento), EXP26-2 (assinaturas de perda seletiva), EXP26-3 (identificação aritmética), EXP26-4 (contagem dos ramos de Collatz) e EXP26-5 (condições para um teste direto com zeros). Todos **pendentes**, sem piloto ou novidade estabelecida. Não substituem H-004.
+- Consultados o estado, a declaração H-004 e as notas B14/B18–B20 de outras sessões; não realizada nova auditoria integral dessas leituras. A indicação anterior de leitura de Meinardus pendente referia-se à entrega local de recebimento, não invalida a leitura já registrada pela outra sessão.
+- Nenhum dado reservado aberto, cálculo científico executado ou processo alterado. Próxima entrega proposta: identificabilidade e ficha prévia para EXP26-1, com controle de complexidade e orçamento antes de simulação. Sem commit.
+
+### 26/09/2026 — prioridade revista e ficha prévia EXP26-2
+
+- Incorporadas as ressalvas do usuário: H-004 inalterada; EXP26-2 principal; EXP26-1 condicionada a estudo de condicionamento e referência de ajuste conjunto direto; EXP26-4 com bibliografia/modelos/benchmark antes de execução; EXP26-3 posterior.
+- Criada `hipoteses/FICHA_EXP26_2_PREVIA.md`: retirada aleatória, pares próximos, pares adjacentes aleatórios e lacuna contígua; referências simples e com informação espectral; dados T0 divididos por espectro pai; decisão e itens necessários ao congelamento. É ficha de desenvolvimento, não pré-registro completo.
+- Incorporada identidade A₅(x)+A₁₆(x)=⌊x⌋−4 no mapa acelerado, para 8≤x na faixa em que a convergência de todos os iniciais é estabelecida. Barina consultado em fonte primária; convergência externa não dá automaticamente a classificação local dos ramos nem seu custo.
+- Nenhuma simulação/enumeração, acesso a resultados reservados ou intervenção nos processos. Estado dos testes: **não executado**. Sem commit.
+
+### 26/09/2026 — correções da conta de viabilidade de EXP26-2
+
+- Criada `hipoteses/EXP26_2_REVISAO_VIABILIDADE.md`: ΔK_c inclui interferência; experimento bayesiano de uma lacuna não é teto do B0 completo; MA=MJ em k=2 sob igual seleção; M0 mede falso diagnóstico seletivo. V1 conferida no código: contagem suave com tolerância 3 e S não estimado, não Turing certificado.
+- Ficha atualizada para conta sintética prévia, teto proposto 600 s-CPU, com regra de decisão ainda a declarar. Nenhum cálculo iniciado. GUE e K_c não encerram automaticamente hipóteses sobre resíduos aritméticos complexos. Ranking de intervalos por recuperação/custo registrado como possível objetivo, sem alegação de otimalidade.
+- Apenas leitura de código-fonte e revisão documental; nenhum processo ativo ou dado reservado acessado. Sem commit.
+- **Atualização 26/09 10:40 — V2′ de χ₋₄:** a varredura com passo d̄/16 terminou às 10:14 com **3.000 zeros** no bloco alto, a mesma contagem da lista corrigida pelo D3. O processo segue no passe de completude sobre a lista recomputada (Etapa A: 210 intervalos acima de 1,6 d̄, passo d̄/32). Pelo ritmo do D3 de χ₋₄ na mesma faixa (~36 s/intervalo), a estimativa é de ~2 h, com término por volta de 12:30 e cerca de 21,5 h-CPU no total. Esse passe **não grava checkpoint** (`v2_prime` chama `stage_a` sem `state`): se for interrompido, a varredura é preservada, mas a Etapa A recomeça. A comparação V2 (contagem e posições) só sai no fim.
+
+### 26/09/2026 12:32 — V2′ de χ₋₄ concluída: χ₋₄ `validado`
+
+- `completude_d3.py --carater chi_m4 --v2` (PID 201421) terminou 26/09 12:32:06 (início 25/09 14:45). Parede ≈ 21 h 47 min; CPU ≈ 21,3 h; a varredura V2′ sozinha levou 70.146 s e 96.469 avaliações.
+- **Resultado V2′ (bloco 9001–12000):** recomputação com passo d̄/16 → 3.000 zeros; lista corrigida → 3.000; **mesma contagem**, diferença máxima de posição **5,8·10⁻¹⁰**. O passe de completude na lista recomputada (210 intervalos, passo d̄/32) recuperou **0** zeros. O certificado ficou nivelado (15 janelas, spread 0,040, sem degraus nem janelas fora do nível).
+- **Manifesto** `manifesto_d3_chi_m4.json` (SHA-256 `edef331b…`): V1, V2, V3, V4 e certificado final `passed=True`; `passou=True`. Lista de trabalho `zeros_chi_m4_12000_completo.txt` (`81fdfc0a…`) inalterada desde 23/09.
+- **Estado:** χ₋₄ passa a `validado` (D3 + V2′). χ₅: `validado` após D3, com a V2′ pendente.
+- **Próximo na fila** (confirmado em 26/09 pelo código congelado, ver entrada seguinte): V2′ de χ₅. Pelo custo desta execução, deve ficar acima de 20 h-CPU, possivelmente o dobro, já que o passe D3 de χ₅ foi ~2,2× mais lento que o de χ₋₄. Pela regra de 25/09, deve ter teto (`RLIMIT_CPU`) declarado antes de iniciar. Sugestão: gravar checkpoint também na Etapa A da V2′, que hoje não grava.
+
+### 26/09/2026 — complemento de identidade de χ₅ (ADENDO_H004_2 §6)
+
+- Gravado `results/registro_hipoteses/H-004/ADENDO_H004_2_COMPLEMENTO.md` (SHA-256 `f61ecb49…`, em `.sha256`); o adendo 2 foi reconferido intacto (`a5d071be…`). **§6 satisfeito.**
+- Identidade de χ₅ conferida elemento a elemento: 11.994 originais + 6 recuperados (três pares próximos), diferença ≤ 4,5·10⁻¹⁰. Indexação muda a partir de 6.336. f02 fica idêntico; f03 recebe 2 recuperados; f04 recebe 4, e o topo recua de 9.510,050 para 9.506,172. O acesso para identidade foi declarado.
+- **Correção de rumo:** na resposta ao usuário desta manhã afirmei que a V2′ de χ₅ não era pré-condição da H-004. **Estava errado.** `preditor_pr1_v3.py` exige V1–V4 no manifesto D3 dos **dois** caracteres (`CHECKS_REQUIRED`), e o de χ₅ não tem V2. Sem a V2′ de χ₅, a H-004 fica não executada por bloqueio. Nada foi relaxado.
+- **Caminho da H-004:** declaração de custo com teto para a V2′ de χ₅ (≈ 40–50 h-CPU estimadas; sugestão: checkpoint também na Etapa A da V2′, verificado por teste antes) → V2′ de χ₅ → controle nos 8 blocos (1,55–1,8 h-CPU) → preditor v3.
+
+### 26/09/2026 — mudança de norte: H-004 adiada; VN-1 (variância numérica e órbitas curtas) executada
+
+- **H-004 adiada por prioridade** (decisão do usuário): `results/registro_hipoteses/H-004/ADENDO_H004_3.md` (`85e5ebee…`). O ganho esperado é baixo (projeção linear de um teorema; desenvolvimento com 0,99998) diante de 40–50 h-CPU para a V2′ de χ₅. A reserva e02–e04/f02–f04 fica mantida. **V2′ de χ₅ não será executada** por ora.
+- **Novo norte:** voltar à pergunta original de espectroscopia inversa. Onde os dados se afastam do GUE, verificar se as órbitas periódicas curtas (primos) explicam o desvio.
+- **VN-1:** ficha `hipoteses/FICHA_VARIANCIA_NUMERICA.md` (`bbbcb7b9…`) congelada às 13:38:51, com previsões calculadas só com primos (`previsao.json`, 242 s CPU) e o script de medição congelado antes de rodar. Código novo: `src/riemann_spectra/number_variance.py`, 8 testes passando. Fonte: Lugar–Milinovich–Quesada-Herrera, arXiv:2211.14918 (transcrição da eq. 19 de Berry 1988; original IOP não obtido).
+- **Resultado** (`results/variancia_numerica_20260926/RESULTADO.md`; medição em 3,5 s):
+  - Q1 (ζ): **sucesso** em 9/9 blocos. Σ² fica muito abaixo do GUE e segue Berry a ~0,001–0,005, inclusive nas ressurgências previstas (b05, L = 20: 0,458 previsto, 0,457 medido).
+  - Q3 (χ₋₄, sem órbita log 2): **conjunto correto preferido**, Δχ² = 164.
+  - χ₅: inconclusivo (Δχ² = 6,9 < 9), na direção prevista.
+  - Rótulos B. Q3 depende de uma extensão a χ não conferida em fonte; novidade não estabelecida.
+- **Próximo:** conferir a extensão a L(s, χ) na literatura (Bogomolny–Keating; famílias de L); ficha da estimativa inversa, isto é, recuperar os períodos das órbitas curtas a partir de Σ²(L) sem catálogo; gráficos pendentes.
+
+### 26/09/2026 — conta sintética EXP26-2 concluída
+
+- Execução técnica `validado`; avanço ao piloto `inconclusivo` em k=2/12. Resultado negativo registrado em k=6/30: pela regra declarada, parar esta versão de B1 no ensemble examinado. Nenhum caso autorizou avançar.
+- 120 espectros pais GUE de 3.000 níveis; 40/40/40 desenvolvimento/calibração/avaliação; máscaras agrupadas por pai na incerteza. Custo da execução concluída 113,25 s-CPU. Primeira tentativa falhou por importação ausente antes de gerar espectros, preservada; correção técnica declarada e reserva de 10 s dentro do teto original 600 s.
+- Código novo loss_viability.py; declaração, lock e artefatos em results/exp26_2_viabilidade_20260926/. Oito ajustes convergentes; atualização linear conferida contra recomputação, erro máximo 5,11e-15; hashes conferidos.
+- Relatório RELATORIO.md: ganhos não são comparações a FPR efetiva idêntica; nenhum teto bayesiano estimado. Ranking por custo segue proposta, sem piloto nem economia demonstrada. Nenhum dado real/reservado lido ou processo externo alterado; sem commit. Preservadas decisões mais recentes sobre H-004 e VN-1.
+- **26/09 (tarde), sequência da VN-1:**
+  - **Extensão a χ conferida em fonte:** Bogomolny–Keating 2013 (B22), eqs. (26), (30)–(33), (55). Adendo `results/variancia_numerica_20260926/RESULTADO_ADENDO_1.md`. Q3 segue **B**; **novidade excluída**, porque o efeito dos primos que dividem q já está no artigo. B21/B22 na bibliografia; PDF de BK arquivado (`bed4651d…`).
+  - **Estimativa inversa por Σ²: não executada, por redundância verificada.** Σ²(L) é uma integral do fator de forma K(τ), que o projeto já mede (`form_factor.py`, K_c no C3), e os períodos log p já foram recuperados sem catálogo (C1). Inverter Σ² seria um caminho mais ruidoso até o mesmo resultado.
+  - **Candidata para o próximo passo:** o pico de K_c em τ = 1 (C3), hoje com explicação apenas heurística (D) e com crítica registrada em `docs/ANALISE_RESULTADOS.md`. A altura do pico depende da distribuição de x_n − (n − ½), ou seja, de S nos zeros, cuja variância de longo alcance é justamente o que a VN-1 validou (saturação de Σ²). Falta derivação e ficha própria.

@@ -1,0 +1,18 @@
+Execução 26/09/2026, python3 + numpy + mpmath, sem rede, determinística (sem aleatoriedade).
+
+== siegel_2111_07883_original.py (N = 2^21; fórmulas como impressas; 31 s de CPU) ==
+q=3 x=1 (2.25): lhs=-1.32754445991 rhs=-2.07754445991
+q=3 x=-2 (2.25): lhs=0.0666865710252 rhs=1.56668657103
+q=3 (2.26) s=4.0: F=-1.03342933904  rhs=-1.72920856071
+q=5 x=1 (2.25): lhs=-3.89141273805 rhs=-4.64141273805
+q=5 x=-2 (2.25): lhs=4.52347419499 rhs=6.02347419499
+q=5 (2.26) s=4.0: F=-2.13538316482  rhs=-2.96793949844
+-> (2.25) e (2.26) impressas FALHAM; discrepância em (2.25) = -x z/(2(1-z)) (= -0,75x em z=0,6).
+
+== siegel_2111_07883_corrigida.py (N = 2^20; formas corrigidas; 112 s de CPU) ==
+(2.25') confere em q∈{3,5,7}, x∈{1,-2,5}, z∈{0,3; 0,6} (tolerância relativa 1e-9)
+(2.26') confere, diferenças:
+q=3: x=1: 4.4e-16, 0.0; x=-2: 5.6e-17, -5.6e-17; x=5: 4.4e-16, 4.4e-16   (s=4; 5,5)
+q=5: x=1: 8.9e-16, 4.4e-16; x=-2: -3.6e-15, -4.4e-16; x=5: 8.9e-15, 1.8e-15
+q=7: x=1: 5.0e-13, 1.8e-15; x=-2: -7.1e-13, -8.9e-16; x=5: 2.1e-12, 3.6e-15
+(q=7, s=4: resíduo de truncamento, pois σ_7 = 2 e N = 2^20.)

@@ -1,0 +1,16 @@
+[
+  {
+    "arquivo": "archive/fontes_etapa11/collatz_cl0_20260925/bernstein_lagarias.pdf",
+    "obra": "Bernstein & Lagarias, The 3x+1 Conjugacy Map",
+    "url": "https://websites.umich.edu/~lagarias/doc/bernstein.pdf",
+    "status": "obtido",
+    "sha256": "476b0149d6d6f7944e9bf470a9347a14336547a116c5eb6877d020219a5b4c4e",
+    "bytes": 236816,
+    "paginas_pdf": 16,
+    "baixado_em": "2026-09-25T00:00:00Z",
+    "versao": "copia do autor, carimbo 19960215; NAO e a versao editorial (Canad. J. Math.)",
+    "leitura_nesta_entrega": "pp. 1-3 (eqs. 1.1-1.6, Conjectura de Periodicidade) e p. 15 (Teorema B.1); provas do corpo nao auditadas",
+    "uso": "CL0 (laboratorio Collatz): fatos A1-A4 da ESPECIFICACAO_CL0_v1.md",
+    "nota": "A tentativa de 19/09/2026 falhou (HTTP 403 no autor, 429 no editor) e esta registrada, preservada, em archive/fontes_etapa11/hipoteses_20260919/aquisicao.json. Este registro e novo, nao corrige o anterior."
+  }
+]

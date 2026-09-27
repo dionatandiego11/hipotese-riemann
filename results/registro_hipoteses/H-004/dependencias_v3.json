@@ -1,0 +1,24 @@
+{
+  "arquivos": {
+    "results/etapa11_6_controles/dirichlet/completude/completude_d3.py": "3450b005959f0a76b11677b9144a72d16fe47a1d6d635131233fc815698dc1be",
+    "results/etapa11_6_controles/dirichlet/ctrl_dirichlet_v1.toml": "b51f78a1afb3b07f8405111ced067126c3d623a3fa391923e82fe60231d93e1f",
+    "results/registro_hipoteses/H-004/preditor_pr1.py": "5eede5b6fdada6537f75ff092095216f057f0640c0c1ca0c75ae04132d411394",
+    "results/registro_hipoteses/H-004/preditor_pr1_v2.py": "cc14e12f775e3fd08c5d2a8e09cb0e81581f3b3595b731b9a1ea9d340dcd0c46",
+    "results/registro_hipoteses/H-004/preditor_pr1_v3.py": "8fa78457551d9d1d267a43266b1a2bf8145103785249041fec232bc84e7a38a5"
+  },
+  "modules": {
+    "results/etapa11_6_controles/dirichlet/dirichlet_zeros.py": "65056bc2d2ad18495f3f0f95d6f78b4c8a9fdea5bd6314fadee36b33b010d4e6",
+    "results/etapa11_6_controles/dirichlet/instrumento_chi.py": "7b3ea0564fc3f7566b563c8e091969ae7c64fad8d7006cc279313ded20a3bc01",
+    "results/registro_hipoteses/H-004/preditor_pr1.py": "5eede5b6fdada6537f75ff092095216f057f0640c0c1ca0c75ae04132d411394",
+    "results/registro_hipoteses/H-004/preditor_pr1_v2.py": "cc14e12f775e3fd08c5d2a8e09cb0e81581f3b3595b731b9a1ea9d340dcd0c46",
+    "results/registro_hipoteses/H-004/preditor_pr1_v3.py": "8fa78457551d9d1d267a43266b1a2bf8145103785249041fec232bc84e7a38a5",
+    "src/riemann_spectra/__init__.py": "fe25313e5378a4dc7a460a3ff4b5007d0119e305e7948bfd564ac6e75a8296bf",
+    "src/riemann_spectra/arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+    "src/riemann_spectra/controls.py": "5da9d43292a5d2674f8d283db63fda858a8d820bcd4765494c58365717cd6809",
+    "src/riemann_spectra/inverse_spectroscopy.py": "0edceddeecf8c6472fdd89e4a18edd16bf6e07ab3127cbd8292039a5aab9ffd2",
+    "src/riemann_spectra/periods.py": "8968b51fa1ab4f6067a07f882e6474f36c23e88e9c14c39c4bb08540485994e3",
+    "src/riemann_spectra/replication.py": "14aa290965c7a196a0853b213b94772ee7b7fd28a3dfbe98809af350b2563c58",
+    "src/riemann_spectra/unfolding.py": "5dcadc9d83b9958df145587ef3a1c9534a1b2d2767879fa648deba23a6bfb247",
+    "src/riemann_spectra/utils.py": "d145c6cc1c17eae7f5e4a27b9e9ca309497c782a7b2008c6a158e4e32c559138"
+  }
+}

@@ -1,6 +1,6 @@
 # Registro de hipóteses testáveis no instrumento
 
-**Criado em 19/09/2026.** Adendo ao protocolo v2: [ADENDO_REGISTRO_v2_1.md](../results/registro_hipoteses/ADENDO_REGISTRO_v2_1.md) (`2afb657b…`), categoria T1-prospectivo. Documento vivo: índice e situação de cada hipótese. As regras estão fixadas em
+**Criado em 19/09/2026.** Adendos ao protocolo v2: [ADENDO_REGISTRO_v2_1.md](../results/registro_hipoteses/ADENDO_REGISTRO_v2_1.md) (`2afb657b…`), categoria T1-prospectivo; [ADENDO_REGISTRO_v2_2.md](../results/registro_hipoteses/ADENDO_REGISTRO_v2_2.md) (`0b505348…`, 25/09/2026), produção longa só com ganho discriminante, viabilidade demonstrada e custo limitado — teto em horas-CPU, poder com intervalo de Wilson e exceção declarada para estudos de viabilidade. Documento vivo: índice e situação de cada hipótese. As regras estão fixadas em
 [results/registro_hipoteses/PROTOCOLO_REGISTRO_v1.md](../results/registro_hipoteses/PROTOCOLO_REGISTRO_v1.md)
 (v1, SHA-256 `2f6404b7…`) e [PROTOCOLO_REGISTRO_v2.md](../results/registro_hipoteses/PROTOCOLO_REGISTRO_v2.md) (v2, que acrescenta a análise de poder prévia obrigatória) e prevalecem sobre este resumo. Dados em [registro_hipoteses.csv](registro_hipoteses.csv), com
 uma linha por hipótese.
@@ -26,7 +26,7 @@ uma linha por hipótese.
 | **H-004** | **P-R1: o mecanismo de vazamento prevê sinal e tamanho dos erros do estimador em L(s, χ)** | `hipoteses/CANDIDATAS.md` P-R1; desenvolvimento em Maass e ζ (T0) | — (resultado seria B) | **declarada (T1-prospectivo)**, `results/registro_hipoteses/H-004/DECLARACAO.md` (`82382c59…`) + `ADENDO_H004_1.md` |
 | F-001 | Órbitas de Collatz quase limitadas | Tao 2019/2022 | A | encerrada (fora do domínio) |
 | F-002 | Zetas dinâmicas e operadores de transferência | Ruelle | — | encerrada (fora do domínio) |
-| F-003 | Mapa de conjugação 3x+1 | Bernstein & Lagarias | — | proposta (fonte não obtida) |
+| F-003 | Mapa de conjugação 3x+1 | Bernstein & Lagarias | — | proposta (fonte obtida em 25/09, `476b0149…`) |
 
 ## Triagem
 
@@ -79,7 +79,11 @@ pode ser testado numericamente. Fica `proposta` até a triagem da 11.5.
 - **F-002 (Ruelle):** `ruelle.pdf` (`ebf2be2e…`), *Dynamical zeta functions and transfer operators* (texto de
   divulgação; só a primeira página foi lida). É contexto para as zetas dinâmicas da frente Collatz, sem hipótese
   testável aqui.
-- **F-003 (Bernstein & Lagarias):** o download falhou (403 e 429; `hipoteses_20260919/aquisicao.json`).
+- **F-003 (Bernstein & Lagarias):** o download de 19/09 falhou (403 e 429; `hipoteses_20260919/aquisicao.json`,
+  registro preservado). Em **25/09/2026** o PDF foi obtido: `collatz_cl0_20260925/bernstein_lagarias.pdf`
+  (`476b0149…`, 16 pp., cópia do autor, carimbo 19960215), registrado no `MANIFESTO.csv`. Lidas pp. 1–3 e p. 15.
+  A triagem **não** muda: F-003 segue `proposta`, e a conjugação 2-ádica é usada como fato de referência (A2–A4)
+  da frente Collatz, em `results/collatz_cl0/ESPECIFICACAO_CL0_v1.md` (`5556a070…`), não como hipótese espectral.
 
 ## Onde procurar mais hipóteses
 

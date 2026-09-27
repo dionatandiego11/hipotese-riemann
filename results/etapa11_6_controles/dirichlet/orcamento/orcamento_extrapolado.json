@@ -1,0 +1,123 @@
+{
+  "pontos": [
+    {
+      "escala": 0.01,
+      "realizacoes": {
+        "shuffle": 204,
+        "gue": 8,
+        "synthetic": 2,
+        "phase": 10,
+        "precision": 2
+      },
+      "segundos": {
+        "instrument": 1.423771689995192,
+        "null_shuffle": 3.485701945988694,
+        "null_gue": 5.8386653430061415,
+        "synthetic": 3.2074929180089384,
+        "arithmetic": 14.532518554013222
+      }
+    },
+    {
+      "escala": 0.05,
+      "realizacoes": {
+        "shuffle": 1010,
+        "gue": 15,
+        "synthetic": 2,
+        "phase": 50,
+        "precision": 2
+      },
+      "segundos": {
+        "instrument": 0.8731002339918632,
+        "null_shuffle": 16.542807532008737,
+        "null_gue": 11.711255139001878,
+        "synthetic": 3.417350589996204,
+        "arithmetic": 11.053914342977805
+      }
+    },
+    {
+      "escala": 0.25,
+      "realizacoes": {
+        "shuffle": 5050,
+        "gue": 75,
+        "synthetic": 10,
+        "phase": 250,
+        "precision": 5
+      },
+      "segundos": {
+        "instrument": 0.9282639209995978,
+        "null_shuffle": 88.09188829400227,
+        "null_gue": 64.34651601599762,
+        "synthetic": 18.41717631398933,
+        "arithmetic": 21.460014869982842
+      }
+    },
+    {
+      "escala": 0.5,
+      "realizacoes": {
+        "shuffle": 10100,
+        "gue": 150,
+        "synthetic": 20,
+        "phase": 500,
+        "precision": 10
+      },
+      "segundos": {
+        "instrument": 1.0909350580186583,
+        "null_shuffle": 169.67755510701681,
+        "null_gue": 111.18290834999061,
+        "synthetic": 28.49311987598776,
+        "arithmetic": 36.770005931990454
+      }
+    }
+  ],
+  "por_etapa": {
+    "null_shuffle": {
+      "intercepto_s": 0.4427848490935786,
+      "s_por_realizacao": 0.016867930425485348,
+      "rms_ajuste_s": 1.4488821940825605,
+      "realizacoes_declaradas": 20198,
+      "segundos_por_bloco": 341.1412435830466
+    },
+    "null_gue": {
+      "intercepto_s": 1.8821394162476568,
+      "s_por_realizacao": 0.7481886579959907,
+      "rms_ajuste_s": 3.706582966926034,
+      "realizacoes_declaradas": 299,
+      "segundos_por_bloco": 225.5905481570489
+    },
+    "synthetic": {
+      "intercepto_s": 1.265068659363665,
+      "s_por_realizacao": 1.425731325309634,
+      "rms_ajuste_s": 1.6845114336312648,
+      "realizacoes_declaradas": 40,
+      "segundos_por_bloco": 58.294321671749024
+    },
+    "arithmetic": {
+      "intercepto_s": 3.9331801847526138,
+      "s_por_fase": -0.03591936395168033,
+      "s_por_perturbacao": 5.114653566358676,
+      "rms_ajuste_s": 0.9011756179666511,
+      "segundos_por_bloco": 70.34280692419749
+    },
+    "instrument": {
+      "segundos_por_bloco": 1.0790177257513278,
+      "nota": "custo fixo, independente das realizações"
+    }
+  },
+  "bloco": {
+    "segundos": 696.4479380617934,
+    "minutos": 11.607465634363223
+  },
+  "oito_blocos": {
+    "horas_cpu": 1.547662084581763,
+    "parede_h_1_processo": 1.547662084581763,
+    "parede_h_4_processos": 0.38691552114544076
+  },
+  "h004_somente": {
+    "etapas": [
+      "instrument",
+      "arithmetic"
+    ],
+    "segundos_por_bloco": 71.42182464994882,
+    "horas_cpu_6_blocos": 0.11903637441658137
+  }
+}

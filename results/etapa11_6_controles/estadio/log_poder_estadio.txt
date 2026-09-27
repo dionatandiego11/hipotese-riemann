@@ -1,0 +1,185 @@
+/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/arithmetic.py:168: RuntimeWarning: divide by zero encountered in scalar divide
+  "ratio_to_theory": float(np.real(C[k]) / c_th),
+/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/arithmetic.py:169: RuntimeWarning: divide by zero encountered in scalar divide
+  "phase_error_rad": float(np.angle(C[k] / c_th)),
+/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/inverse_spectroscopy.py:534: RuntimeWarning: invalid value encountered in subtract
+  changes.append(np.array([x["ratio_to_theory"] for x in fp]) - ratios)
+G/com_sinal: 5/40 réplicas (1593 s)
+G/com_sinal: 10/40 réplicas (3029 s)
+G/com_sinal: 15/40 réplicas (4481 s)
+G/com_sinal: 20/40 réplicas (5896 s)
+G/com_sinal: 25/40 réplicas (7178 s)
+G/com_sinal: 30/40 réplicas (8425 s)
+G/com_sinal: 35/40 réplicas (9675 s)
+G/com_sinal: 40/40 réplicas (11007 s)
+G/sem_sinal: 5/40 réplicas (12337 s)
+G/sem_sinal: 10/40 réplicas (13863 s)
+G/sem_sinal: 15/40 réplicas (15394 s)
+G/sem_sinal: 20/40 réplicas (16799 s)
+G/sem_sinal: 25/40 réplicas (18296 s)
+G/sem_sinal: 30/40 réplicas (19639 s)
+G/sem_sinal: 35/40 réplicas (21116 s)
+G/sem_sinal: 40/40 réplicas (22632 s)
+== G: {
+  "com_sinal": {
+    "E_C1": {
+      "p": 0.9,
+      "k": 36,
+      "n": 40,
+      "ic95": [
+        0.7694792561952611,
+        0.9604211124044252
+      ]
+    },
+    "E_C1o": {
+      "p": 0.85,
+      "k": 34,
+      "n": 40,
+      "ic95": [
+        0.7092737396097997,
+        0.9293890829149256
+      ]
+    },
+    "E_C4": {
+      "p": 1.0,
+      "k": 40,
+      "n": 40,
+      "ic95": [
+        0.9123754607496077,
+        1.0
+      ]
+    },
+    "E_C2bb": {
+      "p": 0.95,
+      "k": 38,
+      "n": 40,
+      "ic95": [
+        0.834958291820748,
+        0.9861796228538989
+      ]
+    },
+    "abs_ratio_minus_1": {
+      "mediana": 0.04080527822106583,
+      "min": 0.011505341383533168,
+      "max": 0.11378211239467988
+    },
+    "limiar_z_medio": 3.112174452741802,
+    "tolerancia_media": 0.0014999237398692056,
+    "n_niveis": 12000
+  },
+  "sem_sinal": {
+    "E_C1": {
+      "p": 0.0,
+      "k": 0,
+      "n": 40,
+      "ic95": [
+        0.0,
+        0.08762453925039232
+      ]
+    },
+    "E_C1o": {
+      "p": 1.0,
+      "k": 40,
+      "n": 40,
+      "ic95": [
+        0.9123754607496077,
+        1.0
+      ]
+    },
+    "E_C4": {
+      "p": 1.0,
+      "k": 40,
+      "n": 40,
+      "ic95": [
+        0.9123754607496077,
+        1.0
+      ]
+    },
+    "E_C2bb": {
+      "p": 0.0,
+      "k": 0,
+      "n": 40,
+      "ic95": [
+        0.0,
+        0.08762453925039232
+      ]
+    },
+    "abs_ratio_minus_1": {
+      "mediana": 1.0016007849093473,
+      "min": 0.9261178747032921,
+      "max": 1.1131194371994344
+    },
+    "limiar_z_medio": 3.100874048133484,
+    "tolerancia_media": 0.0017046350122391601,
+    "n_niveis": 12000
+  }
+}
+g01/com_sinal: 5/40 réplicas (22812 s)
+g01/com_sinal: 10/40 réplicas (22993 s)
+g01/com_sinal: 15/40 réplicas (23175 s)
+g01/com_sinal: 20/40 réplicas (23356 s)
+g01/com_sinal: 25/40 réplicas (23536 s)
+g01/com_sinal: 30/40 réplicas (23704 s)
+g01/com_sinal: 35/40 réplicas (23884 s)
+g01/com_sinal: 40/40 réplicas (24069 s)
+== g01: {
+  "com_sinal": {
+    "E_C1": {
+      "p": 0.025,
+      "k": 1,
+      "n": 40,
+      "ic95": [
+        0.0044267174077949195,
+        0.1288165948800778
+      ]
+    },
+    "E_C1o": {
+      "p": 1.0,
+      "k": 40,
+      "n": 40,
+      "ic95": [
+        0.9123754607496077,
+        1.0
+      ]
+    },
+    "E_C4": {
+      "p": 1.0,
+      "k": 40,
+      "n": 40,
+      "ic95": [
+        0.9123754607496077,
+        1.0
+      ]
+    },
+    "E_C2bb": {
+      "p": 0.55,
+      "k": 22,
+      "n": 40,
+      "ic95": [
+        0.39828829888440775,
+        0.6929492471905531
+      ]
+    },
+    "abs_ratio_minus_1": {
+      "mediana": 0.09405260620708249,
+      "min": 0.0159297202670062,
+      "max": 0.25495377801872704
+    },
+    "limiar_z_medio": 2.9512320859541994,
+    "tolerancia_media": 0.006700075177610484,
+    "n_niveis": 3000
+  }
+}
+Traceback (most recent call last):
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/estadio/estudo_poder_estadio.py", line 113, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/estadio/estudo_poder_estadio.py", line 83, in main
+    rows[cond].append(replicate(b, cfg, lines, seed, cond == "com_sinal", tmp))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/estadio/estudo_poder_estadio.py", line 51, in replicate
+    res = ie.run_block_estadio(lv, {"name": block["name"]}, cfg, lines, tmp, np.random.SeedSequence(seed + 1), workers=1)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/etapa11_6_controles/estadio/instrumento_estadio.py", line 419, in run_block_estadio
+    raise ValueError(f"[{name}] FWHM {fwhm:.4f} grande demais para a calibração sintética")
+ValueError: [g04] FWHM 0.3381 grande demais para a calibração sintética

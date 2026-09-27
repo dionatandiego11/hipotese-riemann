@@ -1,0 +1,27 @@
+{
+ "execucao": "VN-1 variancia numerica",
+ "ficha": "hipoteses/FICHA_VARIANCIA_NUMERICA.md",
+ "ficha_sha256": "bbbcb7b9b56ecebd9c597458de23043ad859ea5e10b9b05255a36771b9f3a55b",
+ "congelamento": "2026-09-26T13:38:51-03:00 (hashes em hipoteses/FICHA_VARIANCIA_NUMERICA.sha256)",
+ "comandos": [
+  ".venv/bin/python -m pytest -q tests/test_number_variance.py  (8 passed, 13 s)",
+  ".venv/bin/python results/variancia_numerica_20260926/previsao/previsao.py  (242 s CPU, semente 20260926)",
+  ".venv/bin/python results/variancia_numerica_20260926/medicao/medicao.py  (3,5 s)"
+ ],
+ "arquivos": {
+  "results/variancia_numerica_20260926/previsao/previsao.py": "fc0f5ff726c087079f8b4e31f713e0e935d16eda54560c24397b4da5b87f3e42",
+  "results/variancia_numerica_20260926/previsao/previsao.json": "b317ae5ea94de8209ade6428efe24d3d2b71aa2ffa871d625be33d473e6f187f",
+  "results/variancia_numerica_20260926/medicao/medicao.py": "c7da6b8a1554b120b0017121e28245284deabbe3a911702459b865cde6c3c397",
+  "results/variancia_numerica_20260926/medicao/medicao.json": "c05d959d3ebffdb201525cfa7c6831bd0881687295d646b61b2d4b15b6b6e69c",
+  "results/variancia_numerica_20260926/medicao/log.txt": "2bdb14515d2ada277b205164b40706fdd78729f9393bea03b08ccfcfe2dec540",
+  "src/riemann_spectra/number_variance.py": "11dfeb1d9100077cb3ab1f45a2af3e5d49c9b72d5037f0a372adbfd0a95047f1",
+  "tests/test_number_variance.py": "3c4ef389642177b0d5f442d30d1ecfe384f49ae676bc42ce714768d26e438906"
+ },
+ "versoes": {
+  "python": "3.12.3",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "plataforma": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39"
+ },
+ "graficos": "nao produzidos nesta rodada (pendente)"
+}

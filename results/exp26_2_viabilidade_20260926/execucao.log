@@ -1,0 +1,13 @@
+parents=10/120 cpu=9.28s wall=8.22s
+parents=20/120 cpu=17.59s wall=16.72s
+parents=30/120 cpu=25.66s wall=24.80s
+parents=40/120 cpu=34.29s wall=33.52s
+parents=50/120 cpu=43.92s wall=43.37s
+parents=60/120 cpu=53.22s wall=52.84s
+parents=70/120 cpu=62.29s wall=62.00s
+parents=80/120 cpu=72.53s wall=72.37s
+parents=90/120 cpu=83.73s wall=84.13s
+parents=100/120 cpu=93.46s wall=94.03s
+parents=110/120 cpu=103.40s wall=104.05s
+parents=120/120 cpu=113.17s wall=113.85s
+{"status": "complete", "completed_parents": 120, "cpu_seconds": 113.248277, "wall_seconds": 113.93658996798331}

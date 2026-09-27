@@ -1,0 +1,9 @@
+modelo correcao_1/6= True {'media': 1.061, 'q025': 0.544, 'q975': 1.772, 'q50': 1.029, 'reps': 400}
+modelo correcao_1/6= False {'media': 1.028, 'q025': 0.492, 'q975': 1.749, 'q50': 0.997, 'reps': 400}
+GUE real: media 0.993 q025 0.515 q50 0.928 q975 1.596 (998 s)
+
+real	16m38,602s
+user	35m59,374s
+sys	0m35,407s
+
+[exited with code 0]

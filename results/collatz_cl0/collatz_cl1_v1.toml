@@ -1,0 +1,100 @@
+# Configuração versionada do piloto CL1 — Collatz, versão 1 (25/09/2026)
+#
+# Congelada pelo CL0. Depende de ESPECIFICACAO_CL0_v1.md e PROTOCOLO_CL0_v1.md.
+# Nenhuma execução foi feita com esta configuração até a data acima.
+# Ampliação de escopo (período > 12, outro mapa, outro espaço) exige configuração NOVA, com versão própria.
+
+[identificacao]
+id = "collatz-cl1-v1"
+etapa = "CL1"
+data_congelamento = "2026-09-25"
+especificacao = "results/collatz_cl0/ESPECIFICACAO_CL0_v1.md"
+especificacao_sha256 = "5556a0701f83153d031394be461c22a3f14eb470b5b10177dd1f6716eb93299a"
+# O hash do protocolo fica no manifesto da execução: o protocolo é escrito depois desta configuração
+# e registra o hash dela (ver PROTOCOLO_CL0_v1.md, §1).
+estado = "nao_executado"
+
+[mapa]
+# T(x) = x/2 se x par; (a*x + b)/2 se x ímpar.
+a = 3
+b = 1
+convencao_temporal = "T"            # "T" = com divisão por 2 no ramo ímpar. Nunca misturar com "C".
+convencao_declarada_em_toda_tabela = true
+
+[espacos]
+# CL1 trata apenas do modelo simbólico e da contagem 2-ádica que lhe corresponde.
+# Filtro aritmético (Z, N_{>0}) é CL2 e NÃO entra aqui.
+alvo = ["sigma_2", "Z_2"]
+filtro_aritmetico = false
+
+[cl1]
+periodo_min = 1
+periodo_max = 12                    # piloto; 2^12 = 4096 palavras
+enumeracao = "fluxo"                # streaming; nunca materializar todas as palavras em memória
+caminhos_independentes = true       # contagem por enumeração E expansão formal, comparadas entre si
+
+[cl1.pesos]
+# Pesos constantes por ramo, para O4. Valores racionais exatos, lidos como frações.
+# Caso conhecido: Z_n = (a_peso + b_peso)^n e zeta = [1 - (a_peso + b_peso) z]^{-1}.
+ramo_par = "1"
+ramo_impar = "1"
+conjuntos_alternativos = [["1", "1"], ["1/2", "1/2"], ["2", "3"]]
+
+[aritmetica]
+modo = "exato"                      # int e Fraction do Python; ponto flutuante PROIBIDO em CL1 e CL2
+tolerancia = 0                      # igualdade exata; não existe tolerância numérica nesta etapa
+verificar_ausencia_de_float = true
+
+[aleatoriedade]
+# CL1 é determinístico. A semente existe só para registro do manifesto e para qualquer
+# ordem de iteração que venha a ser embaralhada em teste.
+semente = 20260925
+usa_aleatoriedade = false
+
+[verificacoes]
+# Respostas CONHECIDAS antes de qualquer execução (ESPECIFICACAO §7; PROTOCOLO §2).
+# Reproduzi-las é rótulo B. Nenhuma delas pode ser apresentada como achado.
+respostas_conhecidas_antes_da_execucao = true
+
+# V-CL1-1: pontos fixos de T^n no modelo simbólico / em Z_2
+F_n_esperado = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+
+# V-CL1-2: órbitas primitivas (palavras de Lyndon binárias), c_n = (1/n) sum_{d|n} mu(d) 2^{n/d}
+c_n_esperado = [2, 1, 2, 3, 6, 9, 18, 30, 56, 99, 186, 335]
+
+# V-CL1-3: identidade F_n = sum_{d|n} d * c_d, verificada em ambos os sentidos
+verificar_mobius_dois_sentidos = true
+
+# V-CL1-4: zeta simbólica (1 - 2z)^{-1}; coeficientes da série exp(sum F_n z^n / n) devem dar 2^n
+zeta_coeficientes_esperados = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+
+# V-CL1-5: soma periódica ponderada Z_n = (ramo_par + ramo_impar)^n para pesos constantes por ramo
+verificar_soma_ponderada = true
+
+# V-CL1-6: pontos fixos exatos em Q_odd, via x = b/(2^n - 3^k), conferidos por iteração exata
+# (estes já são de CL2; entram em CL1 apenas como conferência cruzada de período 1 e 2)
+fix_T1_esperado = ["0", "-1"]
+fix_T2_esperado = ["0", "-1", "1", "2"]
+
+[limites]
+# Regra de custo: ADENDO_REGISTRO_v2_2.md (0b505348...), erratas 1 e 2.
+# CL1 está MUITO abaixo do limiar de produção longa (4 horas-CPU); o teto abaixo é de segurança.
+teto_horas_cpu = 0.5
+regra_de_parada = "ao atingir o teto, interromper, registrar horas-CPU medidas e reportar 'inconclusivo por orçamento'"
+memoria_max_gb = 2.0
+omp_num_threads = 1
+processos_simultaneos = 1
+rede = false                        # testes e piloto rodam sem rede
+
+[saida]
+diretorio = "results/collatz_cl1_v1"
+manifesto = true                    # config resolvida, hashes, versões, duração, horas-CPU, memória
+formatos = ["csv", "json", "md"]
+placeholders_proibidos = true       # análise pendente usa estado explícito, nunca número inventado
+
+[codigo]
+# Desvio registrado em relação ao PLANO_COLLATZ.md, que propunha src/riemann_spectra/collatz/:
+# o código científico de m3/m4 está congelado e sob lock; código novo de Collatz fica FORA dele.
+pacote = "collatz"                  # caminho novo na raiz do repositório; ainda não criado
+testes = "collatz/tests"
+proibido_importar = ["riemann_spectra", "catálogo de primos", "ordenadas dos zeros"]

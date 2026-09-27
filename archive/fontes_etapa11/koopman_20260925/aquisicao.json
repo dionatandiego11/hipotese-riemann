@@ -1,0 +1,67 @@
+[
+  {
+    "arquivo": "archive/fontes_etapa11/koopman_20260925/leventides_2010.12987.pdf",
+    "obra": "Leventides & Poulios, Koopman operators and the 3x+1-dynamical system",
+    "url": "https://arxiv.org/pdf/2010.12987",
+    "status": "obtido (HTTP 200)",
+    "sha256": "4754a246f5949eeb6375a99b1bd022b98887fc156f6fae2e0ce66395eec86308",
+    "bytes": 554824,
+    "paginas_pdf": 37,
+    "baixado_em": "2026-09-25",
+    "versao": "arXiv:2010.12987v1 [math.DS], 24/10/2020; unica versao listada na pagina do arXiv na consulta; publicacao em periodico nao conferida",
+    "leitura_nesta_entrega": "enunciados de todas as secoes (pp. 1-37); provas de 2, 4, 5 e de 6 ate o Teorema 6.7 (pp. 3-18) e de 7 ate o Teorema 7.7 (pp. 18-25); 8-10 so definicoes e enunciados. Texto via pdftotext.",
+    "uso": "caderno hipoteses (B11); triagem da frente Collatz; sobreposicao com a CL0 (A8)",
+    "nao_obtidos": [
+      "An operator theoretic approach to the 3x + 1 dynamical system, IFAC-PapersOnLine (2021), ScienceDirect S2405896321005371: nao baixado, nao lido, autoria a confirmar",
+      "Leventides, A new embedding of the 3x+1 dynamical system (ref. [12] do artigo): nao obtido"
+    ]
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/koopman_20260925/kontorovich_lagarias_0910.1944.pdf",
+    "obra": "Kontorovich & Lagarias, Stochastic Models for the 3x+1 and 5x+1 Problems",
+    "url": "https://arxiv.org/pdf/0910.1944",
+    "status": "obtido (HTTP 200)",
+    "sha256": "9648fd7c2164f824f183cba8eab385edb9bf32179a757b1b1f7963a3eb5af70c",
+    "bytes": 823579,
+    "paginas_pdf": 66,
+    "baixado_em": "2026-09-25",
+    "versao": "arXiv:0910.1944v1, 11/10/2009; versao do livro (The Ultimate Challenge, AMS 2010) nao conferida",
+    "leitura_nesta_entrega": "2.5-2.6 (pp. 14-17, incluindo a Tabela 4, p. 16) e 6 ate 6.1 (pp. 33-36); pp. 15 e 35 conferidas na imagem da pagina",
+    "uso": "caderno hipoteses (B12); fecha a pergunta candidata deixada pela leitura B11",
+    "nao_obtidos": [
+      "Applegate & Lagarias, Density bounds for the 3x+1 problem I. Tree-search method, Math. Comp. 64 (1995) 411-426 (fonte do Teorema 2.4): ams.org respondeu 403 em 25/09/2026",
+      "Applegate & Lagarias, (On) the distribution of 3x+1 trees, Experimental Math. 4 (1995) (fonte da Conjectura 6.2): websites.umich.edu 403 (inclusive para bernstein.pdf, obtido mais cedo no mesmo dia); Project Euclid devolveu pagina anti-robo; Taylor & Francis pago. Paginacao diverge entre o levantamento (101-117) e o resultado de busca (193-209): a conferir"
+    ]
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/koopman_20260925/applegate_lagarias_1995_trees.pdf",
+    "obra": "Applegate & Lagarias, The Distribution of 3x+1 Trees, Experimental Mathematics 4 (1995), no. 3, 193-209",
+    "origem": "obtido pelo usuario em 25/09/2026 (cerca de 19:30) e colocado em archive/fontes_etapa11/ com o nome 'Applegate–Lagariaspdf', sem extensao; movido pelo agente para este caminho porque sem extensao escapava do .gitignore (PDF de terceiros). Conteudo inalterado.",
+    "status": "obtido",
+    "sha256": "cc3df1accda2bf5aa335f31c08215283f3354b4b490c1bfca19baeb98be02390",
+    "bytes": 316651,
+    "paginas_pdf": 17,
+    "versao": "layout da revista (cabecalho 'Experimental Mathematics, Vol. 4 (1995), No. 3'); PDF gerado de apple.dvi (dvips) e Ghostscript 9.53.3, data de criacao 2025-09-05",
+    "correspondencia_paginas": "PDF p. i = revista p. 192+i (193-209). Confirma a paginacao 193-209; a lista de referencias de Kontorovich-Lagarias (101-117) esta errada",
+    "leitura_nesta_entrega": "pp. 193-198 integrais (introducao, secao 2, Conjecturas C e C#, Tabela 1); enunciados dos Teoremas 5.1, 5.2 (p. 203), 6.1 (p. 204), 6.3 (p. 207) e as conjecturas finais (pp. 207-208); pp. 197, 198 e 203 conferidas na imagem. Provas das secoes 4-6 nao auditadas.",
+    "uso": "caderno hipoteses (B13); confere a Conjectura 6.2 de B12 contra o original"
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/Lagarias&Weiss.pdf",
+    "obra": "Lagarias & Weiss, The 3x+1 problem: two stochastic models, Ann. Appl. Probab. 2 (1992), no. 1, 229-261",
+    "origem": "obtido pelo usuario em 25/09/2026 (~19:48); escaneado JSTOR (page2pdf, 2006), so imagem, sem camada de texto. Deixado no caminho em que o usuario o pos (ja coberto pelo .gitignore).",
+    "status": "obtido",
+    "sha256": "dd83bfa9e4c37f1659798582b9ce6e16f8510cd31feec646529fbfce79c44fde",
+    "bytes": 2518409,
+    "paginas_pdf": 33,
+    "correspondencia_paginas": "PDF p. i = revista p. 228+i (229-261, completo)",
+    "leitura_nesta_entrega": "lidas nas imagens: pp. 229-234, 242-248, 250, 253, 255; p. 243 ampliada a 140 e 300 dpi. Demais paginas nao lidas.",
+    "arquivo_derivado_nao_fonte": {
+      "arquivo": "archive/fontes_etapa11/Lagarias&Weiss.tex",
+      "sha256": "788262064e0f6c036fa31e5cb0783e26bc692a8eb4a51725863dc9c0d3f20303",
+      "bytes": 75755,
+      "natureza": "transcricao LaTeX de origem nao registrada (criada ~19:58, 10 min depois do PDF). NAO e fonte: ja no resumo troca sigma_infinito por sigma_alfa. Usada apenas como indice para localizar secoes; toda afirmacao registrada foi conferida na imagem. Nao coberta pelo .gitignore."
+    },
+    "uso": "caderno hipoteses (B17)"
+  }
+]

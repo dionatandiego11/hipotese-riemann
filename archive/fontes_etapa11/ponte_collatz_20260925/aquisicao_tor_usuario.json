@@ -1,0 +1,12 @@
+{
+  "arquivo": "meinardus_2001_mannheim261.pdf",
+  "url": "https://madoc.bib.uni-mannheim.de/1608/1/261_2001.pdf",
+  "obtido_por": "usuário, via Tor Browser (acesso direto do agente: 403/antibot, ver aquisicao.json)",
+  "origem_local": "~/.local/share/torbrowser/tbb/x86_64/tor-browser/Browser/Downloads/261_2001.pdf",
+  "baixado_em": "2026-09-25T21:16 (horário local, mtime do arquivo)",
+  "copiado_em": "2026-09-25",
+  "paginas_pdf": 15,
+  "bytes": 645872,
+  "sha256": "08ebcc736ad2c72dad634394cdd9402f90f21a31af0fb77d6709bd8bf2ce297e",
+  "observacao": "escaneado (produtor Eastman Kodak), camada OCR de baixa qualidade; conferir fórmulas nas imagens"
+}

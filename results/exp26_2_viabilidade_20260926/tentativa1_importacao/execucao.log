@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/results/exp26_2_viabilidade_20260926/executar.py", line 12, in <module>
+    from riemann_spectra.loss_viability import run
+  File "/home/dionatandiego11/Downloads/hipotese-riemann/src/riemann_spectra/loss_viability.py", line 12, in <module>
+    from threadpoolctl import threadpool_info
+ModuleNotFoundError: No module named 'threadpoolctl'
