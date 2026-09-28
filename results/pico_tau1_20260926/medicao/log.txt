@@ -1,0 +1,18 @@
+{
+ "n_na_faixa_B": 25,
+ "n_acima_alt": 28,
+ "veredito": "inconclusivo",
+ "media_medida": 3.0139418459749354,
+ "media_B": 6.943112102502289,
+ "medias_banda": [
+  6.214645060618508,
+  6.943112102502289,
+  6.319847331254757
+ ],
+ "diferenca": -3.929170256527353,
+ "tolerancia_agregada": 1.2327094260298905,
+ "agregado_compativel": false,
+ "spearman_rho": 0.46206896551724136,
+ "spearman_p": 0.010150844418613438,
+ "segundos": 0.1
+}

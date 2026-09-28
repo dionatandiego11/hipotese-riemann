@@ -1,0 +1,25 @@
+{
+ "execucao": "MN-1 Conjectura 7 de Pearce-Crump",
+ "ficha": "hipoteses/FICHA_MOMENTOS_NEGATIVOS.md",
+ "ficha_sha256": "d31515d1e306a58b9036c72a6fd6802a8974e7aa51138f64bd563366c74fd7d6",
+ "congelamento": "2026-09-27T11:07-03:00",
+ "comandos": [
+  ".venv/bin/python results/momentos_negativos_20260927/calc_derivadas.py --fonte zeta --n 20000 --teto-cpu 10800 (5805 s)",
+  ".venv/bin/python results/momentos_negativos_20260927/calc_derivadas.py --fonte chi_m4 --n 3000 --teto-cpu 5400 (1269 s)",
+  ".venv/bin/python results/momentos_negativos_20260927/calc_derivadas.py --fonte chi_5 --n 3000 --teto-cpu 5400 (2037 s)",
+  ".venv/bin/python results/momentos_negativos_20260927/analise.py (8 s)"
+ ],
+ "arquivos": {
+  "results/momentos_negativos_20260927/RESULTADO.md": "1bf0c1c8f56a621f275514e560dc548593388945881245ae7d8960a75b5598d9",
+  "results/momentos_negativos_20260927/analise.json": "3831dd061aee427955cb853489e7ed12f1639dff773cd2b7e55a3a01f3c1139b",
+  "results/momentos_negativos_20260927/analise.py": "e05ee8a525234d42550393ccf8cfde5b21073e35e17eaad05e57a70e8fe70bc0",
+  "results/momentos_negativos_20260927/calc_derivadas.py": "1d80f55e2b1226dbf106ffcb2bd6a2d2cce7a3dfcbde766c5750a81c81c710ae",
+  "results/momentos_negativos_20260927/derivadas_chi_5_3000.txt": "78aca45d82df69fc1d0e2ec649b3d0b04d1852d84f9e936e74ddce31eb009c1c",
+  "results/momentos_negativos_20260927/derivadas_chi_m4_3000.txt": "8644748d213308c000d46e1250be1c51e42a3fb35c7924ce5016587fa02e1bd1",
+  "results/momentos_negativos_20260927/derivadas_zeta_20000.txt": "786515a59128d82c53199a7212cfddd9cc7ee6a102b313d3da85d71c880eccfd",
+  "results/momentos_negativos_20260927/log_analise.txt": "46c9de23ece2f3bbdf39bd9686230eb1a2fe6d8c89186424bfb6d892463089a7",
+  "results/momentos_negativos_20260927/log_chi_5.txt": "d2a42a066483bc65126f1e1a70c3a2c1d3e52c1465b13bbb0360c51b9eb0d6a1",
+  "results/momentos_negativos_20260927/log_chi_m4.txt": "4a33e7486c3eb90572187542c6ed481f49e2d48a1ee9136e6534d83547a08b2c",
+  "results/momentos_negativos_20260927/log_zeta.txt": "6e40097c6353babc23f245dd6be6ade5f8233f6b3c02432c9adc79bcc4f7c781"
+ }
+}

@@ -1,0 +1,459 @@
+{
+  "protocol": "ctrl-dirichlet-v1",
+  "declaration_sha256": "e6cb8ab84e1d9665f8c8fcb3c8a450b840dbaec8167b7267b180fe410232edff",
+  "d1_sha256": "f07972a49422716256401da58c3756e4807e1f2ed26daef3ee50be98bc8ea11d",
+  "addenda": {
+    "ADENDO_DIRICHLET_1.md": "6ee78368f371165aa117ffc2e4b6502e2975696d79b5d4509275a14bec7f6586",
+    "ADENDO_DIRICHLET_2.md": "619950467fb0a7e3b47998b93b203dcea23e8db69f19db4b288283199aef8811"
+  },
+  "character": {
+    "name": "chi_8",
+    "q": 8,
+    "kappa": 0,
+    "values": [
+      0,
+      1,
+      0,
+      -1,
+      0,
+      -1,
+      0,
+      1
+    ]
+  },
+  "n_zeros": 2000,
+  "gamma_first": 4.899973997037476,
+  "gamma_last": 1858.2224153740572,
+  "method": {
+    "L": "Hurwitz (mpmath.zeta(s, a/q))",
+    "dps": 30,
+    "step_fraction": 0.125,
+    "refine": "Illinois (≤ 100) + bisseção (≤ 100), aceitação estrita",
+    "refine_tol": 1e-10
+  },
+  "gap_rescans": [],
+  "stats": {
+    "evaluations": 50326,
+    "refinements": 2000,
+    "gap_rescans": 0,
+    "seconds": 15324.47049907298,
+    "max_refine_iterations": 27,
+    "bisection_fallbacks": 0
+  },
+  "checks": {
+    "V1": {
+      "tolerance": 3.0,
+      "edges": [
+        {
+          "n_found": 2000,
+          "T": 1858.2224163740573,
+          "theta_over_pi": 2001.7571070698061,
+          "difference": -1.7571070698061249,
+          "ok": true
+        }
+      ],
+      "passed": true,
+      "note": "N(T,χ) = θ_χ(T)/π + S(T,χ) − S(0,χ); S não é estimado (convenção B da declaração)."
+    },
+    "V2": {
+      "indices": [
+        1,
+        2000
+      ],
+      "n_reference": 2000,
+      "n_recomputed": 2002,
+      "same_count": false,
+      "max_abs_difference": null,
+      "passed": false,
+      "evaluations": 65976,
+      "seconds": 5567.944146216963
+    },
+    "V3": {
+      "seed": 20260917,
+      "sample": [
+        {
+          "index": 52,
+          "gamma": 87.06775311985137,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 87,
+          "gamma": 131.98576496528506,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 90,
+          "gamma": 136.16186476287498,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 111,
+          "gamma": 160.3953763372425,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 127,
+          "gamma": 179.11748618586768,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 155,
+          "gamma": 211.3419307392831,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 171,
+          "gamma": 229.41193402615346,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 229,
+          "gamma": 292.00494944036564,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 289,
+          "gamma": 354.55851067314995,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 304,
+          "gamma": 370.07745820887646,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 320,
+          "gamma": 386.4104627211561,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 321,
+          "gamma": 387.3962661521572,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 348,
+          "gamma": 414.15387885603616,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 360,
+          "gamma": 426.7033010251189,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 396,
+          "gamma": 462.46020585727604,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 400,
+          "gamma": 466.1903001065222,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 445,
+          "gamma": 510.04217395816084,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 490,
+          "gamma": 553.6813264857929,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 504,
+          "gamma": 566.5798229281854,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 508,
+          "gamma": 570.7041576641711,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 553,
+          "gamma": 613.0404713670223,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 645,
+          "gamma": 699.4615493286715,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 669,
+          "gamma": 721.6574754688527,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 705,
+          "gamma": 754.5380607815159,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 784,
+          "gamma": 826.2476721915359,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 888,
+          "gamma": 919.5254678023846,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 933,
+          "gamma": 959.6840916860472,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 962,
+          "gamma": 984.8637568952931,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1025,
+          "gamma": 1040.500071240511,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1028,
+          "gamma": 1042.8093501215708,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1045,
+          "gamma": 1057.996341674634,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1118,
+          "gamma": 1121.1130847452846,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1204,
+          "gamma": 1195.318670152344,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1216,
+          "gamma": 1205.5570227842768,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1224,
+          "gamma": 1212.4492597262704,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1249,
+          "gamma": 1234.105265689664,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1275,
+          "gamma": 1256.1509863868052,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1329,
+          "gamma": 1301.942507970099,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1375,
+          "gamma": 1340.4277401015725,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1598,
+          "gamma": 1528.6858274818255,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1629,
+          "gamma": 1554.3441404369719,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1644,
+          "gamma": 1567.040920850239,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1704,
+          "gamma": 1616.559963137906,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1745,
+          "gamma": 1650.620068273551,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1792,
+          "gamma": 1688.5558813359507,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1863,
+          "gamma": 1746.5471565481448,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1900,
+          "gamma": 1777.0165149733864,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1901,
+          "gamma": 1777.6968866964085,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1949,
+          "gamma": 1816.683269648298,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        },
+        {
+          "index": 1970,
+          "gamma": 1834.1334437069963,
+          "dirichlet_40": true,
+          "hurwitz_60": true
+        }
+      ],
+      "passed": true,
+      "note": "mpmath.dirichlet também usa somas de Hurwitz: confere implementação e precisão, não método independente."
+    },
+    "V4": {
+      "rule": "adendo-1 (pontos médios entre zeros consecutivos)",
+      "rel_tol": 1e-20,
+      "points": [
+        {
+          "t": 9.217508502816335,
+          "abs_Z": 2.7344881582644818,
+          "imag_over_abs": 2.4006260999278585e-31,
+          "ok": true
+        },
+        {
+          "t": 215.35526816455882,
+          "abs_Z": 1.2459512036348823,
+          "imag_over_abs": 2.2869394887397943e-30,
+          "ok": true
+        },
+        {
+          "t": 420.0619352723084,
+          "abs_Z": 5.804182547444953,
+          "imag_over_abs": 7.34433333781612e-30,
+          "ok": true
+        },
+        {
+          "t": 625.9920947201808,
+          "abs_Z": 5.7691929090177165,
+          "imag_over_abs": 1.881880678019193e-28,
+          "ok": true
+        },
+        {
+          "t": 831.0792881108923,
+          "abs_Z": 2.074426196136978,
+          "imag_over_abs": 1.5162101228735347e-28,
+          "ok": true
+        },
+        {
+          "t": 1037.1894723919743,
+          "abs_Z": 2.4004196345119984,
+          "imag_over_abs": 7.51009661818758e-29,
+          "ok": true
+        },
+        {
+          "t": 1242.3208376257635,
+          "abs_Z": 1.082104033185222,
+          "imag_over_abs": 2.8802031682215732e-30,
+          "ok": true
+        },
+        {
+          "t": 1447.767947904608,
+          "abs_Z": 0.7840917352185529,
+          "imag_over_abs": 1.1304950680789328e-28,
+          "ok": true
+        },
+        {
+          "t": 1653.1188876609513,
+          "abs_Z": 2.2304570652021845,
+          "imag_over_abs": 4.221779388449449e-28,
+          "ok": true
+        },
+        {
+          "t": 1857.8411597622785,
+          "abs_Z": 1.1236283289277584,
+          "imag_over_abs": 4.521554754393563e-28,
+          "ok": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "all_checks_passed": false,
+  "output_file": "zeros_chi_8_2000.txt",
+  "output_sha256": "ed68096d2e2fb70fb87f71dc0c381bcb3945d8f778f8e1cca022e6cb51d69220",
+  "resumes": 1,
+  "checkpoint_file": "progresso_chi_8_2000.json",
+  "started": "2026-09-27T23:08:07-0300",
+  "finished": "2026-09-28T10:06:46-0300",
+  "versions": {
+    "python": "3.12.3",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.3"
+  },
+  "script_sha256": "65056bc2d2ad18495f3f0f95d6f78b4c8a9fdea5bd6314fadee36b33b010d4e6"
+}

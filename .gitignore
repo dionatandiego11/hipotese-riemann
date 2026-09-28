@@ -29,3 +29,8 @@ results/etapa11_6_controles/estadio/_poder_tmp/
 # Transcrições/fontes TeX de terceiros ou de origem não registrada
 archive/fontes_etapa11/*.tex
 archive/fontes_etapa11/**/*.tex
+
+# Estado de execução retomável das rodadas MN (regenerável; saídas finais versionadas)
+results/momentos_negativos_20260927/**/progresso_*.json
+results/momentos_negativos_20260927/progresso_*.json
+results/momentos_negativos_20260927/**/.lock_*

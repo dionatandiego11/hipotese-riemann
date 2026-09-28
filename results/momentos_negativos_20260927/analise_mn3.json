@@ -1,0 +1,69 @@
+{
+ "ficha_sha256": "5772002999b2336b617aafd91b191d43735ed7adfa34068d8e0c9cae23439276",
+ "chi": {
+  "chi_8": {
+   "C7": {
+    "R": {
+     "R": 0.6867720530058866,
+     "q025": 0.604618865919645,
+     "q975": 0.7835446799980228,
+     "reps_validas": 2000
+    },
+    "previsto": 0.6666666666666666,
+    "alternativas_no_IC": {
+     "H0": false,
+     "HE": false
+    },
+    "veredito": "C7 favorecida"
+   },
+   "C8": {
+    "R": {
+     "R": 0.5575194120790846,
+     "q025": 0.45044675451238386,
+     "q975": 0.6836667794110581,
+     "reps_validas": 2000
+    },
+    "previsto": 0.5,
+    "alternativas_no_IC": {
+     "H0": false,
+     "H7": true
+    },
+    "veredito": "C8 favorecida"
+   },
+   "max_densidade_teste": 7.7680810613827145,
+   "max_densidade_ref": 8.22586564661096
+  },
+  "chi_12": {
+   "C7": {
+    "R": {
+     "R": 0.5007266946048301,
+     "q025": 0.44530636522554556,
+     "q975": 0.5549014561015,
+     "reps_validas": 2000
+    },
+    "previsto": 0.5,
+    "alternativas_no_IC": {
+     "H0": false,
+     "HE": false
+    },
+    "veredito": "C7 favorecida"
+   },
+   "C8": {
+    "R": {
+     "R": 0.3400249565433994,
+     "q025": 0.30125688115089844,
+     "q975": 0.38149243161951507,
+     "reps_validas": 2000
+    },
+    "previsto": 0.3333333333333333,
+    "alternativas_no_IC": {
+     "H0": false,
+     "H7": false
+    },
+    "veredito": "C8 favorecida"
+   },
+   "max_densidade_teste": 8.122421314818645,
+   "max_densidade_ref": 8.22586564661096
+  }
+ }
+}

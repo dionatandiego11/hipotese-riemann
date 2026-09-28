@@ -1,0 +1,39 @@
+{
+ "execucao": "PT-1 pico em tau=1",
+ "ficha_sha256": "3e2b44e65c4eccb8ab9fd5e0ab407f7e2f538949008530979f521976d34bbb62",
+ "congelamento": "2026-09-27T10:49:27-03:00",
+ "comandos": [
+  ".venv/bin/python -m pytest -q tests/test_bragg_peak.py (4 passed)",
+  ".venv/bin/python results/pico_tau1_20260926/previsao/previsao.py (132 s)",
+  ".venv/bin/python results/pico_tau1_20260926/medicao/medicao.py (v1 abortou na serializacao; v2 apos adendo tecnico 1)",
+  ".venv/bin/python results/pico_tau1_20260926/diagnostico/diagnostico.py e diagnostico2.py (exploratorios)"
+ ],
+ "arquivos": {
+  "results/pico_tau1_20260926/ADENDO_TECNICO_1.md": "6e96bfc28ef6339a585dcd4746bbf98ddfd7637b7f31f009d9475a4bb6aba381",
+  "results/pico_tau1_20260926/RESULTADO.md": "67ce0b21dac737420a654a4cdeef77ac4b4bd2f1c96a4eacb6aa30a6af294985",
+  "results/pico_tau1_20260926/diagnostico/diagnostico.json": "5d1b974abe0965b4262edfae9943cdceb4bfca8d915d4cf521ae305645e8513e",
+  "results/pico_tau1_20260926/diagnostico/diagnostico.py": "139b2b74221feec03371593ae8195d81afdf2b6f3e0737bdd4feac543575ea1e",
+  "results/pico_tau1_20260926/diagnostico/diagnostico2.json": "da0c72a985ffd39c0fe9f56a317db24ae3713c365d48b3d207800aa82bc2b9c2",
+  "results/pico_tau1_20260926/diagnostico/diagnostico2.py": "ccf166549fe18702a715add1f76d74e9aab74e7e4de88632d3b977589cdf7370",
+  "results/pico_tau1_20260926/diagnostico/log.txt": "a64ac4cd0119bdb93f3fe0fedfba43a123163e4c17e730468329ef70da097dda",
+  "results/pico_tau1_20260926/diagnostico/log2.txt": "65ed6a5881ffb67300ece47f4db8456b55801feac83dd68368be9625c2dbcb0d",
+  "results/pico_tau1_20260926/medicao/log.txt": "250f0ddb2ccd19b922b36755a6578e00b2d463e42d8cf3d381fd6abb90d6785a",
+  "results/pico_tau1_20260926/medicao/medicao.json": "a6aeb60150fa2c97daadd05b28ff638474959eab158f042eace250ba3129f241",
+  "results/pico_tau1_20260926/medicao/medicao.py": "b16e8dc2dc1dbb59f9a37e9731aade3f90adf73a51039375c50282cd9ec609bb",
+  "results/pico_tau1_20260926/medicao/medicao_v1_congelado.py": "11d23365d9842a298de8e2ce465a73e5c148d71e84b0eaf4b0faccfa77be31e3",
+  "results/pico_tau1_20260926/previsao/previsao.json": "823297b4aca4d45a7dff0f13187207e4354c5e1a7cdb7d61d4bf92b557852d2d",
+  "results/pico_tau1_20260926/previsao/previsao.py": "ef48b4a5f7e354f26dad01faa361defdd84a8f1ef614243da57b8e5149e7aba5",
+  "results/pico_tau1_20260926/rascunho/LEIA.md": "18ee3885b5fcae94e84cfe3195de338904be753f6422fe29b7fab1814741f842",
+  "results/pico_tau1_20260926/rascunho/controle_gue.py": "aca3e40c2ef7e607e66c855321f2c512a6730116c2bac455c33e3891ea2de6e1",
+  "results/pico_tau1_20260926/rascunho/controle_gue_saida_NAO_LIDA.txt": "73e6e72dbd425aedba1bf44831530511e0c45fb5f2bef6876afbf627334df75e",
+  "hipoteses/FICHA_PICO_TAU1.md": "3e2b44e65c4eccb8ab9fd5e0ab407f7e2f538949008530979f521976d34bbb62",
+  "src/riemann_spectra/bragg_peak.py": "6a4ba865ef6afdbe39bcdea4e33da6807389784d742ea64ad67297bb80c67c0b",
+  "tests/test_bragg_peak.py": "5a0495d5295817cf57c7c83269ffd74431f7c9f63339e7faa7f873aa50b35f19"
+ },
+ "versoes": {
+  "python": "3.12.3",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+ },
+ "graficos": "nao produzidos (pendente)"
+}

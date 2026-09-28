@@ -1,0 +1,36 @@
+b01 E~11148
+  k=  1  V_med 0.1581  V_B-1/6 0.1531 | coer 0.0767  gauss(V_med) 0.0441  gauss(V_B) 0.0487
+  k=  2  V_med 0.2022  V_B-1/6 0.2015 | coer 0.0366  gauss(V_med) 0.0185  gauss(V_B) 0.0187
+  k=  5  V_med 0.2174  V_B-1/6 0.2193 | coer 0.0316  gauss(V_med) 0.0137  gauss(V_B) 0.0132
+  k= 10  V_med 0.1615  V_B-1/6 0.1621 | coer 0.0144  gauss(V_med) 0.0412  gauss(V_B) 0.0408
+  k= 20  V_med 0.1311  V_B-1/6 0.1261 | coer 0.0932  gauss(V_med) 0.0752  gauss(V_B) 0.0829
+  k= 50  V_med 0.2085  V_B-1/6 0.1962 | coer 0.0301  gauss(V_med) 0.0163  gauss(V_B) 0.0208
+  k=100  V_med 0.2044  V_B-1/6 0.1955 | coer 0.0138  gauss(V_med) 0.0177  gauss(V_B) 0.0211
+  k=200  V_med 0.2177  V_B-1/6 0.2115 | coer 0.0072  gauss(V_med) 0.0136  gauss(V_B) 0.0154
+c05 E~42933
+  k=  1  V_med 0.1613  V_B-1/6 0.1569 | coer 0.0637  gauss(V_med) 0.0414  gauss(V_B) 0.0452
+  k=  2  V_med 0.2085  V_B-1/6 0.2065 | coer 0.0201  gauss(V_med) 0.0163  gauss(V_B) 0.0170
+  k=  5  V_med 0.2397  V_B-1/6 0.2430 | coer 0.0196  gauss(V_med) 0.0088  gauss(V_B) 0.0083
+  k= 10  V_med 0.1828  V_B-1/6 0.1786 | coer 0.0631  gauss(V_med) 0.0271  gauss(V_B) 0.0294
+  k= 20  V_med 0.2958  V_B-1/6 0.3106 | coer 0.0186  gauss(V_med) 0.0029  gauss(V_B) 0.0022
+  k= 50  V_med 0.1306  V_B-1/6 0.1270 | coer 0.0926  gauss(V_med) 0.0760  gauss(V_B) 0.0815
+  k=100  V_med 0.1735  V_B-1/6 0.1713 | coer 0.0380  gauss(V_med) 0.0325  gauss(V_B) 0.0340
+  k=200  V_med 0.1908  V_B-1/6 0.1826 | coer 0.0295  gauss(V_med) 0.0232  gauss(V_B) 0.0272
+d10 E~73917
+  k=  1  V_med 0.1638  V_B-1/6 0.1592 | coer 0.0504  gauss(V_med) 0.0395  gauss(V_B) 0.0432
+  k=  2  V_med 0.2108  V_B-1/6 0.2083 | coer 0.0139  gauss(V_med) 0.0156  gauss(V_B) 0.0164
+  k=  5  V_med 0.2463  V_B-1/6 0.2505 | coer 0.0059  gauss(V_med) 0.0077  gauss(V_B) 0.0071
+  k= 10  V_med 0.1961  V_B-1/6 0.1930 | coer 0.0533  gauss(V_med) 0.0209  gauss(V_B) 0.0222
+  k= 20  V_med 0.2690  V_B-1/6 0.2708 | coer 0.0393  gauss(V_med) 0.0049  gauss(V_B) 0.0048
+  k= 50  V_med 0.2243  V_B-1/6 0.2256 | coer 0.0458  gauss(V_med) 0.0119  gauss(V_B) 0.0116
+  k=100  V_med 0.2567  V_B-1/6 0.2631 | coer 0.0321  gauss(V_med) 0.0063  gauss(V_B) 0.0056
+  k=200  V_med 0.2380  V_B-1/6 0.2429 | coer 0.0197  gauss(V_med) 0.0091  gauss(V_B) 0.0083
+todos_10001_100000 E~43999
+  k=  1  V_med 0.1615  V_B-1/6 0.1589 | coer 0.0629  gauss(V_med) 0.0413  gauss(V_B) 0.0435
+  k=  2  V_med 0.2080  V_B-1/6 0.2066 | coer 0.0275  gauss(V_med) 0.0165  gauss(V_B) 0.0169
+  k=  5  V_med 0.2379  V_B-1/6 0.2452 | coer 0.0161  gauss(V_med) 0.0091  gauss(V_B) 0.0079
+  k= 10  V_med 0.1817  V_B-1/6 0.1792 | coer 0.0383  gauss(V_med) 0.0277  gauss(V_B) 0.0291
+  k= 20  V_med 0.2568  V_B-1/6 0.3120 | coer 0.0204  gauss(V_med) 0.0063  gauss(V_B) 0.0021
+  k= 50  V_med 0.1737  V_B-1/6 0.1248 | coer 0.0321  gauss(V_med) 0.0324  gauss(V_B) 0.0851
+  k=100  V_med 0.2018  V_B-1/6 0.1638 | coer 0.0057  gauss(V_med) 0.0186  gauss(V_B) 0.0394
+  k=200  V_med 0.1932  V_B-1/6 0.1921 | coer 0.0174  gauss(V_med) 0.0221  gauss(V_B) 0.0225

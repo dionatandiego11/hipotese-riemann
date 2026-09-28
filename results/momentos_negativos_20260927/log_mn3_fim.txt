@@ -1,0 +1,3 @@
+pipeline MN-3 terminado 2026-09-28T07:16:15-03:00
+retomada MN-3 terminada 2026-09-28T10:06:46-03:00
+serie pos-queda terminada 2026-09-28T12:23:48-03:00

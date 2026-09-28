@@ -60,8 +60,12 @@ Hilbert–Pólya). **O projeto não tenta provar RH e não afirma nada a favor d
 | **EXP26-2, viabilidade (26/09):** em GUE sintético, o resumo espectral não autorizou avançar em nenhuma severidade (k = 6, 30: parar; k = 2, 12: inconclusivo) | B | `results/exp26_2_viabilidade_20260926/RELATORIO.md` |
 | **Leituras Collatz–Riemann:** Meinardus 2001, Siegel (Parte I.5), Bell–Lagarias 2015 e bibliografias de Lagarias: **nenhuma ligação com os zeros de ζ**; ζ só aparece como série da sequência constante. Siegel (2.25)/(2.26) têm erro, corrigido e verificado numericamente | A/B | `hipoteses/leituras/B18`–`B20` |
 
-**Balanço honesto:** nenhum resultado C (novidade a investigar) está estabelecido. O que existe é infraestrutura
-rigorosa e reprodução numérica de teoria conhecida (B).
+| **MN-1 (27/09): Conjectura 7 de Pearce-Crump** (Σ 1/\|L′(ρ,χ)\|² ∼ (A_q/2π)T, arXiv jun/2026): teste diferencial χ/ζ favorece o fator aritmético em χ₋₄ (R = 0,655 [0,592; 0,715], previsto 2/3) e χ₅ (0,827 [0,753; 0,901], previsto 5/6), excluindo as alternativas | **C** (novidade a investigar) | `results/momentos_negativos_20260927/RESULTADO.md` |
+| **MN-2 (27/09): Conjectura 8 de Pearce-Crump** (Σ \|L(2ρ,χ²)/L′(ρ,χ)\|² ∼ (φ(q)/q)T/2π): χ₋₄ R₈ = 0,490 [0,430; 0,549], previsto 1/2, excluindo 1 e 2/3; χ₅ 0,753, previsto 4/5 | **C** | `results/momentos_negativos_20260927/RESULTADO_C8.md` |
+| **MN-3 (28/09): χ₈ e χ₁₂** — χ₁₂: Conj. 7 R = 0,501 [0,445; 0,555] (1/2), Conj. 8 R = 0,340 [0,301; 0,381] (1/3); χ₈: 0,687 (2/3) e 0,558 (1/2). **Total: 4 caracteres, 8 testes, 8 favoráveis** | **C** | `results/momentos_negativos_20260927/RESULTADO_MN3.md` |
+
+**Balanço honesto:** os primeiros candidatos a resultado C são a MN-1 e a MN-2, ainda sem busca bibliográfica adequada. O resto é
+infraestrutura rigorosa e reprodução numérica de teoria conhecida (B).
 
 ## 5. Estado das frentes
 
@@ -73,21 +77,18 @@ rigorosa e reprodução numérica de teoria conhecida (B).
 | 11.6 controles | Dirichlet: dados validados (exceto V2′ de χ₅); Maass: não passa; estádio: **encerrado por prioridade** (diagnóstico de poder abortou em g04, parcial e `inconclusivo`) |
 | **H-004** (previsão do erro do estimador em L(s, χ)) | **adiada por prioridade** (`results/registro_hipoteses/H-004/ADENDO_H004_3.md`): exigiria a V2′ de χ₅ (~40–50 h-CPU), e o desfecho é quase determinado pela fórmula explícita. Reserva e02–e04/f02–f04 mantida |
 | **VN-1** | concluída (ver §4) |
-| **Pico de K_c em τ = 1** | **pausado a pedido do usuário** (ver §6) |
+| **Pico de K_c em τ = 1 (PT-1)** | executado em 27/09: primário **inconclusivo**, agregado incompatível. Pico real (não GUE); altura superestimada ~2,3× pelo modelo gaussiano; correção de 1/6 confirmada diretamente; **falha localizada na gaussianidade** (`results/pico_tau1_20260926/RESULTADO.md`) |
 | EXP26-1, EXP26-3 a 5 (`hipoteses/DIRECAO_EXPERIMENTAL_20260926.md`) | propostas; não iniciadas |
 | Collatz | CL0 entregue (documental); CL1 não executada; ponte direta sem mecanismo encontrado; A₅(x) (ramos 5/16) como pergunta barata, não iniciada |
 | Etapas 12–13 | pendentes |
 
 ## 6. Próxima tarefa recomendada
 
-1. **Pico de K_c em τ = 1 (retomar só com aval do usuário).** Derivação feita: em τ = 1, K_c mede E[e^{2πi S_n}]
-   amostrado nos zeros. Com amostragem uniforme em t, esse valor é **exatamente zero**, e a variância de S nos zeros
-   é menor por 1/12 por ponto (identidade de integração por partes). Modelo: V_k ≈ Σ²_Berry(k) − 1/6 com fases
-   gaussianas. Estado: `src/riemann_spectra/bragg_peak.py` escrito, **sem testes**; controle em GUE rodado, com saída
-   **não lida** em `results/pico_tau1_20260926/rascunho/`; **nenhuma ficha congelada; nenhum valor medido do pico
-   foi olhado para esta análise.** Próximos passos: ler o controle GUE, escrever testes, congelar a ficha e medir.
-2. **Relatório consolidado reprodutível** (C1–C3, VN-1, pico τ = 1, Dirichlet), como produto final citável.
-3. Manter as demais frentes congeladas até o relatório existir.
+1. **PT-1 concluída** (ver §5). Aberto (D): a função característica dos k-desvios em 2π, que controla a altura do pico.
+2. **Norte científico: momentos negativos discretos (MN-1).** Busca bibliográfica adequada de testes numéricos
+   anteriores; extensão a mais caracteres (condutores compostos e caracteres complexos) e à Conjectura 8.
+3. **Relatório consolidado reprodutível** (C1–C3, VN-1, pico τ = 1, Dirichlet), como produto final citável.
+4. Manter as demais frentes congeladas até o relatório existir.
 
 ## 7. Outras pendências
 

@@ -630,3 +630,75 @@ Registro anterior (14/09/2026):
   - **Extensão a χ conferida em fonte:** Bogomolny–Keating 2013 (B22), eqs. (26), (30)–(33), (55). Adendo `results/variancia_numerica_20260926/RESULTADO_ADENDO_1.md`. Q3 segue **B**; **novidade excluída**, porque o efeito dos primos que dividem q já está no artigo. B21/B22 na bibliografia; PDF de BK arquivado (`bed4651d…`).
   - **Estimativa inversa por Σ²: não executada, por redundância verificada.** Σ²(L) é uma integral do fator de forma K(τ), que o projeto já mede (`form_factor.py`, K_c no C3), e os períodos log p já foram recuperados sem catálogo (C1). Inverter Σ² seria um caminho mais ruidoso até o mesmo resultado.
   - **Candidata para o próximo passo:** o pico de K_c em τ = 1 (C3), hoje com explicação apenas heurística (D) e com crítica registrada em `docs/ANALISE_RESULTADOS.md`. A altura do pico depende da distribuição de x_n − (n − ½), ou seja, de S nos zeros, cuja variância de longo alcance é justamente o que a VN-1 validou (saturação de Σ²). Falta derivação e ficha própria.
+
+### 27/09/2026 — PT-1: pico de K_c em τ = 1
+
+- Ficha `hipoteses/FICHA_PICO_TAU1.md` (`3e2b44e6…`) congelada antes da medição. Módulo `src/riemann_spectra/bragg_peak.py` com 4 testes; previsões só com primos (132 s). Controle GUE: valida a parte incoerente (viés de ~7%), mas não a correção de 1/6. Adendo técnico 1: correção de serialização JSON antes de ver qualquer valor.
+- **Resultado** (`results/pico_tau1_20260926/RESULTADO.md`): primário **inconclusivo** (25/30 na faixa B, com 27 exigidos; 28/30 acima das alternativas GUE e uniforme); agregado **incompatível** (média medida 3,01 contra 6,94 prevista). O pico é real e não é GUE, mas o modelo superestima sua altura por um fator de ~2,3. Valores idênticos aos armazenados do C3.
+- **Diagnóstico exploratório:** a variância dos k-desvios bate com Σ²_Berry − 1/6 a ~0,005, confirmando a correção de amostragem nos zeros. A coerência de fase medida é 0,39 da gaussiana (0,0126 ± 0,0005 contra 0,033). **A falha está na gaussianidade**, não na estrutura de segunda ordem.
+- Pergunta aberta (D): a função característica de D_k em 2π. Novidade da identidade de 1/12 aplicada ao pico não pesquisada. Sem commit.
+
+### 27/09/2026 — busca de um norte na literatura: momentos negativos discretos
+
+- A pedido do usuário (foco em ciência), foram triadas candidatas na literatura: momentos negativos de ζ′/L′ nos zeros, lei de Gram e correções de tamanho finito. Escolhida como norte proposto: **Conjectura 7 de Pearce-Crump (arXiv:2606.25094, jun/2026)**, Σ 1/|L′(ρ,χ)|² ∼ (A_q/2π)T. Nota `hipoteses/leituras/B23_PEARCE_CRUMP_2026.md`; B23/B24 na bibliografia; PDFs arquivados.
+- A conjectura vem de heurística; o artigo não traz teste numérico. Inclinações previstas: ζ 3/π³; χ₋₄ 2/π³; χ₅ 5/(2π³).
+- **Custo medido:** |Z′(γ)| para ζ via mpmath: média de 288 ms/zero (mediana 120, máximo 876), ou ~8 h-CPU para 100 mil zeros. L(s,χ) nos zeros 1–3.000: 0,08–0,6 s/zero (χ₋₄) e 0,16–1,1 s/zero (χ₅), ~1 h-CPU no total.
+- Nenhuma ficha congelada; nenhum cálculo de L′ feito além do benchmark. Próximo: ficha com previsão, alternativas e análise de ruído (cauda pesada).
+
+### 27/09/2026 — MN-1: teste numérico da Conjectura 7 de Pearce-Crump
+
+- Ficha `hipoteses/FICHA_MOMENTOS_NEGATIVOS.md` (`d31515d1…`) e código de análise congelados antes de qualquer derivada. Uma correção na regra de fragilidade foi feita antes de rodar e registrada na ficha. Módulo `src/riemann_spectra/discrete_moments.py`, 4 testes.
+- Derivadas |L′(ρ)| em ζ (zeros 1–20.000) e em χ₋₄ e χ₅ (zeros 1–3.000, fora da reserva da H-004): 2,5 h-CPU, dentro dos tetos.
+- **Resultado** (`results/momentos_negativos_20260927/RESULTADO.md`):
+  - χ₋₄: R = 0,655 [0,592; 0,715], previsto 2/3 → **Conjectura 7 favorecida**;
+  - χ₅: R = 0,827 [0,753; 0,901], previsto 5/6 → **favorecida**;
+  - as alternativas sem fator e com só os fatores de Euler ficam excluídas; decisões não frágeis;
+  - ζ converge para a constante de Gonek (0,912 → 0,963 → 0,992 da constante, com a altura).
+- **Rótulo C** (novidade a investigar): nenhum teste numérico anterior foi achado numa busca breve. Próximos passos: busca bibliográfica adequada; extensão a mais caracteres e à Conjectura 8.
+
+### 27/09/2026 — MN-2 (Conjectura 8) e busca ampliada
+
+- Busca ampliada: Hiary–Odlyzko 2011 (B25) já confirmaram a conjectura de Gonek para ζ (a calibração da MN-1 é B). A tese do autor (B26) e o artigo não calculam L′(ρ,χ): o teste para χ continua C.
+- **MN-2:** ficha `hipoteses/FICHA_MOMENTOS_NEGATIVOS_C8.md` (`d96f1f0d…`) congelada antes do cálculo.
+  - χ₋₄: R₈ = 0,490 [0,430; 0,549], previsto 1/2 → **favorecida**, excluindo H0 (1) e o fator da Conj. 7 (2/3);
+  - χ₅: 0,753 [0,673; 0,835], previsto 4/5 → **favorecida**, sem separação de 5/6, como previsto na ficha;
+  - resultado em `results/momentos_negativos_20260927/RESULTADO_C8.md`.
+- Em χ₋₄, cada momento exige o seu fator aritmético (2/3 e 1/2).
+- Próximo: consulta bibliográfica formal e ao autor; mais caracteres (condutor composto, complexos), o que exige calcular zeros novos com declaração de custo.
+
+### 27/09/2026 — busca formal de novidade (MN-1/MN-2)
+
+- `results/momentos_negativos_20260927/BUSCA_NOVIDADE.md`: zbMATH Open (3 consultas), arXiv (2), citações do artigo (0 indexadas) e de Gonek 1989 (78, OpenAlex). **Nenhum teste numérico anterior** das Conjecturas 7 e 8; o único trabalho numérico, Hiary–Odlyzko 2011, trata só de ζ. MathSciNet inacessível (assinatura); Semantic Scholar limitado por taxa.
+- Rótulo C mantido, agora com busca documentada. Próximo: consulta ao autor (decisão do usuário).
+
+### 27–28/09/2026 — MN-3 (χ₈, χ₁₂): interrompida nos tetos de CPU
+
+- Ficha `hipoteses/FICHA_MOMENTOS_NEGATIVOS_MN3.md` (`57720029…`) congelada às 23:07; pipeline das 23:08 às 07:16.
+- **As três frentes pararam no teto declarado (RLIMIT_CPU), sem extensão automática:**
+  - zeros de χ₈ e χ₁₂: varredura de 2.000 zeros concluída e **V1 aprovada**; parou na **V2** (reexame com passo pela metade) em 1.689/2.000 (χ₈) e 1.760/2.000 (χ₁₂), com ~8 h-CPU cada;
+  - extensão de ζ: 23.200/27.000 derivadas (teto de 1 h).
+- Nenhuma derivada de χ₈/χ₁₂ foi calculada; nenhum resultado do teste existe.
+- **Erro de estimativa:** previsto ~12 h-CPU, gasto ~17 h até aqui. A V2 sobre toda a faixa custa quase tanto quanto a varredura, o que não pesei direito. Falta estimada para concluir como declarado: ~4 h-CPU (V2 restante, V3, V4, derivadas, ζ). Tudo retomável pelos checkpoints.
+- Aguarda decisão do usuário.
+
+### 28/09/2026 — MN-3: retomada (ADENDO_MN3_1) concluída às 10:06
+
+- **χ₁₂:** V1–V4 **aprovadas**; derivadas e L(2ρ) calculadas (`derivadas_chi_12_2000.txt`, `L2rho_chi_12_2000.txt`).
+- **χ₈:** **V2 reprovada.** O reexame com passo pela metade achou 2.002 zeros contra 2.000 da lista principal (`manifest_chi_8_2000.json`, `ed68096d…`). V1, V3 e V4 aprovadas; a V1 passou com diferença −1,76, dentro da tolerância de 3, compatível com um par perdido. **Derivadas não calculadas**, como declarado na ficha §2. É a mesma falha de pares próximos de χ₋₄/χ₅. A correção pelo passe D3 exige decisão nova.
+- **ζ:** parou de novo no teto, em 26.300/27.000 derivadas; L(2ρ) de ζ não rodou.
+- Nenhuma análise executada; nenhum resultado do teste visto. Aguarda decisão do usuário.
+
+### 28/09/2026 — MN-3: adendo 2 e desligamento abrupto da máquina
+
+- Usuário autorizou o `ADENDO_MN3_2` (correção de χ₈ pelo passe D3; conclusão de ζ). Hashes registrados.
+- Derivadas de ζ 1–27.000 **concluídas** (571 s na sessão).
+- **Desligamento abrupto às 10:39:** o journal termina sem mensagem de shutdown. A causa não pôde ser confirmada (falta de energia ou proteção térmica). A máquina tem 2 núcleos físicos e rodou 3 processos pesados em paralelo por mais de 12 h.
+  - Perdido: o cálculo de L(2ρ) de ζ, que não tem checkpoint e será refeito.
+  - Preservado: o checkpoint da correção de χ₈ (88/133 intervalos da Etapa A, 0 zeros recuperados até ali; JSON íntegro).
+- Retomada às 10:44 **em série** (χ₈ D3 → derivadas de χ₈ → L(2ρ) de ζ), com um processo por vez para reduzir a carga térmica. Tetos do adendo 2 mantidos por sessão.
+- **12:23 — série concluída.** Correção de χ₈: 2 zeros recuperados (par 1.470,227/1.470,279), lista com 2.002 = contagem da V2, verificações aprovadas. L(2ρ) de ζ refeito.
+
+### 28/09/2026 — MN-3: resultado
+
+- `analise_mn3.py` rodou com todos os hashes conferidos. **χ₁₂:** Conj. 7 R = 0,501 [0,445; 0,555] (previsto 1/2); Conj. 8 R = 0,340 [0,301; 0,381] (previsto 1/3), com H7 excluída. **χ₈:** Conj. 7 0,687 [0,605; 0,784] (2/3); Conj. 8 0,558 [0,450; 0,684] (1/2). **Todas favorecidas.**
+- Somando MN-1 a MN-3: 4 caracteres, 8 testes, 8 favoráveis. Resultado em `results/momentos_negativos_20260927/RESULTADO_MN3.md`.

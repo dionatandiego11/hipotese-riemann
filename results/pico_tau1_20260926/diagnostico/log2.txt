@@ -1,0 +1,7 @@
+{
+ "re_medido": 0.012647477597941893,
+ "gauss_V_medido": 0.040706461087582926,
+ "gauss_V_berry": 0.03265149936574146,
+ "razao_medido_sobre_gauss_berry": 0.3873475290146049,
+ "dp_entre_blocos_re_medido": 0.0005025507745042697
+}

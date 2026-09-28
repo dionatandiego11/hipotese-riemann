@@ -1,0 +1,2 @@
+{"all_checks_passed": false, "checks": {"V1": true, "V2": false, "V3": true, "V4": true}}
+chi_8: lista não aprovada em V1–V4; derivadas não calculadas (ficha §3)

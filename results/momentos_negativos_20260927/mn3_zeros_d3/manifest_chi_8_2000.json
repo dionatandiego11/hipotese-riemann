@@ -1,0 +1,55 @@
+{
+ "adendo": "ADENDO_MN3_2",
+ "entrada": {
+  "arquivo": "results/momentos_negativos_20260927/mn3_zeros/zeros_chi_8_2000.txt",
+  "sha256": "ed68096d2e2fb70fb87f71dc0c381bcb3945d8f778f8e1cca022e6cb51d69220"
+ },
+ "n_recuperados_a": 2,
+ "n_recuperados_c": 0,
+ "recuperados": [
+  1470.2269440388568,
+  1470.2791164504738
+ ],
+ "n_corrigida": 2002,
+ "contagem_v2": 2002,
+ "certificado": {
+  "passed": true,
+  "window": 200,
+  "n_windows": 10,
+  "median_first": 0.5031243718623557,
+  "median_last": 0.49765659409717955,
+  "median_min": 0.47136542724808805,
+  "median_max": 0.5067876709829875,
+  "windows_off_level": [],
+  "steps": [],
+  "internal_spread": 0.03542224373489944
+ },
+ "verificacoes": {
+  "V1": {
+   "passed": true
+  },
+  "V3": {
+   "passed": true
+  },
+  "V4": {
+   "passed": true
+  }
+ },
+ "all_checks_passed": true,
+ "etapa_a": {
+  "threshold": 1.6,
+  "step_scale": 0.25,
+  "n_intervals": 133,
+  "n_recovered": 2,
+  "stats": {
+   "evaluations": 7763,
+   "refinements": 2,
+   "gap_rescans": 0,
+   "seconds": 2660.584219533,
+   "max_refine_iterations": 11,
+   "bisection_fallbacks": 0
+  }
+ },
+ "saida_sha256": "41d1a23fc21f198b818f4804415cf25be25aa1046eeb07f1c4f38d54bddcd754",
+ "terminado": "2026-09-28T11:28:33-0300"
+}

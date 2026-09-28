@@ -40,8 +40,9 @@ def _factor(V: np.ndarray, n: int) -> np.ndarray:
         Vn = V[:n]
         c0 = 0.5 * float(np.max(Vn)) + 1e-6
         w, U = np.linalg.eigh(toeplitz(c0 - 0.5 * Vn))
-        if w.min() < -1e-8 * w.max():
+        if w.min() < -1e-2 * w.max():
             raise ValueError(f"estrutura V não é realizável (autovalor {w.min():.3e})")
+        # autovalores negativos pequenos (estrutura quase realizável) são zerados; ver realized_structure_error
         _FACTOR_CACHE[key] = U * np.sqrt(np.clip(w, 0, None))
     return _FACTOR_CACHE[key]
 
@@ -72,3 +73,13 @@ def predictive_kc_tau1(V_blocks, n_sub: int, n_blocks: int, reps: int, rng: np.r
     vals = np.array(vals)
     return {"media": float(vals.mean()), "q025": float(np.quantile(vals, 0.025)), "q975": float(np.quantile(vals, 0.975)),
             "q50": float(np.median(vals)), "reps": reps}
+
+
+def realized_structure_error(V: np.ndarray, n: int) -> float:
+    """Maior |V_realizado(k) − V(k)| do substituto (após zerar autovalores negativos), medido no centro do bloco."""
+    F = _factor(V, n)
+    C = F @ F.T
+    j = n // 4
+    ks = np.arange(1, n - j)
+    real = C[j, j] + np.diag(C)[j + ks] - 2 * C[j, j + ks]
+    return float(np.max(np.abs(real - V[ks])))

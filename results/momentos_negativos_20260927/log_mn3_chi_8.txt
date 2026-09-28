@@ -1,0 +1,1 @@
+results/momentos_negativos_20260927/pipeline_mn3.sh, linha 5: 499874 Tempo de CPU excedido   (imagem do núcleo gravada) $PY $D/mn3_zeros.py --carater chi_8 --n 2000 --teto-cpu 28800
