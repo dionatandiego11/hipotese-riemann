@@ -731,3 +731,4 @@ Registro anterior (14/09/2026):
 - Só os zeros usados na nota (os blocos reservados da H-004 ficam de fora). Nenhum caminho pessoal nos arquivos.
 - **Publicação: decisão e ação do usuário.** Nada foi enviado.
 - **DOI reservado pelo usuário: 10.5281/zenodo.23020957.** Inserido na nota ("Data and code"), no README e no `.zenodo.json`; nota recompilada; pacote remontado (`.zip` `c853ed96…`, 1,06 MB). Depósito ainda **não publicado**.
+- **Zenodo (28/09):** arquivo enviado pelo usuário conferido: MD5 `38f56e7b…`, idêntico ao pacote final (`.zip` SHA-256 `bd85056d…`). Situação de publicação não confirmada: API do Zenodo bloqueou o acesso (403) e o DOI ainda não resolve (404). ORCID do usuário (0009-0009-8217-1623, dígito verificador conferido) acrescentado à nota, ao README e ao `.zenodo.json` do repositório; o `.zip` enviado **não** foi alterado.

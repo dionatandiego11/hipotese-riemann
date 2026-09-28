@@ -1,6 +1,6 @@
 # Numerical evidence for conjectures on negative discrete second moments of Dirichlet L-functions — data and code
 
-Dionatan Resende (Independent researcher), dionatandieresende@gmail.com — version 1, September 2026.
+Dionatan Resende (Independent researcher; ORCID [0009-0009-8217-1623](https://orcid.org/0009-0009-8217-1623)), dionatandieresende@gmail.com — version 1, September 2026.
 
 DOI: [10.5281/zenodo.23020957](https://doi.org/10.5281/zenodo.23020957)
 
