@@ -34,3 +34,6 @@ archive/fontes_etapa11/**/*.tex
 results/momentos_negativos_20260927/**/progresso_*.json
 results/momentos_negativos_20260927/progresso_*.json
 results/momentos_negativos_20260927/**/.lock_*
+
+# Pacotes montados para depósito (regeneráveis por deposito_zenodo_mn/montar_pacote.py)
+/dist/

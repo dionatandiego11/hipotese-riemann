@@ -1,0 +1,16 @@
+{
+  "title": "Numerical evidence for conjectures on negative discrete second moments of Dirichlet L-functions: data and code",
+  "upload_type": "dataset",
+  "creators": [
+    {"name": "Resende, Dionatan", "affiliation": "Independent researcher"}
+  ],
+  "description": "<p>Data, code and pre-registration documents for a numerical test of Conjectures 7 and 8 of A. Pearce-Crump (arXiv:2606.25094) on the negative discrete second moments sum 1/|L'(rho,chi)|^2 and sum |L(2rho,chi^2)/L'(rho,chi)|^2 of Dirichlet L-functions. Zeros of L(s,chi) for the real primitive characters of conductor 4, 5, 8 and 12 (2000-3000 zeros each, verified complete), derivatives at the zeros, values of L(2rho,chi^2), values of |zeta'(rho)| and |zeta(2rho)| for the first 27000 zeros of zeta, and a script that reproduces all results of the accompanying note. In all eight tests the predicted arithmetic factor lies in the 95% interval and the value without arithmetic factor is excluded. Numerical evidence, not a proof. Prepared with substantial assistance from an AI system (Claude, Anthropic).</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": ["Dirichlet L-functions", "discrete moments", "zeros of L-functions", "derivative at zeros", "Gonek conjecture", "numerical number theory", "pre-registration"],
+  "related_identifiers": [
+    {"identifier": "arXiv:2606.25094", "relation": "isSupplementTo", "scheme": "arxiv"}
+  ],
+  "language": "eng",
+  "version": "v1"
+}
