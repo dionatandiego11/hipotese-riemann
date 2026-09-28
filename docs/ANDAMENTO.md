@@ -716,3 +716,10 @@ Registro anterior (14/09/2026):
   - etapa A (termo principal para χ): viável;
   - etapa B (termos de ordem inferior, q = 1): difícil, com polos extras no contorno do momento negativo, mas testável nos 27.000 zeros de ζ;
   - etapa C (χ): depois da B.
+
+### 28/09/2026 — Etapa A: fatores aritméticos pelo modelo HKO
+
+- `hipoteses/DERIVACAO_ETAPA_A.md` (D, heurístico). O modelo de Hughes–Keating–O'Connell estendido a L(s,χ), mantendo (1 − 1/p)^{k²} em todos os primos e com média local 1 em p | q, reproduz **exatamente** A_q (Conj. 7) e φ(q)/q (Conj. 8). Conferido numericamente para q = 1, 4, 5, 8, 12 (`results/derivacao_etapa_a_20260928/verifica_fatores_locais.py`).
+- Âncora k = 1 (média quadrática: fator φ(q)/q), verificada numericamente de forma exploratória (`ancora_k1.py`, 474 s CPU). Inclinações de 0,447 [0,142; 0,746] (χ₋₄, previsto 0,5) e 0,243 [0,014; 0,467] (χ₁₂, previsto 1/3); a alternativa 1 fica excluída.
+- As alternativas excluídas pelos dados (HE, fator trocado) ganham interpretação no modelo. Sem reivindicação de novidade.
+- Nota v1: nova §5 com a verificação heurística; PDF com 5 pp. A v0 enviada ao autor fica preservada em `7793f74`.

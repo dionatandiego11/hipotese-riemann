@@ -1,4 +1,4 @@
-% RASCUNHO v0 (28/09/2026) -- nao submetido. Nao compilado neste computador (sem TeX); revisar em Overleaf/TeX Live.
+% RASCUNHO v1 (28/09/2026) -- v0 enviado ao autor (commit 7793f74); v1 acrescenta a secao heuristica HKO. Compilar com ~/.local/bin/tectonic -X compile nota.tex.
 % Todos os numeros vem de results/momentos_negativos_20260927/ (analise.json, analise_c8.json, analise_mn3.json).
 \documentclass[11pt]{amsart}
 \usepackage[margin=1in]{geometry}
@@ -12,7 +12,7 @@
 \author{Dionatan Resende}
 \address{Independent researcher}
 \email{dionatandieresende@gmail.com}
-\date{Draft, 28 September 2026}
+\date{Draft v1, 28 September 2026}
 
 \begin{document}
 
@@ -175,6 +175,27 @@ $\chi_{-4}$ have the same predicted factors but opposite parity, and their measu
 For $\zeta(s)$, the average of $w_n$ (Ng's moment, conjectured limit $1$) equals $0.927$, $0.948$ and $0.934$ on the
 zeros $1$--$3000$, $3001$--$10000$ and $10001$--$20000$, again showing finite-height deviations of a few per cent
 that the differential statistic is designed to cancel.
+
+\section{A heuristic check of the arithmetic factors}\label{sec:hko}
+
+The constants in \eqref{eq:c7} and \eqref{eq:c8} can also be recovered from the random matrix model of Hughes, Keating
+and O'Connell~\cite{HKO}, independently of the mollifier heuristic. For $\zeta(s)$ that model predicts
+$\sum_{0<\gamma\le T}|\zeta'(\rho)|^{2k}\sim\frac{T}{2\pi}\frac{G^{2}(k+2)}{G(2k+3)}a(k)(\log T)^{k(k+2)+1}$, where $G$ is
+Barnes' function and $a(k)=\prod_p(1-\frac1p)^{k^{2}}\,\mathbb{E}_\theta|1-p^{-1/2}e^{i\theta}|^{-2k}$; for $k=-1$ this
+gives \eqref{eq:gonek}. For a primitive character $\chi$ modulo $q$ we keep the same random matrix factor and replace
+the local average by $\mathbb{E}_\theta|1-\chi(p)p^{-1/2}e^{i\theta}|^{-2k}$, which equals $1$ when $p\mid q$, while the
+factor $(1-\frac1p)^{k^{2}}$ is kept for every prime. For $k=1$ this reproduces the factor $\varphi(q)/q$ in the mean
+square $\int_0^T|L(\tfrac12+it,\chi)|^{2}\,dt$, as follows from the approximate functional equation and the mean value
+theorem. For $k=-1$ it gives
+\[
+\prod_{p\nmid q}\Bigl(1-\frac1{p^{2}}\Bigr)\prod_{p\mid q}\Bigl(1-\frac1p\Bigr)=\frac{6}{\pi^{2}}\prod_{p\mid q}\frac{p}{p+1}=A_q .
+\]
+In the same way, the local average of $|L_p(2\rho,\chi^{2})|^{2}|L_p(\rho,\chi)|^{-2}$ equals $1/(1-\frac1p)$ for
+$p\nmid q$ and $1$ for $p\mid q$, which gives the factor $\varphi(q)/q$ of \eqref{eq:c8}. Thus two independent heuristics
+lead to the same constants. The alternatives excluded by the data also have a simple meaning in this picture: the
+factor $\prod_{p\mid q}p^{2}/(p^{2}-1)$ corresponds to dropping $(1-\frac1p)$ at $p\mid q$, and exchanging the factors
+of \eqref{eq:c7} and \eqref{eq:c8} corresponds to using the local average of one moment for the other. This is a
+heuristic consistency check and says nothing about lower-order terms; we do not claim it is new.
 
 \section{Discussion and limitations}
 

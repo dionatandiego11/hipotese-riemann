@@ -1,0 +1,17 @@
+== médias locais, p ∤ q (χ(p) = ±1), x = χ(p) p^{-1/2} e^{-iθ}
+p=2: C7 local (1+1/p) ok; C8 local 1/(1-1/p) ok; com (1-1/p): C7 -> 0.750000, C8 -> 1
+p=3: C7 local (1+1/p) ok; C8 local 1/(1-1/p) ok; com (1-1/p): C7 -> 0.888889, C8 -> 1
+p=5: C7 local (1+1/p) ok; C8 local 1/(1-1/p) ok; com (1-1/p): C7 -> 0.960000, C8 -> 1
+p=7: C7 local (1+1/p) ok; C8 local 1/(1-1/p) ok; com (1-1/p): C7 -> 0.979592, C8 -> 1
+q= 1: modelo C7 = 0.607927  A_q = 0.607927 | modelo C8 = 1.000000  φ(q)/q = 1.000000
+q= 4: modelo C7 = 0.405285  A_q = 0.405285 | modelo C8 = 0.500000  φ(q)/q = 0.500000
+q= 5: modelo C7 = 0.506606  A_q = 0.506606 | modelo C8 = 0.800000  φ(q)/q = 0.800000
+q= 8: modelo C7 = 0.405285  A_q = 0.405285 | modelo C8 = 0.500000  φ(q)/q = 0.500000
+q=12: modelo C7 = 0.303964  A_q = 0.303964 | modelo C8 = 0.333333  φ(q)/q = 0.333333
+q=4: HE (sem o fator (1-1/p) em p|q) = 0.810569 = A_q × 2.0000
+q=5: HE (sem o fator (1-1/p) em p|q) = 0.633257 = A_q × 1.2500
+q=8: HE (sem o fator (1-1/p) em p|q) = 0.810569 = A_q × 2.0000
+q=12: HE (sem o fator (1-1/p) em p|q) = 0.911891 = A_q × 3.0000
+tudo confere
+chi_m4: inclinação 0.447 [0.142, 0.746]  previsto φ(q)/q = 0.500  (alternativa 1)  CPU 170 s
+chi_12: inclinação 0.243 [0.014, 0.467]  previsto φ(q)/q = 0.333  (alternativa 1)  CPU 304 s
