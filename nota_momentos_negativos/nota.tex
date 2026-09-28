@@ -2,15 +2,19 @@
 % Todos os numeros vem de results/momentos_negativos_20260927/ (analise.json, analise_c8.json, analise_mn3.json).
 \documentclass[11pt]{amsart}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,booktabs,hyperref}
+\usepackage{amsmath,amssymb,booktabs}
+\usepackage[hidelinks]{hyperref}
 
 \newcommand{\Lp}{L'}
 \DeclareMathOperator{\med}{mean}
 
 \title[Numerical evidence for negative discrete moments of Dirichlet $L$-functions]{Numerical evidence for conjectures on negative discrete second moments of Dirichlet $L$-functions}
 \author{Dionatan Resende}
-% TODO(autor): afiliacao, endereco e e-mail.
+\address{Independent researcher}
+\email{dionatandieresende@gmail.com}
 \date{Draft, 28 September 2026}
+
+\begin{document}
 
 \begin{abstract}
 Pearce-Crump recently conjectured that, for a primitive Dirichlet character $\chi$ modulo $q$,
@@ -32,11 +36,11 @@ were fixed before the corresponding computations.
 \section{Introduction}
 
 Let $\rho=\tfrac12+i\gamma$ denote the non-trivial zeros of $\zeta(s)$. Assuming the Riemann Hypothesis and that all
-zeros are simple, Gonek conjectured
+zeros are simple, Gonek~\cite{Gonek} conjectured
 \begin{equation}\label{eq:gonek}
 \sum_{0<\gamma\le T}\frac{1}{|\zeta'(\rho)|^{2}}\sim\frac{3}{\pi^{3}}\,T,
 \end{equation}
-and Milinovich and Ng~\cite{MN} proved a lower bound of half this size. Ng conjectured the companion asymptotic
+and Milinovich and Ng~\cite{MN} proved a lower bound of half this size. Ng~\cite{Ng} conjectured the companion asymptotic
 $\sum_{0<\gamma\le T}|\zeta(2\rho)/\zeta'(\rho)|^{2}\sim T/2\pi$, with a matching lower bound of half the size due to
 Sinha~\cite{Sinha}. Negative discrete moments of this kind enter explicit formulae for the summatory functions of the
 M\"obius and Liouville functions, and their sizes were modelled with random matrix theory by Hughes, Keating and
@@ -192,8 +196,9 @@ the only numerical study of the corresponding moments of $\zeta$ that we found i
 available to us. % TODO: completar se houver resposta do autor ou nova busca.
 
 \section*{Data and code}
-The zeros, derivatives, pre-registration documents and analysis code are available at % TODO: DOI Zenodo.
-. All computations were run on a single laptop with two cores; the computation and verification of the zeros of the
+The zeros, derivatives, pre-registration documents and analysis code are available from the author on request.
+% TODO: substituir pelo DOI do Zenodo quando houver deposito.
+All computations were run on a single laptop with two cores; the computation and verification of the zeros of the
 $L$-functions dominated the cost.
 
 \section*{Acknowledgements}
@@ -207,12 +212,16 @@ Theory Phys. 2 (2008), no. 3, 593--636.
 \bibitem{CS} J. B. Conrey, N. C. Snaith, Applications of the $L$-functions ratios conjectures, Proc. London Math.
 Soc. (3) 94 (2007), no. 3, 594--646.
 \bibitem{Farmer} D. W. Farmer, Long mollifiers of the Riemann zeta-function, Mathematika 40 (1993), no. 1, 71--87.
+\bibitem{Gonek} S. M. Gonek, The second moment of the reciprocal of the Riemann zeta-function and its derivative, talk
+at the Mathematical Sciences Research Institute, Berkeley, June 1999.
 \bibitem{HO} G. A. Hiary, A. M. Odlyzko, Numerical study of the derivative of the Riemann zeta function at zeros,
 Comment. Math. Univ. St. Pauli 60 (2011), 47--60.
 \bibitem{HKO} C. P. Hughes, J. P. Keating, N. O'Connell, Random matrix theory and the derivative of the Riemann zeta
 function, Proc. R. Soc. Lond. A 456 (2000), 2611--2627.
 \bibitem{MN} M. B. Milinovich, N. Ng, A note on a conjecture of Gonek, Funct. Approx. Comment. Math. 46.2 (2012),
 177--187.
+\bibitem{Ng} N. Ng, Limiting distributions and zeros of Artin $L$-functions, PhD thesis, University of British Columbia,
+2000.
 \bibitem{PC} A. Pearce-Crump, Negative discrete second moments of Dirichlet $L$-functions, arXiv:2606.25094 (2026).
 \bibitem{Sinha} S. Sinha, Some Conditional Results involving Arithmetic Functions, PhD thesis, University of Missouri,
 2025.
