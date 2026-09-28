@@ -732,3 +732,14 @@ Registro anterior (14/09/2026):
 - **Publicação: decisão e ação do usuário.** Nada foi enviado.
 - **DOI reservado pelo usuário: 10.5281/zenodo.23020957.** Inserido na nota ("Data and code"), no README e no `.zenodo.json`; nota recompilada; pacote remontado (`.zip` `c853ed96…`, 1,06 MB). Depósito ainda **não publicado**.
 - **Zenodo (28/09):** arquivo enviado pelo usuário conferido: MD5 `38f56e7b…`, idêntico ao pacote final (`.zip` SHA-256 `bd85056d…`). Situação de publicação não confirmada: API do Zenodo bloqueou o acesso (403) e o DOI ainda não resolve (404). ORCID do usuário (0009-0009-8217-1623, dígito verificador conferido) acrescentado à nota, ao README e ao `.zenodo.json` do repositório; o `.zip` enviado **não** foi alterado.
+
+### 28/09/2026 — Etapa B: derivação pela conjectura das razões
+
+- Busca: nenhum trabalho encontrado com termos de ordem inferior (Durkan–Hughes–Pearce-Crump 2026, Pearce-Crump sobre Ng 2026 e Bui–Gonek–Milinovich 2015 tratam de outras coisas ou só do termo principal).
+- `hipoteses/DERIVACAO_ETAPA_B_RAZOES.md` (D). O contorno de Conrey–Snaith com peso ζ′/ζ falha: os resíduos extras cancelam os resíduos em ρ. O contorno com o resíduo de 1/ζ(s) e um único deslocamento funciona. A receita dá:
+  - Σ 1/|ζ′(ρ)|² = (3/π³)T + O(T^{1/2+ε});
+  - Σ 1/|L′(ρ,χ)|² = (A_q/2π)T + O(T^{1/2+ε});
+  - Σ |L(2ρ,χ²)/L′(ρ,χ)|² = (φ(q)/q)T/2π + O(T^{1/2+ε}).
+  **Sem termos de ordem T/log T.** Conferido na fonte o passo central: CS (2.10), com o numerador levado a 1.
+- **Correção de interpretação:** os desvios de altura finita não seriam termos de ordem inferior, mas flutuação de soma de cauda pesada (variância infinita). Conferência exploratória em ζ 1–27.000: janelas de 3.000 com razão entre 0,907 e 1,088, sem tendência; (J − CT)/√T estável.
+- Pendente: revisar a nota (§2.2, §6, nova seção); teste em zeros novos com referência CUE (proposta).
