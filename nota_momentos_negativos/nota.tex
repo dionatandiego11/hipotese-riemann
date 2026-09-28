@@ -1,4 +1,4 @@
-% RASCUNHO v1 (28/09/2026) -- v0 enviado ao autor (commit 7793f74); v1 acrescenta a secao heuristica HKO. Compilar com ~/.local/bin/tectonic -X compile nota.tex.
+% RASCUNHO v2 (28/09/2026) -- v0 enviado ao autor (7793f74); v1 (HKO) no Zenodo; v2 acrescenta a receita das razoes e corrige a leitura dos desvios. Compilar com ~/.local/bin/tectonic -X compile nota.tex.
 % Todos os numeros vem de results/momentos_negativos_20260927/ (analise.json, analise_c8.json, analise_mn3.json).
 \documentclass[11pt]{amsart}
 \usepackage[margin=1in]{geometry}
@@ -12,7 +12,7 @@
 \author{Dionatan Resende}
 \address{Independent researcher. ORCID: \href{https://orcid.org/0009-0009-8217-1623}{0009-0009-8217-1623}}
 \email{dionatandieresende@gmail.com}
-\date{Draft v1, 28 September 2026}
+\date{Draft v2, 28 September 2026}
 
 \begin{document}
 
@@ -24,11 +24,13 @@ $\sum_{0<\gamma\le T}|L(2\rho,\chi^2)/\Lp(\rho,\chi)|^{2}\sim\frac{\varphi(q)}{q
 These conjectures come from a long-mollifier heuristic and generalise conjectures of Gonek and Ng for the Riemann
 zeta-function. We test them numerically for the real primitive characters of conductor $4$, $5$, $8$ and $12$, using
 between $2000$ and $3000$ zeros of each $L$-function, computed and verified for completeness, together with the first
-$27000$ zeros of $\zeta(s)$. To remove the common finite-height bias, we compare each $L$-function with $\zeta(s)$ at
-the same local density of zeros. In all eight tests the predicted arithmetic factor lies inside the $95\%$ bootstrap
-interval and the value without arithmetic factor is excluded. For conductor $12$, where the two conjectures predict
-$1/2$ and $1/3$, we measure $0.501\,[0.445,0.555]$ and $0.340\,[0.301,0.381]$. All predictions and analysis choices
-were fixed before the corresponding computations.
+$27000$ zeros of $\zeta(s)$, comparing each $L$-function with $\zeta(s)$ at the same local density of zeros. In all
+eight tests the predicted arithmetic factor lies inside the $95\%$ bootstrap interval and the value without arithmetic
+factor is excluded. For conductor $12$, where the two conjectures predict $1/2$ and $1/3$, we measure
+$0.501\,[0.445,0.555]$ and $0.340\,[0.301,0.381]$. All predictions and analysis choices were fixed before the
+corresponding computations. We also observe that the recipe of the ratios conjecture reproduces both constants with an
+error term $O(T^{1/2+\varepsilon})$, so that no lower-order terms of size $T/\log T$ are expected; the deviations seen at
+low height are consistent with the heavy tails of the summands.
 \end{abstract}
 
 \maketitle
@@ -65,7 +67,9 @@ conjecture~\cite{CFZ,CS} is left open in~\cite{PC}.
 The content of \eqref{eq:c7} and \eqref{eq:c8} beyond the case $q=1$ lies in the arithmetic factors
 $\prod_{p\mid q}p/(p+1)$ and $\varphi(q)/q$. The aim of this note is to test these factors numerically. We are not aware
 of previous numerical tests of \eqref{eq:c7} or \eqref{eq:c8}; our literature search is described in
-Section~\ref{sec:search}.
+Section~\ref{sec:search}. We also record two heuristic checks: the random matrix model of Hughes, Keating and O'Connell
+gives the same constants (Section~\ref{sec:hko}), and so does the recipe of the ratios conjecture, which moreover
+predicts an error term $O(T^{1/2+\varepsilon})$ (Section~\ref{sec:ratios}).
 
 \section{Method}
 
@@ -79,24 +83,27 @@ w_n=\frac{\log(q\gamma_n/2\pi)\,|L(2\rho_n,\chi^{2})|^{2}}{|\Lp(\rho_n,\chi)|^{2
 tend to $A_q$ and $\varphi(q)/q$ respectively (to $6/\pi^2$ and $1$ for $\zeta$).
 
 \subsection{A differential statistic}
-At the heights accessible to us the convergence is slow: for $\zeta(s)$ the average of $v_n$ over the zeros
-$1$--$3000$, $3001$--$10000$ and $10001$--$20000$ equals $0.912$, $0.963$ and $0.992$ times $6/\pi^2$. We therefore
-do not compare absolute averages with the conjectured constants. Instead, we compare each $L$-function with
-$\zeta(s)$ at the same local density $D=\log(q\gamma/2\pi)$. We split the zeros of $L(s,\chi)$ into ten bins at the
+At the heights accessible to us, sums over a few thousand zeros fluctuate by several per cent around their expected
+values. For $\zeta(s)$, the ratio of $\sum 1/|\zeta'(\rho)|^2$ over consecutive windows of $3000$ zeros to
+$\frac{3}{\pi^3}\Delta T$ ranges from $0.907$ to $1.088$ in the first $27000$ zeros, with no trend in the height; most
+windows fall below $1$. This is the behaviour expected from heavy-tailed summands (Section~\ref{sec:ratios}). Rather
+than compare absolute averages with the conjectured constants, we compare each $L$-function with $\zeta(s)$ at the
+same local density $D=\log(q\gamma/2\pi)$. We split the zeros of $L(s,\chi)$ into ten bins at the
 deciles of $D$ and define
 \[
 R=\frac{\med_{\chi}(v)}{\sum_{b}\frac{N_b}{N}\,\med_{\zeta,\,b}(v)},
 \]
 where $N_b$ is the number of zeros of $L(s,\chi)$ in bin $b$ and $\med_{\zeta,b}(v)$ is the average of $v$ over the
-zeros of $\zeta$ whose density $\log(\gamma/2\pi)$ lies in the same bin; $R_8$ is defined in the same way with $w$. If
-the finite-height corrections depend on the height mainly through the density, they cancel in $R$ to first order, and
-\eqref{eq:c7}, \eqref{eq:c8} predict
+zeros of $\zeta$ whose density $\log(\gamma/2\pi)$ lies in the same bin; $R_8$ is defined in the same way with $w$.
+Conjectures \eqref{eq:c7} and \eqref{eq:c8} predict
 \[
 R=\prod_{p\mid q}\frac{p}{p+1},\qquad R_8=\frac{\varphi(q)}{q}.
 \]
-This cancellation is an assumption, not a theorem; it is supported by the fact that the absolute ratios
-$\med(v)/A_q$ for $\chi$ ($0.932$ for $q=4$, $0.937$ for $q=5$) lie in the same range as for $\zeta$ at comparable
-heights.
+We designed this statistic in the expectation that $L(s,\chi)$ and $\zeta(s)$ share finite-height corrections that
+depend on the height mainly through the density. The heuristic of Section~\ref{sec:ratios} suggests that there are no
+such corrections of size $T/\log T$; the comparison with $\zeta$ then mainly calibrates the typical behaviour of
+heavy-tailed sums at the same density, and it adds the fluctuations of the $\zeta$-sum to the uncertainty, which the
+bootstrap below takes into account. The absolute ratios are reported in Section~\ref{sec:results} for comparison.
 
 \subsection{Alternatives}
 For each test we also record two alternatives: $H_0$, no arithmetic factor ($R=1$); and, for \eqref{eq:c7}, the
@@ -143,7 +150,7 @@ $|\Lp(\rho,\chi)|$ by a central difference of $Z_\chi$ with step $10^{-6}$ at $2
 $4\cdot10^{-10}$ against step $10^{-5}$ at $30$ digits). For real $\chi$, $\chi^{2}$ is the principal character, so
 $L(2\rho,\chi^{2})=\zeta(1+2i\gamma)\prod_{p\mid q}(1-p^{-1-2i\gamma})$.
 
-\section{Results}
+\section{Results}\label{sec:results}
 
 \begin{table}[h]
 \centering
@@ -172,9 +179,11 @@ six of them the other alternative is excluded as well. In particular, for $q=4$ 
 their own factors: exchanging the factors of \eqref{eq:c7} and \eqref{eq:c8} is excluded. The characters $\chi_8$ and
 $\chi_{-4}$ have the same predicted factors but opposite parity, and their measured values are compatible.
 
-For $\zeta(s)$, the average of $w_n$ (Ng's moment, conjectured limit $1$) equals $0.927$, $0.948$ and $0.934$ on the
-zeros $1$--$3000$, $3001$--$10000$ and $10001$--$20000$, again showing finite-height deviations of a few per cent
-that the differential statistic is designed to cancel.
+For comparison, the absolute ratios $J_\chi(T)/(\frac{A_q}{2\pi}T)$ are $0.937$, $0.937$, $0.970$ and $0.966$ for
+$q=4,5,8,12$, and $K_\chi(T)/(\frac{\varphi(q)}{q}\frac{T}{2\pi})$ are $0.921$, $0.871$, $1.023$ and $0.949$. The
+corresponding ratios for $\zeta(s)$ over the same numbers of zeros are $0.920$ and $0.932$ ($3000$ zeros) and $0.949$
+and $0.959$ ($2000$ zeros). All these values lie within a few per cent of $1$, whereas the alternative without
+arithmetic factor would give absolute ratios between $1.2$ and $3$.
 
 \section{A heuristic check of the arithmetic factors}\label{sec:hko}
 
@@ -197,18 +206,56 @@ factor $\prod_{p\mid q}p^{2}/(p^{2}-1)$ corresponds to dropping $(1-\frac1p)$ at
 of \eqref{eq:c7} and \eqref{eq:c8} corresponds to using the local average of one moment for the other. This is a
 heuristic consistency check and says nothing about lower-order terms; we do not claim it is new.
 
+\section{The ratios conjecture and the error term}\label{sec:ratios}
+
+The recipe of the ratios conjecture~\cite{CFZ,CS} also gives \eqref{eq:c7} and \eqref{eq:c8}, together with an error
+term. The representation of discrete moments used in~\cite[Section~7]{CS}, with the weight $\zeta'/\zeta$, is not
+suitable here: for negative moments the auxiliary poles cancel the contribution of the zeros. Instead, for
+$\operatorname{Re}\alpha>0$ small, write
+\[
+J(\alpha)=\sum_{0<\gamma\le T}\frac{1}{\zeta'(\rho)\,\zeta(1-\rho+\alpha)}=\frac{1}{2\pi i}\oint_{C}\frac{ds}{\zeta(s)\,\zeta(1-s+\alpha)},
+\]
+where $C$ is the rectangle with vertical sides $\operatorname{Re}s=\frac12-\varepsilon$ and
+$\operatorname{Re}s=\frac12+\varepsilon'$, $0<\varepsilon'<\operatorname{Re}\alpha$, so that only the poles $s=\rho$ lie
+inside. Under the Riemann Hypothesis, $\sum_{0<\gamma\le T}|\zeta'(\rho)|^{-2}=\lim_{\alpha\to0}\alpha J(\alpha)$. On the
+right side the integrand is $1/(\zeta(\frac12+\varepsilon'+it)\zeta(\frac12+\alpha-\varepsilon'-it))$, with both shifts
+having positive real part; since there is no $\zeta$ in the numerator, the recipe keeps only the diagonal
+$\sum_h\mu(h)^2h^{-1-\alpha}=\zeta(1+\alpha)/\zeta(2+2\alpha)$ (this is~\cite[(2.10)]{CS} with the numerator shifts sent
+to infinity). On the left side the functional equation leaves an unbalanced factor $\chi(s)$, and the recipe discards
+such terms, which contribute $O(T^{1/2+\varepsilon})$. Hence
+\[
+J(\alpha)=\frac{T}{2\pi}\frac{\zeta(1+\alpha)}{\zeta(2+2\alpha)}+O(T^{1/2+\varepsilon}),\qquad
+\sum_{0<\gamma\le T}\frac{1}{|\zeta'(\rho)|^{2}}=\frac{3}{\pi^{3}}\,T+O(T^{1/2+\varepsilon}).
+\]
+For $L(s,\chi)$ the diagonal becomes
+\[
+\sum_h\frac{\mu(h)^2|\chi(h)|^2}{h^{1+\alpha}}=\frac{L(1+\alpha,\chi_0)}{L(2+2\alpha,\chi_0)},
+\]
+with $\chi_0$ the principal character modulo $q$, and $\alpha L(1+\alpha,\chi_0)/L(2+2\alpha,\chi_0)\to A_q$. For $K_\chi$ we
+use $L(2s,\chi^2)/L(s,\chi)=\sum_h\lambda(h)\chi(h)h^{-s}$; the diagonal is $L(1+\alpha,\chi_0)$, and
+$\alpha L(1+\alpha,\chi_0)\to\varphi(q)/q$. Thus the recipe gives
+\[
+J_\chi(T)=\frac{A_q}{2\pi}\,T+O(T^{1/2+\varepsilon}),\qquad K_\chi(T)=\frac{\varphi(q)}{q}\,\frac{T}{2\pi}+O(T^{1/2+\varepsilon}),
+\]
+which answers heuristically the question raised in~\cite{PC}. In particular, no lower-order terms of size $T/\log T$ are
+predicted. The summands, however, have heavy tails: since the nearest-neighbour spacing density vanishes quadratically,
+$\mathbb{P}(|\zeta'(\rho)|^{-2}>x)$ decays like $x^{-3/2}$, so the summands have infinite variance, and a sum over a
+few thousand zeros typically falls somewhat below its expected value. This is consistent with the window ratios
+quoted in Section~2.2 and with the absolute ratios of Section~\ref{sec:results}. Like the previous section, this is a
+short heuristic computation, and we do not claim it is new.
+
 \section{Discussion and limitations}
 
 The data support the arithmetic factors in \eqref{eq:c7} and \eqref{eq:c8} for four real characters, including a
 composite conductor. The evidence is limited in several ways: the heights are low ($\gamma<3000$); only real characters
 of small conductor were used; the reference set of $\zeta$-zeros is shared between tests; the bootstrap intervals may
-be optimistic because of heavy tails; and the differential statistic relies on the assumption that finite-height
-corrections depend on the height mainly through the density of zeros.
+be optimistic because of heavy tails; and the differential statistic compares two heavy-tailed sums, whose typical
+behaviour at the same density of zeros we assume to be comparable.
 
-A derivation of \eqref{eq:c7} and \eqref{eq:c8} from the ratios conjecture, as suggested in~\cite{PC}, would also
-predict the lower-order terms. At the low heights used here those terms are of a few per cent and measurable, so the
-present data could test such a prediction in absolute rather than differential form. Complex characters and larger
-heights are natural further tests.
+The recipe of Section~\ref{sec:ratios} predicts that the only term of order $T$ is the main term. Testing this against
+a possible term of size $T/\log T$ requires many more zeros, because of the heavy tails; a natural test would use fresh
+zeros at larger heights together with a random-matrix model of the fluctuations of the sums. Complex characters and
+larger conductors are natural further tests of the arithmetic factors.
 
 \section{Literature search}\label{sec:search}
 We searched zbMATH Open, the arXiv, and the works citing Gonek's paper on negative moments (via OpenAlex) for numerical

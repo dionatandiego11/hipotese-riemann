@@ -743,3 +743,9 @@ Registro anterior (14/09/2026):
   **Sem termos de ordem T/log T.** Conferido na fonte o passo central: CS (2.10), com o numerador levado a 1.
 - **Correção de interpretação:** os desvios de altura finita não seriam termos de ordem inferior, mas flutuação de soma de cauda pesada (variância infinita). Conferência exploratória em ζ 1–27.000: janelas de 3.000 com razão entre 0,907 e 1,088, sem tendência; (J − CT)/√T estável.
 - Pendente: revisar a nota (§2.2, §6, nova seção); teste em zeros novos com referência CUE (proposta).
+
+### 28/09/2026 — nota v2
+
+- `nota_momentos_negativos/nota.tex` v2 (6 pp.): nova §6, "The ratios conjecture and the error term" (a derivação da Etapa B); §2.2 reescrita (os desvios são flutuação de cauda pesada, com janelas de 3.000 zeros de ζ entre 0,907 e 1,088; a justificativa antiga de "correções de altura finita comuns" foi retirada); razões absolutas descritivas nos resultados (χ: 0,937/0,937/0,970/0,966 e 0,921/0,871/1,023/0,949; ζ com o mesmo número de zeros: 0,920/0,932 e 0,949/0,959); resumo, introdução e discussão atualizados.
+- Corrigido antes de compilar: a frase "as alternativas dariam razões absolutas de 1,2 a 3" valia só para a alternativa sem fator (H7 dá 1,04 em χ₅).
+- O Zenodo tem a v1. A v2 exige nova versão do depósito (ação do usuário).
