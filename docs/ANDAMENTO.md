@@ -707,3 +707,12 @@ Registro anterior (14/09/2026):
 
 - Rascunho v0 da nota (`nota_momentos_negativos/nota.pdf`, 4 pp., commit `7793f74`) enviado pelo usuário por e-mail a A. Pearce-Crump (andrew.pearce-crump@bristol.ac.uk). Pedidos: saber de outro trabalho numérico e de problemas no método. Uso de IA declarado. Sem pedido de endosso nem de colaboração.
 - Enquanto se aguarda a resposta: não publicar o preprint; preparar o depósito no Zenodo (dados, código, fichas); ler Conrey–Snaith 2007 para avaliar a derivação pela conjectura das razões.
+
+### 28/09/2026 — avaliação da derivação pela conjectura das razões
+
+- Lido Conrey–Snaith 2007 (B27), §7: momentos discretos positivos de ζ′(ρ) com todos os termos de ordem inferior via razões; não trata momentos negativos. Bui–Gonek–Milinovich 2015 recuperam HKO (inclusive k = −1) pelo produto híbrido.
+- Conta heurística (D): na receita CFKRS, os fatores ζ-like em p | q permanecem, e isso dá exatamente A_q = (6/π²)∏ p/(p+1). HE corresponde a um tratamento incorreto, o que explica sua exclusão pelos dados. Registrada a correção de uma afirmação anterior minha ao usuário.
+- Avaliação em `hipoteses/AVALIACAO_DERIVACAO_RAZOES.md`:
+  - etapa A (termo principal para χ): viável;
+  - etapa B (termos de ordem inferior, q = 1): difícil, com polos extras no contorno do momento negativo, mas testável nos 27.000 zeros de ζ;
+  - etapa C (χ): depois da B.
