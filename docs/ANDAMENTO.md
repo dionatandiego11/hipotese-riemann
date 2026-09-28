@@ -702,3 +702,8 @@ Registro anterior (14/09/2026):
 
 - `analise_mn3.py` rodou com todos os hashes conferidos. **χ₁₂:** Conj. 7 R = 0,501 [0,445; 0,555] (previsto 1/2); Conj. 8 R = 0,340 [0,301; 0,381] (previsto 1/3), com H7 excluída. **χ₈:** Conj. 7 0,687 [0,605; 0,784] (2/3); Conj. 8 0,558 [0,450; 0,684] (1/2). **Todas favorecidas.**
 - Somando MN-1 a MN-3: 4 caracteres, 8 testes, 8 favoráveis. Resultado em `results/momentos_negativos_20260927/RESULTADO_MN3.md`.
+
+### 28/09/2026 — nota enviada ao autor
+
+- Rascunho v0 da nota (`nota_momentos_negativos/nota.pdf`, 4 pp., commit `7793f74`) enviado pelo usuário por e-mail a A. Pearce-Crump (andrew.pearce-crump@bristol.ac.uk). Pedidos: saber de outro trabalho numérico e de problemas no método. Uso de IA declarado. Sem pedido de endosso nem de colaboração.
+- Enquanto se aguarda a resposta: não publicar o preprint; preparar o depósito no Zenodo (dados, código, fichas); ler Conrey–Snaith 2007 para avaliar a derivação pela conjectura das razões.
