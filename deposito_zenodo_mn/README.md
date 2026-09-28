@@ -2,6 +2,8 @@
 
 Dionatan Resende (Independent researcher), dionatandieresende@gmail.com — version 1, September 2026.
 
+DOI: [10.5281/zenodo.23020957](https://doi.org/10.5281/zenodo.23020957)
+
 This package contains the data, code and pre-registration documents behind the note *"Numerical evidence for conjectures
 on negative discrete second moments of Dirichlet L-functions"* (`note/note_v1.pdf`). The note tests Conjectures 7 and 8
 of A. Pearce-Crump (arXiv:2606.25094):

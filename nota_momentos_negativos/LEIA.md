@@ -4,7 +4,7 @@
   (`~/.local/bin/tectonic -X compile nota.tex`), gerando `nota.pdf` com 4 páginas.
 - Todos os números vêm de `results/momentos_negativos_20260927/` (`analise.json`, `analise_c8.json`, `analise_mn3.json`,
   `RESULTADO*.md`). Qualquer mudança nos resultados exige atualizar o texto.
-- **Pendências marcadas com `TODO`:** DOI do depósito no Zenodo (por ora, "available from the author on request");
+- **Pendências marcadas com `TODO`:** DOI do Zenodo **reservado** (10.5281/zenodo.23020957) e inserido na nota em 28/09; depósito ainda não publicado;
   declaração de uso de IA (conferir as políticas do arXiv e da revista); busca bibliográfica, a completar se houver
   resposta do autor. Autor, afiliação ("Independent researcher") e e-mail preenchidos em 28/09.
 - **Não é o manuscrito antigo** (`paper/`, congelado e fora do git); é uma nota nova, a partir de resultados

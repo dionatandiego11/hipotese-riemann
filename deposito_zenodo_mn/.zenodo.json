@@ -12,5 +12,6 @@
     {"identifier": "arXiv:2606.25094", "relation": "isSupplementTo", "scheme": "arxiv"}
   ],
   "language": "eng",
-  "version": "v1"
+  "version": "v1",
+  "doi": "10.5281/zenodo.23020957"
 }

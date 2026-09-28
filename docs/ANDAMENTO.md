@@ -730,3 +730,4 @@ Registro anterior (14/09/2026):
 - **Reprodução conferida:** `reproduce_table.py`, rodando do pacote com a `zeros1` de Odlyzko (não redistribuída; hash conferido), reproduz **exatamente** os 16 números da Tabela 1.
 - Só os zeros usados na nota (os blocos reservados da H-004 ficam de fora). Nenhum caminho pessoal nos arquivos.
 - **Publicação: decisão e ação do usuário.** Nada foi enviado.
+- **DOI reservado pelo usuário: 10.5281/zenodo.23020957.** Inserido na nota ("Data and code"), no README e no `.zenodo.json`; nota recompilada; pacote remontado (`.zip` `c853ed96…`, 1,06 MB). Depósito ainda **não publicado**.
