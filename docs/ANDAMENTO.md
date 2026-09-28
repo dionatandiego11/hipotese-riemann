@@ -723,3 +723,10 @@ Registro anterior (14/09/2026):
 - Âncora k = 1 (média quadrática: fator φ(q)/q), verificada numericamente de forma exploratória (`ancora_k1.py`, 474 s CPU). Inclinações de 0,447 [0,142; 0,746] (χ₋₄, previsto 0,5) e 0,243 [0,014; 0,467] (χ₁₂, previsto 1/3); a alternativa 1 fica excluída.
 - As alternativas excluídas pelos dados (HE, fator trocado) ganham interpretação no modelo. Sem reivindicação de novidade.
 - Nota v1: nova §5 com a verificação heurística; PDF com 5 pp. A v0 enviada ao autor fica preservada em `7793f74`.
+
+### 28/09/2026 — pacote do depósito Zenodo (não publicado)
+
+- `deposito_zenodo_mn/` (montagem, README em inglês, `.zenodo.json`, licença MIT para código e CC BY 4.0 para dados) gera `dist/mn_negative_moments_v1/` (54 arquivos, `SHA256SUMS`) e o `.zip` (1,05 MB, `6ac89c00…`). `dist/` fica fora do git.
+- **Reprodução conferida:** `reproduce_table.py`, rodando do pacote com a `zeros1` de Odlyzko (não redistribuída; hash conferido), reproduz **exatamente** os 16 números da Tabela 1.
+- Só os zeros usados na nota (os blocos reservados da H-004 ficam de fora). Nenhum caminho pessoal nos arquivos.
+- **Publicação: decisão e ação do usuário.** Nada foi enviado.
