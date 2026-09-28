@@ -30,8 +30,9 @@ opostas).
 - **χ₁₂ era o teste mais exigente**, com o produto sobre dois primos (2 e 3). As duas previsões acertam no centro:
   0,501 contra 0,500 e 0,340 contra 0,333. As alternativas mais próximas ficam excluídas, incluindo a troca dos fatores
   entre as conjecturas (1/2 para a Conj. 8).
-- Somando MN-1 a MN-3: **4 caracteres (q = 4, 5, 8, 12), 8 testes, 8 favoráveis**. Em 3 deles a alternativa com o fator
-  trocado também fica excluída.
+- Somando MN-1 a MN-3: **4 caracteres (q = 4, 5, 8, 12), 8 testes, 8 favoráveis**. Em 6 deles a segunda alternativa
+  também fica excluída. Em 2 (Conj. 8 em q = 4 e q = 12) essa alternativa é o fator trocado, o da Conj. 7. *(Corrigido
+  em 28/09: a versão anterior dizia "em 3 deles o fator trocado", o que estava errado.)*
 
 ## Rótulos e limites
 
