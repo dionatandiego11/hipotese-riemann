@@ -1,0 +1,298 @@
+% RASCUNHO v2 (28/09/2026) -- v0 enviado ao autor (7793f74); v1 (HKO) no Zenodo; v2 acrescenta a receita das razoes e corrige a leitura dos desvios. Compilar com ~/.local/bin/tectonic -X compile nota.tex.
+% Todos os numeros vem de results/momentos_negativos_20260927/ (analise.json, analise_c8.json, analise_mn3.json).
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\Lp}{L'}
+\DeclareMathOperator{\med}{mean}
+
+\title[Numerical evidence for negative discrete moments of Dirichlet $L$-functions]{Numerical evidence for conjectures on negative discrete second moments of Dirichlet $L$-functions}
+\author{Dionatan Resende}
+\address{Independent researcher. ORCID: \href{https://orcid.org/0009-0009-8217-1623}{0009-0009-8217-1623}}
+\email{dionatandieresende@gmail.com}
+\date{Draft v2, 28 September 2026}
+
+\begin{document}
+
+\begin{abstract}
+Pearce-Crump recently conjectured that, for a primitive Dirichlet character $\chi$ modulo $q$,
+$\sum_{0<\gamma\le T}|\Lp(\rho,\chi)|^{-2}\sim \frac{A_q}{2\pi}T$ with
+$A_q=\frac{6}{\pi^2}\prod_{p\mid q}\frac{p}{p+1}$, and
+$\sum_{0<\gamma\le T}|L(2\rho,\chi^2)/\Lp(\rho,\chi)|^{2}\sim\frac{\varphi(q)}{q}\frac{T}{2\pi}$.
+These conjectures come from a long-mollifier heuristic and generalise conjectures of Gonek and Ng for the Riemann
+zeta-function. We test them numerically for the real primitive characters of conductor $4$, $5$, $8$ and $12$, using
+between $2000$ and $3000$ zeros of each $L$-function, computed and verified for completeness, together with the first
+$27000$ zeros of $\zeta(s)$, comparing each $L$-function with $\zeta(s)$ at the same local density of zeros. In all
+eight tests the predicted arithmetic factor lies inside the $95\%$ bootstrap interval and the value without arithmetic
+factor is excluded. For conductor $12$, where the two conjectures predict $1/2$ and $1/3$, we measure
+$0.501\,[0.445,0.555]$ and $0.340\,[0.301,0.381]$. All predictions and analysis choices were fixed before the
+corresponding computations. We also observe that the recipe of the ratios conjecture reproduces both constants with an
+error term $O(T^{1/2+\varepsilon})$, so that no lower-order terms of size $T/\log T$ are expected; the deviations seen at
+low height are consistent with the heavy tails of the summands.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Let $\rho=\tfrac12+i\gamma$ denote the non-trivial zeros of $\zeta(s)$. Assuming the Riemann Hypothesis and that all
+zeros are simple, Gonek~\cite{Gonek} conjectured
+\begin{equation}\label{eq:gonek}
+\sum_{0<\gamma\le T}\frac{1}{|\zeta'(\rho)|^{2}}\sim\frac{3}{\pi^{3}}\,T,
+\end{equation}
+and Milinovich and Ng~\cite{MN} proved a lower bound of half this size. Ng~\cite{Ng} conjectured the companion asymptotic
+$\sum_{0<\gamma\le T}|\zeta(2\rho)/\zeta'(\rho)|^{2}\sim T/2\pi$, with a matching lower bound of half the size due to
+Sinha~\cite{Sinha}. Negative discrete moments of this kind enter explicit formulae for the summatory functions of the
+M\"obius and Liouville functions, and their sizes were modelled with random matrix theory by Hughes, Keating and
+O'Connell~\cite{HKO}. Numerically, Hiary and Odlyzko~\cite{HO} found agreement with \eqref{eq:gonek} using large sets
+of zeros near the $10^{16}$th, $10^{20}$th and $10^{23}$rd zeros.
+
+For a primitive Dirichlet character $\chi$ modulo $q>1$, Pearce-Crump~\cite{PC} proved lower bounds for
+\[
+J_\chi(T)=\sum_{0<\gamma\le T}\frac{1}{|\Lp(\rho,\chi)|^{2}},\qquad
+K_\chi(T)=\sum_{0<\gamma\le T}\left|\frac{L(2\rho,\chi^{2})}{\Lp(\rho,\chi)}\right|^{2},
+\]
+uniformly in the conductor, and formulated the following conjectures~\cite[Conjectures~7 and~8]{PC}:
+\begin{align}
+J_\chi(T)&\sim\frac{A_q}{2\pi}\,T,\qquad A_q=\frac{6}{\pi^{2}}\prod_{p\mid q}\frac{p}{p+1},\label{eq:c7}\\
+K_\chi(T)&\sim\frac{\varphi(q)}{q}\,\frac{T}{2\pi}.\label{eq:c8}
+\end{align}
+Both reduce to the conjectures of Gonek and Ng when $q=1$. They were obtained from Farmer's long-mollifier
+heuristic~\cite{Farmer}, which, as Pearce-Crump points out, is not a proof and is applied there to discrete sums
+rather than to the continuous mean values for which it was designed. Their derivation from the ratios
+conjecture~\cite{CFZ,CS} is left open in~\cite{PC}.
+
+The content of \eqref{eq:c7} and \eqref{eq:c8} beyond the case $q=1$ lies in the arithmetic factors
+$\prod_{p\mid q}p/(p+1)$ and $\varphi(q)/q$. The aim of this note is to test these factors numerically. We are not aware
+of previous numerical tests of \eqref{eq:c7} or \eqref{eq:c8}; our literature search is described in
+Section~\ref{sec:search}. We also record two heuristic checks: the random matrix model of Hughes, Keating and O'Connell
+gives the same constants (Section~\ref{sec:hko}), and so does the recipe of the ratios conjecture, which moreover
+predicts an error term $O(T^{1/2+\varepsilon})$ (Section~\ref{sec:ratios}).
+
+\section{Method}
+
+\subsection{Normalisation}
+Since the zeros of $L(s,\chi)$ at height $t$ have density $\frac{1}{2\pi}\log\frac{qt}{2\pi}$, \eqref{eq:c7} and
+\eqref{eq:c8} say, to first order, that the zero-wise averages of
+\[
+v_n=\frac{\log(q\gamma_n/2\pi)}{|\Lp(\rho_n,\chi)|^{2}},\qquad
+w_n=\frac{\log(q\gamma_n/2\pi)\,|L(2\rho_n,\chi^{2})|^{2}}{|\Lp(\rho_n,\chi)|^{2}}
+\]
+tend to $A_q$ and $\varphi(q)/q$ respectively (to $6/\pi^2$ and $1$ for $\zeta$).
+
+\subsection{A differential statistic}
+At the heights accessible to us, sums over a few thousand zeros fluctuate by several per cent around their expected
+values. For $\zeta(s)$, the ratio of $\sum 1/|\zeta'(\rho)|^2$ over consecutive windows of $3000$ zeros to
+$\frac{3}{\pi^3}\Delta T$ ranges from $0.907$ to $1.088$ in the first $27000$ zeros, with no trend in the height; most
+windows fall below $1$. This is the behaviour expected from heavy-tailed summands (Section~\ref{sec:ratios}). Rather
+than compare absolute averages with the conjectured constants, we compare each $L$-function with $\zeta(s)$ at the
+same local density $D=\log(q\gamma/2\pi)$. We split the zeros of $L(s,\chi)$ into ten bins at the
+deciles of $D$ and define
+\[
+R=\frac{\med_{\chi}(v)}{\sum_{b}\frac{N_b}{N}\,\med_{\zeta,\,b}(v)},
+\]
+where $N_b$ is the number of zeros of $L(s,\chi)$ in bin $b$ and $\med_{\zeta,b}(v)$ is the average of $v$ over the
+zeros of $\zeta$ whose density $\log(\gamma/2\pi)$ lies in the same bin; $R_8$ is defined in the same way with $w$.
+Conjectures \eqref{eq:c7} and \eqref{eq:c8} predict
+\[
+R=\prod_{p\mid q}\frac{p}{p+1},\qquad R_8=\frac{\varphi(q)}{q}.
+\]
+We designed this statistic in the expectation that $L(s,\chi)$ and $\zeta(s)$ share finite-height corrections that
+depend on the height mainly through the density. The heuristic of Section~\ref{sec:ratios} suggests that there are no
+such corrections of size $T/\log T$; the comparison with $\zeta$ then mainly calibrates the typical behaviour of
+heavy-tailed sums at the same density, and it adds the fluctuations of the $\zeta$-sum to the uncertainty, which the
+bootstrap below takes into account. The absolute ratios are reported in Section~\ref{sec:results} for comparison.
+
+\subsection{Alternatives}
+For each test we also record two alternatives: $H_0$, no arithmetic factor ($R=1$); and, for \eqref{eq:c7}, the
+factor $\prod_{p\mid q}p^2/(p^2-1)$ obtained by simply removing the Euler factors at $p\mid q$ from $1/\zeta(2)$; for
+\eqref{eq:c8}, the factor of \eqref{eq:c7}, which tests whether the two moments require different factors.
+
+\subsection{Uncertainty}
+The terms $1/|\Lp(\rho,\chi)|^{2}$ have a heavy tail produced by close pairs of zeros: the largest $1\%$ of the terms
+carry $12$--$23\%$ of the sums. We use $95\%$ percentile intervals from a block bootstrap (blocks of $100$ consecutive
+zeros, resampled independently for $L(s,\chi)$ and $\zeta(s)$, $2000$ replicates). Because the bootstrap may
+under-cover with heavy tails, we also recompute $R$ after removing the five largest terms of $L(s,\chi)$.
+
+\subsection{Pre-registration}
+For each group of tests, the predictions, alternatives, statistics, bootstrap settings and decision rules were written
+down and fixed (with SHA-256 hashes) before the derivatives were computed. A test is counted as favourable if the
+predicted value lies in the interval and $H_0$ does not.
+
+\section{Data}
+
+\subsection{Zeros of $\zeta(s)$}
+We use the first $27000$ zeros ($\gamma\le 23476.2$) from Odlyzko's table \texttt{zeros1} (declared accuracy
+$3\cdot10^{-9}$). The tests for $q=4,5$ use the first $20000$ zeros, and those for $q=8,12$ use $27000$, so that the
+densities of the reference cover those of the $L$-functions.
+
+\subsection{Zeros of $L(s,\chi)$}
+We use the real primitive characters $\chi_{-4}=(\frac{-4}{\cdot})$ (odd), $\chi_5=(\frac{\cdot}{5})$,
+$\chi_8=(\frac{8}{\cdot})$ and $\chi_{12}=(\frac{12}{\cdot})$ (even). Zeros were located by sign changes of the real
+function $Z_\chi(t)=e^{i\theta_\chi(t)}L(\tfrac12+it,\chi)$, with $L$ evaluated by Hurwitz zeta sums in
+\texttt{mpmath} at $30$ digits, a scan step of at most $1/8$ of the mean spacing, and refinement to $10^{-10}$. Each
+list was checked for (V1) agreement of the count with $\theta_\chi(T)/\pi$ at the end points, (V2) agreement with an
+independent rescan at half the step, (V3) a second evaluation at random zeros, and (V4) reality of $Z_\chi$.
+
+Sign-change scans lose pairs of very close zeros. This happened: the original lists for $\chi_{-4}$ and $\chi_5$
+failed V1/V2 (deficits of $14$ and $6$ zeros in $12000$), and the list for $\chi_8$ failed V2 ($2000$ found against $2002$
+in the rescan). In every case the missing zeros were recovered by rescanning all gaps larger than $1.6$ mean spacings
+with a step of $1/32$ of the mean spacing; they were always close pairs (for $\chi_8$, the pair $1470.2269$,
+$1470.2791$). The corrected lists pass all checks, and the corrected $\chi_8$ list has exactly the $2002$ zeros found by
+the rescan. We use the zeros $1$--$3000$ for $q=4,5$ ($\gamma\le 2891.3$ and $2808.1$) and $1$--$2000$ for $q=8,12$
+($\gamma\le 1856.6$ and $1764.1$).
+
+\subsection{Derivatives and $L(2\rho,\chi^{2})$}
+Since $|Z_\chi'(\gamma)|=|\Lp(\rho,\chi)|$ at a zero, we computed $|\zeta'(\rho)|$ with \texttt{mpmath.siegelz} and
+$|\Lp(\rho,\chi)|$ by a central difference of $Z_\chi$ with step $10^{-6}$ at $20$ digits (relative error below
+$4\cdot10^{-10}$ against step $10^{-5}$ at $30$ digits). For real $\chi$, $\chi^{2}$ is the principal character, so
+$L(2\rho,\chi^{2})=\zeta(1+2i\gamma)\prod_{p\mid q}(1-p^{-1-2i\gamma})$.
+
+\section{Results}\label{sec:results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+$q$ & moment & $R$ measured & $95\%$ interval & predicted & alternatives excluded\\
+\midrule
+$4$  & $J$ & $0.655$ & $[0.592,0.715]$ & $2/3$ & $1$, $4/3$\\
+$5$  & $J$ & $0.827$ & $[0.753,0.901]$ & $5/6$ & $1$, $25/24$\\
+$8$  & $J$ & $0.687$ & $[0.605,0.784]$ & $2/3$ & $1$, $4/3$\\
+$12$ & $J$ & $0.501$ & $[0.445,0.555]$ & $1/2$ & $1$, $3/2$\\
+\midrule
+$4$  & $K$ & $0.490$ & $[0.430,0.549]$ & $1/2$ & $1$, $2/3$\\
+$5$  & $K$ & $0.753$ & $[0.673,0.835]$ & $4/5$ & $1$ (not $5/6$)\\
+$8$  & $K$ & $0.558$ & $[0.450,0.684]$ & $1/2$ & $1$ (not $2/3$)\\
+$12$ & $K$ & $0.340$ & $[0.301,0.381]$ & $1/3$ & $1$, $1/2$\\
+\bottomrule
+\end{tabular}
+\caption{Differential statistics $R$ (for $J_\chi$) and $R_8$ (for $K_\chi$). Removing the five largest terms gives
+$0.633$ ($q=4$) and $0.794$ ($q=5$) for $J$, without changing any conclusion.}
+\label{tab:results}
+\end{table}
+
+In all eight tests the predicted factor lies inside the interval and $H_0$ is excluded (Table~\ref{tab:results}). In
+six of them the other alternative is excluded as well. In particular, for $q=4$ and $q=12$ the two moments require
+their own factors: exchanging the factors of \eqref{eq:c7} and \eqref{eq:c8} is excluded. The characters $\chi_8$ and
+$\chi_{-4}$ have the same predicted factors but opposite parity, and their measured values are compatible.
+
+For comparison, the absolute ratios $J_\chi(T)/(\frac{A_q}{2\pi}T)$ are $0.937$, $0.937$, $0.970$ and $0.966$ for
+$q=4,5,8,12$, and $K_\chi(T)/(\frac{\varphi(q)}{q}\frac{T}{2\pi})$ are $0.921$, $0.871$, $1.023$ and $0.949$. The
+corresponding ratios for $\zeta(s)$ over the same numbers of zeros are $0.920$ and $0.932$ ($3000$ zeros) and $0.949$
+and $0.959$ ($2000$ zeros). All these values lie within a few per cent of $1$, whereas the alternative without
+arithmetic factor would give absolute ratios between $1.2$ and $3$.
+
+\section{A heuristic check of the arithmetic factors}\label{sec:hko}
+
+The constants in \eqref{eq:c7} and \eqref{eq:c8} can also be recovered from the random matrix model of Hughes, Keating
+and O'Connell~\cite{HKO}, independently of the mollifier heuristic. For $\zeta(s)$ that model predicts
+$\sum_{0<\gamma\le T}|\zeta'(\rho)|^{2k}\sim\frac{T}{2\pi}\frac{G^{2}(k+2)}{G(2k+3)}a(k)(\log T)^{k(k+2)+1}$, where $G$ is
+Barnes' function and $a(k)=\prod_p(1-\frac1p)^{k^{2}}\,\mathbb{E}_\theta|1-p^{-1/2}e^{i\theta}|^{-2k}$; for $k=-1$ this
+gives \eqref{eq:gonek}. For a primitive character $\chi$ modulo $q$ we keep the same random matrix factor and replace
+the local average by $\mathbb{E}_\theta|1-\chi(p)p^{-1/2}e^{i\theta}|^{-2k}$, which equals $1$ when $p\mid q$, while the
+factor $(1-\frac1p)^{k^{2}}$ is kept for every prime. For $k=1$ this reproduces the factor $\varphi(q)/q$ in the mean
+square $\int_0^T|L(\tfrac12+it,\chi)|^{2}\,dt$, as follows from the approximate functional equation and the mean value
+theorem. For $k=-1$ it gives
+\[
+\prod_{p\nmid q}\Bigl(1-\frac1{p^{2}}\Bigr)\prod_{p\mid q}\Bigl(1-\frac1p\Bigr)=\frac{6}{\pi^{2}}\prod_{p\mid q}\frac{p}{p+1}=A_q .
+\]
+In the same way, the local average of $|L_p(2\rho,\chi^{2})|^{2}|L_p(\rho,\chi)|^{-2}$ equals $1/(1-\frac1p)$ for
+$p\nmid q$ and $1$ for $p\mid q$, which gives the factor $\varphi(q)/q$ of \eqref{eq:c8}. Thus two independent heuristics
+lead to the same constants. The alternatives excluded by the data also have a simple meaning in this picture: the
+factor $\prod_{p\mid q}p^{2}/(p^{2}-1)$ corresponds to dropping $(1-\frac1p)$ at $p\mid q$, and exchanging the factors
+of \eqref{eq:c7} and \eqref{eq:c8} corresponds to using the local average of one moment for the other. This is a
+heuristic consistency check and says nothing about lower-order terms; we do not claim it is new.
+
+\section{The ratios conjecture and the error term}\label{sec:ratios}
+
+The recipe of the ratios conjecture~\cite{CFZ,CS} also gives \eqref{eq:c7} and \eqref{eq:c8}, together with an error
+term. The representation of discrete moments used in~\cite[Section~7]{CS}, with the weight $\zeta'/\zeta$, is not
+suitable here: for negative moments the auxiliary poles cancel the contribution of the zeros. Instead, for
+$\operatorname{Re}\alpha>0$ small, write
+\[
+J(\alpha)=\sum_{0<\gamma\le T}\frac{1}{\zeta'(\rho)\,\zeta(1-\rho+\alpha)}=\frac{1}{2\pi i}\oint_{C}\frac{ds}{\zeta(s)\,\zeta(1-s+\alpha)},
+\]
+where $C$ is the rectangle with vertical sides $\operatorname{Re}s=\frac12-\varepsilon$ and
+$\operatorname{Re}s=\frac12+\varepsilon'$, $0<\varepsilon'<\operatorname{Re}\alpha$, so that only the poles $s=\rho$ lie
+inside. Under the Riemann Hypothesis, $\sum_{0<\gamma\le T}|\zeta'(\rho)|^{-2}=\lim_{\alpha\to0}\alpha J(\alpha)$. On the
+right side the integrand is $1/(\zeta(\frac12+\varepsilon'+it)\zeta(\frac12+\alpha-\varepsilon'-it))$, with both shifts
+having positive real part; since there is no $\zeta$ in the numerator, the recipe keeps only the diagonal
+$\sum_h\mu(h)^2h^{-1-\alpha}=\zeta(1+\alpha)/\zeta(2+2\alpha)$ (this is~\cite[(2.10)]{CS} with the numerator shifts sent
+to infinity). On the left side the functional equation leaves an unbalanced factor $\chi(s)$, and the recipe discards
+such terms, which contribute $O(T^{1/2+\varepsilon})$. Hence
+\[
+J(\alpha)=\frac{T}{2\pi}\frac{\zeta(1+\alpha)}{\zeta(2+2\alpha)}+O(T^{1/2+\varepsilon}),\qquad
+\sum_{0<\gamma\le T}\frac{1}{|\zeta'(\rho)|^{2}}=\frac{3}{\pi^{3}}\,T+O(T^{1/2+\varepsilon}).
+\]
+For $L(s,\chi)$ the diagonal becomes
+\[
+\sum_h\frac{\mu(h)^2|\chi(h)|^2}{h^{1+\alpha}}=\frac{L(1+\alpha,\chi_0)}{L(2+2\alpha,\chi_0)},
+\]
+with $\chi_0$ the principal character modulo $q$, and $\alpha L(1+\alpha,\chi_0)/L(2+2\alpha,\chi_0)\to A_q$. For $K_\chi$ we
+use $L(2s,\chi^2)/L(s,\chi)=\sum_h\lambda(h)\chi(h)h^{-s}$; the diagonal is $L(1+\alpha,\chi_0)$, and
+$\alpha L(1+\alpha,\chi_0)\to\varphi(q)/q$. Thus the recipe gives
+\[
+J_\chi(T)=\frac{A_q}{2\pi}\,T+O(T^{1/2+\varepsilon}),\qquad K_\chi(T)=\frac{\varphi(q)}{q}\,\frac{T}{2\pi}+O(T^{1/2+\varepsilon}),
+\]
+which answers heuristically the question raised in~\cite{PC}. In particular, no lower-order terms of size $T/\log T$ are
+predicted. The summands, however, have heavy tails: since the nearest-neighbour spacing density vanishes quadratically,
+$\mathbb{P}(|\zeta'(\rho)|^{-2}>x)$ decays like $x^{-3/2}$, so the summands have infinite variance, and a sum over a
+few thousand zeros typically falls somewhat below its expected value. This is consistent with the window ratios
+quoted in Section~2.2 and with the absolute ratios of Section~\ref{sec:results}. Like the previous section, this is a
+short heuristic computation, and we do not claim it is new.
+
+\section{Discussion and limitations}
+
+The data support the arithmetic factors in \eqref{eq:c7} and \eqref{eq:c8} for four real characters, including a
+composite conductor. The evidence is limited in several ways: the heights are low ($\gamma<3000$); only real characters
+of small conductor were used; the reference set of $\zeta$-zeros is shared between tests; the bootstrap intervals may
+be optimistic because of heavy tails; and the differential statistic compares two heavy-tailed sums, whose typical
+behaviour at the same density of zeros we assume to be comparable.
+
+The recipe of Section~\ref{sec:ratios} predicts that the only term of order $T$ is the main term. Testing this against
+a possible term of size $T/\log T$ requires many more zeros, because of the heavy tails; a natural test would use fresh
+zeros at larger heights together with a random-matrix model of the fluctuations of the sums. Complex characters and
+larger conductors are natural further tests of the arithmetic factors.
+
+\section{Literature search}\label{sec:search}
+We searched zbMATH Open, the arXiv, and the works citing Gonek's paper on negative moments (via OpenAlex) for numerical
+computations of $\Lp(\rho,\chi)$ at zeros of Dirichlet $L$-functions or of the sums $J_\chi$, $K_\chi$, and found none;
+the only numerical study of the corresponding moments of $\zeta$ that we found is~\cite{HO}. MathSciNet was not
+available to us. % TODO: completar se houver resposta do autor ou nova busca.
+
+\section*{Data and code}
+The zeros, derivatives, pre-registration documents and analysis code, including a script that reproduces
+Table~\ref{tab:results}, are available at \url{https://doi.org/10.5281/zenodo.23020957}.
+All computations were run on a single laptop with two cores; the computation and verification of the zeros of the
+$L$-functions dominated the cost.
+
+\section*{Acknowledgements}
+The computations, analysis and drafting were carried out with substantial assistance from an AI system (Claude,
+Anthropic); the author checked the results and takes full responsibility for the content.
+% TODO(autor): revisar esta declaracao conforme a politica do arXiv e da revista escolhida.
+
+\begin{thebibliography}{99}
+\bibitem{CFZ} J. B. Conrey, D. W. Farmer, M. R. Zirnbauer, Autocorrelation of ratios of $L$-functions, Comm. Number
+Theory Phys. 2 (2008), no. 3, 593--636.
+\bibitem{CS} J. B. Conrey, N. C. Snaith, Applications of the $L$-functions ratios conjectures, Proc. London Math.
+Soc. (3) 94 (2007), no. 3, 594--646.
+\bibitem{Farmer} D. W. Farmer, Long mollifiers of the Riemann zeta-function, Mathematika 40 (1993), no. 1, 71--87.
+\bibitem{Gonek} S. M. Gonek, The second moment of the reciprocal of the Riemann zeta-function and its derivative, talk
+at the Mathematical Sciences Research Institute, Berkeley, June 1999.
+\bibitem{HO} G. A. Hiary, A. M. Odlyzko, Numerical study of the derivative of the Riemann zeta function at zeros,
+Comment. Math. Univ. St. Pauli 60 (2011), 47--60.
+\bibitem{HKO} C. P. Hughes, J. P. Keating, N. O'Connell, Random matrix theory and the derivative of the Riemann zeta
+function, Proc. R. Soc. Lond. A 456 (2000), 2611--2627.
+\bibitem{MN} M. B. Milinovich, N. Ng, A note on a conjecture of Gonek, Funct. Approx. Comment. Math. 46.2 (2012),
+177--187.
+\bibitem{Ng} N. Ng, Limiting distributions and zeros of Artin $L$-functions, PhD thesis, University of British Columbia,
+2000.
+\bibitem{PC} A. Pearce-Crump, Negative discrete second moments of Dirichlet $L$-functions, arXiv:2606.25094 (2026).
+\bibitem{Sinha} S. Sinha, Some Conditional Results involving Arithmetic Functions, PhD thesis, University of Missouri,
+2025.
+\end{thebibliography}
+
+\end{document}

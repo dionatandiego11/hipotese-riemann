@@ -1,0 +1,10 @@
+{
+  "status": "validado",
+  "declaration_sha256": "f05dd9b405a12c94608d2e170aebf74ef431f518dae68228193571dfebe2aec9",
+  "character_identities": 1422,
+  "haar_identities": 120,
+  "cpu_seconds": 0.094736938,
+  "wall_seconds": 0.09634547599944199,
+  "peak_rss_kib": 17032,
+  "limits": "Identidades finitas, n\u00e3o equidistribui\u00e7\u00e3o ou cota relativa uniforme."
+}

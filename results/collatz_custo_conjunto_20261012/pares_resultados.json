@@ -1,0 +1,9 @@
+{
+  "status": "validado em \u00e1lgebra exata",
+  "squared_modulus_identities": 39,
+  "allowed_pair_checks": 351,
+  "cpu_seconds": 0.006643330000000003,
+  "wall_seconds": 0.0068708610001522175,
+  "peak_rss_kib": 228304,
+  "limits": "N\u00e3o confere a prova profunda de Tao nem avalia constantes."
+}

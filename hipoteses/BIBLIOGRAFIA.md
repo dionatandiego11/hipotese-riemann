@@ -40,6 +40,9 @@ Estados: **L-parcial** = trechos do texto primário lidos; **R** = resumo primá
 | B25 | [Hiary e Odlyzko, Numerical study of the derivative of the Riemann zeta function at zeros](https://www-users.cse.umn.edu/~odlyzko/doc/zeta.derivative.pdf), Comment. Math. Univ. St. Pauli 60 (2011) 47–60 (versão do autor; `…/momentos_negativos_20260927/`) | L-parcial: resumo, §1 (pp. 1–4) e discussão da Tabela 6 | **J₋₁ de Gonek já confirmado numericamente para ζ** perto dos zeros 10¹⁶, 10²⁰ e 10²³; momentos negativos de ordem ≤ −3 erráticos, dominados por poucos pares de zeros quase colados. A calibração ζ da MN-1 é portanto **B** |
 | B26 | Pearce-Crump, *Discrete moments of the Riemann zeta function*, tese de doutorado, Univ. York (set/2024) (`…/momentos_negativos_20260927/pearce_crump_tese_2024_whiterose.pdf`) | Só busca textual | Trata de ζ; funções L de Dirichlet só no contexto; **nenhum cálculo numérico de L′(ρ,χ)** encontrado |
 | B27 | [Conrey e Snaith, Applications of the L-functions ratios conjectures](https://arxiv.org/abs/math/0509480), Proc. London Math. Soc. 2007 (volume a conferir: 93 no arXiv, 94 na lista de Pearce-Crump) (`…/momentos_negativos_20260927/`) | L-parcial: §1, §7 (início e §7.1), sumário. Avaliação: `hipoteses/AVALIACAO_DERIVACAO_RAZOES.md` | §7: momentos discretos **positivos** de ζ′(ρ) com todos os termos de ordem inferior via razões (contorno (7.6)); não trata momentos negativos; cita HKO (7.2), que em k = −1 dá 3/π³ |
+| B28 | OpenAI, região sem zeros Re(s)>7/8, commit `adc7f124` (PDF 199 pp., SHA `8fe93046…`) | Leitura dirigida e conferência exata de (20.9); 1.930 módulos em grafo parcial; Lean não executado. [Revisão](../results/auditoria_openai_math_20261007/REVISAO_20261008.md) | Proposta externa não verificada integralmente aqui. Hipótese 7/8 não substitui RH na cota uniforme. Nenhuma melhoria de Z1 demonstrada. |
+| B29 | OpenAI, alternativa 11/12, 05/10/2026, commit `adc7f124` (49 pp., SHA `f919b578…`) | Resumo e p. 1; prova não auditada | Contexto; não tratada como verificação independente do resultado principal. |
+| B30 | OpenAI, exclusão uniforme Landau–Siegel, commit `adc7f124` (9 pp., SHA `fab9f6e8…`) | Resumo e introdução pp. 1–2; prova não auditada | Enunciado externo de lacuna real uniforme, constante não avaliada. Nenhuma garantia de estabilidade dos momentos MN derivada nesta leitura. |
 
 Leitura complementar localizada: [Main et al., Harmonic inversion as a general method for periodic orbit quantization](https://arxiv.org/abs/chao-dyn/9709009), somente página de resumo. O sentido da inferência deve ser conferido antes de importar o método.
 
@@ -75,3 +78,30 @@ O arquivo `tao_collatz.pdf` é **slides de 15/04/2020**, não o artigo. O artigo
 - Para P-R1/P-R2: procurar recuperação de coeficientes de funções L, identificação por zeros, estabilidade de problemas inversos e vazamento de janela.
 - Para P-C1/P-C2: procurar zetas ponderadas de mapas ax+b, autoconjugação, filtros de ciclos, operadores de transferência e transientes. Parte dessa literatura já torna previsíveis os controles propostos.
 - Redigir uma comparação com o trabalho mais próximo antes de classificar um achado C. Uma contribuição negativa ou um limite rigoroso pode ser o resultado final.
+
+## Revisão dirigida de regularidade — 12/10/2026
+
+| ID | Fonte | Leitura efetiva | Consequência |
+|---|---|---|---|
+| B31 | Wirsching, *On positive predecessor density in 3n+1 dynamics*, versão preliminar universitária, 18 pp.; referência editorial DCDS 2003, 771–787 | Sete seções lidas; Teorema 3 e eq. (5.1) visualmente conferidos. PDF editorial não obtido. [Nota](leituras/B31_WIRSCHING_PREDECESSORES_2003.md) | Convergência uniforme em famílias limitadas/equicontínuas não dá cota por resíduo em resolução crescente. Distinguir densidade real φ e nossas medidas 3-ádicas. |
+| B32 | Tavares, arXiv:2608.27617v1, cópia fornecida pelo usuário, 36 pp. | Leitura dirigida de construção/cadeia/Mellin e conclusões; provas de ponto de sela e certificados não auditados integralmente. [Nota](leituras/B32_TAVARES_WIRSCHING_2026.md) | Afirma provar Conjecturas 1 e 3; (⋆3) permanece sem prova. Identidade Mellin local com Γ e ζ conferida; mecanismo também vale para outras bases. |
+| B33 | Hateley, DOI 10.20944/preprints202511.1440.v1, cópia fornecida pelo usuário, 73 pp. incluindo capa | Definições e resultados centrais lidos de forma dirigida. [Nota](leituras/B33_HATELEY_SPECTRAL_COLLATZ_V1.md) | Contraexemplo ao Lema 4; incompatibilidade do perfil estacionário c/n com o operador impresso e com o polo em s=1. Não usar essas conclusões da v1 como premissas. |
+
+[Síntese e derivações locais](COLLATZ_REVISAO_REGULARIDADE_20261012.md). PDFs em `archive/fontes_etapa11/collatz_regularidade_20261012/`; hashes/origem no manifesto geral e em `results/leitura_collatz_regularidade_20261012/fontes.json`. Nenhuma versão posterior ou código externo foi auditado/executado.
+
+| B34 | Tao, arXiv:1909.03562v5, 58 pp. | Leitura dirigida §1.4; pp.10–11 visualmente conferidas; prova global não reconstruída. [Nota](leituras/B34_TAO_SYRACUSE_ESTACIONARIA_20261012.md) | π é exatamente a lei conhecida Syrac; densidade L1 decorre da Proposição 1.14. Não transferir mistura não condicionada para custo fixado. |
+
+| B35 | Tao, texto do autor de 25/01/2020 sobre pré-imagens | Leitura dirigida da formulação c_n e Lema 2. [Nota](leituras/B35_TAO_PREIMAGENS_2020.md) | Menor massa e alvo de expoente já têm antecedente explícito; não confundir com minorante uniforme ou estado atual. |
+| B36 | Si, preprint em GitHub commit 119199e7…, 23 pp. | Leitura dirigida; sem premissas importadas. [Nota](leituras/B36_SI_MICROCANONICO_2026.md) | Soma condicionada sem limites individuais; resultados avançados não auditados. |
+
+## Razões — revisão dirigida de 13/10/2026
+
+| ID | Fonte | Escopo | Limite |
+| --- | --- | --- | --- |
+| B37 | CFZ, arXiv:0711.0718v1 | [Nota](leituras/B37_RAZOES_20261013.md), §5.1 | Conjuntos vazios não dão uniformidade no limite singular. |
+| B38 | Bui–Gonek–Milinovich, arXiv:1302.5032v1 | [Nota](leituras/B38_RAZOES_20261013.md), introdução/§2 | Fatores principais não resolvem termos inferiores. |
+
+Complemento B27: domínio dos deslocamentos em Conrey–Snaith, p.6, Conj.2.1/Observação2.2, conferido visualmente. A antiga passagem uniforme da Etapa B foi retirada; ver ERRATA_ETAPA_B_20261013.md.
+
+| B39 | Hughes–Pearce-Crump, arXiv:2509.07788v1 | [Nota](leituras/B39_HUGHES_PEARCE_CRUMP_2025.md), introdução/contexto | Momentos complexos não identificados com absolutos inversos. |
+| B40 | Hughes–Pearce-Crump, arXiv:2509.07792v1 | [Nota](leituras/B40_HUGHES_PEARCE_CRUMP_2025.md), introdução/§7 | Inteiros não negativos; usar estrutura geradora, sem transportar erros. |

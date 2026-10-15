@@ -1,0 +1,1 @@
+Tao arXiv:1909.03562v5, PDF de 58 páginas obtido em 12/10/2026. SHA-256 99fa919e0e43f0c161fbdc8d9011069c92b57d2a2a09444ae2ca77ef826191dd. Leitura dirigida pp.9–12, não auditoria integral. Referência B34 e registro no manifesto geral.

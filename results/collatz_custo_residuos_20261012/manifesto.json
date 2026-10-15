@@ -1,0 +1,12 @@
+{
+  "files": {
+    "results/collatz_custo_residuos_20261012/DECLARACAO.md": "ed3b3e302f2905f1c2ebf76f6af95be6b0768c894dae5b61a7439bf7da960fb3",
+    "results/collatz_custo_residuos_20261012/verificar.py": "21be43cb71d4e6ae3efdc3f2f0864c63a6ff288f8b0545153310b2487561362f",
+    "results/collatz_custo_residuos_20261012/resultados.json": "a56ee3ecb4e1a910fe67258b919f893df4c9945e3fb2c1d6c9db69557deb65ad",
+    "results/collatz_custo_residuos_20261012/code/cost_residues.py": "6ca04ffbc75a29a55d172387e2d3ea7db38f3786abcc1794d68b0ddef5b7b899",
+    "results/collatz_custo_residuos_20261012/code/test_cost_residues.py": "55ecb99d7b9182e9403bd4c5695a9ebd33c7db67ec86339f6f108bba0c137c2b",
+    "results/collatz_custo_residuos_20261012/TESTES.md": "f7969477242da1daf6830582681f1bec5f962167d62b8024e83f4b66917a22d7"
+  },
+  "zeros_read": false,
+  "cpu_limit_seconds": 60
+}

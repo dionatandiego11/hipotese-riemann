@@ -1,0 +1,1 @@
+Hashes novos e três entregas anteriores conferidos. git diff --check acusa CRLF no manifesto CSV (inclusive linhas anteriores); formato preservado para não reescrever bytes antigos. Horário de download não registrado; o horário posterior de criação do registro não foi tratado como horário de aquisição.

@@ -1,0 +1,30 @@
+{
+  "data": "2026-10-13",
+  "status": "derivações locais; verificações B; expansão completa pendente",
+  "dados_zeros_utilizados": false,
+  "testes": "9 passed",
+  "arquivos": {
+    "results/razoes_momentos_negativos_20261013/resultados.json": "497dc7aed182a31379a822e3321891539cf1455086963d11932f0af8c8ed442c",
+    "results/razoes_momentos_negativos_20261013/DECLARACAO.sha256": "856823509750d2b17ce5369241fde6d6b22e745e97a3f64505bfcb910fe40eb1",
+    "results/razoes_momentos_negativos_20261013/fontes.json": "6a2ef2fd691e27940679b6bedfd5ee1a1c86b284ae8a282ce3c2703591a64a36",
+    "results/razoes_momentos_negativos_20261013/DECLARACAO.md": "0ff243327a7dc5903baa49c2399265696493ef85c0d634fe6f7e4c00c853c297",
+    "results/razoes_momentos_negativos_20261013/VERIFICACOES.md": "a6513ec7d47a3915e478d25900bf5305a2f844d52a28e17417d666b08cc61288",
+    "results/razoes_momentos_negativos_20261013/verificar.py": "78c63f9b0aee7cf2fb20825c9fc8dc888d3d8e796d3909d3d8bd02daeb69250c",
+    "results/razoes_momentos_negativos_20261013/ADENDO_BORDA.sha256": "7119b698d7c37e117e037e4573035cdb3092b119907178ace970bf1252015ff2",
+    "results/razoes_momentos_negativos_20261013/ADENDO_BORDA.md": "f5869093a43e765d56bab5722bf10670e10b7460e5ef2077624dcdf3cbdbccc5",
+    "results/razoes_momentos_negativos_20261013/pdf/nota.pdf": "e1ea6b5e05a319306f2d3bd3a86144c110cdd44ea1ca4980b429a504d3862306",
+    "results/razoes_momentos_negativos_20261013/pdf/nota.log": "7056062a8582f0dab4093c1b3b95f63cd407d2fb873889f0297986b553ee8207",
+    "results/razoes_momentos_negativos_20261013/antes/test_negative_moments_ratios_sem_borda.py": "d7faeb71c74fa1e7d9c03f8524e96c08002caf00ba1290676df6855db2b156b0",
+    "results/razoes_momentos_negativos_20261013/antes/negative_moments_ratios_sem_borda.py": "4dad0c109ba6805590fa44b6d81bff4f66ad65da54ec716b393b9012f65c4de8",
+    "results/razoes_momentos_negativos_20261013/antes/nota.tex": "524c925001fddd7ee6aead8bb574cec12bdad93e335b88daef137b87812f5593",
+    "results/razoes_momentos_negativos_20261013/antes/DERIVACAO_ETAPA_B_RAZOES.md": "c23ddabea808eefb16a694eeda188446b173fc454b3ce8fc994acc17689f5c7a",
+    "results/razoes_momentos_negativos_20261013/code/negative_moments_ratios.py": "327ac6a31fabc35fbc2aaf2fd68740782c10457b80d10b339d4a5b1a2361488c",
+    "results/razoes_momentos_negativos_20261013/code/test_negative_moments_ratios.py": "b17e9e556a73ce39c31bb46c274842978d7130ae471df865e7cd7db805776e52",
+    "src/riemann_spectra/negative_moments_ratios.py": "327ac6a31fabc35fbc2aaf2fd68740782c10457b80d10b339d4a5b1a2361488c",
+    "tests/test_negative_moments_ratios.py": "b17e9e556a73ce39c31bb46c274842978d7130ae471df865e7cd7db805776e52",
+    "nota_momentos_negativos/nota.tex": "6c95f8eddff85ae9f64c97d4f3b354d7950a0812766dd57eed56c2d7c81c1803",
+    "hipoteses/RAZOES_REGULARIZACAO_20261013.md": "2604234f28dd65d918bb2e29f5c487d7535493ae79f504d44a0d4aa7d6906cc4",
+    "hipoteses/PLANO_RAZOES_MOMENTOS_NEGATIVOS.md": "30926d05d6c42caf0b4cce80b466238d2912895072902366f434d7a7b93622a3",
+    "hipoteses/ERRATA_ETAPA_B_20261013.md": "768921e2c458a6927e62f110f8b004690ae34f2b424a6eb90148ddfe19f61106"
+  }
+}

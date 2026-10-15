@@ -1,0 +1,25 @@
+{
+  "data": "2026-10-13",
+  "status": "identidades locais e controle CUE; previsão L pendente",
+  "real_zeros_used": false,
+  "source": {
+    "arquivo": "archive/fontes_etapa11/razoes_20261013/cfz_ratios_0711.0718v1.pdf",
+    "sha256": "34453da71c292d6f4de3e6753c5a524e68740f25c3f5124e29f4b86028a8590e",
+    "escopo": "pp.8–9, Teorema4.1; p.9 renderizada"
+  },
+  "files": {
+    "results/razoes_contornos_cue_20261013/NOTA.md": "19b6abbbe8637c281aec3e79df37ad4e85cd4c9ee91d2e6909143ff02ccd0cd6",
+    "results/razoes_contornos_cue_20261013/resultado.json": "8ee91de19ef51523c71aab457f552b3e8ea858afeba1233345f6b5ac6b968f50",
+    "results/razoes_contornos_cue_20261013/DECLARACAO.sha256": "f2c7152d53cd845f5b6648ede14439574741f1ae5073494414310d72286af16d",
+    "results/razoes_contornos_cue_20261013/DECLARACAO.md": "ae022f4796731795778072e13bcce8d227f6558cbb8da06e9ea56eb919bcae39",
+    "results/razoes_contornos_cue_20261013/resultado_exec1.json": "cd776a71d56224c89d783eacadab871a44dc9bd37e1f79b57b0f611d0b0afd69",
+    "results/razoes_contornos_cue_20261013/verificar.py": "f89cd2dcf4c98ab595c07f7711c7ccf43717d6317f63d86e2c99bb38201a771e",
+    "results/razoes_contornos_cue_20261013/testes_exec1.py": "0bdfdd0ed069fb1582a498355071143c2e0f8fc1a1422bd89d4ba377334b06d9",
+    "results/razoes_contornos_cue_20261013/ADENDO_TESTE.sha256": "4efd5d658898be6f1cfda91fabc3eea862931a48d529597ae8e903ec3212fcde",
+    "results/razoes_contornos_cue_20261013/ADENDO_TESTE.md": "373abea226a310bc95c8287928330e49fe33781714a4ab3d259304d9c005840a",
+    "results/razoes_contornos_cue_20261013/code/negative_moments_contours.py": "2738d747c2219dc649ead291fd378611dc94adfd7931567b3ff6a8640088ef36",
+    "results/razoes_contornos_cue_20261013/code/test_negative_moments_contours.py": "ef539a1a68bf79bcbb2ac856ac119f54009ee5113caa94152d04f2324f349217",
+    "src/riemann_spectra/negative_moments_contours.py": "2738d747c2219dc649ead291fd378611dc94adfd7931567b3ff6a8640088ef36",
+    "tests/test_negative_moments_contours.py": "ef539a1a68bf79bcbb2ac856ac119f54009ee5113caa94152d04f2324f349217"
+  }
+}

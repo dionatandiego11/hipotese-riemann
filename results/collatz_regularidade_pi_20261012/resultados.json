@@ -1,0 +1,30 @@
+{
+  "status": "validado nas identidades finitas",
+  "declaration_sha256": "a03d082e51f2b9ba0bee200978fa112cae16675d756f1ff226f2c3c8b0de2fb9",
+  "tao_recursion_components": 39,
+  "fixed_point_identities": 52,
+  "rows": [
+    {
+      "level": 1,
+      "mass_minus_one": "2/3",
+      "lower_bound": "1/2",
+      "relative_mass": "4/3"
+    },
+    {
+      "level": 2,
+      "mass_minus_one": "22/63",
+      "lower_bound": "1/4",
+      "relative_mass": "44/21"
+    },
+    {
+      "level": 3,
+      "mass_minus_one": "46570/262143",
+      "lower_bound": "1/8",
+      "relative_mass": "93140/29127"
+    }
+  ],
+  "cpu_seconds": 0.004651209999999989,
+  "wall_seconds": 0.005162292000022717,
+  "peak_rss_kib": 228304,
+  "limits": "N\u00e3o \u00e9 teste de minorante uniforme, de Lp ou do teorema completo de Tao."
+}

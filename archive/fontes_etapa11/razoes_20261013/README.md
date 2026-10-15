@@ -1,0 +1,1 @@
+Fontes primárias consultadas em 13/10/2026. Leitura dirigida; escopo nas notas B37/B38. Os hashes constam do manifesto geral e de fontes.json da execução. Não substituir estas cópias por downloads sem comparar SHA-256.

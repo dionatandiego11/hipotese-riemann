@@ -72,3 +72,7 @@ A próxima tarefa da frente direta é **conferir o antecedente de Meinardus e fo
 ## Atualização de acesso — 26/09/2026
 
 O usuário obteve o PDF via Tor na URL acima. A cópia local foi recebida e arquivada como `archive/fontes_etapa11/ponte_collatz_20260925/meinardus_2001.pdf`, 15 páginas, SHA-256 `08ebcc736ad2c72dad634394cdd9402f90f21a31af0fb77d6709bd8bf2ce297e`. Capa conferida (autor, título, Nr.261/2001); conteúdo matemático ainda não analisado. As falhas anteriores de acesso foram preservadas. A pendência de obtenção está resolvida; a de leitura permanece.
+
+## Revisão de fontes — 12/10/2026
+
+[Leituras B31–B33 e síntese](../hipoteses/COLLATZ_REVISAO_REGULARIDADE_20261012.md) localizam a passagem ainda necessária: de médias estáveis à cota relativa por resíduo em geradores com custo fixado, na janela central e resolução crescente. Wirsching preliminar foi obtido e lido; Tavares v1 é uma proposta de resolução de dois elos, sem prova de (⋆3), ainda sem auditoria integral aqui. A identidade Mellin que contém ζ foi reconstruída localmente, mas também vale em outras bases; uma ponte específica exige informação aritmética adicional. As conclusões relevantes de Hateley v1 são incompatíveis com suas próprias definições. Não ampliar simulações antes de definir a cota conjunta de custo/resíduos e suas dependências.

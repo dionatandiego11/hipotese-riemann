@@ -1,0 +1,1 @@
+Derivação de mistura L1 condicionada. Fonte profunda aceita: Tao Prop.7.3. Verificações finitas de fatoração/injetividade, não experimento de oscilação. Prova e limites em hipoteses/COLLATZ_MISTURA_CONDICIONADA_20261013.md.

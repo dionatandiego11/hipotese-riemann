@@ -1,0 +1,26 @@
+{
+  "data": "2026-10-12",
+  "declaracao_sha256": "58f14674d211cd216b3aa3876be697e2b31dda882128e080da73d52ad4adce2d",
+  "fonte": {
+    "path": "archive/fontes_etapa11/koopman_20260925/applegate_lagarias_1995_trees.pdf",
+    "sha256": "cc3df1accda2bf5aa335f31c08215283f3354b4b490c1bfca19baeb98be02390",
+    "leitura": "secao 6, pp. 204-208; p. 208 inspecionada visualmente",
+    "limitacao": "estado posterior de Wirsching e conjecturas nao conferido"
+  },
+  "arquivos": {
+    "results/collatz_memoria_20261012/DECLARACAO.md": "58f14674d211cd216b3aa3876be697e2b31dda882128e080da73d52ad4adce2d",
+    "results/collatz_memoria_20261012/DECLARACAO.sha256": "e424de20ffe70ac2f407378886c864957c5dd2fec6f1d5171e87c32335075ae8",
+    "results/collatz_memoria_20261012/README.md": "97930957dca6487b3720623f7c4b925ebaa2d8283d9466348bab96cb84273b32",
+    "results/collatz_memoria_20261012/code/coarse_memory.py": "e48e3afc3064075bdeb36f196f3a2c30b3fe31ec1cf0537354a6d3eab4c90d3a",
+    "results/collatz_memoria_20261012/code/congruence_filters.py": "0ac98c2a38960a9e766b3176161d58ef324b19760131ff9a5016aa3d55a53f80",
+    "results/collatz_memoria_20261012/code/test_coarse_memory.py": "964701bd20bb6655a308ab76fe84903e0591f1d7835924120a8ea664545e4c25",
+    "results/collatz_memoria_20261012/code/verificar.py": "4f2c512081cf86337ef09628c7c6a82eac726e4045c9827e9382ef5da2f56c91",
+    "results/collatz_memoria_20261012/configuracao.json": "9c140f735d3bad2a778db70945e22a7e9bd77d64c841849108b22811a7abaa34",
+    "results/collatz_memoria_20261012/mistura.csv": "9913f3c6db0e8ff7e79f3d1eaeb84c04d0af18818bf4cd03cd9ce8a869aafaea",
+    "results/collatz_memoria_20261012/resultados.json": "9adef7fb9667b9d4cd7379cfe6952e4eb07aaf3c4c192664f66b7f9ab5cf9868",
+    "results/collatz_memoria_20261012/verificacao.log": "39f875fba31e785af5e9b557c1862b562e4d81cd11fc5dffe34de489f50bfa0a",
+    "results/collatz_memoria_20261012/verificar.py": "4f2c512081cf86337ef09628c7c6a82eac726e4045c9827e9382ef5da2f56c91",
+    "hipoteses/COLLATZ_MEMORIA_FINITA_20261012.md": "2b232bc0e1c7d6ad74ed89f12f566051b327e628c2fd199ba443581d530fccab",
+    "results/collatz_memoria_20261012/teste_integracao.txt": "788c8bb26d45a94d2279d751ea9344e7f06eaae11636ffec9194f8a2f109ca30"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "arquivo": "archive/fontes_etapa11/razoes_20261013/cfz_ratios_0711.0718v1.pdf",
+    "sha256": "34453da71c292d6f4de3e6753c5a524e68740f25c3f5124e29f4b86028a8590e",
+    "bytes": 338176,
+    "url": "https://arxiv.org/pdf/0711.0718v1",
+    "leitura": "§5.1, equations (5.12)–(5.15), Conjecture 5.1; leitura dirigida, não integral."
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/razoes_20261013/bgm_hybrid_1302.5032v1.pdf",
+    "sha256": "34ef70c52bf556ec7aec15dd2f890c4c227dcff80cbbb50e45e51c0ef9eaa7c8",
+    "bytes": 284915,
+    "url": "https://arxiv.org/pdf/1302.5032v1",
+    "leitura": "Introdução e enunciados iniciais da §2; leitura dirigida, não auditoria da prova."
+  }
+]

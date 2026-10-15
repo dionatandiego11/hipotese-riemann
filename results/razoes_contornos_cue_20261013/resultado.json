@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 4.677283531999819,
+  "cpu_seconds": 4.2582379370000005,
+  "declaration_sha256": "ae022f4796731795778072e13bcce8d227f6558cbb8da06e9ea56eb919bcae39",
+  "real_zeros_used": false,
+  "classification": "B; controles sintéticos e constantes, não previsão de L"
+}

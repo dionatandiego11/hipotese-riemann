@@ -1,0 +1,11 @@
+{
+  "status": "validado nas identidades finitas",
+  "declaration_sha256": "e15f44f4818598622260e0909102ab021aa6c82d8e1ddea2d83810d65b3c8a99",
+  "conditional_block_checks": 150,
+  "rational_offsets_checked": 714,
+  "modular_offsets_checked": 712,
+  "cpu_seconds": 0.22308945700000002,
+  "wall_seconds": 0.24385793700002978,
+  "peak_rss_kib": 265244,
+  "limits": "N\u00e3o certifica constantes assint\u00f3ticas, oscila\u00e7\u00e3o L1 ou prova profunda de Tao."
+}

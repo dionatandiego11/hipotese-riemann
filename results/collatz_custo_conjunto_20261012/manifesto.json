@@ -1,0 +1,15 @@
+{
+  "files": {
+    "results/collatz_custo_conjunto_20261012/resultados.json": "93e08b0244fe23617cb1eeff41192b1d68abd9edcebaaf5e8adab7365fef396a",
+    "results/collatz_custo_conjunto_20261012/pares_resultados.json": "48ac198a0cb3728880165b29bce42f009468e867dac00ebad45deec3622739a5",
+    "results/collatz_custo_conjunto_20261012/DECLARACAO.sha256": "03e171071bbe8dd8ac1dce94a874607d8a5da78ecfe4361ad4ea5bfd97186955",
+    "results/collatz_custo_conjunto_20261012/ADENDO_PARES.sha256": "40ae62dd3359d36818d6787bc4759b7699b6256be7d08a406a7c7164a44a56dd",
+    "results/collatz_custo_conjunto_20261012/fontes.json": "23e2d6306174a8e4272f22a283380785c6cf04734984b97efb8d6cabfe578a24",
+    "results/collatz_custo_conjunto_20261012/DECLARACAO.md": "de6b8e1a6e81645bdd30ca931964c4c8af7bc89d3631d7399f111bf960bb1b5e",
+    "results/collatz_custo_conjunto_20261012/verificar.py": "1e7379717182a380e745131502c887c0b31f9192b606a3a85b0941e64b2f4005",
+    "results/collatz_custo_conjunto_20261012/verificar_pares.py": "feb1f3d5f740426a088d12f981a6d76e13fa459a2cdb7d2ba1d129e8e299ddf9",
+    "results/collatz_custo_conjunto_20261012/ADENDO_PARES.md": "8280d64d7f4e647b9787a8e4c19b152d28f3edecd1c1f0de9f3ad9f5ca80cef3"
+  },
+  "cpu_limit_seconds_per_process": 60,
+  "zeros_read": false
+}

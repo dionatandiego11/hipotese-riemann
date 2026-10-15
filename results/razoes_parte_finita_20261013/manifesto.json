@@ -1,0 +1,25 @@
+{
+  "data": "2026-10-13",
+  "status": "derivação local; previsão uniforme deL pendente",
+  "zero_data": false,
+  "execution": {
+    "exit_code": 0,
+    "wall_seconds": 7.56846077299997,
+    "cpu_seconds": 7.7690419020000006,
+    "declaration_sha256": "9187366b553a1a3cb0b1e88c754472a7aa7ea80c7f1bae67d5e23d1906e5744b",
+    "real_zeros_used": false,
+    "classification": "B; controles sintéticos, não certificação ou inferiores de L"
+  },
+  "files": {
+    "results/razoes_parte_finita_20261013/NOTA.md": "6673648930ff47556766e90da0c03193e937a1d4b3c20e1cb50bb91a53a9ecf2",
+    "results/razoes_parte_finita_20261013/resultado.json": "f080dcadf18a8f987f8e0edc1bd5e7c65d610fcd91c23b3bc19811d06f1a2d8e",
+    "results/razoes_parte_finita_20261013/DECLARACAO.sha256": "0cc449fd7864aeeba66d78e4420bdf20a8c50aba2471bd8f80feaa9ab94e82e5",
+    "results/razoes_parte_finita_20261013/DECLARACAO.md": "9187366b553a1a3cb0b1e88c754472a7aa7ea80c7f1bae67d5e23d1906e5744b",
+    "results/razoes_parte_finita_20261013/VERIFICACOES.md": "b2d9e65fe36a08b5b4a58b9b0ff01cebf6c691c79a8a8ad28cb769ff6fe2cc12",
+    "results/razoes_parte_finita_20261013/verificar.py": "ec02121b55009a43cdb561c167a0b447d975cc205534b0eddf0b5be06abbb44d",
+    "results/razoes_parte_finita_20261013/code/negative_moments_finite_part.py": "f4ba875392084f9b11a9d1af77466ba2b57dfe89559ec61ddfb42eb2319f36f5",
+    "results/razoes_parte_finita_20261013/code/test_negative_moments_finite_part.py": "d38a4ab8fb4d4effe4d06da6b68c797cfc1bd8d6d7c36ce0cb00521e2f3d08f0",
+    "src/riemann_spectra/negative_moments_finite_part.py": "f4ba875392084f9b11a9d1af77466ba2b57dfe89559ec61ddfb42eb2319f36f5",
+    "tests/test_negative_moments_finite_part.py": "d38a4ab8fb4d4effe4d06da6b68c797cfc1bd8d6d7c36ce0cb00521e2f3d08f0"
+  }
+}

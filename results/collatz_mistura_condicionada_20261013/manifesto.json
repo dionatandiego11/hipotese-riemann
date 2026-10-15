@@ -1,0 +1,13 @@
+{
+  "files": {
+    "results/collatz_mistura_condicionada_20261013/resultados.json": "890804c6fe60eafb4829e08365819ebbb6863600b8c3e4cd75835fd7b6746094",
+    "results/collatz_mistura_condicionada_20261013/DECLARACAO.sha256": "b08604b3f424c53a53561cba7fdbb552831d17321f2bbaabbccf93f38c876720",
+    "results/collatz_mistura_condicionada_20261013/DECLARACAO.md": "e15f44f4818598622260e0909102ab021aa6c82d8e1ddea2d83810d65b3c8a99",
+    "results/collatz_mistura_condicionada_20261013/README.md": "24f55e3a2cbef2a94c53548abd4496431e3126615b58994807690ddc3905c458",
+    "results/collatz_mistura_condicionada_20261013/verificar.py": "56ee5603a7fc7fe80533c76dbf2d549fa0699b410521dff9d0c2f8da85c9988d"
+  },
+  "external_source_sha256": "99fa919e0e43f0c161fbdc8d9011069c92b57d2a2a09444ae2ca77ef826191dd",
+  "cpu_limit_seconds": 60,
+  "zeros_read": false,
+  "asymptotic_constants_evaluated": false
+}

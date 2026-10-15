@@ -1,0 +1,50 @@
+{
+  "declaracao_data": "2026-10-11",
+  "execucao_data": "2026-10-12",
+  "q": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "r": "todos os residuos por q",
+  "raizes_positivas": [
+    1,
+    48
+  ],
+  "palavras_profundidades": [
+    0,
+    5
+  ],
+  "iteracao_direta_profundidades": [
+    0,
+    6
+  ],
+  "periodos_profundidades": [
+    1,
+    7
+  ],
+  "diadico_d": [
+    0,
+    6
+  ],
+  "diadico_m": [
+    0,
+    8
+  ],
+  "diadico_raizes": [
+    0,
+    31
+  ],
+  "limite_cpu_segundos": 60,
+  "aritmetica": "int Python e fractions.Fraction",
+  "aleatoriedade": false
+}

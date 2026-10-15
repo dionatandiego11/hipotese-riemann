@@ -1,0 +1,46 @@
+{
+  "K": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "profundidades_oraculo": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "profundidades_mistura": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "contracao_alpha": 1,
+  "observaveis": "f(a)=a e indicadores de cada residuo",
+  "matriz_maxima": [
+    27,
+    27
+  ],
+  "kernel_pesos": [
+    "3/4",
+    "1/4"
+  ],
+  "normalizacao_contagens": "(3/4)^m",
+  "aritmetica": "int e fractions.Fraction",
+  "cpu_limite_segundos": 60,
+  "aleatoriedade": false
+}

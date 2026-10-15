@@ -1,0 +1,13 @@
+{
+  "status": "validado em auditoria interna limitada",
+  "declaration_sha256": "0c318bcb44f13f4a3fdaa98dfb2ca967b4624455355a3373891605b91718b9cd",
+  "fourier_product_checks": 126,
+  "parseval_and_projection_checks": 28,
+  "mass_checks": 6,
+  "real_tail_checks": 33,
+  "cpu_seconds": 0.923904622,
+  "wall_seconds": 0.9283413859998291,
+  "peak_rss_kib": 244616,
+  "independent_review": false,
+  "deep_tao_proof_reconstructed": false
+}

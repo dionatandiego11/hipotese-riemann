@@ -1,0 +1,12 @@
+{
+  "files": {
+    "results/collatz_regularidade_pi_20261012/resultados.json": "d1891e48b1d5981c88b40070e3e85bdee58ab9cb2af516df4e54c7107b611def",
+    "results/collatz_regularidade_pi_20261012/DECLARACAO.sha256": "711b3ff186eef68335addc94e68c132e488007078070c8a454d6cf6480e06c23",
+    "results/collatz_regularidade_pi_20261012/fontes.json": "63d5af548966178d0ed1dd65cd1e75117cb191f19e8dcfd9c426ae1144b866f4",
+    "results/collatz_regularidade_pi_20261012/DECLARACAO.md": "a03d082e51f2b9ba0bee200978fa112cae16675d756f1ff226f2c3c8b0de2fb9",
+    "results/collatz_regularidade_pi_20261012/verificar.py": "88b8927e9cd252ffc4d689c7faadd1c9214b11cfdec4af79b6a6651bbbf9d1f8",
+    "results/collatz_regularidade_pi_20261012/VERIFICACOES.md": "4e23781eb5ff12bddf2cd0ddaa32608bd4e14ca600ec0f0d20bcd5cddf84dd91"
+  },
+  "source_pdf_sha256": "99fa919e0e43f0c161fbdc8d9011069c92b57d2a2a09444ae2ca77ef826191dd",
+  "zeros_read": false
+}

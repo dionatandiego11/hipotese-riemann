@@ -1,0 +1,74 @@
+{
+  "estado": "validado",
+  "classe": "B; controles em aritmética racional exata",
+  "data": "2026-10-12",
+  "python": "3.12.3",
+  "declaracao_sha256": "58f14674d211cd216b3aa3876be697e2b31dda882128e080da73d52ad4adce2d",
+  "checks": {
+    "estacionarias_massa_equacao_compatibilidade": 4,
+    "componentes_coarse_vs_expansao_completa": 280,
+    "cota_acoplamento_variacao_total": 52,
+    "contracao_holder_observaveis": 42
+  },
+  "estacionarias": {
+    "0": [
+      "1"
+    ],
+    "1": [
+      "0",
+      "3/7",
+      "4/7"
+    ],
+    "2": [
+      "0",
+      "576/3367",
+      "768/3367",
+      "0",
+      "543/3367",
+      "432/3367",
+      "0",
+      "324/3367",
+      "724/3367"
+    ],
+    "3": [
+      "0",
+      "3873014784/68332056247",
+      "5164019712/68332056247",
+      "0",
+      "426969792/9761722321",
+      "3187964736/68332056247",
+      "0",
+      "2178570816/68332056247",
+      "569293056/9761722321",
+      "0",
+      "4250619648/68332056247",
+      "4754771712/68332056247",
+      "0",
+      "3883327131/68332056247",
+      "2904761088/68332056247",
+      "0",
+      "2390973552/68332056247",
+      "790071312/9761722321",
+      "0",
+      "3566078784/68332056247",
+      "5667492864/68332056247",
+      "0",
+      "592553484/9761722321",
+      "2674559088/68332056247",
+      "0",
+      "2005919316/68332056247",
+      "5177769508/68332056247"
+    ]
+  },
+  "cpu_segundos": 0.29676196,
+  "parede_segundos": 0.29759180199971524,
+  "memoria_max_kib_linux": 18760,
+  "teto_cpu_segundos": 60,
+  "hashes": {
+    "results/collatz_memoria_20261012/DECLARACAO.md": "58f14674d211cd216b3aa3876be697e2b31dda882128e080da73d52ad4adce2d",
+    "results/collatz_memoria_20261012/verificar.py": "4f2c512081cf86337ef09628c7c6a82eac726e4045c9827e9382ef5da2f56c91",
+    "collatz/coarse_memory.py": "e48e3afc3064075bdeb36f196f3a2c30b3fe31ec1cf0537354a6d3eab4c90d3a",
+    "collatz/test_coarse_memory.py": "964701bd20bb6655a308ab76fe84903e0591f1d7835924120a8ea664545e4c25",
+    "collatz/congruence_filters.py": "0ac98c2a38960a9e766b3176161d58ef324b19760131ff9a5016aa3d55a53f80"
+  }
+}

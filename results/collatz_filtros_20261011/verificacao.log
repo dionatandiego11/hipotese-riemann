@@ -1,0 +1,67 @@
+{
+  "estado": "validado",
+  "classe": "B (controles exatos)",
+  "data_execucao": "2026-10-12",
+  "declaracao_sha256": "f6311b8538678202a22eb887615b7561d07ecf4c990175def1ba2bf7ca00ad8e",
+  "python": "3.12.3",
+  "checks": {
+    "composicao_literal_vs_congruencia": 235872,
+    "iteracao_direta_vs_expansao": 26208,
+    "periodo_minimo_e_media": 7,
+    "media_haar_diadica_apos_d_passos": 1344
+  },
+  "periodos": [
+    {
+      "m": 1,
+      "periodo_minimo": 3,
+      "media_exata": "4/3",
+      "filtros_distintos": 2
+    },
+    {
+      "m": 2,
+      "periodo_minimo": 9,
+      "media_exata": "16/9",
+      "filtros_distintos": 4
+    },
+    {
+      "m": 3,
+      "periodo_minimo": 27,
+      "media_exata": "64/27",
+      "filtros_distintos": 7
+    },
+    {
+      "m": 4,
+      "periodo_minimo": 81,
+      "media_exata": "256/81",
+      "filtros_distintos": 12
+    },
+    {
+      "m": 5,
+      "periodo_minimo": 243,
+      "media_exata": "1024/243",
+      "filtros_distintos": 21
+    },
+    {
+      "m": 6,
+      "periodo_minimo": 729,
+      "media_exata": "4096/729",
+      "filtros_distintos": 38
+    },
+    {
+      "m": 7,
+      "periodo_minimo": 2187,
+      "media_exata": "16384/2187",
+      "filtros_distintos": 69
+    }
+  ],
+  "cpu_segundos": 5.521509317,
+  "parede_segundos": 5.730544864999985,
+  "memoria_max_kib_linux": 18508,
+  "limite_cpu_segundos": 60,
+  "hashes": {
+    "results/collatz_filtros_20261011/DECLARACAO.md": "f6311b8538678202a22eb887615b7561d07ecf4c990175def1ba2bf7ca00ad8e",
+    "results/collatz_filtros_20261011/verificar.py": "b1567f1c8552217af0881a06da3d3f7a95524f0a0f9be3b68e803150327bd57e",
+    "collatz/congruence_filters.py": "0ac98c2a38960a9e766b3176161d58ef324b19760131ff9a5016aa3d55a53f80",
+    "collatz/test_congruence_filters.py": "bd18aebbd2e2ebff7ec9730bac09d8e8794d8881c5d16ce1ac3f46ac524e38d2"
+  }
+}

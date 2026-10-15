@@ -1,3 +1,5 @@
+> **Errata de 13/10/2026:** as conclusões abaixo sobre erro O(T^(1/2+ε)), ausência de T/log T e derivação completa de C7/C8 estão suspensas por falta de uniformidade no limite do deslocamento. O original foi preservado em `results/razoes_momentos_negativos_20261013/antes/`. A álgebra das diagonais permanece válida; ver `hipoteses/RAZOES_REGULARIZACAO_20261013.md`.
+
 # Etapa B — as Conjecturas 7 e 8 pela conjectura das razões, com termo de erro (28/09/2026)
 
 Derivação **heurística** (rótulo D), na forma de "receita" usual de Conrey–Farmer–Zirnbauer / Conrey–Snaith (B27).

@@ -1,0 +1,33 @@
+{
+  "data_auditoria": "2026-10-11",
+  "registro_utc": "2026-10-11T14:46:28.241450+00:00",
+  "fontes": [
+    {
+      "arquivo": "QRH.pdf",
+      "obra": "Shiva Kintali, A Short Proof of the Quasi-Riemann Hypothesis",
+      "versao": "data impressa 2026-10-07",
+      "url_consultada": "fornecido localmente pelo usuario; URL nao informada",
+      "baixado_em": "nao registrada",
+      "paginas_pdf": 27,
+      "correspondencia_paginas": "pagina_pdf = pagina_impressa",
+      "uso_na_matriz": "auditoria QRH densidade; nao altera matriz",
+      "sha256": "f7ddc46632e37466e85951ea67acbd3c2abc19c8259fac51be569b1f6bbbe8e5",
+      "bytes": 471091
+    },
+    {
+      "arquivo": "Khale_et_al_2008.09677v3.pdf",
+      "obra": "Khale et al., A Bombieri-Vinogradov Theorem for primes in short intervals and small sectors",
+      "versao": "arXiv:2008.09677v3 (2022-01-12)",
+      "url_consultada": "https://arxiv.org/pdf/2008.09677v3",
+      "baixado_em": "2026-10-11; horario exato da transferencia nao registrado",
+      "paginas_pdf": 20,
+      "correspondencia_paginas": "pagina_pdf = pagina_impressa",
+      "uso_na_matriz": "auditoria QRH densidade; nao altera matriz",
+      "sha256": "1e92b7ce59924f4a839a9168fff5de00a4796f415f76ada9d262a893236e8ee2",
+      "bytes": 278469
+    }
+  ],
+  "nota": "hipoteses/leituras/QRH_AUDITORIA_DENSIDADE_20261011.md",
+  "nota_sha256": "871ba35a2780865e44a4ca288c4c1939caa430965466a1afcf3df774452b58e7",
+  "escopo": "aplicacao do Lema 3.3; sem reprova da estimativa externa e sem validacao global de QRH"
+}

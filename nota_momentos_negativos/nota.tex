@@ -1,4 +1,4 @@
-% RASCUNHO v2 (28/09/2026) -- v0 enviado ao autor (7793f74); v1 (HKO) no Zenodo; v2 acrescenta a receita das razoes e corrige a leitura dos desvios. Compilar com ~/.local/bin/tectonic -X compile nota.tex.
+% RASCUNHO v3 interno (13/10/2026): uniformidade da Etapa B suspensa; versões e pacotes anteriores preservados. Não enviado/publicado nesta revisão.
 % Todos os numeros vem de results/momentos_negativos_20260927/ (analise.json, analise_c8.json, analise_mn3.json).
 \documentclass[11pt]{amsart}
 \usepackage[margin=1in]{geometry}
@@ -12,7 +12,7 @@
 \author{Dionatan Resende}
 \address{Independent researcher. ORCID: \href{https://orcid.org/0009-0009-8217-1623}{0009-0009-8217-1623}}
 \email{dionatandieresende@gmail.com}
-\date{Draft v2, 28 September 2026}
+\date{Internal draft v3, 13 October 2026}
 
 \begin{document}
 
@@ -28,9 +28,10 @@ $27000$ zeros of $\zeta(s)$, comparing each $L$-function with $\zeta(s)$ at the 
 eight tests the predicted arithmetic factor lies inside the $95\%$ bootstrap interval and the value without arithmetic
 factor is excluded. For conductor $12$, where the two conjectures predict $1/2$ and $1/3$, we measure
 $0.501\,[0.445,0.555]$ and $0.340\,[0.301,0.381]$. All predictions and analysis choices were fixed before the
-corresponding computations. We also observe that the recipe of the ratios conjecture reproduces both constants with an
-error term $O(T^{1/2+\varepsilon})$, so that no lower-order terms of size $T/\log T$ are expected; the deviations seen at
-low height are consistent with the heavy tails of the summands.
+corresponding computations. The arithmetic diagonals of regularised shifted means have residues matching the two
+conjectured constants. A uniform passage from these means to the discrete moments remains unresolved; we do not
+claim an error term or the absence of lower-order terms. Rare close pairs of zeros limit the interpretation of the
+finite-height numerical comparisons.
 \end{abstract}
 
 \maketitle
@@ -67,9 +68,9 @@ conjecture~\cite{CFZ,CS} is left open in~\cite{PC}.
 The content of \eqref{eq:c7} and \eqref{eq:c8} beyond the case $q=1$ lies in the arithmetic factors
 $\prod_{p\mid q}p/(p+1)$ and $\varphi(q)/q$. The aim of this note is to test these factors numerically. We are not aware
 of previous numerical tests of \eqref{eq:c7} or \eqref{eq:c8}; our literature search is described in
-Section~\ref{sec:search}. We also record two heuristic checks: the random matrix model of Hughes, Keating and O'Connell
-gives the same constants (Section~\ref{sec:hko}), and so does the recipe of the ratios conjecture, which moreover
-predicts an error term $O(T^{1/2+\varepsilon})$ (Section~\ref{sec:ratios}).
+Section~\ref{sec:search}. We record a heuristic consistency check from the random matrix model of Hughes, Keating and
+O'Connell (Section~\ref{sec:hko}) and the corresponding arithmetic diagonal residues (Section~\ref{sec:ratios}).
+The latter calculation does not establish a uniform ratios prediction for the discrete moments.
 
 \section{Method}
 
@@ -86,7 +87,7 @@ tend to $A_q$ and $\varphi(q)/q$ respectively (to $6/\pi^2$ and $1$ for $\zeta$)
 At the heights accessible to us, sums over a few thousand zeros fluctuate by several per cent around their expected
 values. For $\zeta(s)$, the ratio of $\sum 1/|\zeta'(\rho)|^2$ over consecutive windows of $3000$ zeros to
 $\frac{3}{\pi^3}\Delta T$ ranges from $0.907$ to $1.088$ in the first $27000$ zeros, with no trend in the height; most
-windows fall below $1$. This is the behaviour expected from heavy-tailed summands (Section~\ref{sec:ratios}). Rather
+windows fall below $1$. These descriptive values alone do not distinguish lower-order effects from rare-pair fluctuations. Rather
 than compare absolute averages with the conjectured constants, we compare each $L$-function with $\zeta(s)$ at the
 same local density $D=\log(q\gamma/2\pi)$. We split the zeros of $L(s,\chi)$ into ten bins at the
 deciles of $D$ and define
@@ -99,11 +100,11 @@ Conjectures \eqref{eq:c7} and \eqref{eq:c8} predict
 \[
 R=\prod_{p\mid q}\frac{p}{p+1},\qquad R_8=\frac{\varphi(q)}{q}.
 \]
-We designed this statistic in the expectation that $L(s,\chi)$ and $\zeta(s)$ share finite-height corrections that
-depend on the height mainly through the density. The heuristic of Section~\ref{sec:ratios} suggests that there are no
-such corrections of size $T/\log T$; the comparison with $\zeta$ then mainly calibrates the typical behaviour of
-heavy-tailed sums at the same density, and it adds the fluctuations of the $\zeta$-sum to the uncertainty, which the
-bootstrap below takes into account. The absolute ratios are reported in Section~\ref{sec:results} for comparison.
+We designed this statistic in the expectation that density matching would reduce common finite-height effects.
+This remains a modelling assumption; lower-order corrections have not been derived, and density matching does not
+guarantee cancellation of rare-pair effects. The shared $\zeta$ reference adds sampling fluctuations. The block
+bootstrap measures variability in the observed samples and may underestimate uncertainty from unobserved rare
+close pairs. The absolute ratios are reported in Section~\ref{sec:results} for comparison.
 
 \subsection{Alternatives}
 For each test we also record two alternatives: $H_0$, no arithmetic factor ($R=1$); and, for \eqref{eq:c7}, the
@@ -206,43 +207,43 @@ factor $\prod_{p\mid q}p^{2}/(p^{2}-1)$ corresponds to dropping $(1-\frac1p)$ at
 of \eqref{eq:c7} and \eqref{eq:c8} corresponds to using the local average of one moment for the other. This is a
 heuristic consistency check and says nothing about lower-order terms; we do not claim it is new.
 
-\section{The ratios conjecture and the error term}\label{sec:ratios}
+\section{Regularisation and the ratios calculation}\label{sec:ratios}
 
-The recipe of the ratios conjecture~\cite{CFZ,CS} also gives \eqref{eq:c7} and \eqref{eq:c8}, together with an error
-term. The representation of discrete moments used in~\cite[Section~7]{CS}, with the weight $\zeta'/\zeta$, is not
-suitable here: for negative moments the auxiliary poles cancel the contribution of the zeros. Instead, for
-$\operatorname{Re}\alpha>0$ small, write
+An earlier draft inferred an error term and the absence of terms of size $T/\log T$ from a diagonal-only ratios
+calculation. That inference is withdrawn: uniformity as the denominator shifts tend to zero was not established.
+The restrictions in~\cite[(2.11) and Remark~2.2]{CS} do not supply it for a bare reciprocal mean.
+
+There is an exact local starting point. Let $0<a<b$ be heights that are not ordinates of zeros, and assume GRH
+and simplicity of the zeros of $L(s,\chi)$ in this interval. Then
+\begin{align*}
+\sum_{a<\gamma<b}\frac{1}{|L'(\rho,\chi)|^2}
+ &=\lim_{\epsilon\downarrow0}\frac{\epsilon}{\pi}
+    \int_a^b\frac{dt}{|L(\tfrac12+\epsilon+it,\chi)|^2},\\
+\sum_{a<\gamma<b}\left|\frac{L(2\rho,\chi^2)}{L'(\rho,\chi)}\right|^2
+ &=\lim_{\epsilon\downarrow0}\frac{\epsilon}{\pi}
+    \int_a^b\left|\frac{L(1+2\epsilon+2it,\chi^2)}{L(\tfrac12+\epsilon+it,\chi)}\right|^2dt.
+\end{align*}
+Each identity follows by isolating a simple zero and using the Cauchy kernel
+$\epsilon/(\epsilon^2+(t-\gamma)^2)$; its integral is $\pi$. This is a fixed-interval statement, not a
+uniform large-height asymptotic.
+
+If the squared character is principal and the central value is nonzero, the numerator of the second integral has
+a pole at height zero. Starting the regularisation at zero adds an auxiliary-pole boundary contribution,
+which must be subtracted. This correction to the regularisation identity is not a complete lower-order prediction
+for the discrete moment; the calculation is recorded in the accompanying analytic working note.
+
+For a formal diagonal calculation, put $\alpha=2\epsilon$ and let $\chi_0$ be the principal character modulo $q$.
+The two Dirichlet-series diagonals are
 \[
-J(\alpha)=\sum_{0<\gamma\le T}\frac{1}{\zeta'(\rho)\,\zeta(1-\rho+\alpha)}=\frac{1}{2\pi i}\oint_{C}\frac{ds}{\zeta(s)\,\zeta(1-s+\alpha)},
+D_7(\alpha)=\frac{L(1+\alpha,\chi_0)}{L(2+2\alpha,\chi_0)},\qquad
+D_8(\alpha)=L(1+\alpha,\chi_0).
 \]
-where $C$ is the rectangle with vertical sides $\operatorname{Re}s=\frac12-\varepsilon$ and
-$\operatorname{Re}s=\frac12+\varepsilon'$, $0<\varepsilon'<\operatorname{Re}\alpha$, so that only the poles $s=\rho$ lie
-inside. Under the Riemann Hypothesis, $\sum_{0<\gamma\le T}|\zeta'(\rho)|^{-2}=\lim_{\alpha\to0}\alpha J(\alpha)$. On the
-right side the integrand is $1/(\zeta(\frac12+\varepsilon'+it)\zeta(\frac12+\alpha-\varepsilon'-it))$, with both shifts
-having positive real part; since there is no $\zeta$ in the numerator, the recipe keeps only the diagonal
-$\sum_h\mu(h)^2h^{-1-\alpha}=\zeta(1+\alpha)/\zeta(2+2\alpha)$ (this is~\cite[(2.10)]{CS} with the numerator shifts sent
-to infinity). On the left side the functional equation leaves an unbalanced factor $\chi(s)$, and the recipe discards
-such terms, which contribute $O(T^{1/2+\varepsilon})$. Hence
-\[
-J(\alpha)=\frac{T}{2\pi}\frac{\zeta(1+\alpha)}{\zeta(2+2\alpha)}+O(T^{1/2+\varepsilon}),\qquad
-\sum_{0<\gamma\le T}\frac{1}{|\zeta'(\rho)|^{2}}=\frac{3}{\pi^{3}}\,T+O(T^{1/2+\varepsilon}).
-\]
-For $L(s,\chi)$ the diagonal becomes
-\[
-\sum_h\frac{\mu(h)^2|\chi(h)|^2}{h^{1+\alpha}}=\frac{L(1+\alpha,\chi_0)}{L(2+2\alpha,\chi_0)},
-\]
-with $\chi_0$ the principal character modulo $q$, and $\alpha L(1+\alpha,\chi_0)/L(2+2\alpha,\chi_0)\to A_q$. For $K_\chi$ we
-use $L(2s,\chi^2)/L(s,\chi)=\sum_h\lambda(h)\chi(h)h^{-s}$; the diagonal is $L(1+\alpha,\chi_0)$, and
-$\alpha L(1+\alpha,\chi_0)\to\varphi(q)/q$. Thus the recipe gives
-\[
-J_\chi(T)=\frac{A_q}{2\pi}\,T+O(T^{1/2+\varepsilon}),\qquad K_\chi(T)=\frac{\varphi(q)}{q}\,\frac{T}{2\pi}+O(T^{1/2+\varepsilon}),
-\]
-which answers heuristically the question raised in~\cite{PC}. In particular, no lower-order terms of size $T/\log T$ are
-predicted. The summands, however, have heavy tails: since the nearest-neighbour spacing density vanishes quadratically,
-$\mathbb{P}(|\zeta'(\rho)|^{-2}>x)$ decays like $x^{-3/2}$, so the summands have infinite variance, and a sum over a
-few thousand zeros typically falls somewhat below its expected value. This is consistent with the window ratios
-quoted in Section~2.2 and with the absolute ratios of Section~\ref{sec:results}. Like the previous section, this is a
-short heuristic computation, and we do not claim it is new.
+Their residues at $\alpha=0$ are $A_q$ and $\varphi(q)/q$, respectively. Thus the diagonal pole is consistent
+with the leading constants in~\eqref{eq:c7} and~\eqref{eq:c8}. This algebraic agreement alone does not derive
+the full discrete asymptotic. In particular, the finite parts of $D_7,D_8$ are not automatically lower-order
+terms of the discrete sums: the fixed-interval limit removes them, and the singular part of the remaining
+terms must also be controlled. Recovering the conjectures and their lower-order corrections from an appropriate
+ratios formula requires a joint analysis of the height and displacement limits.
 
 \section{Discussion and limitations}
 
@@ -252,10 +253,11 @@ of small conductor were used; the reference set of $\zeta$-zeros is shared betwe
 be optimistic because of heavy tails; and the differential statistic compares two heavy-tailed sums, whose typical
 behaviour at the same density of zeros we assume to be comparable.
 
-The recipe of Section~\ref{sec:ratios} predicts that the only term of order $T$ is the main term. Testing this against
-a possible term of size $T/\log T$ requires many more zeros, because of the heavy tails; a natural test would use fresh
-zeros at larger heights together with a random-matrix model of the fluctuations of the sums. Complex characters and
-larger conductors are natural further tests of the arithmetic factors.
+The next analytic task is a ratios calculation with the displacement dependence retained, followed by a justified
+passage to the discrete moments. Neither an error term nor the absence of $T/\log T$ corrections is established
+here. Numerical comparison should follow a frozen prediction and account for rare close pairs; additional data
+volume alone does not resolve this analytic issue. Complex characters and larger conductors remain possible tests
+of the arithmetic factors.
 
 \section{Literature search}\label{sec:search}
 We searched zbMATH Open, the arXiv, and the works citing Gonek's paper on negative moments (via OpenAlex) for numerical
@@ -270,8 +272,8 @@ All computations were run on a single laptop with two cores; the computation and
 $L$-functions dominated the cost.
 
 \section*{Acknowledgements}
-The computations, analysis and drafting were carried out with substantial assistance from an AI system (Claude,
-Anthropic); the author checked the results and takes full responsibility for the content.
+The original computations, analysis and drafting used substantial assistance from Claude (Anthropic). The present
+analytic revision also used Codex (OpenAI) and remains subject to the author's mathematical review before circulation.
 % TODO(autor): revisar esta declaracao conforme a politica do arXiv e da revista escolhida.
 
 \begin{thebibliography}{99}

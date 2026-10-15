@@ -1,0 +1,22 @@
+[
+  {
+    "arquivo": "archive/fontes_etapa11/razoes_hughes_pc_20261013/2509.07788v1.pdf",
+    "titulo": "Complex moments of the derivative of the Riemann zeta function",
+    "versao": "2509.07788v1",
+    "sha256": "b0f3a903fea02f074d409e6d81223028fcd16744f0d971d154fe944918b3eb3c",
+    "bytes": 382580,
+    "paginas": 17,
+    "url": "https://arxiv.org/pdf/2509.07788v1",
+    "leitura": "pp.1–2 e contexto pp.3–5; p.1 visualmente conferida. Momentos complexos não são momentos absolutos inversos."
+  },
+  {
+    "arquivo": "archive/fontes_etapa11/razoes_hughes_pc_20261013/2509.07792v1.pdf",
+    "titulo": "Integer moments of the derivatives of the Riemann zeta function",
+    "versao": "2509.07792v1",
+    "sha256": "bc5fd175f02557dfbdba53343afca95ba22e5b48cb1514e2eaf863c9e756ba1a",
+    "bytes": 259900,
+    "paginas": 29,
+    "url": "https://arxiv.org/pdf/2509.07792v1",
+    "leitura": "pp.1–3 e §7 pp.18–21; pp.3/18 conferidas visualmente. Inteiros não negativos; erros de contorno para produtos não transferidos a inversos."
+  }
+]

@@ -1,0 +1,1 @@
+Cópias arXiv v1 baixadas em13/10/2026; horário de download não registrado. Leitura dirigida, escopo emfontes.json e notasB39/B40. PDFs imutáveis e hashes no manifesto geral. Não substituí-los por downloads futuros sem comparação deSHA-256.

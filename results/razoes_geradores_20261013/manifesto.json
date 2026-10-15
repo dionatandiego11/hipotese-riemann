@@ -1,0 +1,27 @@
+{
+  "data": "2026-10-13",
+  "status": "álgebra diagonal fechada; estimativa da média completa pendente",
+  "zero_data": false,
+  "execution": {
+    "exit_code": 0,
+    "wall_seconds": 38.881173280999064,
+    "cpu_seconds": 35.637258994,
+    "declaration_sha256": "d9eb72f05b66a5fa87fc65f257792251c49f9facd21d45cefa03909aefb3d2f6",
+    "real_zeros_used": false,
+    "classification": "B; geradores diagonais, não médias completas demonstradas"
+  },
+  "files": {
+    "results/razoes_geradores_20261013/NOTA.md": "1b2e5b5e48bc8121e5600b87780a7a014d772c4425bb2dc4070a23dba4b63b95",
+    "results/razoes_geradores_20261013/resultado.json": "f9373fba967809c104eacc402685b6fb032d2d308af6c1d84a5fe389d597feb0",
+    "results/razoes_geradores_20261013/DECLARACAO.sha256": "b75f7a85da61fac43e76eb0d4852cfe29481188331e82eec21ef56dff14d435b",
+    "results/razoes_geradores_20261013/DECLARACAO.md": "d9eb72f05b66a5fa87fc65f257792251c49f9facd21d45cefa03909aefb3d2f6",
+    "results/razoes_geradores_20261013/VERIFICACOES.md": "7f7ca20ab0959c1c06acee31877c0b8a528751be895b027d19844875731c4094",
+    "results/razoes_geradores_20261013/verificar.py": "1e7d332dc4c743014f6dac74278e782a74e1ea7e4ec0b17dfb5ea596a55870e3",
+    "results/razoes_geradores_20261013/code/negative_moments_ratio_generators.py": "4067c65c98d4ff1f2ca442efe47dadf0c01eaf0c2cac00f7109d48a6c1a3649f",
+    "results/razoes_geradores_20261013/code/test_negative_moments_ratio_generators.py": "4595e3ca57f0db959fea526940c3e75ade8c9f7163f46c181852372cc7e950d5",
+    "src/riemann_spectra/negative_moments_ratio_generators.py": "4067c65c98d4ff1f2ca442efe47dadf0c01eaf0c2cac00f7109d48a6c1a3649f",
+    "tests/test_negative_moments_ratio_generators.py": "4595e3ca57f0db959fea526940c3e75ade8c9f7163f46c181852372cc7e950d5",
+    "src/riemann_spectra/negative_moments_ratios.py": "327ac6a31fabc35fbc2aaf2fd68740782c10457b80d10b339d4a5b1a2361488c",
+    "src/riemann_spectra/negative_moments_discrete_ratios.py": "6b59661d282cde7f3bb1773c84857278091c52bfbffe154add0242be78d57c29"
+  }
+}

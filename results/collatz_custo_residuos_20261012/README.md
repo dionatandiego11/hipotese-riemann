@@ -1,0 +1,1 @@
+Execução limitada de custo/resíduos de Collatz. Declaração e hashes preservados. Resultados exatos em resultados.json; prova e limites em hipoteses/COLLATZ_CUSTO_RESIDUOS_20261012.md. Sem teste da conjectura de Collatz ou RH.

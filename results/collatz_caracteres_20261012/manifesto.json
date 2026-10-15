@@ -1,0 +1,13 @@
+{
+  "files": {
+    "results/collatz_caracteres_20261012/resultados.json": "cc94c704038395233d5ecddc52b1e9d7be5a5ce0dbebbabc52c244138ff63f3c",
+    "results/collatz_caracteres_20261012/DECLARACAO.sha256": "95abcba8d044fde5101e922f26a0b3927c6a23c8fb328e06285595054c2834b2",
+    "results/collatz_caracteres_20261012/DECLARACAO.md": "f05dd9b405a12c94608d2e170aebf74ef431f518dae68228193571dfebe2aec9",
+    "results/collatz_caracteres_20261012/TESTES.md": "f00901529858db61b8dc8a086dcc5a0ad92bb162ab42da328f4d7218a1333d79",
+    "results/collatz_caracteres_20261012/verificar.py": "cee432e2e7014103003b62014069685ff671202ddd3cade6371de816f0be435d",
+    "results/collatz_caracteres_20261012/code/test_residue_characters.py": "a7a458b5c7e8610ec8ebd305d83b52a67128da19e07a9ccffe5b65cc8cb36f22",
+    "results/collatz_caracteres_20261012/code/residue_characters.py": "1903ebeb69dd67f75978efc9815e869ebb74800061d65de05b7201315ea20948"
+  },
+  "cpu_limit_seconds": 60,
+  "zeros_read": false
+}

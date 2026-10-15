@@ -1,0 +1,48 @@
+{
+  "new_sources": [
+    {
+      "arquivo": "collatz_custo_conjunto_20261012/tao_preimages_20200125.html",
+      "obra": "Terence Tao, Equidistribution of Syracuse random variables and density of Collatz preimages",
+      "versao": "Texto do autor 25/01/2020; HTML consultado 12/10/2026",
+      "url_consultada": "https://terrytao.wordpress.com/2020/01/25/equidistribution-of-syracuse-random-variables-and-density-of-collatz-preimages/",
+      "baixado_em": "2026-10-12; hor\u00e1rio exato do download n\u00e3o registrado",
+      "paginas_pdf": "HTML",
+      "correspondencia_paginas": "Sem pagina\u00e7\u00e3o; texto principal lido de forma dirigida",
+      "uso_na_matriz": "Collatz custo conjunto; B35-B36; sem transporte autom\u00e1tico de resultados",
+      "sha256": "095d6c3e28eff9c3e2376af6105e288b8019abf342cfc2cb99cdca7890b57387",
+      "bytes": 757189
+    },
+    {
+      "arquivo": "collatz_custo_conjunto_20261012/si_microcanonical.pdf",
+      "obra": "Yuan Si, A Microcanonical Phase Transition for the Collatz Affine Random Model",
+      "versao": "GitHub commit 119199e7165505f9535952e272056af912ce59fb",
+      "url_consultada": "https://raw.githubusercontent.com/SamSi0322/collatz-affine-model/119199e7165505f9535952e272056af912ce59fb/main.pdf",
+      "baixado_em": "2026-10-12; hor\u00e1rio exato do download n\u00e3o registrado",
+      "paginas_pdf": "23",
+      "correspondencia_paginas": "PDF sem capa separada; p\u00e1gina impressa = PDF",
+      "uso_na_matriz": "Collatz custo conjunto; B35-B36; sem transporte autom\u00e1tico de resultados",
+      "sha256": "0dfad7f22df91c14c36182d7557aee537a462ef0a2a548422c366d21e2bd06c8",
+      "bytes": 527764
+    },
+    {
+      "arquivo": "collatz_custo_conjunto_20261012/si_microcanonical.tex",
+      "obra": "Yuan Si, A Microcanonical Phase Transition for the Collatz Affine Random Model (TeX)",
+      "versao": "GitHub commit 119199e7165505f9535952e272056af912ce59fb",
+      "url_consultada": "https://raw.githubusercontent.com/SamSi0322/collatz-affine-model/119199e7165505f9535952e272056af912ce59fb/main.tex",
+      "baixado_em": "2026-10-12; hor\u00e1rio exato do download n\u00e3o registrado",
+      "paginas_pdf": "TeX",
+      "correspondencia_paginas": "Fonte armazenada; n\u00e3o compilada",
+      "uso_na_matriz": "Collatz custo conjunto; B35-B36; sem transporte autom\u00e1tico de resultados",
+      "sha256": "c1ff1f11f442fed1b2f7a37be61fe0e3c0916719549018557446ca01e81e0811",
+      "bytes": 98037
+    }
+  ],
+  "si_commit": "119199e7165505f9535952e272056af912ce59fb",
+  "accepted_external_result": {
+    "source": "archive/fontes_etapa11/collatz_stationnaire_20261012/tao_1909.03562v5.pdf",
+    "sha256": "99fa919e0e43f0c161fbdc8d9011069c92b57d2a2a09444ae2ca77ef826191dd",
+    "statement": "Proposi\u00e7\u00e3o 7.3, eq.(7.10), p.35",
+    "visual_check": "p.35; prova profunda n\u00e3o reconstru\u00edda"
+  },
+  "si_results_used_as_premises": false
+}

@@ -1,0 +1,335 @@
+{
+  "status": "validado na majorante finita; diagn\u00f3stico parcial",
+  "declaration_sha256": "de6b8e1a6e81645bdd30ca931964c4c8af7bc89d3631d7399f111bf960bb1b5e",
+  "coefficient_bound_checks": 28,
+  "rows": [
+    {
+      "level": 16,
+      "cost": 12,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "2079629/56258848",
+      "partial_half_l1_display": 0.03696536765203582,
+      "conditional_mass_in_box_exact": "13628797/14064712",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 16,
+      "cost": 12,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "47411081/900141568",
+      "partial_half_l1_display": 0.052670693905783494,
+      "conditional_mass_in_box_exact": "6598311/7032356",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 16,
+      "cost": 12,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "49751069/758013952",
+      "partial_half_l1_display": 0.06563344760176656,
+      "conditional_mass_in_box_exact": "6384093/7032356",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 16,
+      "cost": 16,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "622751/21815776",
+      "partial_half_l1_display": 0.028545901828108247,
+      "conditional_mass_in_box_exact": "638199/681743",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 16,
+      "cost": 16,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "4853239731/112743930368",
+      "partial_half_l1_display": 0.0430465721317224,
+      "conditional_mass_in_box_exact": "192509480/220202989",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 16,
+      "cost": 16,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "97542267251/1803902885888",
+      "partial_half_l1_display": 0.05407290382097441,
+      "conditional_mass_in_box_exact": "179312858/220202989",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 16,
+      "cost": 20,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "4554526189/68819513760",
+      "partial_half_l1_display": 0.06618073770302094,
+      "conditional_mass_in_box_exact": "1930406816/2150609805",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 16,
+      "cost": 20,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "102970222067/1101112220160",
+      "partial_half_l1_display": 0.0935147391716692,
+      "conditional_mass_in_box_exact": "1724268539/2150609805",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 16,
+      "cost": 20,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "74060293927/652510945280",
+      "partial_half_l1_display": 0.11350046227227632,
+      "conditional_mass_in_box_exact": "56731817/79652215",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 32,
+      "cost": 27,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "117671021607413/5129063321466208",
+      "partial_half_l1_display": 0.02294200992117509,
+      "conditional_mass_in_box_exact": "4946080594691/5170426735349",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 32,
+      "cost": 27,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "2611391990500091/82065013143459328",
+      "partial_half_l1_display": 0.03182101471104464,
+      "conditional_mass_in_box_exact": "586311131266767/641132915183276",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 32,
+      "cost": 27,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "50335803603518565/1313040210295349248",
+      "partial_half_l1_display": 0.03833531007568783,
+      "conditional_mass_in_box_exact": "560109966433041/641132915183276",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 32,
+      "cost": 32,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "296321976010718307/21563694174419798624",
+      "partial_half_l1_display": 0.013741707409402696,
+      "conditional_mass_in_box_exact": "631154019272074631/673865442950618707",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 32,
+      "cost": 32,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "6999011923231207437/345019106790716777984",
+      "partial_half_l1_display": 0.02028586760986747,
+      "conditional_mass_in_box_exact": "590458608376554834/673865442950618707",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 32,
+      "cost": 32,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "138362642599124066921/5520305708651468447744",
+      "partial_half_l1_display": 0.025064308011471356,
+      "conditional_mass_in_box_exact": "551713380899574995/673865442950618707",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 32,
+      "cost": 37,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "149704459951436789/3788845193274758608",
+      "partial_half_l1_display": 0.039511896716488665,
+      "conditional_mass_in_box_exact": "433262417164637403/473605649159344826",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 32,
+      "cost": 37,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "6721856851817482451/121243046184792275456",
+      "partial_half_l1_display": 0.055441174263902784,
+      "conditional_mass_in_box_exact": "197823707786360974/236802824579672413",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 32,
+      "cost": 37,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "128838173202916952813/1939888738956676407296",
+      "partial_half_l1_display": 0.0664152384699184,
+      "conditional_mass_in_box_exact": "180310597987691125/236802824579672413",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 64,
+      "cost": 56,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "4003371957695242137664343418619405/195672419758899405290095377831932256",
+      "partial_half_l1_display": 0.02045956176464754,
+      "conditional_mass_in_box_exact": "3236174638763276191969834292472917/3397090620814225786286378087359935",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 64,
+      "cost": 56,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "49106773629030501826059814669271359/1739310397856883602578625580728286720",
+      "partial_half_l1_display": 0.028233473271670268,
+      "conditional_mass_in_box_exact": "3081710675338603824184968288486143/3397090620814225786286378087359935",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 64,
+      "cost": 56,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "311574152741883443219710415229294427/9276322121903379213752669763884195840",
+      "partial_half_l1_display": 0.03358811268597393,
+      "conditional_mass_in_box_exact": "977828051373428241414542531736871/1132363540271408595428792695786645",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 64,
+      "cost": 64,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "1904910893451323249573802815676281163/282366495657584749853430205664915927392",
+      "partial_half_l1_display": 0.0067462355582063715,
+      "conditional_mass_in_box_exact": "8268224684435870742809625113665809874/8823952989299523432919693927028622731",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 64,
+      "cost": 64,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "44559263515767326677430830272047472597/4517863930521355997654883290638654838272",
+      "partial_half_l1_display": 0.009862905169573189,
+      "conditional_mass_in_box_exact": "7743070195159546084776133703089236432/8823952989299523432919693927028622731",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 64,
+      "cost": 64,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "882033760290891525312850681228305872273/72285822888341695962478132650218477412352",
+      "partial_half_l1_display": 0.012202029734839562,
+      "conditional_mass_in_box_exact": "7247041277632090912470370801144919243/8823952989299523432919693927028622731",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 64,
+      "cost": 72,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "116160592046992394495848653993676368369/4148687327249055737174635410911030010400",
+      "partial_half_l1_display": 0.02799936049266385,
+      "conditional_mass_in_box_exact": "119319904506803660068746759478278422576/129646478976532991786707356590969687825",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 64,
+      "cost": 72,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "7748938815516877705001976374397976956013/199136991707954675384382499723729440499200",
+      "partial_half_l1_display": 0.03891260357533733,
+      "conditional_mass_in_box_exact": "263348782686838292728470728462814902131/311151549543679180288097655818327250780",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 64,
+      "cost": 72,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "147349609956046901960116932398368086690979/3186191867327274806150119995579671047987200",
+      "partial_half_l1_display": 0.046246307847006896,
+      "conditional_mass_in_box_exact": "302479299367793719300638949000618440068/388939436929598975360122069772909063475",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 128,
+      "cost": 117,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "15278315232013291996258474735339608839418926126573/1052465051476137425447961839364490054098743453722976",
+      "partial_half_l1_display": 0.014516696027658737,
+      "conditional_mass_in_box_exact": "31176976834266499511146043319412773603817455859590/32889532858629294545248807480140314190585732928843",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 128,
+      "cost": 117,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "3748677758246813231237422867404627475696236004273539489/187709246860872062103494889974335530128619092458400215552",
+      "partial_half_l1_display": 0.019970661120521625,
+      "conditional_mass_in_box_exact": "329362541869575269427205935614487993814334801411794809/366619622775140746295888456981124082282459164957812921",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 128,
+      "cost": 117,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "71007386124301679563094275384329253327204818159654257911/3003347949773952993655918239589368482057905479334403448832",
+      "partial_half_l1_display": 0.023642743801844886,
+      "conditional_mass_in_box_exact": "624153482818940231886663112506205118105783708547466291/733239245550281492591776913962248164564918329915625842",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 128,
+      "cost": 128,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "72979412626356345629481715798996709634927787808252058965/21830798829171248385814669724044207730563815334906997358752",
+      "partial_half_l1_display": 0.0033429565815446993,
+      "conditional_mass_in_box_exact": "639404898650862424883543192800891931874327278538191543551/682212463411601512056708428876381491580119229215843667461",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 128,
+      "cost": 128,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "22089891904193998809207961414845944581775448279115319290591/4540806156467619664249451302601195207957273589660655450620416",
+      "partial_half_l1_display": 0.004864751135154853,
+      "conditional_mass_in_box_exact": "7788489054044512293317022618195480028682379488031066249023/8868762024350819656737209575392959390541549979805967676993",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 128,
+      "cost": 128,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "73076867393850076460542345389175728090033782726821665005008101/12133034050081479742874533880550393595661835031573271364057751552",
+      "partial_half_l1_display": 0.006022967304980021,
+      "conditional_mass_in_box_exact": "1218371999711947624297774500149143397633983639212763949595311/1481083258066586882675113999090624218220438846627596602057831",
+      "reference_mass_in_box_exact": "3375/4096"
+    },
+    {
+      "level": 128,
+      "cost": 139,
+      "prefix_length": 1,
+      "partial_half_l1_exact": "32694759706234315312851590008760153669706139287300138213/1774375449710183293505772492303811623808174793933087887616",
+      "partial_half_l1_display": 0.01842606631622101,
+      "conditional_mass_in_box_exact": "25675567609543590757586156840281594417204960190360351275/27724616401721613961027695192247056622002731155204498244",
+      "reference_mass_in_box_exact": "15/16"
+    },
+    {
+      "level": 128,
+      "cost": 139,
+      "prefix_length": 2,
+      "partial_half_l1_exact": "2934566706922946671218624732298366358185719409246938838042799/114975980390320457052587045956302385599522110297276228941741568",
+      "partial_half_l1_display": 0.02552330231897723,
+      "conditional_mass_in_box_exact": "192527374921953335053381947812929795384082350893907220214415/224562461699844642680834074133403096874066621674367634651839",
+      "reference_mass_in_box_exact": "225/256"
+    },
+    {
+      "level": 128,
+      "cost": 139,
+      "prefix_length": 3,
+      "partial_half_l1_exact": "7064814284672918691563770490860243317553636989613529751746486161/233631192153131168730856877383206447538228928124065297209618866176",
+      "partial_half_l1_display": 0.030239174057042687,
+      "conditional_mass_in_box_exact": "2104908412239995826848125054522890332483717200155404564891349/2652970477756304150741016503715552865395949856059971125654284",
+      "reference_mass_in_box_exact": "3375/4096"
+    }
+  ],
+  "cpu_seconds": 0.044454588,
+  "wall_seconds": 0.04457925700012311,
+  "peak_rss_kib": 228304,
+  "limits": "Tabela de prefixos n\u00e3o \u00e9 TV completa, n\u00e3o prova limite nem fornece constantes assint\u00f3ticas."
+}

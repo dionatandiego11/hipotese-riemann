@@ -1,0 +1,1 @@
+Fontes de custo conjunto: texto de Tao datado 25/01/2020; preprint e TeX de Yuan Si em commit fixado 119199e7165505f9535952e272056af912ce59fb. PDF/TeX obtidos como documentos, não executados. Hashes no manifesto geral. Leitura dirigida e limites nas notas B35/B36. Horários exatos de download não registrados.

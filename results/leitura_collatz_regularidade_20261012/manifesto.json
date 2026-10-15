@@ -1,0 +1,84 @@
+{
+  "data": "2026-10-12",
+  "tipo": "leitura dirigida e derivacoes locais; nao experimento",
+  "fontes": [
+    {
+      "arquivo": "collatz_regularidade_20261012/tavares_2026_arxiv_2608.27617v1.pdf",
+      "obra": "Renato Augusto Tavares, Wirsching's Positive-Predecessor-Density Program: Proofs of Conjectures 1 and 3",
+      "versao": "arXiv:2608.27617v1; cabecalho 27/08/2026; data impressa 31/08/2026",
+      "url_associada": "https://arxiv.org/abs/2608.27617",
+      "origem": "usuario; arquivo fornecido na raiz; download original nao registrado",
+      "caminho_anterior": "2608.27617v1.pdf",
+      "data_organizacao": "2026-10-12",
+      "horario_registro_utc": "2026-10-12T11:13:38.256751+00:00",
+      "paginas_pdf": 36,
+      "sha256": "dc2962f0916e5cc1ebc1b3c8c0b777026572e93946711846b49f6f8b54c5a694",
+      "bytes": 543477
+    },
+    {
+      "arquivo": "collatz_regularidade_20261012/hateley_2025_preprints202511.1440v1.pdf",
+      "obra": "James C. Hateley, The Collatz Conjecture and the Spectral Calculus for Arithmetic Dynamics",
+      "versao": "Preprints.org v1, 19/11/2025, DOI 10.20944/preprints202511.1440.v1",
+      "url_associada": "https://www.preprints.org/manuscript/202511.1440/v1",
+      "origem": "usuario; arquivo fornecido na raiz; download original nao registrado",
+      "caminho_anterior": "preprints202511.1440.v1.pdf",
+      "data_organizacao": "2026-10-12",
+      "horario_registro_utc": "2026-10-12T11:13:38.272079+00:00",
+      "paginas_pdf": 73,
+      "sha256": "c15790c3f8557c1ad38c2d8b77ab9d85f7fd72c1f102ad8e7a6db113daf9ad37",
+      "bytes": 1388022
+    },
+    {
+      "arquivo": "collatz_regularidade_20261012/wirsching_positive_predecessor_prelim_bielefeld.pdf",
+      "obra": "G. J. Wirsching, On positive predecessor density in 3n+1 dynamics",
+      "versao": "preliminary version; data impressa nao indicada; NAO e o PDF publicado DCDS 2003",
+      "url_associada": "https://www.math.uni-bielefeld.de/baake/algdyn/posden.pdf",
+      "origem": "download desta sessao; fonte hospedada em universidade",
+      "caminho_anterior": "/tmp/wirsching_posden_prelim.pdf",
+      "data_organizacao": "2026-10-12",
+      "horario_registro_utc": "2026-10-12T11:13:38.275567+00:00",
+      "paginas_pdf": 18,
+      "sha256": "c1fef3ffaa08fdea949ba927664f3b5fc2c0b146c515cceed465a395b2234bc5",
+      "bytes": 189257
+    },
+    {
+      "arquivo": "collatz_regularidade_20261012/dlmf_5_2.html",
+      "obra": "DLMF 5.2, Gamma function definitions and nonvanishing",
+      "versao": "DLMF 1.2.8; release 2026-09-15, lido no rodape",
+      "url_associada": "https://dlmf.nist.gov/5.2",
+      "origem": "download desta sessao",
+      "data_organizacao": "2026-10-12",
+      "paginas_pdf": "HTML",
+      "sha256": "e4e4ab9ecfdb32d72cb8371dd964a01f6efa230ea6ca0dd793fe133108ace385",
+      "bytes": 95802
+    },
+    {
+      "arquivo": "collatz_regularidade_20261012/dlmf_25_5.html",
+      "obra": "DLMF 25.5, integral representations of zeta",
+      "versao": "DLMF 1.2.8; release 2026-09-15, lido no rodape",
+      "url_associada": "https://dlmf.nist.gov/25.5",
+      "origem": "download desta sessao",
+      "data_organizacao": "2026-10-12",
+      "paginas_pdf": "HTML",
+      "sha256": "c67cbb03bbb8277d3ad84b260c4ca4119706fa7f90918c457483e10961f9e3a4",
+      "bytes": 226425
+    }
+  ],
+  "entregas_anteriores_reconferidas": {
+    "collatz_filtros_20261011": "24c6c4fc114fb3a0ae8932b5f4eddb6f5a7ef72ff0c259d79b45fc9c5db36b3a",
+    "collatz_memoria_20261012": "9b1e4e94b950f849d71a9ea0db53d5291b69e578b90926e2db81575be668b828"
+  },
+  "notas": {
+    "hipoteses/leituras/B31_WIRSCHING_PREDECESSORES_2003.md": "0fbf54bc670771f973b1550313607ea4bb4aa4a9407efd9db0193bfdbaca411f",
+    "hipoteses/leituras/B32_TAVARES_WIRSCHING_2026.md": "3f937f773d93f98c80e2ae8c1ad77d5293a9de052c3517296d3cbc9461cbc0aa",
+    "hipoteses/leituras/B33_HATELEY_SPECTRAL_COLLATZ_V1.md": "3f9926aab237b890a20134dbbdf4c0ca89425b904867cbac2d799d591f1b89c7",
+    "hipoteses/COLLATZ_REVISAO_REGULARIDADE_20261012.md": "39ad0652cc45b91c1cb9782ddf5bbe1397d19b52ad844b83596ca766ca625988"
+  },
+  "artefatos_registro": {
+    "results/leitura_collatz_regularidade_20261012/fontes.json": "6de308047647579b3758690ce86e28ce854d8d8f41ae93b0cf9f22d910c8f8bd",
+    "results/leitura_collatz_regularidade_20261012/acesso.json": "72f42e020636aeb1d6e5624815790295ea963e680d4dec2b8db645a6bd535100",
+    "results/leitura_collatz_regularidade_20261012/README.md": "df57b79fe1a5fd13cf2bcec4c4f287d1d0a5cc612bcced70e55ab201e935bae1",
+    "archive/fontes_etapa11/collatz_regularidade_20261012/README.md": "32992fa4d86501ea494113b42462a7e65c9527c2e4daf785265e3243e18c34f2"
+  },
+  "verificacao_final": "hashes, tamanhos, CSV, movimento dos dois PDFs e entregas anteriores conferidos"
+}

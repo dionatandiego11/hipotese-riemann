@@ -749,3 +749,140 @@ Registro anterior (14/09/2026):
 - `nota_momentos_negativos/nota.tex` v2 (6 pp.): nova §6, "The ratios conjecture and the error term" (a derivação da Etapa B); §2.2 reescrita (os desvios são flutuação de cauda pesada, com janelas de 3.000 zeros de ζ entre 0,907 e 1,088; a justificativa antiga de "correções de altura finita comuns" foi retirada); razões absolutas descritivas nos resultados (χ: 0,937/0,937/0,970/0,966 e 0,921/0,871/1,023/0,949; ζ com o mesmo número de zeros: 0,920/0,932 e 0,949/0,959); resumo, introdução e discussão atualizados.
 - Corrigido antes de compilar: a frase "as alternativas dariam razões absolutas de 1,2 a 3" valia só para a alternativa sem fator (H7 dá 1,04 em χ₅).
 - O Zenodo tem a v1. A v2 exige nova versão do depósito (ação do usuário).
+
+### 08/10/2026 — revisão dirigida de openai/math, família 003
+
+- Commit fixado `adc7f1241b42e322a6451854ab7e4b4c146bf78a`; 1.953 arquivos (1.930 módulos OAI), 23,15 MB, hashes reconferidos. Coleta parcial no teto declarado de 2.000 módulos; 89 imports OAI ainda ausentes após deduplicação.
+- Conferência local `validado`: identidade polinomial (20.9) por frações exatas e argumento de positividade do Lema 20.2. Isso não verifica as estimativas analíticas da prova global.
+- Verificação Lean `bloqueado` na pré-verificação (ferramentas ausentes, fontes parciais); kernel/Comparator não executados. Alvo Endpoint preparado; orçamento não ampliado. Auditoria global `inconclusivo`.
+- Revisão em `results/auditoria_openai_math_20261007/REVISAO_20261008.md`; relatório anterior e seu hash preservados, com erros documentados de contagem, páginas e alcance. Manifesto e B28–B30 corrigidos.
+- Consequência derivada sob hipótese 7/8: a escala da majorante absoluta gaussiana muda de exp(1/(8ε²)) para exp(9/(128ε²)), ainda sem uniformidade em ε→0. Não substitui RH/H-tab no certificado nem melhora Z1/MN automaticamente. Nenhum zero consultado, simulação nova, publicação ou commit.
+
+### 11/10/2026 — QRH: auditoria da aplicação da densidade de zeros
+
+- Aplicação à equação (16): `validado` no escopo documental/analítico, aceitando o Lema 3.3 de Khale et al., arXiv:2008.09677v3, p. 18. Fonte obtida e arquivada com hash; conferida visualmente.
+- Conferidos: tipo angular zero, grau 2, condutor O(U), multiplicidade de no máximo 12 linhas físicas, formação dos rótulos, piso 0,51, limite a=1, fatores deletados e absorção uniforme dos logaritmos. Derivada a cota U^{min(1,5(1-a))+δ}(3+T)^{2+δ}. Não foi encontrada incompatibilidade nessa aplicação.
+- Não reconstruída a prova do lema externo, que remete a adaptações de trabalhos anteriores. Auditoria global do QRH continua `inconclusivo`; nenhuma conclusão sobre RH. Próximo ponto: Lema 3/Apêndice B.
+- Nota: `hipoteses/leituras/QRH_AUDITORIA_DENSIDADE_20261011.md`; fontes: `results/auditoria_qrh_densidade_20261011/fontes.json`. Sem dados de zeros, simulações, mudanças em protocolos, publicação ou commit.
+
+### 12/10/2026 — Collatz: fechamento dos filtros sob ramos inversos
+
+- Primeiro alvo matemático `validado` por derivação elementar: cada palavra inversa produz uma congruência ou um filtro vazio; módulo comum divisor de 2^{max(v2(q)-m,0)}·3^m·q_odd. A contagem completa não podada L+^m 1 tem período mínimo exatamente 3^m: nenhum módulo fixo representa toda a família exatamente.
+- Para R=L+/2 (distinto do operador Haar), norma de Fourier absolutamente somável ≤1; norma sup ≤(3/4)^{floor(m/2)}. Essa normalização não resolve a heterogeneidade na escala natural (4/3)^m. Filtros de módulo ímpar não constante não se estendem continuamente a Z2.
+- Cada filtro admite decomposição finita em séries de Dirichlet L no semiplano Re s>1; isso não identifica zeros nem constitui ligação estabelecida Collatz–RH. Antecedente do crescimento 3-ádico: Applegate–Lagarias 1995, p. 195, com árvore podada distinta da contagem desta entrega. Sem reivindicação de novidade.
+- Declaração anterior à implementação (11/10): `results/collatz_filtros_20261011/DECLARACAO.md`, f6311b85…. Código novo isolado `collatz/congruence_filters.py`; 7 testes passaram. Piloto exato: 235.872 comparações por palavra, 26.208 por iteração direta, 7 períodos/médias e 1.344 controles diádicos. CPU 5,52 s; parede 5,73 s; teto RLIMIT_CPU=60 s.
+- Nota: `hipoteses/COLLATZ_FILTROS_FECHAMENTO_20261012.md`; comandos/resultados/manifesto em `results/collatz_filtros_20261011/`. CL1 não executada, nenhuma enumeração extensa ou dados de zeros. Próximo alvo possível: controle uniforme das escalas intermediárias de Fourier, com normalização declarada e comparação bibliográfica antes de campanha.
+
+### 12/10/2026 — Collatz: memória finita de médias versus densidades
+
+- A=(3/4)L+ preserva a integral em Haar de Z3; F_m=A^m1 tem média 1. Derivado o dual Qf=(3/4)f(x/2)+(1/4)f((3x+1)/2), sem hipótese de paridades aleatórias de órbitas positivas.
+- Projeções de μ_m=F_mμ módulo 3^K fecham exatamente em 3^K estados. Contração Hölder de fator 3/4+3^{−α}/4; convergência de massas em variação total majorada pela cauda Pr[Binomial(m,1/4)<K]. Erro de descartar detalhes finos em médias Hölder ≤3^{−αK}[f]_α, uniforme em m. Essas derivações ficam `validado`.
+- Controle forte sup_m||F_m−E_KF_m||∞→0 continua `inconclusivo`: foi demonstrada sua equivalência à convergência uniforme de F_m a uma densidade contínua. A cauda em norma de Fourier não foi resolvida pelo controle fraco.
+- Relidos Applegate–Lagarias §6, pp. 204–208; a relação das normalizações recupera os valores conhecidos 6/7 e 8/7 da árvore podada. A conjectura de continuidade está formulada em 1995; estado posterior não estabelecido aqui. Sem reivindicação de novidade.
+- Obstáculo à ponte direta: n^{−s}, Re s>0, não admite extensão contínua a Z3, portanto a cota fraca não controla diretamente as séries de Dirichlet. Falta também estimar a altura real.
+- Declaração anterior: 58f14674…. 6 testes rápidos passaram; piloto exato validou 280 componentes versus expansão de filtros, 4 estacionárias, 52 cotas de variação total e 42 contrações. CPU 0,297 s; parede 0,298 s; teto RLIMIT_CPU=60 s. Sem expansão de níveis.
+- Nota: `hipoteses/COLLATZ_MEMORIA_FINITA_20261012.md`; código novo `collatz/coarse_memory.py`; resultados em `results/collatz_memoria_20261012/`. Todos os hashes da entrega anterior reconferidos, sem alteração. CL1, dados de zeros e campanhas extensas não executados. Próximo trabalho: revisão posterior de regularidade 3-ádica antes de escolher o alvo forte ou uma estimativa conjunta de resíduos e altura.
+
+### 12/10/2026 — leituras de Wirsching e dois PDFs fornecidos
+
+- Dois arquivos fornecidos movidos para `archive/fontes_etapa11/collatz_regularidade_20261012/` após conferência de SHA-256, sem alteração. Wirsching preliminar (18 pp.) obtido em Bielefeld; editorial retornou vazio/404 e não foi obtido. Cinco fontes adicionadas ao manifesto (3 PDFs e 2 HTMLs DLMF), preservando bytes anteriores.
+- B31: lidas as sete seções de Wirsching preliminar. A densidade real φ e o operador W3 são distintos de nossa ν e Q. A Conjectura 2 exige informação por resíduo na resolução crescente que a estabilidade de médias não fornece.
+- B32: leitura dirigida de Tavares v1 (36 pp.), que afirma resolver Conjecturas 1 e 3, preservando (⋆3). As provas globais e certificados não foram auditados integralmente. Derivada localmente a identidade K*(z)=(3/2)^z Γ(z)ζ(1+z)/(3^z−1), −1<Re z<0; os zeros coincidem com os de ζ deslocados. Controle analítico por bases a>1 mostra que o fator ζ é genérico da soma de escalas uniformes, sem prova de RH ou identificação específica com Collatz.
+- B33: leitura dirigida de Hateley v1 (73 pp. com capa). Contraexemplo exato ao Lema 4 (δ2 perde metade da massa); perfil c/n incompatível com o operador ponderado 1/m e com o polo de sua série em s=1. Essas conclusões da v1 não são premissas disponíveis. Versões posteriores não auditadas.
+- Notas B31–B33 e síntese `hipoteses/COLLATZ_REVISAO_REGULARIDADE_20261012.md`. Fonte real, fonte 3-ádica e custo/resíduos explicitamente separados. Próximo alvo sugerido: cota relativa de geradores g_ℓ(k,a) em janela central e resolução crescente, após definir quantificadores e confrontar provas/dependências.
+- Nenhum experimento, script externo, zeros, dados reservados, publicação ou commit. Hashes completos das entregas anteriores de filtros e memória finita reconferidos e intactos.
+
+### 12/10/2026 — Collatz: custo condicionado e resolução residual
+
+- Recorrência conjunta g_ℓ(k,a), lei condicionada w_{ℓ,k} e composição afim: `validado` por derivação. Para ℓ≥16 e 0≤k≤2ℓ, cauda j≥J ≤min(1,5(4/5)^J), sem RH/Collatz.
+- Controle absoluto de um passo não dá controle relativo por resíduo: aparece C_ℓ=2·3^{ℓ−1}. Controle relativo crescente e Conjectura 2 seguem `inconclusivo`; não foi propagado erro de truncamento entre todos os passos.
+- Declaração ed3b3e30… anterior à implementação; 48 identidades, 181 projeções e 60 cotas exatas passaram. 18 testes rápidos passaram na .venv; Python do sistema sem pytest. CPU 0,156 s, parede 0,156 s, ru_maxrss reportado 261.412 KiB; RLIMIT_CPU=60 s. Sem dados de zeros, CL1, campanhas ou commit.
+- Nota: `hipoteses/COLLATZ_CUSTO_RESIDUOS_20261012.md`; código independente `collatz/cost_residues.py`; artefatos `results/collatz_custo_residuos_20261012/`. Próximo alvo: recorrência dos caracteres residuais condicionados ao custo, antes de ampliar resolução.
+
+### 12/10/2026 — Collatz: caracteres condicionados ao custo
+
+- Recorrência exata de caracteres: cada levantamento reduz o condutor em um fator 3, multiplica a frequência por 2^{−j−1} e introduz fase; conserva estados de custo k−j. Identidade `validado`; estimativa de cancelamento `inconclusivo`.
+- Referência Haar nas unidades: coeficiente −1/2 nas duas frequências não triviais de condutor 3, zero nas primitivas de condutor maior. Derivada condição suficiente D_ℓ<3/2 para minorante relativa positiva; não demonstrada na janela central. Custos zero dão contraexemplo a contração estrita irrestrita.
+- Declaração f05dd9b4…; 1.422 identidades ciclotômicas e 120 de Haar passaram exatamente; 21 testes rápidos passaram. CPU 0,095 s, parede 0,096 s, RSS 17.032 KiB; teto 60 s. Sem dados de zeros, enumeração extensa, CL1 ou commit.
+- Nota `hipoteses/COLLATZ_CARACTERES_CONDICIONADOS_20261012.md`; código `collatz/residue_characters.py`; artefatos `results/collatz_caracteres_20261012/`. Próximo alvo: estimativas por condutor na janela central e conferência da referência adequada, antes de ampliar cálculos.
+
+### 12/10/2026 — Collatz: limite central não uniforme
+
+- Para C e K fixos, na janela |k−ℓ|≤C√ℓ, derivada convergência TV dos primeiros K custos para geométricas independentes Pr(J=j)=2^{−j−1}; resíduos convergem a π_K não uniforme. Prova por inclusão-exclusão, majorante somável e razão de coeficientes. Resultado `validado` no escopo da derivação; revisão independente não feita.
+- π_1=(0,1/3,2/3); π_2 nas unidades (1,2,4,5,7,8)=(8,16,11,4,2,22)/63. π é estacionária da mistura 1/2,1/2 dos mapas x/2 e (3x+1)/2, distinta do kernel anterior 3/4,1/4. Não há prova de regularidade ou minorante uniforme da densidade em resolução crescente.
+- Declaração 74f781b3…; verificação geométrica versus sistema estacionário e projeção passaram; 24 testes passaram. Diagnóstico exato de 24 pares, CPU 0,044 s, parede 0,045 s, RSS 16.684 KiB, teto 60 s. Sem dados de zeros, CL1 ou commit.
+- Nota `hipoteses/COLLATZ_LIMITE_CENTRAL_20261012.md`; código `collatz/central_residues.py`; resultados `results/collatz_centro_20261012/`. Próximo alvo: regularidade/minorante de π e comparação bibliográfica, sem inferir K=ℓ do limite com K fixo.
+
+### 12/10/2026 — Collatz: antecedente Tao e regularidade de π
+
+- π identificada exatamente com Syrac de Tao, arXiv:1909.03562v5, Lema 1.12/Remark 1.13. Massas em módulos 3 e 9 já impressas na fonte: reprodução, sem novidade. PDF arquivado com hash, pp.10–11 conferidas visualmente; prova profunda não refeita.
+- Aceitando Proposição 1.14, derivada densidade L1 com aproximação L1 superpolinomial. Derivados positividade quase em toda parte nas unidades e obstáculo à limitação: π(−1+3^KZ3)≥2^{−K}; densidade não limitada e não Lp para p≥log3/log(3/2). Não refuta minorante positiva.
+- Minorante uniforme e passagem à resolução K=ℓ seguem `inconclusivo`. Identidade exata dos geradores como lei Syrac condicionada ao custo total e aos limites individuais; não é consequência automática dos coeficientes não condicionados de Tao. Próximo trabalho: revisão dirigida de estimativas conjuntas/condicionadas antes de nova grade.
+- Declaração a03d082e…; 39 identidades da recorrência da fonte e 52 do ramo fixo passaram; CPU 0,0047 s, parede 0,0052 s, RSS reportado 228.304 KiB, teto 60 s. Sem mínimos experimentais, dados de zeros, CL1 ou commit.
+- Nota `hipoteses/COLLATZ_REGULARIDADE_PI_20261012.md`, B34, artefatos `results/collatz_regularidade_pi_20261012/`.
+
+### 12/10/2026 — Collatz: custo conjunto e dois alcances analíticos
+
+- Fórmula conjunta custo/caractere e extração por coeficiente derivadas. Refinamento uniforme q/B=A(θ)+O(1/ℓ) permite TV(p^K,π_K)→0 para K=o(√ℓ), na janela |k−ℓ|≤C√ℓ. Erro relativo aditivo tende a zero para K≤(1/2−ε)log_3ℓ; em k=ℓ exatamente, K≤(1−ε)log_3ℓ. Constantes não avaliadas e revisão independente não feita.
+- Aceitando Tao Prop.7.3, derivado decaimento superpolinomial dos caracteres primitivos na resolução K=ℓ, com custo e limites individuais impostos. Prova controla numerador com indicador via majorante positiva; pares (1,2)/(2,1) preservados porque c_i≥2. Não é divisão de coeficiente complexo não condicionado.
+- Nem caracteres individuais nem alcance logarítmico dão a minorante por resíduo em K=ℓ: controle agregado segue `inconclusivo`. Estimativa profunda de renovação de Tao não foi refeita. Nenhuma conclusão de RH/Collatz ou novidade.
+- Revisão B35/B36: Tao já formula menor massa de Syracuse; Si trata custo condicionado sem nossos limites e não foi usado como premissa. Fontes arquivadas com hash/commit; manifesto anterior preservado.
+- Declaração de6b8e1a… e adendo anterior aos pares: 28 majorantes de coeficientes, 39 identidades ciclotômicas e 351 conferências de orientações passaram; 36 diagnósticos parciais não são TV completa. CPU 0,0445 s e 0,0066 s; teto60 s/processo. Sem dados de zeros, CL1, produção extensa ou commit.
+- Nota `hipoteses/COLLATZ_CUSTO_CONJUNTO_20261012.md`; artefatos `results/collatz_custo_conjunto_20261012/`. Próximo alvo: estimativa agregada por escala sob condicionamento, com norma e conclusão escolhidas antes de novo cálculo.
+
+### 13/10/2026 — Collatz: mistura L1 condicionada em escalas finais
+
+- Derivado, aceitando Tao Prop.7.3: oscilação O_{m,n}(k)≪_{A,C,ρ}n^{−A}, para |k−n|≤C√n e m≥ρn, log3/(2log2)<ρ<1. Alvo m=ceil(0,9n) fechado como derivação dependente; constantes não avaliadas e revisão independente não feita.
+- Separação por corte R e soma t explicita custo restante, limites do sufixo e medida não normalizada. Injetividade do prefixo e controle de colisões permitem Plancherel sem perda exponencial. A cota profunda do sufixo controla numerador com indicador, evitando segunda divisão por probabilidade.
+- Minorante por resíduo e escalas sublineares permanecem `inconclusivo`; L1 permite classes excepcionais e não resolve RH/Collatz. Próximo passo: auditar os três pontos críticos da derivação, antes de novos alvos ou CPU.
+- Declaração e15f44f4…; 150 decomposições, 714 offsets racionais e 712 offsets modulares passaram. Dois offsets fora do intervalo modular declarado não são falhas. CPU 0,2231 s; parede 0,2439 s; RSS reportado265.244 KiB, teto60 s. Nenhuma oscilação numérica, dados de zeros, CL1 ou commit.
+- Nota `hipoteses/COLLATZ_MISTURA_CONDICIONADA_20261013.md`; artefatos `results/collatz_mistura_condicionada_20261013/`.
+
+### 13/10/2026 — auditoria interna da mistura condicionada
+
+- Conferidos preservação dos pares, corte/injetividade, medidas não normalizadas, filtro de frequências e normalização final. Nenhuma falha estrutural encontrada neste escopo; mesma sessão/autoria, NÃO revisão independente ou prova formal. Dependência de Tao Prop.7.3 mantida.
+- Correção local: para limiar real b≥0, cauda geométrica é 2^{−floor b}≤2^{1−b}. Fator2 não muda taxa; versão anterior preservada com hash. Convenção de logaritmos explicitada. Scripts e declarações anteriores intactos.
+- 126 produtos de Fourier, 28 identidades de Parseval/projeção, 6 massas e 33 cotas de cauda passaram exatamente. CPU0,924 s, parede0,928 s, RSS244.616 KiB reportado, teto60 s.
+- Derivado controle do peso de exceções sob p e sua média q. Contraexemplo geral mostra L1 exponencialmente pequeno com classes de massa zero: não é contraexemplo aos geradores, mas bloqueia inferência de minorante sem estrutura adicional.
+- Nota `hipoteses/COLLATZ_AUDITORIA_MISTURA_20261013.md`; artefatos `results/collatz_auditoria_mistura_20261013/`. Piores classes e minorante seguem `inconclusivo`; próximo alvo é mecanismo de preenchimento por resíduo e custo, antes de enumerar mínimos. Sem zeros, CL1, produção extensa ou commit.
+
+### 13/10/2026 — prioridade: razões e momentos negativos
+
+- Estado `em execução`. Revisão da antiga Etapa B retirou as conclusões de erro O(T^{1/2+ε}) e ausência de termos inferiores: faltava uniformidade no limite dos deslocamentos. Original preservado em results/razoes_momentos_negativos_20261013/antes/. Resultados numéricos anteriores não foram recalculados nem alterados.
+- Derivadas identidades locais de regularização com hipóteses explícitas, resíduos e partes finitas das diagonais, e a contribuição auxiliar de borda quando χ² é principal e L(1/2,χ) não é zero. Partes finitas não são automaticamente termos inferiores discretos.
+- Verificações B: 9 testes passaram (5 novos e 4 existentes); experimento controlado com constantes e modelo sintético de dois zeros, cerca de 4,05 s de CPU. Nenhum zero real, dado reservado ou H-004 foi acessado.
+- Fontes primárias CFZ e Bui–Gonek–Milinovich arquivadas com hashes; leitura dirigida. Rascunho interno v3 revisado; nenhuma publicação, mensagem externa ou commit.
+- Próximo alvo: coeficiente singular do resto da fórmula de razões, termos duais e regime conjunto altura/deslocamento; no momento ponderado, tratar explicitamente a altura 2t do numerador. Só depois derivar termos inferiores e congelar comparação com dados. Não há fórmula completa nem afirmação de novidade.
+- Notas: hipoteses/RAZOES_REGULARIZACAO_20261013.md, hipoteses/PLANO_RAZOES_MOMENTOS_NEGATIVOS.md e hipoteses/ERRATA_ETAPA_B_20261013.md.
+
+### 13/10/2026 — R3: polos deslocados e controle CUE exato
+
+- Estado `em execução` para a previsão de L. Derivação local A separa os polosρ eρ+δ: resíduos escalados tendem aos pesos do momento e seus negativos. Contorno fixo englobando ambos não recupera a soma positiva.
+- CFZ Teorema4.1, pp.8–9, relido e p.9 conferida visualmente. Média CUE exata para todo N≥1 recupera momento discreto1; cálculo independente por densidade de Vandermonde confirma a esperança sem pressupor troca de limites. Série emε é viés de regularização, não expansão emN nem previsão inferior deL.
+- Declaração ae022f47… antes da implementação. Primeira execução1 falha/13 passaram: requisito adicional de monotonicidade estrita falhou no modelo linear exato por arredondamento; adendo prévio à correção, arquivos originais preservados. Execução2:14 testes passaram, CPU4,258s, parede4,677s, teto60s. Controles B, sem certificação intervalar.
+- Nota hipoteses/RAZOES_CONTORNOS_CUE_20261013.md; resultados/manifesto em results/razoes_contornos_cue_20261013/. Nenhum zero real, tabela MN ou dado reservado; sem Monte Carlo, publicação ou commit.
+- Próximo alvo: coeficiente singular da média de L e separação correta dos polos/termos de borda em regime uniforme. Termos inferiores e confronto com dados continuam pendentes.
+
+### 13/10/2026 — R3: primeira parte finita local
+
+- Estado global `em execução`. Derivada expansão de regularização em janela fixa: S+ε[FP/π±2ΣRe(a conj b)]+O(ε²). FP definida por exclusões simétricas; a,b são coeficientes de Laurent deH/F. Constantes não uniformes em separações, altura ou condutor.
+- Resultado negativo local: simetrização remove apenas o termo de assimetria local, não o viés da parte finita. Duas escalas cancelam o termo linear quando presente; o modelo de pares próximos conserva erro relativo da ordem(ε/d)² e pode ultrapassar o alvo. Nenhuma extrapolação foi aplicada aos zeros reais.
+- A parte constante do resto I−(B−A)D foi explicitada em termos deFP e coeficientes locais. É condição de consistência, não uma previsão deS ou termo inferior emT.
+- Declaração9187366b… anterior; 18 testes passaram (4 novos+14 anteriores), CPU7,769s, parede7,568s, teto60s. Controles B, não certificação intervalar. Nenhum zero real, tabelaMN ou dado reservado; sem commit/publicação.
+- Nota hipoteses/RAZOES_PARTE_FINITA_LOCAL_20261013.md; artefatos results/razoes_parte_finita_20261013/. Previsão uniforme por razões e inferiores permanecem pendentes.
+
+### 13/10/2026 — R3: razões discretas e duas constantes principais
+
+- Estado `em execução`. Fontes2025B39/B40 arquivadas comhash, leitura dirigida. Complexos não identificados com absolutos inversos; método de produtos restrito a inteiros não negativos.
+- Identidade local A conta zeros por derivada logarítmica com peso inverso deslocado. A diagonal formal DjPj (D quanto à substituição de médias) recuperaκ7/2π eκ8/2π, sem enviar numeradores ao infinito e preservando a correlação de altura2t deC8 via Liouville. Resto uniforme não controlado; a hipótese necessária foi explicitada, sem apresentada como prova.
+- ControleCUE A: razão discreta normalizada1+(N−1)tanh(ε/2), derivada deCFZ/Vandermonde. Emε=c/N, limite1+c/2. Primeiro coeficiente por matriz fixa tem esperançaN−1; coeficiente da média é(N−1)/2. Falta de uniformidade em pares próximos impede troca da expansão com a média. Consequência de fórmulas conhecidas, sem afirmação de novidade.
+- Declaração prévia;22 testes passaram (4 novos+18 anteriores), CPU11.712s, parede11.322s, teto60s. P7 com cauda analítica de primos, mas aritmética não certificada. Sem zeros reais, dadosMN/H-004, Monte Carlo, publicação ou commit.
+- Nota hipoteses/RAZOES_DISCRETAS_MOMENTOS_NEGATIVOS_20261013.md; artefatos results/razoes_discretas_20261013/. Próximo alvo: média completa do gerador e termos duais/bordas; inferiores continuam pendentes.
+
+### 13/10/2026 — R3: geradores diagonais e condição de transferência
+
+- Estado `em execução`. Álgebra A dos geradores completos da diagonal: G7=Y7A7, G8=D8(a+b)D7(v+b)/D7(u+b). Esta segunda forma mantém a correlação deL(2s) viaLiouville. Média completa deL, termos duais e bordas não foram estimados.
+- Proposição condicional: seε sup|Rj|≤M(T) emcírculos complexos|u−ν|=ηε, a fórmula deCauchy e a contagem ponderada dão erro de momento≤M(T)/(πη). Estimativa hipóteseD, não demonstrada; M(T) não fixada nem ajustada aos dados. M(T)=o(T) seria suficiente para o termo principal, mas não foi estabelecida. Não se presume potência deT ou ausência de inferiores.
+- Declarado por que a relaxação da fonte para shifts pareados não fornece a cota fora do ponto pareado. Sem troca silenciosa de domínio ou derivação de erro√T.
+- Declaração prévia;26 testes passaram (4 novos+22 anteriores), CPU35.637s, parede38.881s, teto60s. Controles B por fases locais e integral deCauchy, sem dados de zeros ou médias deL. Sem commit/publicação.
+- Nota hipoteses/RAZOES_GERADORES_UNIFORMIDADE_20261013.md; artefatos results/razoes_geradores_20261013/. Próximo alvo: resto da família de médias real, primeiroC7/qfixo. R4/R5 pendentes; não aumentar controles algébricos já aprovados sem necessidade nova.

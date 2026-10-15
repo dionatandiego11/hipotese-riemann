@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 38.881173280999064,
+  "cpu_seconds": 35.637258994,
+  "declaration_sha256": "d9eb72f05b66a5fa87fc65f257792251c49f9facd21d45cefa03909aefb3d2f6",
+  "real_zeros_used": false,
+  "classification": "B; geradores diagonais, não médias completas demonstradas"
+}

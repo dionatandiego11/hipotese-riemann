@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 11.321639282000433,
+  "cpu_seconds": 11.711778575,
+  "declaration_sha256": "4a5c38a40cd2e85e97fb9346cf9d349c129a7eefc10902fefdbb9e70fa0d51e6",
+  "real_zeros_used": false,
+  "classification": "B; diagonais formais e controle CUE, não médias demonstradas de L"
+}

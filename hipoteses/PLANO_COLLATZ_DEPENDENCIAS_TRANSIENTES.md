@@ -106,3 +106,15 @@ Para parâmetros selecionados na exploração, confirmação em profundidades/fa
 Um lema novo após confronto bibliográfico, um limite útil para dependências aritméticas, uma previsão transferível para transientes ou uma obstrução demonstrada. Encontrar apenas o que as fontes já contêm é revisão concluída, não descoberta. A frente pode terminar legitimamente sem enumeração extensa.
 
 **Próxima tarefa concreta:** C-D1, começando pelos segundos momentos e dependências em Applegate–Lagarias e Lagarias–Weiss, depois Wirsching e citações posteriores. Entregar a tabela de evidências e uma decisão sobre a viabilidade de C-D2 antes de escrever código.
+
+## Entrega localizada — 12/10/2026
+
+Por solicitação específica do usuário, foi resolvido o primeiro alvo de fechamento dos filtros: [nota matemática](../hipoteses/COLLATZ_FILTROS_FECHAMENTO_20261012.md). Cada palavra gera uma congruência; a informação 3-ádica necessária cresce, com período mínimo 3^m para a contagem não podada. A norma permanece controlada sob normalização explícita. Houve somente controles exatos pequenos sob declaração própria; não se executou CL1 nem o piloto de variâncias C-D4. Essa entrega não encerra a revisão dirigida nem a comparação com modelos de árvores podadas.
+
+## Memória finita de médias — 12/10/2026
+
+A [continuação analítica](../hipoteses/COLLATZ_MEMORIA_FINITA_20261012.md) demonstra fechamento exato das distribuições de raízes módulo 3^K e controle fraco uniforme para observáveis Hölder, na normalização de média um. A questão forte de aproximação uniforme das densidades continua inconclusiva; exige regularidade e convergência, próximas dos antecedentes de Applegate–Lagarias. Os controles pequenos declarados passaram. A decisão seguinte é bibliográfica/analítica, sem ampliar profundidades. CL1 e C-D4 não foram executados.
+
+## Revisão de fontes — 12/10/2026
+
+[Leituras B31–B33 e síntese](../hipoteses/COLLATZ_REVISAO_REGULARIDADE_20261012.md) localizam a passagem ainda necessária: de médias estáveis à cota relativa por resíduo em geradores com custo fixado, na janela central e resolução crescente. Wirsching preliminar foi obtido e lido; Tavares v1 é uma proposta de resolução de dois elos, sem prova de (⋆3), ainda sem auditoria integral aqui. A identidade Mellin que contém ζ foi reconstruída localmente, mas também vale em outras bases; uma ponte específica exige informação aritmética adicional. As conclusões relevantes de Hateley v1 são incompatíveis com suas próprias definições. Não ampliar simulações antes de definir a cota conjunta de custo/resíduos e suas dependências.

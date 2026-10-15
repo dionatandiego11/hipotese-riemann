@@ -1,0 +1,50 @@
+{
+  "data": "2026-10-13",
+  "status": "diagonais formais e controleCUE; média completa deL pendente",
+  "zero_data": false,
+  "execution": {
+    "exit_code": 0,
+    "wall_seconds": 11.321639282000433,
+    "cpu_seconds": 11.711778575,
+    "declaration_sha256": "4a5c38a40cd2e85e97fb9346cf9d349c129a7eefc10902fefdbb9e70fa0d51e6",
+    "real_zeros_used": false,
+    "classification": "B; diagonais formais e controle CUE, não médias demonstradas de L"
+  },
+  "sources": [
+    {
+      "arquivo": "archive/fontes_etapa11/razoes_hughes_pc_20261013/2509.07788v1.pdf",
+      "titulo": "Complex moments of the derivative of the Riemann zeta function",
+      "versao": "2509.07788v1",
+      "sha256": "b0f3a903fea02f074d409e6d81223028fcd16744f0d971d154fe944918b3eb3c",
+      "bytes": 382580,
+      "paginas": 17,
+      "url": "https://arxiv.org/pdf/2509.07788v1",
+      "leitura": "pp.1–2 e contexto pp.3–5; p.1 visualmente conferida. Momentos complexos não são momentos absolutos inversos."
+    },
+    {
+      "arquivo": "archive/fontes_etapa11/razoes_hughes_pc_20261013/2509.07792v1.pdf",
+      "titulo": "Integer moments of the derivatives of the Riemann zeta function",
+      "versao": "2509.07792v1",
+      "sha256": "bc5fd175f02557dfbdba53343afca95ba22e5b48cb1514e2eaf863c9e756ba1a",
+      "bytes": 259900,
+      "paginas": 29,
+      "url": "https://arxiv.org/pdf/2509.07792v1",
+      "leitura": "pp.1–3 e §7 pp.18–21; pp.3/18 conferidas visualmente. Inteiros não negativos; erros de contorno para produtos não transferidos a inversos."
+    }
+  ],
+  "files": {
+    "results/razoes_discretas_20261013/NOTA.md": "a60c54957923f2393280982f4b2c0c869ff12701c1637dce4fb1b19faf915113",
+    "results/razoes_discretas_20261013/resultado.json": "875c7e61c1f05d00d581506bbe87eb3e1e508b1a41a8c613d78bd9c8397812e8",
+    "results/razoes_discretas_20261013/DECLARACAO.sha256": "249f3ce10a666a5fc9517ab41b5b2aa62095007b9fd59c84d53029f37844c17c",
+    "results/razoes_discretas_20261013/fontes.json": "a93c7fa3efbf2056f0c24f3bfff06a8a18772e8372f029abb4308548bb1733c1",
+    "results/razoes_discretas_20261013/DECLARACAO.md": "4a5c38a40cd2e85e97fb9346cf9d349c129a7eefc10902fefdbb9e70fa0d51e6",
+    "results/razoes_discretas_20261013/VERIFICACOES.md": "38425238ddbdd6dcf5275e2856b20bbf118234386e03f84d8fa2e4b74cd6293e",
+    "results/razoes_discretas_20261013/verificar.py": "5a03157d840bc7f2271f1a6ca8080b260fb77c88e7477e4b688580560c2c4be1",
+    "results/razoes_discretas_20261013/code/negative_moments_discrete_ratios.py": "6b59661d282cde7f3bb1773c84857278091c52bfbffe154add0242be78d57c29",
+    "results/razoes_discretas_20261013/code/test_negative_moments_discrete_ratios.py": "74b09a3f5c59976ae7a1f4b89d9925fde7f7a512f671c515791829db17806c65",
+    "src/riemann_spectra/negative_moments_discrete_ratios.py": "6b59661d282cde7f3bb1773c84857278091c52bfbffe154add0242be78d57c29",
+    "tests/test_negative_moments_discrete_ratios.py": "74b09a3f5c59976ae7a1f4b89d9925fde7f7a512f671c515791829db17806c65",
+    "src/riemann_spectra/arithmetic.py": "acd381fdd38d0364318a23d6ec457a05d27556fa1ebce54bfe5599361da1eb8f",
+    "src/riemann_spectra/negative_moments_ratios.py": "327ac6a31fabc35fbc2aaf2fd68740782c10457b80d10b339d4a5b1a2361488c"
+  }
+}

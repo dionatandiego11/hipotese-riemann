@@ -1,0 +1,15 @@
+{
+  "files": {
+    "results/collatz_auditoria_mistura_20261013/resultados.json": "bd627436598247fdc814cf566211c28cf0623fcee73be3192a0affc706c585ee",
+    "results/collatz_auditoria_mistura_20261013/DECLARACAO.sha256": "5dd27018cee2a39ef3bd2f4fb691d50f45b226c750dacbd7ed69d7abb81acf53",
+    "results/collatz_auditoria_mistura_20261013/DECLARACAO.md": "0c318bcb44f13f4a3fdaa98dfb2ca967b4624455355a3373891605b91718b9cd",
+    "results/collatz_auditoria_mistura_20261013/verificar.py": "6745024d7cecb57c808c5ab3decae2474b691bd8c7087d7a7c7e901a2ce7bb97",
+    "results/collatz_auditoria_mistura_20261013/NOTA_ANTES_DA_CORRECAO.md": "36afb4a3f757db7b14a2d41914c691ae6eef9b4ada60cd214fae86329ae3bad5"
+  },
+  "independent_review": false,
+  "cpu_limit_seconds": 60,
+  "zeros_read": false,
+  "audited_note": "hipoteses/COLLATZ_MISTURA_CONDICIONADA_20261013.md",
+  "audited_before_sha256": "36afb4a3f757db7b14a2d41914c691ae6eef9b4ada60cd214fae86329ae3bad5",
+  "audited_after_sha256": "538afc56d91d773bea9b553279948d6914ea383905051e11b00f1aa387ed82c4"
+}

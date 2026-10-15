@@ -1,0 +1,32 @@
+{
+  "data": "2026-10-12",
+  "declaracao_sha256": "f6311b8538678202a22eb887615b7561d07ecf4c990175def1ba2bf7ca00ad8e",
+  "estado": "validado",
+  "descricao": "derivacao analitica e controles exatos pequenos; sem alegacao de novidade",
+  "locks_cl0_reconferidos": {
+    "results/collatz_cl0/collatz_cl1_v1.toml": "7d00d0ef87f29fb3e3c11c6409c62aafce655966e35d86218b75b11c37a5b1bd",
+    "results/collatz_cl0/ESPECIFICACAO_CL0_v1.md": "5556a0701f83153d031394be461c22a3f14eb470b5b10177dd1f6716eb93299a",
+    "results/collatz_cl0/ERRATA_CL0_1.md": "b6e5706fa772b02deb9aaeca371af848b054adda7f3d577c05acac6e69da4d68",
+    "results/collatz_cl0/PROTOCOLO_CL0_v1.md": "29ca9d5b1ce570cf8f93a5124d58566e1a5111965335dc869363274042e1b929"
+  },
+  "fonte_local": {
+    "arquivo": "archive/fontes_etapa11/koopman_20260925/applegate_lagarias_1995_trees.pdf",
+    "sha256": "cc3df1accda2bf5aa335f31c08215283f3354b4b490c1bfca19baeb98be02390",
+    "paginas_lidas_nesta_entrega": "p. 195 (PDF p. 3), trecho de pre-imagens e estrutura 3-adica"
+  },
+  "arquivos": {
+    "results/collatz_filtros_20261011/DECLARACAO.md": "f6311b8538678202a22eb887615b7561d07ecf4c990175def1ba2bf7ca00ad8e",
+    "results/collatz_filtros_20261011/DECLARACAO.sha256": "d59d2ac4d18275ded23b65dac7bc2696b0a2640b4bc300c7d014b52680fcb017",
+    "results/collatz_filtros_20261011/code/__init__.py": "a079ddc7374ee51cf712e1dde914d20df42a9a024c91d1460a76fe3bded17128",
+    "results/collatz_filtros_20261011/code/congruence_filters.py": "0ac98c2a38960a9e766b3176161d58ef324b19760131ff9a5016aa3d55a53f80",
+    "results/collatz_filtros_20261011/code/test_congruence_filters.py": "bd18aebbd2e2ebff7ec9730bac09d8e8794d8881c5d16ce1ac3f46ac524e38d2",
+    "results/collatz_filtros_20261011/code/verificar.py": "b1567f1c8552217af0881a06da3d3f7a95524f0a0f9be3b68e803150327bd57e",
+    "results/collatz_filtros_20261011/configuracao.json": "f576747cbe98c305448a99261f2eb541bf820bd5c9c6261272b0c1e28f15abd6",
+    "results/collatz_filtros_20261011/periodos.csv": "52aa4b755ed31dcc9c067f0cf74eb5f5d55adef1140697a914bfc32503e0ad96",
+    "results/collatz_filtros_20261011/resultados.json": "2f5e340e4df45c9e14548dd0cfb1b6be414e77796762e9d01bb08ec9ffcae79c",
+    "results/collatz_filtros_20261011/verificacao.log": "2f5e340e4df45c9e14548dd0cfb1b6be414e77796762e9d01bb08ec9ffcae79c",
+    "results/collatz_filtros_20261011/verificar.py": "b1567f1c8552217af0881a06da3d3f7a95524f0a0f9be3b68e803150327bd57e",
+    "hipoteses/COLLATZ_FILTROS_FECHAMENTO_20261012.md": "0d7e7db1dba0093dfcedfefa4a6a8156ddbba95f54cf324962e28cd51c7476a1",
+    "results/collatz_filtros_20261011/README.md": "e5e68a58cf618d46d78e3953fb6c07a628c69f182ff7338334d2d41a5f380180"
+  }
+}

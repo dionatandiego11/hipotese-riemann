@@ -1,0 +1,17 @@
+{
+  "data": "2026-10-12",
+  "tentativas": [
+    {
+      "url": "https://www.aimsciences.org/data/article/export-pdf?id=d61ef5bc-8c00-43d0-8b51-425b9c0ed07b",
+      "resultado": "resposta sem conteudo; zero bytes; pdfinfo recusou; nao arquivado como PDF"
+    },
+    {
+      "url": "https://data.aimsciences.org/aimsmath-upload/DCDS/2003/3/PDF/1078-0947_2003_3_771.pdf",
+      "resultado": "HTTP 404; nao arquivado"
+    },
+    {
+      "url": "https://www.math.uni-bielefeld.de/baake/algdyn/posden.pdf",
+      "resultado": "sucesso; versao preliminar de 18 paginas"
+    }
+  ]
+}
