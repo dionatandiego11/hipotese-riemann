@@ -1,0 +1,20 @@
+{
+  "declaracao_sha256": "ef15068bc26e8eb0f9e8a47fcba432bc7fdcc5eb6ab914c218f07daf8090b33e",
+  "arquivos": {
+    "collatz/balanced_seed.py": "b377916a5767e390bc994e61e4054489743a82257dc72069f1ed932d91101b72",
+    "collatz/affine_rewrites.py": "240c25a58284d5aaf63636aaa318e365a8bf2aaa36d43d0e32842aca9c6c0006",
+    "collatz/cost_residues.py": "6ca04ffbc75a29a55d172387e2d3ea7db38f3786abcc1794d68b0ddef5b7b899",
+    "collatz/family_availability.py": "8dcfc1daea4e5195ced12cbe32b913afef05184580f6e01013d1794f1db99b83",
+    "tests/test_collatz_balanced_seed.py": "18940d103163a817cdc95d4ebb844a5906d04cc6b355f139e65561db6e3663f2",
+    "results/semente_completa_20261020/verificar.py": "15545f0e34035e3ba99f2130a0e61695fd064dfae15d81f14bf3a1d357240ef8"
+  },
+  "pytest_status": 0,
+  "cpu_s": 3.1527090799999997,
+  "parede_s": 3.2766992800000025,
+  "cpu_teto_s": 30,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "pytest": "9.1.1",
+  "aritmetica": "inteiros/Fraction",
+  "dados_zeros": false,
+  "orbitas_positivas": false
+}

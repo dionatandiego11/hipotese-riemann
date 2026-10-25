@@ -1,0 +1,11 @@
+id,titulo,arquivo,natureza,estado_primeiro_alvo,prioridade,novidade,execucao_nova
+T001,"Pares raros, camadas de transição e termos inferiores",T001_PARES_RAROS.md,D,validado,alta,não estabelecida,controle analítico e verificação em 18/10; extensão aberta
+T002,"Cancelamento aritmético, análise de Fourier e escalas",T002_CORRELACOES_ESCALAS.md,D,pendente,alta,não estabelecida,não executado
+T003,"Caracteres, congruências e famílias estáveis de filtros",T003_FAMILIAS_COLLATZ_RIEMANN.md,D,pendente,exploratória,não estabelecida,não executado
+T004,"Condicionamento, funções geradoras e operadores de transferência",T004_CUSTO_PRESSAO.md,D,pendente,exploratória,não estabelecida,não executado
+T005,"Equação funcional, reflexão e restrições sobre as correções",T005_SIMETRIAS_FUNCIONAIS.md,D,pendente,média,não estabelecida,não executado
+T006,"Amplificação, transientes e normas de resolventes",T006_RESOLVENTES_TRANSIENTES.md,D,pendente,exploratória,não estabelecida,não executado
+T007,Subtração de singularidades e separação de escalas,T007_PARTES_CONECTADAS.md,D,pendente,média,não estabelecida,não executado
+T008,Concentração e colisões na lei de Syracuse,T008_INTERMITENCIA_COLLATZ.md,D,em execução,alta na frente Collatz,não estabelecida,cobertura3n e limites de custo em25/10; potencial formulado e minorante central aberta
+T009,Hilbert memória e primeira passagem,T009_HILBERT_MEMORIA.md,D,pendente,exploratória,não estabelecida,não executado
+T010,Frações contínuas e ponte modular,T010_PONTE_MODULAR.md,D,pendente,risco alto,não estabelecida,não executado

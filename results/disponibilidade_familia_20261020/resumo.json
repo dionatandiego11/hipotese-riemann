@@ -1,0 +1,261 @@
+{
+  "perfis": 25,
+  "contraexemplo": {
+    "ell": 8,
+    "S": 16,
+    "pai_sem_H": 299,
+    "pai_do_grupo_H": 971
+  },
+  "tabela": [
+    {
+      "ell": 4,
+      "S": 6,
+      "palavras_total": 9,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 7,
+      "pais_com_H": 0,
+      "pais_sem_H": 7
+    },
+    {
+      "ell": 4,
+      "S": 7,
+      "palavras_total": 16,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 11,
+      "pais_com_H": 0,
+      "pais_sem_H": 11
+    },
+    {
+      "ell": 4,
+      "S": 8,
+      "palavras_total": 25,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 15,
+      "pais_com_H": 0,
+      "pais_sem_H": 15
+    },
+    {
+      "ell": 4,
+      "S": 9,
+      "palavras_total": 36,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 17,
+      "pais_com_H": 0,
+      "pais_sem_H": 17
+    },
+    {
+      "ell": 4,
+      "S": 10,
+      "palavras_total": 48,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 18,
+      "pais_com_H": 0,
+      "pais_sem_H": 18
+    },
+    {
+      "ell": 5,
+      "S": 8,
+      "palavras_total": 30,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 21,
+      "pais_com_H": 0,
+      "pais_sem_H": 21
+    },
+    {
+      "ell": 5,
+      "S": 9,
+      "palavras_total": 55,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 34,
+      "pais_com_H": 0,
+      "pais_sem_H": 34
+    },
+    {
+      "ell": 5,
+      "S": 10,
+      "palavras_total": 91,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 44,
+      "pais_com_H": 0,
+      "pais_sem_H": 44
+    },
+    {
+      "ell": 5,
+      "S": 11,
+      "palavras_total": 139,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 51,
+      "pais_com_H": 0,
+      "pais_sem_H": 51
+    },
+    {
+      "ell": 5,
+      "S": 12,
+      "palavras_total": 199,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 54,
+      "pais_com_H": 0,
+      "pais_sem_H": 54
+    },
+    {
+      "ell": 6,
+      "S": 10,
+      "palavras_total": 105,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 68,
+      "pais_com_H": 0,
+      "pais_sem_H": 68
+    },
+    {
+      "ell": 6,
+      "S": 11,
+      "palavras_total": 196,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 104,
+      "pais_com_H": 0,
+      "pais_sem_H": 104
+    },
+    {
+      "ell": 6,
+      "S": 12,
+      "palavras_total": 335,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 134,
+      "pais_com_H": 0,
+      "pais_sem_H": 134
+    },
+    {
+      "ell": 6,
+      "S": 13,
+      "palavras_total": 534,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 153,
+      "pais_com_H": 0,
+      "pais_sem_H": 153
+    },
+    {
+      "ell": 6,
+      "S": 14,
+      "palavras_total": 805,
+      "grupos_H": 1,
+      "palavras_H": 3,
+      "pais_atingidos": 161,
+      "pais_com_H": 1,
+      "pais_sem_H": 160
+    },
+    {
+      "ell": 7,
+      "S": 12,
+      "palavras_total": 378,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 219,
+      "pais_com_H": 0,
+      "pais_sem_H": 219
+    },
+    {
+      "ell": 7,
+      "S": 13,
+      "palavras_total": 713,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 324,
+      "pais_com_H": 0,
+      "pais_sem_H": 324
+    },
+    {
+      "ell": 7,
+      "S": 14,
+      "palavras_total": 1247,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 409,
+      "pais_com_H": 0,
+      "pais_sem_H": 409
+    },
+    {
+      "ell": 7,
+      "S": 15,
+      "palavras_total": 2052,
+      "grupos_H": 1,
+      "palavras_H": 3,
+      "pais_atingidos": 462,
+      "pais_com_H": 1,
+      "pais_sem_H": 461
+    },
+    {
+      "ell": 7,
+      "S": 16,
+      "palavras_total": 3212,
+      "grupos_H": 5,
+      "palavras_H": 15,
+      "pais_atingidos": 483,
+      "pais_com_H": 5,
+      "pais_sem_H": 478
+    },
+    {
+      "ell": 8,
+      "S": 14,
+      "palavras_total": 1385,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 707,
+      "pais_com_H": 0,
+      "pais_sem_H": 707
+    },
+    {
+      "ell": 8,
+      "S": 15,
+      "palavras_total": 2632,
+      "grupos_H": 0,
+      "palavras_H": 0,
+      "pais_atingidos": 1011,
+      "pais_com_H": 0,
+      "pais_sem_H": 1011
+    },
+    {
+      "ell": 8,
+      "S": 16,
+      "palavras_total": 4684,
+      "grupos_H": 1,
+      "palavras_H": 3,
+      "pais_atingidos": 1250,
+      "pais_com_H": 1,
+      "pais_sem_H": 1249
+    },
+    {
+      "ell": 8,
+      "S": 17,
+      "palavras_total": 7896,
+      "grupos_H": 6,
+      "palavras_H": 18,
+      "pais_atingidos": 1392,
+      "pais_com_H": 6,
+      "pais_sem_H": 1386
+    },
+    {
+      "ell": 8,
+      "S": 18,
+      "palavras_total": 12719,
+      "grupos_H": 20,
+      "palavras_H": 60,
+      "pais_atingidos": 1449,
+      "pais_com_H": 20,
+      "pais_sem_H": 1429
+    }
+  ]
+}

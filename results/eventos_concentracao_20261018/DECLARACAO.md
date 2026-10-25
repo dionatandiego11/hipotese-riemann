@@ -1,0 +1,9 @@
+# Declaração — controles de pares raros e energia de Syracuse
+
+18/10/2026. Gravada antes de implementar os módulos e executar as verificações. Os alvos analíticos já foram desenvolvidos em rascunho nesta sessão; isto é uma declaração de verificação de identidades, não teste confirmatório de descoberta.
+
+Riemann/modelo: CUE(2), gap com sinal φ∈[−π,π], p(φ)=(1−cosφ)/(2π), S=1/(1−cosφ), Aε=exp(ε)/(1−cosφ+coshε−1). Separar Aε−exp(ε)S com δ=√ε. A contribuição dividida por ε deve tender a −1/2. Verificar por quadratura independente a média e o defeito; ε={0,04;0,01;0,0025}, cortes δ=√ε. Aritmética mpmath a 50 dígitos, diferença absoluta ≤1e−35 contra integrais fechadas. Conferir limites |interno+1/2|≤2ε+√ε/π e |externo|≤√ε para esses ε. Verificar constante de cauda √2/(3π) com x={1e4,1e6}, erro relativo≤1e−3, e massa dos pares |φ|≤δ pela integral da densidade, erro≤1e−35. Os controles não estabelecem teoremas assintóticos para funções L.
+
+Collatz: lei estacionária π no modelo aritmético já identificado com Syracuse. Resoluções K=0..4 apenas, obtidas pelo módulo existente geometric_limit. Massas e energia E_K=3^KΣπ_K² em Fraction. Conferir a equação de ramo em todos os resíduos, normalização e projeção; decomposição DD/DO/OD/OO; 3C_K=C_(K−1)+2H_K, H_K=Σ_b π_K(3b+1)π_(K−1)(b); E_K−E_(K−1)=2·3^(K−1)H_K. Comparar K≤2 à eliminação racional independente stationary_half. A prova de não pertinência a L² e a divergência das energias são analíticas e dependem da densidade L¹/positividade documentadas; nenhum ajuste a valores de E_K será usado como prova.
+
+Teto de 60 s de CPU no processo de verificação; um processo, sem Monte Carlo, enumeração de órbitas, zeros reais, dados reservados ou rede durante os testes. Executar apenas os testes novos. Registrar resultado, duração, hashes dos arquivos consumidos e eventuais falhas. Sem commit ou push.

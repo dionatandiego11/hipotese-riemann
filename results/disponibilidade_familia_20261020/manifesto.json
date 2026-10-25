@@ -1,0 +1,20 @@
+{
+  "declaracao_sha256": "90d565f5a1f99d53364af0419fc95163b04e289676d7e1a2977e9eb794b1a874",
+  "arquivos": {
+    "collatz/family_availability.py": "8dcfc1daea4e5195ced12cbe32b913afef05184580f6e01013d1794f1db99b83",
+    "collatz/last_digit_rewrites.py": "6ffbbbec03626061fd1f43a5994aaf73eeb53ce3a5ff753799662df617b4bfd4",
+    "collatz/affine_rewrites.py": "240c25a58284d5aaf63636aaa318e365a8bf2aaa36d43d0e32842aca9c6c0006",
+    "collatz/cost_residues.py": "6ca04ffbc75a29a55d172387e2d3ea7db38f3786abcc1794d68b0ddef5b7b899",
+    "tests/test_collatz_family_availability.py": "dddc61b9d60ca97a142b550ac6ec1c7b50519eb093f86acc7b455ffa7a32c02b",
+    "results/disponibilidade_familia_20261020/verificar.py": "9f3425175d6e663b0f897002a82b48fc45803b00b4bdde38d782edf03ac1e380"
+  },
+  "pytest_status": 0,
+  "cpu_s": 0.573708332,
+  "parede_s": 0.5836505039999906,
+  "cpu_teto_s": 30,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "pytest": "9.1.1",
+  "aritmetica": "inteiros/Fraction",
+  "dados_zeros": false,
+  "orbitas_positivas": false
+}

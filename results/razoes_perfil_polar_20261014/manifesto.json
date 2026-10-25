@@ -1,0 +1,27 @@
+{
+  "data": "2026-10-14",
+  "status": "perfil polar derivado; cota sublinear e passagem à faixa crítica pendentes",
+  "zero_data": false,
+  "execution": {
+    "exit_code": 0,
+    "wall_seconds": 10.239793383999995,
+    "cpu_seconds": 10.099418901,
+    "declaration_sha256": "56044f093f4ac9325a44a7ddc08b59e62cbf15b1a5a99b3c14a2a15e716bb3d4",
+    "real_zeros_used": false,
+    "classification": "B; controle sintético do perfil polar, não cota do erro para L"
+  },
+  "files": {
+    "results/razoes_perfil_polar_20261014/NOTA.md": "76ae7790e7855606d9d8f997d815aa04a11f009a2581a2ca38e9da8f321c158c",
+    "results/razoes_perfil_polar_20261014/resultado.json": "30e3d12fb44448bcd630b1c551caa90b96c551f191037a09795d8f5723a88146",
+    "results/razoes_perfil_polar_20261014/DECLARACAO.sha256": "c59ecec9d5fdbb3234b178d15dd67175b6ed1c2e42b9cdb0c54f40b3b85e8ab7",
+    "results/razoes_perfil_polar_20261014/DECLARACAO.md": "56044f093f4ac9325a44a7ddc08b59e62cbf15b1a5a99b3c14a2a15e716bb3d4",
+    "results/razoes_perfil_polar_20261014/VERIFICACOES.md": "044bf57167c75c49249fcc1617d13f4c3f576ccdff7d2c6349b1833180dfb677",
+    "results/razoes_perfil_polar_20261014/verificar.py": "a11ef77fd5fa09b15315b87d7ada22db63142b4aa7a934d7861656d71d95b40f",
+    "results/razoes_perfil_polar_20261014/code/test_negative_moments_polar_profile.py": "1ccf89a7a772e0dc05240c0be046b3a20f5859a34b73bc4ec25804db935746c0",
+    "results/razoes_perfil_polar_20261014/code/negative_moments_polar_profile.py": "c3afbfa657793db5d96dd8a4176072e4c20ee3f24a95738e5156a2a311d3adc6",
+    "src/riemann_spectra/negative_moments_polar_profile.py": "c3afbfa657793db5d96dd8a4176072e4c20ee3f24a95738e5156a2a311d3adc6",
+    "tests/test_negative_moments_polar_profile.py": "1ccf89a7a772e0dc05240c0be046b3a20f5859a34b73bc4ec25804db935746c0",
+    "src/riemann_spectra/negative_moments_ratio_generators.py": "4067c65c98d4ff1f2ca442efe47dadf0c01eaf0c2cac00f7109d48a6c1a3649f",
+    "src/riemann_spectra/negative_moments_ratios.py": "327ac6a31fabc35fbc2aaf2fd68740782c10457b80d10b339d4a5b1a2361488c"
+  }
+}

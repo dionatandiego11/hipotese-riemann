@@ -1,0 +1,26 @@
+[
+  {
+    "r": 1,
+    "estados": 6,
+    "mu": 4,
+    "pior_classe": 7
+  },
+  {
+    "r": 2,
+    "estados": 18,
+    "mu": 7,
+    "pior_classe": 25
+  },
+  {
+    "r": 3,
+    "estados": 54,
+    "mu": 10,
+    "pior_classe": 79
+  },
+  {
+    "r": 4,
+    "estados": 162,
+    "mu": 12,
+    "pior_classe": 79
+  }
+]

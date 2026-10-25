@@ -189,3 +189,11 @@ Sem simulações extensas, zeros, CL1, publicação ou commit.
 ## Atualização posterior — transferência por majorante positiva
 
 A nota `COLLATZ_CUSTO_CONJUNTO_20261012.md` deriva uma transferência específica para caracteres condicionados, usando Tao Prop.7.3 e preservação dos pares cancelantes. Não usa divisão do coeficiente não condicionado. A mistura fina L1 integral e a minorante por resíduo continuam sem transferência demonstrada. Foram obtidas também aproximações em resoluções crescentes limitadas, sem trocar irrestritamente os limites.
+
+## Atualização 18/10/2026 — obstrução quadrática mais forte
+
+A nota `../teorias/SYRACUSE_COLISOES_20261018.md` deriva f∉L² pela sobreposição dos dois ramos, fortalecendo o limite anterior p≥log3/log(3/2), que permanece correto. Também deriva a recorrência finita de energia e um crescimento pelo menos linear sem constantes avaliadas. O argumento L² tem antecedente direto no texto de Valbuena, registrado em `leituras/SYRACUSE_ENERGIA_20261018.md`; não há alegação de novidade. Pertencimento para 1<p<2 e a majorante anunciada nessa fonte não foram auditados nesta entrega. Não se transfere a obstrução automaticamente à lei condicionada ao custo.
+
+## Atualização de19/10 — energia sob condicionamento
+
+A [nota de energia condicionada](../teorias/SYRACUSE_ENERGIA_CONDICIONADA_20261019.md) confere os trechos bibliográficos antes pendentes e deriva Energia(E)<=4/beta² para qualquer subconjunto de custo fixado. Para E_{ell,k} da§6, beta=q_ell(k)2^{-(ell+k)}; a estimativa central anterior dá O_C(ell). É uma majorante positiva de colisões, não divisão de coeficiente de Fourier: a advertência da§6 continua válida. Sem minorante por resíduo, novidade demonstrada ou conclusão de Collatz.

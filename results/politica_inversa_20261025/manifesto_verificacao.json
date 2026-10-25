@@ -1,0 +1,29 @@
+{
+  "declaracoes": {
+    "DECLARACAO.md": "ef921f04194d19fb603ddab1d5f924e024c6b8ce05d4fac4ea81e21c385d16a7",
+    "ADENDO_CONSTRUTOR.md": "a9247893c83fdf6a0f8226856c5d78e54df27ef34c29cbe2d1044a9b487c4081"
+  },
+  "arquivos": {
+    "collatz/inverse_cost_policy.py": "ba710c9e2892b680e8656d85e323a0ad070ff7156d8d6878aa0bc3b57ca7048f",
+    "collatz/uniform_coverage.py": "bfd404769fc593b84ace718bed3ccf57fddd061d37a71fdbc36018e7921640b2",
+    "collatz/affine_rewrites.py": "240c25a58284d5aaf63636aaa318e365a8bf2aaa36d43d0e32842aca9c6c0006",
+    "collatz/cost_residues.py": "6ca04ffbc75a29a55d172387e2d3ea7db38f3786abcc1794d68b0ddef5b7b899",
+    "tests/test_collatz_inverse_cost_policy.py": "a3d16b3ee0d7143266f5b57238cce6ab06f37a4e81a7b0d9be3cd9e1b6912100",
+    "results/politica_inversa_20261025/verificar.py": "7bfcd0ecd25b90e9bbf4d0bf7e5aae9d2a4faac656b2c4202ee02594aa390b3c"
+  },
+  "entradas": {
+    "certificado_base.json": "e7a934a7ca04f2525694d37d1c7d2c31875d9a5f0285724e429e2b8b5e2e3c16",
+    "politicas.json": "49ae6ad0a94292bb553baf2a791c169fb08729a22036e14edf85d9208d527ddd",
+    "politicas_resumo.json": "acc69e885a9bdfe1cbb0758562ab91c94ec3ef655c41a042ee728d452186d612"
+  },
+  "pytest_status": 0,
+  "cpu_s": 2.218014446,
+  "parede_s": 2.323142104999988,
+  "cpu_teto_s": 30,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "pytest": "9.1.1",
+  "aritmetica": "inteiros/Fraction",
+  "dados_zeros": false,
+  "orbitas_T": false,
+  "selecao": "bloco4 escolhido após exploração finita"
+}

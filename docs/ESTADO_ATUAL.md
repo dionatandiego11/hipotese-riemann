@@ -1,16 +1,84 @@
-# Estado atual do projeto — ponto de retomada (13/10/2026)
+# Estado atual do projeto — ponto de retomada (25/10/2026)
 
 Documento de entrada para quem retoma o trabalho (pessoa ou agente). Resume onde o projeto está, o que está congelado,
 quais regras seguir e qual é a próxima tarefa. Os detalhes ficam nos documentos citados; em conflito, eles prevalecem.
 Versão anterior (19/09/2026) no histórico do git.
 
-## Atualização prioritária — 13/10/2026
+## Limite de custo e alvo por potencial — 25/10/2026
+
+Derivações A sem nova enumeração: mu_{r+s}<=mu_r+mu_s; existe lambda=lim mu_r/r=inf mu_r/r, com a_*<=lambda<=3, onde a_* log a_*−(a_*−1)log(a_*−1)=log3 e8/5<a_*<5/3. A condição necessária binom(m,r)>=3^r prova que nenhum bloco de1–4 passos pode ter custo máximo<=2r; para5 passos essa obstrução de cardinalidade desaparece, sem provar viabilidade. Nota [limite de custo e potencial](../teorias/SYRACUSE_LIMITE_CUSTO_20261025.md).
+
+Novo alvo formulado: potencial limitado V e ramos escolhidos com e+V(J_e(x))−V(x)<=2−eta. Um certificado com eta>0 daria custo médio abaixo de2; nenhum foi encontrado ou buscado nesta entrega. Se V é constante em classes mod3^h, a verificação exige as classes mod3^{h+1}, preservando o dígito necessário à inversão.
+
+Wirsching preliminar, páginas4–5, relido com hash conferido: o critério de densidade requer minorante relativa à média na faixa central, não apenas presença em cada classe. Tradução exata entre Elka e o custo limitado, cobertura central, multiplicidades e novidade seguem abertas. Próximo trabalho: examinar potenciais simples e essa tradução antes de nova CPU; qualquer busca finita deve ter declaração e orçamento. Frente Riemann preservada.
+
+## Cobertura uniforme fora da faixa central — 25/10/2026
+
+Derivação A com certificado finito: todas as unidades módulo 3^n são atingidas, para n>=4 e custo total L(n)<=S<=2*3^{n-1}+n-1, onde L(n)=3n+4+((n-4) mod4). Em particular S>=3n+7 é suficiente dentro desse limite superior. A prova combina a base de54 classes, uma política de quatro ramos inversos de custo máximo12 e indução; melhora o limite preliminar4n. Nota [cobertura uniforme](../teorias/SYRACUSE_COBERTURA_UNIFORME_20261025.md).
+
+Três testes passaram:240 políticas contra2.072 caminhos independentes,13.068 palavras construídas exatamente em todas as classes dos comprimentos4–8 e13.703 desigualdades de preenchimento. Exploração CPU0,038849s; verificação CPU2,218014s. Declaração e adendo preservam a seleção do bloco4 após exploração. Artefatos em `results/politica_inversa_20261025/`.
+
+T008 continua `em execução`: a faixa central S=2n+O(sqrt(n)) permanece aberta. Não é convergência de órbitas positivas, ligação com RH ou novidade estabelecida. Próximo alvo: comparar com a literatura de ramos inversos e estudar analiticamente a razão entre pior custo e comprimento antes de ampliar enumerações. Revisão independente pendente.
+
+## Complementaridade e redução dos custos — 20/10/2026
+
+Recorrência vetorial implementada e conferida em8.598 pais da mesma grade25 perfis. No caso n8/S16, dos560 pais completos,457 usam uma parcela,102 precisam de duas e1 precisa de três. Uma regra universal com apenas duas parcelas falha nessa faixa. Os690 pais restantes têm algum filho ausente. Nota `teorias/SYRACUSE_COMPLEMENTARIDADE_20261020.md`.
+
+Derivações A: e->e+2 leva o predecessor por b->4b+1 e reduz seu custo em2; o pai tem período3^{n-2}, e a rotação de filho que repete esse pai exige aumento exponencial em e, incompatível com custo central para n grande. Isso limita uma estratégia, não a complementaridade entre pais diferentes. Injeção adicional: aumentar apenas o último expoente dá monotonicidade das contagens mínimas sob rotação de resíduos quando S+delta<=C_n+n-1. Assim cobertura num custo inicial implica cobertura nos seguintes dessa faixa; o custo inicial ainda está aberto.
+
+Dois testes passaram, CPU1,543s, sem nova faixa de comprimentos ou dados de zeros. Próximo alvo: correlação das ausências ao longo da órbita aritmética com custo decrescente, antes de nova CPU. Cobertura assintótica, novidade e revisão independente permanecem pendentes.
+
+## Semente máxima e complementaridade de sufixos — 20/10/2026
+
+Examinadas todas as11.664 palavras iniciais de4 expoentes. A parcela equilibrada máxima por custo/pai tem2.382 grupos(7.146 palavras). O transporte desse catálogo, ainda com sufixo fixo, não cobre todos os pais já completos: no caso n8/S16,560 pais têm os3 filhos,139 admitem grupo de prefixo4 e421 não. É um limite de todas as reescritas desse escopo, não só da família H.
+
+A primeira diferença na grade(n5/S9/pai47) fornece uma identidade de5 expoentes: (1,1,3,1,3), (2,2,1,1,3), (1,2,3,2,1), custo9, offsets331/512,493/512,655/512. Ela altera também o sufixo e equilibra o último dígito; extensão analítica com custo extra0..159 e sufixos válidos. Disponibilidade por classe permanece aberta.
+
+Nota `teorias/SYRACUSE_SEMENTE_COMPLETA_20261020.md`. Dois testes da semente e dois da identidade passaram, cerca de4,8s CPU somados. Próximo alvo é complementaridade entre parcelas de expoentes finais: pela recorrência positiva, um filho falta exatamente quando todas as parcelas lhe dão zero. Estudar essas interseções com os estados de custo, antes de ampliar catálogos ou comprimentos. Cobertura eventual, novidade e revisão independente continuam pendentes.
+
+## Disponibilidade da família H — 20/10/2026
+
+Recorrência exata por custo e resíduo escrita para os grupos de H. A identidade do último dígito continua válida, mas a disponibilidade em todas as classes falha no caso central ell8/S16:4.684 palavras atingem1.250 pais; H tem um grupo em apenas um pai(971 mod2187). O pai299 tem8 palavras e nenhum grupo de H. Isso não refuta disponibilidade eventual para ell grande nem cobertura por outras famílias. Nota `teorias/SYRACUSE_DISPONIBILIDADE_20261020.md`.
+
+Dois testes exatos passaram,25 perfis mais2 bordas de semente, CPU0,574s. Nenhum dado real/reservado ou produção longa. Próximo alvo: comparar sementes completas e parcelas equilibradas por custo/resíduo, identificando se é necessário combinar famílias, emprestar custo ou aumentar o bloco. Não assumir minorante de H apenas porque sua massa global é positiva. T008 em execução; resultado negativo finito validado; Riemann preserva os alvos anteriores.
+
+## Reescrita do último dígito — 19/10/2026
+
+Construída uma família válida nas posições2–4: (1,1,9+d), (3,5,3+d), (2,8,1+d), com0<=d<=45. Ela preserva custo e módulo3^{ell-1} e preenche os três filhos módulo3^ell, com prefixo/sufixo fixos. A parcela H formada por esses grupos é exatamente equilibrada entre os filhos. O alvo ainda não demonstrado é positividade da massa de H dentro de cada classe grossa e custo; uma proporção global não basta. Nota `teorias/SYRACUSE_ULTIMO_DIGITO_20261019.md`.
+
+Exploração declarada:48 perfis,82 fibras de três filhos; a identidade foi escolhida após consulta da grade. Dois testes exatos passaram,164 aplicações racionais, CPU da verificação0,521s mais0,014s da exploração. Sem nova faixa de dados, órbitas positivas, novidade estabelecida ou confirmação independente. A obstrução anterior para pares permanece válida; o bloco triplo que começa na posição1 também não pode preencher três filhos. Próximo alvo: contagem de H por custo e resíduo, antes de nova enumeração.
+
+## Reescritas e correção de convenção — 19/10/2026
+
+A ordem cronológica dos mapas Phi tem limites crescentes2,6,18,...; na ordem da árvore inversa são decrescentes. As duas notas novas de energia/cobertura confundiam essa identificação e foram corrigidas, com cópias anteriores preservadas. A cota geral de energia<=4/beta² permanece válida; os testes antigos não conferiam a identificação residual. Agora34 distribuições não vazias coincidem com os dois métodos existentes.
+
+Mecanismo A: onde um par de expoentes admite transferir2 unidades de custo nos dois sentidos, as três versões preenchem os três filhos de uma classe. Com multiplicidade<=3, a fração de palavras com folga fornece uma minorante local. Essa fração ainda não foi controlada por classe. Obstrução A: uma única transferência adjacente não consegue mudar o último dígito preservando os anteriores. Dois testes exatos passaram, CPU3,996s, sem dados de zeros ou órbitas positivas. Nota `teorias/SYRACUSE_REESCRITAS_CUSTO_20261019.md`. Próximos alvos: massa com folga nas resoluções anteriores e reescritas coordenadas para o último dígito. Novidade e revisão independente pendentes.
+
+## Alvo de cobertura formulado — 19/10/2026
+
+A cota agregada será complementada por um alvo local, ainda não demonstrado: cada classe atingida módulo3^r deve enviar uma fração positiva de suas palavras para cada um dos três filhos módulo3^{r+1}, sob o mesmo custo e limites. A base das duas unidades módulo3 foi explicitada. Nota `teorias/SYRACUSE_COBERTURA_CRITERIO_20261019.md`. Variações apenas do prefixo com sufixo fixo não bastam: alcançam no máximo dois filhos. Próximo passo analítico: procurar reescritas de sufixos de mesmo custo, com controle das fibras. Sem cálculo novo; Riemann mantém os alvos já registrados.
+
+## Concentração condicionada — 19/10/2026
+
+Auditada a prova da majorante de Valbuena e a interpolação Lp (com mistura de Tao como entrada externa). A contagem por fibras permite uma consequência para o evento do projeto: para qualquer subconjunto E de palavras com custo total fixado e probabilidade beta>0, Energia(E)<=4/beta². A massa central beta>=b_C/sqrt(ell), já derivada anteriormente, dá energia O_C(ell), inclusive com os limites individuais. Não fornece minorante por resíduo nem conclusão sobre órbitas positivas. Novidade não estabelecida; sem revisão independente.
+
+Nota: `teorias/SYRACUSE_ENERGIA_CONDICIONADA_20261019.md`. Dois testes exatos passaram:35 momentos e69 eventos não vazios, 0,417s CPU, sem dados reais/reservados. Próximo alvo de Collatz: explicitar a estimativa adicional necessária para cobertura, partindo desta cota agregada e da mistura condicionada já existente. Riemann mantém a prioridade da intensidade ponderada de pares; os termos inferiores e R3 seguem abertos. O registro de18/10 abaixo é histórico quanto à majorante e à extensão ao custo então pendentes.
+
+## Execução das prioridades — 18/10/2026
+
+T001: a contribuição de pares próximos no controle CUE(2) foi isolada por regiões e recupera o defeito conhecido de −1/2. Um lema condicional explicita a intensidade conjunta de gap/amplitude necessária para transferir o mecanismo; essa hipótese não foi provada para L. Nota: `teorias/EVENTOS_RAROS_CUE_20261018.md`.
+
+T008: derivada a recorrência exata E_K−E_(K−1)=2·3^(K−1)H_K. Sob a densidade L¹/positividade já usadas, a sobreposição dos ramos dá f∉L² e crescimento pelo menos linear de E_K, sem constantes avaliadas. Antecedente direto da obstrução L² encontrado em fonte de Valbuena; demais resultados anunciados não auditados. Nota: `teorias/SYRACUSE_COLISOES_20261018.md`. Cinco testes novos passaram, 4,702s CPU, sem zeros reais ou reservados. R3 e termos inferiores de L seguem abertos. Próximos alvos: intensidade ponderada independente para pares; conferir a majorante bibliográfica antes de adaptar energia ao custo condicionado.
+
+## Atualização prioritária — 14/10/2026
 
 A frente principal é a derivação por razões dos momentos negativos (Conjecturas7/8 dePearce-Crump), seguida de termos inferiores. A antiga conclusão analítica daEtapaB foi retirada por falta de uniformidade nos deslocamentos; tabelas numéricas preservadas. Plano: `hipoteses/PLANO_RAZOES_MOMENTOS_NEGATIVOS.md`; errata: `hipoteses/ERRATA_ETAPA_B_20261013.md`.
 
-**R3 em execução:** regularização e correção local derivadas; duas constantes principais recuperadas formalmente por contagem ponderada/razões discretas. Geradores aritméticos fechados, mas a média completa deL e seu erro uniforme permanecem abertos. Alvo atual: ε sup|Rj|≤M(T) num domínio complexo explícito; M(T) ainda não estimada. Nota mais recente: `hipoteses/RAZOES_GERADORES_UNIFORMIDADE_20261013.md`. Nenhum termo inferior emT foi produzido.
+**R3 em execução:** geradores aritméticos fechados e duas constantes principais recuperadas formalmente. A tentativa de estimar o erro identificou que seu perfil polar contém o próprio desvio do momento. Não foi obtida cota sublinear. Há uma representação exata fora da diagonal na região de convergência absoluta; o alvo atual é justificá-la por truncamento/continuação com erro controlado na faixa crítica. Nota: `hipoteses/RAZOES_ERRO_PERFIL_POLAR_20261014.md`. Termos inferiores emT continuam abertos.
 
-O controleCUE mostra que a primeira correção pode não comutar com a média: `hipoteses/RAZOES_DISCRETAS_MOMENTOS_NEGATIVOS_20261013.md`.26 testes pertinentes passaram na última entrega; nenhum zero real ou dadoMN/H-004 reservado foi acessado. Collatz permanece complementar. O restante deste documento conserva o histórico anterior e deve ser lido com esta atualização.
+O controleCUE mostra que a primeira correção pode não comutar com a média: `hipoteses/RAZOES_DISCRETAS_MOMENTOS_NEGATIVOS_20261013.md`.Última verificação:8 testes pertinentes passaram, sem consultar zeros reais ou dadosMN/H-004 reservados. Os26 testes da entrega anterior não foram repetidos nesta. Collatz permanece complementar. Histórico abaixo deve ser lido com esta atualização.
+
+**Exploração complementar — 15/10:** `teorias/DIRECOES_20261015.md` organiza cinco apostas, com dez fichas no registro. Novas frentes: concentração/colisões de Syracuse, Hilbert/memória/primeira passagem e comparação modular. Busca dirigida com quatro fontes primárias arquivadas; novidade não estabelecida. Derivações elementares delimitam perda de transientes pelo determinante e a ausência de uma conjugação projetiva simples com Gauss; controle CUE(2) explicita média finita/variância infinita. Não transferem resultados a RH/Collatz. Sem simulação ou dados de zeros nesta entrega; R3 permanece como acima.
 
 ## 1. O que é o projeto
 

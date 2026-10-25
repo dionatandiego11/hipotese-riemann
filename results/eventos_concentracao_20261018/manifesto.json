@@ -1,0 +1,22 @@
+{
+  "declaracao_sha256": "7b895eab8fb0ab2fca756376037b0e7642e44d9518700acd24e27736ab5c6ecc",
+  "classe_calculos": "B; Fraction exata em Collatz",
+  "cpu_teto_s": 60,
+  "dados_zeros": false,
+  "arquivos": {
+    "src/riemann_spectra/negative_moments_rare_pairs.py": "68cdb3bbfb518a7889fa884d5a476f330589cf0689b8157c9254bddc51f1c75a",
+    "src/riemann_spectra/negative_moments_discrete_ratios.py": "6b59661d282cde7f3bb1773c84857278091c52bfbffe154add0242be78d57c29",
+    "collatz/collision_energy.py": "7162ec9dfeab8f4b15365aa31c5cf641287a2595cf0f4e55ce2b3c0a9711030f",
+    "collatz/central_residues.py": "ed92813d1685985ab3d811a7e910d0258c30d33aede912943f36685c56044ffd",
+    "collatz/cost_residues.py": "6ca04ffbc75a29a55d172387e2d3ea7db38f3786abcc1794d68b0ddef5b7b899",
+    "tests/test_negative_moments_rare_pairs.py": "c08524eb4c0d50f4e2bcf43d0cd0573d50475a9d5fa9a4a6673991f52189003b",
+    "tests/test_collatz_collision_energy.py": "983d363c13f8fe16df619dc6b3143049b359ec3c1f1d8b4d757c5a444ab0223e",
+    "results/eventos_concentracao_20261018/verificar.py": "84e8622d904a91ecc933d0bcceca40de36f8db9d40775d2c43502af8e0d2e748"
+  },
+  "pytest_status": 0,
+  "cpu_s": 4.701732183,
+  "parede_s": 4.669306239999969,
+  "max_rss_kib": 217160,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "mpmath": "1.4.1"
+}

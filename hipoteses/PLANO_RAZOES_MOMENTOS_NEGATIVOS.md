@@ -87,3 +87,11 @@ R3 permanece `em execução`: próximo alvo é a média COMPLETA do gerador, com
 Fechada a álgebra deG7=Y7A7 eG8=D8(a+b)D7(v+b)/D7(u+b). A média completa deL NÃO está fechada: suas demais contribuições ficam no restoRj. A hipótese suficiente agora é explícita em círculos complexos de raioηε emu: ε sup|Rj|≤M(T), uniforme nos deslocamentos indicados. Cauchy dá erro de momento≤M(T)/(πη). M(T) não foi estimada; nenhuma taxa emT foi adotada.
 
 Nota: `RAZOES_GERADORES_UNIFORMIDADE_20261013.md`.26 testes passaram; nenhum zero real. A justificativa para deslocamentos pareados não basta no círculo fora do pareamento. Próximo trabalho: decompor e estimar o resto da média real, primeiroC7, q fixo. R3 `em execução`, R4/R5 pendentes. Não ampliar testes algébricos sem uma nova necessidade: as verificações atuais passaram.
+
+## R3 — tentativa de estimar o erro (14/10/2026)
+
+Derivado o perfil exato εRj→[πSj−κj(T−A)/2][1+z/(1+λ)] emν=λε,u=ν+εz, janela fixa, λ fixo. A norma polar contém integralmente o desvio do momento; U(M) não é um passo independente simples. Isso não prova equivalência completa deU comC7/C8. Nenhuma cota sublinear foi obtida.
+
+Representado exatamenteRj como soma fora da diagonal, com núcleo integral K_A,T(log(n/m)), na região Re(u,v,a,b)>1/2. Derivada pareada destacaΛ(d)αj(h)αj(n) e n≈dh. **Novo alvo concreto:** truncamento/continuação dessa representação com resto controlado na faixa de pequenos deslocamentos. Não usar a série como soma ordinária na linha crítica.
+
+Nota: `RAZOES_ERRO_PERFIL_POLAR_20261014.md`.8 testes passaram; sem zeros reais. R3 em execução, inferiores abertos. A avaliação matemática da identidade fora da diagonal é analítica, não medida a partir de espectros.

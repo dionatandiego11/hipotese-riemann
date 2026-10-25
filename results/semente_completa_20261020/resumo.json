@@ -1,0 +1,40 @@
+{
+  "palavras_semente": 11664,
+  "grupos_semente": 2382,
+  "palavras_equilibradas": 7146,
+  "palavras_restantes": 4518,
+  "primeira_classe_limite": {
+    "ell": 5,
+    "S": 9,
+    "pai": 47,
+    "contagens_filhos": [
+      1,
+      1,
+      1
+    ],
+    "grupos_prefixo4": 0
+  },
+  "classe_limite_ell8_S16": {
+    "ell": 8,
+    "S": 16,
+    "pai": 1,
+    "contagens_filhos": [
+      1,
+      2,
+      1
+    ],
+    "grupos_prefixo4": 0
+  },
+  "caso_central": {
+    "ell": 8,
+    "S": 16,
+    "palavras_total": 4684,
+    "pais_atingidos": 1250,
+    "pais_completos": 560,
+    "pais_incompletos": 690,
+    "pais_com_grupos_prefixo4": 139,
+    "pais_completos_sem_grupos_prefixo4": 421,
+    "pais_com_H": 1,
+    "grupos_prefixo4": 143
+  }
+}

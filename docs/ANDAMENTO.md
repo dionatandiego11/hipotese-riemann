@@ -886,3 +886,116 @@ Registro anterior (14/09/2026):
 - Declarado por que a relaxação da fonte para shifts pareados não fornece a cota fora do ponto pareado. Sem troca silenciosa de domínio ou derivação de erro√T.
 - Declaração prévia;26 testes passaram (4 novos+22 anteriores), CPU35.637s, parede38.881s, teto60s. Controles B por fases locais e integral deCauchy, sem dados de zeros ou médias deL. Sem commit/publicação.
 - Nota hipoteses/RAZOES_GERADORES_UNIFORMIDADE_20261013.md; artefatos results/razoes_geradores_20261013/. Próximo alvo: resto da família de médias real, primeiroC7/qfixo. R4/R5 pendentes; não aumentar controles algébricos já aprovados sem necessidade nova.
+
+### 14/10/2026 — R3: perfil polar do erro e soma fora da diagonal
+
+- Estado `em execução`. Derivação local A: εRj→Δj[1+z/(1+λ)] comΔj=πSj−κj(T−A)/2, λ fixo. Uniforme emz no disco indicado, sem uniformidade declarada emλ↓0, altura ou separações. A hipóteseU(M), se válida para todosν, impõeM(T)≥(1+η)|Δj|; a estimativa contém a dificuldade do momento. Não é equivalência integral nem prova das conjecturas.
+- Derivada representação exata deRj fora da diagonal na região absolutamente convergente: coeficientes convolvidos deMöbius/Liouville e núcleo oscilatórioK_A,T(log(n/m)). Derivada pareada envolve n≈dh. Continuação/truncamento à região crítica ainda não justificada; nenhuma cota M(T)=o(T) obtida.
+- Declaração anterior;8 testes passaram (3 novos+5 pertinentes anteriores), CPU10.099s, parede10.240s, teto60s. ControlesB de um/dois polos artificiais e gerador aritmético8; sem zeros reais ou dadosMN/H-004. Não foi repetida a cadeia anterior de26 testes.
+- Nota hipoteses/RAZOES_ERRO_PERFIL_POLAR_20261014.md; artefatos results/razoes_perfil_polar_20261014/. Próximo alvo: representação truncada com erro controlado, preservando o cancelamento fora da diagonal. Sem publicação, mensagem externa, commit ou push desta entrega.
+
+### 14/10/2026 — espaço de teorias e interconexões
+
+- Criada a pasta `teorias/`: README, mapa, modelo de ficha, registroCSV e sete propostasD. Exploração `em execução`; primeiros alvos matemáticos `pendente`. Nenhuma conexão classificada como novidade estabelecida.
+- Prioridades: T001 pares raros/correções e T002 correlações fora da diagonal. T003/T004 aproximam filtros, caracteres e condicionamento deCollatz; T005 simetrias funcionais; T006 resolventes/transientes; T007 subtração de singularidades sem circularidade.
+- Primeira seleção baseada no acervo e nas notas existentes, sem nova busca bibliográfica externa. Cada ficha distingue base disponível, hipótese, primeiro alvo e forma de fracasso. Protocolos e prioridades da frenteR3 preservados.
+- Checagem documental: seteIDs únicos, arquivos correspondentes presentes e32links locais válidos. Sem experimento, enumeração, zeros reais, dados reservados, commit ou push. Entrada: `teorias/README.md`.
+
+
+### 15/10/2026 — teorias: cinco apostas e filtros matemáticos
+
+- Exploração `em execução`; alvos principais novos `pendente`. Documento `teorias/DIRECOES_20261015.md`; T008 concentração/colisões, T009 Hilbert/memória/primeira passagem, T010 comparação com Gauss–Selberg. T001/T002 seguem prioridades ligadas aos momentos. Nenhuma ligação direta Collatz–Riemann ou novidade estabelecida.
+- Derivações elementares A no escopo declarado, sem revisão independente: para o operador amortecido de T009, determinante depende de ciclos e pode perder divergências/transientes; isometria conserva paridade. T010: ramos afins têm ponto fixo projetivo comum, obstruindo conjugação única com todos os ramos de Gauss. T001: controle CUE(2) tem média finita, variância infinita e cauda x^(-3/2); não é inferência para os blocos reais.
+- Quatro PDFs primários obtidos, hashes conferidos e anexados ao manifesto sem alterar linhas anteriores. Leitura dirigida em `hipoteses/leituras/TEORIAS_FONTES_20261015.md`; p.9 de Mayer conferida visualmente. Não foi auditada a prova integral dos artigos nem declarada lacuna bibliográfica.
+- Trabalho documental/analítico, sem experimento, nova enumeração, dados de zeros ou reservados. Próximos alvos: camada de pares raros no controle; recorrência com correlações cruzadas para Syracuse. Sem commit ou push.
+
+
+### 18/10/2026 — prioridades T001 e T008 executadas em escala controlada
+
+- T001 primeiro alvo `validado` como controle A conhecido: separação |φ|≤√ε, φ=εy recupera o defeito −1/2 no CUE(2), com cotas explícitas para os dois trechos. Lema condicional para modelo de pares requer intensidade ponderada m(d)/d²→C e majorante de cauda; não estabelecido para L. Transferência e termos inferiores permanecem `em execução`/pendentes conforme R3.
+- T008 `em execução`: recorrência racional de colisões identifica H_K e fecha a decomposição DD/DO/OD/OO. Sob existência/positividade da densidade já derivadas, provados f∉L² e crescimento pelo menos linear da energia finita; constantes não avaliadas, sem assíntota ajustada. A obstrução L² já aparece em fonte de Valbuena; leitura dirigida arquivada por commit e hash. Majorante quadrática e integrabilidade abaixo de2 anunciadas na fonte não auditadas; não tratá-las como lacunas estabelecidas.
+- Declaração anterior à implementação e aos cálculos, posterior ao rascunho analítico (disclosure explícito), SHA7b895eab…; resultados em `results/eventos_concentracao_20261018/`. Cinco testes novos passaram; CPU4,701732s, parede4,669306s, teto60s. Quadraturas B a50 dígitos; identidades em Fraction para K≤4 e confronto independente K≤2. Sem Monte Carlo, enumeração de órbitas ou dados de zeros/MN/H-004.
+- Notas: `teorias/EVENTOS_RAROS_CUE_20261018.md`, `teorias/SYRACUSE_COLISOES_20261018.md`. Registro T001/T008 atualizado. Sem afirmação de novidade, ponte direta, prova RH/Collatz, commit ou push.
+
+
+### 19/10/2026 — T008: auditoria bibliográfica e energia condicionada
+
+- Estado da derivação `validado` no escopo declarado; T008 `em execução`. Conferidas a contagem por fibras, a cota quadrática e a interpolação Lp no TeX arquivado de Valbuena; Tao Prop.1.14 permanece entrada externa. Nenhuma formalização Lean executada ou novidade estabelecida.
+- Derivação A: qualquer evento E contido em custo total s tem Energia(E)<=2H(ell,s)/beta²<=4/beta². H é calculado por funções geradoras normalizadas, mantendo o custo fixado. A aplicação à janela central do projeto usa beta>=b_C/sqrt(ell) previamente derivada e dá O_C(ell), sem constante numérica para os limites individuais. O exemplo sem limites tem cota64ell; não transferida essa constante ao evento limitado.
+- Consequência: suporte>=beta²*3^ell/4; não é cobertura total, minorante uniforme, distribuição de órbitas positivas ou ponte Riemann–Collatz. Não foi dividido coeficiente oscilatório pela probabilidade do evento.
+- Declaração SHA55eb3458… antes de implementação e enumeração, após rascunho analítico. Comando `.venv/bin/python results/energia_condicionada_20261019/verificar.py`; dois testes passaram,35 momentos/69 eventos não vazios/1 vazio, aritmética exata. CPU0,416887s; parede0,420688s; teto30s. Sem rede nos testes, zeros reais/reservados, Monte Carlo, produção longa, commit ou push.
+- Nota `teorias/SYRACUSE_ENERGIA_CONDICIONADA_20261019.md`; módulo `collatz/conditioned_energy.py`; manifesto e cópias em `results/energia_condicionada_20261019/`. Próximo alvo: separar esta cota agregada do requisito de cobertura e identificar o reforço necessário. R3 e termos inferiores de L inalterados.
+
+
+### 19/10/2026 — estimativa adicional para cobertura de resíduos
+
+- Formulação `em execução`, alvo ainda não demonstrado. Nota `teorias/SYRACUSE_COBERTURA_CRITERIO_20261019.md`: minorante relativa por filho p^{r+1}(a+j3^r)>=(eta/3)p^r(a), eta>0 uniforme nos filhos/classes para cada comprimento/custo/resolução. Com as duas classes iniciais positivas, dá cobertura por indução; uma constante universal eta não é necessária para mera positividade.
+- Derivações elementares A: base módulo3 para ell+1<=s<=3^ell-2; critério alternativo de erro relativo máximo<1; limiar L1<2min(q). Exemplo com buracos satisfaz simultaneamente energia próxima de3/2 e mistura L1 exponencialmente pequena, mostrando o limite das cotas agregadas disponíveis.
+- Identificada obstrução local: variar prefixos não vazios com um sufixo de r ramos fixo alcança no máximo dois dos três filhos da classe módulo3^r. Para preencher o terceiro, uma construção terá de combinar sufixos distintos ou outro mecanismo. Não é contraexemplo para a lei completa.
+- Próximo alvo: identidades de reescrita de sufixos preservando custo e limites individuais, com controle de multiplicidade. Apenas formulação e álgebra finita nesta entrega; sem cálculo, dados novos, enumeração, alteração de protocolo, commit ou push. Novidade não estabelecida.
+
+
+### 19/10/2026 — reescritas de custo e correção da ordem dos geradores
+
+- Identificada troca de ordem nas duas notas novas de energia/cobertura: a composição cronológica usa limites crescentes2,6,18,...; a árvore inversa usa os decrescentes. Exemplo ell2/s4 separa as distribuições apesar de mesma contagem. Cópias anteriores preservadas com hashes em `results/reescritas_custo_20261019/antes/`; notas corrigidas explicitamente. Cota geral de energia e beta mantêm validade, scripts/declarações originais intactos.
+- Derivações A: transferência(a,b)->(a+h,b-h) tem diferença3^q*2^{-(t+b)}*(2^h-1). Com folga bilateral2, h=-2,0,2 preenche os três filhos; multiplicidade<=3 transforma massa de palavras com folga em minorante por filho. A positividade uniforme dessa massa por classe continua alvo D.
+- Obstrução A por valoração: nenhuma transferência adjacente não trivial, sob os limites corretos, preserva módulo3^{ell-1}. O último dígito requer reescritas coordenadas, mais longas ou outro mecanismo. Não refuta cobertura global.
+- Declaração SHA497d2f9a… antes de implementação/enumeração, após derivação preliminar. `.venv/bin/python results/reescritas_custo_20261019/verificar.py`; dois testes passaram em3,67s, CPU3,996489s, parede4,194812s, teto30s. Inteiros/Fraction:34 perfis coincidem com generator_counts/tuple_oracle,1 vazio;1.005 triplas;150 classes/par com folga e676 sem, sem inferência assintótica dessas contagens.
+- Nota `teorias/SYRACUSE_REESCRITAS_CUSTO_20261019.md`, módulo `collatz/affine_rewrites.py`, teste próprio, manifesto/cópias/log. Sem dados reais/reservados, órbitas positivas, produção extensa, revisão independente, novidade estabelecida, commit ou push. T008 permanece `em execução`.
+
+
+### 19/10/2026 — blocos de três e último dígito
+
+- Alvo local `validado` no escopo da identidade, sem revisão independente; T008 `em execução`. Família nas posições2–4 (1,1,9+d)/(3,5,3+d)/(2,8,1+d),0<=d<=45, tem custo comum e diferenças3^{ell-1} vezes unidades1,2 mod3. Preserva todos os dígitos anteriores para qualquer prefixo permitido e sufixo válido.
+- A parcela H de grupos completos é exatamente repartida entre os três filhos. A estimativa ainda faltante é sua massa positiva por classe grossa sob o custo, não a média global. Provada também obstrução para bloco triplo inicial: no máximo dois pares por classe mod9, independentemente do custo.
+- Declaração SHA9aa0de14… antes de implementação/enumeração; grade fixa i1..3 e S3..18. Exploração48 perfis/82 fibras de três filhos, CPU0,013794s; a identidade foi selecionada após consulta da grade, explicitamente exploratória. Dois testes posteriores passaram,164 aplicações afins independentes, CPU0,520697s. Inteiros/Fraction, teto30s em cada processo; sem ampliação, zeros ou órbitas positivas.
+- Nota `teorias/SYRACUSE_ULTIMO_DIGITO_20261019.md`; módulos `collatz/block_rewrites.py` e `collatz/last_digit_rewrites.py`; testes/manifestos/tabelas em `results/blocos_tres_20261019/`. Próximo alvo: fórmula de contagem de H por custo e resíduo. Cobertura global e novidade não estabelecidas, sem commit ou push.
+
+
+### 20/10/2026 — recorrência de H e falha de disponibilidade em caso central
+
+- Derivação A: grupos Z_n(S,a) iniciados em módulo27 e transportados por Phi_e, com custo explícito; a contagem completa projetada P tem o mesmo transporte e semente diferente. Cada filho recebe exatamente Z; massa de H no pai=3Z. Função geradora escalar mostra H não vazia apenas para n+8<=S<=3^n-23.
+- Resultado negativo `validado`: no caso n8/S16, H tem um grupo no pai971 mod2187; a palavra(1,1,1,1,1,1,1,9) está no pai299 e fora de H. Contagem existente confirma8 palavras nesse pai. Dos1.250 pais atingidos por4.684 palavras, apenas1 recebe H. Não generalizado a n arbitrariamente grande, outras famílias ou cobertura global.
+- Declaração SHA90d565f5… após derivação e antes de implementação/enumeração. Comando `.venv/bin/python results/disponibilidade_familia_20261020/verificar.py`;2 testes passaram,25 perfis e2 bordas da semente, CPU0,573708s, parede0,583651s, teto30s, inteiros/Fraction. Tabela inclui casos sem H; grade não ampliada para perseguir sucesso.
+- Nota `teorias/SYRACUSE_DISPONIBILIDADE_20261020.md`, módulo `collatz/family_availability.py`, teste e artefatos próprios. T008 continua `em execução`; próximo alvo algébrico é comparar semente completa e grupos equilibrados, preservando custo. Sem novos zeros, dados reservados, órbitas positivas, novidade estabelecida, commit ou push.
+
+
+### 20/10/2026 — semente máxima e reescrita com transferência de custo
+
+- Resultado restrito `validado`, T008 `em execução`: para prefixos4 de mesmo custo e sufixo fixo, capacidade máxima=min das3 contagens finas. Catálogo disjunto de2.382 grupos,7.146 palavras dentre11.664, restante4.518. Transporte positivo preserva inclusão em contagens completas e domina H.
+- Na mesma grade25 perfis, n8/S16 tem560 pais completos,139 com grupo máximo transportado e421 sem. Primeira classe limite da grade n5/S9/pai47 com contagens(1,1,1), nenhuma tripla restrita ao prefixo4. Declaração SHAef15068b… antes da implementação;2 testes passaram, CPU3,152709s, parede3,276699s, teto30s. Tabelas/catálogo em `results/semente_completa_20261020/`.
+- Após o diagnóstico, derivada família(1,1,3,1,3+d)/(2,2,1,1,3+d)/(1,2,3,2,1+d),0<=d<=159. Numeradores331,493,655, passo162=2*81. Prefixo/sufixo compensam2 unidades de custo no caso base; após qualquer sufixo válido os3 últimos filhos permanecem equilibrados. Disponibilidade por classe não provada.
+- Declaração separada SHA68e419a4… registra seleção pós-exploração.2 testes passaram,9 aplicações exatas, CPU1,626740s, parede2,175537s, teto30s. Artefatos em `results/cinco_expoentes_20261020/`; código e testes novos, anteriores preservados. Sem zeros, órbitas positivas, execução extensa, novidade estabelecida, commit ou push.
+- Nota `teorias/SYRACUSE_SEMENTE_COMPLETA_20261020.md`: derivada a recorrência vetorial dos3 filhos com permutações por expoente final; ausências finais são a interseção das ausências das parcelas. Próximo alvo é complementaridade de sufixos/custos, não exigir equilíbrio isolado de cada parcela. As condições uniformes e a cobertura dos pais grossos continuam abertas.
+
+
+### 20/10/2026 — complementaridade: três parcelas e custo acoplado
+
+- Diagnóstico finito `validado`, T008 `em execução`: recorrência vetorial exata dos3 filhos, interseção de ausências e menor cobertura implementadas. Em8.598 pais/25 perfis, n8/S16 tem457 casos de uma parcela,102 de duas,1 de três e690 incompletos. Primeira necessidade de3 na grade: n8/S15/pai1196, expoentes1,5,7, vetores unitários distintos. Não generalizado a regra universal desses expoentes.
+- Derivações A: predecessor bruto c_{e+2}=4c_e+1; período do pai R=3^{n-2}; e->e+2R repete pai e roda filho, mas muda o custo em2R. Três rotações exigem custo exponencial, indisponível na faixa central para n grande. Mistura por período completo não fecha a estimativa.
+- Derivação A adicional sem nova enumeração: preenchimento do último expoente, até S+delta<=C_n+n-1, injeta palavras e dá N_n(S+delta,2^{-delta}x)>=N_n(S,x). Cobertura de um custo inicial implica cobertura dos seguintes nessa faixa; nenhuma prova do custo inicial obtida.
+- Declaração SHAff0972ab… antes de implementação/verificação. `.venv/bin/python results/complementaridade_20261020/verificar.py`;2 testes passaram,8.598 pais e16 órbitas algébricas, CPU1,543455s, parede1,553696s, teto30s. Sem nova faixa de comprimentos, zeros reais/reservados, órbitas positivas, aleatoriedade, novidade estabelecida, commit ou push.
+- Nota `teorias/SYRACUSE_COMPLEMENTARIDADE_20261020.md`, módulo `collatz/child_complementarity.py`, teste, manifestos/cópias/tabelas. Próximo alvo é o controle de ausências ao longo de órbita e custo, não tratar período ou equilíbrio médio como preenchimento de pior classe. Riemann mantém os alvos anteriores.
+
+
+### 25/10/2026 — política inversa e cobertura uniforme
+
+Derivação A com certificado finito: todas as unidades módulo 3^n são atingidas, para n>=4 e custo total L(n)<=S<=2*3^{n-1}+n-1, onde L(n)=3n+4+((n-4) mod4). Em particular S>=3n+7 é suficiente dentro desse limite superior. A prova combina a base de54 classes, uma política de quatro ramos inversos de custo máximo12 e indução; melhora o limite preliminar4n. Nota [cobertura uniforme](../teorias/SYRACUSE_COBERTURA_UNIFORME_20261025.md).
+
+Três testes passaram:240 políticas contra2.072 caminhos independentes,13.068 palavras construídas exatamente em todas as classes dos comprimentos4–8 e13.703 desigualdades de preenchimento. Exploração CPU0,038849s; verificação CPU2,218014s. Declaração e adendo preservam a seleção do bloco4 após exploração. Artefatos em `results/politica_inversa_20261025/`.
+
+T008 continua `em execução`: a faixa central S=2n+O(sqrt(n)) permanece aberta. Não é convergência de órbitas positivas, ligação com RH ou novidade estabelecida. Próximo alvo: comparar com a literatura de ramos inversos e estudar analiticamente a razão entre pior custo e comprimento antes de ampliar enumerações. Revisão independente pendente.
+
+### 25/10/2026 — custo médio, obstrução combinatória e alvo por potencial
+
+Derivações A sem nova enumeração: mu_{r+s}<=mu_r+mu_s; existe lambda=lim mu_r/r=inf mu_r/r, com a_*<=lambda<=3, onde a_* log a_*−(a_*−1)log(a_*−1)=log3 e8/5<a_*<5/3. A condição necessária binom(m,r)>=3^r prova que nenhum bloco de1–4 passos pode ter custo máximo<=2r; para5 passos essa obstrução de cardinalidade desaparece, sem provar viabilidade. Nota [limite de custo e potencial](../teorias/SYRACUSE_LIMITE_CUSTO_20261025.md).
+
+Novo alvo formulado: potencial limitado V e ramos escolhidos com e+V(J_e(x))−V(x)<=2−eta. Um certificado com eta>0 daria custo médio abaixo de2; nenhum foi encontrado ou buscado nesta entrega. Se V é constante em classes mod3^h, a verificação exige as classes mod3^{h+1}, preservando o dígito necessário à inversão.
+
+Wirsching preliminar, páginas4–5, relido com hash conferido: o critério de densidade requer minorante relativa à média na faixa central, não apenas presença em cada classe. Tradução exata entre Elka e o custo limitado, cobertura central, multiplicidades e novidade seguem abertas. Próximo trabalho: examinar potenciais simples e essa tradução antes de nova CPU; qualquer busca finita deve ter declaração e orçamento. Frente Riemann preservada.
+
+### 25/10/2026 — verificação para consolidação e publicação
+
+- Verificação dos11 arquivos de testes novos de Collatz e momentos negativos:25 testes passaram em28,55s (`.venv/bin/python -m pytest -q` com seleção explícita dos arquivos `test_collatz_affine_rewrites`, `test_collatz_balanced_seed`, `test_collatz_child_complementarity`, `test_collatz_collision_energy`, `test_collatz_conditioned_energy`, `test_collatz_family_availability`, `test_collatz_five_blocks`, `test_collatz_inverse_cost_policy`, `test_collatz_three_blocks`, `test_negative_moments_polar_profile` e `test_negative_moments_rare_pairs` em `tests/`). Não é execução integral da suíte nem experimento novo.
+- Consolidação solicitada pelo usuário: código, notas, declarações e artefatos acumulados; inclui os anexos `HUTRKGobAAAMnI5.jpeg` e `paper2.pdf`, já preparados no índice. Fontes de terceiros ignoradas pelo `.gitignore` não foram forçadas ao versionamento.
+- As limitações científicas permanecem: cobertura central e minorante de multiplicidades abertas; potencial apenas formulado; novidade e ligação direta Collatz–Riemann não estabelecidas.

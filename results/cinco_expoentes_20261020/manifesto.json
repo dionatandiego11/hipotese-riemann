@@ -1,0 +1,20 @@
+{
+  "declaracao_sha256": "68e419a415993a3d099755890b6b3fbf0c5650a708938e759786fa78c3442696",
+  "arquivos": {
+    "collatz/five_block_rewrites.py": "d03e3862eac9e3c726942b510c602c41c2678b6b949d0ca8004e64a4ac481771",
+    "collatz/affine_rewrites.py": "240c25a58284d5aaf63636aaa318e365a8bf2aaa36d43d0e32842aca9c6c0006",
+    "collatz/balanced_seed.py": "b377916a5767e390bc994e61e4054489743a82257dc72069f1ed932d91101b72",
+    "collatz/cost_residues.py": "6ca04ffbc75a29a55d172387e2d3ea7db38f3786abcc1794d68b0ddef5b7b899",
+    "tests/test_collatz_five_blocks.py": "a60a9db4e1e9ede2de0c4fecd05c79bfd656f0e4d5f4fffface8d42cbb7fc075",
+    "results/cinco_expoentes_20261020/verificar.py": "23b3c3762429ea39b283200c63d3ee3181f22cf5603282f6ab36cf2b460db99b"
+  },
+  "pytest_status": 0,
+  "cpu_s": 1.626740127,
+  "parede_s": 2.175537073999976,
+  "cpu_teto_s": 30,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "pytest": "9.1.1",
+  "selecao": "após diagnóstico da semente4",
+  "dados_zeros": false,
+  "orbitas_positivas": false
+}

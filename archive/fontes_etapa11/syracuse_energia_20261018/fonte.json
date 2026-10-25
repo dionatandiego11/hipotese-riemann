@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/x1xhlol/collatz-two-coordinate-obstruction/a7275d5a73814d3d9a400c6fe6577de9542b03a3/paper/quadratic-cylinder-energy.tex",
+  "commit": "a7275d5a73814d3d9a400c6fe6577de9542b03a3",
+  "sha256": "d8bc1905bdc833ce01fcfe21984096d5c8cf75bef10ebd93e4ec3e8804392df0",
+  "bytes": 20742,
+  "obtido_em": "2026-10-18T20:41:44.830544+00:00",
+  "escopo": "somente prova de falha L2 e contexto; demais resultados não auditados",
+  "falha_previa": "endpoint commits/main: IncompleteRead; consulta git/ref e raw subsequentes"
+}
