@@ -1,0 +1,20 @@
+{
+  "declaracao_sha256": "00a66149edf2aeb2636f477e2aa61db287e0418fc6c2198ecf735a8cb531853a",
+  "arquivos": {
+    "src/riemann_spectra/prime_trace_kernel.py": "f9c23bf10b20bd0ec385f8efb1347e9dbb8f5c4bde7e656c60d1ae41b2a5b215",
+    "collatz/periodic_denominator.py": "4b92d12be9e0cfcbcbbe713f48a67818aebb5dd94fed87b2628ef5a5c01a6c93",
+    "tests/test_hamiltonian_collatz_bridge.py": "4b8337371b6416db908ecbef4426d2db900818028179ad5b8472e10091b2fa9c",
+    "results/hamiltoniano_collatz_20261122/executar.py": "2991a1106b349c25efaccce984379c416512ee6f60b1520842a82b2520e8f3bc"
+  },
+  "tests_exit": 0,
+  "cpu_s": 0.98200193,
+  "wall_s": 1.1088164590000815,
+  "cpu_limit_s": 60,
+  "zero_data": false,
+  "randomness": false,
+  "precision": "mpmath 60 digits; exact Fraction; numpy eigvalsh diagnostic",
+  "outputs": {
+    "resultados.json": "21f183ecc8219ff3e441de251e8d9a2ef54cc048abaf7c946ec13bfeeb0e3065",
+    "pytest.log": "067947b41af67502f259a392086e1139ed163f09545488f2f4c27142bd17f819"
+  }
+}

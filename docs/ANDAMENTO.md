@@ -999,3 +999,35 @@ Wirsching preliminar, páginas4–5, relido com hash conferido: o critério de d
 - Verificação dos11 arquivos de testes novos de Collatz e momentos negativos:25 testes passaram em28,55s (`.venv/bin/python -m pytest -q` com seleção explícita dos arquivos `test_collatz_affine_rewrites`, `test_collatz_balanced_seed`, `test_collatz_child_complementarity`, `test_collatz_collision_energy`, `test_collatz_conditioned_energy`, `test_collatz_family_availability`, `test_collatz_five_blocks`, `test_collatz_inverse_cost_policy`, `test_collatz_three_blocks`, `test_negative_moments_polar_profile` e `test_negative_moments_rare_pairs` em `tests/`). Não é execução integral da suíte nem experimento novo.
 - Consolidação solicitada pelo usuário: código, notas, declarações e artefatos acumulados; inclui os anexos `HUTRKGobAAAMnI5.jpeg` e `paper2.pdf`, já preparados no índice. Fontes de terceiros ignoradas pelo `.gitignore` não foram forçadas ao versionamento.
 - As limitações científicas permanecem: cobertura central e minorante de multiplicidades abertas; potencial apenas formulado; novidade e ligação direta Collatz–Riemann não estabelecidas.
+
+### 22/11/2026 — leitura inicial da arquitetura da prova de Alpöge
+
+- Comunicado Lean/Mathlib, nota de Alpöge, resumo de verificação de Sutherland e trechos de duas exposições consultados. A verificação formal é externa: não executamos o Lean ou auditamos a árvore de dependências. A versão do registro do MIT consultada era de 04:35 UTC; algumas checagens do export permaneciam em andamento.
+- Mapa em `docs/ARQUITETURA_ALPOGE_20261122.md`: soma suavizada G, redução unilateral em janelas, desigualdade (M), theta/reticulados e equação funcional. Exposição para ζ não prova (M) integralmente; foi registrada uma aparente divergência de notação de janelas entre trechos do outline, pendente de conferência.
+- Estado: leitura inicial `em execução`. Pendente conferir a redução analítica e mapear as hipóteses dos nossos resultados. RH não implica simplicidade; resultados sobre momentos negativos, Hamiltonianos e Collatz não foram reclassificados. Sem cálculo novo, alteração de protocolos ou commit.
+
+### 22/11/2026 — redução analítica e matriz de dependências
+
+- Leitura dirigida da exposição para ζ, §I.1 e Parte II §1: quantificadores das janelas, transformada de Mellin, cancelamento em s=1, polo de multiplicidade m e mecanismo de concentração das derivadas. A estimativa de concentração com constantes e o código Lean permanecem sem auditoria independente; não reivindicamos nova prova do lema.
+- Matriz localizada em `docs/ALPOGE_REDUCAO_MATRIZ_HIPOTESES_20261122.md`: RH/GRH reportadas externamente podem fundamentar hipóteses de localização no escopo Dirichlet; permanecem simplicidade onde necessária, H-tab não certificada, F5/J1, confiança e revisão dos certificados, e as estimativas dos momentos. A documentação mais recente §§II.23–II.24 já inclui a camada do estimador registrado condicionada a H-tab; C2 integral continua não certificado.
+- Sem dados novos, experimentos, reclassificação automática ou modificação de protocolos. `em execução`: próxima tarefa é conferir concentração/seleção do polo e rastrear declarações Lean.
+
+### 22/11/2026 — alvos para Hamiltoniano e Collatz
+
+- Formulada em `docs/PONTES_HAMILTONIANO_COLLATZ_20261122.md` uma conexão necessária entre a soma suavizada G e um traço de resolvente autoadjunto, sob RH e com o resto trivial. A matriz diagonal com zeros é controle tautológico; um candidato precisa ser definido independentemente dos zeros e ter domínio, traço e espectro justificados.
+- Para T em Z₂, a conjugação ao deslocamento dá #Fix(T^n)=2^n e zeta periódica formal 1/(1−2z); não é a contagem de ciclos inteiros positivos. Formulado alvo de peso aritmético e controle finito T versus deslocamento, com definição e declaração prévias.
+- Frentes `em execução`: resta conferir R_triv e fundamentar os operadores; nenhum experimento, nova ponte estabelecida ou alteração dos protocolos.
+
+### 22/11/2026 — núcleo de primos e peso aritmético: primeiro cálculo
+
+- Derivação em `docs/ATAQUE_OPERADOR_PESO_ARITMETICO_20261122.md`: resto trivial R(x)=-Σ x^(-2k)/[2k(2k+1)], expressão fechada e cauda explícita. Sob RH/fórmula explícita, K é positivo e gera uma realização cíclica com grupo unitário e gerador autoadjunto por Stone. A multiplicidade de zeros entra nas massas, não na multiplicidade espectral cíclica; nenhuma geometria física foi obtida. Antecedentes de Suzuki/Weil identificados, leitura integral pendente; novidade não estabelecida.
+- Collatz: pontos periódicos racionais exatos e peso multiplicativo denom(x)^(-s). Denominador é invariante nas órbitas periódicas dos dois mapas estudados; Z2_T(1)=4, Z2_S(1)=20/9, contra4 pontos em ambos sem peso. A seleção de inteiros no limite s→∞ não trata divergência de trajetórias.
+- Declaração anterior SHA00a66149... em `results/hamiltoniano_collatz_20261122/`. Runner `.venv/bin/python results/hamiltoniano_collatz_20261122/executar.py`:3 testes passaram em0,40s; CPU acumulada0,982002s, parede1,108816s.1.020 pontos de períodos1–8; resto comparado a60 dígitos; Gram6×6 diagnóstico PSD, menor autovalor0,01722477 (sem certificado intervalar). Sem dados de zeros.
+- Primeira chamada falhou por import local de collatz antes de calcular; corrigido só caminho do runner, mantidos escopo e método. Manifesto guarda fontes, cópias e saídas com hashes conferidos. Próximos alvos: geometria/dinâmica do gerador e operador de transferência do peso; frentes `em execução`, sem commit/push.
+
+### 22/11/2026 — domínios do Hamiltoniano e transferência de denominadores
+
+- Derivação A sob as hipóteses do núcleo: v_t fora de D(H), expansão K(0)-K(h)=h log(1/h)/2+(1-gamma-log(2pi))h/2+O(h²log(1/h)), domínio suavizado essencialmente autoadjunto com H v_f=i v_{f'}. O gerador assinado não é limitado inferiormente; |H| e a restrição par têm interpretação espectral, sem geometria física definida.
+- Derivações A incondicionais de Collatz: peso d(x)^(-s), s>0, não tem extensão contínua a Z₂ e os valores racionais não determinam uma classe de Haar. Em ℓ² dos racionais 2-ádicos, L_s tem norma sqrt2 e não é compacto para todo s>=0; setor dos inteiros fornece infinitas testemunhas. A soma diagonal periódica é Z_n(s), mas não um traço de classe de traço ou determinante usual.
+- Nota `docs/DOMINIOS_OPERADORES_20261122.md`; código `collatz/denominator_transfer.py`. Declaração SHA880770ff… em `results/dominios_operadores_20261122/`, antes da implementação. Comando `.venv/bin/python results/dominios_operadores_20261122/executar.py`;4 testes passaram em0,12s, CPU acumulada0,693161s, parede0,911943s, teto30s. Fraction e mpmath80; diagnóstico numérico não intervalar. Sem zeros, novos períodos ou enumeração de trajetórias positivas.
+- Hashes das duas rodadas conferidos, fontes anteriores preservadas. Próximos alvos: geometria/energia positiva para H e medida/peso que controle o setor inteiro sem mudar silenciosamente a dinâmica; `em execução`, nenhuma novidade estabelecida, commit ou push.

@@ -1,0 +1,19 @@
+{
+  "declaracao_sha256": "880770ff38936a3534de3fe36b0b0c42b71421719c115b0daa1bd6a3235e4774",
+  "arquivos": {
+    "collatz/denominator_transfer.py": "2ff6d9564ebb3f34147ef066f76818c598adfbb06a97db9fc3f65ed829037265",
+    "collatz/periodic_denominator.py": "4b92d12be9e0cfcbcbbe713f48a67818aebb5dd94fed87b2628ef5a5c01a6c93",
+    "src/riemann_spectra/prime_trace_kernel.py": "f9c23bf10b20bd0ec385f8efb1347e9dbb8f5c4bde7e656c60d1ae41b2a5b215",
+    "tests/test_operator_domains.py": "428b9c70c89ceb5f5a078759002c96819d33e75dc55cbfb055d8079d5b10df30",
+    "results/dominios_operadores_20261122/executar.py": "5f9b345a5e936483948f72f83912c3d1db9eb8d10e4d9b9328decba1776f4af8"
+  },
+  "outputs": {
+    "pytest.log": "452fada82e1df58d7f89fa99128aea691c519ad7daf4915a4bece62bd06ecbdf",
+    "resultados.json": "13c57be803331cf9025b40d3a57e3004197e14935c33b0fa3e25cd03c5df8629"
+  },
+  "tests_exit": 0,
+  "cpu_s": 0.6931613099999999,
+  "wall_s": 0.911943170000086,
+  "cpu_limit_s": 30,
+  "precision": "Fraction; mpmath80; no zero data"
+}

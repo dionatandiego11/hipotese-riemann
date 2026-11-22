@@ -1,8 +1,22 @@
-# Estado atual do projeto — ponto de retomada (25/10/2026)
+# Estado atual do projeto — ponto de retomada (22/11/2026)
 
 Documento de entrada para quem retoma o trabalho (pessoa ou agente). Resume onde o projeto está, o que está congelado,
 quais regras seguir e qual é a próxima tarefa. Os detalhes ficam nos documentos citados; em conflito, eles prevalecem.
 Versão anterior (19/09/2026) no histórico do git.
+
+## Prova formal de RH: leitura de arquitetura — 22/11/2026
+
+**Domínios e obstruções:** [gerador e transferência aritmética](DOMINIOS_OPERADORES_20261122.md). Sob as hipóteses do núcleo, os vetores básicos não estão em D(H); vetores suavizados fornecem domínio denso essencialmente autoadjunto com H v_f=i v_{f'}. Em Collatz, o peso de denominadores não tem extensão contínua a Z₂; em ℓ²(Q∩Z₂) há transferência limitada de norma sqrt2, mas não compacta por um setor infinito de inteiros. Logo a zeta periódica não é automaticamente determinante de Fredholm desse operador. Quatro testes passaram, CPU0,693s. Próximo alvo: geometria/energia positiva para H e escolha fundamentada de medida/peso que trate também inteiros para Collatz.
+
+**Duas frentes de aplicação:** [Hamiltoniano e Collatz](PONTES_HAMILTONIANO_COLLATZ_20261122.md). A soma suavizada G leva, sob RH e com resto trivial, a um traço de resolvente como teste de candidatos autoadjuntos; uma diagonal com zeros é controle tautológico. Para Collatz em Z₂, a zeta periódica sem pesos é 1/(1−2z); a pergunta aberta exige um peso aritmético e um espaço especificados. Sem experimento nem ponte estabelecida.
+
+**Avanço executado:** [núcleo de primos e denominadores de Collatz](ATAQUE_OPERADOR_PESO_ARITMETICO_20261122.md). Resto trivial fechado por série/expressão exata; sob RH o núcleo é positivo e permite uma realização cíclica com gerador autoadjunto. Multiplicidades aparecem nas massas, não automaticamente nos autoespaços; geometria física ainda aberta e antecedentes de Suzuki identificados. Peso multiplicativo de denominador distingue T de S já no período2:4 contra20/9. Três testes passaram,1.020 pontos racionais, CPU0,982s, sem zeros reais como entrada. A zeta ponderada tem domínio inicial |z|<1/2 para s>=0; operador de transferência e seleção global de inteiros ainda abertos.
+
+Alpöge anunciou uma prova formal de RH e da versão para L de Dirichlet; comunidades Lean e Mathlib certificaram a prova. O registro de Sutherland de 22/11, 04:35 UTC, documenta verificações e etapas ainda em andamento. Esta é atribuição a verificações externas; não compilamos nem auditamos a prova. O escopo formal listado não inclui L de Hecke ou automórficas em geral.
+
+O [mapa inicial](ARQUITETURA_ALPOGE_20261122.md) acompanha a redução a uma cota unilateral de soma suavizada de primos em janelas, a desigualdade aritmética com theta/reticulados e a conclusão via equação funcional. Exposições humanas são parciais; foi registrado um ponto de notação de janelas a conferir. Simplicidade de zeros, momentos negativos, uniformidade de médias e ponte com física ou Collatz não decorrem automaticamente. Próxima tarefa: auditar a redução analítica e mapear hipóteses dos resultados existentes, preservando protocolos históricos.
+
+**Continuação:** [redução analítica e matriz de hipóteses](ALPOGE_REDUCAO_MATRIZ_HIPOTESES_20261122.md). Conferidas a transformada de Mellin, o cancelamento em s=1 e o resíduo com multiplicidade; a arquitetura da prova por janelas e derivadas altas foi examinada, mas a cota de concentração e o código Lean não foram auditados independentemente. Mapeada a documentação até §II.24 da Cauda Projetada: o valor registrado já tem uma cadeia condicional, que ainda exige H-tab e outras entradas; isso não certifica o C2 completo. Próximo passo: demonstrar a concentração com constantes e conferir a seleção do polo, além de rastrear o enunciado Lean.
 
 ## Limite de custo e alvo por potencial — 25/10/2026
 
