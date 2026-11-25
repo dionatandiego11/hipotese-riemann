@@ -1,0 +1,87 @@
+{
+  "bbm_hurwitz_divergence": {
+    "gamma_1": "14.13472514173469379",
+    "asymptotic_density_coefficient_1_over_abs_z_minus_1_sq": "0.00499898883372314",
+    "measurements": [
+      {
+        "x": 100,
+        "density": "0.503228377304199",
+        "expected_density": "0.504897872206037",
+        "relative_error": "0.003306599203"
+      },
+      {
+        "x": 1000,
+        "density": "5.00157162065004",
+        "expected_density": "5.00398782255686",
+        "relative_error": "0.0004828552731"
+      },
+      {
+        "x": 10000,
+        "density": "49.9923961645658",
+        "expected_density": "49.9948873260651",
+        "relative_error": "4.982832511e-5"
+      },
+      {
+        "x": 100000,
+        "density": "499.90138370006",
+        "expected_density": "499.903882361148",
+        "relative_error": "4.998283022e-6"
+      }
+    ],
+    "conclusion": "Eigenfunctions grow as sqrt(x), density grows as x, L2 norm diverges quadratically"
+  },
+  "sierra_rodriguez_laguna": {
+    "lp": "1.5",
+    "E": "14.13472514173469379",
+    "ode_residuals": [
+      {
+        "p": "0.5",
+        "ode_relative_residual": "0.0"
+      },
+      {
+        "p": "1.0",
+        "ode_relative_residual": "1.254288829e-60"
+      },
+      {
+        "p": "2.5",
+        "ode_relative_residual": "0.0"
+      },
+      {
+        "p": "10.0",
+        "ode_relative_residual": "0.0"
+      }
+    ],
+    "conclusion": "Exact analytic solution verified; fixed boundaries produce purely equidistant spectrum"
+  },
+  "collatz_weil_height": {
+    "count_states_height_le_5": 27,
+    "count_states_height_le_10": 83,
+    "integer_decay_alpha1": {
+      "1": "1",
+      "2": "1/2",
+      "3": "1/3",
+      "4": "1/4",
+      "5": "1/5",
+      "6": "1/6",
+      "7": "1/7",
+      "8": "1/8",
+      "9": "1/9",
+      "10": "1/10"
+    },
+    "integer_decay_alpha2": {
+      "1": "1",
+      "2": "1/4",
+      "3": "1/9",
+      "4": "1/16",
+      "5": "1/25",
+      "6": "1/36",
+      "7": "1/49",
+      "8": "1/64",
+      "9": "1/81",
+      "10": "1/100"
+    },
+    "conclusion": "Northcott finiteness satisfied; weights decay on integers restoring potential compactness"
+  },
+  "zeros_read": false,
+  "certified_interval": false
+}

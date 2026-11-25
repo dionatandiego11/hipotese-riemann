@@ -1,0 +1,18 @@
+{
+  "declaracao_sha256": "3ac1b992ee925db3c64270d1cd8430fa32c29ca849df6f00c5cb490a5665f964",
+  "arquivos": {
+    "collatz/wirsching_mellin.py": "31e88a42b9efb37ae2293be703495b9677b84a2fe02ddc7cf60da686a38d0d70",
+    "tests/test_loop_estudo_it3_20261124.py": "226f2c927c424f02e3227a683f602805c49cb16ea034188cb557d5f108ee6050",
+    "docs/LOOP_ESTUDO_IT3_CONEXAO_COLLATZ_RIEMANN_20261124.md": "0f96954bf0ab7afe1285d4a22738bbcc45cd53121b55a9507de3f7651cedd980",
+    "results/loop_estudo_it3_20261124/executar.py": "4c2676e1b92f0db5199c9e3a90b407c78aa7491d96ba4c910054ae864cdd9110"
+  },
+  "outputs": {
+    "pytest.log": "87a60d5f0e877f12a64ce616288d296d98c12639c9d5ed55dc65a5ecd1c118d6",
+    "resultados.json": "2de8090e78c0f3eb3cb5cbe93cb0b05488831127bae8fe36221cd82462c5177f"
+  },
+  "tests_exit": 0,
+  "cpu_s": 1.487512252,
+  "wall_s": 1.619460837000588,
+  "cpu_limit_s": 30,
+  "precision": "mpmath40"
+}

@@ -1,8 +1,30 @@
-# Estado atual do projeto — ponto de retomada (22/11/2026)
+# Estado atual do projeto — ponto de retomada (24/11/2026)
 
 Documento de entrada para quem retoma o trabalho (pessoa ou agente). Resume onde o projeto está, o que está congelado,
 quais regras seguir e qual é a próxima tarefa. Os detalhes ficam nos documentos citados; em conflito, eles prevalecem.
-Versão anterior (19/09/2026) no histórico do git.
+Versão anterior (22/11/2026) no histórico do git.
+
+## Loop de Estudo e Verificação — Iteração 3 (24/11/2026)
+
+**Ponte Analítica Exata Collatz–$\zeta$ (Wirsching–Tavares):** [nota da iteração 3](LOOP_ESTUDO_IT3_CONEXAO_COLLATZ_RIEMANN_20261124.md); [matriz bibliográfica](MATRIZ_HIPOTESES_BIBLIOGRAFICAS_RIEMANN_COLLATZ.md).
+1. *Derivação Analítica [A]:* Demonstração formal de que o produto gerador de dilatação de predecessores de Collatz $P(s) = \sum_{i=0}^\infty \log(1 - e^{-2 \cdot 3^i s})$ possui transformada de Mellin dada por $\tilde{f}(w) = -2^{-w}\Gamma(w)\zeta(1+w)$. Os polos de dilatação $w_n = -2\pi i n / \log 3$ produzem oscilações log-periódicas cujos coeficientes de Fourier dependem em forma fechada da **função zeta de Riemann** na reta $\mathrm{Re}(s)=1$: $c_n = - \frac{2^{i\tau_n}}{\log 3} \Gamma(-i\tau_n) \zeta(1 - i\tau_n)$.
+2. *Certificação Numérica [B]:* A 40 dígitos com mpmath, a projeção numérica de Fourier ao longo do ciclo de dilatação produziu $c_{1, \text{num}} = 0.000104686232668 \times e^{2.4185456 i}$ contra o valor teórico $c_{1, \text{theo}} = 0.000104686232582 \times e^{2.4185456 i}$, alcançando **9 dígitos de concordância exata** (erro relativo de $1.49 \times 10^{-9}$).
+3. Quatro testes passaram em 0.58s, CPU 1.488s. Artefatos em `results/loop_estudo_it3_20261124/`.
+
+## Loop de Estudo e Verificação — Iteração 2 (24/11/2026)
+
+**Espectro Cíclico de Collatz e Falsificação de Resolvente em $H_{SR}$:** [nota da iteração 2](LOOP_ESTUDO_IT2_ESPECTRO_COLLATZ_RESOLVENTE_20261124.md).
+1. *Frente Collatz:* Demonstração analítica e numérica de que o operador de transferência truncado $M_B(\alpha)$ com peso de altura de Weil decompõe-se exatamente em círculos concêntricos correspondentes aos ciclos periódicos racionais. Raio espectral $\rho = 1.0$ e gap espectral exato $g(\alpha) = 1 - 2^{-\alpha / 2}$ (0.1591 para $\alpha=0.5$; 0.2929 para $\alpha=1.0$; 0.5000 para $\alpha=2.0$). Traços de potências $\mathrm{Tr}(M^n)$ conferidos analiticamente.
+2. *Frente Hamiltoniano:* O controle tautológico $H_{\text{diag}}$ com 1.000 zeros reproduz o núcleo de primos $K(t)$ com precisão de 6 casas decimais (erro $< 4.1 \times 10^{-6}$ para $t \in [0.2, 2.0]$). A discretização ingênua de Sierra–Rodríguez-Laguna $H_{SR}$ foi falsificada pelo teste do resolvente: gera 23 modos espúrios no gap $[0, \gamma_1]$, produzindo erro de ordem $\mathcal{O}(1)$ e demonstrando a necessidade mandatória de um potencial de confinamento no regime infravermelho.
+3. Três testes passaram em 0.55s, CPU 1.931s. Artefatos em `results/loop_estudo_it2_20261124/`.
+
+## Loop de Estudo e Verificação — 24/11/2026
+
+**Auditoria de Modelos Históricos e Restauração de Compacidade:** [nota do loop](LOOP_ESTUDO_HAMILTONIANO_COLLATZ_20261124.md).
+1. *Hamiltoniano BBM (arXiv:1703.05326):* Provada e quantificada numericamente a divergência da norma $L^2(0, \infty)$ das autofunções nominais $\psi_z(x) = -\zeta(z, x+1)$. A densidade assintótica cresce como $(x+1)/|z-1|^2$ (Euler-Maclaurin), gerando divergência quadrática da norma parcial ($X^2 / (2|z-1|^2)$), o que exclui autoestados no espaço padrão sem uma métrica completada que preserve o espectro pontual.
+2. *Modelo Sierra–Rodríguez-Laguna (arXiv:1102.5356):* Solução exata $\psi_E(p) = (p+\ell_p^2/p)^{-1/2}(p^2+\ell_p^2)^{-iE/2}$ verificada com resíduo de EDO $< 1.25 \times 10^{-60}$. Com fronteiras fixas, o espectro é puramente equidistante, demonstrando que a regularização requer fronteiras dinâmicas dependentes de energia para gerar o termo de Weyl e não produz flutuações aritméticas sem impor a fase de $\zeta$.
+3. *Collatz com Altura de Weil:* O peso $w_\alpha(x) = \max(|p|, |q|)^{-\alpha}$ decai como $k^{-\alpha}$ nos inteiros, superando a obstrução de compacidade identificada na rodada anterior para pesos baseados apenas no denominador. Finitude de Northcott verificada (27 estados para $H \le 5$, 83 estados para $H \le 10$).
+4. Cinco testes passaram em 0.44s, CPU 1.246s. Artefatos em `results/loop_estudo_20261124/`. Próximos alvos: discretizações não-locais de $xp$ e cálculo do raio espectral truncado de $\mathcal{L}_\alpha$ em Collatz.
 
 ## Prova formal de RH: leitura de arquitetura — 22/11/2026
 

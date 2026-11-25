@@ -1,0 +1,18 @@
+{
+  "declaracao_sha256": "856fdadc42cb24386c45e27e3fdbc3b6dabc302bec1e9875d867ae01ae87bdf0",
+  "arquivos": {
+    "collatz/height_transfer.py": "0f91a8580f30e10feaa3daf1c4eb62d70e8c8824c56d6a1204c0e6cae5beb570",
+    "tests/test_loop_estudo_it2_20261124.py": "6ba46ccf8fad4c640539e82ad81c1efcc67d7757e534ec28d767eae910b8e346",
+    "docs/LOOP_ESTUDO_IT2_ESPECTRO_COLLATZ_RESOLVENTE_20261124.md": "5d5ca1b50411f6b82c62fae8e1434920690b5f32de3b8ec2bf72d1cc24a9f18c",
+    "results/loop_estudo_it2_20261124/executar.py": "80a5bd58366ccf63755e955b0721ef1217f49202900aea024d847cadfc2ea1f8"
+  },
+  "outputs": {
+    "pytest.log": "5464270e1c0aacdeb907553e5765b3a87e57a741688a28191d4ba0fe12405e82",
+    "resultados.json": "605e6d3aa22b4439da4792a19cfe467c199d957d89c045e0ed9ca770226a62b0"
+  },
+  "tests_exit": 0,
+  "cpu_s": 1.931461164,
+  "wall_s": 1.3966466340002626,
+  "cpu_limit_s": 30,
+  "precision": "Float64 / mpmath30"
+}

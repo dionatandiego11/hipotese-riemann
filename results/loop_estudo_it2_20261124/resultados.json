@@ -1,0 +1,141 @@
+{
+  "collatz_weil_height_spectrum": {
+    "states_count": 83,
+    "analysis": {
+      "alpha=0.5": {
+        "top_8_eigenvalue_magnitudes": [
+          1.0,
+          1.0,
+          0.84089642,
+          0.84089642,
+          0.4472136,
+          0.4472136,
+          0.4472136,
+          0.37669396
+        ],
+        "spectral_radius": 1.0,
+        "spectral_gap": 0.15910358,
+        "expected_gap": 0.15910358,
+        "traces_power_n": {
+          "n=1": 2.0,
+          "n=2": 3.414213562373095,
+          "n=3": 2.4286849024474293,
+          "n=4": 3.0,
+          "n=5": 2.0,
+          "n=6": 2.739678209757976
+        }
+      },
+      "alpha=1.0": {
+        "top_8_eigenvalue_magnitudes": [
+          1.0,
+          1.0,
+          0.70710678,
+          0.70710678,
+          0.2,
+          0.2,
+          0.2,
+          0.14189834
+        ],
+        "spectral_radius": 1.0,
+        "spectral_gap": 0.29289322,
+        "expected_gap": 0.29289322,
+        "traces_power_n": {
+          "n=1": 2.0,
+          "n=2": 3.0,
+          "n=3": 2.032571428571429,
+          "n=4": 2.5,
+          "n=5": 2.0,
+          "n=6": 2.2502164897959185
+        }
+      },
+      "alpha=2.0": {
+        "top_8_eigenvalue_magnitudes": [
+          1.0,
+          1.0,
+          0.5,
+          0.5,
+          0.04,
+          0.04,
+          0.04,
+          0.02013514
+        ],
+        "spectral_radius": 1.0,
+        "spectral_gap": 0.5,
+        "expected_gap": 0.5,
+        "traces_power_n": {
+          "n=1": 2.0,
+          "n=2": 2.5,
+          "n=3": 2.0002164897959185,
+          "n=4": 2.125,
+          "n=5": 2.0,
+          "n=6": 2.0312500124879165
+        }
+      }
+    },
+    "conclusion": "Eigenvalues decompose into concentric circles corresponding to rational cycles with exact spectral gap 1 - 2^(-alpha/2)"
+  },
+  "hamiltonian_resolvent_trace": {
+    "zeros_used_for_diag": 1000,
+    "spurious_SR_modes_below_gamma1": 23,
+    "spurious_SR_lowest_5": [
+      0.31208,
+      0.93611,
+      1.5598,
+      2.18291,
+      2.80521
+    ],
+    "resolvent_table": [
+      {
+        "t": 0.2,
+        "K_primes": -0.00827783,
+        "Tr_Hdiag_zeros": -0.00827378,
+        "error_diag": 4.05e-06,
+        "Tr_H_SR_discretized": 4.49717074,
+        "error_H_SR": 4.50544856
+      },
+      {
+        "t": 0.5,
+        "K_primes": 0.00603909,
+        "Tr_Hdiag_zeros": 0.00603933,
+        "error_diag": 2.4e-07,
+        "Tr_H_SR_discretized": 3.85077287,
+        "error_H_SR": 3.84473378
+      },
+      {
+        "t": 0.8,
+        "K_primes": 0.00397155,
+        "Tr_Hdiag_zeros": 0.00396991,
+        "error_diag": 1.64e-06,
+        "Tr_H_SR_discretized": 3.30049775,
+        "error_H_SR": 3.29652621
+      },
+      {
+        "t": 1.0,
+        "K_primes": 0.00220237,
+        "Tr_Hdiag_zeros": 0.0022013,
+        "error_diag": 1.07e-06,
+        "Tr_H_SR_discretized": 2.97496037,
+        "error_H_SR": 2.972758
+      },
+      {
+        "t": 1.5,
+        "K_primes": 0.00130524,
+        "Tr_Hdiag_zeros": 0.00130713,
+        "error_diag": 1.88e-06,
+        "Tr_H_SR_discretized": 2.29725685,
+        "error_H_SR": 2.2959516
+      },
+      {
+        "t": 2.0,
+        "K_primes": -0.00711887,
+        "Tr_Hdiag_zeros": -0.00712086,
+        "error_diag": 1.98e-06,
+        "Tr_H_SR_discretized": 1.74603288,
+        "error_H_SR": 1.75315175
+      }
+    ],
+    "conclusion": "H_diag matches K(t) within truncation tail (< 1e-4); H_SR produces O(1) error due to unconfined infrared modes"
+  },
+  "zeros_read": true,
+  "zeros_purpose": "Tautological negative control only; not used in candidate operator"
+}

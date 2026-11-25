@@ -1,0 +1,18 @@
+{
+  "declaracao_sha256": "61eda673cc6aa67356dc24eba3f0ea382922cd4b69e77219faeb4b5b02b9c194",
+  "arquivos": {
+    "collatz/height_transfer.py": "0f91a8580f30e10feaa3daf1c4eb62d70e8c8824c56d6a1204c0e6cae5beb570",
+    "tests/test_loop_estudo_20261124.py": "c0a91f0a15d042ef7a7fb5c9f86fa77b9992c4ad587c45449db608fc0933b08f",
+    "docs/LOOP_ESTUDO_HAMILTONIANO_COLLATZ_20261124.md": "ced05863de53a4404f59cfd84ed8e02585add7e601d473d41144ba79bafd7e5b",
+    "results/loop_estudo_20261124/executar.py": "1f73511932d01ff22318dbeb34df8e63980301d9e45d495ddc0a3bba14604279"
+  },
+  "outputs": {
+    "pytest.log": "88fbea09a7a95eb7c24a9f944683a344ca1271cb7a999cfe34e0ae2483b4020c",
+    "resultados.json": "2981e3b880c40f6b92f2e99202037964bbc0fbc9e587267feb6ee993a730b8b7"
+  },
+  "tests_exit": 0,
+  "cpu_s": 1.24622059,
+  "wall_s": 1.3331536539999433,
+  "cpu_limit_s": 30,
+  "precision": "Fraction; mpmath60; no zero data"
+}
